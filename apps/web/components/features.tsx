@@ -523,7 +523,7 @@ export default function Features() {
                       <p className="text-gray-400 mt-1">{item.description}</p>
                     </div>
                   </motion.div>
-                ))}
+            ))}
           </div>
         </div>
           </motion.div>

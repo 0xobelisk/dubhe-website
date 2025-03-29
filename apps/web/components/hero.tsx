@@ -77,8 +77,8 @@ const createBackgroundStars = (numStars: number): Star[] => {
     const color = starColors[colorIndex] || '#FFFFFF'; // Fallback to white if undefined
     
     // Add drift parameters for floating motion
-    const driftSpeed = Math.random() * 0.0005 + 0.0001; // Very slow drift
-    const driftAmplitude = Math.random() * 0.8 + 0.2; // How far it drifts
+    const driftSpeed = Math.random() * 0.0002 + 0.00005; // Slower drift
+    const driftAmplitude = Math.random() * 0.6 + 0.1; // How far it drifts
     const driftPhase = Math.random() * Math.PI * 2; // Random starting phase
     
     stars.push({
@@ -129,8 +129,8 @@ const createConstellationStars = (canvas: HTMLCanvasElement, scale: number) => {
     if (!position) return;
     
     // Add gentle drift for constellation stars (less than background stars)
-    const driftSpeed = Math.random() * 0.0001 + 0.00005; // Very slow drift
-    const driftAmplitude = Math.random() * 0.2 + 0.05; // Smaller amplitude for constellation
+    const driftSpeed = Math.random() * 0.00005 + 0.00002; // Very slow drift
+    const driftAmplitude = Math.random() * 0.1 + 0.02; // Smaller amplitude for constellation
     const driftPhase = Math.random() * Math.PI * 2; // Random starting phase
     
     stars.push({
@@ -246,7 +246,7 @@ export default function Hero() {
     const scale = Math.min(canvas.width, canvas.height) * 0.3
     
     // Create stars
-    const backgroundStars = createBackgroundStars(400)
+    const backgroundStars = createBackgroundStars(200)
     const constellationStars = createConstellationStars(canvas, scale)
     
     // Animation time tracker

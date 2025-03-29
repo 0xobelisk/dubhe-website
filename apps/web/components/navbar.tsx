@@ -6,7 +6,6 @@ import { Menu, X, Download, Moon, Sun, Cpu, Code, Zap, BookOpen } from "lucide-r
 import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
 import { Button } from "@workspace/ui/components/button"
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,25 +14,6 @@ export default function Navbar() {
   const pathname = usePathname()
   const { theme, setTheme } = useTheme()
   
-  // Add scroll animation setup
-  const { scrollY } = useScroll()
-  const navBackground = useTransform(
-    scrollY,
-    [0, 50],
-    ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.8)"]
-  )
-  const navBlur = useTransform(
-    scrollY,
-    [0, 50],
-    ["blur(0px)", "blur(8px)"]
-  )
-  const navHeight = useTransform(
-    scrollY,
-    [0, 50],
-    ["5rem", "4rem"]
-  )
-
-  // After mounting, we can show the theme toggle
   useEffect(() => {
     setMounted(true)
     
@@ -75,204 +55,114 @@ export default function Navbar() {
   };
 
   return (
-    <motion.nav 
-      className="fixed top-0 left-0 right-0 z-50"
-      style={{
-        backgroundColor: navBackground,
-        backdropFilter: navBlur,
-        height: navHeight
-      }}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-    >
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-full">
-          <div className="flex items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <Link href="/" className="flex-shrink-0 flex items-center group">
-                <motion.span 
-                  className="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  Dubhe Engine
-                </motion.span>
-              </Link>
-            </motion.div>
+    <nav className={`fixed top-0 left-0 right-0 z-50 h-16 border-b border-white/10 backdrop-blur-md ${scrolled ? 'bg-black/95' : 'bg-black/60'}`}>
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-full">
+        <div className="flex items-center justify-between h-full">
+          <div className="flex-shrink-0 flex items-center">
+            <Link href="/" className="flex items-center">
+              <span className="text-xl font-bold text-white hover:text-blue-400 transition-colors duration-200">
+                Dubhe Engine
+              </span>
+            </Link>
           </div>
           
-          <div className="hidden md:flex md:items-center md:space-x-1">
-            {navigation.map((item, index) => (
-              <motion.div
-                key={item.name}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.1 * (index + 1) }}
-              >
+          <div className="hidden md:flex items-center justify-center mx-4">
+            <nav className="flex">
+              {navigation.map((item) => (
                 <Link 
+                  key={item.name}
                   href={item.name === "Features" ? "#features" : item.href}
                   onClick={item.name === "Features" ? handleFeaturesClick : undefined}
                   target={item.name === "Documentation" || item.name === "Learn" ? "_blank" : undefined}
                   rel={item.name === "Documentation" || item.name === "Learn" ? "noopener noreferrer" : undefined}
-                  className={`px-4 py-2 text-sm font-medium rounded-md transition duration-200 hover:bg-white/5 flex items-center ${
+                  className={`px-4 py-2 text-sm font-medium transition-colors duration-200 hover:text-blue-400 hover:bg-white/5 flex items-center ${
                     pathname === item.href
-                      ? "text-blue-400"
-                      : "text-gray-300 hover:text-white"
+                      ? "text-blue-400 border-b-2 border-blue-400"
+                      : "text-gray-200"
                   }`}
                 >
-                  <motion.div
-                    whileHover={{ rotate: [0, -10, 10, -5, 0], transition: { duration: 0.5 } }}
-                  >
-                    {item.icon}
-                  </motion.div>
+                  {item.icon && <span>{item.icon}</span>}
                   {item.name}
                 </Link>
-              </motion.div>
-            ))}
+              ))}
+            </nav>
           </div>
 
-          <div className="hidden md:flex md:items-center md:space-x-4">
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, delay: 0.6 }}
+          <div className="hidden md:flex items-center space-x-4 flex-shrink-0">
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="p-2 rounded-full text-gray-200 hover:text-white hover:bg-gray-800 transition-colors duration-200"
+              aria-label="Toggle color theme"
             >
-              <Button 
-                variant="outline" 
-                size="icon"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="rounded-full border border-gray-700 hover:border-blue-500 bg-gray-900/50 hover:bg-gray-800/80 transition-all duration-300"
-              >
-                <motion.div
-                  whileHover={{ rotate: 180 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  {mounted ? (
-                    theme === "dark" ? <Sun className="h-4 w-4 text-yellow-400" /> : <Moon className="h-4 w-4 text-slate-300" />
-                  ) : null}
-                </motion.div>
-              </Button>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, delay: 0.7 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              {mounted ? (
+                theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />
+              ) : null}
+            </button>
+            
+            <Button 
+              variant="default" 
+              className="rounded-sm bg-blue-600 hover:bg-blue-500 text-white font-medium px-4 py-2 transition-all duration-200"
             >
-              <Button 
-                variant="default" 
-                className="rounded-md bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white px-6 py-2 transition-all duration-300 border-0 shadow-lg shadow-blue-500/20"
-              >
-                <motion.div
-                  animate={{ y: [0, -3, 0] }}
-                  transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 3 }}
-                >
-                  <Download className="h-4 w-4 mr-2" />
-                </motion.div>
-                Download
-              </Button>
-            </motion.div>
+              <Download className="h-4 w-4 mr-2" />
+              Download
+            </Button>
           </div>
 
-          <motion.div 
-            className="flex md:hidden"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.5 }}
-          >
+          <div className="flex md:hidden">
             <Button 
               variant="ghost" 
               size="icon" 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="rounded-full text-gray-300"
+              className="rounded-full text-gray-200"
             >
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-              </motion.div>
+              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
-          </motion.div>
+          </div>
         </div>
       </div>
 
-      <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div 
-            className="md:hidden"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-900/95 backdrop-blur-lg border-b border-gray-800">
-              {navigation.map((item, index) => (
-                <motion.div
-                  key={item.name}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: 0.1 * index }}
-                >
-                  <Link 
-                    href={item.name === "Features" ? "#features" : item.href}
-                    className={`block px-3 py-2.5 text-base font-medium rounded-md flex items-center ${
-                      pathname === item.href
-                        ? "bg-gray-800/70 text-blue-400"
-                        : "text-gray-300 hover:bg-gray-800/50 hover:text-white"
-                    }`}
-                    onClick={item.name === "Features" ? handleFeaturesClick : () => setIsMenuOpen(false)}
-                    target={item.name === "Documentation" || item.name === "Learn" ? "_blank" : undefined}
-                    rel={item.name === "Documentation" || item.name === "Learn" ? "noopener noreferrer" : undefined}
-                  >
-                    {item.icon}
-                    {item.name}
-                  </Link>
-                </motion.div>
-              ))}
-              <motion.div 
-                className="flex items-center justify-between pt-4 pb-2"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.5 }}
+      {isMenuOpen && (
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black border-t border-gray-800">
+            {navigation.map((item) => (
+              <Link 
+                key={item.name}
+                href={item.name === "Features" ? "#features" : item.href}
+                className={`block px-3 py-2.5 text-base font-medium rounded-sm flex items-center ${
+                  pathname === item.href
+                    ? "bg-gray-800 text-blue-400"
+                    : "text-gray-300 hover:bg-gray-800 hover:text-white"
+                }`}
+                onClick={item.name === "Features" ? handleFeaturesClick : () => setIsMenuOpen(false)}
+                target={item.name === "Documentation" || item.name === "Learn" ? "_blank" : undefined}
+                rel={item.name === "Documentation" || item.name === "Learn" ? "noopener noreferrer" : undefined}
               >
-                <Button 
-                  variant="outline" 
-                  size="icon"
-                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                  className="rounded-full border border-gray-700 hover:border-blue-500 bg-gray-900/50 hover:bg-gray-800/80"
-                >
-                  <motion.div
-                    whileHover={{ rotate: 180 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    {mounted ? (
-                      theme === "dark" ? <Sun className="h-4 w-4 text-yellow-400" /> : <Moon className="h-4 w-4 text-slate-300" />
-                    ) : null}
-                  </motion.div>
-                </Button>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Button 
-                    variant="default" 
-                    className="rounded-md bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white px-5 py-2 transition-all duration-300 border-0 shadow-lg shadow-blue-500/20"
-                  >
-                    <Download className="h-4 w-4 mr-2" />
-                    Download
-                  </Button>
-                </motion.div>
-              </motion.div>
+                {item.icon}
+                {item.name}
+              </Link>
+            ))}
+            <div className="flex items-center justify-between pt-4 pb-2">
+              <button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="p-2.5 rounded-full text-gray-300 bg-gray-800"
+                aria-label="Toggle color theme"
+              >
+                {mounted ? (
+                  theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />
+                ) : null}
+              </button>
+              
+              <Button 
+                variant="default" 
+                className="rounded-sm bg-blue-600 hover:bg-blue-500 text-white px-5 py-2"
+              >
+                <Download className="h-4 w-4 mr-2" />
+                Download
+              </Button>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.nav>
+          </div>
+        </div>
+      )}
+    </nav>
   )
 } 
