@@ -635,20 +635,30 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
-              <Button size="lg" className="rounded-md bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white px-8 py-6 text-base transition-all duration-300 shadow-lg shadow-blue-600/20 border-0">
-                <Download className="h-4 w-4 mr-2" />
+              <Link 
+                href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 transition-all duration-200 flex items-center"
+              >
+              <Download className="h-4 w-4 mr-2" />
                 Download Now
-              </Button>
+              </Link>
             </motion.div>
             
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
-              <Button variant="outline" size="lg" className="rounded-md border-gray-700 hover:border-blue-500 bg-gray-900/50 hover:bg-gray-800 px-8 py-6 text-base transition-all duration-300 text-gray-200">
-                <PlayCircle className="h-4 w-4 mr-2" />
+              <Link
+                href="https://www.youtube.com/@DubheEngine"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md border-gray-700 hover:border-blue-500 bg-gray-900/50 hover:bg-gray-800 px-8 py-3 text-base transition-all duration-300 text-gray-200 inline-flex items-center"
+              >
+              <PlayCircle className="h-4 w-4 mr-2" />
                 Watch Tutorial
-              </Button>
+              </Link>
             </motion.div>
           </motion.div>
           
@@ -770,15 +780,15 @@ export default function Hero() {
                       <span className="text-gray-500 mr-2">4.</span>
                       <span className="bg-gray-800/50 px-2 py-0.5 rounded">pnpm run dev</span>
                     </div>
-                  </div>
-                </div>
-                
+          </div>
+        </div>
+        
                 <div className="mt-6 cursor-animation flex items-center">
                   <span className="text-cyan-400 mr-2">$</span>
                   <span className="inline-block w-3 h-5 bg-white animate-pulse"></span>
                 </div>
               </div>
-            </div>
+          </div>
             
             {/* Overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-20 pointer-events-none"></div>

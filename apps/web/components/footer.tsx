@@ -17,8 +17,8 @@ const navigation = {
   community: [
     { name: "Forum", href: "/forums" },
     { name: "Discord", href: "#" },
-    { name: "GitHub", href: "#" },
-    { name: "Bilibili", href: "#" },
+    { name: "GitHub", href: "https://github.com/0xobelisk/dubhe" },
+    { name: "Youtubi", href: "https://www.youtube.com/@DubheEngine" },
   ],
   company: [
     { name: "About Us", href: "/about" },
@@ -90,7 +90,12 @@ export default function Footer() {
                 <ul role="list" className="mt-4 space-y-3">
                   {navigation.resources.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                      <Link 
+                        href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group"
+                      >
                         <span className="h-px w-4 bg-gray-700 mr-2 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500" />
                         {item.name}
                       </Link>

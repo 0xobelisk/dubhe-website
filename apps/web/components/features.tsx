@@ -358,8 +358,10 @@ export default function Features() {
                         whileHover={{ x: 5 }}
                         whileTap={{ scale: 0.97 }}
                       >
-                        <Button 
-                          variant="ghost" 
+                        <Link 
+                          href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-blue-400 hover:text-blue-300 p-0 hover:bg-transparent"
                         >
                           <span>Learn more</span>
@@ -369,7 +371,7 @@ export default function Features() {
                           >
                             <ArrowRight className="ml-2 h-4 w-4" />
                           </motion.div>
-                        </Button>
+                        </Link>
                       </motion.div>
                     </motion.div>
                   </div>

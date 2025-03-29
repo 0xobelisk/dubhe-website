@@ -29,13 +29,15 @@ export default function GetStarted() {
             Join thousands of developers and studios already using Dubhe Engine to bring their creative visions to life.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-4">
-            <Button 
-              size="lg" 
-              className="gap-2 w-full sm:w-auto rounded-md bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white px-8 py-6 text-base transition-all duration-300 shadow-lg shadow-blue-600/20 border-0"
+            <Link 
+              href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 transition-all duration-200 flex items-center"
             >
               <Download className="h-4 w-4 mr-2" />
               Download Now
-            </Button>
+            </Link>
             <Button 
               variant="outline" 
               size="lg" 
@@ -111,11 +113,14 @@ export default function GetStarted() {
                     <span className="text-5xl font-bold tracking-tight text-white">$0</span>
                     <span className="text-sm font-medium text-gray-400">for indie developers</span>
                   </p>
-                  <Button 
+                  <Link 
+                    href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-10 w-full rounded-md bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white transition-all duration-300 border-0 shadow-lg shadow-blue-900/40"
                   >
                     Download Free Version
-                  </Button>
+                  </Link>
                   <p className="mt-6 text-xs leading-5 text-gray-400 text-center">
                     Free for personal and educational use <br />
                     Revenue cap of $15,000
