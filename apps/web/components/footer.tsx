@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, GitBranch, Github, Twitter, Youtube } from "lucide-react"
 
 const navigation = {
@@ -47,10 +48,13 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-6">
             <Link href="/" className="group flex items-center">
-              <div className="h-10 w-10 rounded-md bg-gradient-to-br from-blue-600 to-blue-400 p-2 mr-3 flex items-center justify-center group-hover:from-blue-500 group-hover:to-blue-300 transition-all duration-300">
-                <GitBranch className="h-5 w-5 text-white" />
-              </div>
-              <span className="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300">Dubhe Engine</span>
+              <Image 
+                src="/logo/light.png" 
+                alt="Dubhe Engine" 
+                width={160} 
+                height={48} 
+                className="h-10 w-auto transition-opacity duration-200 hover:opacity-80"
+              />
             </Link>
             <p className="text-sm leading-6 text-gray-400">
               Create exceptional dapp experiences with the most advanced dapp development platform.

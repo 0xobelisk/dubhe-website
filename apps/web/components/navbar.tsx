@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X, Download, Moon, Sun, Cpu, Code, Zap, BookOpen } from "lucide-react"
 import { useState, useEffect } from "react"
@@ -60,9 +61,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-full">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="text-xl font-bold text-white hover:text-blue-400 transition-colors duration-200">
-                Dubhe Engine
-              </span>
+              <Image 
+                src="/logo/light.png" 
+                alt="Dubhe Engine" 
+                width={120} 
+                height={36} 
+                className="h-8 w-auto transition-opacity duration-200 hover:opacity-80"
+              />
             </Link>
           </div>
           

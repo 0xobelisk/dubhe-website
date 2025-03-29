@@ -788,7 +788,7 @@ export default function Hero() {
                   <span className="inline-block w-3 h-5 bg-white animate-pulse"></span>
                 </div>
               </div>
-          </div>
+            </div>
             
             {/* Overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-20 pointer-events-none"></div>

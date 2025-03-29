@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Button } from "@workspace/ui/components/button"
 import { ChevronLeft, ChevronRight, Play, Code, ExternalLink, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 interface Project {
   id: number;
@@ -12,16 +13,18 @@ interface Project {
   category: string;
   image: string;
   studio: string;
+  app_link: string;
 }
 
 const projects: Project[] = [
   {
     id: 1,
     title: "Meark",
-    description: "An epic space exploration game with procedurally generated planets and immersive narrative experiences.",
+    description: "Meark is a privacy-preserving DeFi liquidity hub built on dubhe engine.",
     category: "Defi",
     image: "https://merak.obelisk.build/merak-logo.svg",
     studio: "Dubhe Community",
+    app_link: "https://merak.obelisk.build"
   },
   {
     id: 2,
@@ -30,23 +33,8 @@ const projects: Project[] = [
     category: "Gaming",
     image: "https://merak.obelisk.build/merak-logo.svg",
     studio: "Numeron OS",
+    app_link: "https://numeron.world"
   },
-  // {
-  //   id: 3,
-  //   title: "",
-  //   description: "A narrative-driven horror game set in a modern city, featuring deep psychological elements.",
-  //   category: "Horror",
-  //   image: "https://images.unsplash.com/photo-1605806616949-1e87ac5db50f?q=80&w=2574&auto=format&fit=crop",
-  //   studio: "Shadow Interactive",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Speed Drift",
-  //   description: "A high-energy racing game with realistic physics and customizable vehicles.",
-  //   category: "Racing",
-  //   image: "https://images.unsplash.com/photo-1543872084-c7bd3822856f?q=80&w=2574&auto=format&fit=crop",
-  //   studio: "Velocity Games",
-  // },
 ]
 
 export default function Showcase() {
@@ -127,13 +115,15 @@ export default function Showcase() {
                     <p className="mt-2 text-base text-gray-300">{activeProject.description}</p>
                     
                     <div className="mt-6 flex gap-4">
-                      <Button
-                        variant="outline"
-                        className="rounded bg-blue-500/10 border-blue-500/30 hover:bg-blue-500/20 hover:border-blue-500/50 text-white"
+                      <Link
+                        href={activeProject.app_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded bg-blue-500/10 border-blue-500/30 hover:bg-blue-500/20 hover:border-blue-500/50 text-white flex items-center px-4 py-2 text-sm font-medium transition-colors"
                       >
                         <span>View Project</span>
                         <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
+                      </Link>
                       <Button
                         variant="ghost"
                         className="rounded text-gray-400 hover:text-white"
