@@ -5,6 +5,7 @@ import Features from "@/components/features"
 import Showcase from "@/components/showcase"
 import GetStarted from "@/components/get-started"
 
+
 export default function Page() {
   return (
     <main className="flex flex-col min-h-screen">

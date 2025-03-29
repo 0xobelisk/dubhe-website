@@ -1,81 +1,84 @@
 import Link from "next/link"
+import { ArrowRight, GitBranch, Github, Twitter, Youtube } from "lucide-react"
 
 const navigation = {
   product: [
-    { name: "特性", href: "/features" },
-    { name: "价格", href: "/pricing" },
-    { name: "下载", href: "/download" },
-    { name: "版本说明", href: "/release-notes" },
+    { name: "Features", href: "/features" },
+    { name: "Pricing", href: "/pricing" },
+    { name: "Download", href: "/download" },
+    { name: "Release Notes", href: "/release-notes" },
   ],
   resources: [
-    { name: "文档", href: "/docs" },
-    { name: "教程", href: "/tutorials" },
-    { name: "API参考", href: "/api" },
-    { name: "示例", href: "/samples" },
+    { name: "Documentation", href: "/docs" },
+    { name: "Tutorials", href: "/tutorials" },
+    { name: "API Reference", href: "/api" },
+    { name: "Samples", href: "/samples" },
   ],
   community: [
-    { name: "论坛", href: "/forums" },
+    { name: "Forum", href: "/forums" },
     { name: "Discord", href: "#" },
     { name: "GitHub", href: "#" },
-    { name: "哔哩哔哩", href: "#" },
+    { name: "Bilibili", href: "#" },
   ],
   company: [
-    { name: "关于我们", href: "/about" },
-    { name: "博客", href: "/blog" },
-    { name: "招聘", href: "/careers" },
-    { name: "联系我们", href: "/contact" },
+    { name: "About Us", href: "/about" },
+    { name: "Blog", href: "/blog" },
+    { name: "Careers", href: "/careers" },
+    { name: "Contact Us", href: "/contact" },
   ],
   legal: [
-    { name: "隐私政策", href: "/privacy" },
-    { name: "服务条款", href: "/terms" },
-    { name: "许可协议", href: "/license" },
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms of Service", href: "/terms" },
+    { name: "License Agreement", href: "/license" },
   ],
 }
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800" aria-labelledby="footer-heading">
+    <footer className="border-t border-gray-800 relative" aria-labelledby="footer-heading">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-30" />
+      
       <h2 id="footer-heading" className="sr-only">
-        页脚
+        Footer
       </h2>
-      <div className="mx-auto max-w-[1072px] px-6 pb-8 pt-16 sm:pt-20 lg:px-8">
+      <div className="mx-auto max-w-[1200px] px-6 pb-12 pt-16 sm:pt-20 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-6">
-            <Link href="/" className="text-2xl font-semibold text-foreground tracking-tight">
-              Dubhe Engine
+            <Link href="/" className="group flex items-center">
+              <div className="h-10 w-10 rounded-md bg-gradient-to-br from-blue-600 to-blue-400 p-2 mr-3 flex items-center justify-center group-hover:from-blue-500 group-hover:to-blue-300 transition-all duration-300">
+                <GitBranch className="h-5 w-5 text-white" />
+              </div>
+              <span className="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300">Dubhe Engine</span>
             </Link>
-            <p className="text-sm leading-6 text-foreground/70">
-              使用最先进的游戏开发平台，创造卓越的游戏体验。
+            <p className="text-sm leading-6 text-gray-400">
+              Create exceptional gaming experiences with the most advanced game development platform.
             </p>
-            <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-[#0071e3] transition-colors duration-300">
-                <span className="sr-only">微博</span>
-                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                </svg>
+            <div className="flex space-x-5">
+              <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
+                <span className="sr-only">Twitter</span>
+                <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#0071e3] transition-colors duration-300">
+              <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
                 <span className="sr-only">GitHub</span>
-                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
-                </svg>
+                <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#0071e3] transition-colors duration-300">
-                <span className="sr-only">哔哩哔哩</span>
-                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fillRule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clipRule="evenodd" />
-                </svg>
+              <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
+                <span className="sr-only">YouTube</span>
+                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-medium">产品</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <h3 className="text-sm font-semibold text-white">Product</h3>
+                <ul role="list" className="mt-4 space-y-3">
                   {navigation.product.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-foreground/70 hover:text-[#0071e3] transition-colors duration-300">
+                      <Link href={item.href} className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                        <span className="h-px w-4 bg-gray-700 mr-2 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500" />
                         {item.name}
                       </Link>
                     </li>
@@ -83,11 +86,12 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-medium">资源</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <h3 className="text-sm font-semibold text-white">Resources</h3>
+                <ul role="list" className="mt-4 space-y-3">
                   {navigation.resources.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-foreground/70 hover:text-[#0071e3] transition-colors duration-300">
+                      <Link href={item.href} className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                        <span className="h-px w-4 bg-gray-700 mr-2 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500" />
                         {item.name}
                       </Link>
                     </li>
@@ -97,11 +101,12 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-medium">社区</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <h3 className="text-sm font-semibold text-white">Community</h3>
+                <ul role="list" className="mt-4 space-y-3">
                   {navigation.community.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-foreground/70 hover:text-[#0071e3] transition-colors duration-300">
+                      <Link href={item.href} className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                        <span className="h-px w-4 bg-gray-700 mr-2 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500" />
                         {item.name}
                       </Link>
                     </li>
@@ -109,11 +114,12 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-medium">公司</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <h3 className="text-sm font-semibold text-white">Company</h3>
+                <ul role="list" className="mt-4 space-y-3">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-foreground/70 hover:text-[#0071e3] transition-colors duration-300">
+                      <Link href={item.href} className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                        <span className="h-px w-4 bg-gray-700 mr-2 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500" />
                         {item.name}
                       </Link>
                     </li>
@@ -123,16 +129,41 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-gray-200 dark:border-gray-800 pt-8 sm:mt-20 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-xs leading-5 text-foreground/60">
-            &copy; {new Date().getFullYear()} Dubhe Engine. 保留所有权利。
+        
+        {/* Call to action */}
+        <div className="mt-16 border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between">
+          <div className="flex-1">
+            <h3 className="text-sm font-semibold text-white">Subscribe to our newsletter</h3>
+            <p className="mt-2 text-sm text-gray-400">Get the latest updates and news directly to your inbox.</p>
+          </div>
+          <div className="mt-4 md:mt-0">
+            <div className="relative rounded-md shadow-sm overflow-hidden">
+              <div className="flex">
+                <input 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  className="px-4 py-2 bg-gray-900 border-0 focus:ring-0 focus:outline-none text-white text-sm w-64 rounded-l-md" 
+                />
+                <button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white px-4 py-2 text-sm font-medium transition-all duration-200 rounded-r-md flex items-center">
+                  Subscribe
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Legal section */}
+        <div className="mt-8 border-t border-gray-800 pt-8 sm:mt-12 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-xs leading-5 text-gray-500">
+            &copy; {new Date().getFullYear()} Dubhe Engine. All rights reserved.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             {navigation.legal.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-xs leading-5 text-foreground/60 hover:text-[#0071e3] transition-colors duration-300"
+                className="text-xs leading-5 text-gray-500 hover:text-blue-400 transition-colors duration-200"
               >
                 {item.name}
               </Link>

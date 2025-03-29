@@ -16,8 +16,8 @@ const fontMono = Geist_Mono({
 })
 
 export const metadata = {
-  title: "Dubhe Engine | Create Without Limits",
-  description: "Dubhe Engine is a powerful, versatile game engine designed for creators who want to bring their visions to life.",
+  title: "Dubhe Engine | Professional Game Development Platform",
+  description: "Dubhe Engine is a powerful, versatile game engine designed for creators who want to bring their visions to life with advanced tools and workflows.",
 }
 
 export default function RootLayout({
@@ -26,13 +26,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="dark">
       <body
-        className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased min-h-screen flex flex-col`}
+        className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased min-h-screen flex flex-col bg-black text-white`}
       >
         <Providers>
           <Navbar />
-          <div className="flex-1 pt-16">
+          <div className="flex-1">
             {children}
           </div>
           <Footer />
