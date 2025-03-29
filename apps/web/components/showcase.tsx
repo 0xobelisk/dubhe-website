@@ -6,6 +6,27 @@ import { Button } from "@workspace/ui/components/button"
 import { ChevronLeft, ChevronRight, Play, Code, ExternalLink, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
+// 添加自定义Numeron Logo组件
+function NumeronLogo({ className = "" }: { className?: string }) {
+  return (
+    <div className={`flex items-center justify-center w-full h-full ${className}`}>
+      <div className="bg-[#453a6e] w-full h-full flex items-center justify-center px-6 py-3 rounded-full">
+        <span className="text-[#f4d76c] font-bold text-2xl tracking-wide whitespace-nowrap" style={{ fontFamily: 'Arial, sans-serif' }}>
+          NUMER<span className="relative inline-flex items-center">
+            <span className="text-[#f4d76c]">O</span>
+            <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="5" stroke="#f4d76c" strokeWidth="1.5" fill="none"/>
+                <circle cx="12" cy="12" r="2" fill="#f4d76c"/>
+              </svg>
+            </span>
+          </span>N
+        </span>
+      </div>
+    </div>
+  );
+}
+
 interface Project {
   id: number;
   title: string;
@@ -14,6 +35,7 @@ interface Project {
   image: string;
   studio: string;
   app_link: string;
+  customLogo?: boolean; // 添加自定义logo标志
 }
 
 const projects: Project[] = [
@@ -22,7 +44,7 @@ const projects: Project[] = [
     title: "Meark",
     description: "Meark is a privacy-preserving DeFi liquidity hub built on dubhe engine.",
     category: "Defi",
-    image: "https://merak.obelisk.build/merak-logo.svg",
+    image: "/logo/merak/light.png",
     studio: "Dubhe Community",
     app_link: "https://merak.obelisk.build"
   },
@@ -31,9 +53,20 @@ const projects: Project[] = [
     title: "Numeron",
     description: "A fantasy adventure game with stunning visual effects and refined combat mechanics.",
     category: "Gaming",
-    image: "https://merak.obelisk.build/merak-logo.svg",
+    image: "/logo/numeron/logo.png", // 保持此路径以防将来添加实际图片
     studio: "Numeron OS",
-    app_link: "https://numeron.world"
+    app_link: "https://numeron.world",
+    customLogo: true // 使用自定义logo
+  },
+  {
+    id: 3,
+    title: "Phad",
+    description: "re-encrypted expansion framework",
+    category: "infra",
+    image: "/logo/phad/light.png", // 保持此路径以防将来添加实际图片
+    studio: "Obelisk Labs",
+    app_link: "https://phad.obelisk.build",
+    // customLogo: true // 使用自定义logo
   },
 ]
 
@@ -79,14 +112,38 @@ export default function Showcase() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             {/* Main Showcase */}
             <div className="lg:col-span-3 relative">
+              <div className="mb-4 flex items-center justify-between">
+                <span className="inline-flex items-center rounded-full bg-blue-500/20 px-3 py-1 text-xs font-semibold text-blue-400 w-fit">
+                  {activeProject.category}
+                </span>
+                <div className="flex space-x-3">
+                  <Button variant="outline" size="icon" onClick={prevProject} className="rounded-full bg-black/50 backdrop-blur-sm border-gray-700/30 hover:bg-black/70 hover:border-blue-500/50">
+                    <ChevronLeft className="h-4 w-4 text-white" />
+                  </Button>
+                  <Button variant="outline" size="icon" onClick={nextProject} className="rounded-full bg-black/50 backdrop-blur-sm border-gray-700/30 hover:bg-black/70 hover:border-blue-500/50">
+                    <ChevronRight className="h-4 w-4 text-white" />
+                  </Button>
+                </div>
+              </div>
+              
               <div className="group relative overflow-hidden rounded-xl shadow-2xl shadow-blue-900/10 border border-gray-800">
                 <div className="relative aspect-[16/9] w-full transform transition-transform duration-700 hover:scale-105">
-                  <Image
-                    src={activeProject.image}
-                    alt={activeProject.title}
-                    fill
-                    className="object-cover transition-all duration-700 group-hover:brightness-110"
-                  />
+                  {activeProject.customLogo ? (
+                    <div className="absolute inset-0 flex items-center justify-center bg-[#09101d] p-4">
+                      <div className="max-w-[180px]">
+                        <NumeronLogo />
+                      </div>
+                    </div>
+                  ) : (
+                    <Image
+                      src={activeProject.image}
+                      alt={activeProject.title}
+                      fill
+                      className="object-contain bg-gray-900 p-4 transition-all duration-700 group-hover:brightness-110"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      unoptimized
+                    />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
                 </div>
                 
@@ -95,20 +152,17 @@ export default function Showcase() {
                   <div className="flex flex-col">
                     <div className="flex justify-between items-start">
                       <div>
-                        <span className="inline-flex items-center rounded-full bg-blue-500/20 px-3 py-1 text-xs font-semibold text-blue-400 w-fit mb-3">
-                          {activeProject.category}
-                        </span>
                         <h3 className="text-2xl font-bold text-white sm:text-3xl mb-1">{activeProject.title}</h3>
                         <p className="text-sm text-gray-400 mb-4">By {activeProject.studio}</p>
                       </div>
                       
                       <div className="flex space-x-3">
-                        <Button variant="outline" size="icon" className="rounded-full bg-black/30 backdrop-blur-sm border-gray-700/30 hover:bg-black/50 hover:border-blue-500/50">
+                        {/* <Button variant="outline" size="icon" className="rounded-full bg-black/30 backdrop-blur-sm border-gray-700/30 hover:bg-black/50 hover:border-blue-500/50">
                           <Play className="h-4 w-4 text-blue-400" />
                         </Button>
                         <Button variant="outline" size="icon" className="rounded-full bg-black/30 backdrop-blur-sm border-gray-700/30 hover:bg-black/50 hover:border-blue-500/50">
                           <Code className="h-4 w-4 text-blue-400" />
-                        </Button>
+                        </Button> */}
                       </div>
                     </div>
                     
@@ -135,16 +189,6 @@ export default function Showcase() {
                   </div>
                 </div>
               </div>
-              
-              {/* Navigation Controls */}
-              <div className="absolute right-6 bottom-6 flex space-x-3">
-                <Button variant="outline" size="icon" onClick={prevProject} className="rounded-full bg-black/50 backdrop-blur-sm border-gray-700/30 hover:bg-black/70 hover:border-blue-500/50">
-                  <ChevronLeft className="h-4 w-4 text-white" />
-                </Button>
-                <Button variant="outline" size="icon" onClick={nextProject} className="rounded-full bg-black/50 backdrop-blur-sm border-gray-700/30 hover:bg-black/70 hover:border-blue-500/50">
-                  <ChevronRight className="h-4 w-4 text-white" />
-                </Button>
-              </div>
             </div>
             
             {/* Project Thumbnails */}
@@ -162,13 +206,23 @@ export default function Showcase() {
                           : "hover:bg-gray-800 border border-transparent"
                       }`}
                     >
-                      <div className="h-16 w-24 flex-none overflow-hidden rounded-md relative">
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          fill
-                          className={`object-cover transition-all duration-300 ${index === activeIndex ? 'brightness-110' : 'brightness-75'}`}
-                        />
+                      <div className="h-16 w-24 flex-none overflow-hidden rounded-md relative bg-[#09101d]">
+                        {project.customLogo ? (
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="scale-75">
+                              <NumeronLogo />
+                            </div>
+                          </div>
+                        ) : (
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className={`object-contain p-1 transition-all duration-300 ${index === activeIndex ? 'brightness-110' : 'brightness-75'}`}
+                            sizes="96px"
+                            unoptimized
+                          />
+                        )}
                       </div>
                       <div className="min-w-0 flex-auto">
                         <p className={`text-sm font-medium leading-6 ${index === activeIndex ? 'text-blue-400' : 'text-white'}`}>

@@ -68,9 +68,9 @@ export default function GetStarted() {
                   {[
                     { text: "Complete Engine Source Code", icon: Code },
                     { text: "Visual Scripting System", icon: Layers },
-                    { text: "Advanced Physics Simulation", icon: Globe },
+                    { text: "Automated Storage Contracts", icon: Globe },
                     { text: "Cross-platform Deployment", icon: Server },
-                    { text: "Asset Marketplace Access", icon: FileText },
+                    { text: "Obelisk Labs Saas Access", icon: FileText },
                     { text: "Regular Updates & Support", icon: Download },
                     { text: "Developer Community Access", icon: ExternalLink },
                     { text: "Comprehensive Documentation", icon: FileText },
@@ -108,27 +108,27 @@ export default function GetStarted() {
                 </div>
                 
                 <div className="mx-auto max-w-sm relative z-10">
-                  <p className="text-base font-semibold text-white">Start with Free Version</p>
+                  <p className="text-base font-semibold text-white">Start with Community Version</p>
                   <p className="mt-6 flex items-baseline gap-x-2">
                     <span className="text-5xl font-bold tracking-tight text-white">$0</span>
                     <span className="text-sm font-medium text-gray-400">for indie developers</span>
                   </p>
-                  <Link 
+                  {/* <Link 
                     href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-10 w-full rounded-md bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white transition-all duration-300 border-0 shadow-lg shadow-blue-900/40"
                   >
                     Download Free Version
-                  </Link>
-                  <p className="mt-6 text-xs leading-5 text-gray-400 text-center">
+                  </Link> */}
+                  {/* <p className="mt-6 text-xs leading-5 text-gray-400 text-center">
                     Free for personal and educational use <br />
-                    Revenue cap of $15,000
-                  </p>
+                    Revenue cap of $100,000
+                  </p> */}
                   <div className="mt-8 flex justify-center">
-                    <Link href="/pricing" className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 border border-gray-700 hover:border-blue-500/50 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300">
+                    <Link href="https://dubhe.obelisk.build/dubhe/sui/quick-start" className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 border border-gray-700 hover:border-blue-500/50 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300">
                       <FileText className="h-3.5 w-3.5 text-blue-400" />
-                      <span>View All Pricing Plans</span>
+                      <span>Start to Learn</span>
                       <ChevronRight className="h-3.5 w-3.5 text-blue-400" />
                     </Link>
                   </div>
@@ -148,8 +148,8 @@ export default function GetStarted() {
             {[
               { name: "Discord", href: "#", icon: <Bot className="h-4 w-4 mr-2 text-blue-400" /> },
               { name: "Forum", href: "#", icon: <Globe className="h-4 w-4 mr-2 text-blue-400" /> },
-              { name: "GitHub", href: "#", icon: <Code className="h-4 w-4 mr-2 text-blue-400" /> },
-              { name: "Bilibili", href: "#", icon: <Play className="h-4 w-4 mr-2 text-blue-400" /> },
+              { name: "GitHub", href: "https://github.com/0xobelisk/dubhe", icon: <Code className="h-4 w-4 mr-2 text-blue-400" /> },
+              { name: "Youtubi", href: "https://www.youtube.com/@DubheEngine", icon: <Play className="h-4 w-4 mr-2 text-blue-400" /> },
             ].map((item) => (
               <Link
                 key={item.name}

@@ -57,7 +57,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm leading-6 text-gray-400">
-              Create exceptional dapp experiences with the most advanced dapp development platform.
+              Create exceptional dapp experiences with the most advanced Move development platform.
             </p>
             <div className="flex space-x-5">
               <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
