@@ -53,7 +53,7 @@ export default function Footer() {
               <span className="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300">Dubhe Engine</span>
             </Link>
             <p className="text-sm leading-6 text-gray-400">
-              Create exceptional gaming experiences with the most advanced game development platform.
+              Create exceptional dapp experiences with the most advanced dapp development platform.
             </p>
             <div className="flex space-x-5">
               <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
@@ -156,7 +156,7 @@ export default function Footer() {
         {/* Legal section */}
         <div className="mt-8 border-t border-gray-800 pt-8 sm:mt-12 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs leading-5 text-gray-500">
-            &copy; {new Date().getFullYear()} Dubhe Engine. All rights reserved.
+            &copy; {new Date().getFullYear()} Dubhe Technology Group Limited. All rights reserved.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             {navigation.legal.map((item) => (
