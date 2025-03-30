@@ -636,7 +636,7 @@ export default function Hero() {
               whileTap={{ scale: 0.98 }}
             >
               <Link 
-                href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+                href="https://dubhe-docs.obelisk.build/dubhe/sui/quick-start"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 transition-all duration-200 flex items-center"

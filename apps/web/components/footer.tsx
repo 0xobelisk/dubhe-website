@@ -95,7 +95,7 @@ export default function Footer() {
                   {navigation.resources.map((item) => (
                     <li key={item.name}>
                       <Link 
-                        href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+                        href="https://dubhe-docs.obelisk.build/dubhe/sui/quick-start"
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group"

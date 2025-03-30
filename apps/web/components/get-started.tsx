@@ -30,7 +30,7 @@ export default function GetStarted() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-4">
             <Link 
-              href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+              href="https://dubhe-docs.obelisk.build/dubhe/sui/quick-start"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 transition-all duration-200 flex items-center"
@@ -113,20 +113,8 @@ export default function GetStarted() {
                     <span className="text-5xl font-bold tracking-tight text-white">$0</span>
                     <span className="text-sm font-medium text-gray-400">for indie developers</span>
                   </p>
-                  {/* <Link 
-                    href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-10 w-full rounded-md bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white transition-all duration-300 border-0 shadow-lg shadow-blue-900/40"
-                  >
-                    Download Free Version
-                  </Link> */}
-                  {/* <p className="mt-6 text-xs leading-5 text-gray-400 text-center">
-                    Free for personal and educational use <br />
-                    Revenue cap of $100,000
-                  </p> */}
                   <div className="mt-8 flex justify-center">
-                    <Link href="https://dubhe.obelisk.build/dubhe/sui/quick-start" className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 border border-gray-700 hover:border-blue-500/50 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300">
+                    <Link href="https://dubhe-docs.obelisk.build/dubhe/sui/quick-start" className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 border border-gray-700 hover:border-blue-500/50 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300">
                       <FileText className="h-3.5 w-3.5 text-blue-400" />
                       <span>Start to Learn</span>
                       <ChevronRight className="h-3.5 w-3.5 text-blue-400" />

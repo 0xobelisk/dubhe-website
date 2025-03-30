@@ -105,7 +105,7 @@ export default function Navbar() {
             </button> */}
             
             <Link 
-              href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+              href="https://dubhe-docs.obelisk.build/dubhe/sui/quick-start"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-sm bg-blue-600 hover:bg-blue-500 text-white font-medium px-4 py-2 transition-all duration-200 flex items-center"
@@ -160,7 +160,7 @@ export default function Navbar() {
               </button>
               
               <Link 
-                href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+                href="https://dubhe-docs.obelisk.build/dubhe/sui/quick-start"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-sm bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 flex items-center"

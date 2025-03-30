@@ -359,7 +359,7 @@ export default function Features() {
                         whileTap={{ scale: 0.97 }}
                       >
                         <Link 
-                          href="https://dubhe.obelisk.build/dubhe/sui/quick-start"
+                          href="https://dubhe-docs.obelisk.build/dubhe/sui/quick-start"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blue-400 hover:text-blue-300 p-0 hover:bg-transparent"
