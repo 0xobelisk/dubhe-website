@@ -45,7 +45,7 @@ const projects: Project[] = [
     description: "Meark is a privacy-preserving DeFi liquidity hub built on dubhe engine.",
     category: "Defi",
     image: "/logo/merak/light.png",
-    studio: "Dubhe Community",
+    studio: "Obelisk Labs",
     app_link: "https://merak.obelisk.build"
   },
   {
@@ -180,7 +180,7 @@ export default function Showcase() {
                       </Link>
                       <Button
                         variant="ghost"
-                        className="rounded text-gray-400 hover:text-white"
+                        className="rounded text-gray-400"
                       >
                         <span>Made with Dubhe Engine</span>
                         <ExternalLink className="ml-2 h-4 w-4" />
@@ -246,13 +246,13 @@ export default function Showcase() {
                     <span className="text-gray-400">
                       {activeIndex + 1}/{projects.length}
                     </span>
-                    <Button 
+                    {/* <Button 
                       variant="link" 
                       className="text-blue-400 hover:text-blue-300 p-0"
                     >
                       <span>View all projects</span>
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </div>

@@ -4,33 +4,33 @@ import { ArrowRight, GitBranch, Github, Twitter, Youtube } from "lucide-react"
 
 const navigation = {
   product: [
-    { name: "Features", href: "/features" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Download", href: "/download" },
-    { name: "Release Notes", href: "/release-notes" },
+    // { name: "Features", href: "/features" },
+    // { name: "Pricing", href: "/pricing" },
+    { name: "Download", href: "https://dubhe-docs.obelisk.build/dubhe/sui/quick-start" },
+    { name: "Release Notes", href: "https://github.com/0xobelisk/dubhe/releases" },
   ],
   resources: [
-    { name: "Documentation", href: "/docs" },
-    { name: "Tutorials", href: "/tutorials" },
-    { name: "API Reference", href: "/api" },
-    { name: "Samples", href: "/samples" },
+    { name: "Documentation", href: "https://dubhe-docs.obelisk.build/" },
+    { name: "Tutorials", href: "https://dubhe-docs.obelisk.build/dubhe/sui/tutorials/" },
+    { name: "CLI Reference", href: "https://dubhe-docs.obelisk.build/dubhe/sui/cli/" },
+    { name: "Client", href: "https://dubhe-docs.obelisk.build/dubhe/sui/client/" },
   ],
   community: [
-    { name: "Forum", href: "/forums" },
+    // { name: "Forum", href: "/forums" },
     { name: "Discord", href: "#" },
     { name: "GitHub", href: "https://github.com/0xobelisk/dubhe" },
     { name: "Youtubi", href: "https://www.youtube.com/@DubheEngine" },
   ],
   company: [
-    { name: "About Us", href: "/about" },
-    { name: "Blog", href: "/blog" },
-    { name: "Careers", href: "/careers" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "About Us", href: "https://obelisk.build" },
+    { name: "Blog", href: "https://obelisk.build/blog" },
+    // { name: "Careers", href: "/careers" },
+    { name: "Contact Us", href: "https://obelisk.build/contact" },
   ],
   legal: [
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
-    { name: "License Agreement", href: "/license" },
+    { name: "Privacy Policy", href: "https://obelisk.build/privacy-policy" },
+    { name: "Terms of Service", href: "https://obelisk.build/terms-of-use" },
+    { name: "License Agreement", href: "https://github.com/0xobelisk/dubhe?tab=License-1-ov-file#readme" },
   ],
 }
 
@@ -60,15 +60,15 @@ export default function Footer() {
               Create exceptional dapp experiences with the most advanced Move development platform.
             </p>
             <div className="flex space-x-5">
-              <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
+              <a href="https://x.com/DubheEngine" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
                 <span className="sr-only">Twitter</span>
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
+              <a href="https://github.com/0xobelisk/dubhe" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
                 <span className="sr-only">GitHub</span>
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
+              <a href="https://www.youtube.com/@DubheEngine" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
                 <span className="sr-only">YouTube</span>
                 <Youtube className="h-5 w-5" />
               </a>
@@ -140,7 +140,7 @@ export default function Footer() {
         </div>
         
         {/* Call to action */}
-        <div className="mt-16 border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between">
+        {/* <div className="mt-16 border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between">
           <div className="flex-1">
             <h3 className="text-sm font-semibold text-white">Subscribe to our newsletter</h3>
             <p className="mt-2 text-sm text-gray-400">Get the latest updates and news directly to your inbox.</p>
@@ -160,7 +160,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         
         {/* Legal section */}
         <div className="mt-8 border-t border-gray-800 pt-8 sm:mt-12 flex flex-col md:flex-row justify-between items-center">

@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { Menu, X, Download, Moon, Sun, Cpu, Code, Zap, BookOpen } from "lucide-react"
+import { Menu, X, Download, Moon, Sun, Cpu, Code, Zap, BookOpen, Bot, Globe } from "lucide-react"
 import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
 import { Button } from "@workspace/ui/components/button"
@@ -28,10 +28,10 @@ export default function Navbar() {
 
   const navigation = [
     { name: "Features", href: "/features", icon: <Zap className="h-4 w-4 mr-1.5" /> },
-    { name: "Documentation", href: "/docs", icon: <Code className="h-4 w-4 mr-1.5" /> },
-    { name: "Learn", href: "/learn", icon: <Cpu className="h-4 w-4 mr-1.5" /> },
-    { name: "Community", href: "/community", icon: null },
-    { name: "Blog", href: "/blog", icon: null },
+    { name: "Documentation", href: "https://dubhe-docs.obelisk.build", icon: <Code className="h-4 w-4 mr-1.5" /> },
+    { name: "Telegram", href: "https://t.me/dubheengine", icon: <Globe className="h-4 w-4 mr-2 " /> },
+    { name: "Discord", href: "https://t.me/dubheengine", icon: <Bot className="h-4 w-4 mr-2 " /> },
+    { name: "Blog", href: "https://obelisk.build/blog", icon: <BookOpen className="h-4 w-4 mr-2 " /> },
   ]
 
   const handleFeaturesClick = (e: React.MouseEvent) => {
@@ -111,7 +111,7 @@ export default function Navbar() {
               className="rounded-sm bg-blue-600 hover:bg-blue-500 text-white font-medium px-4 py-2 transition-all duration-200 flex items-center"
             >
               <Download className="h-4 w-4 mr-2" />
-              Download
+              Build
             </Link>
           </div>
 
@@ -166,7 +166,7 @@ export default function Navbar() {
                 className="rounded-sm bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 flex items-center"
               >
                 <Download className="h-4 w-4 mr-2" />
-                Download
+                Build
               </Link>
             </div>
           </div>

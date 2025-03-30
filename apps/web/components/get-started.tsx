@@ -36,16 +36,23 @@ export default function GetStarted() {
               className="rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 transition-all duration-200 flex items-center"
             >
               <Download className="h-4 w-4 mr-2" />
-              Download Now
+              Build Now
             </Link>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="gap-2 w-full sm:w-auto rounded-md border-gray-700 hover:border-blue-500 bg-gray-900/50 hover:bg-gray-800 px-8 py-6 text-base transition-all duration-300 text-gray-200"
+            <Link
+              href="https://dubhe-docs.obelisk.build/dubhe/sui/quick-start"
+              target="_blank"
+              rel="noopener noreferrer"
+              passHref
             >
-              <Play className="h-4 w-4 mr-2" />
-              Try Online
-            </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="gap-2 w-full sm:w-auto rounded-md border-gray-700 hover:border-blue-500 bg-gray-900/50 hover:bg-gray-800 px-8 py-6 text-base transition-all duration-300 text-gray-200"
+              >
+                <Play className="h-4 w-4 mr-2" />
+                Learn Online
+              </Button>
+            </Link>
           </div>
         </div>
         
@@ -134,8 +141,8 @@ export default function GetStarted() {
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             {[
-              { name: "Discord", href: "#", icon: <Bot className="h-4 w-4 mr-2 text-blue-400" /> },
-              { name: "Forum", href: "#", icon: <Globe className="h-4 w-4 mr-2 text-blue-400" /> },
+              { name: "Discord", href: "https://t.me/dubheengine", icon: <Bot className="h-4 w-4 mr-2 text-blue-400" /> },
+              { name: "Telegram", href: "https://t.me/dubheengine", icon: <Globe className="h-4 w-4 mr-2 text-blue-400" /> },
               { name: "GitHub", href: "https://github.com/0xobelisk/dubhe", icon: <Code className="h-4 w-4 mr-2 text-blue-400" /> },
               { name: "Youtubi", href: "https://www.youtube.com/@DubheEngine", icon: <Play className="h-4 w-4 mr-2 text-blue-400" /> },
             ].map((item) => (
