@@ -141,7 +141,7 @@ export default function GetStarted() {
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             {[
-              { name: "Discord", href: "https://t.me/dubheengine", icon: <Bot className="h-4 w-4 mr-2 text-blue-400" /> },
+              { name: "Discord", href: "https://discord.gg/DygsBZecYA", icon: <Bot className="h-4 w-4 mr-2 text-blue-400" /> },
               { name: "Telegram", href: "https://t.me/dubheengine", icon: <Globe className="h-4 w-4 mr-2 text-blue-400" /> },
               { name: "GitHub", href: "https://github.com/0xobelisk/dubhe", icon: <Code className="h-4 w-4 mr-2 text-blue-400" /> },
               { name: "Youtubi", href: "https://www.youtube.com/@DubheEngine", icon: <Play className="h-4 w-4 mr-2 text-blue-400" /> },

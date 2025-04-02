@@ -17,7 +17,7 @@ const navigation = {
   ],
   community: [
     // { name: "Forum", href: "/forums" },
-    { name: "Discord", href: "#" },
+    { name: "Discord", href: "https://discord.gg/DygsBZecYA" },
     { name: "GitHub", href: "https://github.com/0xobelisk/dubhe" },
     { name: "Youtubi", href: "https://www.youtube.com/@DubheEngine" },
   ],

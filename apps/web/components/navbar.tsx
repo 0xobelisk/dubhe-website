@@ -30,7 +30,7 @@ export default function Navbar() {
     { name: "Features", href: "/features", icon: <Zap className="h-4 w-4 mr-1.5" /> },
     { name: "Documentation", href: "https://dubhe-docs.obelisk.build", icon: <Code className="h-4 w-4 mr-1.5" /> },
     { name: "Telegram", href: "https://t.me/dubheengine", icon: <Globe className="h-4 w-4 mr-2 " /> },
-    { name: "Discord", href: "https://t.me/dubheengine", icon: <Bot className="h-4 w-4 mr-2 " /> },
+    { name: "Discord", href: "https://discord.gg/DygsBZecYA", icon: <Bot className="h-4 w-4 mr-2 " /> },
     { name: "Blog", href: "https://obelisk.build/blog", icon: <BookOpen className="h-4 w-4 mr-2 " /> },
   ]
 
