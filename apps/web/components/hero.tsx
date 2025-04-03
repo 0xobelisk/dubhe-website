@@ -622,7 +622,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            Dubhe Engine is an open-source toolchain for Move applications, empowering everyone to build intent-centric worlds.
+            Dubhe Engine is a Open-source, high-performance engine for real-time Fully On-Chain Move apps. 
           </motion.p>
           
           <motion.div 
