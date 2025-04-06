@@ -713,7 +713,7 @@ export default function Hero() {
                 <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
                 <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
                 <div className="w-3 h-3 rounded-full bg-green-500 mr-6"></div>
-                <div className="text-xs text-gray-400">Project: New Game - Dubhe Engine 1.0</div>
+                <div className="text-xs text-gray-400">Project: New Game - Dubhe Engine 1.1.1</div>
               </div>
               
               {/* Terminal content */}

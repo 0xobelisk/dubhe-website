@@ -19,7 +19,7 @@ const navigation = {
     // { name: "Forum", href: "/forums" },
     { name: "Discord", href: "https://discord.gg/DygsBZecYA" },
     { name: "GitHub", href: "https://github.com/0xobelisk/dubhe" },
-    { name: "Youtubi", href: "https://www.youtube.com/@DubheEngine" },
+    { name: "Youtube", href: "https://www.youtube.com/@DubheEngine" },
   ],
   company: [
     { name: "About Us", href: "https://obelisk.build" },

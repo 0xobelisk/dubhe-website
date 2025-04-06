@@ -41,8 +41,8 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Meark",
-    description: "Meark is a privacy-preserving DeFi liquidity hub built on dubhe engine.",
+    title: "Merak",
+    description: "Merak is a privacy-preserving DeFi liquidity hub built on dubhe engine.",
     category: "Defi",
     image: "/logo/merak/light.png",
     studio: "Obelisk Labs",
