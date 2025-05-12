@@ -60,7 +60,7 @@ export default function RootLayout({
 				/>
 				<link
 					rel="icon"
-					href="/favicon.ico"
+					href="/favicon-white.ico"
 					media="(prefers-color-scheme: dark)"
 				/>
 			</head>
