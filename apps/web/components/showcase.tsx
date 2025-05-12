@@ -72,7 +72,7 @@ const projects: Project[] = [
 		category: 'Defi',
 		image: '/logo/merak/light.png',
 		studio: 'Obelisk Labs',
-		app_link: 'https://merak.obelisk.build',
+		app_link: 'https://merak-testnet.obelisk.build',
 	},
 	{
 		id: 2,
@@ -82,7 +82,7 @@ const projects: Project[] = [
 		category: 'Gaming',
 		image: '/logo/numeron/logo.png', // 保持此路径以防将来添加实际图片
 		studio: 'Numeron OS',
-		app_link: 'https://numeron.world',
+		app_link: 'https://testnet.numeron.world',
 		customLogo: true, // 使用自定义logo
 	},
 	{
