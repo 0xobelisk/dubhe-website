@@ -5,6 +5,14 @@ const nextConfig = {
   images: {
     domains: ["images.unsplash.com"],
   },
+  turbopack: {
+    rules: {
+      '*.css': {
+        loaders: ['css-loader'],
+        as: '*.css',
+      },
+    },
+  },
 }
 
 export default nextConfig

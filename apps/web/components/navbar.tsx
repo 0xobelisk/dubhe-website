@@ -3,11 +3,23 @@
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { Menu, X, Download, Moon, Sun, Cpu, Code, Zap, BookOpen, Bot, Globe } from "lucide-react"
+import { Menu, X, Download, Moon, Sun, Code, Zap, BookOpen, Bot, Globe, Coins } from "lucide-react"
 import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
 import { Button } from "@workspace/ui/components/button"
 
+/**
+ * Navbar组件 - 导航栏
+ * 
+ * 功能特性：
+ * - 固定定位导航栏
+ * - 响应式设计（桌面端和移动端）
+ * - 移动端汉堡菜单
+ * - 滚动时背景透明度变化
+ * - 主题切换功能（预留）
+ * 
+ * @returns Navbar组件JSX元素
+ */
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
@@ -28,6 +40,7 @@ export default function Navbar() {
 
   const navigation = [
     { name: "Features", href: "/features", icon: <Zap className="h-4 w-4 mr-1.5" /> },
+    { name: "Foundation", href: "/foundation", icon: <Coins className="h-4 w-4 mr-1.5" /> },
     { name: "Documentation", href: "https://dubhe-docs.obelisk.build", icon: <Code className="h-4 w-4 mr-1.5" /> },
     { name: "Telegram", href: "https://t.me/dubheengine", icon: <Globe className="h-4 w-4 mr-2 " /> },
     { name: "Discord", href: "https://discord.gg/DygsBZecYA", icon: <Bot className="h-4 w-4 mr-2 " /> },

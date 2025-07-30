@@ -3,8 +3,42 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@workspace/ui/components/button"
-import { Download, ExternalLink, FileText, Play, Server, Layers, Bot, Globe, Code, ChevronRight } from "lucide-react"
+import { Download, ExternalLink, FileText, Play, Server, Layers, Bot, Globe, Code, ChevronRight, LucideIcon } from "lucide-react"
 
+/**
+ * 功能特性项目接口定义
+ */
+interface FeatureItem {
+  /** 特性文本描述 */
+  text: string;
+  /** 特性图标组件 */
+  icon: LucideIcon;
+}
+
+/**
+ * 社区链接项目接口定义
+ */
+interface CommunityLink {
+  /** 平台名称 */
+  name: string;
+  /** 链接地址 */
+  href: string;
+  /** 图标元素 */
+  icon: React.ReactNode;
+}
+
+/**
+ * GetStarted组件 - 开始使用区域
+ * 
+ * 功能特性：
+ * - 快速开始指南
+ * - 功能特性列表展示
+ * - 定价信息展示
+ * - 社区链接集合
+ * - 淡入动画效果
+ * 
+ * @returns GetStarted组件JSX元素
+ */
 export default function GetStarted() {
   const [isLoaded, setIsLoaded] = useState(false)
   
@@ -68,11 +102,11 @@ export default function GetStarted() {
                   Dubhe Engine offers flexible licensing options suitable for independent developers, educational institutions, and enterprise studios alike.
                 </p>
                 <div className="mt-10 flex items-center gap-x-4">
-                  <h4 className="flex-none text-sm font-medium leading-6 text-blue-400">What's Included</h4>
+                  <h4 className="flex-none text-sm font-medium leading-6 text-blue-400">What&apos;s Included</h4>
                   <div className="h-px flex-auto bg-gradient-to-r from-blue-500/50 to-transparent"></div>
                 </div>
                 <ul role="list" className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 sm:grid-cols-2">
-                  {[
+                  {([
                     { text: "Complete Engine Source Code", icon: Code },
                     { text: "Visual Scripting System", icon: Layers },
                     { text: "Automated Storage Contracts", icon: Globe },
@@ -81,7 +115,7 @@ export default function GetStarted() {
                     { text: "Regular Updates & Support", icon: Download },
                     { text: "Developer Community Access", icon: ExternalLink },
                     { text: "Comprehensive Documentation", icon: FileText },
-                  ].map((feature, index) => {
+                  ] as FeatureItem[]).map((feature) => {
                     const Icon = feature.icon;
                     return (
                       <li key={feature.text} className="flex gap-x-3 items-center">
@@ -140,12 +174,12 @@ export default function GetStarted() {
             Get help, share your work, and collaborate with developers from around the world.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            {[
+            {([
               { name: "Discord", href: "https://discord.gg/DygsBZecYA", icon: <Bot className="h-4 w-4 mr-2 text-blue-400" /> },
               { name: "Telegram", href: "https://t.me/dubheengine", icon: <Globe className="h-4 w-4 mr-2 text-blue-400" /> },
               { name: "GitHub", href: "https://github.com/0xobelisk/dubhe", icon: <Code className="h-4 w-4 mr-2 text-blue-400" /> },
               { name: "Youtube", href: "https://www.youtube.com/@DubheEngine", icon: <Play className="h-4 w-4 mr-2 text-blue-400" /> },
-            ].map((item) => (
+            ] as CommunityLink[]).map((item) => (
               <Link
                 key={item.name}
                 href={item.href}

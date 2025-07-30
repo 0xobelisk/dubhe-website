@@ -6,14 +6,17 @@ import { Button } from '@workspace/ui/components/button';
 import {
 	ChevronLeft,
 	ChevronRight,
-	Play,
-	Code,
 	ExternalLink,
 	ArrowRight,
 } from 'lucide-react';
 import Link from 'next/link';
 
-function NumeronLogo({ className = '' }: { className?: string }) {
+/**
+ * NumeronLogo组件 - Numeron项目的自定义Logo
+ * @param className 自定义CSS类名
+ * @returns NumeronLogo组件JSX元素
+ */
+function NumeronLogo({ className = '' }: NumeronLogoProps) {
 	return (
 		<div
 			className={`flex items-center justify-center w-full h-full ${className}`}
@@ -52,15 +55,34 @@ function NumeronLogo({ className = '' }: { className?: string }) {
 	);
 }
 
+/**
+ * 项目信息接口定义
+ */
 interface Project {
+	/** 项目唯一标识符 */
 	id: number;
+	/** 项目标题 */
 	title: string;
+	/** 项目描述 */
 	description: string;
-	category: string;
+	/** 项目分类 (Gaming, DeFi, infra等) */
+	category: 'Gaming' | 'DeFi' | 'infra' | string;
+	/** 项目Logo图片路径 */
 	image: string;
+	/** 开发工作室名称 */
 	studio: string;
+	/** 项目应用链接 */
 	app_link: string;
-	customLogo?: boolean; // 添加自定义logo标志
+	/** 是否使用自定义Logo组件 */
+	customLogo?: boolean;
+}
+
+/**
+ * NumeronLogo组件的Props接口
+ */
+interface NumeronLogoProps {
+	/** 自定义CSS类名 */
+	className?: string;
 }
 
 const projects: Project[] = [
@@ -97,6 +119,18 @@ const projects: Project[] = [
 	},
 ];
 
+/**
+ * Showcase组件 - 项目展示区域
+ * 
+ * 功能特性：
+ * - 项目轮播展示
+ * - 左右切换导航
+ * - 项目分类显示
+ * - 项目详情和外链
+ * - 响应式布局
+ * 
+ * @returns Showcase组件JSX元素
+ */
 export default function Showcase() {
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [isLoaded, setIsLoaded] = useState(false);

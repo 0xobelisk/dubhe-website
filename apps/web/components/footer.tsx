@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, GitBranch, Github, Twitter, Youtube } from "lucide-react"
+import { Github, Twitter, Youtube } from "lucide-react"
 
 const navigation = {
   product: [

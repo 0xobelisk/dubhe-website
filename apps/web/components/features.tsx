@@ -1,14 +1,9 @@
 "use client"
 
 import { 
-  Layers, 
   Code, 
-  Box, 
-  Cpu, 
   Shield, 
-  Users, 
   Bolt, 
-  Workflow,
   MousePointer,
   ArrowRight,
   LucideIcon,
@@ -24,15 +19,35 @@ import {
   Cog
 } from "lucide-react"
 import { useState, useRef } from "react"
-import { Button } from "@workspace/ui/components/button"
 import Link from "next/link"
 import { motion, useScroll, useTransform, AnimatePresence, useInView } from "framer-motion"
 
+/**
+ * 功能特性接口定义
+ */
 interface Feature {
+  /** 特性名称 */
   name: string;
+  /** 特性详细描述 */
   description: string;
+  /** 特性图标组件 */
   icon: LucideIcon;
+  /** 特性渐变色样式类名 */
   color: string;
+}
+
+/**
+ * 路线图项目接口定义
+ */
+interface RoadmapItem {
+  /** 路线图项目图标 */
+  icon: React.ReactNode;
+  /** 渐变色样式类名 */
+  color: string;
+  /** 项目标题 */
+  title: string;
+  /** 项目描述 */
+  description: string;
 }
 
 const features: Feature[] = [
@@ -120,6 +135,18 @@ const glowVariants = {
   }
 }
 
+/**
+ * Features组件 - 产品特性展示区域
+ * 
+ * 功能特性：
+ * - 8个核心特性的交互式展示
+ * - 左侧选择器和右侧详情卡片布局
+ * - 动画效果和视觉反馈
+ * - 产品路线图展示
+ * - 滚动触发动画
+ * 
+ * @returns Features组件JSX元素
+ */
 export default function Features() {
   const [activeFeature, setActiveFeature] = useState(0)
   const containerRef = useRef(null)
@@ -445,7 +472,7 @@ export default function Features() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-5">
-                {[
+                {([
                   {
                     icon: <Lock className="h-5 w-5" />,
                     color: "from-amber-600 to-amber-400",
@@ -464,7 +491,7 @@ export default function Features() {
                     title: "State Synchronization Client Hooks",
                     description: "Synchronize client state with on-chain data automatically for real-time UI updates and consistent experiences."
                   }
-                ].map((item, index) => (
+                ] as RoadmapItem[]).map((item, index) => (
                   <motion.div 
                     key={item.title}
                     className="flex items-start"
@@ -490,7 +517,7 @@ export default function Features() {
               </div>
               
               <div className="space-y-5">
-                {[
+                {([
                   {
                     icon: <Cog className="h-5 w-5" />,
                     color: "from-gray-600 to-gray-400",
@@ -503,7 +530,7 @@ export default function Features() {
                     title: "World Browser Interface",
                     description: "Explore and interact with on-chain data through an intuitive visual interface for simplified blockchain navigation."
                   }
-                ].map((item, index) => (
+                ] as RoadmapItem[]).map((item, index) => (
                   <motion.div 
                     key={item.title}
                     className="flex items-start"
