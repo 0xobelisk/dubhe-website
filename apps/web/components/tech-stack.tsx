@@ -38,13 +38,13 @@ const techStackLayers: TechStackLayer[] = [
   {
     id: "dubhe-engine",
     name: "Dubhe Engine",
-    description: "The Foundational Game Development Layer",
+    description: "The most powerful real-time, fully on-chain DApp development toolchain",
     features: [
-      "Unlimited Game Creation: Horizontally scalable game engine that scales with network demand.",
-      "Zero-Knowledge Integration: The only engine with native ZKG commitments & DAS for efficient finality.",
-      "Seamless Framework Integration: Compatible with Unity, Unreal, Godot, and custom game engines.",
-      "15x Faster Development Workflow: Incl. <250ms pre-confirmations for high-throughput.",
-      "Cost: 90% cheaper than traditional game servers."
+      "80% of code can be auto-generated from schemas",
+      "Only 1 command to scaffold the dApp project",
+      "Schema-based code generation (monolithic vs structured style)",
+      "Compatible with Unity, Unreal, Cocos, Godot game engines",
+      "Multi-chain deployment: Sui, Aptos, Rooch, Movement, Initia"
     ],
     icon: <Database className="w-8 h-8" />,
     color: "from-blue-500 to-cyan-500",
@@ -54,33 +54,33 @@ const techStackLayers: TechStackLayer[] = [
   {
     id: "dubhe-channel",
     name: "Dubhe Channel",
-    description: "A Full Node in Your Pocket",
+    description: "The Most Powerful Real-Time Programmable P2P Interaction Channel for DApps",
     features: [
-      "End User Verification: Full node security without running a full node.",
-      "Computationally Light: Run seamlessly on a mobile, smartwatch, or laptop.",
-      "RAM: 4x more efficient than an Ethereum Light Client.",
-      "Network Efficiency: Uses only 1MB/s - 8x more efficient than an Ethereum Light Client.",
-      "Scalable: Engineered for high-throughput use cases like GameFi, SocialFi, and DeFi."
+      "Instant front-end rendering: Reflect on-chain changes in real time",
+      "Ultra-fast execution speed: Feel like using a web2 app",
+      "Directly mirror & override on-chain data: Simulate and interact with real blockchain state locally",
+      "Real-time P2P communication between users",
+      "Programmable layer with real-time execution powered by Sui Executor"
     ],
     icon: <Network className="w-8 h-8" />,
     color: "from-purple-500 to-pink-500",
-    buttonText: "Deploy a Light Client",
+    buttonText: "Deploy Dubhe Channel",
     buttonLink: "https://dubhe-docs.obelisk.build/dubhe/sui/quick-start"
   },
   {
     id: "dubhe-os",
     name: "Dubhe OS",
-    description: "Native Interoperability, Cross-Chain Liquidity Flow",
+    description: "$DUBHE incentivize builders, forming sustainable Dev Community",
     features: [
-      "Proof Aggregation: A single ZK proof that verifies the state of all participating chains.",
-      "Flexible Integration: Supports validity proof and fraud proof based execution environments.",
-      "Trustless Interaction: Maintains independent verification at the user level.",
-      "Cross-Ecosystem Support: Built to connect with L1, L2 or L3 blockchain ecosystems.",
-      "Seamless Interoperability: Access users and liquidity from multiple ecosystems."
+      "Operation Fees: Collected and distributed through $DUBHE staking",
+      "Task Bounty: Community-driven rewards for ecosystem development",
+      "On-chain Launchpad: For mature DApps built with Dubhe",
+      "Cross-chain Bridge & Governance: Connect with multiple blockchain ecosystems",
+      "Community Users, Validator Nodes, DApps integration"
     ],
     icon: <Globe className="w-8 h-8" />,
     color: "from-green-500 to-emerald-500",
-    buttonText: "Build with Dubhe Nexus",
+    buttonText: "Join Dubhe OS",
     buttonLink: "https://dubhe-docs.obelisk.build"
   }
 ];
@@ -120,8 +120,8 @@ export default function TechStack() {
   return (
     <Section
       title="The Dubhe Technology Stack"
-      subtitle="A comprehensive infrastructure for next-generation decentralized applications"
-      label="ARCHITECTURE"
+      subtitle="Complete development toolchain, real-time interaction layer, and decentralized operating system for Move applications"
+      label="TECHNOLOGY STACK"
       maxWidth="xl"
       paddingY="xl"
       showBackground={true}
@@ -250,9 +250,9 @@ export default function TechStack() {
                 Build the Future of Decentralized Applications
               </GradientText>
               <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-                The Dubhe Technology Stack provides everything you need to create scalable, 
-                efficient, and interoperable decentralized applications. From game development 
-                to cross-chain infrastructure, we&apos;ve got you covered.
+                From 80% automated code generation to Web2-level user experience and sustainable 
+                ecosystem incentives - Dubhe provides the complete stack for building the next 
+                generation of fully on-chain applications on Move blockchains.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button

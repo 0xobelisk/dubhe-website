@@ -34,40 +34,58 @@ interface NetworkLayer {
 const networkLayers: NetworkLayer[] = [
   {
     id: "applications",
-    name: "Applications & dApps",
-    description: "Decentralized applications built on Dubhe infrastructure",
+    name: "Move Applications",
+    description: "Decentralized applications built with Dubhe Engine across Move ecosystem",
     bgColor: "bg-amber-100",
     textColor: "text-amber-900",
     features: [
-      "GameFi Applications",
-      "DeFi Protocols", 
+      "Fully On-Chain RPG Games",
+      "DeFi Protocols with Real-time UX", 
       "Social Applications",
-      "NFT Marketplaces"
+      "Autonomous Worlds"
     ],
     showArrow: true
   },
   {
-    id: "dubhe-nexus",
-    name: "Dubhe Nexus",
-    description: "A trust-minimized interoperability layer enabling seamless cross-rollup and sovereign chain communication",
-    bgColor: "bg-green-200",
-    textColor: "text-green-900",
-    showArrow: true
-  },
-  {
-    id: "dubhe-da",
-    name: "Dubhe DA",
-    description: "Horizontally scalable DA with KZG commitments & DAS for trust-minimized, near-instant verification",
-    bgColor: "bg-blue-200", 
-    textColor: "text-blue-900",
-    showArrow: true
-  },
-  {
-    id: "dubhe-consensus",
-    name: "Dubhe Consensus",
-    description: "A shared security layer leveraging re-staking to provide crypto-economic finality for modular blockchains",
+    id: "dubhe-engine",
+    name: "Dubhe Engine",
+    description: "The most powerful real-time, fully on-chain DApp development toolchain with 80% code auto-generation",
     bgColor: "bg-purple-200",
     textColor: "text-purple-900",
+    features: [
+      "Schema-based code generation",
+      "One command to scaffold dApp",
+      "Unity, Cocos, Unreal Engine integration",
+      "Multi-chain deployment (Sui, Aptos, Rooch, Movement, Initia)"
+    ],
+    showArrow: true
+  },
+  {
+    id: "dubhe-channel",
+    name: "Dubhe Channel",
+    description: "Real-time programmable P2P interaction channel providing Web2-level user experience for DApps",
+    bgColor: "bg-blue-200", 
+    textColor: "text-blue-900",
+    features: [
+      "Instant front-end rendering",
+      "Ultra-fast execution speed",
+      "Direct mirror & override on-chain data",
+      "&lt;50ms average latency"
+    ],
+    showArrow: true
+  },
+  {
+    id: "dubhe-os",
+    name: "Dubhe OS",
+    description: "Decentralized operating system with $DUBHE token incentives, bridging, and governance mechanisms",
+    bgColor: "bg-green-200",
+    textColor: "text-green-900",
+    features: [
+      "Operation Fees & $DUBHE Staking",
+      "Task Bounty System",
+      "On-chain Launchpad",
+      "Cross-chain Bridge & Governance"
+    ],
     showArrow: false
   }
 ];
@@ -77,10 +95,10 @@ const networkLayers: NetworkLayer[] = [
  * 特性数据配置
  */
 const networkFeatures = [
-  "Optimistic execution with fraud proofs",
-  "Zero-Knowledge proof verification", 
-  "Validium architecture support",
-  "Sovereign chain interoperability"
+  "10M+ transactions processed",
+  "&lt;200ms average latency", 
+  "Web2-level user experience",
+  "Compatible with Sui, Aptos, Rooch, Movement, Initia"
 ];
 
 /**
@@ -185,8 +203,8 @@ export default function NetworkArchitecture() {
 
   return (
     <Section
-      title="Scalable, Secure, Interoperable Network"
-      subtitle="Dubhe's horizontally scalable, chain-agnostic and trust-minimized infrastructure unifies the fragmented blockchain ecosystem by providing unlimited blockspace, native interoperability, and modular security."
+      title="The Complete Move Development Stack"
+      subtitle="From development tools to real-time interaction channels and decentralized infrastructure - Dubhe provides everything needed to build the next generation of fully on-chain applications."
       label="NETWORK ARCHITECTURE"
       maxWidth="xl"
       paddingY="xl"
@@ -209,10 +227,10 @@ export default function NetworkArchitecture() {
           transition={{ duration: 0.8 }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Rollups 区域 */}
+            {/* Performance Metrics 区域 */}
             <Card variant="glass" padding="lg" className="bg-amber-50/80 border-amber-200">
               <div className="text-center">
-                <h3 className="text-lg font-bold text-amber-900 mb-4">Rollups</h3>
+                <h3 className="text-lg font-bold text-amber-900 mb-4">Key Metrics</h3>
                 <div className="space-y-2">
                   {networkFeatures.map((feature, index) => (
                     <motion.div
@@ -231,18 +249,20 @@ export default function NetworkArchitecture() {
               </div>
             </Card>
 
-            {/* Appchains 区域 */}
+            {/* Move Ecosystem 区域 */}
             <Card variant="glass" padding="lg" className="bg-amber-50/80 border-amber-200">
               <div className="text-center">
-                <h3 className="text-lg font-bold text-amber-900 mb-4">Appchains</h3>
+                <h3 className="text-lg font-bold text-amber-900 mb-4">Move Ecosystem</h3>
                 <div className="text-sm text-amber-800">
                   <div className="text-center">
-                    <div className="text-lg font-semibold mb-2">dApps</div>
+                    <div className="text-lg font-semibold mb-2">Supported Chains</div>
                     <div className="grid grid-cols-2 gap-2">
-                      <div className="bg-amber-200/50 rounded-lg p-2 text-xs">GameFi</div>
-                      <div className="bg-amber-200/50 rounded-lg p-2 text-xs">DeFi</div>
-                      <div className="bg-amber-200/50 rounded-lg p-2 text-xs">SocialFi</div>
-                      <div className="bg-amber-200/50 rounded-lg p-2 text-xs">NFTs</div>
+                      <div className="bg-amber-200/50 rounded-lg p-2 text-xs">Sui</div>
+                      <div className="bg-amber-200/50 rounded-lg p-2 text-xs">Aptos</div>
+                      <div className="bg-amber-200/50 rounded-lg p-2 text-xs">Rooch</div>
+                      <div className="bg-amber-200/50 rounded-lg p-2 text-xs">Movement</div>
+                      <div className="bg-amber-200/50 rounded-lg p-2 text-xs">Initia</div>
+                      <div className="bg-amber-300/50 rounded-lg p-2 text-xs font-medium">+ More</div>
                     </div>
                   </div>
                 </div>
@@ -272,9 +292,9 @@ export default function NetworkArchitecture() {
           transition={{ duration: 0.8 }}
         >
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
-            By eliminating reliance on centralized full nodes, reducing fragmentation, and enabling seamless 
-            communication between appchains, rollups, and dApps, Dubhe empowers developers to build scalable, 
-            connected, and customer-centric applications, unlocking the next era of web3 innovation.
+            Dubhe provides the complete infrastructure stack for Move development - from automated code generation 
+            and real-time user interaction to decentralized operations and cross-chain compatibility. This enables 
+            developers to focus on 20% core logic while 80% is automatically generated and managed.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -310,9 +330,9 @@ export default function NetworkArchitecture() {
                 <Zap className="w-6 h-6 text-blue-500" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Instant Finality</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">80% Code Auto-Generation</h3>
             <p className="text-gray-600">
-              Near-instant transaction verification with trust-minimized security guarantees
+              Schema-based development with automatic code generation for Move smart contracts
             </p>
           </Card>
 
@@ -322,9 +342,9 @@ export default function NetworkArchitecture() {
                 <Network className="w-6 h-6 text-green-500" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Horizontal Scaling</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Real-time P2P Channel</h3>
             <p className="text-gray-600">
-              Unlimited blockspace that scales with network demand and usage
+              Web2-level user experience with &lt;50ms latency for on-chain applications
             </p>
           </Card>
 
@@ -334,9 +354,9 @@ export default function NetworkArchitecture() {
                 <Shield className="w-6 h-6 text-purple-500" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Modular Security</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Multi-Chain Support</h3>
             <p className="text-gray-600">
-              Flexible security models with crypto-economic finality and shared security
+              Native support for all major Move chains with seamless deployment
             </p>
           </Card>
         </motion.div>
