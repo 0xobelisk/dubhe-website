@@ -3,6 +3,30 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
+// Pre-generated random data to avoid hydration mismatch
+const RANDOM_DATA = [
+  "9847.23", "3251.89", "7456.12", "1294.67", "8573.45", "2916.78", "6248.91", "4135.56"
+]
+
+const SENSOR_DATA = [
+  "RA: 847", "DEC: 234", "MAG: 678", "VEL: 123", "AZ: 456", "ALT: 789"
+]
+
+// Pre-generated star positions to avoid hydration mismatch
+const STAR_POSITIONS = Array.from({ length: 200 }, (_, i) => ({
+  top: Math.floor((i * 23 + 17) % 100),
+  left: Math.floor((i * 41 + 31) % 100),
+  opacity: 0.2 + ((i * 13) % 60) / 100,
+  duration: 2 + ((i * 7) % 30) / 10,
+  delay: (i * 11) % 20 / 10
+}))
+
+// Pre-generated shooting star positions
+const SHOOTING_STAR_POSITIONS = Array.from({ length: 5 }, (_, i) => ({
+  top: 20 + ((i * 23 + 15) % 60),
+  left: -10 + ((i * 17 + 5) % 20)
+}))
+
 interface CosmicLoaderProps {
   onComplete: () => void
   duration?: number
@@ -36,7 +60,7 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
     // Complete animation
     const completeTimer = setTimeout(() => {
       clearInterval(progressInterval)
-      setTimeout(onComplete, 500)
+      onComplete()
     }, totalDuration)
 
     return () => {
@@ -148,7 +172,7 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
 
         {/* Left side data stream */}
         <div className="absolute left-4 top-1/4 space-y-1">
-          {Array.from({ length: 8 }).map((_, i) => (
+          {RANDOM_DATA.map((data, i) => (
             <motion.div
               key={i}
               className="text-xs font-mono text-green-400/60"
@@ -160,14 +184,14 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
                 ease: "easeInOut"
               }}
             >
-              {`${String(Math.floor(Math.random() * 9999)).padStart(4, '0')}.${String(Math.floor(Math.random() * 99)).padStart(2, '0')}`}
+              {data}
             </motion.div>
           ))}
         </div>
 
         {/* Right side data stream */}
         <div className="absolute right-4 top-1/3 space-y-1">
-          {Array.from({ length: 6 }).map((_, i) => (
+          {SENSOR_DATA.map((data, i) => (
             <motion.div
               key={i}
               className="text-xs font-mono text-blue-400/60"
@@ -179,7 +203,7 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
                 ease: "easeInOut"
               }}
             >
-              {`${['RA', 'DEC', 'MAG', 'VEL', 'AZ', 'ALT'][i]}: ${Math.floor(Math.random() * 999)}`}
+              {data}
             </motion.div>
           ))}
         </div>
@@ -228,23 +252,23 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
       </div>
       {/* Starfield Background */}
       <div className="absolute inset-0">
-        {Array.from({ length: 200 }).map((_, i) => (
+        {STAR_POSITIONS.map((star, i) => (
           <motion.div
             key={`star-${i}`}
             className="absolute w-1 h-1 bg-white rounded-full"
             style={{
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-              opacity: Math.random() * 0.8 + 0.2,
+              top: `${star.top}%`,
+              left: `${star.left}%`,
+              opacity: star.opacity,
             }}
             animate={{
               opacity: [0.2, 1, 0.2],
               scale: [1, 1.2, 1],
             }}
             transition={{
-              duration: 2 + Math.random() * 3,
+              duration: star.duration,
               repeat: Infinity,
-              delay: Math.random() * 2,
+              delay: star.delay,
             }}
           />
         ))}
@@ -258,13 +282,13 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
 
       {/* Shooting Stars */}
       <div className="absolute inset-0">
-        {Array.from({ length: 5 }).map((_, i) => (
+        {SHOOTING_STAR_POSITIONS.map((shootingStar, i) => (
           <motion.div
             key={`shooting-star-${i}`}
             className="absolute w-2 h-2 bg-white rounded-full"
             style={{
-              top: `${20 + Math.random() * 60}%`,
-              left: `${-10 + Math.random() * 20}%`,
+              top: `${shootingStar.top}%`,
+              left: `${shootingStar.left}%`,
               boxShadow: '0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(59, 130, 246, 0.6)'
             }}
             animate={{
@@ -566,17 +590,6 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
         </div>
       </div>
 
-      {/* Exit Animation */}
-      <AnimatePresence>
-        {phase === 'complete' && progress >= 100 && (
-          <motion.div
-            className="absolute inset-0 bg-white"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          />
-        )}
-      </AnimatePresence>
     </div>
   )
 }

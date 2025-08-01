@@ -9,8 +9,13 @@ import {
   Network, 
   ArrowRight, 
   Globe,
-  Shield
+  Shield,
+  Users,
+  ExternalLink
 } from "lucide-react"
+import Navigation from './navigation'
+import NetworkStats from './network-stats'
+import Ecosystem from './ecosystem'
 
 // Unreal Engine 风格设计系统
 const customStyles = `
@@ -112,6 +117,19 @@ const customStyles = `
     0% { width: 0%; opacity: 0; }
     100% { opacity: 1; }
   }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
 `
 
 /**
@@ -125,6 +143,9 @@ export default function NewHomePage() {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: customStyles }} />
+      
+      {/* Navigation */}
+      <Navigation />
       
       {/* Main Hero Section with Background Image */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 overflow-hidden">
@@ -374,6 +395,9 @@ export default function NewHomePage() {
           </div>
         </div>
       </div>
+
+      {/* Network Statistics */}
+      <NetworkStats />
 
       {/* Features Section - Monad Style */}
       <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 relative overflow-hidden">
@@ -913,6 +937,9 @@ export default function NewHomePage() {
         </div>
       </div>
 
+      {/* Ecosystem Section */}
+      <Ecosystem />
+
       {/* Network Architecture Section - Based on Main Page Design */}
       <div className="py-24 px-6 lg:px-8 bg-gray-50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
@@ -1217,6 +1244,213 @@ export default function NewHomePage() {
           </motion.div>
         </div>
       </div>
+
+      {/* Community Section */}
+      <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-block bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-blue-200">
+              <Users className="w-4 h-4 inline mr-2" />
+              Community
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 max-w-4xl mx-auto leading-tight">
+              Join the global community
+              <br />
+              behind Dubhe
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+              With a thriving community of developers worldwide, Dubhe is backed by passionate 
+              supporters driving the future of Move blockchain technology. Connect, collaborate, and grow 
+              with us as we shape the next generation of decentralized solutions.
+            </p>
+            <p className="text-xl font-semibold text-slate-900 mb-8">
+              Join the Dubhe community today.
+            </p>
+          </div>
+
+
+          {/* Community Images Grid */}
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            {/* Conference Image */}
+            <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="aspect-video bg-gradient-to-br from-purple-500 to-blue-600 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <Users className="w-12 h-12 mx-auto mb-4 opacity-80" />
+                  <p className="text-lg font-semibold">Developer Conference</p>
+                  <p className="text-sm opacity-80">Building the Future Together</p>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+            </div>
+
+            {/* Workshop Image */}
+            <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="aspect-video bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <Code className="w-12 h-12 mx-auto mb-4 opacity-80" />
+                  <p className="text-lg font-semibold">Developer Workshop</p>
+                  <p className="text-sm opacity-80">Hands-on Learning Sessions</p>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+            </div>
+
+            {/* Hackathon Image */}
+            <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <Zap className="w-12 h-12 mx-auto mb-4 opacity-80" />
+                  <p className="text-lg font-semibold">Global Hackathon</p>
+                  <p className="text-sm opacity-80">Innovation & Competition</p>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+            </div>
+
+            {/* Meetup Image */}
+            <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="aspect-video bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <Globe className="w-12 h-12 mx-auto mb-4 opacity-80" />
+                  <p className="text-lg font-semibold">Community Meetup</p>
+                  <p className="text-sm opacity-80">Local & Online Events</p>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+            </div>
+
+            {/* Developer Event Image */}
+            <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="aspect-video bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <Network className="w-12 h-12 mx-auto mb-4 opacity-80" />
+                  <p className="text-lg font-semibold">Tech Talk Series</p>
+                  <p className="text-sm opacity-80">Knowledge Sharing</p>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+            </div>
+
+            {/* Community Gathering Image */}
+            <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="aspect-video bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <Shield className="w-12 h-12 mx-auto mb-4 opacity-80" />
+                  <p className="text-lg font-semibold">Community Summit</p>
+                  <p className="text-sm opacity-80">Annual Gathering</p>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+            </div>
+          </motion.div>
+
+          {/* Community Stats */}
+          <motion.div
+            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div>
+              <div className="text-3xl lg:text-4xl font-bold text-purple-600 mb-2">10K+</div>
+              <div className="text-gray-600">Developers</div>
+            </div>
+            <div>
+              <div className="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">50+</div>
+              <div className="text-gray-600">Countries</div>
+            </div>
+            <div>
+              <div className="text-3xl lg:text-4xl font-bold text-green-600 mb-2">200+</div>
+              <div className="text-gray-600">Projects Built</div>
+            </div>
+            <div>
+              <div className="text-3xl lg:text-4xl font-bold text-orange-600 mb-2">24/7</div>
+              <div className="text-gray-600">Community Support</div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Companies Building on Dubhe - Scrolling Banner */}
+      <div className="py-16 bg-slate-900 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
+              The most innovative companies build on Dubhe
+            </h3>
+          </div>
+          
+          {/* Scrolling Container */}
+          <div className="relative">
+            <div className="flex animate-scroll">
+              {/* First set of logos */}
+              <div className="flex items-center justify-center space-x-16 min-w-full">
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">NEXUS</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">NUMERON</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">PHAD</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">OBELISK</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">MOVE LABS</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">SUI PLAY</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">APTOS DEV</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">ROOCH</div>
+                </div>
+              </div>
+              
+              {/* Duplicate set for seamless loop */}
+              <div className="flex items-center justify-center space-x-16 min-w-full">
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">NEXUS</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">NUMERON</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">PHAD</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">OBELISK</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">MOVE LABS</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">SUI PLAY</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">APTOS DEV</div>
+                </div>
+                <div className="flex items-center justify-center w-32 h-16 text-white">
+                  <div className="text-xl font-bold tracking-wider">ROOCH</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </>
   )
 }

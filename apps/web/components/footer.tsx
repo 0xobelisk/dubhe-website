@@ -1,185 +1,125 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Github, Twitter, Youtube } from "lucide-react"
+"use client"
 
-const navigation = {
-  product: [
-    // { name: "Features", href: "/features" },
-    // { name: "Pricing", href: "/pricing" },
-    { name: "Download", href: "https://dubhe-docs.obelisk.build/dubhe/sui/quick-start" },
-    { name: "Release Notes", href: "https://github.com/0xobelisk/dubhe/releases" },
-  ],
-  resources: [
-    { name: "Documentation", href: "https://dubhe-docs.obelisk.build/" },
-    { name: "Tutorials", href: "https://dubhe-docs.obelisk.build/dubhe/sui/tutorials/" },
-    { name: "CLI Reference", href: "https://dubhe-docs.obelisk.build/dubhe/sui/cli/" },
-    { name: "Client", href: "https://dubhe-docs.obelisk.build/dubhe/sui/client/" },
-  ],
-  community: [
-    // { name: "Forum", href: "/forums" },
-    { name: "Discord", href: "https://discord.gg/DygsBZecYA" },
-    { name: "GitHub", href: "https://github.com/0xobelisk/dubhe" },
-    { name: "Youtube", href: "https://www.youtube.com/@DubheEngine" },
-  ],
-  company: [
-    { name: "About Us", href: "https://obelisk.build" },
-    { name: "Blog", href: "https://obelisk.build/blog" },
-    // { name: "Careers", href: "/careers" },
-    { name: "Contact Us", href: "https://obelisk.build/contact" },
-  ],
-  legal: [
-    { name: "Privacy Policy", href: "https://obelisk.build/privacy-policy" },
-    { name: "Terms of Service", href: "https://obelisk.build/terms-of-use" },
-    { name: "License Agreement", href: "https://github.com/0xobelisk/dubhe?tab=License-1-ov-file#readme" },
-  ],
-}
+import { ExternalLink, Github, Twitter, MessageCircle, Send } from "lucide-react"
 
 export default function Footer() {
+  const footerSections = [
+    {
+      title: "Build",
+      links: [
+        { name: "Documentation", href: "/docs" },
+        { name: "Tutorials", href: "/tutorials" },
+        { name: "SDK", href: "/sdk" },
+        { name: "API Reference", href: "/api" },
+      ]
+    },
+    {
+      title: "Ecosystem",
+      links: [
+        { name: "DeFi", href: "/defi" },
+        { name: "Gaming", href: "/gaming" },
+        { name: "NFTs", href: "/nfts" },
+        { name: "Grants", href: "/grants" },
+      ]
+    },
+    {
+      title: "Community",
+      links: [
+        { name: "Discord", href: "https://discord.gg/obelisk", external: true },
+        { name: "Twitter", href: "https://twitter.com/0xObelisk", external: true },
+        { name: "GitHub", href: "https://github.com/obelisk", external: true },
+        { name: "Telegram", href: "https://t.me/obelisk_labs", external: true },
+      ]
+    },
+    {
+      title: "Company",
+      links: [
+        { name: "About", href: "/about" },
+        { name: "Careers", href: "/careers" },
+        { name: "Press", href: "/press" },
+        { name: "Contact", href: "/contact" },
+      ]
+    }
+  ]
+
+  const socialLinks = [
+    { name: "Twitter", icon: Twitter, href: "https://twitter.com/0xObelisk" },
+    { name: "GitHub", icon: Github, href: "https://github.com/obelisk" },
+    { name: "Discord", icon: MessageCircle, href: "https://discord.gg/obelisk" },
+    { name: "Telegram", icon: Send, href: "https://t.me/obelisk_labs" },
+  ]
+
   return (
-    <footer className="border-t border-gray-800 relative" aria-labelledby="footer-heading">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-30" />
-      
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="mx-auto max-w-[1200px] px-6 pb-12 pt-16 sm:pt-20 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-6">
-            <Link href="/" className="group flex items-center">
-              <Image 
-                src="/logo/light.png" 
-                alt="Dubhe Engine" 
-                width={160} 
-                height={48} 
-                className="h-10 w-auto transition-opacity duration-200 hover:opacity-80"
-              />
-            </Link>
-            <p className="text-sm leading-6 text-gray-400">
-              Create exceptional dapp experiences with the most advanced Move development platform.
+    <footer className="bg-slate-900 border-t border-slate-800">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-6 gap-12">
+          {/* Brand Section */}
+          <div className="lg:col-span-2">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-600 rounded-lg flex items-center justify-center">
+                <div className="w-5 h-5 bg-white rounded-sm transform rotate-45"></div>
+              </div>
+              <span className="text-2xl font-bold text-white">Dubhe</span>
+            </div>
+            <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
+              The most powerful Move application stack for building verifiable decentralized applications 
+              and fully on-chain applications with real-time user experience.
             </p>
-            <div className="flex space-x-5">
-              <a href="https://x.com/DubheEngine" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
-                <span className="sr-only">Twitter</span>
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="https://github.com/0xobelisk/dubhe" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
-                <span className="sr-only">GitHub</span>
-                <Github className="h-5 w-5" />
-              </a>
-              <a href="https://www.youtube.com/@DubheEngine" className="text-gray-500 hover:text-blue-400 transition-colors duration-300">
-                <span className="sr-only">YouTube</span>
-                <Youtube className="h-5 w-5" />
-              </a>
+            <div className="flex space-x-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors duration-200 group"
+                >
+                  <social.icon className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+                </a>
+              ))}
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-white">Product</h3>
-                <ul role="list" className="mt-4 space-y-3">
-                  {navigation.product.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group">
-                        <span className="h-px w-4 bg-gray-700 mr-2 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500" />
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold text-white">Resources</h3>
-                <ul role="list" className="mt-4 space-y-3">
-                  {navigation.resources.map((item) => (
-                    <li key={item.name}>
-                      <Link 
-                        href={item.href}
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group"
-                      >
-                        <span className="h-px w-4 bg-gray-700 mr-2 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500" />
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
+          {/* Links Sections */}
+          {footerSections.map((section) => (
+            <div key={section.title} className="lg:col-span-1">
+              <h3 className="text-white font-semibold mb-4">{section.title}</h3>
+              <ul className="space-y-3">
+                {section.links.map((link) => (
+                  <li key={link.name}>
+                    <a
+                      href={link.href}
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-sm flex items-center gap-1"
+                      {...('external' in link && link.external && { target: "_blank", rel: "noopener noreferrer" })}
+                    >
+                      {link.name}
+                      {'external' in link && link.external && <ExternalLink className="w-3 h-3" />}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-white">Community</h3>
-                <ul role="list" className="mt-4 space-y-3">
-                  {navigation.community.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group">
-                        <span className="h-px w-4 bg-gray-700 mr-2 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500" />
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold text-white">Company</h3>
-                <ul role="list" className="mt-4 space-y-3">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group">
-                        <span className="h-px w-4 bg-gray-700 mr-2 transition-all duration-300 group-hover:w-6 group-hover:bg-blue-500" />
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
-        
-        {/* Call to action */}
-        {/* <div className="mt-16 border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between">
-          <div className="flex-1">
-            <h3 className="text-sm font-semibold text-white">Subscribe to our newsletter</h3>
-            <p className="mt-2 text-sm text-gray-400">Get the latest updates and news directly to your inbox.</p>
+
+        {/* Bottom Section */}
+        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2024 Obelisk Labs. All rights reserved.
           </div>
-          <div className="mt-4 md:mt-0">
-            <div className="relative rounded-md shadow-sm overflow-hidden">
-              <div className="flex">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email" 
-                  className="px-4 py-2 bg-gray-900 border-0 focus:ring-0 focus:outline-none text-white text-sm w-64 rounded-l-md" 
-                />
-                <button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white px-4 py-2 text-sm font-medium transition-all duration-200 rounded-r-md flex items-center">
-                  Subscribe
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        
-        {/* Legal section */}
-        <div className="mt-8 border-t border-gray-800 pt-8 sm:mt-12 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-xs leading-5 text-gray-500">
-            &copy; {new Date().getFullYear()} Dubhe Technology Group Limited. All rights reserved.
-          </p>
-          <div className="flex gap-6 mt-4 md:mt-0">
-            {navigation.legal.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-xs leading-5 text-gray-500 hover:text-blue-400 transition-colors duration-200"
-              >
-                {item.name}
-              </Link>
-            ))}
+          <div className="flex space-x-6 text-sm">
+            <a href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-200">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="text-gray-400 hover:text-white transition-colors duration-200">
+              Terms of Service
+            </a>
+            <a href="/cookies" className="text-gray-400 hover:text-white transition-colors duration-200">
+              Cookie Policy
+            </a>
           </div>
         </div>
       </div>
     </footer>
   )
-} 
+}
