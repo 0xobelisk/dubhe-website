@@ -1,42 +1,16 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Button } from "@workspace/ui/components/button"
+import { useEffect } from "react"
+import { motion } from "framer-motion"
 import { 
   Code, 
   Zap, 
   Database, 
   Network, 
   ArrowRight, 
-  Github,
-  Twitter,
-  Play,
-  CheckCircle,
-  TrendingUp,
-  Users,
   Globe,
-  ChevronRight,
-  Download,
-  PlayCircle,
-  Box,
-  Shield,
-  
-  Bolt,
-  MousePointer,
-  Building2,
-  Package,
-  Wrench,
-  Lock,
-  DollarSign,
-  Repeat,
-  Cog,
-  ExternalLink,
-  ChevronLeft,
-  Star,
-  MessageCircle
+  Shield
 } from "lucide-react"
-import CountUp from "react-countup"
 
 // Unreal Engine 风格设计系统
 const customStyles = `
@@ -144,39 +118,8 @@ const customStyles = `
  * NewHomePage组件 - Unreal Engine风格主页设计
  */
 export default function NewHomePage() {
-  const [isLoaded, setIsLoaded] = useState(false)
-  const [activeProject, setActiveProject] = useState(0)
-  // Featured projects data
-  const projects = [
-    {
-      name: "NEXUS",
-      creator: "Obelisk Labs",
-      description: "A revolutionary DeFi protocol built on Sui Network",
-      image: "/showcase/merak-preview.jpg"
-    },
-    {
-      name: "NUMERON",
-      creator: "Numeron OS", 
-      description: "Fantasy adventure RPG with full on-chain mechanics",
-      image: "/showcase/numeron-preview.jpg"
-    },
-    {
-      name: "PHAD",
-      creator: "Obelisk Labs",
-      description: "Re-encrypted expansion framework for Move ecosystem",
-      image: "/showcase/phad-preview.jpg"
-    }
-  ]
-
   useEffect(() => {
-    setIsLoaded(true)
-    
-    // Auto-rotate projects
-    const interval = setInterval(() => {
-      setActiveProject(prev => (prev + 1) % projects.length)
-    }, 5000)
-    
-    return () => clearInterval(interval)
+    // Component initialization
   }, [])
 
   return (
@@ -803,7 +746,7 @@ export default function NewHomePage() {
                   Schema Definition
                 </h3>
                 <p className="text-gray-300 mb-8 leading-relaxed flex-grow">
-                  Define your game or dApp logic using Dubhe's intuitive schema system. 
+                  Define your game or dApp logic using Dubhe&apos;s intuitive schema system. 
                   Describe entities, components, and systems in simple configuration files.
                 </p>
                 

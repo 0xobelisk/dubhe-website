@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import NewHomePage from '../../components/new-home-page'
 import CosmicLoader from '../../components/cosmic-loader'
 

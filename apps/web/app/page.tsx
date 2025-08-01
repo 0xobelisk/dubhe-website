@@ -4,7 +4,6 @@ import Benefits from "@/components/benefits"
 import TechStack from "@/components/tech-stack"
 import NetworkArchitecture from "@/components/network-architecture"
 import Showcase from "@/components/showcase"
-import Investors from "@/components/investors"
 import GetStarted from "@/components/get-started"
 
 

@@ -15,9 +15,6 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
 
   useEffect(() => {
     const totalDuration = duration
-    const searchPhase = totalDuration * 0.7
-    const foundPhase = totalDuration * 0.2
-    const completePhase = totalDuration * 0.1
 
     // Progress animation
     const progressInterval = setInterval(() => {
@@ -271,7 +268,7 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
               boxShadow: '0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(59, 130, 246, 0.6)'
             }}
             animate={{
-              x: [0, window.innerWidth + 100],
+              x: [0, 1200],
               y: [0, -100],
               opacity: [0, 1, 1, 0],
             }}
@@ -537,11 +534,11 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
           <div className="flex justify-center space-x-8">
             <div className="flex items-center space-x-2">
               <motion.div 
-                className={`w-3 h-3 rounded-full ${phase === 'searching' ? 'bg-cyan-400' : phase !== 'searching' ? 'bg-green-400' : 'bg-gray-600'}`}
+                className={`w-3 h-3 rounded-full ${phase === 'searching' ? 'bg-cyan-400' : 'bg-green-400'}`}
                 animate={phase === 'searching' ? { scale: [1, 1.2, 1] } : {}}
                 transition={{ duration: 1, repeat: Infinity }}
               />
-              <span className={`text-xs ${phase === 'searching' ? 'text-cyan-400' : phase !== 'searching' ? 'text-green-400' : 'text-gray-400'}`}>
+              <span className={`text-xs ${phase === 'searching' ? 'text-cyan-400' : 'text-green-400'}`}>
                 Scanning
               </span>
             </div>
