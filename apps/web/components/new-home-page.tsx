@@ -1392,58 +1392,122 @@ export default function NewHomePage() {
           <div className="relative">
             <div className="flex animate-scroll">
               {/* First set of logos */}
-              <div className="flex items-center justify-center space-x-16 min-w-full">
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">NEXUS</div>
+              <div className="flex items-center justify-center space-x-12 min-w-full">
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/dubhe/png/a.png" 
+                    alt="Dubhe" 
+                    className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">NUMERON</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/merak/png/a.png" 
+                    alt="Merak" 
+                    className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">PHAD</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/numeron/logo.png" 
+                    alt="Numeron" 
+                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">OBELISK</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/phad/phad.png" 
+                    alt="Phad" 
+                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">MOVE LABS</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/obelisklabs/obelisk 第一版/PNG/白色字.png" 
+                    alt="Obelisk Labs" 
+                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">SUI PLAY</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/sui/Sui Logo White/Sui_Logo_White.png" 
+                    alt="Sui" 
+                    className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">APTOS DEV</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/suifans/suifans.png" 
+                    alt="SuiFans" 
+                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">ROOCH</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/suirobots/logo.png" 
+                    alt="SuiRobots" 
+                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
                 </div>
               </div>
               
               {/* Duplicate set for seamless loop */}
-              <div className="flex items-center justify-center space-x-16 min-w-full">
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">NEXUS</div>
+              <div className="flex items-center justify-center space-x-12 min-w-full">
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/dubhe/png/a.png" 
+                    alt="Dubhe" 
+                    className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">NUMERON</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/merak/png/a.png" 
+                    alt="Merak" 
+                    className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">PHAD</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/numeron/logo.png" 
+                    alt="Numeron" 
+                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">OBELISK</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/phad/phad.png" 
+                    alt="Phad" 
+                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">MOVE LABS</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/obelisklabs/obelisk 第一版/PNG/白色字.png" 
+                    alt="Obelisk Labs" 
+                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">SUI PLAY</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/sui/Sui Logo White/Sui_Logo_White.png" 
+                    alt="Sui" 
+                    className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">APTOS DEV</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/suifans/suifans.png" 
+                    alt="SuiFans" 
+                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
                 </div>
-                <div className="flex items-center justify-center w-32 h-16 text-white">
-                  <div className="text-xl font-bold tracking-wider">ROOCH</div>
+                <div className="flex items-center justify-center w-28 h-16">
+                  <img 
+                    src="/mediakit/suirobots/logo.png" 
+                    alt="SuiRobots" 
+                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
                 </div>
               </div>
             </div>

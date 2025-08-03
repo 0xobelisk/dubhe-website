@@ -1,37 +1,133 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { TrendingUp, Users, Zap, Shield } from "lucide-react"
+import { TrendingUp, Users, Zap, Shield, DollarSign, Clock } from "lucide-react"
+
+// Animated counter component
+function AnimatedCounter({ 
+  targetValue, 
+  suffix = "", 
+  prefix = "", 
+  duration = 2000 
+}: { 
+  targetValue: number
+  suffix?: string
+  prefix?: string
+  duration?: number 
+}) {
+  const [count, setCount] = useState(0)
+  
+  useEffect(() => {
+    let startTime: number
+    let animationFrame: number
+    
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp
+      
+      const progress = Math.min((timestamp - startTime) / duration, 1)
+      const easeProgress = 1 - Math.pow(1 - progress, 3) // Ease-out cubic
+      
+      setCount(Math.floor(targetValue * easeProgress))
+      
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(animate)
+      }
+    }
+    
+    animationFrame = requestAnimationFrame(animate)
+    
+    return () => {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame)
+      }
+    }
+  }, [targetValue, duration])
+  
+  // Format number with commas
+  const formatNumber = (num: number) => {
+    return num.toLocaleString()
+  }
+  
+  return (
+    <span>
+      {prefix}{formatNumber(count)}{suffix}
+    </span>
+  )
+}
+
+// Simulated real-time incrementing component
+function LiveCounter({ 
+  baseValue, 
+  suffix = "", 
+  prefix = "",
+  incrementRate = 1, // increment every X seconds
+  formatMillion = false // format large numbers as millions
+}: { 
+  baseValue: number
+  suffix?: string
+  prefix?: string
+  incrementRate?: number
+  formatMillion?: boolean
+}) {
+  const [count, setCount] = useState(baseValue)
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCount(prev => prev + Math.floor(Math.random() * 3) + 1) // Random increment 1-3
+    }, incrementRate * 1000)
+    
+    return () => clearInterval(interval)
+  }, [incrementRate])
+  
+  const formatNumber = (num: number) => {
+    if (formatMillion && num >= 1000000) {
+      return (num / 1000000).toFixed(1) + "M"
+    }
+    return num.toLocaleString()
+  }
+  
+  return (
+    <motion.span
+      key={count}
+      initial={{ scale: 1.1, color: "#10b981" }}
+      animate={{ scale: 1, color: "#ffffff" }}
+      transition={{ duration: 0.3 }}
+    >
+      {prefix}{formatNumber(count)}{suffix}
+    </motion.span>
+  )
+}
 
 export default function NetworkStats() {
   const stats = [
     {
-      icon: TrendingUp,
-      label: "Total Value Locked",
-      value: "$2.1B",
-      change: "+12.5%",
+      icon: Zap,
+      label: "Transactions",
+      value: <LiveCounter baseValue={3236} suffix="+" incrementRate={2} />,
+      change: "Live",
       changeType: "positive" as const
     },
     {
-      icon: Zap,
-      label: "Transactions",
-      value: "45.2M",
-      change: "+8.3%",
+      icon: TrendingUp,
+      label: "Event-Driven Operations",
+      value: <LiveCounter baseValue={155087} suffix="+" incrementRate={1.5} />,
+      change: "Real-time",
       changeType: "positive" as const
     },
     {
       icon: Users,
-      label: "Active Validators",
-      value: "1,247",
-      change: "+5.1%",
+      label: "Users",
+      value: <LiveCounter baseValue={48000} suffix="+" incrementRate={3} />,
+      change: "Growing",
       changeType: "positive" as const
     },
     {
-      icon: Shield,
-      label: "Network Uptime",
-      value: "99.9%",
-      change: "Stable",
-      changeType: "neutral" as const
+      icon: DollarSign,
+      label: "Gas Savings (USD)",
+      value: <LiveCounter baseValue={102300000} prefix="$" suffix="" incrementRate={4} formatMillion={true} />,
+      change: "+15.2%",
+      changeType: "positive" as const
     }
   ]
 

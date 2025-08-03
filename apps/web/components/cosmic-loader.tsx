@@ -311,7 +311,7 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
         <div className="text-center space-y-12">
           
           {/* Big Dipper Constellation with Search Animation */}
-          <div className="relative w-80 h-48 mx-auto">
+          <div className="relative w-[32rem] h-80 mx-auto">
             {/* Search Beam Animation */}
             <AnimatePresence>
               {phase === 'searching' && (
@@ -534,7 +534,7 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
           </motion.div>
 
           {/* Progress Bar */}
-          <div className="w-80 mx-auto space-y-3">
+          <div className="w-[32rem] mx-auto space-y-3">
             <div className="w-full bg-gray-800/50 rounded-full h-2 backdrop-blur-sm border border-gray-700">
               <motion.div 
                 className="h-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 rounded-full relative overflow-hidden"
@@ -554,39 +554,6 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
             </div>
           </div>
 
-          {/* Phase Indicators */}
-          <div className="flex justify-center space-x-8">
-            <div className="flex items-center space-x-2">
-              <motion.div 
-                className={`w-3 h-3 rounded-full ${phase === 'searching' ? 'bg-cyan-400' : 'bg-green-400'}`}
-                animate={phase === 'searching' ? { scale: [1, 1.2, 1] } : {}}
-                transition={{ duration: 1, repeat: Infinity }}
-              />
-              <span className={`text-xs ${phase === 'searching' ? 'text-cyan-400' : 'text-green-400'}`}>
-                Scanning
-              </span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <motion.div 
-                className={`w-3 h-3 rounded-full ${phase === 'found' ? 'bg-purple-400' : phase === 'complete' ? 'bg-green-400' : 'bg-gray-600'}`}
-                animate={phase === 'found' ? { scale: [1, 1.2, 1] } : {}}
-                transition={{ duration: 1, repeat: Infinity }}
-              />
-              <span className={`text-xs ${phase === 'found' ? 'text-purple-400' : phase === 'complete' ? 'text-green-400' : 'text-gray-400'}`}>
-                Located
-              </span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <motion.div 
-                className={`w-3 h-3 rounded-full ${phase === 'complete' ? 'bg-green-400' : 'bg-gray-600'}`}
-                animate={phase === 'complete' ? { scale: [1, 1.2, 1] } : {}}
-                transition={{ duration: 1, repeat: Infinity }}
-              />
-              <span className={`text-xs ${phase === 'complete' ? 'text-green-400' : 'text-gray-400'}`}>
-                Locked
-              </span>
-            </div>
-          </div>
         </div>
       </div>
 

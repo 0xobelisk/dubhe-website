@@ -52,11 +52,8 @@ export default function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="text-gray-300 hover:text-white px-4 py-2 text-sm font-medium transition-colors duration-200">
-              Connect Wallet
-            </button>
             <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200">
-              Get Started
+              Connect Wallet
             </button>
           </div>
 
@@ -93,11 +90,8 @@ export default function Navigation() {
                 </a>
               ))}
               <div className="pt-4 space-y-2">
-                <button className="w-full text-left text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-200">
-                  Connect Wallet
-                </button>
                 <button className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200">
-                  Get Started
+                  Connect Wallet
                 </button>
               </div>
             </div>
