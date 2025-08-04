@@ -86,7 +86,7 @@ export default function TokenPage() {
     },
     {
       token: "STARS",
-      supply: "Unlimited",
+      supply: "1T",
       distribution: [
         { category: "Community Rewards", percentage: 60, color: "from-yellow-500 to-orange-500" },
         { category: "Developer Incentives", percentage: 25, color: "from-blue-500 to-indigo-500" },

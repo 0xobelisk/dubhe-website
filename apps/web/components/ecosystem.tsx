@@ -19,7 +19,7 @@ export default function Ecosystem() {
       icon: DollarSign,
       description: "Decentralized finance protocols",
       projects: [
-        { name: "DubheSwap", description: "Automated Market Maker", tvl: "$45M" },
+        { name: "Meark", description: "Automated Market Maker", tvl: "$45M" },
       ] as Project[]
     },
     {
@@ -27,7 +27,7 @@ export default function Ecosystem() {
       icon: Gamepad2,
       description: "On-chain games and metaverse",
       projects: [
-        { name: "Numeron", description: "Fantasy RPG Adventure", players: "12K+" },
+        { name: "Numeron", description: "Fantasy AI RPG Adventure", players: "12K+" },
       ] as Project[]
     },
     {
@@ -35,7 +35,7 @@ export default function Ecosystem() {
       icon: Code,
       description: "Developer tools and infrastructure",
       projects: [
-        { name: "Dubhe SDK", description: "Development Kit", downloads: "50K+" },
+        { name: "Cyferio SDK", description: "Development Kit", downloads: "50K+" },
       ] as Project[]
     },
     {
@@ -43,7 +43,7 @@ export default function Ecosystem() {
       icon: Coins,
       description: "Digital collectibles and assets",
       projects: [
-        { name: "ArtSpace", description: "NFT Marketplace", volume: "$2.3M" },
+        { name: "Objectsdao", description: "NFT Auction", volume: "$2.3M" },
       ] as Project[]
     }
   ]
