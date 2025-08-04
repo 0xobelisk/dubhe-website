@@ -102,7 +102,7 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
         </div>
 
         {/* Central Scanner Frame */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-64">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[32rem] h-80">
           <div className="relative w-full h-full">
             {/* Scanner border */}
             <div className="absolute inset-0 border-2 border-cyan-400/40 rounded-lg">
@@ -116,7 +116,7 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
             {/* Scanning line animation */}
             <motion.div
               className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent"
-              animate={{ y: [0, 256, 0] }}
+              animate={{ y: [0, 320, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
             />
           </div>
@@ -209,9 +209,9 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
         </div>
 
         {/* Radar sweep animation */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-64">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[32rem] h-80">
           <motion.div
-            className="absolute top-1/2 left-1/2 w-1 h-32 bg-gradient-to-t from-cyan-400/80 to-transparent transform -translate-x-1/2 origin-bottom"
+            className="absolute top-1/2 left-1/2 w-1 h-40 bg-gradient-to-t from-cyan-400/80 to-transparent transform -translate-x-1/2 origin-bottom"
             animate={{ rotate: [0, 360] }}
             transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
             style={{ transformOrigin: "bottom center" }}
@@ -327,8 +327,8 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
                       boxShadow: '0 0 20px rgba(6, 182, 212, 0.8), 0 0 40px rgba(6, 182, 212, 0.6)'
                     }}
                     animate={{
-                      x: [50, 120, 200, 280, 250, 180, 100],
-                      y: [150, 130, 150, 60, 80, 100, 60],
+                      x: [100, 180, 260, 380, 340, 240, 160],
+                      y: [260, 240, 260, 160, 180, 200, 160],
                     }}
                     transition={{
                       duration: 2,
@@ -341,8 +341,8 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
                   <motion.div
                     className="absolute w-20 h-20 rounded-full bg-cyan-400/10 border border-cyan-400/30"
                     animate={{
-                      x: [30, 100, 180, 260, 230, 160, 80],
-                      y: [130, 110, 130, 40, 60, 80, 40],
+                      x: [80, 160, 240, 360, 320, 220, 140],
+                      y: [240, 220, 240, 140, 160, 180, 140],
                       scale: [1, 1.2, 1, 1.2, 1, 1.2, 1],
                     }}
                     transition={{
@@ -357,13 +357,13 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
 
             {/* Big Dipper Stars */}
             {[
-              { name: 'Dubhe', x: 280, y: 60, size: 'w-6 h-6', primary: true },
-              { name: 'Merak', x: 260, y: 130, size: 'w-4 h-4' },
-              { name: 'Phecda', x: 200, y: 150, size: 'w-4 h-4' },
-              { name: 'Megrez', x: 160, y: 100, size: 'w-3 h-3' },
-              { name: 'Alioth', x: 130, y: 80, size: 'w-4 h-4' },
-              { name: 'Mizar', x: 100, y: 60, size: 'w-4 h-4' },
-              { name: 'Alkaid', x: 60, y: 80, size: 'w-4 h-4' }
+              { name: 'Dubhe', x: 380, y: 160, size: 'w-6 h-6', primary: true },
+              { name: 'Merak', x: 340, y: 240, size: 'w-4 h-4' },
+              { name: 'Phecda', x: 260, y: 260, size: 'w-4 h-4' },
+              { name: 'Megrez', x: 220, y: 200, size: 'w-3 h-3' },
+              { name: 'Alioth', x: 180, y: 180, size: 'w-4 h-4' },
+              { name: 'Mizar', x: 140, y: 160, size: 'w-4 h-4' },
+              { name: 'Alkaid', x: 100, y: 180, size: 'w-4 h-4' }
             ].map((star, index) => (
               <motion.div
                 key={star.name}
@@ -424,7 +424,7 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
               {(phase === 'found' || phase === 'complete') && (
                 <motion.svg 
                   className="absolute inset-0 w-full h-full" 
-                  viewBox="0 0 320 192"
+                  viewBox="0 0 440 320"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1 }}
@@ -435,48 +435,58 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
                       <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.8" />
                     </linearGradient>
                   </defs>
-                  <g stroke="url(#lineGradient)" strokeWidth="2" fill="none">
+                  <g stroke="url(#lineGradient)" strokeWidth="3" fill="none" strokeLinecap="round">
+                    {/* Bowl of the Big Dipper - 勺子主体 */}
+                    {/* Dubhe to Merak */}
                     <motion.line 
-                      x1="280" y1="60" x2="260" y2="130"
+                      x1="380" y1="160" x2="340" y2="240"
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
                       transition={{ duration: 0.5, delay: 0.5 }}
                     />
+                    {/* Merak to Phecda */}
                     <motion.line 
-                      x1="260" y1="130" x2="200" y2="150"
+                      x1="340" y1="240" x2="260" y2="260"
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
                       transition={{ duration: 0.5, delay: 0.7 }}
                     />
+                    {/* Phecda to Megrez */}
                     <motion.line 
-                      x1="200" y1="150" x2="160" y2="100"
+                      x1="260" y1="260" x2="220" y2="200"
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
                       transition={{ duration: 0.5, delay: 0.9 }}
                     />
+                    {/* Megrez back to Dubhe - 完成勺子主体 */}
                     <motion.line 
-                      x1="160" y1="100" x2="280" y2="60"
+                      x1="220" y1="200" x2="380" y2="160"
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
                       transition={{ duration: 0.5, delay: 1.1 }}
                     />
+                    
+                    {/* Handle of the Big Dipper - 勺子手柄 */}
+                    {/* Megrez to Alioth */}
                     <motion.line 
-                      x1="160" y1="100" x2="130" y2="80"
+                      x1="220" y1="200" x2="180" y2="180"
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
                       transition={{ duration: 0.5, delay: 1.3 }}
                     />
+                    {/* Alioth to Mizar */}
                     <motion.line 
-                      x1="130" y1="80" x2="100" y2="60"
+                      x1="180" y1="180" x2="140" y2="160"
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
                       transition={{ duration: 0.5, delay: 1.5 }}
                     />
+                    {/* Mizar to Alkaid */}
                     <motion.line 
-                      x1="100" y1="60" x2="60" y2="80"
+                      x1="140" y1="160" x2="100" y2="180"
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
-                      transition={{ duration: 0.5, delay: 1.7 }}
+                      transition={{ duration: 0.8, delay: 1.7 }}
                     />
                   </g>
                 </motion.svg>
@@ -488,7 +498,7 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
               {phase === 'complete' && (
                 <motion.div
                   className="absolute w-12 h-12 transform -translate-x-1/2 -translate-y-1/2"
-                  style={{ left: 280, top: 60 }}
+                  style={{ left: 380, top: 160 }}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}

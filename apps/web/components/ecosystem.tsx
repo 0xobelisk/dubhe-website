@@ -3,6 +3,15 @@
 import { motion } from "framer-motion"
 import { ExternalLink, Code, Coins, Gamepad2, DollarSign } from "lucide-react"
 
+type Project = {
+  name: string;
+  description: string;
+  tvl?: string;
+  players?: string;
+  downloads?: string;
+  volume?: string;
+}
+
 export default function Ecosystem() {
   const categories = [
     {
@@ -11,7 +20,7 @@ export default function Ecosystem() {
       description: "Decentralized finance protocols",
       projects: [
         { name: "DubheSwap", description: "Automated Market Maker", tvl: "$45M" },
-      ]
+      ] as Project[]
     },
     {
       title: "Gaming",
@@ -19,7 +28,7 @@ export default function Ecosystem() {
       description: "On-chain games and metaverse",
       projects: [
         { name: "Numeron", description: "Fantasy RPG Adventure", players: "12K+" },
-      ]
+      ] as Project[]
     },
     {
       title: "Infrastructure",
@@ -27,7 +36,7 @@ export default function Ecosystem() {
       description: "Developer tools and infrastructure",
       projects: [
         { name: "Dubhe SDK", description: "Development Kit", downloads: "50K+" },
-      ]
+      ] as Project[]
     },
     {
       title: "NFTs",
@@ -35,7 +44,7 @@ export default function Ecosystem() {
       description: "Digital collectibles and assets",
       projects: [
         { name: "ArtSpace", description: "NFT Marketplace", volume: "$2.3M" },
-      ]
+      ] as Project[]
     }
   ]
 
@@ -75,7 +84,7 @@ export default function Ecosystem() {
                 <p className="text-gray-600 text-sm">{category.description}</p>
               </div>
 
-              {category.projects.map((project, projectIndex) => (
+              {category.projects.map((project) => (
                 <motion.div
                   key={project.name}
                   initial={{ opacity: 0, y: 20 }}
@@ -91,22 +100,13 @@ export default function Ecosystem() {
                   <p className="text-gray-600 text-sm mb-3">{project.description}</p>
                   <div className="inline-flex flex-col items-center">
                     <div className="text-lg font-bold text-purple-600">
-                      {'tvl' in project ? project.tvl :
-                       'players' in project ? project.players :
-                       'downloads' in project ? project.downloads :
-                       'volume' in project ? project.volume :
-                       'creators' in project ? project.creators :
-                       'assets' in project ? project.assets :
-                       'feeds' in project ? project.feeds : ''}
+                      {project.tvl || project.players || project.downloads || project.volume || ''}
                     </div>
                     <div className="text-xs text-gray-500">
-                      {'tvl' in project ? 'TVL' : 
-                       'players' in project ? 'Players' :
-                       'downloads' in project ? 'Downloads' :
-                       'volume' in project ? 'Volume' :
-                       'creators' in project ? 'Creators' :
-                       'assets' in project ? 'Assets' :
-                       'feeds' in project ? 'Feeds' : ''}
+                      {project.tvl ? 'TVL' : 
+                       project.players ? 'Players' :
+                       project.downloads ? 'Downloads' :
+                       project.volume ? 'Volume' : ''}
                     </div>
                   </div>
                 </motion.div>

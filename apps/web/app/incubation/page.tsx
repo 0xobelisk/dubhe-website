@@ -1,0 +1,530 @@
+"use client"
+
+import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
+import { 
+  Lightbulb, 
+  Users, 
+  TrendingUp, 
+  ArrowRight,
+  CheckCircle,
+  Target,
+  Sparkles,
+  ExternalLink,
+  Rocket,
+  Award,
+  Building,
+  Briefcase,
+  Globe,
+  Zap
+} from "lucide-react"
+import Navigation from "../../components/navigation"
+import Footer from "../../components/footer"
+
+export default function IncubationPage() {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  const programs = [
+    {
+      icon: <Rocket className="w-6 h-6" />,
+      title: "Accelerator Program",
+      duration: "3 months",
+      funding: "Up to $500K",
+      description: "Intensive program for early-stage startups with proven traction",
+      benefits: ["Seed funding", "Weekly mentorship", "Product development", "Go-to-market strategy"],
+      color: "from-purple-500 to-pink-500"
+    },
+    {
+      icon: <Building className="w-6 h-6" />,
+      title: "Venture Studio",
+      duration: "6-12 months", 
+      funding: "Up to $1M",
+      description: "Co-build revolutionary Move-based companies from ground up",
+      benefits: ["Co-founding support", "Technical team", "Market research", "Legal framework"],
+      color: "from-blue-500 to-cyan-500"
+    },
+    {
+      icon: <Globe className="w-6 h-6" />,
+      title: "Scale Program",
+      duration: "6 months",
+      funding: "Up to $2M",
+      description: "Growth-stage companies ready for global expansion",
+      benefits: ["Series A preparation", "Strategic partnerships", "International expansion", "Enterprise sales"],
+      color: "from-green-500 to-emerald-500"
+    }
+  ]
+
+  const mentors = [
+    {
+      name: "Dr. Elena Rodriguez",
+      role: "Former CTO at Coinbase",
+      expertise: "Blockchain Architecture",
+      image: "ER",
+      company: "Coinbase"
+    },
+    {
+      name: "Marcus Chen", 
+      role: "Founder of MoveDAO",
+      expertise: "Move Development",
+      image: "MC",
+      company: "MoveDAO"
+    },
+    {
+      name: "Sarah Kim",
+      role: "Partner at Andreessen Horowitz",
+      expertise: "Venture Capital",
+      image: "SK", 
+      company: "a16z"
+    },
+    {
+      name: "David Wilson",
+      role: "Head of Strategy at Sui Foundation",
+      expertise: "Ecosystem Growth",
+      image: "DW",
+      company: "Sui Foundation"
+    }
+  ]
+
+  const startups = [
+    {
+      name: "ChainBridge",
+      category: "Infrastructure",
+      stage: "Series A",
+      funding: "$5M raised",
+      description: "Cross-chain interoperability protocol",
+      valuation: "$50M"
+    },
+    {
+      name: "MoveFi",
+      category: "DeFi",
+      stage: "Seed",
+      funding: "$2M raised", 
+      description: "Yield farming aggregator for Move chains",
+      valuation: "$20M"
+    },
+    {
+      name: "GameVerse",
+      category: "Gaming",
+      stage: "Pre-Seed",
+      funding: "$500K raised",
+      description: "On-chain gaming metaverse platform", 
+      valuation: "$8M"
+    }
+  ]
+
+  const resources = [
+    {
+      icon: <Users className="w-5 h-5" />,
+      title: "Expert Mentorship", 
+      description: "Access to 50+ industry experts and successful entrepreneurs"
+    },
+    {
+      icon: <Briefcase className="w-5 h-5" />,
+      title: "Co-working Space",
+      description: "Premium office space in major tech hubs worldwide"
+    },
+    {
+      icon: <Target className="w-5 h-5" />,
+      title: "Market Access",
+      description: "Direct connections to enterprise customers and partners"
+    },
+    {
+      icon: <Zap className="w-5 h-5" />,
+      title: "Technical Support",
+      description: "Dedicated engineering team for technical challenges"
+    },
+    {
+      icon: <Award className="w-5 h-5" />,
+      title: "Demo Day",
+      description: "Pitch to 200+ investors at our quarterly demo events"
+    },
+    {
+      icon: <Globe className="w-5 h-5" />,
+      title: "Global Network",
+      description: "Access to our worldwide network of alumni and partners"
+    }
+  ]
+
+  return (
+    <>
+      {/* Navigation */}
+      <Navigation />
+      
+      {/* Hero Section */}
+      <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 overflow-hidden pt-16">
+        {/* Background Effects */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-purple-500/30 to-blue-500/40 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-gradient-to-br from-blue-600/30 to-purple-600/40 rounded-full blur-3xl"></div>
+          
+          {/* Floating startup symbols */}
+          <div className="absolute inset-0 overflow-hidden">
+            {isClient && Array.from({ length: 15 }).map((_, i) => (
+              <div
+                key={`startup-${i}`}
+                className="absolute text-purple-300/20 text-2xl"
+                style={{
+                  top: `${Math.random() * 100}%`,
+                  left: `${Math.random() * 100}%`,
+                  animation: `float ${3 + Math.random() * 2}s ease-in-out infinite ${Math.random() * 2}s`
+                }}
+              >
+                {i % 3 === 0 ? '🚀' : i % 3 === 1 ? '💡' : '🏢'}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 min-h-screen flex items-center">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+            <div className="text-center">
+              
+              {/* Badge */}
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="inline-block bg-purple-500/10 text-purple-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-purple-500/20"
+              >
+                <Lightbulb className="w-4 h-4 inline mr-2" />
+                Dubhe Incubation
+              </motion.div>
+
+              {/* Main Headline */}
+              <div className="space-y-6 max-w-5xl mx-auto">
+                <motion.h1 
+                  className="text-5xl lg:text-7xl font-bold text-white leading-tight"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                >
+                  Build the Next
+                  <br />
+                  <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                    Unicorn Startup
+                  </span>
+                </motion.h1>
+                
+                <motion.p 
+                  className="text-xl text-purple-100 max-w-3xl mx-auto leading-relaxed"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                >
+                  Join our world-class incubation programs designed to transform innovative ideas 
+                  into billion-dollar companies on the Move blockchain ecosystem.
+                </motion.p>
+              </div>
+
+              {/* Stats */}
+              <motion.div 
+                className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12 max-w-5xl mx-auto"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+              >
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-purple-400 mb-2">$50M+</div>
+                  <div className="text-gray-300">Total Funding</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-400 mb-2">25+</div>
+                  <div className="text-gray-300">Startups Incubated</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-pink-400 mb-2">3</div>
+                  <div className="text-gray-300">Unicorns Created</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-cyan-400 mb-2">85%</div>
+                  <div className="text-gray-300">Success Rate</div>
+                </div>
+              </motion.div>
+
+              {/* CTA Buttons */}
+              <motion.div 
+                className="flex flex-col sm:flex-row gap-4 pt-8 justify-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+              >
+                <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+                  Apply Now
+                  <ArrowRight className="w-5 h-5 inline ml-2" />
+                </button>
+                
+                <button className="border-2 border-purple-400/50 hover:border-purple-300 bg-purple-900/20 backdrop-blur-sm text-purple-100 hover:text-white hover:bg-purple-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
+                  Learn More
+                </button>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Programs Section */}
+      <div className="py-24 px-6 lg:px-8 bg-slate-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-purple-200"
+            >
+              Incubation Programs
+            </motion.div>
+            <motion.h2 
+              className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              Choose Your Growth Path
+            </motion.h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {programs.map((program, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700 hover:border-purple-500/50 transition-all duration-300"
+              >
+                <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r ${program.color} text-white mb-6`}>
+                  {program.icon}
+                </div>
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold text-white">{program.title}</h3>
+                  <span className="text-sm text-purple-400 font-medium">{program.duration}</span>
+                </div>
+                <div className="text-2xl font-bold text-purple-400 mb-4">{program.funding}</div>
+                <p className="text-gray-300 mb-6">{program.description}</p>
+                <div className="space-y-2">
+                  {program.benefits.map((benefit, i) => (
+                    <div key={i} className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-purple-400 flex-shrink-0" />
+                      <span className="text-gray-300 text-sm">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Mentors Section */}
+      <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-900 to-purple-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <motion.h2 
+              className="text-4xl lg:text-5xl font-bold text-white mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              World-Class Mentors
+            </motion.h2>
+            <motion.p 
+              className="text-lg text-gray-300 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              Learn from industry veterans who have built and scaled successful companies
+            </motion.p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {mentors.map((mentor, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/20 hover:border-purple-400/50 transition-all duration-300"
+              >
+                <div className="text-center mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">
+                    {mentor.image}
+                  </div>
+                  <h3 className="text-lg font-bold text-white">{mentor.name}</h3>
+                  <p className="text-purple-400 text-sm">{mentor.role}</p>
+                  <p className="text-gray-400 text-xs">{mentor.company}</p>
+                </div>
+                <div className="text-center">
+                  <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs">
+                    {mentor.expertise}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Portfolio Companies Section */}
+      <div className="py-24 px-6 lg:px-8 bg-slate-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <motion.h2 
+              className="text-4xl lg:text-5xl font-bold text-white mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              Portfolio Companies
+            </motion.h2>
+            <motion.p 
+              className="text-lg text-gray-300 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              Successful startups that graduated from our incubation programs
+            </motion.p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {startups.map((startup, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700 hover:border-purple-500/50 transition-all duration-300"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <Building className="w-8 h-8 text-purple-400" />
+                  <div>
+                    <h3 className="text-xl font-bold text-white">{startup.name}</h3>
+                    <p className="text-purple-400 text-sm">{startup.category}</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-between mb-4">
+                  <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs font-medium">
+                    {startup.stage}
+                  </span>
+                  <span className="text-gray-300 text-sm">{startup.funding}</span>
+                </div>
+                
+                <p className="text-gray-300 text-sm mb-4">{startup.description}</p>
+                
+                <div className="flex items-center justify-between">
+                  <span className="text-purple-400 font-semibold">Valuation:</span>
+                  <span className="text-white font-bold">{startup.valuation}</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Resources Section */}
+      <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-purple-900 to-blue-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <motion.h2 
+              className="text-4xl lg:text-5xl font-bold text-white mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              Resources & Support
+            </motion.h2>
+            <motion.p 
+              className="text-lg text-gray-300 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              Everything you need to build and scale your startup
+            </motion.p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {resources.map((resource, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-slate-800/40 backdrop-blur-sm rounded-xl p-6 border border-purple-500/20 hover:border-purple-400/50 transition-all duration-300"
+              >
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r from-purple-500 to-blue-500 text-white mb-4">
+                  {resource.icon}
+                </div>
+                <h3 className="text-lg font-bold text-white mb-3">{resource.title}</h3>
+                <p className="text-gray-300 text-sm">{resource.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-purple-900 to-blue-900">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.h2 
+            className="text-4xl lg:text-5xl font-bold text-white mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            Ready to Launch Your Startup?
+          </motion.h2>
+          <motion.p 
+            className="text-xl text-gray-300 mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            Join our incubation program and turn your vision into reality
+          </motion.p>
+          <motion.div 
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+              Start Application
+              <Sparkles className="w-5 h-5 inline ml-2" />
+            </button>
+            <button className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
+              Schedule Call
+              <ExternalLink className="w-5 h-5" />
+            </button>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <Footer />
+    </>
+  )
+}

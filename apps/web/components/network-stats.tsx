@@ -2,59 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { TrendingUp, Users, Zap, Shield, DollarSign, Clock } from "lucide-react"
+import { TrendingUp, Users, Zap, DollarSign } from "lucide-react"
 
-// Animated counter component
-function AnimatedCounter({ 
-  targetValue, 
-  suffix = "", 
-  prefix = "", 
-  duration = 2000 
-}: { 
-  targetValue: number
-  suffix?: string
-  prefix?: string
-  duration?: number 
-}) {
-  const [count, setCount] = useState(0)
-  
-  useEffect(() => {
-    let startTime: number
-    let animationFrame: number
-    
-    const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp
-      
-      const progress = Math.min((timestamp - startTime) / duration, 1)
-      const easeProgress = 1 - Math.pow(1 - progress, 3) // Ease-out cubic
-      
-      setCount(Math.floor(targetValue * easeProgress))
-      
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate)
-      }
-    }
-    
-    animationFrame = requestAnimationFrame(animate)
-    
-    return () => {
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame)
-      }
-    }
-  }, [targetValue, duration])
-  
-  // Format number with commas
-  const formatNumber = (num: number) => {
-    return num.toLocaleString()
-  }
-  
-  return (
-    <span>
-      {prefix}{formatNumber(count)}{suffix}
-    </span>
-  )
-}
 
 // Simulated real-time incrementing component
 function LiveCounter({ 
@@ -104,28 +53,28 @@ export default function NetworkStats() {
     {
       icon: Zap,
       label: "Transactions",
-      value: <LiveCounter baseValue={3236} suffix="+" incrementRate={2} />,
+      value: <LiveCounter baseValue={10000000} suffix="+" incrementRate={2} formatMillion={true} />,
       change: "Live",
       changeType: "positive" as const
     },
     {
       icon: TrendingUp,
       label: "Event-Driven Operations",
-      value: <LiveCounter baseValue={155087} suffix="+" incrementRate={1.5} />,
+      value: <LiveCounter baseValue={50000000} suffix="+" incrementRate={1.5} formatMillion={true} />,
       change: "Real-time",
       changeType: "positive" as const
     },
     {
       icon: Users,
       label: "Users",
-      value: <LiveCounter baseValue={48000} suffix="+" incrementRate={3} />,
+      value: <LiveCounter baseValue={50000} suffix="+" incrementRate={3} />,
       change: "Growing",
       changeType: "positive" as const
     },
     {
       icon: DollarSign,
-      label: "Gas Savings (USD)",
-      value: <LiveCounter baseValue={102300000} prefix="$" suffix="" incrementRate={4} formatMillion={true} />,
+      label: "Income (USD)",
+      value: <LiveCounter baseValue={500000} prefix="$" suffix="" incrementRate={4} />,
       change: "+15.2%",
       changeType: "positive" as const
     }

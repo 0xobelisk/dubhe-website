@@ -3,8 +3,6 @@ import type { Metadata, Viewport } from 'next';
 
 import '@workspace/ui/globals.css';
 import { Providers } from '@/components/providers';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
 
 const fontSans = Geist({
 	subsets: ['latin'],
@@ -65,12 +63,10 @@ export default function RootLayout({
 				/>
 			</head>
 			<body
-				className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased min-h-screen flex flex-col bg-black text-white`}
+				className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased min-h-screen bg-black text-white`}
 			>
 				<Providers>
-					<Navbar />
-					<div className="flex-1">{children}</div>
-					<Footer />
+					{children}
 				</Providers>
 			</body>
 		</html>

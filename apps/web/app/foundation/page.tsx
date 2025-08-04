@@ -1,296 +1,485 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react"
-import { ExternalLink, Coins, ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@workspace/ui/components/button"
-import CopyableAddress from "../../components/ui/CopyableAddress"
-import Card from "../../components/ui/Card" 
-import GradientText from "../../components/ui/GradientText"
+import { useEffect } from "react"
+import { motion } from "framer-motion"
+import { 
+  Heart, 
+  Users, 
+  Target, 
+  Globe,
+  ArrowRight,
+  Building,
+  Zap,
+  Shield,
+  ExternalLink
+} from "lucide-react"
+import Navigation from "../../components/navigation"
+import Image from "next/image"
+import Link from "next/link"
 
-/**
- * 时间线项目状态类型
- */
-type TimelineStatus = "completed" | "ongoing" | "pending";
-
-/**
- * 时间线项目接口定义
- */
-interface TimelineItem {
-  /** 日期字符串 */
-  date: string;
-  /** 代币数量 */
-  amount: string;
-  /** 状态 */
-  status: TimelineStatus;
-}
-
-/**
- * FoundationPage组件 - 代币基金会页面
- * 
- * 功能特性：
- * - 代币领取界面
- * - 60天解锁时间线的可滚动展示
- * - 用户余额和状态显示
- * - 合约信息展示
- * - 响应式设计
- * 
- * @returns FoundationPage组件JSX元素
- */
-export default function FoundationPage() {
-  const claimableAmount = "960"
-  const totalRewards = "60,000"
-  const claimedRewards = "0"
-  const endTime = "2025/10/15 19:00 GMT+08:00"
+const customStyles = `
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
   
-  const scrollRef = useRef<HTMLDivElement>(null)
-  const [canScrollLeft, setCanScrollLeft] = useState(false)
-  const [canScrollRight, setCanScrollRight] = useState(true)
-
-  // Generate more timeline data for scrolling demo
-  const timelineData: TimelineItem[] = Array.from({ length: 60 }, (_, i) => {
-    const date = new Date(2025, 6, 15 + i) // Starting from July 15, 2025
-    const dateStr = `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}`
-    const status: TimelineStatus = i === 0 ? "completed" : i <= 3 ? "ongoing" : "pending";
-    return {
-      date: dateStr,
-      amount: "960 DUBHE",
-      status
-    }
-  })
-
-  /**
-   * 检查滚动按钮的可用状态
-   */
-  const checkScrollButtons = () => {
-    if (scrollRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current
-      setCanScrollLeft(scrollLeft > 0)
-      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1)
-    }
+  @keyframes subtle-pulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
   }
-
-  /**
-   * 向左滚动时间线
-   */
-  const scrollLeft = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -200, behavior: 'smooth' })
-      setTimeout(checkScrollButtons, 300)
-    }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
   }
-
-  /**
-   * 向右滚动时间线
-   */
-  const scrollRight = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 200, behavior: 'smooth' })
-      setTimeout(checkScrollButtons, 300)
-    }
+  
+  .glass-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
+  
+  .foundation-gradient {
+    background: linear-gradient(135deg, 
+      #0ea5e9 0%, 
+      #3b82f6 50%, 
+      #6366f1 100%);
+  }
+  
+  .hero-background {
+    background: linear-gradient(
+      135deg,
+      #0f172a 0%,
+      #1e293b 25%,
+      #334155 50%,
+      #475569 75%,
+      #64748b 100%
+    );
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(14, 165, 233, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.2) 0%, transparent 50%);
+    animation: subtle-pulse 6s ease-in-out infinite;
+  }
+`
 
+export default function FoundationPage() {
   useEffect(() => {
-    // Check scroll buttons on initial load
-    setTimeout(checkScrollButtons, 100)
+    // Component initialization
   }, [])
 
-  /**
-   * 处理代币领取
-   */
-  const handleClaim = () => {
-    // Token claiming logic would go here
-    console.log("Claiming tokens...")
-  }
-
-
   return (
-    <div className="min-h-screen bg-black text-white pt-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <div className="flex justify-center mb-6">
-            <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-              <Coins className="w-10 h-10 text-white" />
+    <>
+      <style dangerouslySetInnerHTML={{ __html: customStyles }} />
+      
+      {/* Navigation */}
+      <Navigation />
+      
+      {/* Announcement Banner */}
+      <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-6 text-center relative z-40 mt-16">
+        <div className="flex items-center justify-center gap-2">
+          <div className="bg-white text-purple-600 px-2 py-1 rounded text-xs font-semibold">
+            News
+          </div>
+          <span className="text-sm">Dubhe Testnet is live! 🎉</span>
+        </div>
+      </div>
+
+      {/* Main Hero Section */}
+      <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0">
+          <div className="w-full h-full bg-gradient-to-r from-slate-900/20 via-purple-800/30 to-blue-900/20">
+            {/* Enhanced background effects */}
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-blue-700/20 to-purple-800/30"></div>
+            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-purple-500/40 to-blue-500/50 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-gradient-to-br from-blue-600/40 to-purple-600/50 rounded-full blur-3xl"></div>
+            
+            {/* Starfield effect */}
+            <div className="absolute inset-0">
+              {Array.from({ length: 100 }).map((_, i) => (
+                <div
+                  key={`star-${i}`}
+                  className="absolute w-1 h-1 bg-white rounded-full"
+                  style={{
+                    top: `${Math.random() * 100}%`,
+                    left: `${Math.random() * 100}%`,
+                    opacity: Math.random() * 0.8 + 0.2,
+                    animation: `twinkle ${2 + Math.random() * 3}s infinite ${Math.random() * 2}s`
+                  }}
+                />
+              ))}
             </div>
           </div>
-          <GradientText 
-            as="h1" 
-            size="4xl" 
-            weight="bold" 
-            preset="blue-purple"
-            className="mb-4"
-          >
-            Foundation Portal
-          </GradientText>
-          <p className="text-xl text-gray-300 mb-2">Daily unlock over 60 days</p>
         </div>
 
-        {/* Main Card */}
-        <Card variant="glass" padding="lg">
-          {/* Contract Info */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        {/* Content Container */}
+        <div className="relative z-10 min-h-screen flex items-center">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
             <div className="text-center">
-              <p className="text-gray-400 text-sm mb-1">Package Address</p>
-              <div className="flex justify-center">
-                <CopyableAddress 
-                  fullAddress="0x553F24AB1234567890ABCDEF1234567890ABCDEF"
-                  displayAddress="0x553F...24AB"
-                />
+              
+              {/* Logo */}
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="flex flex-col items-center justify-center gap-3 mb-12"
+              >
+                <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
+                  <Image 
+                    src="/logo/light.png" 
+                    alt="Dubhe Foundation"
+                    width={192}
+                    height={64}
+                    className="h-16 w-auto object-contain mb-2 cursor-pointer"
+                  />
+                </Link>
+                <span className="text-2xl font-bold text-white">DUBHE FOUNDATION</span>
+              </motion.div>
+
+              {/* Main Headline */}
+              <div className="space-y-8 max-w-4xl mx-auto">
+                <motion.h1 
+                  className="text-5xl lg:text-7xl font-bold text-white leading-tight"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                >
+                  Supporting the growth
+                  <br />
+                  of the Dubhe Protocol
+                </motion.h1>
+                
+                <motion.p 
+                  className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                >
+                  Through developer support, ecosystem initiatives, and decentralization efforts,
+                  the Dubhe Foundation helps foster the growth and adoption of the Dubhe
+                  protocol's ecosystem.
+                </motion.p>
               </div>
-            </div>
-            <div className="text-center">
-              <p className="text-gray-400 text-sm mb-1">Network</p>
-              <p className="font-medium">Sui</p>
-            </div>
-            <div className="text-center">
-              <p className="text-gray-400 text-sm mb-1">End Time</p>
-              <p className="font-medium">{endTime}</p>
+
+              {/* CTA Buttons */}
+              <motion.div 
+                className="flex flex-col sm:flex-row gap-4 pt-8 justify-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+              >
+                <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+                  Learn about Dubhe
+                </button>
+                
+                <button className="border-2 border-blue-400/50 hover:border-blue-300 bg-blue-900/20 backdrop-blur-sm text-blue-100 hover:text-white hover:bg-blue-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
+                  Join the team
+                </button>
+              </motion.div>
             </div>
           </div>
+        </div>
+      </div>
 
-          {/* Rewards Summary */}
-          <div className="bg-gray-950/50 rounded-xl p-6 mb-8">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full"></div>
-                <span className="font-mono text-lg">hEKCBvX23ska4BTvBpTVUC</span>
-              </div>
-              <Button 
-                variant="outline" 
-                size="sm"
-                className="border-blue-500 text-blue-400 hover:bg-blue-500/10"
-              >
-                View Airdrop Rules
-                <ExternalLink className="w-4 h-4 ml-2" />
-              </Button>
+      {/* Mission Section */}
+      <div className="py-24 px-6 lg:px-8 bg-slate-50 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-purple-200">
+              Our Mission
             </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 max-w-4xl mx-auto leading-tight">
+              Accelerating Move Innovation
+              <br />
+              for Everyone
+            </h2>
+          </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
-              <div>
-                <p className="text-gray-400 text-sm mb-1">Total Rewards</p>
-                <p className="text-xl font-semibold">{totalRewards} DUBHE</p>
+          {/* Mission Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            {/* Developer Support */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
+            >
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 text-white mb-6">
+                <Users className="w-6 h-6" />
               </div>
-              <div>
-                <p className="text-gray-400 text-sm mb-1">Total Claimable</p>
-                <p className="text-xl font-semibold text-blue-400">14,400 DUBHE</p>
-                <Button 
-                  variant="link" 
-                  size="sm" 
-                  className="text-blue-400 p-0 h-auto"
-                >
-                  Claim All
-                </Button>
-              </div>
-              <div>
-                <p className="text-gray-400 text-sm mb-1">Total Rewards</p>
-                <p className="text-xl font-semibold">{totalRewards} DUBHE</p>
-              </div>
-              <div>
-                <p className="text-gray-400 text-sm mb-1">Claimed Rewards</p>
-                <p className="text-xl font-semibold">{claimedRewards} DUBHE</p>
-              </div>
-            </div>
-
-            {/* Daily Claim Section */}
-            <div className="text-center mb-8">
-              <p className="text-gray-400 text-sm mb-2">2025/07/18 21:00 - 2025/10/15 19:00 GMT+08:00</p>
-              <p className="text-6xl font-bold mb-4">{claimableAmount} DUBHE</p>
-              <p className="text-gray-400 mb-6 flex items-center justify-center flex-wrap gap-2">
-                <span>Your reward will be delivered to your primary Sui address after claiming:</span>
-                <CopyableAddress 
-                  fullAddress="0x7219ABCD1234567890EFGH1234567890IJKL6597"
-                  displayAddress="0x7219...6597"
-                />
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Developer Support</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Providing grants, resources, and mentorship to developers building on the Dubhe ecosystem. 
+                From hackathons to long-term project funding.
               </p>
-              
-              <Button 
-                onClick={handleClaim}
-                className="bg-blue-600 hover:bg-blue-500 text-white px-12 py-3 text-lg font-semibold rounded-lg transition-all duration-200"
-              >
-                Claim
-              </Button>
-            </div>
-
-            {/* Scrollable Timeline Carousel */}
-            <div className="relative mt-8">
-              {/* Navigation buttons */}
-              <div className="flex justify-between items-center mb-4">
-                <h3 className="text-lg font-semibold text-white">Daily Unlock Progress</h3>
-                <div className="flex gap-2">
-                  <button
-                    onClick={scrollLeft}
-                    disabled={!canScrollLeft}
-                    className={`p-2 rounded-full transition-colors ${
-                      canScrollLeft 
-                        ? "bg-gray-800 hover:bg-gray-700 text-white" 
-                        : "bg-gray-800/50 text-gray-500 cursor-not-allowed"
-                    }`}
-                  >
-                    <ChevronLeft className="w-4 h-4" />
-                  </button>
-                  <button
-                    onClick={scrollRight}
-                    disabled={!canScrollRight}
-                    className={`p-2 rounded-full transition-colors ${
-                      canScrollRight 
-                        ? "bg-gray-800 hover:bg-gray-700 text-white" 
-                        : "bg-gray-800/50 text-gray-500 cursor-not-allowed"
-                    }`}
-                  >
-                    <ChevronRight className="w-4 h-4" />
-                  </button>
+              <div className="space-y-2">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">Grant programs for innovative projects</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">Technical mentorship and guidance</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">Educational workshops and hackathons</span>
                 </div>
               </div>
+            </motion.div>
 
-              {/* Scrollable timeline */}
-              <div 
-                ref={scrollRef}
-                className="flex gap-6 overflow-x-auto pb-4 [&::-webkit-scrollbar]:hidden"
-                style={{ 
-                  scrollbarWidth: 'none', 
-                  msOverflowStyle: 'none'
-                }}
-                onScroll={checkScrollButtons}
-              >
-                {timelineData.map((item, index) => (
-                  <div key={index} className="flex flex-col items-center relative flex-shrink-0 min-w-[120px]">
-                    {/* Progress line */}
-                    {index < timelineData.length - 1 && (
-                      <div className="absolute top-2 left-[60px] w-[60px] h-0.5 bg-gray-700"></div>
-                    )}
-                    
-                    {/* Status dot */}
-                    <div className={`w-4 h-4 rounded-full mb-2 z-10 ${
-                      item.status === "completed" 
-                        ? "bg-green-500" 
-                        : item.status === "ongoing"
-                        ? "bg-blue-500"
-                        : "bg-gray-600"
-                    }`}></div>
-                    
-                    {/* Date */}
-                    <p className="text-xs text-gray-400 mb-1 text-center">{item.date}</p>
-                    
-                    {/* Amount */}
-                    <p className="text-xs font-medium text-center">{item.amount}</p>
-                    
-                    {/* Status badge */}
-                    <div className={`px-2 py-1 rounded text-xs mt-1 text-center ${
-                      item.status === "completed" 
-                        ? "bg-green-500/20 text-green-400" 
-                        : item.status === "ongoing"
-                        ? "bg-blue-500/20 text-blue-400"
-                        : "bg-gray-600/20 text-gray-400"
-                    }`}>
-                      {item.status === "completed" ? "Completed" : item.status === "ongoing" ? "Ongoing" : "Pending"}
-                    </div>
-                  </div>
-                ))}
+            {/* Ecosystem Growth */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
+            >
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 text-white mb-6">
+                <Target className="w-6 h-6" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Ecosystem Growth</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Strategic partnerships and initiatives to expand the Dubhe ecosystem. 
+                Building bridges between different Move chains and protocols.
+              </p>
+              <div className="space-y-2">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">Cross-chain collaboration initiatives</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">Strategic partnerships with Move chains</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">Infrastructure development support</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Decentralization */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
+            >
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 text-white mb-6">
+                <Globe className="w-6 h-6" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Decentralization</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Ensuring the Dubhe protocol remains truly decentralized through governance, 
+                community involvement, and distributed decision-making processes.
+              </p>
+              <div className="space-y-2">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">Governance framework development</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">Community-driven decision making</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">Open-source protocol development</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
+      {/* Initiatives Section */}
+      <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-block bg-purple-500/10 text-purple-400 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-500/20">
+              Foundation Initiatives
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight">
+              Building the Future Together
+            </h2>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Our active programs and initiatives supporting the Dubhe ecosystem
+            </p>
+          </div>
+
+          {/* Initiatives Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            {/* Grant Program */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-purple-500/50 transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+                  <Heart className="w-6 h-6" />
+                </div>
+                <h3 className="text-2xl font-bold text-white">Dubhe Grant Program</h3>
+              </div>
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                Supporting innovative projects building on Dubhe with funding, mentorship, and resources. 
+                From early-stage prototypes to production-ready applications.
+              </p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-3">
+                  <Zap className="w-4 h-4 text-yellow-400" />
+                  <span className="text-gray-300 text-sm">Up to $50K funding per project</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Users className="w-4 h-4 text-blue-400" />
+                  <span className="text-gray-300 text-sm">Technical mentorship included</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Shield className="w-4 h-4 text-green-400" />
+                  <span className="text-gray-300 text-sm">Security audit support</span>
+                </div>
+              </div>
+              <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-400 hover:to-pink-400 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2">
+                Apply for Grant
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </motion.div>
+
+            {/* Developer Accelerator */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-blue-500/50 transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-white">
+                  <Building className="w-6 h-6" />
+                </div>
+                <h3 className="text-2xl font-bold text-white">Move Accelerator</h3>
+              </div>
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                Intensive 3-month program for Move developers and teams building the next generation 
+                of fully on-chain applications and games.
+              </p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-3">
+                  <Target className="w-4 h-4 text-orange-400" />
+                  <span className="text-gray-300 text-sm">3-month intensive program</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Users className="w-4 h-4 text-blue-400" />
+                  <span className="text-gray-300 text-sm">Expert mentorship network</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Globe className="w-4 h-4 text-green-400" />
+                  <span className="text-gray-300 text-sm">Global demo day presentation</span>
+                </div>
+              </div>
+              <button className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2">
+                Learn More
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="py-16 bg-slate-900 border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Logo and Description */}
+            <div className="md:col-span-1">
+              <div className="flex items-center gap-3 mb-6">
+                <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
+                  <Image 
+                    src="/logo/light.png" 
+                    alt="Dubhe Foundation"
+                    width={120}
+                    height={32}
+                    className="h-8 w-auto object-contain cursor-pointer"
+                  />
+                </Link>
+                <span className="text-lg font-bold text-white">DUBHE FOUNDATION</span>
+              </div>
+              <div className="space-y-4">
+                <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200">
+                  Learn about Dubhe
+                </button>
+                <button className="border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200 block">
+                  Join the team
+                </button>
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <div>
+              <h4 className="text-white font-semibold mb-4">Navigation</h4>
+              <div className="space-y-2">
+                <a href="/" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Home</a>
+                <a href="/portal" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Foundation Portal</a>
+              </div>
+            </div>
+
+            {/* Links */}
+            <div>
+              <h4 className="text-white font-semibold mb-4">Links</h4>
+              <div className="space-y-2">
+                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">The Dubhe Protocol</a>
+                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Move Accelerator</a>
+                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Grant Programs</a>
+                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Developer Resources</a>
+              </div>
+            </div>
+
+            {/* Socials */}
+            <div>
+              <h4 className="text-white font-semibold mb-4">Socials</h4>
+              <div className="space-y-2">
+                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
+                  X (Twitter)
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
+                  Discord
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
+                  GitHub
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
             </div>
           </div>
-        </Card>
+
+          {/* Copyright */}
+          <div className="mt-12 pt-8 border-t border-slate-800 text-center">
+            <p className="text-gray-400 text-sm">© 2025 Dubhe Foundation. All rights reserved.</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

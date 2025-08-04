@@ -1,0 +1,330 @@
+"use client"
+
+import { useState } from "react"
+import { motion } from "framer-motion"
+import { 
+  Search, 
+  ChevronDown,
+  Calendar,
+  Plus,
+  Users,
+  Building,
+  Globe
+} from "lucide-react"
+import Navigation from "../../components/navigation"
+import Footer from "../../components/footer"
+
+export default function EventsPage() {
+  const [searchQuery, setSearchQuery] = useState("")
+  const [selectedCategory, setSelectedCategory] = useState("All")
+  const [sortBy, setSortBy] = useState("Date")
+
+  const events = [
+    {
+      date: "July 25, 2025",
+      name: "Sui Connect: Bangkok",
+      location: "Bangkok, Thailand",
+      category: "Sui Connect",
+      type: "Conference"
+    },
+    {
+      date: "July 29, 2025",
+      name: "Sui Connect: Ho Chi Minh City",
+      location: "Ho Chi Minh City, Vietnam",
+      category: "Sui Connect",
+      type: "Conference"
+    },
+    {
+      date: "August 1 - August 2, 2025",
+      name: "GM Vietnam",
+      location: "Hanoi, Vietnam",
+      category: "Industry Conference",
+      type: "Conference"
+    },
+    {
+      date: "August 1, 2025",
+      name: "Sui Connect: Hanoi",
+      location: "Hanoi, Vietnam",
+      category: "Sui Connect",
+      type: "Conference"
+    },
+    {
+      date: "September 22 - September 28, 2025",
+      name: "Korea Blockchain Week",
+      location: "South Korea",
+      category: "Industry Conference",
+      type: "Conference"
+    },
+    {
+      date: "October 2, 2025",
+      name: "SuiFest",
+      location: "Singapore",
+      category: "Sui Conference",
+      type: "Conference"
+    }
+  ]
+
+  const categories = ["All", "Sui Connect", "Industry Conference", "Sui Conference", "Workshop", "Meetup"]
+
+  const filteredEvents = events.filter(event => {
+    const matchesSearch = event.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         event.location.toLowerCase().includes(searchQuery.toLowerCase())
+    const matchesCategory = selectedCategory === "All" || event.category === selectedCategory
+    return matchesSearch && matchesCategory
+  })
+
+  return (
+    <>
+      {/* Navigation */}
+      <Navigation />
+      
+      {/* Hero Section */}
+      <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 overflow-hidden pt-16">
+        {/* Background Effects */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-purple-500/30 to-blue-500/40 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-gradient-to-br from-blue-600/30 to-purple-600/40 rounded-full blur-3xl"></div>
+          
+          {/* Star field */}
+          <div className="absolute inset-0">
+            {Array.from({ length: 50 }).map((_, i) => (
+              <div
+                key={`star-${i}`}
+                className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
+                style={{
+                  top: `${Math.random() * 100}%`,
+                  left: `${Math.random() * 100}%`,
+                  animationDelay: `${Math.random() * 3}s`,
+                  animationDuration: `${2 + Math.random() * 2}s`
+                }}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 min-h-screen flex flex-col">
+          <div className="flex-1 flex items-center">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+              <div className="text-center">
+                
+                {/* Badge */}
+                <motion.div
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="inline-block bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-blue-500/20"
+                >
+                  Event Calendar
+                </motion.div>
+
+                {/* Main Headline */}
+                <div className="space-y-6 max-w-4xl mx-auto mb-12">
+                  <motion.h1 
+                    className="text-5xl lg:text-6xl font-bold text-white leading-tight"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                  >
+                    Upcoming events
+                  </motion.h1>
+                  
+                  <motion.p 
+                    className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                  >
+                    Participate in Sui-hosted events, industry conferences,
+                    <br />
+                    community meetups, developer workshops, and more.
+                  </motion.p>
+                </div>
+
+                {/* Search and Filters */}
+                <motion.div 
+                  className="max-w-4xl mx-auto"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                >
+                  <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-8">
+                    {/* Search */}
+                    <div className="relative flex-1 max-w-md">
+                      <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+                      <input
+                        type="text"
+                        placeholder="Search"
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        className="w-full pl-10 pr-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      />
+                    </div>
+
+                    {/* Filter and Sort */}
+                    <div className="flex gap-4">
+                      <div className="relative">
+                        <select
+                          value={selectedCategory}
+                          onChange={(e) => setSelectedCategory(e.target.value)}
+                          className="appearance-none bg-slate-800/50 border border-slate-700 rounded-lg px-4 py-3 pr-10 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        >
+                          {categories.map(category => (
+                            <option key={category} value={category}>{category}</option>
+                          ))}
+                        </select>
+                        <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none" />
+                      </div>
+
+                      <div className="relative">
+                        <select
+                          value={sortBy}
+                          onChange={(e) => setSortBy(e.target.value)}
+                          className="appearance-none bg-slate-800/50 border border-slate-700 rounded-lg px-4 py-3 pr-10 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        >
+                          <option value="Date">Sort: Date</option>
+                          <option value="Name">Sort: Name</option>
+                          <option value="Location">Sort: Location</option>
+                        </select>
+                        <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Events Table */}
+                  <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden">
+                    {/* Table Header */}
+                    <div className="grid grid-cols-12 gap-4 p-6 border-b border-slate-700/50 text-gray-400 font-medium text-sm">
+                      <div className="col-span-3">Date</div>
+                      <div className="col-span-4">Name</div>
+                      <div className="col-span-3">Location</div>
+                      <div className="col-span-2">Category</div>
+                    </div>
+
+                    {/* Table Body */}
+                    <div className="divide-y divide-slate-700/50">
+                      {filteredEvents.map((event, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.4, delay: index * 0.1 }}
+                          className="grid grid-cols-12 gap-4 p-6 hover:bg-slate-700/30 transition-colors duration-200 group"
+                        >
+                          <div className="col-span-3 text-gray-300 font-medium">
+                            {event.date}
+                          </div>
+                          <div className="col-span-4 text-white font-semibold group-hover:text-blue-400 transition-colors">
+                            {event.name}
+                          </div>
+                          <div className="col-span-3 text-gray-300">
+                            {event.location}
+                          </div>
+                          <div className="col-span-2 flex items-center justify-between">
+                            <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
+                              event.category === 'Sui Connect' ? 'bg-blue-500/20 text-blue-400' :
+                              event.category === 'Industry Conference' ? 'bg-purple-500/20 text-purple-400' :
+                              event.category === 'Sui Conference' ? 'bg-green-500/20 text-green-400' :
+                              'bg-gray-500/20 text-gray-400'
+                            }`}>
+                              {event.category}
+                            </span>
+                            <button className="opacity-0 group-hover:opacity-100 p-2 text-gray-400 hover:text-white transition-all duration-200">
+                              <Plus className="w-4 h-4" />
+                            </button>
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
+
+                    {/* Empty State */}
+                    {filteredEvents.length === 0 && (
+                      <div className="p-12 text-center">
+                        <Calendar className="w-12 h-12 text-gray-500 mx-auto mb-4" />
+                        <p className="text-gray-400">No events found matching your criteria.</p>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Language Selector */}
+                  <div className="flex items-center justify-start mt-8">
+                    <div className="flex items-center gap-2 text-gray-400">
+                      <Globe className="w-4 h-4" />
+                      <span className="text-sm">English</span>
+                      <ChevronDown className="w-4 h-4" />
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Community Stats Section */}
+      <div className="py-24 px-6 lg:px-8 bg-slate-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Join Our Global Community</h2>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+              Connect with developers, enthusiasts, and innovators from around the world at our events
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700"
+            >
+              <Calendar className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">50+</div>
+              <div className="text-gray-400">Events This Year</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700"
+            >
+              <Users className="w-12 h-12 text-purple-400 mx-auto mb-4" />
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">10K+</div>
+              <div className="text-gray-400">Attendees</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700"
+            >
+              <Globe className="w-12 h-12 text-green-400 mx-auto mb-4" />
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">25+</div>
+              <div className="text-gray-400">Countries</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700"
+            >
+              <Building className="w-12 h-12 text-orange-400 mx-auto mb-4" />
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">100+</div>
+              <div className="text-gray-400">Speakers</div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <Footer />
+    </>
+  )
+}
