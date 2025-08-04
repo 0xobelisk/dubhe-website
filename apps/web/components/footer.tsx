@@ -25,11 +25,8 @@ export default function Footer() {
               real-time P2P channels, and cross-chain interoperability.
             </p>
             <div className="space-y-3">
-              <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200">
+              <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200 w-full">
                 Get Started
-              </button>
-              <button className="border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200 block">
-                Documentation
               </button>
             </div>
           </div>
@@ -41,10 +38,6 @@ export default function Footer() {
               <a href="/engine" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Dubhe Engine</a>
               <a href="/channel" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Dubhe Channel</a>
               <a href="/os" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Dubhe OS</a>
-              <a href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
-                Documentation
-                <ExternalLink className="w-3 h-3" />
-              </a>
             </div>
           </div>
 
@@ -62,10 +55,11 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Community */}
+          {/* Support */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Community</h4>
+            <h4 className="text-white font-semibold mb-4">Support</h4>
             <div className="space-y-2">
+              <Link href="/contact" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Contact Us</Link>
               <a href="https://discord.gg/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
                 Discord
                 <ExternalLink className="w-3 h-3" />
@@ -76,10 +70,6 @@ export default function Footer() {
               </a>
               <a href="https://t.me/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
                 Telegram
-                <ExternalLink className="w-3 h-3" />
-              </a>
-              <a href="https://youtube.com/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
-                YouTube
                 <ExternalLink className="w-3 h-3" />
               </a>
               <a href="https://github.com/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
@@ -94,9 +84,35 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-slate-800 text-center">
-          <p className="text-gray-400 text-sm">© 2025 Dubhe Technologies Group. All rights reserved.</p>
+        {/* Legal & Copyright Section - This should be clearly visible */}
+        <div className="mt-12 pt-8 border-t border-slate-800">
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-wrap justify-center gap-6 text-sm">
+              <Link 
+                href="/privacy" 
+                className="text-gray-300 hover:text-purple-400 font-medium transition-colors duration-200 hover:underline"
+              >
+                Privacy Policy
+              </Link>
+              <span className="text-gray-600">|</span>
+              <Link 
+                href="/terms" 
+                className="text-gray-300 hover:text-purple-400 font-medium transition-colors duration-200 hover:underline"
+              >
+                Terms of Service
+              </Link>
+              <span className="text-gray-600">|</span>
+              <Link 
+                href="/contact" 
+                className="text-gray-300 hover:text-green-400 font-medium transition-colors duration-200 hover:underline"
+              >
+                Contact
+              </Link>
+            </div>
+            <p className="text-gray-500 text-xs text-center">
+              © 2025 Dubhe Technologies Group. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </div>

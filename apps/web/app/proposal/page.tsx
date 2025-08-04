@@ -20,8 +20,6 @@ import {
   Calendar,
   Lightbulb
 } from "lucide-react"
-import Navigation from "../../components/navigation"
-import Footer from "../../components/footer"
 
 export default function ProposalPage() {
   const [isClient, setIsClient] = useState(false)
@@ -33,30 +31,30 @@ export default function ProposalPage() {
   const proposalTypes = [
     {
       icon: <TrendingUp className="w-6 h-6" />,
-      title: "Protocol Upgrades",
-      description: "Technical improvements, new features, and protocol enhancements",
-      examples: ["Smart contract updates", "New consensus mechanisms", "Performance optimizations"],
-      color: "from-blue-500 to-cyan-500"
+      title: "Treasury Spending",
+      description: "Request funding from Dubhe Treasury for development projects and initiatives",
+      examples: ["Development grants", "Infrastructure funding", "Research projects"],
+      color: "from-green-500 to-emerald-500"
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "Governance Changes",
-      description: "Modifications to voting mechanisms, treasury management, and governance structure",
-      examples: ["Voting threshold changes", "Treasury allocation", "Governance token distribution"],
+      description: "Modifications to voting mechanisms, treasury management, and governance parameters",
+      examples: ["Voting thresholds", "Referendum parameters", "Track configurations"],
       color: "from-purple-500 to-pink-500"
     },
     {
-      icon: <Target className="w-6 h-6" />,
-      title: "Ecosystem Initiatives",
-      description: "Community programs, partnerships, and ecosystem development proposals",
-      examples: ["Grant program changes", "Partnership agreements", "Community incentives"],
-      color: "from-green-500 to-emerald-500"
+      icon: <Shield className="w-6 h-6" />,
+      title: "Runtime Upgrades",
+      description: "Protocol improvements and runtime modifications requiring governance approval",
+      examples: ["Pallet upgrades", "Runtime optimizations", "New features"],
+      color: "from-blue-500 to-cyan-500"
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security Updates",
-      description: "Security patches, audit recommendations, and risk mitigation measures",
-      examples: ["Security audits", "Bug fixes", "Risk assessments"],
+      icon: <Target className="w-6 h-6" />,
+      title: "Emergency Actions",
+      description: "Time-sensitive proposals for security issues and critical protocol fixes",
+      examples: ["Security patches", "Emergency updates", "Critical bug fixes"],
       color: "from-orange-500 to-red-500"
     }
   ]
@@ -64,94 +62,101 @@ export default function ProposalPage() {
   const votingProcess = [
     {
       step: "1",
-      title: "Draft Proposal",
-      description: "Create detailed proposal with technical specifications and impact analysis",
-      duration: "1-2 weeks",
-      requirements: ["Technical documentation", "Impact assessment", "Community feedback"]
+      title: "Connect DubheOS",
+      description: "Access DubheOS governance portal with your wallet and ensure you have DUBHE tokens",
+      duration: "5 minutes",
+      requirements: ["DubheOS wallet", "DUBHE tokens", "Network connection"]
     },
     {
       step: "2", 
-      title: "Community Review",
-      description: "Public discussion period for community feedback and proposal refinement",
-      duration: "2 weeks",
-      requirements: ["Forum discussion", "Technical review", "Stakeholder input"]
+      title: "Create Preimage",
+      description: "Draft and submit your proposal preimage with detailed specifications",
+      duration: "1-3 days",
+      requirements: ["Proposal details", "Budget breakdown", "Implementation timeline"]
     },
     {
       step: "3",
-      title: "Formal Submission",
-      description: "Submit proposal to governance system with required stake and documentation",
-      duration: "1 week",
-      requirements: ["Governance stake", "Final documentation", "Implementation plan"]
+      title: "Submit Proposal",
+      description: "Submit proposal to appropriate governance track with required deposit",
+      duration: "1 day",
+      requirements: ["Preimage hash", "Track selection", "Deposit tokens"]
     },
     {
       step: "4",
-      title: "Voting Period",
-      description: "Active voting by token holders with transparent tallying",
-      duration: "1 week",
-      requirements: ["Token holder participation", "Quorum requirements", "Vote transparency"]
+      title: "Decision Period",
+      description: "Community voting period with conviction voting and delegation support",
+      duration: "14-28 days",
+      requirements: ["Conviction voting", "Delegation tracking", "Quorum achievement"]
     },
     {
       step: "5",
-      title: "Implementation",
-      description: "Execute approved proposals with community oversight and monitoring",
-      duration: "Variable",
-      requirements: ["Development resources", "Testing", "Monitoring"]
+      title: "Enactment",
+      description: "Automatic execution after confirmation period if proposal passes",
+      duration: "7 days",
+      requirements: ["Confirmation period", "Automatic execution", "Treasury disbursement"]
     }
   ]
 
   const activeProposals = [
     {
-      id: "DIP-001",
-      title: "Move VM Performance Optimization",
-      category: "Protocol Upgrade",
-      status: "Active Voting",
-      votes: { for: 15420, against: 2340, abstain: 890 },
+      id: "REF-001",
+      title: "Developer Incentive Program Funding",
+      category: "Treasury Spending",
+      track: "Medium Spender",
+      status: "Deciding",
+      votes: { aye: 25680, nay: 3420 },
+      conviction: "6x",
       endDate: "2025-01-15",
-      description: "Implement bytecode optimization to improve Move VM execution speed by 40%",
+      requested: "500,000 DUBHE",
+      description: "Fund a 6-month developer incentive program to attract Move developers to Dubhe ecosystem",
+      author: "DubheLabs"
+    },
+    {
+      id: "REF-002", 
+      title: "Runtime Upgrade v2.1.0",
+      category: "Runtime Upgrade",
+      track: "Root",
+      status: "Confirming",
+      votes: { aye: 45200, nay: 1850 },
+      conviction: "1x",
+      endDate: "2025-01-12",
+      requested: "N/A",
+      description: "Upgrade runtime to improve cross-chain interoperability and add new pallet features",
       author: "Core Development Team"
     },
     {
-      id: "DIP-002", 
-      title: "Community Treasury Allocation",
-      category: "Governance",
-      status: "Active Voting",
-      votes: { for: 12580, against: 4200, abstain: 1100 },
-      endDate: "2025-01-12",
-      description: "Allocate 5M DUBHE tokens from treasury for ecosystem development initiatives",
-      author: "Dubhe Foundation"
-    },
-    {
-      id: "DIP-003",
-      title: "Cross-Chain Bridge Security Audit",
-      category: "Security",
-      status: "Under Review",
-      votes: { for: 0, against: 0, abstain: 0 },
-      endDate: "2025-01-20",
-      description: "Comprehensive security audit of all cross-chain bridge contracts",
-      author: "Security Committee"
+      id: "REF-003",
+      title: "Emergency Security Patch",
+      category: "Emergency",
+      track: "Emergency Killer",
+      status: "Preparing",
+      votes: { aye: 0, nay: 0 },
+      conviction: "N/A",
+      endDate: "2025-01-08",
+      requested: "N/A",
+      description: "Critical security patch for recently discovered vulnerability in cross-chain bridge",
+      author: "Security Council"
     }
   ]
 
   const stats = [
-    { label: "Active Proposals", value: "12", change: "+3" },
-    { label: "Total Votes Cast", value: "45.2K", change: "+12%" },
-    { label: "Voter Participation", value: "68%", change: "+5%" },
-    { label: "Implemented Proposals", value: "156", change: "+8" }
+    { label: "Active Referenda", value: "18", change: "+5" },
+    { label: "Treasury Balance", value: "2.8M DUBHE", change: "+3%" },
+    { label: "Conviction Voting", value: "72%", change: "+8%" },
+    { label: "Enacted Proposals", value: "89", change: "+12" }
   ]
 
   const requirements = [
-    "Hold minimum 1000 DUBHE tokens to create proposals",
-    "Provide detailed technical documentation",
-    "Complete impact assessment and risk analysis", 
-    "Engage in community discussion period",
-    "Stake 5000 DUBHE tokens as proposal bond",
-    "Follow governance framework guidelines"
+    "Connect wallet to DubheOS governance portal",
+    "Hold sufficient DUBHE tokens for proposal deposit",
+    "Create detailed preimage with specifications", 
+    "Select appropriate governance track",
+    "Provide clear budget and timeline for treasury requests",
+    "Follow OpenGov governance framework"
   ]
 
   return (
     <>
-      {/* Navigation */}
-      <Navigation />
       
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900 overflow-hidden pt-16">
@@ -162,19 +167,28 @@ export default function ProposalPage() {
           
           {/* Floating governance symbols */}
           <div className="absolute inset-0 overflow-hidden">
-            {isClient && Array.from({ length: 12 }).map((_, i) => (
-              <div
-                key={`governance-${i}`}
-                className="absolute text-indigo-300/20 text-2xl"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animation: `float ${3 + Math.random() * 2}s ease-in-out infinite ${Math.random() * 2}s`
-                }}
-              >
-                {i % 4 === 0 ? '🗳️' : i % 4 === 1 ? '📝' : i % 4 === 2 ? '⚖️' : '🏛️'}
-              </div>
-            ))}
+            {isClient && Array.from({ length: 12 }).map((_, i) => {
+              // Use deterministic values based on index to avoid hydration mismatch
+              const topPositions = [15, 30, 45, 60, 75, 90, 10, 25, 40, 55, 70, 85];
+              const leftPositions = [8, 24, 40, 56, 72, 88, 16, 32, 48, 64, 80, 96];
+              const durations = [3, 4, 5, 3.5, 4.5, 3.2, 4.2, 5.2, 3.8, 4.8, 3.3, 4.3];
+              const delays = [0, 0.5, 1, 1.5, 2, 0.2, 0.7, 1.2, 1.7, 0.3, 0.8, 1.3];
+              const icons = ['🗳️', '📝', '⚖️', '🏛️'];
+              
+              return (
+                <div
+                  key={`governance-${i}`}
+                  className="absolute text-indigo-300/20 text-2xl"
+                  style={{
+                    top: `${topPositions[i] || 50}%`,
+                    left: `${leftPositions[i] || 50}%`,
+                    animation: `float ${durations[i] || 3}s ease-in-out infinite ${delays[i] || 0}s`
+                  }}
+                >
+                  {icons[i % 4]}
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -191,7 +205,7 @@ export default function ProposalPage() {
                 className="inline-block bg-indigo-500/10 text-indigo-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-indigo-500/20"
               >
                 <Vote className="w-4 h-4 inline mr-2" />
-                Dubhe Governance
+                Dubhe OpenGov
               </motion.div>
 
               {/* Main Headline */}
@@ -215,8 +229,8 @@ export default function ProposalPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Participate in Dubhe's decentralized governance by creating proposals, 
-                  voting on protocol changes, and helping build the future of Move blockchain technology.
+                  Submit proposals through DubheOS to request treasury funding, upgrade the runtime, 
+                  or participate in governance using Polkadot's OpenGov framework with conviction voting.
                 </motion.p>
               </div>
 
@@ -246,12 +260,12 @@ export default function ProposalPage() {
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
                 <button className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
-                  Create Proposal
+                  Launch DubheOS
                   <ArrowRight className="w-5 h-5 inline ml-2" />
                 </button>
                 
                 <button className="border-2 border-indigo-400/50 hover:border-indigo-300 bg-indigo-900/20 backdrop-blur-sm text-indigo-100 hover:text-white hover:bg-indigo-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
-                  View All Proposals
+                  View All Referenda
                 </button>
               </motion.div>
             </div>
@@ -324,7 +338,7 @@ export default function ProposalPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Active Proposals
+              Active Referenda
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -333,7 +347,7 @@ export default function ProposalPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Current proposals under community discussion and voting
+              Current referenda in various governance tracks with conviction voting
             </motion.p>
           </div>
 
@@ -354,15 +368,22 @@ export default function ProposalPage() {
                         {proposal.id}
                       </span>
                       <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">
-                        {proposal.category}
+                        {proposal.track}
                       </span>
                       <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                        proposal.status === 'Active Voting' 
+                        proposal.status === 'Deciding' 
                           ? 'bg-green-500/20 text-green-300' 
+                          : proposal.status === 'Confirming'
+                          ? 'bg-blue-500/20 text-blue-300'
                           : 'bg-yellow-500/20 text-yellow-300'
                       }`}>
                         {proposal.status}
                       </span>
+                      {proposal.requested !== 'N/A' && (
+                        <span className="bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full text-sm">
+                          {proposal.requested}
+                        </span>
+                      )}
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">{proposal.title}</h3>
                     <p className="text-gray-300 text-sm mb-4">{proposal.description}</p>
@@ -373,30 +394,35 @@ export default function ProposalPage() {
                         <Calendar className="w-4 h-4" />
                         Ends {proposal.endDate}
                       </span>
+                      {proposal.conviction !== 'N/A' && (
+                        <span className="text-purple-400">
+                          Conviction: {proposal.conviction}
+                        </span>
+                      )}
                     </div>
                   </div>
                   
-                  {proposal.status === 'Active Voting' && (
+                  {(proposal.status === 'Deciding' || proposal.status === 'Confirming') && (
                     <div className="lg:min-w-80">
                       <div className="space-y-3">
                         <div className="flex justify-between items-center">
-                          <span className="text-green-400 text-sm">For: {proposal.votes.for.toLocaleString()}</span>
-                          <span className="text-red-400 text-sm">Against: {proposal.votes.against.toLocaleString()}</span>
+                          <span className="text-green-400 text-sm">Aye: {proposal.votes.aye.toLocaleString()}</span>
+                          <span className="text-red-400 text-sm">Nay: {proposal.votes.nay.toLocaleString()}</span>
                         </div>
                         <div className="w-full bg-slate-700 rounded-full h-2">
                           <div 
                             className="bg-gradient-to-r from-green-500 to-emerald-500 h-2 rounded-full"
                             style={{ 
-                              width: `${(proposal.votes.for / (proposal.votes.for + proposal.votes.against + proposal.votes.abstain)) * 100}%` 
+                              width: `${(proposal.votes.aye / (proposal.votes.aye + proposal.votes.nay)) * 100}%` 
                             }}
                           />
                         </div>
                         <div className="flex gap-2">
                           <button className="flex-1 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200">
-                            Vote For
+                            Vote Aye
                           </button>
                           <button className="flex-1 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-400 hover:to-pink-400 text-white px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200">
-                            Vote Against
+                            Vote Nay
                           </button>
                         </div>
                       </div>
@@ -516,19 +542,17 @@ export default function ProposalPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <button className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
-              Start Proposal
+              Access DubheOS
               <Sparkles className="w-5 h-5 inline ml-2" />
             </button>
             <button className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
-              Learn More
+              OpenGov Guide
               <ExternalLink className="w-5 h-5" />
             </button>
           </motion.div>
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   )
 }

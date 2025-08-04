@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { Metadata } from "next"
 import { motion } from "framer-motion"
 import { 
   DollarSign, 
@@ -14,10 +15,9 @@ import {
   Gift,
   TrendingUp,
   Award,
-  Building
+  Building,
+  FileText
 } from "lucide-react"
-import Navigation from "../../components/navigation"
-import Footer from "../../components/footer"
 
 export default function GrantsPage() {
   const [isClient, setIsClient] = useState(false)
@@ -58,44 +58,44 @@ export default function GrantsPage() {
   ]
 
   const requirements = [
-    "Clear project vision and roadmap",
-    "Experienced team with relevant skills",
-    "Open-source commitment",
-    "Active community engagement",
-    "Measurable success metrics",
-    "Alignment with Dubhe ecosystem goals"
+    "Complete open-source commitment (MIT/Apache 2.0 license required)",
+    "Detailed milestone-based development plan",
+    "Experienced team with proven development track record",
+    "Fully functional deliverables - no prototypes or demos",
+    "Comprehensive documentation and deployment guides",
+    "Strong alignment with Dubhe ecosystem growth goals"
   ]
 
   const process = [
     {
       step: "1",
-      title: "Application",
-      description: "Submit detailed proposal with project scope, team, and budget",
+      title: "Proposal Submission",
+      description: "Submit comprehensive proposal with detailed milestones and open-source commitment",
       duration: "1 week"
     },
     {
       step: "2", 
-      title: "Review",
-      description: "Technical and business evaluation by our grants committee",
+      title: "Foundation Review",
+      description: "Dubhe Foundation technical committee evaluates feasibility and ecosystem impact",
       duration: "2-3 weeks"
     },
     {
       step: "3",
-      title: "Interview",
-      description: "Present your project to the grants team and answer questions",
+      title: "Team Interview",
+      description: "Present your project roadmap and demonstrate technical capabilities",
       duration: "1 week"
     },
     {
       step: "4",
-      title: "Decision",
-      description: "Final approval and funding terms negotiation",
+      title: "Grant Approval",
+      description: "Foundation board approves non-repayable grant with milestone requirements",
       duration: "1 week"
     },
     {
       step: "5",
-      title: "Funding",
-      description: "Milestone-based funding with ongoing support and mentorship",
-      duration: "Ongoing"
+      title: "Milestone Delivery",
+      description: "Complete all milestones with functional deliverables and receive full grant",
+      duration: "3-12 months"
     }
   ]
 
@@ -103,30 +103,34 @@ export default function GrantsPage() {
     {
       project: "MoveDEX",
       category: "DeFi Protocol",
-      funding: "$85K",
+      funding: "85,000 DUBHE",
       impact: "10K+ users, $50M TVL",
-      description: "Automated market maker with innovative liquidity mining"
+      description: "Open-source AMM with full milestone completion and production deployment",
+      license: "MIT License",
+      milestones: "5/5 Complete"
     },
     {
       project: "Dubhe IDE",
       category: "Developer Tools", 
-      funding: "$60K",
+      funding: "60,000 DUBHE",
       impact: "5K+ developers",
-      description: "Full-featured IDE for Move smart contract development"
+      description: "Full-featured IDE with complete Move language support and debugging tools",
+      license: "Apache 2.0",
+      milestones: "4/4 Complete"
     },
     {
-      project: "Move University",
+      project: "Move Academy",
       category: "Education",
-      funding: "$30K", 
+      funding: "30,000 DUBHE", 
       impact: "2K+ students",
-      description: "Comprehensive Move programming course and certification"
+      description: "Comprehensive educational platform with interactive tutorials and certifications",
+      license: "MIT License",
+      milestones: "6/6 Complete"
     }
   ]
 
   return (
     <>
-      {/* Navigation */}
-      <Navigation />
       
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-green-900 to-blue-900 overflow-hidden pt-16">
@@ -137,19 +141,27 @@ export default function GrantsPage() {
           
           {/* Floating grant symbols */}
           <div className="absolute inset-0 overflow-hidden">
-            {isClient && Array.from({ length: 20 }).map((_, i) => (
-              <div
-                key={`grant-${i}`}
-                className="absolute text-green-300/20 text-xl"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animation: `float ${3 + Math.random() * 2}s ease-in-out infinite ${Math.random() * 2}s`
-                }}
-              >
-                💰
-              </div>
-            ))}
+            {isClient && Array.from({ length: 20 }).map((_, i) => {
+              // Use deterministic values based on index to avoid hydration mismatch
+              const topPositions = [5, 20, 35, 50, 65, 80, 95, 10, 25, 40, 55, 70, 85, 15, 30, 45, 60, 75, 90, 12];
+              const leftPositions = [8, 24, 40, 56, 72, 88, 4, 20, 36, 52, 68, 84, 16, 32, 48, 64, 80, 96, 12, 28];
+              const durations = [3, 4, 5, 3.5, 4.5, 3.2, 4.2, 5.2, 3.8, 4.8, 3.3, 4.3, 5.3, 3.7, 4.7, 3.1, 4.1, 5.1, 3.6, 4.6];
+              const delays = [0, 0.5, 1, 1.5, 2, 0.2, 0.7, 1.2, 1.7, 0.3, 0.8, 1.3, 1.8, 0.1, 0.6, 1.1, 1.6, 0.4, 0.9, 1.4];
+              
+              return (
+                <div
+                  key={`grant-${i}`}
+                  className="absolute text-green-300/20 text-xl"
+                  style={{
+                    top: `${topPositions[i] || 50}%`,
+                    left: `${leftPositions[i] || 50}%`,
+                    animation: `float ${durations[i] || 3}s ease-in-out infinite ${delays[i] || 0}s`
+                  }}
+                >
+                  💰
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -166,7 +178,7 @@ export default function GrantsPage() {
                 className="inline-block bg-green-500/10 text-green-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-green-500/20"
               >
                 <Gift className="w-4 h-4 inline mr-2" />
-                Dubhe Grants Program
+                Dubhe Foundation Grants
               </motion.div>
 
               {/* Main Headline */}
@@ -190,8 +202,8 @@ export default function GrantsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Get funding up to $100K to build the next generation of Move applications, 
-                  infrastructure, and tools that will shape the future of blockchain technology.
+                  Receive non-repayable grants from Dubhe Foundation to build open-source Move applications, 
+                  infrastructure, and tools. All projects must be fully functional and complete all milestones.
                 </motion.p>
               </div>
 
@@ -402,9 +414,88 @@ export default function GrantsPage() {
                   <span className="text-gray-300 text-sm">{story.impact}</span>
                 </div>
                 
-                <p className="text-gray-300 text-sm">{story.description}</p>
+                <p className="text-gray-300 text-sm mb-4">{story.description}</p>
+                
+                <div className="flex items-center justify-between text-xs">
+                  <span className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded">
+                    {story.license}
+                  </span>
+                  <span className="bg-green-500/20 text-green-300 px-2 py-1 rounded">
+                    {story.milestones}
+                  </span>
+                </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Grant Terms Section */}
+      <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-900 to-green-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <motion.h2 
+              className="text-4xl lg:text-5xl font-bold text-white mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              Grant Terms & Conditions
+            </motion.h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-slate-800/50 rounded-2xl p-8 border border-green-500/20"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <Gift className="w-8 h-8 text-green-400" />
+                <h3 className="text-xl font-bold text-white">Non-Repayable Grant</h3>
+              </div>
+              <p className="text-gray-300 text-sm">
+                All grants are unconditional donations from Dubhe Foundation. 
+                No repayment required upon successful milestone completion.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <FileText className="w-8 h-8 text-blue-400" />
+                <h3 className="text-xl font-bold text-white">Open Source Required</h3>
+              </div>
+              <p className="text-gray-300 text-sm">
+                All funded projects must be released under MIT or Apache 2.0 license. 
+                Complete source code must be publicly available.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-slate-800/50 rounded-2xl p-8 border border-purple-500/20"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <Target className="w-8 h-8 text-purple-400" />
+                <h3 className="text-xl font-bold text-white">Full Milestone Completion</h3>
+              </div>
+              <p className="text-gray-300 text-sm">
+                Projects must deliver fully functional, production-ready software. 
+                All milestones must be completed to receive the full grant.
+              </p>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -419,7 +510,7 @@ export default function GrantsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Ready to Build the Future?
+            Ready to Build Open Source?
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
@@ -428,7 +519,7 @@ export default function GrantsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Apply for a grant and join the growing ecosystem of innovative projects
+            Apply for a Foundation grant and contribute to the open-source Dubhe ecosystem
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -438,19 +529,17 @@ export default function GrantsPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <button className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
-              Start Application
+              Submit Proposal
               <Sparkles className="w-5 h-5 inline ml-2" />
             </button>
             <button className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
-              Contact Team
+              Foundation Contact
               <ExternalLink className="w-5 h-5" />
             </button>
           </motion.div>
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   )
 }

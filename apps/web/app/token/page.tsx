@@ -17,8 +17,6 @@ import {
   CircleDollarSign,
   Sparkles
 } from "lucide-react"
-import Navigation from "../../components/navigation"
-import Footer from "../../components/footer"
 
 export default function TokenPage() {
   const [isClient, setIsClient] = useState(false)
@@ -100,8 +98,6 @@ export default function TokenPage() {
 
   return (
     <>
-      {/* Navigation */}
-      <Navigation />
       
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 overflow-hidden pt-16">
@@ -112,19 +108,27 @@ export default function TokenPage() {
           
           {/* Floating token elements */}
           <div className="absolute inset-0 overflow-hidden">
-            {isClient && Array.from({ length: 25 }).map((_, i) => (
-              <div
-                key={`token-${i}`}
-                className="absolute text-blue-300/20 text-2xl"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animation: `float ${3 + Math.random() * 2}s ease-in-out infinite ${Math.random() * 2}s`
-                }}
-              >
-                {i % 2 === 0 ? '💎' : '⭐'}
-              </div>
-            ))}
+            {isClient && Array.from({ length: 25 }).map((_, i) => {
+              // Use deterministic values based on index to avoid hydration mismatch
+              const topPositions = [8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 12, 20, 28, 36, 44, 52, 60, 68, 76, 84, 92, 4, 84];
+              const leftPositions = [5, 15, 25, 35, 45, 55, 65, 75, 85, 95, 10, 20, 30, 40, 50, 60, 70, 80, 90, 18, 38, 58, 78, 98, 22];
+              const durations = [3, 4, 5, 3.5, 4.5, 3.2, 4.2, 5.2, 3.8, 4.8, 3.3, 4.3, 5.3, 3.7, 4.7, 3.1, 4.1, 5.1, 3.6, 4.6, 3.4, 4.4, 5.4, 3.9, 4.9];
+              const delays = [0, 0.5, 1, 1.5, 2, 0.2, 0.7, 1.2, 1.7, 0.3, 0.8, 1.3, 1.8, 0.1, 0.6, 1.1, 1.6, 0.4, 0.9, 1.4, 1.9, 0.15, 0.65, 1.15, 1.65];
+              
+              return (
+                <div
+                  key={`token-${i}`}
+                  className="absolute text-blue-300/20 text-2xl"
+                  style={{
+                    top: `${topPositions[i] || 50}%`,
+                    left: `${leftPositions[i] || 50}%`,
+                    animation: `float ${durations[i] || 3}s ease-in-out infinite ${delays[i] || 0}s`
+                  }}
+                >
+                  {i % 2 === 0 ? '💎' : '⭐'}
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -495,8 +499,6 @@ export default function TokenPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   )
 }

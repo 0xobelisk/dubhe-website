@@ -13,8 +13,6 @@ import {
   ExternalLink,
   Zap
 } from "lucide-react"
-import Navigation from "../../components/navigation"
-import Footer from "../../components/footer"
 
 const customStyles = `
   @keyframes lab-pulse {
@@ -165,8 +163,6 @@ export default function LabsPage() {
     <>
       <style dangerouslySetInnerHTML={{ __html: customStyles }} />
       
-      {/* Navigation */}
-      <Navigation />
       
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-cyan-900 to-blue-900 overflow-hidden pt-16">
@@ -178,32 +174,46 @@ export default function LabsPage() {
           {/* Tech orbiting elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              {isClient && Array.from({ length: 8 }).map((_, i) => (
-                <div
-                  key={`tech-${i}`}
-                  className="absolute w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full"
-                  style={{
-                    animation: `tech-orbit ${12 + i * 3}s linear infinite`,
-                    animationDelay: `${i * 1.5}s`
-                  }}
-                />
-              ))}
+              {isClient && Array.from({ length: 8 }).map((_, i) => {
+                // Use deterministic values based on index to avoid hydration mismatch
+                const durations = [12, 15, 18, 21, 24, 27, 30, 33];
+                const delays = [0, 1.5, 3, 4.5, 6, 7.5, 9, 10.5];
+                
+                return (
+                  <div
+                    key={`tech-${i}`}
+                    className="absolute w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full"
+                    style={{
+                      animation: `tech-orbit ${durations[i] || 12}s linear infinite`,
+                      animationDelay: `${delays[i] || 0}s`
+                    }}
+                  />
+                );
+              })}
             </div>
             
             {/* Floating lab icons */}
-            {isClient && Array.from({ length: 12 }).map((_, i) => (
-              <div
-                key={`lab-${i}`}
-                className="absolute text-cyan-300/20 text-xl"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animation: `lab-pulse ${3 + Math.random() * 2}s ease-in-out infinite ${Math.random() * 2}s`
-                }}
-              >
-                ⚗️
-              </div>
-            ))}
+            {isClient && Array.from({ length: 12 }).map((_, i) => {
+              // Use deterministic values based on index to avoid hydration mismatch
+              const topPositions = [10, 25, 40, 55, 70, 85, 15, 30, 45, 60, 75, 90];
+              const leftPositions = [12, 28, 44, 60, 76, 92, 8, 24, 52, 68, 84, 36];
+              const durations = [3, 4, 5, 3.5, 4.5, 3.2, 4.2, 5.2, 3.8, 4.8, 3.3, 4.3];
+              const delays = [0, 0.5, 1, 1.5, 2, 0.2, 0.7, 1.2, 1.7, 0.3, 0.8, 1.3];
+              
+              return (
+                <div
+                  key={`lab-${i}`}
+                  className="absolute text-cyan-300/20 text-xl"
+                  style={{
+                    top: `${topPositions[i] || 50}%`,
+                    left: `${leftPositions[i] || 50}%`,
+                    animation: `lab-pulse ${durations[i] || 3}s ease-in-out infinite ${delays[i] || 0}s`
+                  }}
+                >
+                  ⚗️
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -537,8 +547,6 @@ export default function LabsPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   )
 }

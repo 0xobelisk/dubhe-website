@@ -15,8 +15,6 @@ import {
   Sparkles,
   Shield
 } from "lucide-react"
-import Navigation from "../../components/navigation"
-import Footer from "../../components/footer"
 
 const customStyles = `
   @keyframes pulse-wave {
@@ -150,8 +148,6 @@ export default function ChannelPage() {
     <>
       <style dangerouslySetInnerHTML={{ __html: customStyles }} />
       
-      {/* Navigation */}
-      <Navigation />
       
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-emerald-900 to-blue-900 overflow-hidden pt-16">
@@ -162,31 +158,47 @@ export default function ChannelPage() {
           
           {/* Network visualization */}
           <div className="absolute inset-0 overflow-hidden">
-            {isClient && Array.from({ length: 30 }).map((_, i) => (
-              <div
-                key={`node-${i}`}
-                className="absolute w-2 h-2 bg-green-400/40 rounded-full"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animation: `pulse-wave ${2 + Math.random() * 3}s ease-out infinite ${Math.random() * 2}s`
-                }}
-              />
-            ))}
+            {isClient && Array.from({ length: 30 }).map((_, i) => {
+              // Use deterministic values based on index to avoid hydration mismatch
+              const topPositions = Array.from({length: 30}, (_, idx) => (idx * 13.7) % 100);
+              const leftPositions = Array.from({length: 30}, (_, idx) => (idx * 17.3) % 100);
+              const durations = Array.from({length: 30}, (_, idx) => 2 + (idx * 0.1) % 3);
+              const delays = Array.from({length: 30}, (_, idx) => (idx * 0.067) % 2);
+              
+              return (
+                <div
+                  key={`node-${i}`}
+                  className="absolute w-2 h-2 bg-green-400/40 rounded-full"
+                  style={{
+                    top: `${topPositions[i]}%`,
+                    left: `${leftPositions[i]}%`,
+                    animation: `pulse-wave ${durations[i]}s ease-out infinite ${delays[i]}s`
+                  }}
+                />
+              );
+            })}
             {/* Connection lines */}
             <svg className="absolute inset-0 w-full h-full">
-              {isClient && Array.from({ length: 15 }).map((_, i) => (
-                <line
-                  key={`line-${i}`}
-                  x1={`${Math.random() * 100}%`}
-                  y1={`${Math.random() * 100}%`}
-                  x2={`${Math.random() * 100}%`}
-                  y2={`${Math.random() * 100}%`}
-                  stroke="rgba(34, 197, 94, 0.2)"
-                  strokeWidth="1"
-                  className="animate-pulse"
-                />
-              ))}
+              {isClient && Array.from({ length: 15 }).map((_, i) => {
+                // Use deterministic values based on index to avoid hydration mismatch
+                const x1Values = Array.from({length: 15}, (_, idx) => (idx * 23.7) % 100);
+                const y1Values = Array.from({length: 15}, (_, idx) => (idx * 31.3) % 100);
+                const x2Values = Array.from({length: 15}, (_, idx) => (idx * 19.7 + 50) % 100);
+                const y2Values = Array.from({length: 15}, (_, idx) => (idx * 27.3 + 50) % 100);
+                
+                return (
+                  <line
+                    key={`line-${i}`}
+                    x1={`${x1Values[i]}%`}
+                    y1={`${y1Values[i]}%`}
+                    x2={`${x2Values[i]}%`}
+                    y2={`${y2Values[i]}%`}
+                    stroke="rgba(34, 197, 94, 0.2)"
+                    strokeWidth="1"
+                    className="animate-pulse"
+                  />
+                );
+              })}
             </svg>
           </div>
         </div>
@@ -730,8 +742,6 @@ export default function ChannelPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   )
 }

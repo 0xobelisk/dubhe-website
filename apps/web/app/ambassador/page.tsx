@@ -12,8 +12,6 @@ import {
   Sparkles,
   ExternalLink
 } from "lucide-react"
-import Navigation from "../../components/navigation"
-import Footer from "../../components/footer"
 
 export default function AmbassadorPage() {
   const [isClient, setIsClient] = useState(false)
@@ -137,8 +135,6 @@ export default function AmbassadorPage() {
 
   return (
     <>
-      {/* Navigation */}
-      <Navigation />
       
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-rose-900 to-purple-900 overflow-hidden pt-16">
@@ -149,19 +145,27 @@ export default function AmbassadorPage() {
           
           {/* Floating elements */}
           <div className="absolute inset-0 overflow-hidden">
-            {isClient && Array.from({ length: 20 }).map((_, i) => (
-              <div
-                key={`float-${i}`}
-                className="absolute text-rose-300/20 text-lg"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animation: `float ${3 + Math.random() * 2}s ease-in-out infinite ${Math.random() * 2}s`
-                }}
-              >
-                ⭐
-              </div>
-            ))}
+            {isClient && Array.from({ length: 20 }).map((_, i) => {
+              // Use deterministic values based on index to avoid hydration mismatch
+              const topPositions = [8, 18, 28, 38, 48, 58, 68, 78, 88, 98, 13, 23, 33, 43, 53, 63, 73, 83, 93, 3];
+              const leftPositions = [5, 15, 25, 35, 45, 55, 65, 75, 85, 95, 10, 20, 30, 40, 50, 60, 70, 80, 90, 12];
+              const durations = [3, 4, 5, 3.5, 4.5, 3.2, 4.2, 5.2, 3.8, 4.8, 3.3, 4.3, 5.3, 3.7, 4.7, 3.1, 4.1, 5.1, 3.6, 4.6];
+              const delays = [0, 0.5, 1, 1.5, 2, 0.2, 0.7, 1.2, 1.7, 0.3, 0.8, 1.3, 1.8, 0.1, 0.6, 1.1, 1.6, 0.4, 0.9, 1.4];
+              
+              return (
+                <div
+                  key={`float-${i}`}
+                  className="absolute text-rose-300/20 text-lg"
+                  style={{
+                    top: `${topPositions[i] || 50}%`,
+                    left: `${leftPositions[i] || 50}%`,
+                    animation: `float ${durations[i] || 3}s ease-in-out infinite ${delays[i] || 0}s`
+                  }}
+                >
+                  ⭐
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -448,8 +452,6 @@ export default function AmbassadorPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   )
 }

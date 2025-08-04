@@ -11,8 +11,6 @@ import {
   Building,
   Globe
 } from "lucide-react"
-import Navigation from "../../components/navigation"
-import Footer from "../../components/footer"
 
 export default function EventsPage() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -75,8 +73,6 @@ export default function EventsPage() {
 
   return (
     <>
-      {/* Navigation */}
-      <Navigation />
       
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 overflow-hidden pt-16">
@@ -87,18 +83,26 @@ export default function EventsPage() {
           
           {/* Star field */}
           <div className="absolute inset-0">
-            {Array.from({ length: 50 }).map((_, i) => (
-              <div
-                key={`star-${i}`}
-                className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animationDelay: `${Math.random() * 3}s`,
-                  animationDuration: `${2 + Math.random() * 2}s`
-                }}
-              />
-            ))}
+            {Array.from({ length: 50 }).map((_, i) => {
+              // Use deterministic values based on index to avoid hydration mismatch
+              const topPositions = Array.from({length: 50}, (_, idx) => (idx * 7.3) % 100);
+              const leftPositions = Array.from({length: 50}, (_, idx) => (idx * 11.7) % 100);
+              const delays = Array.from({length: 50}, (_, idx) => (idx * 0.06) % 3);
+              const durations = Array.from({length: 50}, (_, idx) => 2 + (idx * 0.04) % 2);
+              
+              return (
+                <div
+                  key={`star-${i}`}
+                  className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
+                  style={{
+                    top: `${topPositions[i]}%`,
+                    left: `${leftPositions[i]}%`,
+                    animationDelay: `${delays[i]}s`,
+                    animationDuration: `${durations[i]}s`
+                  }}
+                />
+              );
+            })}
           </div>
         </div>
 
@@ -323,8 +327,6 @@ export default function EventsPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   )
 }

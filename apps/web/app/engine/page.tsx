@@ -12,8 +12,6 @@ import {
   Cpu,
   Sparkles
 } from "lucide-react"
-import Navigation from "../../components/navigation"
-import Footer from "../../components/footer"
 
 const customStyles = `
   @keyframes float {
@@ -125,8 +123,6 @@ export default function EnginePage() {
     <>
       <style dangerouslySetInnerHTML={{ __html: customStyles }} />
       
-      {/* Navigation */}
-      <Navigation />
       
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 overflow-hidden pt-16">
@@ -137,19 +133,28 @@ export default function EnginePage() {
           
           {/* Floating code elements */}
           <div className="absolute inset-0 overflow-hidden">
-            {isClient && Array.from({ length: 20 }).map((_, i) => (
-              <div
-                key={`code-${i}`}
-                className="absolute text-purple-300/20 font-mono text-xs"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animation: `float ${3 + Math.random() * 2}s ease-in-out infinite ${Math.random() * 2}s`
-                }}
-              >
-                {['func', 'struct', 'impl', 'pub', 'move'][Math.floor(Math.random() * 5)]}
-              </div>
-            ))}
+            {isClient && Array.from({ length: 20 }).map((_, i) => {
+              // Use deterministic values based on index to avoid hydration mismatch
+              const topPositions = [15, 25, 35, 45, 55, 65, 75, 85, 95, 5, 20, 30, 40, 50, 60, 70, 80, 90, 10, 85];
+              const leftPositions = [10, 30, 50, 70, 90, 20, 40, 60, 80, 25, 45, 65, 85, 15, 35, 55, 75, 95, 5, 25];
+              const durations = [3, 4, 5, 3.5, 4.5, 5.5, 3.2, 4.2, 5.2, 3.8, 4.8, 3.3, 4.3, 5.3, 3.7, 4.7, 5.7, 3.1, 4.1, 5.1];
+              const delays = [0, 0.5, 1, 1.5, 2, 0.2, 0.7, 1.2, 1.7, 0.3, 0.8, 1.3, 1.8, 0.1, 0.6, 1.1, 1.6, 0.4, 0.9, 1.4];
+              const codeElements = ['func', 'struct', 'impl', 'pub', 'move'];
+              
+              return (
+                <div
+                  key={`code-${i}`}
+                  className="absolute text-purple-300/20 font-mono text-xs"
+                  style={{
+                    top: `${topPositions[i] || 50}%`,
+                    left: `${leftPositions[i] || 50}%`,
+                    animation: `float ${durations[i] || 3}s ease-in-out infinite ${delays[i] || 0}s`
+                  }}
+                >
+                  {codeElements[i % 5]}
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -396,8 +401,6 @@ export default function EnginePage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   )
 }

@@ -12,8 +12,6 @@ import {
   Shield,
   Sparkles
 } from "lucide-react"
-import Navigation from "../../components/navigation"
-import Footer from "../../components/footer"
 
 const customStyles = `
   @keyframes orbit {
@@ -156,8 +154,6 @@ export default function OSPage() {
     <>
       <style dangerouslySetInnerHTML={{ __html: customStyles }} />
       
-      {/* Navigation */}
-      <Navigation />
       
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-rose-900 to-purple-900 overflow-hidden pt-16">
@@ -182,19 +178,27 @@ export default function OSPage() {
             </div>
             
             {/* Floating tokens */}
-            {isClient && Array.from({ length: 15 }).map((_, i) => (
-              <div
-                key={`token-${i}`}
-                className="absolute text-rose-300/30 text-2xl"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animation: `token-float ${4 + Math.random() * 3}s ease-in-out infinite ${Math.random() * 2}s`
-                }}
-              >
-                ◉
-              </div>
-            ))}
+            {isClient && Array.from({ length: 15 }).map((_, i) => {
+              // Use deterministic values based on index to avoid hydration mismatch
+              const topPositions = [12, 28, 44, 68, 84, 16, 32, 56, 72, 88, 8, 24, 48, 64, 92];
+              const leftPositions = [18, 38, 58, 78, 98, 14, 34, 54, 74, 94, 22, 42, 62, 82, 6];
+              const durations = [4, 5, 6, 4.5, 5.5, 6.5, 4.2, 5.2, 6.2, 4.8, 5.8, 4.3, 5.3, 6.3, 4.7];
+              const delays = [0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 0.2, 0.5, 0.8, 1.1, 1.4, 1.7, 0.1, 0.4];
+              
+              return (
+                <div
+                  key={`token-${i}`}
+                  className="absolute text-rose-300/30 text-2xl"
+                  style={{
+                    top: `${topPositions[i] || 50}%`,
+                    left: `${leftPositions[i] || 50}%`,
+                    animation: `token-float ${durations[i] || 4}s ease-in-out infinite ${delays[i] || 0}s`
+                  }}
+                >
+                  ◉
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -516,8 +520,6 @@ export default function OSPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   )
 }

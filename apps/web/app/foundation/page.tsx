@@ -108,18 +108,27 @@ export default function FoundationPage() {
             
             {/* Starfield effect */}
             <div className="absolute inset-0">
-              {Array.from({ length: 100 }).map((_, i) => (
-                <div
-                  key={`star-${i}`}
-                  className="absolute w-1 h-1 bg-white rounded-full"
-                  style={{
-                    top: `${Math.random() * 100}%`,
-                    left: `${Math.random() * 100}%`,
-                    opacity: Math.random() * 0.8 + 0.2,
-                    animation: `twinkle ${2 + Math.random() * 3}s infinite ${Math.random() * 2}s`
-                  }}
-                />
-              ))}
+              {Array.from({ length: 100 }).map((_, i) => {
+                // Use deterministic values based on index to avoid hydration mismatch
+                const topPositions = Array.from({length: 100}, (_, idx) => (idx * 7.13) % 100);
+                const leftPositions = Array.from({length: 100}, (_, idx) => (idx * 11.37) % 100);
+                const opacities = Array.from({length: 100}, (_, idx) => 0.2 + (idx * 0.008) % 0.8);
+                const durations = Array.from({length: 100}, (_, idx) => 2 + (idx * 0.03) % 3);
+                const delays = Array.from({length: 100}, (_, idx) => (idx * 0.02) % 2);
+                
+                return (
+                  <div
+                    key={`star-${i}`}
+                    className="absolute w-1 h-1 bg-white rounded-full"
+                    style={{
+                      top: `${topPositions[i]}%`,
+                      left: `${leftPositions[i]}%`,
+                      opacity: opacities[i],
+                      animation: `twinkle ${durations[i]}s infinite ${delays[i]}s`
+                    }}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
