@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, lazy, Suspense } from "react"
 import { motion } from "framer-motion"
 import { 
   Code, 
@@ -14,9 +14,11 @@ import {
   ExternalLink
 } from "lucide-react"
 import Navigation from './navigation'
-import NetworkStats from './network-stats'
-import Ecosystem from './ecosystem'
-import Footer from './footer'
+
+// Lazy load heavy components
+const NetworkStats = lazy(() => import('./network-stats'))
+const Ecosystem = lazy(() => import('./ecosystem'))
+const Footer = lazy(() => import('./footer'))
 
 // Unreal Engine 风格设计系统
 const customStyles = `
@@ -131,7 +133,15 @@ const customStyles = `
     animation-duration: 50s;
   }
   
-  .animate-scroll:hover {
+  .animate-scroll-mobile {
+    animation-name: scroll;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 360s;
+  }
+  
+  .animate-scroll:hover,
+  .animate-scroll-mobile:hover {
     animation-play-state: paused;
   }
 `
@@ -411,7 +421,15 @@ export default function NewHomePage() {
       </div>
 
       {/* Network Statistics */}
-      <NetworkStats />
+      <Suspense fallback={
+        <div className="py-24 px-6 lg:px-8 bg-slate-50">
+          <div className="max-w-7xl mx-auto text-center">
+            <div className="h-32 bg-gray-200 animate-pulse rounded-lg" />
+          </div>
+        </div>
+      }>
+        <NetworkStats />
+      </Suspense>
 
       {/* Features Section - Monad Style */}
       <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 relative overflow-hidden">
@@ -444,6 +462,8 @@ export default function NewHomePage() {
                     src="/marketing/logos/move-white.svg" 
                     alt="Move Language Logo" 
                     className="w-32 h-32 object-contain"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="text-sm font-medium text-slate-700 mb-2">100% Move-Compatible</div>
@@ -944,7 +964,15 @@ export default function NewHomePage() {
       </div>
 
       {/* Ecosystem Section */}
-      <Ecosystem />
+      <Suspense fallback={
+        <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50">
+          <div className="max-w-7xl mx-auto text-center">
+            <div className="h-64 bg-gray-200 animate-pulse rounded-lg" />
+          </div>
+        </div>
+      }>
+        <Ecosystem />
+      </Suspense>
 
       {/* Network Architecture Section - Based on Main Page Design */}
       <div className="py-24 px-6 lg:px-8 bg-gray-50 relative overflow-hidden">
@@ -1397,13 +1425,7 @@ export default function NewHomePage() {
           {/* Scrolling Container */}
           <div className="relative">
             <div 
-              className="flex" 
-              style={{
-                animationName: 'scroll',
-                animationTimingFunction: 'linear', 
-                animationIterationCount: 'infinite',
-                animationDuration: isMobile ? '360s' : '50s'
-              }}>
+              className={`flex ${isMobile ? 'animate-scroll-mobile' : 'animate-scroll'}`}>
               {/* First set of logos */}
               <div className="flex items-center justify-center space-x-8 lg:space-x-12 min-w-full">
                 <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
@@ -1411,6 +1433,8 @@ export default function NewHomePage() {
                     src="/mediakit/dubhe/png/a.png" 
                     alt="Dubhe" 
                     className="h-8 sm:h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
@@ -1418,6 +1442,8 @@ export default function NewHomePage() {
                     src="/mediakit/merak/png/a.png" 
                     alt="Merak" 
                     className="h-8 sm:h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
@@ -1425,6 +1451,8 @@ export default function NewHomePage() {
                     src="/mediakit/numeron/logo.png" 
                     alt="Numeron" 
                     className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
@@ -1432,6 +1460,8 @@ export default function NewHomePage() {
                     src="/mediakit/phad/phad.png" 
                     alt="Phad" 
                     className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
@@ -1471,6 +1501,8 @@ export default function NewHomePage() {
                     src="/mediakit/dubhe/png/a.png" 
                     alt="Dubhe" 
                     className="h-8 sm:h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
@@ -1478,6 +1510,8 @@ export default function NewHomePage() {
                     src="/mediakit/merak/png/a.png" 
                     alt="Merak" 
                     className="h-8 sm:h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
@@ -1485,6 +1519,8 @@ export default function NewHomePage() {
                     src="/mediakit/numeron/logo.png" 
                     alt="Numeron" 
                     className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
@@ -1492,6 +1528,8 @@ export default function NewHomePage() {
                     src="/mediakit/phad/phad.png" 
                     alt="Phad" 
                     className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
@@ -1528,7 +1566,15 @@ export default function NewHomePage() {
         </div>
       </div>
 
-      <Footer />
+      <Suspense fallback={
+        <div className="bg-slate-900 py-16">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="h-48 bg-slate-800 animate-pulse rounded-lg" />
+          </div>
+        </div>
+      }>
+        <Footer />
+      </Suspense>
 
     </>
   )

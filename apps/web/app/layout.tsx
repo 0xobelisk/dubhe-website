@@ -174,11 +174,16 @@ export default function RootLayout({
 							touch-action: manipulation;
 						}
 						
-						/* Reduce animations on mobile for performance */
+						/* Optimize only heavy animations on mobile for performance */
 						@media (max-width: 768px) {
-							* {
-								animation-duration: 0.3s !important;
-								transition-duration: 0.3s !important;
+							/* Only reduce duration for performance-heavy animations */
+							.floating-cube,
+							[data-motion="heavy"] {
+								animation-duration: 0.5s !important;
+							}
+							/* Keep normal durations for UI interactions */
+							button, a, .hover\\:* {
+								transition-duration: 0.2s !important;
 							}
 						}
 						
