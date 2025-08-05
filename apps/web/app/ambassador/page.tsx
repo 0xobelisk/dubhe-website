@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { 
   Users, 
   Globe, 
@@ -89,7 +90,7 @@ export default function AmbassadorPage() {
       country: "🇳🇬 Nigeria",
       expertise: "Community Building",
       projects: 1,
-      image: "CM"
+      image: "/amb/Cryptomaster.png"
     },
     {
       name: "SHAHID",
@@ -97,7 +98,7 @@ export default function AmbassadorPage() {
       country: "🇲🇽 Mexico",
       expertise: "Community Building",
       projects: 1,
-      image: "SH"
+      image: "SH" // 没有对应图片，保持文字头像
     },
     // {
     //   name: "Ahmed Hassan",
@@ -333,8 +334,20 @@ export default function AmbassadorPage() {
                 className="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-6 border border-rose-500/20 hover:border-rose-400/50 transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-rose-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                    {ambassador.image}
+                  <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-rose-400/50">
+                    {ambassador.image.startsWith('/') ? (
+                      <Image
+                        src={ambassador.image}
+                        alt={ambassador.name}
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-r from-rose-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg">
+                        {ambassador.image}
+                      </div>
+                    )}
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">{ambassador.name}</h3>

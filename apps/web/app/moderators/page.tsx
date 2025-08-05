@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { 
   Shield, 
   Users, 
@@ -73,35 +74,35 @@ export default function ModeratorsPage() {
   const moderators = [
     {
       name: "Emmaprof",
-      timezone: "UTC+9 (Asia)",
-      speciality: "Technical Support",
+      timezone: "UTC+1",
+      speciality: "Community Moderator Lead",
       platforms: ["Discord", "Telegram"],
-      languages: ["English", "Korean", "Japanese"],
-      image: "SK"
+      languages: ["English"],
+      image: "/mod/Emmaprof.png"
     },
     {
       name: "Purple_Rain_",
-      timezone: "UTC+1 (Europe)",
-      speciality: "Community Guidelines",
-      platforms: ["Discord", "Forum"],
-      languages: ["English", "German", "French"],
-      image: "MW"
+      timezone: "UTC+3",
+      speciality: "Community Moderator",
+      platforms: ["Discord", "Telegram"],
+      languages: ["English"],
+      image: "/mod/Purple_Rain_.png"
     },
     {
       name: "EREN",
-      timezone: "UTC-3 (Americas)",
-      speciality: "Newcomer Support",
+      timezone: "UTC+5:30",
+      speciality: "Community Moderator",
       platforms: ["Discord", "Telegram"],
-      languages: ["English", "Spanish", "Portuguese"],
-      image: "AS"
+      languages: ["English"],
+      image: "/mod/EREN.png"
     },
     {
       name: "Jenny",
-      timezone: "UTC-8 (Americas)",
-      speciality: "Developer Relations",
-      platforms: ["Discord", "Forum"],
-      languages: ["English", "Chinese"],
-      image: "DC"
+      timezone: "UTC+5:30",
+      speciality: "Community Moderator",
+      platforms: ["Discord", "Telegram"],
+      languages: ["English"],
+      image: "/mod/Jenny.png"
     }
   ]
 
@@ -335,8 +336,14 @@ export default function ModeratorsPage() {
                 className="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-6 border border-emerald-500/20 hover:border-emerald-400/50 transition-all duration-300"
               >
                 <div className="text-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">
-                    {moderator.image}
+                  <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-3 border-2 border-emerald-400/50">
+                    <Image
+                      src={moderator.image}
+                      alt={moderator.name}
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-lg font-bold text-white">{moderator.name}</h3>
                   <p className="text-emerald-400 text-sm">{moderator.speciality}</p>

@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { 
   Code, 
@@ -125,17 +125,14 @@ const customStyles = `
   }
   
   .animate-scroll {
-    animation: scroll 50s linear infinite;
+    animation-name: scroll;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 50s;
   }
   
   .animate-scroll:hover {
     animation-play-state: paused;
-  }
-  
-  @media (max-width: 768px) {
-    .animate-scroll {
-      animation: scroll 360s linear infinite;
-    }
   }
 `
 
@@ -143,8 +140,18 @@ const customStyles = `
  * NewHomePage组件 - Unreal Engine风格主页设计
  */
 export default function NewHomePage() {
+  const [isMobile, setIsMobile] = useState(false)
+
   useEffect(() => {
-    // Component initialization
+    // Check if mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    
+    return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
   return (
@@ -1389,7 +1396,14 @@ export default function NewHomePage() {
           
           {/* Scrolling Container */}
           <div className="relative">
-            <div className="flex animate-scroll">
+            <div 
+              className="flex" 
+              style={{
+                animationName: 'scroll',
+                animationTimingFunction: 'linear', 
+                animationIterationCount: 'infinite',
+                animationDuration: isMobile ? '360s' : '50s'
+              }}>
               {/* First set of logos */}
               <div className="flex items-center justify-center space-x-8 lg:space-x-12 min-w-full">
                 <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
