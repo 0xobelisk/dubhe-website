@@ -195,7 +195,7 @@ export default function TokenPage() {
                     <h3 className="text-2xl font-bold text-white">STARS</h3>
                   </div>
                   <p className="text-gray-300 text-sm mb-2">Community & Reputation Token</p>
-                  <div className="text-3xl font-bold text-purple-400">Unlimited</div>
+                  <div className="text-3xl font-bold text-purple-400">1T</div>
                 </div>
               </motion.div>
 

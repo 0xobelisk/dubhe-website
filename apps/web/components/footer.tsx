@@ -60,23 +60,27 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Support</h4>
             <div className="space-y-2">
               <Link href="/contact" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Contact Us</Link>
-              <a href="https://discord.gg/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
+              <a href="https://discord.com/invite/DygsBZecYA" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
                 Discord
                 <ExternalLink className="w-3 h-3" />
               </a>
-              <a href="https://twitter.com/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
-                Twitter
+              <a href="https://x.com/DubheEngine" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
+                X
                 <ExternalLink className="w-3 h-3" />
               </a>
-              <a href="https://t.me/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
+              <a href="https://t.me/dubheengine" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
                 Telegram
                 <ExternalLink className="w-3 h-3" />
               </a>
-              <a href="https://github.com/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
+              <a href="https://github.com/0xobelisk/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
                 GitHub
                 <ExternalLink className="w-3 h-3" />
               </a>
-              <a href="https://medium.com/@dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
+              <a href="https://www.youtube.com/@DubheEngine" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
+                Youtube
+                <ExternalLink className="w-3 h-3" />
+              </a>
+              <a href="https://medium.com/@dubheengine" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
                 Blog
                 <ExternalLink className="w-3 h-3" />
               </a>

@@ -95,10 +95,10 @@ export default function AmbassadorPage() {
     {
       name: "SHAHID",
       region: "shahid114",
-      country: "🇲🇽 Mexico",
+      country: "🇧🇩 Bangladesh",
       expertise: "Community Building",
       projects: 1,
-      image: "SH" // 没有对应图片，保持文字头像
+      image: "/amb/SHAHID.png" // 没有对应图片，保持文字头像
     },
     // {
     //   name: "Ahmed Hassan",
