@@ -19,7 +19,7 @@ export default function Ecosystem() {
       icon: DollarSign,
       description: "Decentralized finance protocols",
       projects: [
-        { name: "Meark", description: "Automated Market Maker", tvl: "$45M" },
+        { name: "Merak", description: "Automated Market Maker", tvl: "$45M" },
       ] as Project[]
     },
     {

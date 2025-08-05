@@ -125,11 +125,17 @@ const customStyles = `
   }
   
   .animate-scroll {
-    animation: scroll 30s linear infinite;
+    animation: scroll 50s linear infinite;
   }
   
   .animate-scroll:hover {
     animation-play-state: paused;
+  }
+  
+  @media (max-width: 768px) {
+    .animate-scroll {
+      animation: scroll 360s linear infinite;
+    }
   }
 `
 
@@ -1385,121 +1391,121 @@ export default function NewHomePage() {
           <div className="relative">
             <div className="flex animate-scroll">
               {/* First set of logos */}
-              <div className="flex items-center justify-center space-x-12 min-w-full">
-                <div className="flex items-center justify-center w-28 h-16">
+              <div className="flex items-center justify-center space-x-8 lg:space-x-12 min-w-full">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/dubhe/png/a.png" 
                     alt="Dubhe" 
-                    className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                    className="h-8 sm:h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/merak/png/a.png" 
                     alt="Merak" 
-                    className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                    className="h-8 sm:h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/numeron/logo.png" 
                     alt="Numeron" 
-                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/phad/phad.png" 
                     alt="Phad" 
-                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/obelisklabs/obelisk 第一版/PNG/白色字.png" 
                     alt="Obelisk Labs" 
-                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/sui/Sui Logo White/Sui_Logo_White.png" 
                     alt="Sui" 
-                    className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/suifans/suifans.png" 
                     alt="SuiFans" 
-                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/suirobots/logo.png" 
                     alt="SuiRobots" 
-                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
               </div>
               
               {/* Duplicate set for seamless loop */}
-              <div className="flex items-center justify-center space-x-12 min-w-full">
-                <div className="flex items-center justify-center w-28 h-16">
+              <div className="flex items-center justify-center space-x-8 lg:space-x-12 min-w-full">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/dubhe/png/a.png" 
                     alt="Dubhe" 
-                    className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                    className="h-8 sm:h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/merak/png/a.png" 
                     alt="Merak" 
-                    className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                    className="h-8 sm:h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/numeron/logo.png" 
                     alt="Numeron" 
-                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/phad/phad.png" 
                     alt="Phad" 
-                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/obelisklabs/obelisk 第一版/PNG/白色字.png" 
                     alt="Obelisk Labs" 
-                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/sui/Sui Logo White/Sui_Logo_White.png" 
                     alt="Sui" 
-                    className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/suifans/suifans.png" 
                     alt="SuiFans" 
-                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
-                <div className="flex items-center justify-center w-28 h-16">
+                <div className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
                   <img 
                     src="/mediakit/suirobots/logo.png" 
                     alt="SuiRobots" 
-                    className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
               </div>
