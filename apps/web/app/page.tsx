@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import CosmicLoader from '../components/cosmic-loader'
 import NewHomePage from '../components/new-home-page'
@@ -8,10 +8,10 @@ import NewHomePage from '../components/new-home-page'
 export default function Page() {
   const [isLoading, setIsLoading] = useState(true)
 
-  const handleLoadingComplete = () => {
+  const handleLoadingComplete = useCallback(() => {
     console.log('Loading completed!')
     setIsLoading(false)
-  }
+  }, [])
 
   // 备用定时器
   useEffect(() => {

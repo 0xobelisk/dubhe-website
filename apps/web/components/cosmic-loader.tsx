@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
 // Pre-generated random data to avoid hydration mismatch
@@ -28,17 +28,21 @@ const SHOOTING_STAR_POSITIONS = Array.from({ length: 5 }, (_, i) => ({
 }))
 
 interface CosmicLoaderProps {
-  onComplete: () => void
+  onComplete?: () => void
   duration?: number
 }
 
-export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoaderProps) {
+const defaultOnComplete = () => {}
+
+export default function CosmicLoader({ onComplete = defaultOnComplete, duration = 4000 }: CosmicLoaderProps) {
   const [progress, setProgress] = useState(0)
   const [phase, setPhase] = useState<'searching' | 'found' | 'complete'>('searching')
   const [loadingText, setLoadingText] = useState('Exploring the cosmos...')
 
   // 添加调试日志
   console.log('CosmicLoader rendered with duration:', duration)
+
+  const stableOnComplete = useCallback(onComplete, [onComplete])
 
   useEffect(() => {
     const totalDuration = duration
@@ -64,14 +68,14 @@ export default function CosmicLoader({ onComplete, duration = 4000 }: CosmicLoad
     const completeTimer = setTimeout(() => {
       console.log('CosmicLoader completing animation, calling onComplete')
       clearInterval(progressInterval)
-      onComplete()
+      stableOnComplete()
     }, totalDuration)
 
     return () => {
       clearInterval(progressInterval)
       clearTimeout(completeTimer)
     }
-  }, [duration, onComplete, phase])
+  }, [duration, stableOnComplete, phase])
 
   return (
     <div className="fixed inset-0 z-50 bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 overflow-hidden">
