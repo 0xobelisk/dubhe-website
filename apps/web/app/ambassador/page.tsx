@@ -84,53 +84,53 @@ export default function AmbassadorPage() {
 
   const ambassadors = [
     {
-      name: "Alex Chen",
-      region: "Asia Pacific",
-      country: "🇸🇬 Singapore",
-      expertise: "DeFi Development",
-      projects: 15,
-      image: "AC"
+      name: "Cryptømaster",
+      region: "cryptomaster7018",
+      country: "🇳🇬 Nigeria",
+      expertise: "Community Building",
+      projects: 1,
+      image: "CM"
     },
     {
-      name: "Maria Rodriguez",
-      region: "Americas",
+      name: "SHAHID",
+      region: "shahid114",
       country: "🇲🇽 Mexico",
       expertise: "Community Building",
-      projects: 23,
-      image: "MR"
+      projects: 1,
+      image: "SH"
     },
-    {
-      name: "Ahmed Hassan",
-      region: "EMEA",
-      country: "🇦🇪 UAE",
-      expertise: "Enterprise Solutions",
-      projects: 18,
-      image: "AH"
-    },
-    {
-      name: "Lisa Johnson",
-      region: "North America",
-      country: "🇺🇸 United States",
-      expertise: "GameFi & NFTs",
-      projects: 31,
-      image: "LJ"
-    },
-    {
-      name: "Yuki Tanaka",
-      region: "Asia Pacific",
-      country: "🇯🇵 Japan",
-      expertise: "Technical Writing",
-      projects: 27,
-      image: "YT"
-    },
-    {
-      name: "Pierre Dubois",
-      region: "Europe",
-      country: "🇫🇷 France",
-      expertise: "Developer Relations",
-      projects: 19,
-      image: "PD"
-    }
+    // {
+    //   name: "Ahmed Hassan",
+    //   region: "EMEA",
+    //   country: "🇦🇪 UAE",
+    //   expertise: "Enterprise Solutions",
+    //   projects: 18,
+    //   image: "AH"
+    // },
+    // {
+    //   name: "Lisa Johnson",
+    //   region: "North America",
+    //   country: "🇺🇸 United States",
+    //   expertise: "GameFi & NFTs",
+    //   projects: 31,
+    //   image: "LJ"
+    // },
+    // {
+    //   name: "Yuki Tanaka",
+    //   region: "Asia Pacific",
+    //   country: "🇯🇵 Japan",
+    //   expertise: "Technical Writing",
+    //   projects: 27,
+    //   image: "YT"
+    // },
+    // {
+    //   name: "Pierre Dubois",
+    //   region: "Europe",
+    //   country: "🇫🇷 France",
+    //   expertise: "Developer Relations",
+    //   projects: 19,
+    //   image: "PD"
+    // }
   ]
 
   return (

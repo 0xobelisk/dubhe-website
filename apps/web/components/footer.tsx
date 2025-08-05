@@ -25,7 +25,7 @@ export default function Footer() {
               real-time P2P channels, and cross-chain interoperability.
             </p>
             <div className="space-y-3">
-              <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200 w-full">
+              <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-3 text-sm font-semibold rounded-lg transition-all duration-200 w-full mobile-touch-target">
                 Get Started
               </button>
             </div>

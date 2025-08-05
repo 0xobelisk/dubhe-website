@@ -172,7 +172,7 @@ export default function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200">
+            <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-3 text-sm font-semibold rounded-lg transition-all duration-200 mobile-touch-target">
               Connect Wallet
             </button>
           </div>
@@ -181,7 +181,8 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-white p-2"
+              className="text-gray-300 hover:text-white p-3 mobile-touch-target"
+              aria-label={isOpen ? "关闭菜单" : "打开菜单"}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -206,7 +207,7 @@ export default function Navigation() {
                     <a
                       key={dropdownItem.name}
                       href={dropdownItem.href}
-                      className="text-gray-400 hover:text-white block px-6 py-2 text-sm transition-colors duration-200 flex items-center gap-2"
+                      className="text-gray-400 hover:text-white block px-6 py-3 text-sm transition-colors duration-200 flex items-center gap-2 mobile-touch-target"
                       {...(dropdownItem.external && { target: "_blank", rel: "noopener noreferrer" })}
                       onClick={() => setIsOpen(false)}
                     >
@@ -217,7 +218,7 @@ export default function Navigation() {
                 </div>
               ))}
               <div className="pt-4 space-y-2">
-                <button className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200">
+                <button className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-3 text-sm font-semibold rounded-lg transition-all duration-200 mobile-touch-target">
                   Connect Wallet
                 </button>
               </div>

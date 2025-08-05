@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next';
 
 import '@workspace/ui/globals.css';
 import { Providers } from '@/components/providers';
+import ServiceWorkerCleanup from '@/components/sw-cleanup';
 
 const fontSans = Geist({
 	subsets: ['latin'],
@@ -112,7 +113,14 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-	themeColor: '#fff',
+	width: 'device-width',
+	initialScale: 1,
+	maximumScale: 5,
+	userScalable: true,
+	themeColor: [
+		{ media: '(prefers-color-scheme: light)', color: '#ffffff' },
+		{ media: '(prefers-color-scheme: dark)', color: '#0f172a' }
+	],
 };
 
 export default function RootLayout({
@@ -136,7 +144,6 @@ export default function RootLayout({
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-				<link rel="manifest" href="/site.webmanifest" />
 				<meta name="msapplication-TileColor" content="#6366f1" />
 				<meta name="theme-color" content="#6366f1" />
 				
@@ -159,6 +166,42 @@ export default function RootLayout({
 						[data-motion] { will-change: transform; }
 						/* Improve text rendering */
 						body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+						
+						/* Mobile optimizations */
+						.mobile-touch-target {
+							min-height: 44px;
+							min-width: 44px;
+							touch-action: manipulation;
+						}
+						
+						/* Reduce animations on mobile for performance */
+						@media (max-width: 768px) {
+							* {
+								animation-duration: 0.3s !important;
+								transition-duration: 0.3s !important;
+							}
+						}
+						
+						/* Respect user's motion preferences */
+						@media (prefers-reduced-motion: reduce) {
+							* {
+								animation-duration: 0.01ms !important;
+								animation-iteration-count: 1 !important;
+								transition-duration: 0.01ms !important;
+							}
+						}
+						
+						/* Improve touch scrolling on iOS */
+						* {
+							-webkit-overflow-scrolling: touch;
+						}
+						
+						/* Prevent zoom on input focus on iOS */
+						@media screen and (max-width: 768px) {
+							input, textarea, select {
+								font-size: 16px !important;
+							}
+						}
 					`
 				}} />
 				
@@ -224,6 +267,7 @@ export default function RootLayout({
 				className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased min-h-screen bg-black text-white`}
 			>
 				<Providers>
+					<ServiceWorkerCleanup />
 					{children}
 				</Providers>
 			</body>

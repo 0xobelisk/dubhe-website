@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect } from "react"
 import { ExternalLink, Coins, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@workspace/ui/components/button"
-import Navigation from "../../components/navigation"
 import CopyableAddress from "../../components/ui/CopyableAddress"
 import Card from "../../components/ui/Card" 
 import GradientText from "../../components/ui/GradientText"
@@ -106,7 +105,6 @@ export default function FoundationPage() {
 
   return (
     <>
-      <Navigation />
       <div className="min-h-screen bg-black text-white pt-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}

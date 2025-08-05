@@ -19,6 +19,7 @@ const constellationLines = [
   [0, 1], // Dubhe to Merak
   [1, 2], // Merak to Phecda
   [2, 3], // Phecda to Megrez
+  [3, 0], // Megrez back to Dubhe - complete the bowl
   [3, 4], // Megrez to Alioth
   [4, 5], // Alioth to Mizar
   [5, 6]  // Mizar to Alkaid
