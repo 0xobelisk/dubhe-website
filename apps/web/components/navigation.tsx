@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Menu, X, ExternalLink, ChevronDown } from "lucide-react"
 import Image from "next/image"
@@ -94,6 +94,40 @@ export default function Navigation() {
     }
   }
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+    // 防止背景滚动
+    if (!isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }
+
+  // 清理函数
+  const closeMenu = () => {
+    setIsOpen(false)
+    document.body.style.overflow = ''
+  }
+
+  // 组件卸载时清理
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [])
+
+  // ESC键关闭菜单
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        closeMenu()
+      }
+    }
+    document.addEventListener('keydown', handleEsc)
+    return () => document.removeEventListener('keydown', handleEsc)
+  }, [isOpen])
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -180,8 +214,8 @@ export default function Navigation() {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-white p-3 mobile-touch-target"
+              onClick={toggleMenu}
+              className="text-gray-300 hover:text-white p-3 relative z-10"
               aria-label={isOpen ? "关闭菜单" : "打开菜单"}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -195,32 +229,38 @@ export default function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-slate-800 py-4"
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden border-t border-slate-800"
           >
-            <div className="space-y-2">
-              {navItems.map((item) => (
-                <div key={item.name} className="space-y-1">
-                  <div className="text-gray-300 px-3 py-2 text-sm font-medium border-b border-slate-700">
-                    {item.name}
+            <div className="max-h-[calc(100vh-4rem)] overflow-y-auto bg-slate-900/95 backdrop-blur-md">
+              <div className="py-4 space-y-2">
+                {navItems.map((item) => (
+                  <div key={item.name} className="space-y-1">
+                    <div className="text-gray-300 px-4 py-3 text-base font-semibold border-b border-slate-700/50">
+                      {item.name}
+                    </div>
+                    {item.dropdown.map((dropdownItem) => (
+                      <a
+                        key={dropdownItem.name}
+                        href={dropdownItem.href}
+                        className="text-gray-400 hover:text-white hover:bg-slate-800/50 block px-6 py-4 text-base transition-all duration-200 flex items-center justify-between group"
+                        {...(dropdownItem.external && { target: "_blank", rel: "noopener noreferrer" })}
+                        onClick={closeMenu}
+                      >
+                        <span>{dropdownItem.name}</span>
+                        {dropdownItem.external && <ExternalLink className="w-4 h-4 group-hover:text-blue-400" />}
+                      </a>
+                    ))}
                   </div>
-                  {item.dropdown.map((dropdownItem) => (
-                    <a
-                      key={dropdownItem.name}
-                      href={dropdownItem.href}
-                      className="text-gray-400 hover:text-white block px-6 py-3 text-sm transition-colors duration-200 flex items-center gap-2 mobile-touch-target"
-                      {...(dropdownItem.external && { target: "_blank", rel: "noopener noreferrer" })}
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {dropdownItem.name}
-                      {dropdownItem.external && <ExternalLink className="w-3 h-3" />}
-                    </a>
-                  ))}
+                ))}
+                <div className="pt-6 pb-4 px-4">
+                  <button 
+                    className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-4 text-base font-semibold rounded-lg transition-all duration-200 shadow-lg"
+                    onClick={closeMenu}
+                  >
+                    Connect Wallet
+                  </button>
                 </div>
-              ))}
-              <div className="pt-4 space-y-2">
-                <button className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-3 text-sm font-semibold rounded-lg transition-all duration-200 mobile-touch-target">
-                  Connect Wallet
-                </button>
               </div>
             </div>
           </motion.div>
