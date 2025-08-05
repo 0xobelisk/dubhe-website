@@ -72,7 +72,7 @@ export default function ModeratorsPage() {
 
   const moderators = [
     {
-      name: "Sarah Kim",
+      name: "Emmaprof",
       timezone: "UTC+9 (Asia)",
       speciality: "Technical Support",
       platforms: ["Discord", "Telegram"],
@@ -80,7 +80,7 @@ export default function ModeratorsPage() {
       image: "SK"
     },
     {
-      name: "Marcus Weber",
+      name: "Purple_Rain_",
       timezone: "UTC+1 (Europe)",
       speciality: "Community Guidelines",
       platforms: ["Discord", "Forum"],
@@ -88,7 +88,7 @@ export default function ModeratorsPage() {
       image: "MW"
     },
     {
-      name: "Ana Silva",
+      name: "EREN",
       timezone: "UTC-3 (Americas)",
       speciality: "Newcomer Support",
       platforms: ["Discord", "Telegram"],
@@ -96,7 +96,7 @@ export default function ModeratorsPage() {
       image: "AS"
     },
     {
-      name: "David Chen",
+      name: "Jenny",
       timezone: "UTC-8 (Americas)",
       speciality: "Developer Relations",
       platforms: ["Discord", "Forum"],
