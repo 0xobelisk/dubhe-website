@@ -230,6 +230,7 @@ export default function ContactPage() {
                         <option value="partnership">Partnership</option>
                         <option value="investment">Investment Inquiry</option>
                         <option value="grants">Grant Application</option>
+                        <option value="foundation-jobs">Foundation Jobs</option>
                         <option value="technical">Technical Support</option>
                         <option value="media">Media & Press</option>
                       </select>

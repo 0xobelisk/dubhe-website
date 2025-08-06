@@ -18,6 +18,7 @@ import {
   Building,
   FileText
 } from "lucide-react"
+import Link from "next/link"
 
 export default function GrantsPage() {
   const [isClient, setIsClient] = useState(false)
@@ -235,10 +236,10 @@ export default function GrantsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
-                <button className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+                <Link href="/contact" className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
                   Apply for Grant
-                  <ArrowRight className="w-5 h-5 inline ml-2" />
-                </button>
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
                 
                 <button className="border-2 border-green-400/50 hover:border-green-300 bg-green-900/20 backdrop-blur-sm text-green-100 hover:text-white hover:bg-green-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
                   View Guidelines
@@ -528,14 +529,14 @@ export default function GrantsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <button className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+            <Link href="/contact" className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
               Submit Proposal
-              <Sparkles className="w-5 h-5 inline ml-2" />
-            </button>
-            <button className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
+              <Sparkles className="w-5 h-5 ml-2" />
+            </Link>
+            <Link href="/contact" className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
               Foundation Contact
               <ExternalLink className="w-5 h-5" />
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>

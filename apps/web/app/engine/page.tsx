@@ -346,7 +346,7 @@ export default function EnginePage() {
               >
                 {/* Connection line */}
                 {index < workflow.length - 1 && (
-                  <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-purple-500 to-transparent"></div>
+                  <div className="hidden lg:block absolute top-8 left-full w-16 h-0.5 bg-gradient-to-r from-purple-500 to-transparent"></div>
                 )}
                 
                 {/* Step number */}
