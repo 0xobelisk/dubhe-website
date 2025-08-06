@@ -30,7 +30,7 @@ export default function AmbassadorPage() {
     {
       icon: <Users className="w-6 h-6" />,
       title: "Direct Communication",
-      description: "Regular communication with the Dubhe team and influence on product roadmap decisions"
+      description: "Regular communication with the Dubhe Foundation and influence on product roadmap decisions"
     },
     {
       icon: <Star className="w-6 h-6" />,

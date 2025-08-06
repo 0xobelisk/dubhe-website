@@ -32,82 +32,148 @@ export async function POST(req: NextRequest) {
       replyTo: email,
       subject: `Contact Form: ${subject}`,
       html: `
-        <!DOCTYPE html>
-        <html>
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" lang="en">
         <head>
-          <meta charset="utf-8">
+          <title>New Contact Form Submission - Dubhe</title>
+          <meta property="og:title" content="New Contact Form Submission - Dubhe">
+          <meta name="twitter:title" content="New Contact Form Submission - Dubhe">
+          <meta name="x-apple-disable-message-reformatting">
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>New Contact Form Submission</title>
+          <style type="text/css">
+            @media only screen and (max-width:639px) {
+              img.stretch-on-mobile, .hs_rss_email_entries_table img, .hs-stretch-cta .hs-cta-img {
+                height: auto !important;
+                width: 100% !important
+              }
+              .display_block_on_small_screens {
+                display: block
+              }
+              .hs_padded {
+                padding-left: 20px !important;
+                padding-right: 20px !important
+              }
+            }
+            a {
+              text-decoration: underline
+            }
+            p {
+              margin: 0
+            }
+            body {
+              -ms-text-size-adjust: 100%;
+              -webkit-text-size-adjust: 100%;
+              -webkit-font-smoothing: antialiased;
+              moz-osx-font-smoothing: grayscale;
+              margin: 0 !important;
+              padding: 0 !important;
+              font-family: Lato, Tahoma, sans-serif;
+              font-size: 15px;
+              color: #23496d;
+              word-break: break-word
+            }
+            table {
+              border-spacing: 0;
+              mso-table-lspace: 0;
+              mso-table-rspace: 0;
+              border-collapse: collapse
+            }
+            img {
+              -ms-interpolation-mode: bicubic
+            }
+            p, a, li, td, blockquote {
+              mso-line-height-rule: exactly
+            }
+          </style>
         </head>
-        <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f8fafc;">
-          <div style="max-width: 600px; margin: 40px auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-            
-            <!-- Header with Dubhe Logo -->
-            <div style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%); padding: 32px 40px; text-align: center;">
-              <div style="background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 16px 24px; display: inline-block; backdrop-filter: blur(10px);">
-                <h1 style="color: white; margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.025em;">
-                  🌟 DUBHE
-                </h1>
-                <p style="color: rgba(255, 255, 255, 0.9); margin: 4px 0 0 0; font-size: 14px; font-weight: 500;">
-                  New Contact Form Submission
-                </p>
-              </div>
-            </div>
+        <body id="hs_body" bgcolor="#eaf7ff" style="margin:0 !important; padding:0 !important; font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word">
+          <div id="preview_text" style="display:none;font-size:1px;color:#eaf7ff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;" lang="en">
+            New contact form submission from ${name}
+          </div>
+          
+          <div class="hse-body-background" lang="en" style="background-color:#eaf7ff" bgcolor="#eaf7ff">
+            <table role="presentation" class="hse-body-wrapper-table" cellpadding="0" cellspacing="0" style="margin:0; padding:0; width:100% !important; min-width:320px !important; height:100% !important" width="100%" height="100%">
+              <tbody>
+                <tr>
+                  <td class="hse-body-wrapper-td" valign="top" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding-top:20px; padding-bottom:20px">
+                    
+                    <!-- Main Container -->
+                    <div style="padding-left:10px; padding-right:10px">
+                      <div style="min-width:280px; max-width:600px; margin-left:auto; margin-right:auto; background-color:#ffffff" bgcolor="#ffffff">
+                        
+                        <!-- Header with Logo -->
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td class="hs_padded" align="left" valign="top" style="font-family:Lato, Tahoma, sans-serif; color:#23496d; word-break:break-word; text-align:left; padding:20px; font-size:0px">
+                                <a href="https://dubhe.obelisk.build" target="_blank" style="color:#6366f1">
+                                  <img src="https://dubhe.obelisk.build/logo/white.png" alt="Dubhe" width="100" style="outline:none; text-decoration:none; border:none; max-width:100%; font-size:16px" align="middle">
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                        <!-- Main Content -->
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td class="hs_padded" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding:40px">
+                                <p style="mso-line-height-rule:exactly; font-size:18px; line-height:125%; color:#1e293b; font-weight:bold; margin-bottom:20px;">New Contact Form Submission</p>
+                                
+                                <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%; margin-bottom:20px;">
+                                  You have received a new message through the Dubhe website contact form.
+                                </p>
 
-            <!-- Content Body -->
-            <div style="padding: 40px;">
-              
-              <!-- Contact Information Card -->
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 24px; margin-bottom: 24px;">
-                <h2 style="color: #1e293b; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">
-                  Contact Details
-                </h2>
-                <table style="width: 100%; border-collapse: collapse;">
-                  <tr>
-                    <td style="padding: 8px 0; color: #64748b; font-weight: 500; width: 80px;">Name:</td>
-                    <td style="padding: 8px 0; color: #1e293b; font-weight: 600;">${name}</td>
-                  </tr>
-                  <tr>
-                    <td style="padding: 8px 0; color: #64748b; font-weight: 500;">Email:</td>
-                    <td style="padding: 8px 0; color: #6366f1; font-weight: 600;">${email}</td>
-                  </tr>
-                  <tr>
-                    <td style="padding: 8px 0; color: #64748b; font-weight: 500;">Subject:</td>
-                    <td style="padding: 8px 0; color: #1e293b; font-weight: 600;">${subject}</td>
-                  </tr>
-                </table>
-              </div>
+                                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+                                  <p style="mso-line-height-rule:exactly; font-size:16px; line-height:125%; color:#1e293b; font-weight:bold; margin-bottom:15px;">Contact Details</p>
+                                  <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%;"><strong>Name:</strong> ${name}</p>
+                                  <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%;"><strong>Email:</strong> <span style="color:#6366f1">${email}</span></p>
+                                  <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%;"><strong>Subject:</strong> ${subject}</p>
+                                </div>
 
-              <!-- Message Card -->
-              <div style="background: #f0f9ff; border: 1px solid #0ea5e9; border-radius: 8px; padding: 24px;">
-                <h2 style="color: #1e293b; margin: 0 0 16px 0; font-size: 18px; font-weight: 600;">
-                  📝 Message
-                </h2>
-                <div style="background: white; padding: 20px; border-radius: 6px; border-left: 4px solid #06b6d4; line-height: 1.6; color: #374151; font-size: 15px;">
-                  ${message.replace(/\n/g, '<br>')}
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Footer -->
-            <div style="background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 24px 40px; text-align: center;">
-              <p style="margin: 0; color: #64748b; font-size: 14px; line-height: 1.5;">
-                This message was sent from the 
-                <strong style="color: #6366f1;">Dubhe Network</strong> contact form
-              </p>
-              <p style="margin: 8px 0 0 0; color: #94a3b8; font-size: 12px;">
-                Received on ${new Date().toLocaleString('en-US', { 
-                  weekday: 'long', 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric',
-                  hour: 'numeric',
-                  minute: '2-digit'
-                })}
-              </p>
-            </div>
-
+                                <div style="background: #f0f9ff; border: 1px solid #0ea5e9; border-radius: 8px; padding: 20px;">
+                                  <p style="mso-line-height-rule:exactly; font-size:16px; line-height:125%; color:#1e293b; font-weight:bold; margin-bottom:15px;">Message</p>
+                                  <div style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #06b6d4; line-height: 1.6;">
+                                    <p style="mso-line-height-rule:exactly; font-size:15px; line-height:150%; color:#374151; margin:0;">${message.replace(/\n/g, '<br>')}</p>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                        <!-- Footer -->
+                        <table role="presentation" class="hse-footer hse-secondary" width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial, sans-serif; font-size:12px; line-height:135%; color:#23496d; margin-bottom:0; padding:0">
+                          <tbody>
+                            <tr>
+                              <td align="center" valign="top" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; text-align:center; margin-bottom:0; line-height:135%; padding:10px 20px">
+                                <p style="font-family:Arial, sans-serif;font-size:12px;font-weight:normal;text-decoration:none;font-style:normal;color:#23496d">
+                                  Message sent from Dubhe Network contact form
+                                </p>
+                                <p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 12px;">
+                                  Received on ${new Date().toLocaleString('en-US', { 
+                                    weekday: 'long', 
+                                    year: 'numeric', 
+                                    month: 'long', 
+                                    day: 'numeric',
+                                    hour: 'numeric',
+                                    minute: '2-digit'
+                                  })}
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </body>
         </html>
@@ -128,98 +194,204 @@ export async function POST(req: NextRequest) {
       to: email,
       subject: 'Thank you for contacting Dubhe',
       html: `
-        <!DOCTYPE html>
-        <html>
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" lang="en">
         <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Thank you for contacting Dubhe</title>
+          <meta property="og:title" content="Thank you for contacting Dubhe">
+          <meta name="twitter:title" content="Thank you for contacting Dubhe">
+          <meta name="x-apple-disable-message-reformatting">
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style type="text/css">
+            @media only screen and (max-width:639px) {
+              img.stretch-on-mobile, .hs_rss_email_entries_table img, .hs-stretch-cta .hs-cta-img {
+                height: auto !important;
+                width: 100% !important
+              }
+              .display_block_on_small_screens {
+                display: block
+              }
+              .hs_padded {
+                padding-left: 20px !important;
+                padding-right: 20px !important
+              }
+              .social-network-cell {
+                display: inline-block
+              }
+            }
+            a {
+              text-decoration: underline
+            }
+            p {
+              margin: 0
+            }
+            body {
+              -ms-text-size-adjust: 100%;
+              -webkit-text-size-adjust: 100%;
+              -webkit-font-smoothing: antialiased;
+              moz-osx-font-smoothing: grayscale;
+              margin: 0 !important;
+              padding: 0 !important;
+              font-family: Lato, Tahoma, sans-serif;
+              font-size: 15px;
+              color: #23496d;
+              word-break: break-word
+            }
+            table {
+              border-spacing: 0;
+              mso-table-lspace: 0;
+              mso-table-rspace: 0;
+              border-collapse: collapse
+            }
+            img {
+              -ms-interpolation-mode: bicubic
+            }
+            p, a, li, td, blockquote {
+              mso-line-height-rule: exactly
+            }
+          </style>
         </head>
-        <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f8fafc;">
-          <div style="max-width: 600px; margin: 40px auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-            
-            <!-- Header with Dubhe Logo -->
-            <div style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #6366f1 100%); padding: 32px 40px; text-align: center;">
-              <div style="background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 16px 24px; display: inline-block; backdrop-filter: blur(10px);">
-                <h1 style="color: white; margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.025em;">
-                  🌟 DUBHE
-                </h1>
-                <p style="color: rgba(255, 255, 255, 0.9); margin: 4px 0 0 0; font-size: 14px; font-weight: 500;">
-                  Thank you for reaching out!
-                </p>
-              </div>
-            </div>
-
-            <!-- Main Content -->
-            <div style="padding: 40px;">
-              
-              <!-- Greeting -->
-              <div style="text-align: center; margin-bottom: 32px;">
-                <h2 style="color: #1e293b; margin: 0 0 16px 0; font-size: 28px; font-weight: 700;">
-                  Hi ${name}! 👋
-                </h2>
-                <p style="color: #64748b; font-size: 16px; line-height: 1.6; margin: 0;">
-                  We've received your message and appreciate you taking the time to contact us.
-                </p>
-              </div>
-
-              <!-- Message Summary -->
-              <div style="background: #f0f9ff; border: 1px solid #0ea5e9; border-radius: 8px; padding: 24px; margin-bottom: 24px;">
-                <h3 style="color: #1e293b; margin: 0 0 12px 0; font-size: 16px; font-weight: 600;">
-                  📋 Your Message Summary
-                </h3>
-                <p style="color: #64748b; margin: 0; font-size: 14px;">
-                  <strong>Subject:</strong> ${subject}
-                </p>
-              </div>
-
-              <!-- What's Next -->
-              <div style="background: #f0fdf4; border: 1px solid #22c55e; border-radius: 8px; padding: 24px; margin-bottom: 32px;">
-                <h3 style="color: #1e293b; margin: 0 0 16px 0; font-size: 18px; font-weight: 600;">
-                  ✅ What's Next?
-                </h3>
-                <ul style="color: #374151; margin: 0; padding-left: 20px; line-height: 1.6;">
-                  <li style="margin-bottom: 8px;">Our team will review your message within 24-48 hours</li>
-                  <li style="margin-bottom: 8px;">We'll respond directly to <strong style="color: #6366f1;">${email}</strong></li>
-                  <li style="margin-bottom: 0;">You'll receive a personalized response based on your inquiry</li>
-                </ul>
-              </div>
-
-              <!-- Call to Action -->
-              <div style="text-align: center; padding: 20px; background: #fafafa; border-radius: 8px; border: 1px dashed #d1d5db;">
-                <p style="color: #64748b; margin: 0 0 16px 0; font-size: 14px;">
-                  While you wait, explore more about Dubhe:
-                </p>
-                <div style="display: inline-block;">
-                  <a href="https://dubhe-docs.obelisk.build/dubhe" style="display: inline-block; background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 500; font-size: 14px; margin: 0 8px;">
-                    📚 Documentation
-                  </a>
-                  <a href="https://github.com/0xobelisk/dubhe" style="display: inline-block; background: linear-gradient(135deg, #374151, #4b5563); color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 500; font-size: 14px; margin: 0 8px;">
-                    💻 GitHub
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Footer -->
-            <div style="background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 24px 40px; text-align: center;">
-              <p style="color: #1e293b; margin: 0 0 8px 0; font-weight: 600; font-size: 16px;">
-                Best regards,
-              </p>
-              <p style="color: #6366f1; margin: 0 0 16px 0; font-weight: 700; font-size: 18px;">
-                The Dubhe Team
-              </p>
-              <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 16px;">
-                <p style="margin: 0; color: #94a3b8; font-size: 12px;">
-                  This is an automated confirmation from <strong>Dubhe Network</strong>
-                </p>
-                <p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 12px;">
-                  If you didn't send this message, please ignore this email.
-                </p>
-              </div>
-            </div>
-
+        <body id="hs_body" bgcolor="#eaf7ff" style="margin:0 !important; padding:0 !important; font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word">
+          <div id="preview_text" style="display:none;font-size:1px;color:#eaf7ff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;" lang="en">
+            Thank you for contacting Dubhe! We'll get back to you within 24-48 hours.
+          </div>
+          
+          <div class="hse-body-background" lang="en" style="background-color:#eaf7ff" bgcolor="#eaf7ff">
+            <table role="presentation" class="hse-body-wrapper-table" cellpadding="0" cellspacing="0" style="margin:0; padding:0; width:100% !important; min-width:320px !important; height:100% !important" width="100%" height="100%">
+              <tbody>
+                <tr>
+                  <td class="hse-body-wrapper-td" valign="top" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding-top:20px; padding-bottom:20px">
+                    
+                    <!-- Main Container -->
+                    <div style="padding-left:10px; padding-right:10px">
+                      <div style="min-width:280px; max-width:600px; margin-left:auto; margin-right:auto; background-color:#ffffff" bgcolor="#ffffff">
+                        
+                        <!-- Header with Logo -->
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td class="hs_padded" align="left" valign="top" style="font-family:Lato, Tahoma, sans-serif; color:#23496d; word-break:break-word; text-align:left; padding:20px; font-size:0px">
+                                <a href="https://dubhe.obelisk.build" target="_blank" style="color:#6366f1">
+                                  <img src="https://dubhe.obelisk.build/logo/white.png" alt="Dubhe" width="100" style="outline:none; text-decoration:none; border:none; max-width:100%; font-size:16px" align="middle">
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                        <!-- Main Content -->
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td class="hs_padded" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding:40px">
+                                <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%">Hi ${name},</p>
+                                <p style="mso-line-height-rule:exactly; font-size:14px; line-height:125%">&nbsp;</p>
+                                <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%">
+                                  Thank you for reaching out to us! We've received your message about "<strong>${subject}</strong>" and appreciate you taking the time to contact the Dubhe Foundation.
+                                </p>
+                                <p style="mso-line-height-rule:exactly; font-size:14px; line-height:125%">&nbsp;</p>
+                                <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%">
+                                  Our team will review your message and get back to you within 24-48 hours at <strong style="color:#6366f1">${email}</strong>.
+                                </p>
+                                <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%">&nbsp;</p>
+                                <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%">
+                                  <span style="font-weight: bold;">While you wait, feel free to explore:</span>
+                                </p>
+                                <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%">
+                                  • Our <a href="https://dubhe-docs.obelisk.build/dubhe" style="color:#6366f1" target="_blank"><strong>Documentation</strong></a> to learn more about Dubhe<br>
+                                  • Follow our progress on <a href="https://github.com/0xobelisk/dubhe" style="color:#6366f1" target="_blank"><strong>GitHub</strong></a>
+                                </p>
+                                <p style="mso-line-height-rule:exactly; line-height:125%">&nbsp;</p>
+                                <p style="mso-line-height-rule:exactly; line-height:125%"><span style="font-size: 15px;">Thank you!&nbsp;</span></p>
+                                <p style="mso-line-height-rule:exactly; line-height:125%"><span style="font-size: 15px;">The Dubhe Foundation</span></p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                        <!-- View in Browser Link -->
+                        <div style="overflow:hidden">
+                          <table role="presentation" class="hse-pre-header hse-secondary" width="100%" cellpadding="0" cellspacing="0" style="text-align:right; font-family:Arial, sans-serif; font-size:12px; line-height:135%; color:#23496d; margin-bottom:0; padding:0" align="right">
+                            <tbody>
+                              <tr>
+                                <td align="center" valign="top" style="color:#23496d; word-break:break-word; text-align:center; font-family:Arial, sans-serif; font-size:12px; padding:10px 0; margin-bottom:0; line-height:135%">
+                                  <a href="https://dubhe.obelisk.build" style="color:#6366f1; font-weight:normal; text-decoration:none; font-style:normal" target="_blank">View in browser</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        
+                        <!-- Social Media Links -->
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td class="hs_padded" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding:10px 20px">
+                                <table role="presentation" align="center" style="width: auto; text-align: center;">
+                                  <tbody>
+                                    <tr align="center">
+                                      <!-- X (Twitter) -->
+                                      <td class="social-network-cell" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding:8px 5px;">
+                                        <a href="https://x.com/DubheEngine" style="color:#6366f1; text-decoration:none !important" target="_blank">
+                                          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" height="25" style="outline:none; text-decoration:none; border:none; width:auto!important; height:25px!important; vertical-align:middle" valign="middle" width="auto">
+                                        </a>
+                                      </td>
+                                      <!-- Discord -->
+                                      <td class="social-network-cell" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding:8px 5px;">
+                                        <a href="https://discord.gg/J76zPyGWau" style="color:#6366f1; text-decoration:none !important" target="_blank">
+                                          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord" height="25" style="outline:none; text-decoration:none; border:none; width:auto!important; height:25px!important; vertical-align:middle" valign="middle" width="auto">
+                                        </a>
+                                      </td>
+                                      <!-- Telegram -->
+                                      <td class="social-network-cell" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding:8px 5px;">
+                                        <a href="https://t.me/dubheengine" style="color:#6366f1; text-decoration:none !important" target="_blank">
+                                          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" height="25" style="outline:none; text-decoration:none; border:none; width:auto!important; height:25px!important; vertical-align:middle" valign="middle" width="auto">
+                                        </a>
+                                      </td>
+                                      <!-- YouTube -->
+                                      <td class="social-network-cell" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding:8px 5px;">
+                                        <a href="https://www.youtube.com/@DubheEngine" style="color:#6366f1; text-decoration:none !important" target="_blank">
+                                          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Youtube" height="25" style="outline:none; text-decoration:none; border:none; width:auto!important; height:25px!important; vertical-align:middle" valign="middle" width="auto">
+                                        </a>
+                                      </td>
+                                      <!-- GitHub -->
+                                      <td class="social-network-cell" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding:8px 5px;">
+                                        <a href="https://github.com/0xobelisk/dubhe" style="color:#6366f1; text-decoration:none !important" target="_blank">
+                                          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" height="25" style="outline:none; text-decoration:none; border:none; width:auto!important; height:25px!important; vertical-align:middle" valign="middle" width="auto">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                        <!-- Footer -->
+                        <table role="presentation" class="hse-footer hse-secondary" width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial, sans-serif; font-size:12px; line-height:135%; color:#23496d; margin-bottom:0; padding:0">
+                          <tbody>
+                            <tr>
+                              <td align="center" valign="top" style="font-family:Lato, Tahoma, sans-serif; font-size:15px; color:#23496d; word-break:break-word; text-align:center; margin-bottom:0; line-height:135%; padding:10px 20px">
+                                <p style="font-family:Arial, sans-serif;font-size:12px;font-weight:normal;text-decoration:none;font-style:normal;color:#23496d">
+                                  Dubhe Foundation, Building the future of Move development
+                                </p>
+                                <p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 12px;">
+                                  This is an automated confirmation from Dubhe Foundation
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </body>
         </html>
