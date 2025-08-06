@@ -47,12 +47,12 @@ export default function Navigation() {
       name: "Media", 
       href: "#media",
       dropdown: [
-        { name: "Discord", href: "https://discord.gg/dubhe", external: true },
-        { name: "Twitter", href: "https://twitter.com/dubhe", external: true },
-        { name: "Telegram", href: "https://t.me/dubhe", external: true },
-        { name: "YouTube", href: "https://youtube.com/dubhe", external: true },
-        { name: "GitHub", href: "https://github.com/dubhe", external: true },
-        { name: "Blog", href: "https://medium.com/@dubhe", external: true }
+        { name: "Discord", href: "https://discord.gg/J76zPyGWau", external: true },
+        { name: "X", href: "https://x.com/DubheEngine", external: true },
+        { name: "Telegram", href: "https://t.me/dubheengine", external: true },
+        { name: "YouTube", href: "https://www.youtube.com/@DubheEngine", external: true },
+        { name: "GitHub", href: "https://github.com/0xobelisk/dubhe", external: true },
+        { name: "medium", href: "https://medium.com/@dubheengine", external: true }
       ]
     },
     { 
