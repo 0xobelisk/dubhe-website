@@ -240,10 +240,10 @@ export default function AmbassadorPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
-                <button className="bg-gradient-to-r from-rose-500 to-purple-500 hover:from-rose-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDcEdrHgI-ATQWQ7_h1XdGXPaJYL5VWsnmUnMfHc3XRiaXvA/viewform" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-rose-500 to-purple-500 hover:from-rose-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center">
                   Apply Now
-                  <ArrowRight className="w-5 h-5 inline ml-2" />
-                </button>
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
                 
                 <button className="border-2 border-rose-400/50 hover:border-rose-300 bg-rose-900/20 backdrop-blur-sm text-rose-100 hover:text-white hover:bg-rose-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
                   Learn More
@@ -457,10 +457,10 @@ export default function AmbassadorPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <button className="bg-gradient-to-r from-rose-500 to-purple-500 hover:from-rose-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDcEdrHgI-ATQWQ7_h1XdGXPaJYL5VWsnmUnMfHc3XRiaXvA/viewform" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-rose-500 to-purple-500 hover:from-rose-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center">
               Apply Now
-              <Sparkles className="w-5 h-5 inline ml-2" />
-            </button>
+              <Sparkles className="w-5 h-5 ml-2" />
+            </a>
             <button className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
               Contact Us
               <ExternalLink className="w-5 h-5" />

@@ -206,9 +206,9 @@ export default function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-3 text-sm font-semibold rounded-lg transition-all duration-200 mobile-touch-target">
+            {/* <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-3 text-sm font-semibold rounded-lg transition-all duration-200 mobile-touch-target">
               Connect Wallet
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile menu button */}
@@ -253,14 +253,14 @@ export default function Navigation() {
                     ))}
                   </div>
                 ))}
-                <div className="pt-6 pb-4 px-4">
+                {/* <div className="pt-6 pb-4 px-4">
                   <button 
                     className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-4 text-base font-semibold rounded-lg transition-all duration-200 shadow-lg"
                     onClick={closeMenu}
                   >
                     Connect Wallet
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </motion.div>

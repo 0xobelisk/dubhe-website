@@ -116,7 +116,7 @@ export default function Ecosystem() {
         </div>
 
         <div className="text-center">
-          <motion.button
+          {/* <motion.button
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -127,7 +127,7 @@ export default function Ecosystem() {
           >
             Explore All Projects
             <ExternalLink className="w-5 h-5" />
-          </motion.button>
+          </motion.button> */}
         </div>
       </div>
     </div>

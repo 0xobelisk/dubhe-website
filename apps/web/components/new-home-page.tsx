@@ -270,13 +270,13 @@ export default function NewHomePage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                  <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+                  <a href="https://github.com/0xobelisk/dubhe" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-block text-center">
                     Get Dubhe Stack
-                  </button>
+                  </a>
                   
-                  <button className="border-2 border-blue-400/50 hover:border-blue-300 bg-blue-900/20 backdrop-blur-sm text-blue-100 hover:text-white hover:bg-blue-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
+                  <a href="https://github.com/0xobelisk/Dubhe/tree/main?tab=License-1-ov-file#readme" target="_blank" rel="noopener noreferrer" className="border-2 border-blue-400/50 hover:border-blue-300 bg-blue-900/20 backdrop-blur-sm text-blue-100 hover:text-white hover:bg-blue-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-block text-center">
                     Learn about licensing
-                  </button>
+                  </a>
                 </motion.div>
               </motion.div>
 
@@ -1225,11 +1225,11 @@ export default function NewHomePage() {
               developers to focus on 20% core logic while 80% is automatically generated and managed.
             </p>
 
-            <button className="bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 hover:from-purple-500 hover:via-blue-500 hover:to-cyan-500 text-white border-0 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-200 inline-flex items-center gap-2 shadow-lg relative overflow-hidden">
+            {/* <button className="bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 hover:from-purple-500 hover:via-blue-500 hover:to-cyan-500 text-white border-0 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-200 inline-flex items-center gap-2 shadow-lg relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-blue-600/20 to-cyan-600/20 animate-pulse"></div>
               <Database className="w-5 h-5 relative z-10" />
               <span className="relative z-10">Read Dubhe Thesis</span>
-            </button>
+            </button> */}
           </motion.div>
 
           {/* Technical Features Grid */}

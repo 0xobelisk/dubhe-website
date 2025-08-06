@@ -80,15 +80,6 @@ export default function FoundationPage() {
       {/* Navigation */}
       <Navigation />
       
-      {/* Announcement Banner */}
-      <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-6 text-center relative z-40 mt-16">
-        <div className="flex items-center justify-center gap-2">
-          <div className="bg-white text-purple-600 px-2 py-1 rounded text-xs font-semibold">
-            News
-          </div>
-          <span className="text-sm">Dubhe OS Devnet is live! 🎉</span>
-        </div>
-      </div>
 
       {/* Main Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 overflow-hidden">
