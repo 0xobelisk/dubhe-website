@@ -3,15 +3,9 @@
 import { useEffect } from "react"
 import { motion } from "framer-motion"
 import { 
-  Heart, 
   Users, 
   Target, 
-  Globe,
-  ArrowRight,
-  Building,
-  Zap,
-  Shield,
-  ExternalLink
+  Globe
 } from "lucide-react"
 import Navigation from "../../components/navigation"
 import Image from "next/image"
@@ -92,7 +86,7 @@ export default function FoundationPage() {
           <div className="bg-white text-purple-600 px-2 py-1 rounded text-xs font-semibold">
             News
           </div>
-          <span className="text-sm">Dubhe Testnet is live! 🎉</span>
+          <span className="text-sm">Dubhe OS Devnet is live! 🎉</span>
         </div>
       </div>
 
@@ -318,177 +312,7 @@ export default function FoundationPage() {
         </div>
       </div>
 
-      {/* Initiatives Section */}
-      <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <div className="inline-block bg-purple-500/10 text-purple-400 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-500/20">
-              Foundation Initiatives
-            </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight">
-              Building the Future Together
-            </h2>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Our active programs and initiatives supporting the Dubhe ecosystem
-            </p>
-          </div>
 
-          {/* Initiatives Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {/* Grant Program */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-purple-500/50 transition-all duration-300"
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white">
-                  <Heart className="w-6 h-6" />
-                </div>
-                <h3 className="text-2xl font-bold text-white">Dubhe Grant Program</h3>
-              </div>
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                Supporting innovative projects building on Dubhe with funding, mentorship, and resources. 
-                From early-stage prototypes to production-ready applications.
-              </p>
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center gap-3">
-                  <Zap className="w-4 h-4 text-yellow-400" />
-                  <span className="text-gray-300 text-sm">Up to $50K funding per project</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Users className="w-4 h-4 text-blue-400" />
-                  <span className="text-gray-300 text-sm">Technical mentorship included</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Shield className="w-4 h-4 text-green-400" />
-                  <span className="text-gray-300 text-sm">Security audit support</span>
-                </div>
-              </div>
-              <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-400 hover:to-pink-400 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2">
-                Apply for Grant
-                <ArrowRight className="w-4 h-4" />
-              </button>
-            </motion.div>
-
-            {/* Developer Accelerator */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-blue-500/50 transition-all duration-300"
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-white">
-                  <Building className="w-6 h-6" />
-                </div>
-                <h3 className="text-2xl font-bold text-white">Move Accelerator</h3>
-              </div>
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                Intensive 3-month program for Move developers and teams building the next generation 
-                of fully on-chain applications and games.
-              </p>
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center gap-3">
-                  <Target className="w-4 h-4 text-orange-400" />
-                  <span className="text-gray-300 text-sm">3-month intensive program</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Users className="w-4 h-4 text-blue-400" />
-                  <span className="text-gray-300 text-sm">Expert mentorship network</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Globe className="w-4 h-4 text-green-400" />
-                  <span className="text-gray-300 text-sm">Global demo day presentation</span>
-                </div>
-              </div>
-              <button className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2">
-                Learn More
-                <ArrowRight className="w-4 h-4" />
-              </button>
-            </motion.div>
-          </div>
-        </div>
-      </div>
-
-      {/* Footer */}
-      <div className="py-16 bg-slate-900 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Logo and Description */}
-            <div className="md:col-span-1">
-              <div className="flex items-center gap-3 mb-6">
-                <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
-                  <Image 
-                    src="/logo/light.png" 
-                    alt="Dubhe Foundation"
-                    width={120}
-                    height={32}
-                    className="h-8 w-auto object-contain cursor-pointer"
-                  />
-                </Link>
-                <span className="text-lg font-bold text-white">DUBHE FOUNDATION</span>
-              </div>
-              <div className="space-y-4">
-                <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200">
-                  Learn about Dubhe
-                </button>
-                <button className="border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-200 block">
-                  Join the team
-                </button>
-              </div>
-            </div>
-
-            {/* Navigation */}
-            <div>
-              <h4 className="text-white font-semibold mb-4">Navigation</h4>
-              <div className="space-y-2">
-                <a href="/" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Home</a>
-                <a href="/portal" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Foundation Portal</a>
-              </div>
-            </div>
-
-            {/* Links */}
-            <div>
-              <h4 className="text-white font-semibold mb-4">Links</h4>
-              <div className="space-y-2">
-                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">The Dubhe Protocol</a>
-                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Move Accelerator</a>
-                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Grant Programs</a>
-                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Developer Resources</a>
-              </div>
-            </div>
-
-            {/* Socials */}
-            <div>
-              <h4 className="text-white font-semibold mb-4">Socials</h4>
-              <div className="space-y-2">
-                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
-                  X (Twitter)
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
-                  Discord
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-                <a href="#" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
-                  GitHub
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Copyright */}
-          <div className="mt-12 pt-8 border-t border-slate-800 text-center">
-            <p className="text-gray-400 text-sm">© 2025 Dubhe Foundation. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
     </>
   )
 }
