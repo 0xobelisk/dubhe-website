@@ -140,10 +140,10 @@ export default function ProposalPage() {
   ]
 
   const stats = [
-    { label: "Active Referenda", value: "18", change: "+5" },
-    { label: "Treasury Balance", value: "2.8M DUBHE", change: "+3%" },
-    { label: "Conviction Voting", value: "72%", change: "+8%" },
-    { label: "Enacted Proposals", value: "89", change: "+12" }
+    { label: "Active Referenda", value: "Coming Soon", change: "+5" },
+    { label: "Treasury Balance", value: "Coming Soon", change: "+3%" },
+    { label: "Conviction Voting", value: "Coming Soon", change: "+8%" },
+    { label: "Enacted Proposals", value: "Coming Soon", change: "+12" }
   ]
 
   const requirements = [

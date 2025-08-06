@@ -52,8 +52,8 @@ export default function OSPage() {
   const features = [
     {
       icon: <Coins className="w-6 h-6" />,
-      title: "$DUBHE Token Ecosystem",
-      description: "Native token powering the entire ecosystem with governance, staking, and utility features across all connected chains.",
+      title: "Native Token Ecosystem",
+      description: "Unified token economy powering the entire ecosystem with governance, staking, and utility features across all connected chains.",
       details: [
         "Cross-chain governance voting",
         "Staking rewards and yields",
@@ -123,32 +123,6 @@ export default function OSPage() {
     }
   ]
 
-  const tokenomics = [
-    {
-      category: "Ecosystem Development",
-      percentage: "40%",
-      description: "Funding for developers, grants, and ecosystem growth",
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      category: "Community Rewards",
-      percentage: "25%",
-      description: "Staking rewards, governance participation, and incentives",
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      category: "Treasury Reserve",
-      percentage: "20%",
-      description: "Long-term sustainability and strategic partnerships",
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      category: "Team & Advisors",
-      percentage: "15%",
-      description: "Core team allocation with vesting schedules",
-      color: "from-orange-500 to-red-500"
-    }
-  ]
 
   return (
     <>
@@ -239,7 +213,7 @@ export default function OSPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Unified ecosystem connecting Move-based blockchains with $DUBHE token governance, 
+                  Unified ecosystem connecting Move-based blockchains with cross-chain governance, 
                   universal bridging, and shared security across the entire network.
                 </motion.p>
               </div>
@@ -256,8 +230,8 @@ export default function OSPage() {
                   <div className="text-gray-300">Move Ecosystem</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">$DUBHE</div>
-                  <div className="text-gray-300">Native Token</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">Universal</div>
+                  <div className="text-gray-300">Token Economy</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-400 mb-2">Unified</div>
@@ -278,7 +252,7 @@ export default function OSPage() {
                 </button>
                 
                 <button className="border-2 border-rose-400/50 hover:border-rose-300 bg-rose-900/20 backdrop-blur-sm text-rose-100 hover:text-white hover:bg-rose-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
-                  Explore Tokenomics
+                  Learn More
                 </button>
               </motion.div>
             </div>
@@ -410,76 +384,6 @@ export default function OSPage() {
         </div>
       </div>
 
-      {/* Tokenomics Section */}
-      <div className="py-24 px-6 lg:px-8 bg-slate-900">
-        <div className="max-w-7xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <motion.h2 
-              className="text-4xl lg:text-5xl font-bold text-white mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              $DUBHE Tokenomics
-            </motion.h2>
-            <motion.p 
-              className="text-lg text-gray-300 max-w-3xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
-              Designed for sustainable ecosystem growth and community governance
-            </motion.p>
-          </div>
-
-          {/* Tokenomics Breakdown */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Pie Chart Representation */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="relative"
-            >
-              <div className="w-80 h-80 mx-auto relative">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/20 via-rose-500/20 to-blue-500/20 animate-pulse"></div>
-                <div className="absolute inset-4 rounded-full bg-slate-800 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-white mb-2">$DUBHE</div>
-                    <div className="text-gray-400">Total Supply</div>
-                    <div className="text-xl font-semibold text-rose-400">1B Tokens</div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Tokenomics Details */}
-            <div className="space-y-6">
-              {tokenomics.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-slate-800/50 rounded-2xl p-6 border border-gray-700"
-                >
-                  <div className="flex items-center justify-between mb-3">
-                    <h3 className="text-lg font-bold text-white">{item.category}</h3>
-                    <div className="text-2xl font-bold text-white">{item.percentage}</div>
-                  </div>
-                  <p className="text-gray-300 text-sm mb-4">{item.description}</p>
-                  <div className={`h-2 rounded-full bg-gradient-to-r ${item.color}`}></div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* CTA Section */}
       <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-rose-900 to-purple-900">
@@ -500,7 +404,7 @@ export default function OSPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Be part of the unified cross-chain future powered by $DUBHE
+            Be part of the unified cross-chain Move ecosystem
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -510,7 +414,7 @@ export default function OSPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <button className="bg-gradient-to-r from-rose-500 to-purple-500 hover:from-rose-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
-              Get $DUBHE Token
+              Join Ecosystem
               <Sparkles className="w-5 h-5 inline ml-2" />
             </button>
             <button className="border-2 border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">

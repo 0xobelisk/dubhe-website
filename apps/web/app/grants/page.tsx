@@ -101,32 +101,32 @@ export default function GrantsPage() {
 
   const successStories = [
     {
-      project: "MoveDEX",
+      project: "Merak",
       category: "DeFi Protocol",
-      funding: "85,000 DUBHE",
+      funding: "1,000,000 DUBHE",
       impact: "10K+ users, $50M TVL",
       description: "Open-source AMM with full milestone completion and production deployment",
       license: "MIT License",
       milestones: "5/5 Complete"
     },
     {
-      project: "Dubhe IDE",
-      category: "Developer Tools", 
-      funding: "60,000 DUBHE",
+      project: "Numeron",
+      category: "Gaming",
+      funding: "1,000,000 DUBHE", 
+      impact: "2K+ students",
+      description: "Comprehensive educational platform with interactive tutorials and certifications",
+      license: "MIT License",
+      milestones: "6/6 Complete"
+    },
+    {
+      project: "Cyferio",
+      category: "Infrastructure", 
+      funding: "2,000,000 DUBHE",
       impact: "5K+ developers",
       description: "Full-featured IDE with complete Move language support and debugging tools",
       license: "Apache 2.0",
       milestones: "4/4 Complete"
     },
-    {
-      project: "Move Academy",
-      category: "Education",
-      funding: "30,000 DUBHE", 
-      impact: "2K+ students",
-      description: "Comprehensive educational platform with interactive tutorials and certifications",
-      license: "MIT License",
-      milestones: "6/6 Complete"
-    }
   ]
 
   return (
@@ -215,15 +215,15 @@ export default function GrantsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-400 mb-2">$2M+</div>
+                  <div className="text-3xl font-bold text-green-400 mb-2">Coming Soon</div>
                   <div className="text-gray-300">Total Funded</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">150+</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">Coming Soon</div>
                   <div className="text-gray-300">Projects Funded</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">75%</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">Coming Soon</div>
                   <div className="text-gray-300">Success Rate</div>
                 </div>
               </motion.div>

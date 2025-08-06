@@ -32,8 +32,8 @@ export default function IncubationPage() {
       title: "Foundation Accelerator",
       duration: "3 months",
       funding: "Up to $500K",
-      description: "Foundation-backed intensive program with Obelisk Mesh technical support",
-      benefits: ["Foundation funding", "Obelisk Mesh mentorship", "Move development support", "Ecosystem partnerships"],
+      description: "Dubhe Foundation-backed intensive program co-incubated with Obelisk Labs and ecosystem VCs",
+      benefits: ["Dubhe Foundation funding", "Obelisk Labs co-incubation", "Move development support", "Ecosystem VC partnerships"],
       color: "from-purple-500 to-pink-500"
     },
     {
@@ -41,8 +41,8 @@ export default function IncubationPage() {
       title: "Collaborative Studio",
       duration: "6-12 months", 
       funding: "Up to $1M",
-      description: "Co-building with Dubhe ecosystem companies and Foundation backing",
-      benefits: ["Multi-partner support", "Shared technical resources", "Cross-project collaboration", "Ecosystem integration"],
+      description: "Co-incubated by Dubhe Foundation, Obelisk Labs, and ecosystem VCs with shared resources",
+      benefits: ["Multi-partner co-incubation", "Shared technical resources", "Cross-project collaboration", "Ecosystem VC networks"],
       color: "from-blue-500 to-cyan-500"
     },
     {
@@ -50,8 +50,8 @@ export default function IncubationPage() {
       title: "Ecosystem Scale",
       duration: "6 months",
       funding: "Up to $2M",
-      description: "Scale with support from Foundation and ecosystem partner network",
-      benefits: ["Partnership network", "Strategic introductions", "Global market access", "Enterprise connections"],
+      description: "Scale with comprehensive support from Dubhe Foundation, Obelisk Labs, and ecosystem VC partners",
+      benefits: ["Co-incubation network", "Strategic introductions", "Global market access", "Enterprise VC connections"],
       color: "from-green-500 to-emerald-500"
     }
   ]
@@ -59,10 +59,10 @@ export default function IncubationPage() {
   const mentors = [
     {
       name: "Dr. Alex Chen",
-      role: "CTO at Obelisk Mesh",
+      role: "CTO at Obelisk Labs",
       expertise: "Infrastructure Development",
       image: "AC",
-      company: "Obelisk Mesh"
+      company: "Obelisk Labs"
     },
     {
       name: "Sarah Rodriguez", 
@@ -80,10 +80,10 @@ export default function IncubationPage() {
     },
     {
       name: "Lisa Wang",
-      role: "Business Development at Obelisk Mesh",
+      role: "Business Development at Obelisk Labs",
       expertise: "Partnership Strategy",
       image: "LW",
-      company: "Obelisk Mesh"
+      company: "Obelisk Labs"
     }
   ]
 
@@ -97,7 +97,7 @@ export default function IncubationPage() {
       valuation: "$50M"
     },
     {
-      name: "MoveFi",
+      name: "Merak",
       category: "DeFi",
       stage: "Seed",
       funding: "$2M raised", 
@@ -105,7 +105,7 @@ export default function IncubationPage() {
       valuation: "$20M"
     },
     {
-      name: "GameVerse",
+      name: "Numeron",
       category: "Gaming",
       stage: "Pre-Seed",
       funding: "$500K raised",
@@ -117,13 +117,13 @@ export default function IncubationPage() {
   const resources = [
     {
       icon: <Users className="w-5 h-5" />,
-      title: "Multi-Partner Mentorship", 
-      description: "Guidance from Foundation, Obelisk Mesh, and ecosystem partners"
+      title: "Multi-Partner Co-Incubation", 
+      description: "Joint guidance from Dubhe Foundation, Obelisk Labs, and ecosystem VCs"
     },
     {
       icon: <Briefcase className="w-5 h-5" />,
       title: "Shared Infrastructure",
-      description: "Access to Obelisk Mesh infrastructure and partner resources"
+      description: "Access to Obelisk Labs infrastructure and ecosystem VC resources"
     },
     {
       icon: <Target className="w-5 h-5" />,
@@ -133,12 +133,12 @@ export default function IncubationPage() {
     {
       icon: <Zap className="w-5 h-5" />,
       title: "Collaborative Development",
-      description: "Technical support from multiple partner engineering teams"
+      description: "Technical support from Dubhe Foundation and Obelisk Labs engineering teams"
     },
     {
       icon: <Award className="w-5 h-5" />,
       title: "Partner Demo Days",
-      description: "Present to Foundation board and partner investor networks"
+      description: "Present to Dubhe Foundation board and ecosystem VC networks"
     },
     {
       icon: <Globe className="w-5 h-5" />,
@@ -222,7 +222,7 @@ export default function IncubationPage() {
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
                   Join our collaborative incubation ecosystem supported by Dubhe Foundation, 
-                  partnered with Obelisk Mesh and leading Move ecosystem companies.
+                  co-incubated with Obelisk Labs and ecosystem VCs to build the next generation of Move startups.
                 </motion.p>
               </div>
 
@@ -234,19 +234,19 @@ export default function IncubationPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">$50M+</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">Coming Soon</div>
                   <div className="text-gray-300">Total Funding</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">25+</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">Coming Soon</div>
                   <div className="text-gray-300">Startups Incubated</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-pink-400 mb-2">3</div>
+                  <div className="text-3xl font-bold text-pink-400 mb-2">Coming Soon</div>
                   <div className="text-gray-300">Unicorns Created</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-cyan-400 mb-2">85%</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-2">Coming Soon</div>
                   <div className="text-gray-300">Success Rate</div>
                 </div>
               </motion.div>
@@ -463,7 +463,7 @@ export default function IncubationPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Collaborative ecosystem of partners working together to incubate the next generation of Move startups
+              Co-incubation ecosystem led by Dubhe Foundation with Obelisk Labs and ecosystem VCs to nurture the next generation of Move startups
             </motion.p>
           </div>
 
@@ -491,11 +491,11 @@ export default function IncubationPage() {
               className="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-400/50 transition-all duration-300 text-center"
             >
               <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-4">
-                OM
+                OL
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Obelisk Mesh</h3>
-              <p className="text-cyan-400 text-sm mb-3">Technical Partner</p>
-              <p className="text-gray-300 text-sm">Infrastructure expertise, technical mentorship, and development resources</p>
+              <h3 className="text-xl font-bold text-white mb-2">Obelisk Labs</h3>
+              <p className="text-cyan-400 text-sm mb-3">Co-Incubation Partner</p>
+              <p className="text-gray-300 text-sm">Infrastructure expertise, technical mentorship, and co-incubation resources</p>
             </motion.div>
 
             <motion.div
@@ -506,11 +506,11 @@ export default function IncubationPage() {
               className="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-green-500/20 hover:border-green-400/50 transition-all duration-300 text-center"
             >
               <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-4">
-                DE
+                EV
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Dubhe Ecosystem</h3>
-              <p className="text-green-400 text-sm mb-3">Community Partners</p>
-              <p className="text-gray-300 text-sm">Network of projects, developers, and companies in the Dubhe ecosystem</p>
+              <h3 className="text-xl font-bold text-white mb-2">Ecosystem VCs</h3>
+              <p className="text-green-400 text-sm mb-3">Investment Partners</p>
+              <p className="text-gray-300 text-sm">Leading venture capital firms specializing in Move ecosystem and Web3 investments</p>
             </motion.div>
           </div>
         </div>
@@ -580,7 +580,7 @@ export default function IncubationPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Partner with Dubhe Foundation, Obelisk Mesh, and ecosystem companies to build the future
+            Partner with Dubhe Foundation, Obelisk Labs, and ecosystem VCs to build the future
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"

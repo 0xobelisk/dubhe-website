@@ -20,49 +20,15 @@ export default function EventsPage() {
   const events = [
     {
       date: "July 25, 2025",
-      name: "Sui Connect: Bangkok",
-      location: "Bangkok, Thailand",
-      category: "Sui Connect",
-      type: "Conference"
+      name: "Dubhe AMA",
+      location: "Online",
+      category: "AMA",
+      type: "AMA"
     },
-    {
-      date: "July 29, 2025",
-      name: "Sui Connect: Ho Chi Minh City",
-      location: "Ho Chi Minh City, Vietnam",
-      category: "Sui Connect",
-      type: "Conference"
-    },
-    {
-      date: "August 1 - August 2, 2025",
-      name: "GM Vietnam",
-      location: "Hanoi, Vietnam",
-      category: "Industry Conference",
-      type: "Conference"
-    },
-    {
-      date: "August 1, 2025",
-      name: "Sui Connect: Hanoi",
-      location: "Hanoi, Vietnam",
-      category: "Sui Connect",
-      type: "Conference"
-    },
-    {
-      date: "September 22 - September 28, 2025",
-      name: "Korea Blockchain Week",
-      location: "South Korea",
-      category: "Industry Conference",
-      type: "Conference"
-    },
-    {
-      date: "October 2, 2025",
-      name: "SuiFest",
-      location: "Singapore",
-      category: "Sui Conference",
-      type: "Conference"
-    }
+
   ]
 
-  const categories = ["All", "Sui Connect", "Industry Conference", "Sui Conference", "Workshop", "Meetup"]
+  const categories = ["All", "AMA", "Workshop", "Meetup"]
 
   const filteredEvents = events.filter(event => {
     const matchesSearch = event.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -139,7 +105,7 @@ export default function EventsPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                   >
-                    Participate in Sui-hosted events, industry conferences,
+                    Participate in Dubhe-hosted events, industry conferences,
                     <br />
                     community meetups, developer workshops, and more.
                   </motion.p>
@@ -251,13 +217,13 @@ export default function EventsPage() {
                   </div>
 
                   {/* Language Selector */}
-                  <div className="flex items-center justify-start mt-8">
+                  {/* <div className="flex items-center justify-start mt-8">
                     <div className="flex items-center gap-2 text-gray-400">
                       <Globe className="w-4 h-4" />
                       <span className="text-sm">English</span>
                       <ChevronDown className="w-4 h-4" />
                     </div>
-                  </div>
+                  </div> */}
                 </motion.div>
               </div>
             </div>

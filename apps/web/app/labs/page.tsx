@@ -82,7 +82,7 @@ export default function LabsPage() {
       team: "8+ Researchers"
     },
     {
-      name: "Velocity Labs",
+      name: "Obelisk Labs",
       logo: "⚡",
       focus: "Real-Time Infrastructure",
       description: "Building the real-time P2P communication layer and high-performance networking infrastructure for Dubhe Channel.",
@@ -97,7 +97,7 @@ export default function LabsPage() {
       team: "6+ Engineers"
     },
     {
-      name: "Nexus Labs",
+      name: "Obelisk Labs",
       logo: "🌐",
       focus: "Cross-Chain Solutions",
       description: "Developing universal bridging protocols and cross-chain infrastructure to connect the Move ecosystem through Dubhe OS.",
@@ -118,19 +118,19 @@ export default function LabsPage() {
       icon: <Code className="w-6 h-6" />,
       title: "Protocol Development",
       description: "Core blockchain protocols, consensus mechanisms, and Move language enhancements",
-      teams: ["Obelisk Labs", "Velocity Labs"]
+      teams: ["Obelisk Labs"]
     },
     {
       icon: <Network className="w-6 h-6" />,
       title: "Infrastructure & Scaling",
       description: "High-performance networking, real-time communication, and scalability solutions",
-      teams: ["Velocity Labs", "Nexus Labs"]
+      teams: ["Obelisk Labs","Cyferio Labs"]
     },
     {
       icon: <Layers className="w-6 h-6" />,
       title: "Cross-Chain Technology",
       description: "Interoperability protocols, universal bridging, and multi-chain governance",
-      teams: ["Nexus Labs", "Obelisk Labs"]
+      teams: ["Obelisk Labs"]
     },
     {
       icon: <Zap className="w-6 h-6" />,
