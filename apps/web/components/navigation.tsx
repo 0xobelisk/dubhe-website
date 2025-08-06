@@ -6,17 +6,29 @@ import { Menu, X, ExternalLink, ChevronDown } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+type DropdownItem = {
+  name: string;
+  href: string;
+  external?: boolean;
+}
+
+type NavItem = {
+  name: string;
+  href: string;
+  dropdown: DropdownItem[];
+}
+
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null)
 
-  const navItems = [
+  const navItems: NavItem[] = [
     { 
       name: "Learn", 
       href: "#learn",
       dropdown: [
-        { name: "Documentation", href: "https://dubhe-docs.obelisk.build/dubhe",external: true },
+        { name: "Documentation", href: "https://dubhe-docs.obelisk.build/dubhe", external: true },
         // { name: "Token", href: "/token" },
         // { name: "Tutorials", href: "/tutorials" },
         // { name: "Examples", href: "/examples" },
