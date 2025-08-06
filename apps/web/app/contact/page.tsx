@@ -13,6 +13,7 @@ export default function ContactPage() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -24,13 +25,37 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError(null)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setSubmitted(true)
-    setIsSubmitting(false)
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setSubmitted(true)
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        if (data.details && Array.isArray(data.details)) {
+          // 显示验证错误详情
+          const errorMessages = data.details.map((err: any) => err.message).join(', ')
+          setError(`Validation error: ${errorMessages}`)
+        } else {
+          setError(data.error || 'Failed to send message. Please try again.')
+        }
+      }
+    } catch (err) {
+      console.error('Error sending message:', err)
+      setError('Network error. Please check your connection and try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
@@ -139,7 +164,10 @@ export default function ContactPage() {
                     <h3 className="text-xl font-semibold text-white mb-2">Message sent!</h3>
                     <p className="text-gray-300">We'll get back to you within 24-48 hours.</p>
                     <button 
-                      onClick={() => setSubmitted(false)}
+                      onClick={() => {
+                        setSubmitted(false)
+                        setError(null)
+                      }}
                       className="mt-4 text-green-400 hover:text-green-300 transition-colors"
                     >
                       Send another message
@@ -147,6 +175,11 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {error && (
+                      <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
+                        <p className="text-red-400 text-sm">{error}</p>
+                      </div>
+                    )}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">

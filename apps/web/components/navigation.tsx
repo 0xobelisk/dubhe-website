@@ -17,7 +17,7 @@ export default function Navigation() {
       href: "#learn",
       dropdown: [
         { name: "Documentation", href: "https://dubhe-docs.obelisk.build/dubhe",external: true },
-        { name: "Token", href: "/token" },
+        // { name: "Token", href: "/token" },
         // { name: "Tutorials", href: "/tutorials" },
         // { name: "Examples", href: "/examples" },
         // { name: "API Reference", href: "/api" }

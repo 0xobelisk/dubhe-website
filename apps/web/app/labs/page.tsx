@@ -267,11 +267,11 @@ export default function LabsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-cyan-400 mb-2">4+</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-2">2+</div>
                   <div className="text-gray-300">Active Labs</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">36+</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">20+</div>
                   <div className="text-gray-300">Core Engineers</div>
                 </div>
                 <div className="text-center">
