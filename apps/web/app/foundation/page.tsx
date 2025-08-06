@@ -152,7 +152,7 @@ export default function FoundationPage() {
                 >
                   Supporting the growth
                   <br />
-                  of the Dubhe Protocol
+                  of the Dubhe Ecosystem
                 </motion.h1>
                 
                 <motion.p 
@@ -174,9 +174,9 @@ export default function FoundationPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <Link href="/team" className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-block">
+{/* <Link href="/team" className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-block">
                   Meet Our Team
-                </Link>
+                </Link> */}
                 
                 <Link href="/contact" className="border-2 border-blue-400/50 hover:border-blue-300 bg-blue-900/20 backdrop-blur-sm text-blue-100 hover:text-white hover:bg-blue-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-block">
                   Join the team
@@ -281,7 +281,7 @@ export default function FoundationPage() {
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Decentralization</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Ensuring the Dubhe protocol remains truly decentralized through governance, 
+                Ensuring the Dubhe Ecosystem remains truly decentralized through governance, 
                 community involvement, and distributed decision-making processes.
               </p>
               <div className="space-y-2">

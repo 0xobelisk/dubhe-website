@@ -241,9 +241,9 @@ export default function GrantsPage() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 
-                <button className="border-2 border-green-400/50 hover:border-green-300 bg-green-900/20 backdrop-blur-sm text-green-100 hover:text-white hover:bg-green-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
+                <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="border-2 border-green-400/50 hover:border-green-300 bg-green-900/20 backdrop-blur-sm text-green-100 hover:text-white hover:bg-green-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
                   View Guidelines
-                </button>
+                </Link>
               </motion.div>
             </div>
           </div>

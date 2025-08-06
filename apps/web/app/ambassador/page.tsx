@@ -13,6 +13,7 @@ import {
   Sparkles,
   ExternalLink
 } from "lucide-react"
+import Link from "next/link"
 
 export default function AmbassadorPage() {
   const [isClient, setIsClient] = useState(false)
@@ -245,9 +246,9 @@ export default function AmbassadorPage() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
                 
-                <button className="border-2 border-rose-400/50 hover:border-rose-300 bg-rose-900/20 backdrop-blur-sm text-rose-100 hover:text-white hover:bg-rose-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
+                <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="border-2 border-rose-400/50 hover:border-rose-300 bg-rose-900/20 backdrop-blur-sm text-rose-100 hover:text-white hover:bg-rose-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
                   Learn More
-                </button>
+                </Link>
               </motion.div>
             </div>
           </div>
@@ -461,10 +462,10 @@ export default function AmbassadorPage() {
               Apply Now
               <Sparkles className="w-5 h-5 ml-2" />
             </a>
-            <button className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
+            <Link href="/contact" className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
               Contact Us
               <ExternalLink className="w-5 h-5" />
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>

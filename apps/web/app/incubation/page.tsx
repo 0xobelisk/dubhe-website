@@ -264,9 +264,9 @@ export default function IncubationPage() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 
-                <button className="border-2 border-purple-400/50 hover:border-purple-300 bg-purple-900/20 backdrop-blur-sm text-purple-100 hover:text-white hover:bg-purple-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
+                <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="border-2 border-purple-400/50 hover:border-purple-300 bg-purple-900/20 backdrop-blur-sm text-purple-100 hover:text-white hover:bg-purple-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
                   Learn More
-                </button>
+                </Link>
               </motion.div>
             </div>
           </div>
