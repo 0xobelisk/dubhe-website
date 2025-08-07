@@ -25,7 +25,13 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     /* Record video on failure */
     video: 'retain-on-failure',
+    /* Increase timeout for slow pages */
+    actionTimeout: 60000,
+    navigationTimeout: 60000,
   },
+
+  /* Global test timeout */
+  timeout: 90000,
 
   /* Configure projects for major browsers */
   projects: [
@@ -66,10 +72,10 @@ export default defineConfig({
   ],
 
   /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'pnpm dev',
-  //   url: 'http://localhost:3000',
-  //   reuseExistingServer: !process.env.CI,
-  //   timeout: 120 * 1000,
-  // },
+  webServer: {
+    command: 'cd apps/web && npm run dev',
+    url: 'http://localhost:3000',
+    reuseExistingServer: !process.env.CI,
+    timeout: 120 * 1000,
+  },
 })
