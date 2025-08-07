@@ -546,14 +546,24 @@ export default function ProposalPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <button className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+            <a 
+              href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fdubheos-node-devnet-wss.obelisk.build%2Fwss#/explorer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
+            >
               Access DubheOS
-              <Sparkles className="w-5 h-5 inline ml-2" />
-            </button>
-            <button className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
+              <Sparkles className="w-5 h-5 ml-2" />
+            </a>
+            <a 
+              href="https://www.youtube.com/watch?v=ovwHmgZRC6o&t=1531s"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2"
+            >
               OpenGov Guide
               <ExternalLink className="w-5 h-5" />
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>
