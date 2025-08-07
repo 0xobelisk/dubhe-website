@@ -247,9 +247,9 @@ export default function ModeratorsPage() {
                   <ArrowRight className="w-5 h-5 inline ml-2" />
                 </button>
                 
-                <button className="border-2 border-emerald-400/50 hover:border-emerald-300 bg-emerald-900/20 backdrop-blur-sm text-emerald-100 hover:text-white hover:bg-emerald-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
+                <a href="#guidelines" className="border-2 border-emerald-400/50 hover:border-emerald-300 bg-emerald-900/20 backdrop-blur-sm text-emerald-100 hover:text-white hover:bg-emerald-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
                   Guidelines
-                </button>
+                </a>
               </motion.div>
             </div>
           </div>
@@ -380,7 +380,7 @@ export default function ModeratorsPage() {
       </div>
 
       {/* Tools & Guidelines Section */}
-      <div className="py-24 px-6 lg:px-8 bg-slate-900">
+      <div id="guidelines" className="py-24 px-6 lg:px-8 bg-slate-900">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Moderation Tools */}
@@ -483,10 +483,10 @@ export default function ModeratorsPage() {
               Apply Now
               <Sparkles className="w-5 h-5 inline ml-2" />
             </button>
-            <button className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
+            <a href="#guidelines" className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
               View Guidelines
               <ExternalLink className="w-5 h-5" />
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>

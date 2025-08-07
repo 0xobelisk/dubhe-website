@@ -246,9 +246,9 @@ export default function AmbassadorPage() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
                 
-                <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="border-2 border-rose-400/50 hover:border-rose-300 bg-rose-900/20 backdrop-blur-sm text-rose-100 hover:text-white hover:bg-rose-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
+                <a href="#responsibilities" className="border-2 border-rose-400/50 hover:border-rose-300 bg-rose-900/20 backdrop-blur-sm text-rose-100 hover:text-white hover:bg-rose-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
                   Learn More
-                </Link>
+                </a>
               </motion.div>
             </div>
           </div>
@@ -381,7 +381,7 @@ export default function AmbassadorPage() {
       </div>
 
       {/* Requirements & Responsibilities Section */}
-      <div className="py-24 px-6 lg:px-8 bg-slate-900">
+      <div id="responsibilities" className="py-24 px-6 lg:px-8 bg-slate-900">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Requirements */}
