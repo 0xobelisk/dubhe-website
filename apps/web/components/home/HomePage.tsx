@@ -59,8 +59,8 @@ export default function HomePage() {
       {/* Community Section */}
       <CommunitySection />
 
-      {/* Companies Section */}
-      <CompaniesSection />
+      {/* Companies Section - Temporarily disabled */}
+      {/* <CompaniesSection /> */}
 
       {/* Footer */}
       <Suspense fallback={

@@ -19,8 +19,8 @@ export default function EventsPage() {
 
   const events = [
     {
-      date: "July 25, 2025",
-      name: "Dubhe AMA",
+      date: "Coming Soon",
+      name: "Coming Soon",
       location: "Online",
       category: "AMA",
       type: "AMA"
@@ -168,7 +168,7 @@ export default function EventsPage() {
                       <div className="col-span-3">Date</div>
                       <div className="col-span-4">Name</div>
                       <div className="col-span-3">Location</div>
-                      <div className="col-span-2">Category</div>
+                      <div className="col-span-2 text-center">Category</div>
                     </div>
 
                     {/* Table Body */}
@@ -190,7 +190,7 @@ export default function EventsPage() {
                           <div className="col-span-3 text-gray-300">
                             {event.location}
                           </div>
-                          <div className="col-span-2 flex items-center justify-between">
+                          <div className="col-span-2 flex items-center justify-center">
                             <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
                               event.category === 'Sui Connect' ? 'bg-blue-500/20 text-blue-400' :
                               event.category === 'Industry Conference' ? 'bg-purple-500/20 text-purple-400' :
@@ -199,7 +199,7 @@ export default function EventsPage() {
                             }`}>
                               {event.category}
                             </span>
-                            <button className="opacity-0 group-hover:opacity-100 p-2 text-gray-400 hover:text-white transition-all duration-200">
+                            <button className="opacity-0 group-hover:opacity-100 p-2 text-gray-400 hover:text-white transition-all duration-200 absolute right-6">
                               <Plus className="w-4 h-4" />
                             </button>
                           </div>

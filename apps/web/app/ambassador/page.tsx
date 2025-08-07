@@ -221,11 +221,11 @@ export default function AmbassadorPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-rose-400 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-rose-400 mb-2">8+</div>
                   <div className="text-gray-300">Active Ambassadors</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">25+</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">8+</div>
                   <div className="text-gray-300">Countries</div>
                 </div>
                 <div className="text-center">

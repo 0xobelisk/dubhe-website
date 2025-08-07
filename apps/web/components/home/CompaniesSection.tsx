@@ -82,7 +82,7 @@ export default function CompaniesSection() {
             className={`flex ${isMobile ? 'animate-scroll-mobile' : 'animate-scroll'}`}
           >
             {/* First set of logos */}
-            <div className="flex items-center justify-between min-w-full px-8 lg:px-16">
+            <div className="flex items-center space-x-16 lg:space-x-20 xl:space-x-24 pr-16 lg:pr-20 xl:pr-24">
               {companies.map((company, index) => (
                 <div key={`first-${index}`} className="flex items-center justify-center w-32 h-16 sm:w-36 lg:w-40 flex-shrink-0">
                   <Image 
@@ -97,7 +97,7 @@ export default function CompaniesSection() {
             </div>
             
             {/* Duplicate set for seamless loop */}
-            <div className="flex items-center justify-between min-w-full px-8 lg:px-16">
+            <div className="flex items-center space-x-16 lg:space-x-20 xl:space-x-24 pr-16 lg:pr-20 xl:pr-24">
               {companies.map((company, index) => (
                 <div key={`second-${index}`} className="flex items-center justify-center w-32 h-16 sm:w-36 lg:w-40 flex-shrink-0">
                   <Image 

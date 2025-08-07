@@ -45,7 +45,7 @@ export default function ModeratorsPage() {
   ]
 
   const requirements = [
-    "Active community member for at least 6 months",
+    "Active community member for at least 3 months",
     "Deep understanding of Dubhe ecosystem and Move technology",
     "Excellent communication and conflict resolution skills",
     "Available for moderation duties across different time zones",
@@ -221,15 +221,15 @@ export default function ModeratorsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <div className="text-center">
+                <div className="text-center flex flex-col items-center justify-center">
                   <div className="text-3xl font-bold text-emerald-400 mb-2">24/7</div>
                   <div className="text-gray-300">Coverage</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">15+</div>
+                <div className="text-center flex flex-col items-center justify-center">
+                  <div className="text-3xl font-bold text-blue-400 mb-2">10+</div>
                   <div className="text-gray-300">Active Moderators</div>
                 </div>
-                <div className="text-center">
+                <div className="text-center flex flex-col items-center justify-center">
                   <div className="text-3xl font-bold text-purple-400 mb-2">50K+</div>
                   <div className="text-gray-300">Members Protected</div>
                 </div>
