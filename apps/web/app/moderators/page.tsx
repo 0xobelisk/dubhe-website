@@ -226,7 +226,7 @@ export default function ModeratorsPage() {
                   <div className="text-gray-300">Coverage</div>
                 </div>
                 <div className="text-center flex flex-col items-center justify-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">10+</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">8+</div>
                   <div className="text-gray-300">Active Moderators</div>
                 </div>
                 <div className="text-center flex flex-col items-center justify-center">
