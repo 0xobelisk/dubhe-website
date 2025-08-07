@@ -383,7 +383,7 @@ export default function IncubationPage() {
         </div>
       </div> */}
 
-      {/* Portfolio Companies Section - Temporarily disabled */}
+      {/* Portfolio Companies Section */}
       {/* <div className="py-24 px-6 lg:px-8 bg-slate-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">

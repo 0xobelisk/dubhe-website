@@ -159,11 +159,11 @@ export default function NetworkArchitectureSection() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               className={`relative ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} flex flex-col lg:flex items-center gap-8 lg:gap-12`}
             >
-              {/* Layer Content */}
+              {/* Pipelining Content */}
               <div className="lg:w-1/2 space-y-6">
                 <div className={`inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gradient-to-r ${layer.gradient} text-white`}>
                   <layer.icon className="w-5 h-5" />
-                  <span className="font-semibold">Layer {index + 1}</span>
+                  <span className="font-semibold">Pipelining {index + 1}</span>
                 </div>
                 
                 <div>
@@ -186,13 +186,13 @@ export default function NetworkArchitectureSection() {
                 </div>
               </div>
 
-              {/* Layer Visual */}
+              {/* Pipelining Visual */}
               <div className="lg:w-1/2 flex justify-center">
                 <div className={`w-64 h-32 rounded-xl bg-gradient-to-r ${layer.gradient} flex items-center justify-center relative overflow-hidden shadow-xl`}>
                   <div className="absolute inset-0 bg-black/10"></div>
                   <layer.icon className="w-16 h-16 text-white/90 relative z-10" />
                   <div className="absolute top-4 right-4 text-white/70 text-xs font-medium">
-                    Layer {index + 1}
+                    Pipelining {index + 1}
                   </div>
                 </div>
               </div>
