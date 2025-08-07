@@ -1,0 +1,275 @@
+
+> shadcn-ui-monorepo@0.0.1 dev /Users/henryliu/obelisk/Dubhe/dubhe-website
+> turbo dev
+
+turbo 2.4.2
+
+• Packages in scope: @workspace/eslint-config, @workspace/typescript-config, @workspace/ui, web
+• Running dev in 4 packages
+• Remote caching disabled
+web:dev: cache bypass, force executing 78f8ff381f3de498
+web:dev: 
+web:dev: > web@0.0.1 dev /Users/henryliu/obelisk/Dubhe/dubhe-website/apps/web
+web:dev: > next dev
+web:dev: 
+web:dev:    ▲ Next.js 15.4.5
+web:dev:    - Local:        http://localhost:3000
+web:dev:    - Network:      http://198.18.0.1:3000
+web:dev:    - Environments: .env.local, .env
+web:dev:    - Experiments (use with caution):
+web:dev:      · optimizePackageImports
+web:dev: 
+web:dev:  ✓ Starting...
+web:dev:  ✓ Ready in 1692ms
+web:dev:  ○ Compiling / ...
+web:dev:  ✓ Compiled / in 1308ms (1284 modules)
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  HEAD / 200 in 1699ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 1206ms
+web:dev:  GET / 200 in 1208ms
+web:dev:  GET / 200 in 1209ms
+web:dev:  GET / 200 in 1209ms
+web:dev:  GET / 200 in 1212ms
+web:dev:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 188ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 208ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 1141ms
+web:dev:  GET / 200 in 1144ms
+web:dev:  GET / 200 in 1196ms
+web:dev:  GET / 200 in 828ms
+web:dev:  GET / 200 in 827ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 199ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 206ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 207ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 1496ms
+web:dev:  GET / 200 in 1499ms
+web:dev:  GET / 200 in 1665ms
+web:dev:  GET / 200 in 1668ms
+web:dev:  GET / 200 in 1705ms
+web:dev:  ○ Compiling /engine ...
+web:dev:  ✓ Compiled /engine in 2.1s (1340 modules)
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 367ms
+web:dev:  GET /engine 200 in 2713ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 324ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 215ms
+web:dev:  ○ Compiling /robots.txt ...
+web:dev:  ✓ Compiled /robots.txt in 576ms (1348 modules)
+web:dev:  GET /robots.txt 200 in 664ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 337ms
+web:dev:  ○ Compiling /contact ...
+web:dev:  ✓ Compiled /contact in 669ms (1336 modules)
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  HEAD /contact 200 in 984ms
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /contact 200 in 116ms
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /contact 200 in 135ms
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /contact 200 in 979ms
+web:dev:  GET /contact 200 in 976ms
+web:dev:  GET /contact 200 in 976ms
+web:dev:  GET /contact 200 in 974ms
+web:dev:  GET /contact 200 in 977ms
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /contact 200 in 235ms
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /contact 200 in 1099ms
+web:dev:  GET /contact 200 in 1100ms
+web:dev:  GET /contact 200 in 1108ms
+web:dev:  GET /contact 200 in 898ms
+web:dev:  GET /contact 200 in 897ms
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /contact 200 in 553ms
+web:dev:  GET / 200 in 397ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 443ms
+web:dev:  GET / 200 in 288ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 3186ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 918ms
+web:dev:  GET / 200 in 682ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 348ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 482ms
+web:dev:  ○ Compiling /engine ...
+web:dev:  ✓ Compiled /engine in 667ms (767 modules)
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /engine 200 in 2080ms
+web:dev:  GET / 200 in 462ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 1432ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /contact 200 in 953ms
+web:dev:  GET / 200 in 489ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 339ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 924ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 797ms
+web:dev:  GET / 200 in 585ms
+web:dev:  GET /engine 200 in 911ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 6133ms
+web:dev:  GET / 200 in 5730ms
+web:dev:  GET / 200 in 789ms
+web:dev:  GET / 200 in 798ms
+web:dev:  GET / 200 in 797ms
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /engine 200 in 3416ms
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /contact 200 in 103ms
+web:dev:  ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+web:dev:   digest: '1088400874'
+web:dev: }
+web:dev: [TypeError: __webpack_modules__[moduleId] is not a function]
+web:dev:  ⨯ [TypeError: __webpack_modules__[moduleId] is not a function]
+web:dev:  ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+web:dev:   page: '/'
+web:dev: }
+web:dev:  ○ Compiling /_error ...
+web:dev:  ✓ Compiled /_error in 685ms (1675 modules)
+web:dev:  GET / 500 in 1632ms
+web:dev: Page rendered, isLoading: true
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET / 200 in 388ms
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /engine 200 in 176ms
+web:dev:  ○ Compiling /labs ...
+web:dev:  ✓ Compiled /labs in 751ms (1687 modules)
+web:dev: CosmicLoader rendered with duration: 4000
+web:dev:  GET /labs 200 in 1077ms
