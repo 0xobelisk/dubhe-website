@@ -10,6 +10,7 @@ type Project = {
   players?: string;
   downloads?: string;
   volume?: string;
+  url?: string;
 }
 
 export default function Ecosystem() {
@@ -19,7 +20,7 @@ export default function Ecosystem() {
       icon: DollarSign,
       description: "Decentralized finance protocols",
       projects: [
-        { name: "Merak", description: "Automated Market Maker", tvl: "$45M" },
+        { name: "Merak", description: "Automated Market Maker", tvl: "$45M", url: "https://merak-testnet.obelisk.build/" },
       ] as Project[]
     },
     {
@@ -27,7 +28,7 @@ export default function Ecosystem() {
       icon: Gamepad2,
       description: "On-chain games and metaverse",
       projects: [
-        { name: "Numeron", description: "Fantasy AI RPG Adventure", players: "12K+" },
+        { name: "Numeron", description: "Fantasy AI RPG Adventure", players: "12K+", url: "https://testnet.numeron.world/" },
       ] as Project[]
     },
     {
@@ -35,7 +36,7 @@ export default function Ecosystem() {
       icon: Code,
       description: "Developer tools and infrastructure",
       projects: [
-        { name: "Cyferio SDK", description: "Development Kit", downloads: "50K+" },
+        { name: "Cyferio SDK", description: "Development Kit", downloads: "50K+", url: "https://cyferio.com/" },
       ] as Project[]
     },
     {
@@ -43,7 +44,7 @@ export default function Ecosystem() {
       icon: Coins,
       description: "Digital collectibles and assets",
       projects: [
-        { name: "Objectsdao", description: "NFT Auction", volume: "$2.3M" },
+        { name: "Objectsdao", description: "NFT Auction", volume: "$2.3M", url: "https://objects-monorepo.vercel.app/" },
       ] as Project[]
     }
   ]
@@ -85,13 +86,16 @@ export default function Ecosystem() {
               </div>
 
               {category.projects.map((project) => (
-                <motion.div
+                <motion.a
                   key={project.name}
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: categoryIndex * 0.1 }}
-                  className="p-4 bg-gray-50/50 rounded-xl hover:bg-gray-100/50 transition-colors duration-200 group cursor-pointer text-center"
+                  className="block p-4 bg-gray-50/50 rounded-xl hover:bg-gray-100/50 transition-colors duration-200 group cursor-pointer text-center"
                 >
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <h4 className="font-semibold text-slate-900">{project.name}</h4>
@@ -109,7 +113,7 @@ export default function Ecosystem() {
                        project.volume ? 'Volume' : ''}
                     </div>
                   </div>
-                </motion.div>
+                </motion.a>
               ))}
             </motion.div>
           ))}
