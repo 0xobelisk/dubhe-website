@@ -7,7 +7,7 @@ const steps = [
     id: 1,
     title: "Schema Definition",
     description: "Define your game or dApp logic using Dubhe's intuitive schema system. Describe entities, components, and systems in simple configuration files.",
-    items: ["Entity", "Component", "System", "World", "Event"],
+    items: ["Entity", "Component", "System", "Error", "Event"],
     visualization: "checklist"
   },
   {
