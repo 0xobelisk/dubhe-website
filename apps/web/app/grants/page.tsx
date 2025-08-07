@@ -102,7 +102,7 @@ export default function GrantsPage() {
       project: "Merak",
       category: "DeFi Protocol",
       funding: "1,000,000 DUBHE",
-      impact: "10K+ users, $50M TVL",
+      impact: "$50M TVL",
       description: "Open-source AMM with full milestone completion and production deployment",
       license: "MIT License",
       milestones: "5/5 Complete"
@@ -111,8 +111,8 @@ export default function GrantsPage() {
       project: "Numeron",
       category: "Gaming",
       funding: "1,000,000 DUBHE", 
-      impact: "2K+ students",
-      description: "Comprehensive educational platform with interactive tutorials and certifications",
+      impact: "20K+ Users",
+      description: "Open-source AI MMORPG with full milestone completion and production deployment",
       license: "MIT License",
       milestones: "6/6 Complete"
     },
@@ -120,8 +120,8 @@ export default function GrantsPage() {
       project: "Cyferio",
       category: "Infrastructure", 
       funding: "2,000,000 DUBHE",
-      impact: "5K+ developers",
-      description: "Full-featured IDE with complete Move language support and debugging tools",
+      impact: "5K+ Developers",
+      description: "Open-source ZK-based Move language support and FHE Rollups Framework",
       license: "Apache 2.0",
       milestones: "4/4 Complete"
     },

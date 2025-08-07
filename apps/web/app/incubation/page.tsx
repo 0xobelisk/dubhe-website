@@ -18,6 +18,7 @@ import {
   Zap
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function IncubationPage() {
   const [isClient, setIsClient] = useState(false)
@@ -330,7 +331,7 @@ export default function IncubationPage() {
       </div>
 
       {/* Mentors Section */}
-      <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-900 to-purple-900">
+      {/* <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-900 to-purple-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <motion.h2 
@@ -380,7 +381,7 @@ export default function IncubationPage() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Portfolio Companies Section */}
       <div className="py-24 px-6 lg:px-8 bg-slate-900">
@@ -475,8 +476,14 @@ export default function IncubationPage() {
               transition={{ duration: 0.6 }}
               className="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20 hover:border-purple-400/50 transition-all duration-300 text-center"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-4">
-                DF
+              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
+                <Image
+                  src="/mediakit/dubhe/png/a.png"
+                  alt="Dubhe Foundation"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 object-contain filter brightness-0 invert"
+                />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Dubhe Foundation</h3>
               <p className="text-purple-400 text-sm mb-3">Primary Sponsor</p>
@@ -490,8 +497,14 @@ export default function IncubationPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-400/50 transition-all duration-300 text-center"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-4">
-                OL
+              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
+                <Image
+                  src="/mediakit/obelisklabs/svg/light.svg"
+                  alt="Obelisk Labs"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 object-contain filter brightness-0 invert"
+                />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Obelisk Labs</h3>
               <p className="text-cyan-400 text-sm mb-3">Co-Incubation Partner</p>
@@ -505,8 +518,8 @@ export default function IncubationPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-green-500/20 hover:border-green-400/50 transition-all duration-300 text-center"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-4">
-                EV
+              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                <Building className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Ecosystem VCs</h3>
               <p className="text-green-400 text-sm mb-3">Investment Partners</p>
