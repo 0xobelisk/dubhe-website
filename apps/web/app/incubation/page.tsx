@@ -383,8 +383,8 @@ export default function IncubationPage() {
         </div>
       </div> */}
 
-      {/* Portfolio Companies Section */}
-      <div className="py-24 px-6 lg:px-8 bg-slate-900">
+      {/* Portfolio Companies Section - Temporarily disabled */}
+      {/* <div className="py-24 px-6 lg:px-8 bg-slate-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <motion.h2 
@@ -442,7 +442,7 @@ export default function IncubationPage() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Partners Section */}
       <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-900 to-purple-900">
