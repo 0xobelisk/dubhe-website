@@ -8,17 +8,12 @@ import {
   Target, 
   ArrowRight,
   CheckCircle,
-  Clock,
   Sparkles,
   ExternalLink,
-  FileText,
-  MessageSquare,
   TrendingUp,
   Award,
   Shield,
-  Globe,
-  Calendar,
-  Lightbulb
+  Calendar
 } from "lucide-react"
 
 export default function ProposalPage() {

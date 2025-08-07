@@ -2,14 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import Image from "next/image"
 import { 
   Users, 
-  MapPin, 
-  Linkedin,
-  Github,
-  Twitter,
-  Mail,
   ExternalLink,
   Briefcase
 } from "lucide-react"

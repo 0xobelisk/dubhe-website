@@ -1,10 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Metadata } from "next"
 import { motion } from "framer-motion"
 import { 
-  DollarSign, 
   Users, 
   Rocket, 
   ArrowRight,
@@ -13,7 +11,6 @@ import {
   Sparkles,
   ExternalLink,
   Gift,
-  TrendingUp,
   Award,
   Building,
   FileText

@@ -1,7 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
-  "globalEnv": ["NEXT_CONFIG_ENV", "NODE_ENV"],
+  "globalEnv": ["NEXT_CONFIG_ENV", "NODE_ENV", "RESEND_API_KEY", "RESEND_FROM_EMAIL", "RESEND_TO_EMAIL"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],

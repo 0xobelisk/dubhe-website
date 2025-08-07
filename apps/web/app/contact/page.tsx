@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Mail, MessageSquare, Send, MapPin, Phone, Clock } from "lucide-react"
+import { Mail, MessageSquare, Send, MapPin, Clock } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -44,7 +44,7 @@ export default function ContactPage() {
       } else {
         if (data.details && Array.isArray(data.details)) {
           // 显示验证错误详情
-          const errorMessages = data.details.map((err: any) => err.message).join(', ')
+          const errorMessages = data.details.map((err: { message: string }) => err.message).join(', ')
           setError(`Validation error: ${errorMessages}`)
         } else {
           setError(data.error || 'Failed to send message. Please try again.')
@@ -133,7 +133,7 @@ export default function ContactPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Have questions about Dubhe? Want to partner with us? We'd love to hear from you.
+                  Have questions about Dubhe? Want to partner with us? We&apos;d love to hear from you.
                 </motion.p>
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function ContactPage() {
                       <Send className="w-8 h-8 text-green-400" />
                     </div>
                     <h3 className="text-xl font-semibold text-white mb-2">Message sent!</h3>
-                    <p className="text-gray-300">We'll get back to you within 24-48 hours.</p>
+                    <p className="text-gray-300">We&apos;ll get back to you within 24-48 hours.</p>
                     <button 
                       onClick={() => {
                         setSubmitted(false)
@@ -285,7 +285,7 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-3xl font-bold text-white mb-6">Contact Information</h2>
                 <p className="text-gray-300 leading-relaxed mb-8">
-                  Whether you're a developer, investor, or just curious about Dubhe, we're here to help. 
+                  Whether you&apos;re a developer, investor, or just curious about Dubhe, we&apos;re here to help. 
                   Reach out through any of the channels below.
                 </p>
               </div>

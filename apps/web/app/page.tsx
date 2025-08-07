@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import CosmicLoader from '../components/cosmic-loader'
-import NewHomePage from '../components/new-home-page'
+import NewHomePage from '../components/NewHomePage'
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState(true)

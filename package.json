@@ -6,6 +6,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "lint:fix": "turbo lint -- --fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
@@ -18,5 +19,14 @@
   "packageManager": "pnpm@10.4.1",
   "engines": {
     "node": ">=20"
+  },
+  "pnpm": {
+    "overrides": {
+      "@babel/runtime-corejs3@<7.26.10": ">=7.26.10",
+      "brace-expansion@>=1.0.0 <=1.1.11": "1.1.12",
+      "brace-expansion@>=2.0.0 <=2.0.1": "2.0.2",
+      "@eslint/plugin-kit@<0.3.4": ">=0.3.4",
+      "tmp@<=0.2.3": ">=0.2.4"
+    }
   }
 }
