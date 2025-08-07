@@ -34,8 +34,7 @@ const companies: Company[] = [
   {
     name: "Obelisk Labs",
     logo: "/mediakit/obelisklabs/svg/light.svg",
-    className: "h-16 sm:h-20 lg:h-40 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity",
-    isSvg: true
+    className: "h-12 sm:h-16 lg:h-40 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
   },
   {
     name: "Sui",
