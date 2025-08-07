@@ -50,7 +50,7 @@ const communityEvents = [
 
 const communityStats = [
   {
-    value: "40K+",
+    value: "100K+",
     label: "Community Members",
     description: "Active developers and enthusiasts worldwide"
   },
