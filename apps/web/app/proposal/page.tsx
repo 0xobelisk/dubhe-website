@@ -254,14 +254,24 @@ export default function ProposalPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
-                <button className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
-                  Launch DubheOS
-                  <ArrowRight className="w-5 h-5 inline ml-2" />
-                </button>
+                <a 
+                  href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fdubheos-node-devnet-wss.obelisk.build%2Fwss#/explorer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
+                >
+                  DubheOS Devnet
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
                 
-                <button className="border-2 border-indigo-400/50 hover:border-indigo-300 bg-indigo-900/20 backdrop-blur-sm text-indigo-100 hover:text-white hover:bg-indigo-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200">
+                <a 
+                  href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fdubheos-node-devnet-wss.obelisk.build%2Fwss#/referenda"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-indigo-400/50 hover:border-indigo-300 bg-indigo-900/20 backdrop-blur-sm text-indigo-100 hover:text-white hover:bg-indigo-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center"
+                >
                   View All Referenda
-                </button>
+                </a>
               </motion.div>
             </div>
           </div>
