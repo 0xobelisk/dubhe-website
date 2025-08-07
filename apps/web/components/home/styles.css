@@ -88,9 +88,9 @@
 }
 
 .animate-scroll {
-  animation: scroll 40s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 .animate-scroll-mobile {
-  animation: scroll-mobile 20s linear infinite;
+  animation: scroll-mobile 15s linear infinite;
 }

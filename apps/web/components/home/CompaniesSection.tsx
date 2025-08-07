@@ -3,7 +3,14 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-const companies = [
+interface Company {
+  name: string
+  logo: string
+  className: string
+  isSvg?: boolean
+}
+
+const companies: Company[] = [
   {
     name: "Dubhe",
     logo: "/mediakit/dubhe/png/a.png",
@@ -14,36 +21,37 @@ const companies = [
     logo: "/mediakit/merak/png/a.png",
     className: "h-8 sm:h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
   },
-  {
-    name: "Numeron",
-    logo: "/mediakit/numeron/logo.png",
-    className: "h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-  },
+  // {
+  //   name: "Numeron",
+  //   logo: "/mediakit/numeron/logo.png",
+  //   className: "h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+  // },
   {
     name: "Phad",
     logo: "/mediakit/phad/phad.png",
-    className: "h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+    className: "h-8 sm:h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
   },
   {
     name: "Obelisk Labs",
-    logo: "/mediakit/obelisklabs/obelisk 第一版/PNG/白色字.png",
-    className: "h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+    logo: "/mediakit/obelisklabs/svg/light.svg",
+    className: "h-16 sm:h-20 lg:h-40 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity",
+    isSvg: true
   },
   {
     name: "Sui",
     logo: "/mediakit/sui/Sui Logo White/Sui_Logo_White.png",
-    className: "h-6 sm:h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+    className: "h-8 sm:h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
   },
-  {
-    name: "SuiFans",
-    logo: "/mediakit/suifans/suifans.png",
-    className: "h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-  },
-  {
-    name: "SuiRobots",
-    logo: "/mediakit/suirobots/logo.png",
-    className: "h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-  }
+  // {
+  //   name: "SuiFans",
+  //   logo: "/mediakit/suifans/suifans.png",
+  //   className: "h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+  // },
+  // {
+  //   name: "SuiRobots",
+  //   logo: "/mediakit/suirobots/logo.png",
+  //   className: "h-6 sm:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+  // }
 ]
 
 export default function CompaniesSection() {
@@ -75,13 +83,13 @@ export default function CompaniesSection() {
             className={`flex ${isMobile ? 'animate-scroll-mobile' : 'animate-scroll'}`}
           >
             {/* First set of logos */}
-            <div className="flex items-center justify-center space-x-8 lg:space-x-12 min-w-full">
+            <div className="flex items-center justify-between min-w-full px-8 lg:px-16">
               {companies.map((company, index) => (
-                <div key={`first-${index}`} className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
+                <div key={`first-${index}`} className="flex items-center justify-center w-32 h-16 sm:w-36 lg:w-40 flex-shrink-0">
                   <Image 
                     src={company.logo} 
                     alt={company.name} 
-                    width={112}
+                    width={160}
                     height={64}
                     className={company.className}
                   />
@@ -90,13 +98,13 @@ export default function CompaniesSection() {
             </div>
             
             {/* Duplicate set for seamless loop */}
-            <div className="flex items-center justify-center space-x-8 lg:space-x-12 min-w-full">
+            <div className="flex items-center justify-between min-w-full px-8 lg:px-16">
               {companies.map((company, index) => (
-                <div key={`second-${index}`} className="flex items-center justify-center w-24 h-16 sm:w-28 flex-shrink-0">
+                <div key={`second-${index}`} className="flex items-center justify-center w-32 h-16 sm:w-36 lg:w-40 flex-shrink-0">
                   <Image 
                     src={company.logo} 
                     alt={company.name} 
-                    width={112}
+                    width={160}
                     height={64}
                     className={company.className}
                   />
