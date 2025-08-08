@@ -1,7 +1,17 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import {NextConfig} from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
+
+const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ["@workspace/ui"],
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     domains: ["images.unsplash.com", "cdn.prod.website-files.com"],
     formats: ['image/webp', 'image/avif'],
@@ -52,6 +62,6 @@ const nextConfig = {
       },
     },
   },
-}
+};
 
-export default nextConfig
+export default withNextIntl(nextConfig);

@@ -3,9 +3,9 @@
 import { useState, useRef, useEffect } from "react"
 import { ExternalLink, Coins, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@workspace/ui/components/button"
-import CopyableAddress from "../../components/ui/CopyableAddress"
-import Card from "../../components/ui/Card" 
-import GradientText from "../../components/ui/GradientText"
+import CopyableAddress from "@/components/ui/CopyableAddress"
+import Card from "@/components/ui/Card" 
+import GradientText from "@/components/ui/GradientText"
 
 /**
  * 时间线项目状态类型

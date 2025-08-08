@@ -1,0 +1,302 @@
+{
+  "navigation": {
+    "learn": "Pelajari",
+    "build": "Bangun", 
+    "ecosystem": "Ekosistem",
+    "media": "Media",
+    "community": "Komunitas",
+    "documentation": "Dokumentasi",
+    "engine": "Mesin",
+    "channel": "Saluran",
+    "os": "OS",
+    "foundation": "Yayasan",
+    "labs": "Lab",
+    "grants": "Hibah",
+    "incubation": "Inkubasi",
+    "proposal": "Proposal",
+    "ambassador": "Duta",
+    "moderators": "Moderator",
+    "events": "Acara",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu"
+  },
+  "home": {
+    "hero": {
+      "title1": "Kami menciptakan Dubhe.",
+      "title2": "Anda yang menggerakkannya.",
+      "subtitle": "Stack aplikasi Move open-source yang menyediakan toolkit komprehensif untuk membangun aplikasi terdesentralisasi (DApps) yang dapat diverifikasi dan aplikasi on-chain sepenuhnya.",
+      "cta1": "Dapatkan Dubhe Stack",
+      "cta2": "Pelajari tentang lisensi"
+    },
+    "features": {
+      "title": "Fitur",
+      "mainTitle": "Stack Move dengan Potensi Tanpa Batas",
+      "moveCompatible": {
+        "title": "100% Kompatibel Move",
+        "description": "Manfaatkan ekosistem Move yang sudah ada untuk keuntungan Anda."
+      },
+      "zeroGas": {
+        "title": "Biaya gas nol",
+        "description": "Memungkinkan proyek menanggung biaya ini, mendukung ekspansi dan kustomisasi yang fleksibel."
+      },
+      "realTime": {
+        "title": "Sinkronisasi waktu nyata"
+      },
+      "unlimited": {
+        "title": "Tidak terbatas",
+        "subtitle": "Transaksi per detik",
+        "description": "Bergantung pada jumlah saluran Dubhe yang berjalan secara paralel."
+      },
+      "syncFinality": {
+        "title": "Finalitas Status Sinkron 1 detik"
+      }
+    },
+    "community": {
+      "title": "Komunitas",
+      "mainTitle": "Bergabunglah dengan komunitas global di balik Dubhe",
+      "description": "Dengan komunitas pengembang yang berkembang pesat di seluruh dunia, Dubhe didukung oleh para pendukung bersemangat yang mendorong masa depan teknologi blockchain Move. Terhubung, berkolaborasi, dan berkembang bersama kami saat kami membentuk generasi berikutnya solusi terdesentralisasi.",
+      "cta": "Bergabung dengan komunitas Dubhe hari ini.",
+      "events": {
+        "conference": {
+          "title": "Konferensi Pengembang",
+          "subtitle": "Membangun Masa Depan Bersama"
+        },
+        "workshop": {
+          "title": "Workshop Pengembang", 
+          "subtitle": "Sesi Pembelajaran Praktis"
+        },
+        "hackathon": {
+          "title": "Hackathon Global",
+          "subtitle": "Inovasi & Kompetisi"
+        },
+        "meetup": {
+          "title": "Meetup Komunitas",
+          "subtitle": "Acara Lokal & Online"
+        },
+        "techtalk": {
+          "title": "Seri Tech Talk",
+          "subtitle": "Berbagi Pengetahuan"
+        },
+        "summit": {
+          "title": "Summit Komunitas",
+          "subtitle": "Pertemuan Tahunan"
+        }
+      },
+      "stats": {
+        "members": {
+          "value": "100K+",
+          "label": "Anggota Komunitas",
+          "description": "Pengembang dan penggemar aktif di seluruh dunia"
+        },
+        "events": {
+          "value": "50+",
+          "label": "Acara Global", 
+          "description": "Konferensi, meetup, dan workshop setiap tahun"
+        },
+        "countries": {
+          "value": "20+",
+          "label": "Negara",
+          "description": "Kehadiran komunitas Dubhe di berbagai benua"
+        }
+      }
+    }
+  },
+  "foundation": {
+    "hero": {
+      "title": "Mendukung pertumbuhan Ekosistem Dubhe",
+      "subtitle": "Melalui dukungan pengembang, inisiatif ekosistem, dan upaya desentralisasi, Yayasan Dubhe membantu mendorong pertumbuhan dan adopsi ekosistem protokol Dubhe.",
+      "cta": "Bergabung dengan tim"
+    },
+    "mission": {
+      "title": "Misi Kami",
+      "subtitle": "Mempercepat Inovasi Move untuk Semua",
+      "developerSupport": {
+        "title": "Dukungan Pengembang",
+        "description": "Menyediakan hibah, sumber daya, dan mentorship kepada pengembang yang membangun di ekosistem Dubhe. Dari hackathon hingga pendanaan proyek jangka panjang.",
+        "features": [
+          "Program hibah untuk proyek inovatif",
+          "Mentorship teknis dan bimbingan",
+          "Workshop edukatif dan hackathon"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Pertumbuhan Ekosistem",
+        "description": "Kemitraan strategis dan inisiatif untuk memperluas ekosistem Dubhe. Membangun jembatan antara berbagai Move chain dan protokol.",
+        "features": [
+          "Inisiatif kolaborasi lintas-chain",
+          "Kemitraan strategis dengan Move chain",
+          "Dukungan pengembangan infrastruktur"
+        ]
+      },
+      "decentralization": {
+        "title": "Desentralisasi",
+        "description": "Memastikan Ekosistem Dubhe tetap benar-benar terdesentralisasi melalui tata kelola, keterlibatan komunitas, dan proses pengambilan keputusan terdistribusi.",
+        "features": [
+          "Pengembangan kerangka tata kelola",
+          "Pengambilan keputusan yang dipimpin komunitas",
+          "Pengembangan protokol open-source"
+        ]
+      }
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "Tim Kami",
+      "title": "Temui Tim Yayasan Dubhe",
+      "description": "Tim global yang beragam dari insinyur, peneliti, dan pemberdaya komunitas yang berdedikasi untuk memajukan ekosistem Move dan memberdayakan pengembang di seluruh dunia.",
+      "stats": {
+        "members": "Anggota Tim",
+        "countries": "Negara",
+        "timezones": "Zona Waktu"
+      }
+    },
+    "leadership": {
+      "title": "Tim Kepemimpinan",
+      "description": "Temui para visioner dan ahli yang memimpin misi Dubhe untuk merevolusi pengembangan Move",
+      "expertise": "Keahlian"
+    },
+    "join": {
+      "title": "Bergabung dengan Tim Kami",
+      "description": "Kami selalu mencari individu berbakat yang bersemangat memajukan teknologi blockchain",
+      "openPositions": "Posisi Terbuka",
+      "cta": "Bergabung dengan Tim",
+      "ctaDescription": "Hubungi kami tentang posisi dan peluang yang tersedia",
+      "departments": {
+        "engineering": {
+          "title": "Engineering",
+          "description": "Membangun masa depan alat pengembangan Move dan infrastruktur"
+        },
+        "research": {
+          "title": "Penelitian",
+          "description": "Menjelajahi teknologi dan protokol blockchain mutakhir"
+        },
+        "community": {
+          "title": "Komunitas",
+          "description": "Mengembangkan dan mendukung komunitas pengembang global kami"
+        },
+        "partnerships": {
+          "title": "Kemitraan",
+          "description": "Membangun hubungan strategis di seluruh ekosistem blockchain"
+        }
+      }
+    }
+  },
+  "grants": {
+    "hero": {
+      "badge": "Hibah Yayasan Dubhe",
+      "title": "Danai Inovasi Anda",
+      "description": "Terima hibah yang tidak perlu dikembalikan dari Yayasan Dubhe untuk membangun aplikasi Move open-source, infrastruktur, dan alat. Semua proyek harus sepenuhnya fungsional dan menyelesaikan semua tonggak pencapaian.",
+      "stats": {
+        "totalFunded": "Total Didanai",
+        "projectsFunded": "Proyek Didanai",
+        "successRate": "Tingkat Keberhasilan",
+        "comingSoon": "Segera Hadir"
+      },
+      "cta1": "Ajukan Hibah",
+      "cta2": "Lihat Pedoman"
+    },
+    "categories": {
+      "title": "Pilih Jalur Anda",
+      "badge": "Kategori Hibah",
+      "infrastructure": {
+        "title": "Hibah Infrastruktur",
+        "amount": "Hingga $100K",
+        "description": "Bangun infrastruktur inti, alat pengembang, dan utilitas ekosistem"
+      },
+      "dapp": {
+        "title": "Pengembangan DApp",
+        "amount": "Hingga $75K",
+        "description": "Ciptakan aplikasi terdesentralisasi inovatif di ekosistem Dubhe"
+      },
+      "research": {
+        "title": "Hibah Penelitian",
+        "amount": "Hingga $50K",
+        "description": "Penelitian akademis, perbaikan protokol, dan kontribusi teoretis"
+      },
+      "community": {
+        "title": "Proyek Komunitas",
+        "amount": "Hingga $25K",
+        "description": "Edukasi, dokumentasi, alat komunitas, dan program jangkauan"
+      }
+    },
+    "process": {
+      "title": "Proses Aplikasi",
+      "description": "Proses 5 langkah sederhana untuk mendanai proyek Anda",
+      "steps": {
+        "proposal": {
+          "title": "Pengajuan Proposal",
+          "description": "Ajukan proposal komprehensif dengan tonggak pencapaian terperinci dan komitmen open-source",
+          "duration": "1 minggu"
+        },
+        "review": {
+          "title": "Tinjauan Yayasan",
+          "description": "Komite teknis Yayasan Dubhe mengevaluasi kelayakan dan dampak ekosistem",
+          "duration": "2-3 minggu"
+        },
+        "interview": {
+          "title": "Wawancara Tim",
+          "description": "Presentasikan roadmap proyek Anda dan tunjukkan kemampuan teknis",
+          "duration": "1 minggu"
+        },
+        "approval": {
+          "title": "Persetujuan Hibah",
+          "description": "Dewan yayasan menyetujui hibah yang tidak perlu dikembalikan dengan persyaratan tonggak pencapaian",
+          "duration": "1 minggu"
+        },
+        "delivery": {
+          "title": "Pengiriman Tonggak Pencapaian",
+          "description": "Selesaikan semua tonggak pencapaian dengan deliverable fungsional dan terima hibah penuh",
+          "duration": "3-12 bulan"
+        }
+      },
+      "requirements": {
+        "title": "Persyaratan Aplikasi",
+        "items": [
+          "Komitmen open-source lengkap (lisensi MIT/Apache 2.0 diperlukan)",
+          "Rencana pengembangan berbasis tonggak pencapaian yang terperinci",
+          "Tim berpengalaman dengan rekam jejak pengembangan yang terbukti",
+          "Deliverable yang sepenuhnya fungsional - bukan prototipe atau demo",
+          "Dokumentasi komprehensif dan panduan deployment",
+          "Keselarasan kuat dengan tujuan pertumbuhan ekosistem Dubhe"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "Kisah Sukses",
+      "description": "Proyek yang menerima hibah dan memberikan dampak signifikan"
+    },
+    "terms": {
+      "title": "Syarat & Ketentuan Hibah",
+      "nonRepayable": {
+        "title": "Hibah yang Tidak Perlu Dikembalikan",
+        "description": "Semua hibah adalah donasi tanpa syarat dari Yayasan Dubhe. Tidak perlu pengembalian setelah penyelesaian tonggak pencapaian yang berhasil."
+      },
+      "openSource": {
+        "title": "Open Source Diperlukan",
+        "description": "Semua proyek yang didanai harus dirilis di bawah lisensi MIT atau Apache 2.0. Source code lengkap harus tersedia untuk publik."
+      },
+      "completion": {
+        "title": "Penyelesaian Tonggak Pencapaian Penuh",
+        "description": "Proyek harus memberikan perangkat lunak yang sepenuhnya fungsional dan siap produksi. Semua tonggak pencapaian harus diselesaikan untuk menerima hibah penuh."
+      }
+    },
+    "finalCta": {
+      "title": "Siap Membangun Open Source?",
+      "description": "Ajukan hibah Yayasan dan berkontribusi pada ekosistem Dubhe open-source",
+      "cta1": "Ajukan Proposal",
+      "cta2": "Kontak Yayasan"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Dubhe. Semua hak dilindungi undang-undang.",
+    "links": {
+      "about": "Tentang",
+      "contact": "Kontak",
+      "terms": "Syarat Layanan",
+      "privacy": "Kebijakan Privasi"
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Ubah bahasa"
+  }
+}

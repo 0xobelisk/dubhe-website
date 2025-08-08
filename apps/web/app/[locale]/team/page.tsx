@@ -8,10 +8,16 @@ import {
   Briefcase
 } from "lucide-react"
 import Link from "next/link"
-import Navigation from "../../components/navigation"
-import Footer from "../../components/footer"
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
+import {useTranslations} from 'next-intl'
 
-export default function TeamPage() {
+type Params = {
+  locale: string
+}
+
+export default function TeamPage({params}: {params: Promise<Params>}) {
+  const t = useTranslations('team')
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -97,26 +103,26 @@ export default function TeamPage() {
 
   const departments = [
     {
-      name: "Engineering",
-      description: "Building the future of Move development tools and infrastructure",
+      name: t('join.departments.engineering.title'),
+      description: t('join.departments.engineering.description'),
       openRoles: 5,
       color: "from-blue-500 to-purple-500"
     },
     {
-      name: "Research", 
-      description: "Exploring cutting-edge blockchain technologies and protocols",
+      name: t('join.departments.research.title'), 
+      description: t('join.departments.research.description'),
       openRoles: 2,
       color: "from-purple-500 to-pink-500"
     },
     {
-      name: "Community",
-      description: "Growing and supporting our global developer community",
+      name: t('join.departments.community.title'),
+      description: t('join.departments.community.description'),
       openRoles: 3,
       color: "from-pink-500 to-rose-500"
     },
     {
-      name: "Partnerships",
-      description: "Building strategic relationships across the blockchain ecosystem", 
+      name: t('join.departments.partnerships.title'),
+      description: t('join.departments.partnerships.description'), 
       openRoles: 2,
       color: "from-rose-500 to-orange-500"
     }
@@ -171,7 +177,7 @@ export default function TeamPage() {
                 className="inline-block bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-blue-500/20"
               >
                 <Users className="w-4 h-4 inline mr-2" />
-                Our Team
+                {t('hero.badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -182,10 +188,10 @@ export default function TeamPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Meet the
+                  {t('hero.title').split(' ').slice(0, 2).join(' ')}
                   <br />
                   <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                    Dubhe Foundation Team
+                    {t('hero.title').split(' ').slice(2).join(' ')}
                   </span>
                 </motion.h1>
                 
@@ -195,8 +201,7 @@ export default function TeamPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Our diverse, global team of engineers, researchers, and community builders is dedicated to 
-                  advancing the Move ecosystem and empowering developers worldwide.
+                  {t('hero.description')}
                 </motion.p>
               </div>
 
@@ -209,15 +214,15 @@ export default function TeamPage() {
               >
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-400 mb-2">20+</div>
-                  <div className="text-gray-300">Team Members</div>
+                  <div className="text-gray-300">{t('hero.stats.members')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-400 mb-2">10+</div>
-                  <div className="text-gray-300">Countries</div>
+                  <div className="text-gray-300">{t('hero.stats.countries')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-pink-400 mb-2">5+</div>
-                  <div className="text-gray-300">Time Zones</div>
+                  <div className="text-gray-300">{t('hero.stats.timezones')}</div>
                 </div>
               </motion.div>
             </div>
@@ -236,7 +241,7 @@ export default function TeamPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Leadership Team
+              {t('leadership.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -245,7 +250,7 @@ export default function TeamPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Meet the visionaries and experts leading Dubhe's mission to revolutionize Move development
+              {t('leadership.description')}
             </motion.p>
           </div>
 
@@ -278,7 +283,7 @@ export default function TeamPage() {
                 </p>
 
                 <div className="mb-4">
-                  <h4 className="text-white font-medium mb-2 text-sm">Expertise</h4>
+                  <h4 className="text-white font-medium mb-2 text-sm">{t('leadership.expertise')}</h4>
                   <div className="flex flex-wrap gap-1">
                     {member.expertise.map((skill, skillIndex) => (
                       <span
@@ -340,7 +345,7 @@ export default function TeamPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Join Our Team
+              {t('join.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto mb-8"
@@ -349,7 +354,7 @@ export default function TeamPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              We're always looking for talented individuals passionate about advancing blockchain technology
+              {t('join.description')}
             </motion.p>
           </div>
 
@@ -369,7 +374,7 @@ export default function TeamPage() {
                 <h3 className="text-xl font-bold text-white mb-2">{dept.name}</h3>
                 <p className="text-gray-300 mb-4">{dept.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-400 text-sm">Open Positions</span>
+                  <span className="text-gray-400 text-sm">{t('join.openPositions')}</span>
                   <span className="text-blue-400 font-semibold">{dept.openRoles}</span>
                 </div>
               </motion.div>
@@ -388,11 +393,11 @@ export default function TeamPage() {
               href="/contact" 
               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
-              Join the Team
+              {t('join.cta')}
               <ExternalLink className="w-5 h-5 ml-2" />
             </Link>
             <p className="text-gray-400 text-sm mt-3">
-              Contact us about available positions and opportunities
+              {t('join.ctaDescription')}
             </p>
           </motion.div>
         </div>

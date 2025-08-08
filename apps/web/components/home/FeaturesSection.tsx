@@ -2,20 +2,21 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { useTranslations } from 'next-intl'
 
 export default function FeaturesSection() {
+  const t = useTranslations('home.features')
+  
   return (
     <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-purple-200">
-            Features
+            {t('title')}
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 max-w-4xl mx-auto leading-tight">
-            The Move Stack with
-            <br />
-            Limitless Potential
+            {t('mainTitle')}
           </h2>
         </div>
 
@@ -39,9 +40,9 @@ export default function FeaturesSection() {
                   className="w-32 h-32 object-contain"
                 />
               </div>
-              <div className="text-sm font-medium text-slate-700 mb-2">100% Move-Compatible</div>
+              <div className="text-sm font-medium text-slate-700 mb-2">{t('moveCompatible.title')}</div>
               <div className="text-slate-600 text-sm max-w-xs mx-auto">
-                Use the existing Move ecosystem to your advantage.
+                {t('moveCompatible.description')}
               </div>
             </motion.div>
 
@@ -53,9 +54,9 @@ export default function FeaturesSection() {
               className="text-center"
             >
               <div className="text-8xl font-bold text-slate-900 mb-2">0</div>
-              <div className="text-lg font-semibold text-slate-900 mb-2">zero gas fees</div>
+              <div className="text-lg font-semibold text-slate-900 mb-2">{t('zeroGas.title')}</div>
               <div className="text-slate-600 text-sm max-w-xs mx-auto">
-                Allows project cover this expense, supporting flexible expansion and customisation.
+                {t('zeroGas.description')}
               </div>
             </motion.div>
           </div>
@@ -94,7 +95,7 @@ export default function FeaturesSection() {
               className="text-center"
             >
               <div className="text-8xl font-bold text-purple-600 mb-2">~20ms</div>
-              <div className="text-lg font-semibold text-slate-900">Real-time synchronization</div>
+              <div className="text-lg font-semibold text-slate-900">{t('realTime.title')}</div>
             </motion.div>
           </div>
 
@@ -107,10 +108,10 @@ export default function FeaturesSection() {
               transition={{ duration: 0.6 }}
               className="text-center"
             >
-              <div className="text-6xl font-bold text-slate-900 mb-2">Unlimited</div>
-              <div className="text-lg font-semibold text-slate-900 mb-2">Transactions per second</div>
+              <div className="text-6xl font-bold text-slate-900 mb-2">{t('unlimited.title')}</div>
+              <div className="text-lg font-semibold text-slate-900 mb-2">{t('unlimited.subtitle')}</div>
               <div className="text-slate-600 text-sm max-w-xs mx-auto">
-                Depends on the number of dubhe channels running in parallel.
+                {t('unlimited.description')}
               </div>
             </motion.div>
 
@@ -126,7 +127,7 @@ export default function FeaturesSection() {
                   <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-500 rounded transform rotate-45"></div>
                 </div>
               </div>
-              <div className="text-lg font-semibold text-gray-900">1s Sync State finality</div>
+              <div className="text-lg font-semibold text-gray-900">{t('syncFinality.title')}</div>
             </motion.div>
           </div>
         </div>

@@ -1,0 +1,302 @@
+{
+  "navigation": {
+    "learn": "學習",
+    "build": "開發", 
+    "ecosystem": "生態系統",
+    "media": "媒體",
+    "community": "社群",
+    "documentation": "文件",
+    "engine": "引擎",
+    "channel": "頻道",
+    "os": "作業系統",
+    "foundation": "基金會",
+    "labs": "實驗室",
+    "grants": "資助",
+    "incubation": "孵化",
+    "proposal": "提案",
+    "ambassador": "大使",
+    "moderators": "版主",
+    "events": "活動",
+    "openMenu": "打開選單",
+    "closeMenu": "關閉選單"
+  },
+  "home": {
+    "hero": {
+      "title1": "我們創造 Dubhe。",
+      "title2": "你讓它動起來。",
+      "subtitle": "一個開源的 Move 應用程式堆疊，提供全面的工具包來構建可驗證的去中心化應用程式（DApps）和完全的鏈上應用程式。",
+      "cta1": "獲取 Dubhe Stack",
+      "cta2": "了解許可證"
+    },
+    "features": {
+      "title": "功能特性",
+      "mainTitle": "無限潛力的 Move 技術堆疊",
+      "moveCompatible": {
+        "title": "100% Move 相容",
+        "description": "充分利用現有的 Move 生態系統優勢。"
+      },
+      "zeroGas": {
+        "title": "零燃料費",
+        "description": "允許專案承擔此費用，支持靈活擴展和客製化。"
+      },
+      "realTime": {
+        "title": "即時同步"
+      },
+      "unlimited": {
+        "title": "無限制",
+        "subtitle": "每秒交易數",
+        "description": "取決於並行運行的 Dubhe 通道數量。"
+      },
+      "syncFinality": {
+        "title": "1秒同步狀態確定性"
+      }
+    },
+    "community": {
+      "title": "社群",
+      "mainTitle": "加入支持 Dubhe 的全球社群",
+      "description": "憑藉著全球繁榮的開發者社群，Dubhe 得到了推動 Move 區塊鏈技術未來的熱情支持者的支持。與我們一起連接、協作和成長，共同塑造下一代去中心化解決方案。",
+      "cta": "今天就加入 Dubhe 社群。",
+      "events": {
+        "conference": {
+          "title": "開發者大會",
+          "subtitle": "攜手共建未來"
+        },
+        "workshop": {
+          "title": "開發者工作坊",
+          "subtitle": "實作學習課程"
+        },
+        "hackathon": {
+          "title": "全球黑客松",
+          "subtitle": "創新與競賽"
+        },
+        "meetup": {
+          "title": "社群聚會",
+          "subtitle": "本地與線上活動"
+        },
+        "techtalk": {
+          "title": "技術講座系列",
+          "subtitle": "知識分享"
+        },
+        "summit": {
+          "title": "社群峰會",
+          "subtitle": "年度聚會"
+        }
+      },
+      "stats": {
+        "members": {
+          "value": "10萬+",
+          "label": "社群成員",
+          "description": "全球活躍的開發者和愛好者"
+        },
+        "events": {
+          "value": "50+",
+          "label": "全球活動",
+          "description": "每年舉辦的會議、聚會和工作坊"
+        },
+        "countries": {
+          "value": "20+",
+          "label": "國家",
+          "description": "Dubhe 社群遍布各大洲"
+        }
+      }
+    }
+  },
+  "foundation": {
+    "hero": {
+      "title": "支持Dubhe生態系統的發展",
+      "subtitle": "透過開發者支持、生態系統倡議和去中心化努力，Dubhe基金會幫助促進Dubhe協議生態系統的發展和採用。",
+      "cta": "加入團隊"
+    },
+    "mission": {
+      "title": "我們的使命",
+      "subtitle": "為每個人加速Move創新",
+      "developerSupport": {
+        "title": "開發者支持",
+        "description": "為在Dubhe生態系統上構建的開發者提供資助、資源和指導。從黑客馬拉松到長期專案資助。",
+        "features": [
+          "創新專案資助計畫",
+          "技術指導和輔導",
+          "教育研討會和黑客馬拉松"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "生態系統發展",
+        "description": "透過戰略合作夥伴關係和倡議來擴大Dubhe生態系統。在不同的Move鏈和協議之間搭建橋樑。",
+        "features": [
+          "跨鏈協作倡議",
+          "與Move鏈的戰略合作夥伴關係",
+          "基礎設施開發支持"
+        ]
+      },
+      "decentralization": {
+        "title": "去中心化",
+        "description": "透過治理、社群參與和分散式決策過程，確保Dubhe生態系統保持真正的去中心化。",
+        "features": [
+          "治理框架開發",
+          "社群驅動的決策制定",
+          "開源協議開發"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Dubhe. 保留所有權利。",
+    "links": {
+      "about": "關於",
+      "contact": "聯絡",
+      "terms": "服務條款",
+      "privacy": "隱私政策"
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "我們的團隊",
+      "title": "認識 Dubhe 基金會團隊",
+      "description": "我們多元化的全球工程師、研究員和社群建設者團隊致力於推進 Move 生態系統並賦能全球開發者。",
+      "stats": {
+        "members": "團隊成員",
+        "countries": "國家",
+        "timezones": "時區"
+      }
+    },
+    "leadership": {
+      "title": "領導團隊",
+      "description": "認識領導 Dubhe 使命革新 Move 開發的遠見者和專家",
+      "expertise": "專業領域"
+    },
+    "join": {
+      "title": "加入我們的團隊",
+      "description": "我們一直在尋找對推進區塊鏈技術充滿熱情的優秀人才",
+      "openPositions": "職位空缺",
+      "cta": "加入團隊",
+      "ctaDescription": "聯繫我們了解可用職位和機會",
+      "departments": {
+        "engineering": {
+          "title": "工程部",
+          "description": "構建 Move 開發工具和基礎設施的未來"
+        },
+        "research": {
+          "title": "研究部",
+          "description": "探索尖端的區塊鏈技術和協議"
+        },
+        "community": {
+          "title": "社群部",
+          "description": "發展並支持我們的全球開發者社群"
+        },
+        "partnerships": {
+          "title": "合作部",
+          "description": "在整個區塊鏈生態系統中建立戰略合作關係"
+        }
+      }
+    }
+  },
+  "grants": {
+    "hero": {
+      "badge": "Dubhe 基金會資助",
+      "title": "資助你的創新",
+      "description": "從 Dubhe 基金會獲得無需償還的資助，用於構建開源的 Move 應用程式、基礎設施和工具。所有專案必須完全功能化並完成所有里程碑。",
+      "stats": {
+        "totalFunded": "資助總額",
+        "projectsFunded": "資助專案數",
+        "successRate": "成功率",
+        "comingSoon": "即將推出"
+      },
+      "cta1": "申請資助",
+      "cta2": "查看指南"
+    },
+    "categories": {
+      "title": "選擇你的賽道",
+      "badge": "資助類別",
+      "infrastructure": {
+        "title": "基礎設施資助",
+        "amount": "最高 $100K",
+        "description": "構建核心基礎設施、開發者工具和生態系統工具"
+      },
+      "dapp": {
+        "title": "DApp 開發",
+        "amount": "最高 $75K",
+        "description": "在 Dubhe 生態系統上創建創新的去中心化應用程式"
+      },
+      "research": {
+        "title": "研究資助",
+        "amount": "最高 $50K",
+        "description": "學術研究、協議改進和理論貢獻"
+      },
+      "community": {
+        "title": "社群專案",
+        "amount": "最高 $25K",
+        "description": "教育、文檔、社群工具和推廣計劃"
+      }
+    },
+    "process": {
+      "title": "申請流程",
+      "description": "簡單的 5 步流程讓你的專案獲得資助",
+      "steps": {
+        "proposal": {
+          "title": "提案提交",
+          "description": "提交包含詳細里程碑和開源承諾的綜合提案",
+          "duration": "1 週"
+        },
+        "review": {
+          "title": "基金會審核",
+          "description": "Dubhe 基金會技術委員會評估可行性和生態系統影響",
+          "duration": "2-3 週"
+        },
+        "interview": {
+          "title": "團隊面試",
+          "description": "展示你的專案路線圖並證明技術能力",
+          "duration": "1 週"
+        },
+        "approval": {
+          "title": "資助核准",
+          "description": "基金會董事會批准包含里程碑要求的無需償還資助",
+          "duration": "1 週"
+        },
+        "delivery": {
+          "title": "里程碑交付",
+          "description": "完成所有具有功能性交付成果的里程碑並獲得完整資助",
+          "duration": "3-12 個月"
+        }
+      },
+      "requirements": {
+        "title": "申請要求",
+        "items": [
+          "完整的開源承諾（需要 MIT/Apache 2.0 許可證）",
+          "詳細的基於里程碑的開發計劃",
+          "具有經驗和可證實開發記錄的團隊",
+          "完全功能化的交付成果 - 不接受原型或演示",
+          "全面的文檔和部署指南",
+          "與 Dubhe 生態系統發展目標的強烈一致性"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "成功案例",
+      "description": "獲得資助並產生重大影響的專案"
+    },
+    "terms": {
+      "title": "資助條款與條件",
+      "nonRepayable": {
+        "title": "無需償還的資助",
+        "description": "所有資助都是來自 Dubhe 基金會的無條件捐贈。成功完成里程碑後無需償還。"
+      },
+      "openSource": {
+        "title": "必須開源",
+        "description": "所有受資助的專案必須在 MIT 或 Apache 2.0 許可證下發布。完整的原始碼必須公開可用。"
+      },
+      "completion": {
+        "title": "完整的里程碑完成",
+        "description": "專案必須交付完全功能化、生產就緒的軟體。必須完成所有里程碑才能獲得完整資助。"
+      }
+    },
+    "finalCta": {
+      "title": "準備好構建開源了嗎？",
+      "description": "申請基金會資助並為開源 Dubhe 生態系統做出貢獻",
+      "cta1": "提交提案",
+      "cta2": "基金會聯絡"
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "切換語言"
+  }
+}

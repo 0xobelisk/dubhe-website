@@ -2,71 +2,76 @@
 
 import { motion } from "framer-motion"
 import { Users, Code, Zap, Globe, Network, Shield } from "lucide-react"
+import { useTranslations } from 'next-intl'
 
-const communityEvents = [
+const getCommunityEvents = (t: any) => [
   {
     id: "conference",
     icon: Users,
-    title: "Developer Conference",
-    subtitle: "Building the Future Together",
+    title: t('events.conference.title'),
+    subtitle: t('events.conference.subtitle'),
     gradient: "from-purple-500 to-blue-600"
   },
   {
     id: "workshop",
     icon: Code,
-    title: "Developer Workshop",
-    subtitle: "Hands-on Learning Sessions",
+    title: t('events.workshop.title'),
+    subtitle: t('events.workshop.subtitle'),
     gradient: "from-green-500 to-teal-600"
   },
   {
     id: "hackathon",
     icon: Zap,
-    title: "Global Hackathon",
-    subtitle: "Innovation & Competition",
+    title: t('events.hackathon.title'),
+    subtitle: t('events.hackathon.subtitle'),
     gradient: "from-orange-500 to-red-600"
   },
   {
     id: "meetup",
     icon: Globe,
-    title: "Community Meetup",
-    subtitle: "Local & Online Events",
+    title: t('events.meetup.title'),
+    subtitle: t('events.meetup.subtitle'),
     gradient: "from-indigo-500 to-purple-600"
   },
   {
     id: "techtalk",
     icon: Network,
-    title: "Tech Talk Series",
-    subtitle: "Knowledge Sharing",
+    title: t('events.techtalk.title'),
+    subtitle: t('events.techtalk.subtitle'),
     gradient: "from-pink-500 to-rose-600"
   },
   {
     id: "summit",
     icon: Shield,
-    title: "Community Summit",
-    subtitle: "Annual Gathering",
+    title: t('events.summit.title'),
+    subtitle: t('events.summit.subtitle'),
     gradient: "from-cyan-500 to-blue-600"
   }
 ]
 
-const communityStats = [
+const getCommunityStats = (t: any) => [
   {
-    value: "100K+",
-    label: "Community Members",
-    description: "Active developers and enthusiasts worldwide"
+    value: t('stats.members.value'),
+    label: t('stats.members.label'),
+    description: t('stats.members.description')
   },
   {
-    value: "50+",
-    label: "Global Events",
-    description: "Conferences, meetups, and workshops annually"
+    value: t('stats.events.value'),
+    label: t('stats.events.label'),
+    description: t('stats.events.description')
   },
   {
-    value: "20+",
-    label: "Countries",
-    description: "Dubhe community presence across continents"
+    value: t('stats.countries.value'),
+    label: t('stats.countries.label'),
+    description: t('stats.countries.description')
   }
 ]
 
 export default function CommunitySection() {
+  const t = useTranslations('home.community')
+  const communityEvents = getCommunityEvents(t)
+  const communityStats = getCommunityStats(t)
+  
   return (
     <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -74,20 +79,16 @@ export default function CommunitySection() {
         <div className="text-center mb-16">
           <div className="inline-block bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-blue-200">
             <Users className="w-4 h-4 inline mr-2" />
-            Community
+            {t('title')}
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 max-w-4xl mx-auto leading-tight">
-            Join the global community
-            <br />
-            behind Dubhe
+            {t('mainTitle')}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-            With a thriving community of developers worldwide, Dubhe is backed by passionate 
-            supporters driving the future of Move blockchain technology. Connect, collaborate, and grow 
-            with us as we shape the next generation of decentralized solutions.
+            {t('description')}
           </p>
           <p className="text-xl font-semibold text-slate-900 mb-8">
-            Join the Dubhe community today.
+            {t('cta')}
           </p>
         </div>
 

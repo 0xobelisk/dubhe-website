@@ -1,0 +1,302 @@
+{
+  "navigation": {
+    "learn": "Koyo",
+    "build": "Gina", 
+    "ecosystem": "Yanayin Muhalli",
+    "media": "Kafofin Yada Labarai",
+    "community": "Al'umma",
+    "documentation": "Takaddun Rubutu",
+    "engine": "Injin",
+    "channel": "Tashar",
+    "os": "Tsarin Aiki",
+    "foundation": "Gidauniya",
+    "labs": "Dakunan Gwaji",
+    "grants": "Tallafi",
+    "incubation": "Shirye-shirye",
+    "proposal": "Shawara",
+    "ambassador": "Jakada",
+    "moderators": "Masu Gudanarwa",
+    "events": "Abubuwan da suka faru",
+    "openMenu": "Bude menu",
+    "closeMenu": "Rufe menu"
+  },
+  "home": {
+    "hero": {
+      "title1": "Mun gina Dubhe.",
+      "title2": "Ka sa ya motsa.",
+      "subtitle": "Stack na aikace-aikacen Move na buɗe-tushe wanda ke ba da kayan aikin gaba ɗaya don gina aikace-aikacen da ba su da tushe (DApps) da aikace-aikacen da suke kan sarkar gaba ɗaya.",
+      "cta1": "Samu Dubhe Stack",
+      "cta2": "Koyi game da lasisi"
+    },
+    "features": {
+      "title": "Fasaloli",
+      "mainTitle": "Stack na Move tare da Iyawa mara iyaka",
+      "moveCompatible": {
+        "title": "100% mai jituwa da Move",
+        "description": "Yi amfani da yanayin da ke akwai na Move don amfanin ku."
+      },
+      "zeroGas": {
+        "title": "kudin gas sifili",
+        "description": "Yana ba da damar aikin ya rufe wannan kashe kudi, yana tallafawa fadada sassauci da daidaitawa."
+      },
+      "realTime": {
+        "title": "Daidaitawar lokaci na gaske"
+      },
+      "unlimited": {
+        "title": "Mara iyaka",
+        "subtitle": "Ma'amaloli a cikin dakika",
+        "description": "Ya dogara da adadin tashoshi na dubhe da ke aiki a lokaci guda."
+      },
+      "syncFinality": {
+        "title": "Karshen yanayin daidaitawa na daƙiƙa 1"
+      }
+    },
+    "community": {
+      "title": "Al'umma",
+      "mainTitle": "Shiga cikin al'ummar duniya a bayan Dubhe",
+      "description": "Tare da al'ummar masu haɓaka da ke bunƙasa a duk duniya, Dubhe yana samun tallafi daga masu goyon baya masu ƙwazo waɗanda ke jagorantar makomar fasahar blockchain na Move. Haɗu, haɗin gwiwa, kuma ku yi girma tare da mu yayin da muke tsara ƙarni na gaba na hanyoyin rarrabawa.",
+      "cta": "Shiga al'ummar Dubhe a yau.",
+      "events": {
+        "conference": {
+          "title": "Taron Masu Haɓakawa",
+          "subtitle": "Gina Makomar Tare"
+        },
+        "workshop": {
+          "title": "Taron Masu Haɓakawa", 
+          "subtitle": "Darussan Koyon Aiki"
+        },
+        "hackathon": {
+          "title": "Hackathon na Duniya",
+          "subtitle": "Ƙirƙira da Gasa"
+        },
+        "meetup": {
+          "title": "Haduwar Al'umma",
+          "subtitle": "Abubuwan Gida da kan Intanet"
+        },
+        "techtalk": {
+          "title": "Jerin Maganganu na Fasaha",
+          "subtitle": "Raba Ilimi"
+        },
+        "summit": {
+          "title": "Babban Taron Al'umma",
+          "subtitle": "Taron Shekara-shekara"
+        }
+      },
+      "stats": {
+        "members": {
+          "value": "100K+",
+          "label": "Membobin Al'umma",
+          "description": "Masu haɓakawa da masu sha'awar da suke aiki a duk duniya"
+        },
+        "events": {
+          "value": "50+",
+          "label": "Abubuwan Duniya", 
+          "description": "Tarurruka, haduwa, da taron bita na shekara-shekara"
+        },
+        "countries": {
+          "value": "20+",
+          "label": "Ƙasashe",
+          "description": "Kasancewar al'ummar Dubhe a cikin nahiyoyi"
+        }
+      }
+    }
+  },
+  "foundation": {
+    "hero": {
+      "title": "Tallafa wa ci gaban yanayin Dubhe",
+      "subtitle": "Ta hanyar tallafin masu haɓakawa, shirye-shiryen yanayin muhalli, da ƙoƙarin rarrabawa, Gidauniyar Dubhe tana taimakawa wajen haɓaka girma da karɓuwa na yanayin ka'idar Dubhe.",
+      "cta": "Shiga ƙungiyar"
+    },
+    "mission": {
+      "title": "Manufarmu",
+      "subtitle": "Saurin Ƙirƙira na Move don Kowa",
+      "developerSupport": {
+        "title": "Tallafin Masu Haɓakawa",
+        "description": "Ba da tallafi, albarkatu, da jagora ga masu haɓakawa da ke ginawa akan yanayin Dubhe. Daga hackathons zuwa tallafin aikin na dogon lokaci.",
+        "features": [
+          "Shirye-shiryen tallafi na ayyukan kirkire-kirkire",
+          "Jagora na fasaha da jagora",
+          "Taron bita na ilimi da hackathons"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Ci Gaban Yanayin Muhalli",
+        "description": "Haɗin gwiwa na dabaru da shirye-shirye don faɗaɗa yanayin Dubhe. Gina gadoji tsakanin sarƙoƙin Move da ka'idoji daban-daban.",
+        "features": [
+          "Shirye-shiryen haɗin gwiwar sarƙoƙi",
+          "Haɗin gwiwa na dabaru da sarƙoƙin Move",
+          "Tallafin haɓakar kayayyakin more rayuwa"
+        ]
+      },
+      "decentralization": {
+        "title": "Rarrabawa",
+        "description": "Tabbatar da cewa Yanayin Dubhe ya kasance na gaske ya rarraba ta hanyar gudanarwa, shigar da al'umma, da tsarin yanke shawara na rarraba.",
+        "features": [
+          "Haɓakar tsarin gudanarwa",
+          "Yanke shawara da al'umma ta jagoranta",
+          "Haɓakar ka'ida ta buɗe tushe"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Dubhe. Duk haƙƙoƙin an kiyaye su.",
+    "links": {
+      "about": "Game da",
+      "contact": "Tuntuɓar",
+      "terms": "Sharuɗɗan Sabis",
+      "privacy": "Manufar Sirri"
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "Ƙungiyarmu",
+      "title": "Haɗu da Ƙungiyar Gidauniyar Dubhe",
+      "description": "Ƙungiyarmu ta bambanta, ta duniya ta masana injiniya, masu bincike, da masu gina al'umma ta yi alkawarin ci gaban yanayin Move da ƙarfafa masu haɓakawa a duk duniya.",
+      "stats": {
+        "members": "Membobi Ƙungiya",
+        "countries": "Ƙasashe",
+        "timezones": "Yankunan Lokaci"
+      }
+    },
+    "leadership": {
+      "title": "Ƙungiyar Jagora",
+      "description": "Saduwa da masu hangen nesa da kwararu waɗanda ke jagorantar manufar Dubhe na juyin juya halin haɓakar Move",
+      "expertise": "Gwaninta"
+    },
+    "join": {
+      "title": "Shiga Ƙungiyarmu",
+      "description": "Koyaushe muna neman mutane masu hazaka waɗanda ke da sha'awar ci gaban fasahar blockchain",
+      "openPositions": "Matsayi na Buɗewa",
+      "cta": "Shiga Ƙungiyar",
+      "ctaDescription": "Tuntuɓa mu game da matsayi da damammaki da ke akwai",
+      "departments": {
+        "engineering": {
+          "title": "Injiniya",
+          "description": "Gina makomar kayan aikin haɓakar Move da kayayyakin more rayuwa"
+        },
+        "research": {
+          "title": "Bincike",
+          "description": "Binciken fasahar blockchain da ka'idoji na zamani"
+        },
+        "community": {
+          "title": "Al'umma",
+          "description": "Girma da tallafawa al'ummar masu haɓakawa ta duniya"
+        },
+        "partnerships": {
+          "title": "Haɗin Gwiwa",
+          "description": "Gina alakar dabaru a cikin yanayin blockchain"
+        }
+      }
+    }
+  },
+  "grants": {
+    "hero": {
+      "badge": "Tallafin Gidauniyar Dubhe",
+      "title": "Tallafa wa Ƙirƙirarku",
+      "description": "Karɓi tallafi mara biyan kuɗi daga Gidauniyar Dubhe don gina aikace-aikacen Move na buɗe tushe, kayayyakin more rayuwa, da kayan aiki. Duk ayyukan dole su zama cikakku kuma su kammala duk abubuwan da suka kai matsayi.",
+      "stats": {
+        "totalFunded": "Jimlar da aka Tallafa",
+        "projectsFunded": "Ayyukan da aka Tallafa",
+        "successRate": "Adadin Nasara",
+        "comingSoon": "Yana Zuwa Ba da Jimawa Ba"
+      },
+      "cta1": "Nemi Tallafi",
+      "cta2": "Duba Jagororin"
+    },
+    "categories": {
+      "title": "Zaɓi Hanyarka",
+      "badge": "Nau'ukan Tallafi",
+      "infrastructure": {
+        "title": "Tallafin Kayayyakin More Rayuwa",
+        "amount": "Har zuwa $100K",
+        "description": "Gina babban kayayyakin more rayuwa, kayan aikin masu haɓakawa, da kayan aikin yanayin muhalli"
+      },
+      "dapp": {
+        "title": "Haɓakar DApp",
+        "amount": "Har zuwa $75K",
+        "description": "Ƙirƙiri aikace-aikacen da ba su da tushe na zamani akan yanayin Dubhe"
+      },
+      "research": {
+        "title": "Tallafin Bincike",
+        "amount": "Har zuwa $50K",
+        "description": "Binciken ilimi, inganta ka'idoji, da gudunmawa na ka'ida"
+      },
+      "community": {
+        "title": "Ayyukan Al'umma",
+        "amount": "Har zuwa $25K",
+        "description": "Ilimi, rubuce-rubuce, kayan aikin al'umma, da shirye-shiryen wayar da kan jama'a"
+      }
+    },
+    "process": {
+      "title": "Tsarin Aikace-aikace",
+      "description": "Tsari mai sauƙi mai matakai 5 don samun tallafin aikinku",
+      "steps": {
+        "proposal": {
+          "title": "Ƙaddamar da Shawara",
+          "description": "Ƙaddamar da cikakken shawara tare da cikakkun abubuwan da suka kai matsayi da alkawarin buɗe tushe",
+          "duration": "mako 1"
+        },
+        "review": {
+          "title": "Bitar Gidauniya",
+          "description": "Kwamitin fasaha na Gidauniyar Dubhe ya kimanta yiwuwar da tasirin yanayin muhalli",
+          "duration": "makonni 2-3"
+        },
+        "interview": {
+          "title": "Hirar Ƙungiya",
+          "description": "Gabatar da tsarin hanyar aikinku da nuna iyawar fasaha",
+          "duration": "mako 1"
+        },
+        "approval": {
+          "title": "Amincewa da Tallafi",
+          "description": "Hukumar Gidauniya ta amince da tallafi mara biyan kuɗi tare da bukatun abubuwan da suka kai matsayi",
+          "duration": "mako 1"
+        },
+        "delivery": {
+          "title": "Isar da Abubuwan da suka kai Matsayi",
+          "description": "Kammala duk abubuwan da suka kai matsayi tare da abubuwan da za a bayar da ke aiki kuma ku karɓi cikakkiyar tallafi",
+          "duration": "watanni 3-12"
+        }
+      },
+      "requirements": {
+        "title": "Bukatun Aikace-aikace",
+        "items": [
+          "Cikakkiyar alkawarin buɗe tushe (Ana buƙatar lasisi MIT/Apache 2.0)",
+          "Cikakken tsarin haɓakar tushen abubuwan da suka kai matsayi",
+          "Ƙungiya mai gogewa tare da tabbataccen rikodin haɓakar aiki",
+          "Abubuwan da za a bayar da ke aiki gaba ɗaya - babu samfuri ko nunawa",
+          "Cikakken rubutu da jagororin turawa",
+          "Kyakkyawan daidaitawa tare da burin ci gaban yanayin Dubhe"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "Labarun Nasara",
+      "description": "Ayyukan da suka karɓi tallafi kuma suka yi babban tasiri"
+    },
+    "terms": {
+      "title": "Sharuɗɗan Tallafi",
+      "nonRepayable": {
+        "title": "Tallafi Mara Biyan Kuɗi",
+        "description": "Duk tallafi kyauta ne marasa sharadi daga Gidauniyar Dubhe. Babu buƙatar biyan kuɗi bayan nasarar kammala abubuwan da suka kai matsayi."
+      },
+      "openSource": {
+        "title": "Ana Buƙatar Buɗe Tushe",
+        "description": "Duk ayyukan da aka tallafa dole su fito a ƙarƙashin lasisi MIT ko Apache 2.0. Cikakken lambar tushe dole ta kasance ga kowa."
+      },
+      "completion": {
+        "title": "Cikakken Kammala Abubuwan da suka kai Matsayi",
+        "description": "Ayyuka dole su ba da cikakkun software da ke aiki, masu shirye-shirye don samarwa. Dole ne a kammala duk abubuwan da suka kai matsayi don karɓar cikakkiyar tallafi."
+      }
+    },
+    "finalCta": {
+      "title": "Shirye don Gina Buɗe Tushe?",
+      "description": "Nemi tallafin Gidauniya kuma ka ba da gudummawa ga yanayin Dubhe na buɗe tushe",
+      "cta1": "Ƙaddamar da Shawara",
+      "cta2": "Tuntuɓar Gidauniya"
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Canja harshe"
+  }
+}

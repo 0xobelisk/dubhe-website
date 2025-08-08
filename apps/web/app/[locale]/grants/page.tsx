@@ -16,8 +16,16 @@ import {
   FileText
 } from "lucide-react"
 import Link from "next/link"
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
+import {useTranslations} from 'next-intl'
 
-export default function GrantsPage() {
+type Params = {
+  locale: string
+}
+
+export default function GrantsPage({params}: {params: Promise<Params>}) {
+  const t = useTranslations('grants')
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -27,73 +35,66 @@ export default function GrantsPage() {
   const grantCategories = [
     {
       icon: <Rocket className="w-6 h-6" />,
-      title: "Infrastructure Grants",
-      amount: "Up to $100K",
-      description: "Build core infrastructure, developer tools, and ecosystem utilities",
+      title: t('categories.infrastructure.title'),
+      amount: t('categories.infrastructure.amount'),
+      description: t('categories.infrastructure.description'),
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "DApp Development",
-      amount: "Up to $75K", 
-      description: "Create innovative decentralized applications on Dubhe ecosystem",
+      title: t('categories.dapp.title'),
+      amount: t('categories.dapp.amount'), 
+      description: t('categories.dapp.description'),
       color: "from-purple-500 to-pink-500"
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: "Research Grants",
-      amount: "Up to $50K",
-      description: "Academic research, protocol improvements, and theoretical contributions",
+      title: t('categories.research.title'),
+      amount: t('categories.research.amount'),
+      description: t('categories.research.description'),
       color: "from-green-500 to-emerald-500"
     },
     {
       icon: <Building className="w-6 h-6" />,
-      title: "Community Projects",
-      amount: "Up to $25K",
-      description: "Education, documentation, community tools, and outreach programs",
+      title: t('categories.community.title'),
+      amount: t('categories.community.amount'),
+      description: t('categories.community.description'),
       color: "from-orange-500 to-red-500"
     }
   ]
 
-  const requirements = [
-    "Complete open-source commitment (MIT/Apache 2.0 license required)",
-    "Detailed milestone-based development plan",
-    "Experienced team with proven development track record",
-    "Fully functional deliverables - no prototypes or demos",
-    "Comprehensive documentation and deployment guides",
-    "Strong alignment with Dubhe ecosystem growth goals"
-  ]
+  const requirements = t.raw('process.requirements.items')
 
   const process = [
     {
       step: "1",
-      title: "Proposal Submission",
-      description: "Submit comprehensive proposal with detailed milestones and open-source commitment",
-      duration: "1 week"
+      title: t('process.steps.proposal.title'),
+      description: t('process.steps.proposal.description'),
+      duration: t('process.steps.proposal.duration')
     },
     {
       step: "2", 
-      title: "Foundation Review",
-      description: "Dubhe Foundation technical committee evaluates feasibility and ecosystem impact",
-      duration: "2-3 weeks"
+      title: t('process.steps.review.title'),
+      description: t('process.steps.review.description'),
+      duration: t('process.steps.review.duration')
     },
     {
       step: "3",
-      title: "Team Interview",
-      description: "Present your project roadmap and demonstrate technical capabilities",
-      duration: "1 week"
+      title: t('process.steps.interview.title'),
+      description: t('process.steps.interview.description'),
+      duration: t('process.steps.interview.duration')
     },
     {
       step: "4",
-      title: "Grant Approval",
-      description: "Foundation board approves non-repayable grant with milestone requirements",
-      duration: "1 week"
+      title: t('process.steps.approval.title'),
+      description: t('process.steps.approval.description'),
+      duration: t('process.steps.approval.duration')
     },
     {
       step: "5",
-      title: "Milestone Delivery",
-      description: "Complete all milestones with functional deliverables and receive full grant",
-      duration: "3-12 months"
+      title: t('process.steps.delivery.title'),
+      description: t('process.steps.delivery.description'),
+      duration: t('process.steps.delivery.duration')
     }
   ]
 
@@ -129,7 +130,8 @@ export default function GrantsPage() {
 
   return (
     <>
-      
+      {/* Navigation */}
+      <Navigation />
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-green-900 to-blue-900 overflow-hidden pt-16">
         {/* Background Effects */}
@@ -176,7 +178,7 @@ export default function GrantsPage() {
                 className="inline-block bg-green-500/10 text-green-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-green-500/20"
               >
                 <Gift className="w-4 h-4 inline mr-2" />
-                Dubhe Foundation Grants
+                {t('hero.badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -187,10 +189,10 @@ export default function GrantsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Fund Your
+                  {t('hero.title').split(' ').slice(0, 2).join(' ')}
                   <br />
                   <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-                    Innovation
+                    {t('hero.title').split(' ').slice(2).join(' ')}
                   </span>
                 </motion.h1>
                 
@@ -200,8 +202,7 @@ export default function GrantsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Receive non-repayable grants from Dubhe Foundation to build open-source Move applications, 
-                  infrastructure, and tools. All projects must be fully functional and complete all milestones.
+                  {t('hero.description')}
                 </motion.p>
               </div>
 
@@ -213,16 +214,16 @@ export default function GrantsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-400 mb-2">Coming Soon</div>
-                  <div className="text-gray-300">Total Funded</div>
+                  <div className="text-3xl font-bold text-green-400 mb-2">{t('hero.stats.comingSoon')}</div>
+                  <div className="text-gray-300">{t('hero.stats.totalFunded')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">Coming Soon</div>
-                  <div className="text-gray-300">Projects Funded</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">{t('hero.stats.comingSoon')}</div>
+                  <div className="text-gray-300">{t('hero.stats.projectsFunded')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">Coming Soon</div>
-                  <div className="text-gray-300">Success Rate</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">{t('hero.stats.comingSoon')}</div>
+                  <div className="text-gray-300">{t('hero.stats.successRate')}</div>
                 </div>
               </motion.div>
 
@@ -234,12 +235,12 @@ export default function GrantsPage() {
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
                 <Link href="/contact" className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-                  Apply for Grant
+                  {t('hero.cta1')}
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 
                 <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="border-2 border-green-400/50 hover:border-green-300 bg-green-900/20 backdrop-blur-sm text-green-100 hover:text-white hover:bg-green-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-                  View Guidelines
+                  {t('hero.cta2')}
                 </Link>
               </motion.div>
             </div>
@@ -258,7 +259,7 @@ export default function GrantsPage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-gradient-to-r from-green-100 to-blue-100 text-green-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-green-200"
             >
-              Grant Categories
+              {t('categories.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -267,7 +268,7 @@ export default function GrantsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Choose Your Track
+              {t('categories.title')}
             </motion.h2>
           </div>
 
@@ -306,7 +307,7 @@ export default function GrantsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Application Process
+              {t('process.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -315,7 +316,7 @@ export default function GrantsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Simple 5-step process to get your project funded
+              {t('process.description')}
             </motion.p>
           </div>
 
@@ -352,7 +353,7 @@ export default function GrantsPage() {
             transition={{ duration: 0.6 }}
             className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-green-500/20"
           >
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Application Requirements</h3>
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">{t('process.requirements.title')}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {requirements.map((requirement, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -376,7 +377,7 @@ export default function GrantsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Success Stories
+              {t('successStories.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -385,7 +386,7 @@ export default function GrantsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Projects that received grants and made significant impact
+              {t('successStories.description')}
             </motion.p>
           </div>
 
@@ -439,7 +440,7 @@ export default function GrantsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Grant Terms & Conditions
+              {t('terms.title')}
             </motion.h2>
           </div>
 
@@ -453,11 +454,10 @@ export default function GrantsPage() {
             >
               <div className="flex items-center gap-3 mb-4">
                 <Gift className="w-8 h-8 text-green-400" />
-                <h3 className="text-xl font-bold text-white">Non-Repayable Grant</h3>
+                <h3 className="text-xl font-bold text-white">{t('terms.nonRepayable.title')}</h3>
               </div>
               <p className="text-gray-300 text-sm">
-                All grants are unconditional donations from Dubhe Foundation. 
-                No repayment required upon successful milestone completion.
+                {t('terms.nonRepayable.description')}
               </p>
             </motion.div>
 
@@ -470,11 +470,10 @@ export default function GrantsPage() {
             >
               <div className="flex items-center gap-3 mb-4">
                 <FileText className="w-8 h-8 text-blue-400" />
-                <h3 className="text-xl font-bold text-white">Open Source Required</h3>
+                <h3 className="text-xl font-bold text-white">{t('terms.openSource.title')}</h3>
               </div>
               <p className="text-gray-300 text-sm">
-                All funded projects must be released under MIT or Apache 2.0 license. 
-                Complete source code must be publicly available.
+                {t('terms.openSource.description')}
               </p>
             </motion.div>
 
@@ -487,11 +486,10 @@ export default function GrantsPage() {
             >
               <div className="flex items-center gap-3 mb-4">
                 <Target className="w-8 h-8 text-purple-400" />
-                <h3 className="text-xl font-bold text-white">Full Milestone Completion</h3>
+                <h3 className="text-xl font-bold text-white">{t('terms.completion.title')}</h3>
               </div>
               <p className="text-gray-300 text-sm">
-                Projects must deliver fully functional, production-ready software. 
-                All milestones must be completed to receive the full grant.
+                {t('terms.completion.description')}
               </p>
             </motion.div>
           </div>
@@ -508,7 +506,7 @@ export default function GrantsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Ready to Build Open Source?
+            {t('finalCta.title')}
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
@@ -517,7 +515,7 @@ export default function GrantsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Apply for a Foundation grant and contribute to the open-source Dubhe ecosystem
+            {t('finalCta.description')}
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -527,17 +525,19 @@ export default function GrantsPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Link href="/contact" className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-              Submit Proposal
+              {t('finalCta.cta1')}
               <Sparkles className="w-5 h-5 ml-2" />
             </Link>
             <Link href="/contact" className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
-              Foundation Contact
+              {t('finalCta.cta2')}
               <ExternalLink className="w-5 h-5" />
             </Link>
           </motion.div>
         </div>
       </div>
 
+      {/* Footer */}
+      <Footer />
     </>
   )
 }

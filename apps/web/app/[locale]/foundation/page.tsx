@@ -7,7 +7,8 @@ import {
   Target, 
   Globe
 } from "lucide-react"
-import Navigation from "../../components/navigation"
+import {useTranslations, useLocale} from 'next-intl'
+import Navigation from "@/components/navigation"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -69,9 +70,14 @@ const customStyles = `
 `
 
 export default function FoundationPage() {
+  const t = useTranslations('foundation')
+  const locale = useLocale()
+  
   useEffect(() => {
     // Component initialization
-  }, [])
+    console.log('Foundation page loaded with locale:', locale)
+    console.log('Foundation page loaded with translation:', t('hero.title'))
+  }, [t, locale])
 
   return (
     <>
@@ -150,9 +156,7 @@ export default function FoundationPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Supporting the growth
-                  <br />
-                  of the Dubhe Ecosystem
+                  {t('hero.title')}
                 </motion.h1>
                 
                 <motion.p 
@@ -161,9 +165,7 @@ export default function FoundationPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Through developer support, ecosystem initiatives, and decentralization efforts,
-                  the Dubhe Foundation helps foster the growth and adoption of the Dubhe
-                  protocol's ecosystem.
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
 
@@ -179,7 +181,7 @@ export default function FoundationPage() {
                 </Link> */}
                 
                 <Link href="/contact" className="border-2 border-blue-400/50 hover:border-blue-300 bg-blue-900/20 backdrop-blur-sm text-blue-100 hover:text-white hover:bg-blue-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-block">
-                  Join the team
+                  {t('hero.cta')}
                 </Link>
               </motion.div>
             </div>
@@ -193,12 +195,10 @@ export default function FoundationPage() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-purple-200">
-              Our Mission
+              {t('mission.title')}
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 max-w-4xl mx-auto leading-tight">
-              Accelerating Move Innovation
-              <br />
-              for Everyone
+              {t('mission.subtitle')}
             </h2>
           </div>
 
@@ -215,24 +215,17 @@ export default function FoundationPage() {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 text-white mb-6">
                 <Users className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Developer Support</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">{t('mission.developerSupport.title')}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Providing grants, resources, and mentorship to developers building on the Dubhe ecosystem. 
-                From hackathons to long-term project funding.
+                {t('mission.developerSupport.description')}
               </p>
               <div className="space-y-2">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-gray-700 text-sm">Grant programs for innovative projects</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-gray-700 text-sm">Technical mentorship and guidance</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-gray-700 text-sm">Educational workshops and hackathons</span>
-                </div>
+                {(t.raw('mission.developerSupport.features') as string[]).map((feature, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-gray-700 text-sm">{feature}</span>
+                  </div>
+                ))}
               </div>
             </motion.div>
 
@@ -247,24 +240,17 @@ export default function FoundationPage() {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 text-white mb-6">
                 <Target className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Ecosystem Growth</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">{t('mission.ecosystemGrowth.title')}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Strategic partnerships and initiatives to expand the Dubhe ecosystem. 
-                Building bridges between different Move chains and protocols.
+                {t('mission.ecosystemGrowth.description')}
               </p>
               <div className="space-y-2">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-gray-700 text-sm">Cross-chain collaboration initiatives</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-gray-700 text-sm">Strategic partnerships with Move chains</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-gray-700 text-sm">Infrastructure development support</span>
-                </div>
+                {(t.raw('mission.ecosystemGrowth.features') as string[]).map((feature, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-gray-700 text-sm">{feature}</span>
+                  </div>
+                ))}
               </div>
             </motion.div>
 
@@ -279,24 +265,17 @@ export default function FoundationPage() {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 text-white mb-6">
                 <Globe className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Decentralization</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">{t('mission.decentralization.title')}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Ensuring the Dubhe Ecosystem remains truly decentralized through governance, 
-                community involvement, and distributed decision-making processes.
+                {t('mission.decentralization.description')}
               </p>
               <div className="space-y-2">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-gray-700 text-sm">Governance framework development</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-gray-700 text-sm">Community-driven decision making</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-gray-700 text-sm">Open-source protocol development</span>
-                </div>
+                {(t.raw('mission.decentralization.features') as string[]).map((feature, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-gray-700 text-sm">{feature}</span>
+                  </div>
+                ))}
               </div>
             </motion.div>
           </div>
