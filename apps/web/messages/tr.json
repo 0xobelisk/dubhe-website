@@ -17,6 +17,7 @@
     "ambassador": "Büyükelçi",
     "moderators": "Moderatörler",
     "events": "Etkinlikler",
+    "contact": "İletişim",
     "openMenu": "Menüyü aç",
     "closeMenu": "Menüyü kapat"
   },
@@ -294,6 +295,51 @@
       "description": "Vakıf bağışı için başvurun ve açık kaynak Dubhe ekosistemine katkıda bulunun",
       "cta1": "Teklif Gönder",
       "cta2": "Vakıf İletişim"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Sayfa Bulunamadı",
+      "description": "Aradığınız sayfa mevcut değil veya taşınmış.",
+      "suggestion": "Endişelenmeyin, sizi doğru yola geri döndürelim.",
+      "suggestions": {
+        "title": "Popüler Sayfalar"
+      },
+      "actions": {
+        "home": "Ana Sayfaya Git",
+        "back": "Geri Dön",
+        "report": "Bozuk linki bildir"
+      }
+    },
+    "serverError": {
+      "title": "Sunucu Hatası",
+      "description": "Bizim tarafımızda bir şeyler ters gitti.",
+      "suggestion": "Ekibimiz bilgilendirildi ve düzeltme üzerinde çalışıyor."
+    },
+    "unauthorized": {
+      "title": "Kimlik Doğrulama Gerekli",
+      "description": "Bu sayfaya erişmek için oturum açmanız gerekiyor.",
+      "suggestion": "Lütfen kimlik bilgilerinizle giriş yapın."
+    },
+    "forbidden": {
+      "title": "Erişim Yasak",
+      "description": "Bu kaynağa erişim izniniz yok.",
+      "suggestion": "Lütfen kimlik bilgilerinizi kontrol edin veya yöneticiyle iletişime geçin."
+    },
+    "rateLimited": {
+      "title": "Çok Fazla İstek",
+      "description": "İstekleri çok hızlı gönderiyorsunuz. Lütfen yavaşlayın.",
+      "suggestion": "Tekrar denemeden önce birkaç dakika bekleyin."
+    },
+    "serviceUnavailable": {
+      "title": "Hizmet Kullanılamıyor",
+      "description": "Bakım için geçici olarak kapalıyız.",
+      "suggestion": "Yakında tekrar çevrimiçi olacağız. Sabrınız için teşekkürler!"
+    },
+    "badGateway": {
+      "title": "Kötü Ağ Geçidi",
+      "description": "Sunucu bağlantımızda bir sorun var.",
+      "suggestion": "Bu genellikle geçicidir. Lütfen birkaç dakika sonra tekrar deneyin."
     }
   },
   "LocaleSwitcher": {

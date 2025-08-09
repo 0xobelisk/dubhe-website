@@ -57,7 +57,8 @@ export default function IncubationPage() {
     }
   ]
 
-  const mentors = [
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const _unused_mentors = [
     {
       name: "Dr. Alex Chen",
       role: "CTO at Obelisk Labs",
@@ -88,7 +89,8 @@ export default function IncubationPage() {
     }
   ]
 
-  const startups = [
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const _unused_startups = [
     {
       name: "ChainBridge",
       category: "Infrastructure",

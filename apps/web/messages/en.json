@@ -17,6 +17,7 @@
     "ambassador": "Ambassador",
     "moderators": "Moderators",
     "events": "Events",
+    "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -294,6 +295,51 @@
       "description": "Apply for a Foundation grant and contribute to the open-source Dubhe ecosystem",
       "cta1": "Submit Proposal",
       "cta2": "Foundation Contact"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page Not Found",
+      "description": "The page you're looking for doesn't exist or has been moved.",
+      "suggestion": "Don't worry, let's get you back on track.",
+      "suggestions": {
+        "title": "Popular Pages"
+      },
+      "actions": {
+        "home": "Go to Homepage",
+        "back": "Go Back",
+        "report": "Report a broken link"
+      }
+    },
+    "serverError": {
+      "title": "Server Error",
+      "description": "Something went wrong on our end.",
+      "suggestion": "Our team has been notified and is working on a fix."
+    },
+    "unauthorized": {
+      "title": "Authentication Required",
+      "description": "You need to sign in to access this page.",
+      "suggestion": "Please log in with your credentials."
+    },
+    "forbidden": {
+      "title": "Access Forbidden",
+      "description": "You don't have permission to access this resource.",
+      "suggestion": "Please check your credentials or contact an administrator."
+    },
+    "rateLimited": {
+      "title": "Too Many Requests",
+      "description": "You're making requests too quickly. Please slow down.",
+      "suggestion": "Wait a few moments before trying again."
+    },
+    "serviceUnavailable": {
+      "title": "Service Unavailable",
+      "description": "We're temporarily down for maintenance.",
+      "suggestion": "We'll be back online shortly. Thanks for your patience!"
+    },
+    "badGateway": {
+      "title": "Bad Gateway",
+      "description": "There's a problem with our server connection.",
+      "suggestion": "This is usually temporary. Please try again in a few moments."
     }
   },
   "LocaleSwitcher": {

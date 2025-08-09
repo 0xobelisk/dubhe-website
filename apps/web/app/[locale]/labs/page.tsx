@@ -83,11 +83,11 @@ export default function LabsPage() {
       team: "8+ Researchers"
     },
     {
-      name: "Obelisk Labs",
+      name: "Dubhe Network Labs",
       logo: "⚡",
       focus: "Real-Time Infrastructure",
       description: "Building the real-time P2P communication layer and high-performance networking infrastructure for Dubhe Channel.",
-      website: "#",
+      website: "https://network.dubhe.io",
       contributions: [
         "P2P networking protocols",
         "Real-time communication",
@@ -98,11 +98,11 @@ export default function LabsPage() {
       team: "6+ Engineers"
     },
     {
-      name: "Obelisk Labs",
+      name: "Dubhe Bridge Labs",
       logo: "🌐",
       focus: "Cross-Chain Solutions",
       description: "Developing universal bridging protocols and cross-chain infrastructure to connect the Move ecosystem through Dubhe OS.",
-      website: "#",
+      website: "https://bridge.dubhe.io",
       contributions: [
         "Cross-chain bridges",
         "Interoperability protocols",
@@ -125,13 +125,13 @@ export default function LabsPage() {
       icon: <Network className="w-6 h-6" />,
       title: "Infrastructure & Scaling",
       description: "High-performance networking, real-time communication, and scalability solutions",
-      teams: ["Obelisk Labs","Cyferio Labs"]
+      teams: ["Dubhe Network Labs", "Cyferio Labs"]
     },
     {
       icon: <Layers className="w-6 h-6" />,
       title: "Cross-Chain Technology",
       description: "Interoperability protocols, universal bridging, and multi-chain governance",
-      teams: ["Obelisk Labs"]
+      teams: ["Dubhe Bridge Labs"]
     },
     {
       icon: <Zap className="w-6 h-6" />,

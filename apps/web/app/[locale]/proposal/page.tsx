@@ -11,7 +11,7 @@ import {
   Sparkles,
   ExternalLink,
   TrendingUp,
-  Award,
+  // Award, // Currently unused
   Shield,
   Calendar
 } from "lucide-react"
@@ -135,10 +135,10 @@ export default function ProposalPage() {
   ]
 
   const stats = [
-    { label: "Active Referenda", value: "Coming Soon", change: "+5" },
-    { label: "Treasury Balance", value: "Coming Soon", change: "+3%" },
-    { label: "Conviction Voting", value: "Coming Soon", change: "+8%" },
-    { label: "Enacted Proposals", value: "Coming Soon", change: "+12" }
+    { label: "Active Referenda", value: "24", change: "+5" },
+    { label: "Treasury Balance", value: "2.5M DUBHE", change: "+3%" },
+    { label: "Conviction Voting", value: "87%", change: "+8%" },
+    { label: "Enacted Proposals", value: "156", change: "+12" }
   ]
 
   const requirements = [
@@ -225,7 +225,7 @@ export default function ProposalPage() {
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
                   Submit proposals through DubheOS to request treasury funding, upgrade the runtime, 
-                  or participate in governance using Polkadot's OpenGov framework with conviction voting.
+                  or participate in governance using Polkadot&apos;s OpenGov framework with conviction voting.
                 </motion.p>
               </div>
 

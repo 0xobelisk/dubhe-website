@@ -17,6 +17,7 @@
     "ambassador": "Duta",
     "moderators": "Moderator",
     "events": "Acara",
+    "contact": "Kontak",
     "openMenu": "Buka menu",
     "closeMenu": "Tutup menu"
   },
@@ -294,6 +295,51 @@
       "contact": "Kontak",
       "terms": "Syarat Layanan",
       "privacy": "Kebijakan Privasi"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Halaman Tidak Ditemukan",
+      "description": "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+      "suggestion": "Jangan khawatir, mari kita bawa Anda kembali ke jalur yang benar.",
+      "suggestions": {
+        "title": "Halaman Populer"
+      },
+      "actions": {
+        "home": "Ke Beranda",
+        "back": "Kembali",
+        "report": "Laporkan tautan rusak"
+      }
+    },
+    "serverError": {
+      "title": "Kesalahan Server",
+      "description": "Terjadi kesalahan di sisi kami.",
+      "suggestion": "Tim kami telah diberitahu dan sedang mengerjakan perbaikan."
+    },
+    "unauthorized": {
+      "title": "Diperlukan Autentikasi",
+      "description": "Anda perlu masuk untuk mengakses halaman ini.",
+      "suggestion": "Silakan masuk dengan kredensial Anda."
+    },
+    "forbidden": {
+      "title": "Akses Dilarang",
+      "description": "Anda tidak memiliki izin untuk mengakses sumber daya ini.",
+      "suggestion": "Silakan periksa kredensial Anda atau hubungi administrator."
+    },
+    "rateLimited": {
+      "title": "Terlalu Banyak Permintaan",
+      "description": "Anda membuat permintaan terlalu cepat. Silakan perlambat.",
+      "suggestion": "Tunggu beberapa saat sebelum mencoba lagi."
+    },
+    "serviceUnavailable": {
+      "title": "Layanan Tidak Tersedia",
+      "description": "Kami sedang dalam pemeliharaan sementara.",
+      "suggestion": "Kami akan kembali online sebentar lagi. Terima kasih atas kesabaran Anda!"
+    },
+    "badGateway": {
+      "title": "Gateway Buruk",
+      "description": "Ada masalah dengan koneksi server kami.",
+      "suggestion": "Ini biasanya sementara. Silakan coba lagi dalam beberapa saat."
     }
   },
   "LocaleSwitcher": {

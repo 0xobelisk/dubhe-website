@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { z } from 'zod'
+import { validateAndSanitizeContactForm, checkForMaliciousPatterns } from '@/lib/security'
 
 const resend = new Resend(process.env.RESEND_API_KEY || 'placeholder')
 
 const contactSchema = z.object({
   name: z.string().min(1, 'Name is required').max(100, 'Name too long'),
   email: z.string().email('Invalid email address'),
-  subject: z.string().min(1, 'Subject is required').max(200, 'Subject too long'),
+  subject: z.string().min(1, 'Subject is required'),
   message: z.string().min(1, 'Message is required').max(2000, 'Message too long')
 })
 
@@ -22,8 +23,48 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json()
-    const validatedData = contactSchema.parse(body)
-    const { name, email, subject, message } = validatedData
+    
+    // Enhanced security validation
+    const clientIP = req.headers.get('x-forwarded-for')?.split(',')[0] || 
+                     req.headers.get('x-real-ip') || 
+                     'unknown'
+    const userAgent = req.headers.get('user-agent') || 'unknown'
+    
+    // Validate and sanitize using enhanced security
+    const validation = validateAndSanitizeContactForm(body, {
+      ip: clientIP,
+      userAgent
+    })
+    
+    if (!validation.valid || !validation.data) {
+      return NextResponse.json({ 
+        success: false,
+        error: 'Invalid input data',
+        details: validation.errors 
+      }, { status: 400 })
+    }
+    
+    const { name, email, subject, message } = validation.data
+    
+    // Additional malicious pattern check
+    const fullContent = `${name} ${email} ${message}`
+    if (checkForMaliciousPatterns(fullContent)) {
+      console.warn(`Potentially malicious content detected from IP: ${clientIP}`)
+      return NextResponse.json({ 
+        success: false,
+        error: 'Invalid content detected' 
+      }, { status: 400 })
+    }
+    
+    // Also validate with Zod for double-check
+    const zodValidation = contactSchema.safeParse(body)
+    if (!zodValidation.success) {
+      return NextResponse.json({ 
+        success: false,
+        error: 'Validation failed',
+        details: zodValidation.error.errors 
+      }, { status: 400 })
+    }
 
     // 发送邮件给团队
     const { data, error } = await resend.emails.send({
@@ -289,7 +330,7 @@ export async function POST(req: NextRequest) {
                                 <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%">Hi ${name},</p>
                                 <p style="mso-line-height-rule:exactly; font-size:14px; line-height:125%">&nbsp;</p>
                                 <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%">
-                                  Thank you for reaching out to us! We've received your message about "<strong>${subject}</strong>" and appreciate you taking the time to contact the Dubhe Foundation.
+                                  Thank you for reaching out to us! We've received your message regarding "<strong>${subject}</strong>" and appreciate you taking the time to contact the Dubhe Foundation.
                                 </p>
                                 <p style="mso-line-height-rule:exactly; font-size:14px; line-height:125%">&nbsp;</p>
                                 <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%">

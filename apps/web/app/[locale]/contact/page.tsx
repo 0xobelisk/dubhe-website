@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Mail, MessageSquare, Send, MapPin, Clock } from "lucide-react"
+import Link from "next/link"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -317,24 +318,24 @@ export default function ContactPage() {
               <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-2xl p-6 border border-green-500/20">
                 <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
                 <div className="space-y-3">
-                  <a 
+                  <Link 
                     href="/grants" 
                     className="block text-gray-300 hover:text-green-400 transition-colors"
                   >
                     → Apply for a Grant
-                  </a>
-                  <a 
+                  </Link>
+                  <Link 
                     href="/incubation" 
                     className="block text-gray-300 hover:text-green-400 transition-colors"
                   >
                     → Join Incubation Program
-                  </a>
-                  <a 
+                  </Link>
+                  <Link 
                     href="/ambassador" 
                     className="block text-gray-300 hover:text-green-400 transition-colors"
                   >
                     → Become an Ambassador
-                  </a>
+                  </Link>
                   <a 
                     href="https://dubhe-docs.obelisk.build/dubhe" 
                     target="_blank"

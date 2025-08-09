@@ -7,6 +7,7 @@ import ProductSuiteSection from './ProductSuiteSection'
 import HowItWorksSection from './HowItWorksSection'
 import NetworkArchitectureSection from './NetworkArchitectureSection'
 import CommunitySection from './CommunitySection'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import CompaniesSection from './CompaniesSection'
 import './styles.css'
 

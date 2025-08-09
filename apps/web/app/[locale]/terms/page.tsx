@@ -127,8 +127,8 @@ export default function TermsPage() {
             <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700">
               <h2 className="text-2xl font-bold text-white mb-4">Agreement Overview</h2>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Welcome to Dubhe! These Terms of Service ("Terms") form a legally binding agreement between you and 
-                Dubhe Foundation ("we," "us," or "our") regarding your use of our blockchain platform, development tools, 
+                Welcome to Dubhe! These Terms of Service (&quot;Terms&quot;) form a legally binding agreement between you and 
+                Dubhe Foundation (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) regarding your use of our blockchain platform, development tools, 
                 and related services.
               </p>
               <p className="text-gray-300 leading-relaxed">

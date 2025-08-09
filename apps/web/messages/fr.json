@@ -17,6 +17,7 @@
     "ambassador": "Ambassadeur",
     "moderators": "Modérateurs",
     "events": "Événements",
+    "contact": "Contact",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu"
   },
@@ -294,6 +295,51 @@
       "description": "Demandez une subvention de la Fondation et contribuez à l'écosystème Dubhe open-source",
       "cta1": "Soumettre une Proposition",
       "cta2": "Contact de la Fondation"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page Non Trouvée",
+      "description": "La page que vous cherchez n'existe pas ou a été déplacée.",
+      "suggestion": "Ne vous inquiétez pas, nous allons vous remettre sur la bonne voie.",
+      "suggestions": {
+        "title": "Pages Populaires"
+      },
+      "actions": {
+        "home": "Aller à l'Accueil",
+        "back": "Retour",
+        "report": "Signaler un lien cassé"
+      }
+    },
+    "serverError": {
+      "title": "Erreur Serveur",
+      "description": "Quelque chose s'est mal passé de notre côté.",
+      "suggestion": "Notre équipe a été notifiée et travaille sur une solution."
+    },
+    "unauthorized": {
+      "title": "Authentification Requise",
+      "description": "Vous devez vous connecter pour accéder à cette page.",
+      "suggestion": "Veuillez vous connecter avec vos identifiants."
+    },
+    "forbidden": {
+      "title": "Accès Interdit",
+      "description": "Vous n'avez pas l'autorisation d'accéder à cette ressource.",
+      "suggestion": "Veuillez vérifier vos identifiants ou contacter un administrateur."
+    },
+    "rateLimited": {
+      "title": "Trop de Requêtes",
+      "description": "Vous faites des requêtes trop rapidement. Veuillez ralentir.",
+      "suggestion": "Attendez quelques instants avant de réessayer."
+    },
+    "serviceUnavailable": {
+      "title": "Service Indisponible",
+      "description": "Nous sommes temporairement hors service pour maintenance.",
+      "suggestion": "Nous serons de retour en ligne sous peu. Merci de votre patience !"
+    },
+    "badGateway": {
+      "title": "Passerelle Défaillante",
+      "description": "Il y a un problème avec notre connexion serveur.",
+      "suggestion": "Ceci est généralement temporaire. Veuillez réessayer dans quelques instants."
     }
   },
   "LocaleSwitcher": {

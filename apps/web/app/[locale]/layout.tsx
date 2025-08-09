@@ -1,3 +1,4 @@
+import React from 'react'
 import { Geist, Geist_Mono } from 'next/font/google';
 import type { Metadata, Viewport } from 'next';
 import {NextIntlClientProvider} from 'next-intl';
@@ -8,6 +9,8 @@ import {routing} from '../../i18n/routing';
 import '@workspace/ui/globals.css';
 import { Providers } from '@/components/providers';
 import ServiceWorkerCleanup from '@/components/sw-cleanup';
+import { ErrorBoundary } from '@/components/error-boundary';
+import { WebVitals } from '@/components/web-vitals';
 
 const fontSans = Geist({
 	subsets: ['latin'],
@@ -127,7 +130,7 @@ export const viewport: Viewport = {
 
 type Props = {
   children: React.ReactNode;
-  params: {locale: string};
+  params: Promise<{locale: string}>;
 };
 
 export default async function LocaleLayout({
@@ -137,7 +140,7 @@ export default async function LocaleLayout({
   const {locale} = await params;
   
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound();
   }
 
@@ -289,10 +292,13 @@ export default async function LocaleLayout({
         className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased min-h-screen bg-black text-white`}
       >
         <NextIntlClientProvider messages={messages}>
-          <Providers>
-            <ServiceWorkerCleanup />
-            {children}
-          </Providers>
+          <ErrorBoundary>
+            <Providers>
+              <WebVitals />
+              <ServiceWorkerCleanup />
+              {children}
+            </Providers>
+          </ErrorBoundary>
         </NextIntlClientProvider>
       </body>
     </html>

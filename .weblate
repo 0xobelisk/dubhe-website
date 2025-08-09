@@ -1,0 +1,23 @@
+[weblate]
+url = https://hosted.weblate.org/
+
+[weblate.dubhe-website]
+repo = https://github.com/your-org/dubhe-website
+push = https://github.com/your-org/dubhe-website
+branch = main
+filemask = apps/web/messages/*.json
+template = apps/web/messages/en.json
+file_format = json
+new_lang = add
+language_map = 
+  zh_TW = zh-TW
+
+[weblate.dubhe-website.main]
+name = Main translations
+slug = main
+repo = https://github.com/your-org/dubhe-website
+push = https://github.com/your-org/dubhe-website
+branch = main
+filemask = apps/web/messages/*.json
+template = apps/web/messages/en.json
+file_format = json

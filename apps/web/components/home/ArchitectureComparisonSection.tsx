@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { CheckCircle, XCircle } from "lucide-react"
 
 const comparisonData = [

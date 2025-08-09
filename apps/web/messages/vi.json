@@ -17,6 +17,7 @@
     "ambassador": "Đại sứ",
     "moderators": "Điều hành viên",
     "events": "Sự kiện",
+    "contact": "Liên hệ",
     "openMenu": "Mở menu",
     "closeMenu": "Đóng menu"
   },
@@ -294,6 +295,51 @@
       "description": "Đăng ký tài trợ Quỹ và đóng góp cho hệ sinh thái Dubhe mã nguồn mở",
       "cta1": "Gửi Đề xuất",
       "cta2": "Liên hệ Quỹ"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Không Tìm Thấy Trang",
+      "description": "Trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển.",
+      "suggestion": "Đừng lo lắng, hãy để chúng tôi đưa bạn trở lại đúng hướng.",
+      "suggestions": {
+        "title": "Trang Phổ biến"
+      },
+      "actions": {
+        "home": "Về Trang chủ",
+        "back": "Quay lại",
+        "report": "Báo cáo liên kết bị hỏng"
+      }
+    },
+    "serverError": {
+      "title": "Lỗi Máy chủ",
+      "description": "Có gì đó đã xảy ra sai ở phía chúng tôi.",
+      "suggestion": "Đội ngũ của chúng tôi đã được thông báo và đang khắc phục."
+    },
+    "unauthorized": {
+      "title": "Yêu cầu Xác thực",
+      "description": "Bạn cần đăng nhập để truy cập trang này.",
+      "suggestion": "Vui lòng đăng nhập bằng thông tin đăng nhập của bạn."
+    },
+    "forbidden": {
+      "title": "Truy cập Bị cấm",
+      "description": "Bạn không có quyền truy cập tài nguyên này.",
+      "suggestion": "Vui lòng kiểm tra thông tin đăng nhập của bạn hoặc liên hệ với quản trị viên."
+    },
+    "rateLimited": {
+      "title": "Quá Nhiều Yêu cầu",
+      "description": "Bạn đang thực hiện yêu cầu quá nhanh. Vui lòng chậm lại.",
+      "suggestion": "Chờ một chút trước khi thử lại."
+    },
+    "serviceUnavailable": {
+      "title": "Dịch vụ Không khả dụng",
+      "description": "Chúng tôi tạm thời ngừng hoạt động để bảo trì.",
+      "suggestion": "Chúng tôi sẽ quay lại trực tuyến sớm. Cảm ơn sự kiên nhẫn của bạn!"
+    },
+    "badGateway": {
+      "title": "Gateway Lỗi",
+      "description": "Có vấn đề với kết nối máy chủ của chúng tôi.",
+      "suggestion": "Điều này thường chỉ tạm thời. Vui lòng thử lại sau vài phút."
     }
   },
   "LocaleSwitcher": {

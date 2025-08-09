@@ -17,6 +17,7 @@
     "ambassador": "アンバサダー",
     "moderators": "モデレーター",
     "events": "イベント",
+    "contact": "お問い合わせ",
     "openMenu": "メニューを開く",
     "closeMenu": "メニューを閉じる"
   },
@@ -294,6 +295,51 @@
       "description": "財団グラントに申請し、オープンソースDubheエコシステムに貢献してください",
       "cta1": "提案書を提出",
       "cta2": "財団に問い合わせ"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "ページが見つかりません",
+      "description": "お探しのページは存在しないか、移動されました。",
+      "suggestion": "ご心配なく、正しい道に戸しましょう。",
+      "suggestions": {
+        "title": "人気ページ"
+      },
+      "actions": {
+        "home": "ホームページへ",
+        "back": "戻る",
+        "report": "壊れたリンクを報告"
+      }
+    },
+    "serverError": {
+      "title": "サーバーエラー",
+      "description": "サーバー側で問題が発生しました。",
+      "suggestion": "チームに通知し、修正作業を進めています。"
+    },
+    "unauthorized": {
+      "title": "認証が必要です",
+      "description": "このページにアクセスするにはサインインが必要です。",
+      "suggestion": "資格情報でログインしてください。"
+    },
+    "forbidden": {
+      "title": "アクセス禁止",
+      "description": "このリソースにアクセスする権限がありません。",
+      "suggestion": "資格情報を確認するか、管理者にお問い合わせください。"
+    },
+    "rateLimited": {
+      "title": "リクエストが多すぎます",
+      "description": "リクエストを送信するペースが速すぎます。ペースを落としてください。",
+      "suggestion": "少しお待ちいただいてから再度お試しください。"
+    },
+    "serviceUnavailable": {
+      "title": "サービス利用不可",
+      "description": "メンテナンスのため一時的にサービスを停止しています。",
+      "suggestion": "まもなくオンラインに戻ります。お待ちいただきありがとうございます！"
+    },
+    "badGateway": {
+      "title": "不正なゲートウェイ",
+      "description": "サーバー接続に問題があります。",
+      "suggestion": "これは通常一時的なものです。少し後に再度お試しください。"
     }
   },
   "LocaleSwitcher": {

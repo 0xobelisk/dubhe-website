@@ -17,6 +17,7 @@
     "ambassador": "Embaixador",
     "moderators": "Moderadores",
     "events": "Eventos",
+    "contact": "Contato",
     "openMenu": "Abrir menu",
     "closeMenu": "Fechar menu"
   },
@@ -294,6 +295,51 @@
       "description": "Candidate-se a um subsídio da Fundação e contribua para o ecossistema Dubhe de código aberto",
       "cta1": "Enviar Proposta",
       "cta2": "Contato da Fundação"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Página Não Encontrada",
+      "description": "A página que você está procurando não existe ou foi movida.",
+      "suggestion": "Não se preocupe, vamos colocá-lo de volta no caminho certo.",
+      "suggestions": {
+        "title": "Páginas Populares"
+      },
+      "actions": {
+        "home": "Ir para a Página Inicial",
+        "back": "Voltar",
+        "report": "Reportar link quebrado"
+      }
+    },
+    "serverError": {
+      "title": "Erro do Servidor",
+      "description": "Algo deu errado do nosso lado.",
+      "suggestion": "Nossa equipe foi notificada e está trabalhando na correção."
+    },
+    "unauthorized": {
+      "title": "Autenticação Necessária",
+      "description": "Você precisa fazer login para acessar esta página.",
+      "suggestion": "Por favor, faça login com suas credenciais."
+    },
+    "forbidden": {
+      "title": "Acesso Proibido",
+      "description": "Você não tem permissão para acessar este recurso.",
+      "suggestion": "Por favor, verifique suas credenciais ou entre em contato com um administrador."
+    },
+    "rateLimited": {
+      "title": "Muitas Solicitações",
+      "description": "Você está fazendo solicitações muito rapidamente. Por favor, diminua o ritmo.",
+      "suggestion": "Aguarde alguns momentos antes de tentar novamente."
+    },
+    "serviceUnavailable": {
+      "title": "Serviço Indisponível",
+      "description": "Estamos temporariamente fora do ar para manutenção.",
+      "suggestion": "Estaremos de volta online em breve. Obrigado pela sua paciência!"
+    },
+    "badGateway": {
+      "title": "Gateway Ruim",
+      "description": "Há um problema com nossa conexão de servidor.",
+      "suggestion": "Isso geralmente é temporário. Por favor, tente novamente em alguns momentos."
     }
   },
   "LocaleSwitcher": {

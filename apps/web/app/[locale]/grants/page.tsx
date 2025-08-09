@@ -24,6 +24,7 @@ type Params = {
   locale: string
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function GrantsPage({params}: {params: Promise<Params>}) {
   const t = useTranslations('grants')
   const [isClient, setIsClient] = useState(false)
@@ -355,7 +356,7 @@ export default function GrantsPage({params}: {params: Promise<Params>}) {
           >
             <h3 className="text-2xl font-bold text-white mb-6 text-center">{t('process.requirements.title')}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {requirements.map((requirement, index) => (
+              {requirements.map((requirement: string, index: number) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-300">{requirement}</span>

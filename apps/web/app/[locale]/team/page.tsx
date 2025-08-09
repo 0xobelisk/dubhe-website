@@ -16,7 +16,8 @@ type Params = {
   locale: string
 }
 
-export default function TeamPage({params}: {params: Promise<Params>}) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export default function TeamPage({params: _params}: {params: Promise<Params>}) {
   const t = useTranslations('team')
   const [isClient, setIsClient] = useState(false)
 

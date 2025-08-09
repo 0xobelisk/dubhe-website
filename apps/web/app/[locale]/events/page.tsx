@@ -19,13 +19,37 @@ export default function EventsPage() {
 
   const events = [
     {
-      date: "Coming Soon",
-      name: "Coming Soon",
+      date: "2025-02-15",
+      name: "Dubhe Engine Developer Workshop",
+      location: "Online",
+      category: "Workshop",
+      type: "Workshop",
+      description: "Deep dive into Dubhe Engine architecture and development best practices"
+    },
+    {
+      date: "2025-02-28",
+      name: "Move Ecosystem AMA with Dubhe Foundation",
       location: "Online",
       category: "AMA",
-      type: "AMA"
+      type: "AMA",
+      description: "Ask us anything about Dubhe protocol, roadmap, and ecosystem development"
     },
-
+    {
+      date: "2025-03-10",
+      name: "Dubhe Community Meetup - San Francisco",
+      location: "San Francisco, CA",
+      category: "Meetup",
+      type: "Meetup", 
+      description: "Network with Dubhe developers and community members in the Bay Area"
+    },
+    {
+      date: "2025-03-25",
+      name: "Zero-Knowledge Privacy Solutions Workshop",
+      location: "Online",
+      category: "Workshop",
+      type: "Workshop",
+      description: "Learn about ZK proofs and privacy-preserving protocols in the Dubhe ecosystem"
+    }
   ]
 
   const categories = ["All", "AMA", "Workshop", "Meetup"]

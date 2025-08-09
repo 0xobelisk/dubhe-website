@@ -6,7 +6,7 @@ import { Menu, X, ExternalLink, ChevronDown } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useTranslations } from 'next-intl'
-import LocaleSwitcher from "./LocaleSwitcher"
+import LanguageSelector from "./LanguageSelector"
 
 type DropdownItem = {
   name: string;
@@ -221,7 +221,7 @@ export default function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <LocaleSwitcher />
+            <LanguageSelector />
             {/* <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-3 text-sm font-semibold rounded-lg transition-all duration-200 mobile-touch-target">
               Connect Wallet
             </button> */}

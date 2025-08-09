@@ -17,6 +17,7 @@
     "ambassador": "大使",
     "moderators": "版主",
     "events": "活動",
+    "contact": "聯絡",
     "openMenu": "打開選單",
     "closeMenu": "關閉選單"
   },
@@ -294,6 +295,51 @@
       "description": "申請基金會資助並為開源 Dubhe 生態系統做出貢獻",
       "cta1": "提交提案",
       "cta2": "基金會聯絡"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "找不到頁面",
+      "description": "您尋找的頁面不存在或已被移動。",
+      "suggestion": "別擔心，讓我們幫您回到正軌。",
+      "suggestions": {
+        "title": "熱門頁面"
+      },
+      "actions": {
+        "home": "回到首頁",
+        "back": "返回",
+        "report": "回報損壞的連結"
+      }
+    },
+    "serverError": {
+      "title": "伺服器錯誤",
+      "description": "我們這邊出了點問題。",
+      "suggestion": "我們的團隊已經收到通知並正在修復中。"
+    },
+    "unauthorized": {
+      "title": "需要身份驗證",
+      "description": "您需要登入才能存取此頁面。",
+      "suggestion": "請使用您的憑證登入。"
+    },
+    "forbidden": {
+      "title": "存取被禁止",
+      "description": "您沒有權限存取此資源。",
+      "suggestion": "請檢查您的憑證或聯絡管理員。"
+    },
+    "rateLimited": {
+      "title": "請求過多",
+      "description": "您發送請求的速度太快了。請放慢速度。",
+      "suggestion": "請稍等片刻再重試。"
+    },
+    "serviceUnavailable": {
+      "title": "服務無法使用",
+      "description": "我們暫時停機進行維護。",
+      "suggestion": "我們很快就會重新上線。感謝您的耐心等候！"
+    },
+    "badGateway": {
+      "title": "不良網關",
+      "description": "我們的伺服器連線有問題。",
+      "suggestion": "這通常是暫時性的。請稍後再試。"
     }
   },
   "LocaleSwitcher": {

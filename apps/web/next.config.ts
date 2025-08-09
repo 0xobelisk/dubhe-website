@@ -1,5 +1,6 @@
 import {NextConfig} from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
+import { withSentryConfig } from '@sentry/nextjs';
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
@@ -7,10 +8,10 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ["@workspace/ui"],
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   images: {
     domains: ["images.unsplash.com", "cdn.prod.website-files.com"],
@@ -64,4 +65,21 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default withNextIntl(nextConfig);
+// Sentry configuration options
+const sentryOptions = {
+  // For all available options, see:
+  // https://github.com/getsentry/sentry-webpack-plugin#options
+  
+  silent: process.env.NODE_ENV === 'production', // Suppresses source map uploading logs during build
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
+  
+  // Upload source maps in production for better error tracking
+  widenClientFileUpload: true,
+  tunnelRoute: "/monitoring",
+  hideSourceMaps: true,
+  disableLogger: process.env.NODE_ENV === 'production',
+  automaticVercelMonitors: true,
+}
+
+export default withSentryConfig(withNextIntl(nextConfig), sentryOptions);

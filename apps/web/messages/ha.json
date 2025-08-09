@@ -17,6 +17,7 @@
     "ambassador": "Jakada",
     "moderators": "Masu Gudanarwa",
     "events": "Abubuwan da suka faru",
+    "contact": "Tuntuɓar",
     "openMenu": "Bude menu",
     "closeMenu": "Rufe menu"
   },
@@ -294,6 +295,51 @@
       "description": "Nemi tallafin Gidauniya kuma ka ba da gudummawa ga yanayin Dubhe na buɗe tushe",
       "cta1": "Ƙaddamar da Shawara",
       "cta2": "Tuntuɓar Gidauniya"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Ba a Sami Shafin Ba",
+      "description": "Shafin da kuke nema ba ya wanzuwa ko an matsar da shi.",
+      "suggestion": "Kada ku damu, bari mu dawo da ku kan hanya mai dacewa.",
+      "suggestions": {
+        "title": "Shafuka Masu Farin Ciki"
+      },
+      "actions": {
+        "home": "Je Shafin Farko",
+        "back": "Koma Baya",
+        "report": "Bayar da Rahoton Link da ya karye"
+      }
+    },
+    "serverError": {
+      "title": "Kuskuren Server",
+      "description": "Wani abu ya yi kuskure a gefen mu.",
+      "suggestion": "An sanar da ƙungiyar mu kuma tana aiki kan gyarawa."
+    },
+    "unauthorized": {
+      "title": "Ana Buƙatar Tabbatarwa",
+      "description": "Kuna buƙatar shiga don samun damar wannan shafi.",
+      "suggestion": "Da fatan za ku shiga da bayanan ku."
+    },
+    "forbidden": {
+      "title": "An Haramta Shiga",
+      "description": "Ba ku da izinin samun damar wannan albarkatun.",
+      "suggestion": "Da fatan za ku binciki bayanan ku ko tuntuɓar mai gudanarwa."
+    },
+    "rateLimited": {
+      "title": "Buƙatun da Yawa",
+      "description": "Kuna yin buƙatun da sauri sosai. Da fatan za ku rage sauri.",
+      "suggestion": "Jira ɗan lokaci kafin ku sake gwadawa."
+    },
+    "serviceUnavailable": {
+      "title": "Sabis ba ya Samuwa",
+      "description": "Mun kashe na ɗan lokaci don gyarawa.",
+      "suggestion": "Za mu dawo kan layi ba da daɗewa ba. Na gode da haƙurinku!"
+    },
+    "badGateway": {
+      "title": "Mummunar Gateway",
+      "description": "Akwai matsala da haɗin server dinmu.",
+      "suggestion": "Wannan yawanci na wucin gadi ne. Da fatan za ku sake gwadawa bayan ɗan lokaci."
     }
   },
   "LocaleSwitcher": {
