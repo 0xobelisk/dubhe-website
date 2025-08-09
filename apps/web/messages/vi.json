@@ -1,0 +1,348 @@
+{
+  "navigation": {
+    "learn": "Học tập",
+    "build": "Xây dựng",
+    "ecosystem": "Hệ sinh thái",
+    "media": "Truyền thông",
+    "community": "Cộng đồng",
+    "documentation": "Tài liệu",
+    "engine": "Động cơ",
+    "channel": "Kênh",
+    "os": "HĐH",
+    "foundation": "Quỹ",
+    "labs": "Phòng thí nghiệm",
+    "grants": "Tài trợ",
+    "incubation": "Ấp ủ",
+    "proposal": "Đề xuất",
+    "ambassador": "Đại sứ",
+    "moderators": "Điều hành viên",
+    "events": "Sự kiện",
+    "contact": "Liên hệ",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu"
+  },
+  "home": {
+    "hero": {
+      "title1": "Chúng tôi tạo ra Dubhe.",
+      "title2": "Bạn làm cho nó hoạt động.",
+      "subtitle": "Một ngăn xếp ứng dụng Move mã nguồn mở cung cấp bộ công cụ toàn diện để xây dựng các ứng dụng phi tập trung có thể xác minh (DApps) và các ứng dụng hoàn toàn on-chain.",
+      "cta1": "Lấy Dubhe Stack",
+      "cta2": "Tìm hiểu về cấp phép"
+    },
+    "features": {
+      "title": "Tính năng",
+      "mainTitle": "Move Stack với Tiềm năng Vô hạn",
+      "moveCompatible": {
+        "title": "100% Tương thích Move",
+        "description": "Sử dụng hệ sinh thái Move hiện tại cho lợi thế của bạn."
+      },
+      "zeroGas": {
+        "title": "Phí gas bằng không",
+        "description": "Cho phép dự án chi trả chi phí này, hỗ trợ mở rộng và tùy chỉnh linh hoạt."
+      },
+      "realTime": {
+        "title": "Đồng bộ thời gian thực"
+      },
+      "unlimited": {
+        "title": "Không giới hạn",
+        "subtitle": "Giao dịch mỗi giây",
+        "description": "Phụ thuộc vào số lượng kênh dubhe chạy song song."
+      },
+      "syncFinality": {
+        "title": "Tính hoàn thiện đồng bộ trạng thái 1s"
+      }
+    },
+    "community": {
+      "title": "Cộng đồng",
+      "mainTitle": "Tham gia cộng đồng toàn cầu đằng sau Dubhe",
+      "description": "Với cộng đồng các nhà phát triển phát triển mạnh mẽ trên toàn thế giới, Dubhe được hỗ trợ bởi những người .úng hộ đầy nhiệt huyết thúc đẩy tương lai của công nghệ Move blockchain. Kết nối, cộng tác và phát triển cùng chúng tôi khi chúng tôi định hình thế hệ tiếp theo của các giải pháp phi tập trung.",
+      "cta": "Tham gia cộng đồng Dubhe hôm nay.",
+      "events": {
+        "conference": {
+          "title": "Hội nghị Nhà phát triển",
+          "subtitle": "Xây dựng Tương lai Cùng nhau"
+        },
+        "workshop": {
+          "title": "Hội thảo Nhà phát triển",
+          "subtitle": "Các buổi học Thực hành"
+        },
+        "hackathon": {
+          "title": "Hackathon Toàn cầu",
+          "subtitle": "Đổi mới và Cạnh tranh"
+        },
+        "meetup": {
+          "title": "Cuộc họp Cộng đồng",
+          "subtitle": "Sự kiện Địa phương và Trực tuyến"
+        },
+        "techtalk": {
+          "title": "Loạt Thảo luận Kỹ thuật",
+          "subtitle": "Chia sẻ Kiến thức"
+        },
+        "summit": {
+          "title": "Hội nghị thượng đỉnh Cộng đồng",
+          "subtitle": "Hộp mặt Hàng năm"
+        }
+      },
+      "stats": {
+        "members": {
+          "value": "100K+",
+          "label": "Thành viên Cộng đồng",
+          "description": "Các nhà phát triển và người đam mê hoạt động trên toàn thế giới"
+        },
+        "events": {
+          "value": "50+",
+          "label": "Sự kiện Toàn cầu",
+          "description": "Hội nghị, cuộc họp và hội thảo hàng năm"
+        },
+        "countries": {
+          "value": "20+",
+          "label": "Quốc gia",
+          "description": "Sự hiện diện của cộng đồng Dubhe trên các châu lục"
+        }
+      }
+    }
+  },
+  "foundation": {
+    "hero": {
+      "title": "Hỗ trợ sự phát triển của Hệ sinh thái Dubhe",
+      "subtitle": "Thông qua hỗ trợ nhà phát triển, các sáng kiến hệ sinh thái, và nỗ lực phi tập trung, Quỹ Dubhe giúp thúc đẩy sự phát triển và áp dụng hệ sinh thái giao thức Dubhe.",
+      "cta": "Tham gia đội ngũ"
+    },
+    "mission": {
+      "title": "Sứ mệnh của Chúng tôi",
+      "subtitle": "Tăng tốc Đổi mới Move cho Mọi người",
+      "developerSupport": {
+        "title": "Hỗ trợ Nhà phát triển",
+        "description": "Cung cấp tài trợ, tài nguyên và cố vấn cho các nhà phát triển xây dựng trên hệ sinh thái Dubhe. Từ hackathon đến tài trợ dự án dài hạn.",
+        "features": [
+          "Chương trình tài trợ cho các dự án đổi mới",
+          "Cố vấn kỹ thuật và hướng dẫn",
+          "Hội thảo giáo dục và hackathon"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Tăng trưởng Hệ sinh thái",
+        "description": "Các quan hệ đối tác chiến lược và sáng kiến để mở rộng hệ sinh thái Dubhe. Xây dựng cầu nối giữa các Move chain và giao thức khác nhau.",
+        "features": [
+          "Sáng kiến hợp tác liên chuỗi",
+          "Quan hệ đối tác chiến lược với Move chain",
+          "Hỗ trợ phát triển cơ sở hạ tầng"
+        ]
+      },
+      "decentralization": {
+        "title": "Phi tập trung",
+        "description": "Đảm bảo Hệ sinh thái Dubhe vẫn thực sự phi tập trung thông qua quản trị, sự tham gia của cộng đồng, và các quy trình ra quyết định phân tán.",
+        "features": [
+          "Phát triển khung quản trị",
+          "Ra quyết định do cộng đồng dẫn dắt",
+          "Phát triển giao thức mã nguồn mở"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Dubhe. Tất cả quyền được bảo lưu.",
+    "links": {
+      "about": "Giới thiệu",
+      "contact": "Liên hệ",
+      "terms": "Điều khoản Dịch vụ",
+      "privacy": "Chính sách Bảo mật"
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "Đội ngũ của chúng tôi",
+      "title": "Gặp gỡ Đội ngũ Quỹ Dubhe",
+      "description": "Đội ngũ đa dạng, toàn cầu gồm các kỹ sư, nhà nghiên cứu và người xây dựng cộng đồng của chúng tôi hết lòng phục vụ việc thúc đẩy hệ sinh thái Move và trao quyền cho các nhà phát triển trên toàn thế giới.",
+      "stats": {
+        "members": "Thành viên Đội ngũ",
+        "countries": "Quốc gia",
+        "timezones": "Múi giờ"
+      }
+    },
+    "leadership": {
+      "title": "Đội ngũ Lãnh đạo",
+      "description": "Gặp gỡ các nhà tầm nhìn và chuyên gia dẫn dắt sứ mệnh của Dubhe cách mạng hóa việc phát triển Move",
+      "expertise": "Chuyên môn"
+    },
+    "join": {
+      "title": "Tham gia Đội ngũ của Chúng tôi",
+      "description": "Chúng tôi luôn tìm kiếm những cá nhân tài năng đam mê việc thúc đẩy công nghệ blockchain",
+      "openPositions": "Các vị trí Mở",
+      "cta": "Tham gia Đội ngũ",
+      "ctaDescription": "Liên hệ với chúng tôi về các vị trí và cơ hội hiện có",
+      "departments": {
+        "engineering": {
+          "title": "Kỹ thuật",
+          "description": "Xây dựng tương lai của các công cụ phát triển Move và cơ sở hạ tầng"
+        },
+        "research": {
+          "title": "Nghiên cứu",
+          "description": "Khám phá các công nghệ blockchain và giao thức tiên tiến"
+        },
+        "community": {
+          "title": "Cộng đồng",
+          "description": "Phát triển và hỗ trợ cộng đồng nhà phát triển toàn cầu của chúng tôi"
+        },
+        "partnerships": {
+          "title": "Hợp tác",
+          "description": "Xây dựng các mối quan hệ chiến lược trong hệ sinh thái blockchain"
+        }
+      }
+    }
+  },
+  "grants": {
+    "hero": {
+      "badge": "Tài trợ Quỹ Dubhe",
+      "title": "Tài trợ các Đổi mới của Bạn",
+      "description": "Nhận tài trợ không hoàn trả từ Quỹ Dubhe để xây dựng các ứng dụng Move mã nguồn mở, cơ sở hạ tầng và công cụ. Tất cả các dự án phải hoàn toàn có chức năng và hoàn thành tất cả các cốt mốc.",
+      "stats": {
+        "totalFunded": "Tổng đã Tài trợ",
+        "projectsFunded": "Dự án được Tài trợ",
+        "successRate": "Tỷ lệ Thành công",
+        "comingSoon": "Sắp ra mắt"
+      },
+      "cta1": "Nộp Đơn xin Tài trợ",
+      "cta2": "Xem Hướng dẫn"
+    },
+    "categories": {
+      "title": "Chọn Loại hình của Bạn",
+      "badge": "Các hạng mục Tài trợ",
+      "infrastructure": {
+        "title": "Tài trợ Cơ sở hạ tầng",
+        "amount": "Lên đến $100K",
+        "description": "Xây dựng cơ sở hạ tầng cốt lõi, công cụ nhà phát triển và tiện ích hệ sinh thái"
+      },
+      "dapp": {
+        "title": "Phát triển DApp",
+        "amount": "Lên đến $75K",
+        "description": "Tạo các ứng dụng phi tập trung đổi mới trên hệ sinh thái Dubhe"
+      },
+      "research": {
+        "title": "Tài trợ Nghiên cứu",
+        "amount": "Lên đến $50K",
+        "description": "Nghiên cứu học thuật, cải tiến giao thức và đóng góp lý thuyết"
+      },
+      "community": {
+        "title": "Dự án Cộng đồng",
+        "amount": "Lên đến $25K",
+        "description": "Giáo dục, tài liệu, công cụ cộng đồng và chương trình tiếp cận"
+      }
+    },
+    "process": {
+      "title": "Quy trình Nộp đơn",
+      "description": "Quy trình đơn giản 5 bước để nhận tài trợ cho dự án của bạn",
+      "steps": {
+        "proposal": {
+          "title": "Nộp Đề xuất",
+          "description": "Gửi đề xuất toàn diện với các cốt mốc chi tiết và cam kết mã nguồn mở",
+          "duration": "1 tuần"
+        },
+        "review": {
+          "title": "Xem xét của Quỹ",
+          "description": "Uỷ ban kỹ thuật Quỹ Dubhe đánh giá tính khả thi và tác động hệ sinh thái",
+          "duration": "2-3 tuần"
+        },
+        "interview": {
+          "title": "Phỏng vấn Đội ngũ",
+          "description": "Trình bày lộ trình dự án của bạn và thể hiện khả năng kỹ thuật",
+          "duration": "1 tuần"
+        },
+        "approval": {
+          "title": "Phê duyệt Tài trợ",
+          "description": "Hội đồng Quỹ phê duyệt tài trợ không hoàn trả với yêu cầu cốt mốc",
+          "duration": "1 tuần"
+        },
+        "delivery": {
+          "title": "Giao kết quả Cốt mốc",
+          "description": "Hoàn thành tất cả các cốt mốc với kết quả có chức năng và nhận toàn bộ tài trợ",
+          "duration": "3-12 tháng"
+        }
+      },
+      "requirements": {
+        "title": "Yêu cầu Đơn đăng ký",
+        "items": [
+          "Cam kết hoàn toàn mã nguồn mở (yêu cầu giấy phép MIT/Apache 2.0)",
+          "Kế hoạch phát triển chi tiết dựa trên cốt mốc",
+          "Đội ngũ kinh nghiệm với hắng tich phát triển đã chứng minh",
+          "Kết quả hoàn toàn có chức năng - không có nguyên mẫu hoặc demo",
+          "Tài liệu toàn diện và hướng dẫn triển khai",
+          "Sự phù hợp mạnh mẽ với mục tiêu phát triển hệ sinh thái Dubhe"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "Câu chuyện Thành công",
+      "description": "Các dự án nhận tài trợ và tạo ra tác động đáng kể"
+    },
+    "terms": {
+      "title": "Điều khoản Tài trợ",
+      "nonRepayable": {
+        "title": "Tài trợ Không hoàn trả",
+        "description": "Tất cả tài trợ là quyên góp vô điều kiện từ Quỹ Dubhe. Không cần hoàn trả khi hoàn thành thành công các cốt mốc."
+      },
+      "openSource": {
+        "title": "Yêu cầu Mã nguồn Mở",
+        "description": "Tất cả các dự án được tài trợ phải được phát hành dưới giấy phép MIT hoặc Apache 2.0. Mã nguồn hoàn chỉnh phải công khai."
+      },
+      "completion": {
+        "title": "Hoàn thành Đầy đủ Cốt mốc",
+        "description": "Các dự án phải cung cấp phần mềm hoàn toàn có chức năng, sẵn sàng sản xuất. Tất cả các cốt mốc phải được hoàn thành để nhận tài trợ đầy đủ."
+      }
+    },
+    "finalCta": {
+      "title": "Sẵn sàng Xây dựng Mã nguồn Mở?",
+      "description": "Đăng ký tài trợ Quỹ và đóng góp cho hệ sinh thái Dubhe mã nguồn mở",
+      "cta1": "Gửi Đề xuất",
+      "cta2": "Liên hệ Quỹ"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Không Tìm Thấy Trang",
+      "description": "Trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển.",
+      "suggestion": "Đừng lo lắng, hãy để chúng tôi đưa bạn trở lại đúng hướng.",
+      "suggestions": {
+        "title": "Trang Phổ biến"
+      },
+      "actions": {
+        "home": "Về Trang chủ",
+        "back": "Quay lại",
+        "report": "Báo cáo liên kết bị hỏng"
+      }
+    },
+    "serverError": {
+      "title": "Lỗi Máy chủ",
+      "description": "Có gì đó đã xảy ra sai ở phía chúng tôi.",
+      "suggestion": "Đội ngũ của chúng tôi đã được thông báo và đang khắc phục."
+    },
+    "unauthorized": {
+      "title": "Yêu cầu Xác thực",
+      "description": "Bạn cần đăng nhập để truy cập trang này.",
+      "suggestion": "Vui lòng đăng nhập bằng thông tin đăng nhập của bạn."
+    },
+    "forbidden": {
+      "title": "Truy cập Bị cấm",
+      "description": "Bạn không có quyền truy cập tài nguyên này.",
+      "suggestion": "Vui lòng kiểm tra thông tin đăng nhập của bạn hoặc liên hệ với quản trị viên."
+    },
+    "rateLimited": {
+      "title": "Quá Nhiều Yêu cầu",
+      "description": "Bạn đang thực hiện yêu cầu quá nhanh. Vui lòng chậm lại.",
+      "suggestion": "Chờ một chút trước khi thử lại."
+    },
+    "serviceUnavailable": {
+      "title": "Dịch vụ Không khả dụng",
+      "description": "Chúng tôi tạm thời ngừng hoạt động để bảo trì.",
+      "suggestion": "Chúng tôi sẽ quay lại trực tuyến sớm. Cảm ơn sự kiên nhẫn của bạn!"
+    },
+    "badGateway": {
+      "title": "Gateway Lỗi",
+      "description": "Có vấn đề với kết nối máy chủ của chúng tôi.",
+      "suggestion": "Điều này thường chỉ tạm thời. Vui lòng thử lại sau vài phút."
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Thay đổi ngôn ngữ"
+  }
+}

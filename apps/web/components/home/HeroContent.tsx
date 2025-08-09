@@ -1,8 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useTranslations } from 'next-intl'
 
 export default function HeroContent() {
+  const t = useTranslations('home')
+  
   return (
     <motion.div
       initial={{ opacity: 0, x: -50 }}
@@ -28,9 +31,9 @@ export default function HeroContent() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          We make the Dubhe.
+          {t('hero.title1')}
           <br />
-          You make it Move.
+          {t('hero.title2')}
           <br />
         </motion.h1>
         
@@ -40,8 +43,7 @@ export default function HeroContent() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          A open-source Move application stack that provides a comprehensive toolkit for
-          building verifiable decentralized applications (DApps) and fully on-chain applications.
+          {t('hero.subtitle')}
         </motion.p>
       </div>
 
@@ -58,7 +60,7 @@ export default function HeroContent() {
           rel="noopener noreferrer" 
           className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-block text-center"
         >
-          Get Dubhe Stack
+          {t('hero.cta1')}
         </a>
         
         <a 
@@ -67,7 +69,7 @@ export default function HeroContent() {
           rel="noopener noreferrer" 
           className="border-2 border-blue-400/50 hover:border-blue-300 bg-blue-900/20 backdrop-blur-sm text-blue-100 hover:text-white hover:bg-blue-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-block text-center"
         >
-          Learn about licensing
+          {t('hero.cta2')}
         </a>
       </motion.div>
     </motion.div>

@@ -5,6 +5,8 @@ import { motion } from "framer-motion"
 import { Menu, X, ExternalLink, ChevronDown } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { useTranslations } from 'next-intl'
+import LanguageSelector from "./LanguageSelector"
 
 type DropdownItem = {
   name: string;
@@ -19,16 +21,17 @@ type NavItem = {
 }
 
 export default function Navigation() {
+  const t = useTranslations('navigation')
   const [isOpen, setIsOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null)
 
   const navItems: NavItem[] = [
     { 
-      name: "Learn", 
+      name: t('learn'), 
       href: "#learn",
       dropdown: [
-        { name: "Documentation", href: "https://dubhe-docs.obelisk.build/dubhe", external: true },
+        { name: t('documentation'), href: "https://dubhe-docs.obelisk.build/dubhe", external: true },
         // { name: "Token", href: "/token" },
         // { name: "Tutorials", href: "/tutorials" },
         // { name: "Examples", href: "/examples" },
@@ -36,27 +39,27 @@ export default function Navigation() {
       ]
     },
     { 
-      name: "Build", 
+      name: t('build'), 
       href: "#build",
       dropdown: [
-        { name: "Engine", href: "/engine" },
-        { name: "Channel", href: "/channel" },
-        { name: "OS", href: "/os" },
+        { name: t('engine'), href: "/engine" },
+        { name: t('channel'), href: "/channel" },
+        { name: t('os'), href: "/os" },
       ]
     },
     { 
-      name: "Ecosystem", 
+      name: t('ecosystem'), 
       href: "#ecosystem",
       dropdown: [
-        { name: "Foundation", href: "/foundation" },
-        { name: "Labs", href: "/labs" },
-        { name: "Grants", href: "/grants" },
-        { name: "Incubation", href: "/incubation" },
-        { name: "Proposal", href: "/proposal" }
+        { name: t('foundation'), href: "/foundation" },
+        { name: t('labs'), href: "/labs" },
+        { name: t('grants'), href: "/grants" },
+        { name: t('incubation'), href: "/incubation" },
+        { name: t('proposal'), href: "/proposal" }
       ]
     },
     { 
-      name: "Media", 
+      name: t('media'), 
       href: "#media",
       dropdown: [
         { name: "X", href: "https://x.com/DubheEngine", external: true },
@@ -68,13 +71,13 @@ export default function Navigation() {
       ]
     },
     { 
-      name: "Community", 
+      name: t('community'), 
       href: "#community",
       dropdown: [
         // { name: "Careers", href: "/careers" },
-        { name: "Ambassador", href: "/ambassador" },
-        { name: "Moderators", href: "/moderators" },
-        { name: "Events", href: "/events" },
+        { name: t('ambassador'), href: "/ambassador" },
+        { name: t('moderators'), href: "/moderators" },
+        { name: t('events'), href: "/events" },
         // { name: "Brand Kit", href: "/brand-kit" }
       ]
     },
@@ -218,6 +221,7 @@ export default function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageSelector />
             {/* <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-3 text-sm font-semibold rounded-lg transition-all duration-200 mobile-touch-target">
               Connect Wallet
             </button> */}
@@ -228,7 +232,7 @@ export default function Navigation() {
             <button
               onClick={toggleMenu}
               className="text-gray-300 hover:text-white p-3 relative z-10"
-              aria-label={isOpen ? "关闭菜单" : "打开菜单"}
+              aria-label={isOpen ? t('closeMenu') : t('openMenu')}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>

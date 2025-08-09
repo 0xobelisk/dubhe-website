@@ -1,0 +1,348 @@
+{
+  "navigation": {
+    "learn": "学習",
+    "build": "開発", 
+    "ecosystem": "エコシステム",
+    "media": "メディア",
+    "community": "コミュニティ",
+    "documentation": "ドキュメント",
+    "engine": "エンジン",
+    "channel": "チャンネル",
+    "os": "OS",
+    "foundation": "財団",
+    "labs": "ラボ",
+    "grants": "グラント",
+    "incubation": "インキュベーション",
+    "proposal": "提案",
+    "ambassador": "アンバサダー",
+    "moderators": "モデレーター",
+    "events": "イベント",
+    "contact": "お問い合わせ",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる"
+  },
+  "home": {
+    "hero": {
+      "title1": "私たちがDubheを作る。",
+      "title2": "あなたがそれを動かす。",
+      "subtitle": "検証可能な分散型アプリケーション（DApps）および完全なオンチェーンアプリケーションを構築するための包括的なツールキットを提供するオープンソースのMoveアプリケーションスタック。",
+      "cta1": "Dubhe Stackを取得",
+      "cta2": "ライセンスについて学ぶ"
+    },
+    "features": {
+      "title": "機能",
+      "mainTitle": "無限の可能性を持つMoveスタック",
+      "moveCompatible": {
+        "title": "100% Move互換",
+        "description": "既存のMoveエコシステムを活用してください。"
+      },
+      "zeroGas": {
+        "title": "ゼロガス料金",
+        "description": "プロジェクトがこの費用をカバーし、柔軟な拡張とカスタマイゼーションをサポートします。"
+      },
+      "realTime": {
+        "title": "リアルタイム同期"
+      },
+      "unlimited": {
+        "title": "無制限",
+        "subtitle": "秒間トランザクション数",
+        "description": "並行して実行されるDubheチャネルの数に依存します。"
+      },
+      "syncFinality": {
+        "title": "1秒同期状態の確定性"
+      }
+    },
+    "community": {
+      "title": "コミュニティ",
+      "mainTitle": "Dubheを支えるグローバルコミュニティに参加",
+      "description": "世界中の開発者が集まる活気あるコミュニティとともに、DubheはMoveブロックチェーン技術の未来を推進する情熱的な支援者に支えられています。私たちと一緒に繋がり、協力し、成長しながら、次世代の分散型ソリューションを形作りましょう。",
+      "cta": "今すぐDubheコミュニティに参加しましょう。",
+      "events": {
+        "conference": {
+          "title": "開発者カンファレンス",
+          "subtitle": "共に未来を築く"
+        },
+        "workshop": {
+          "title": "開発者ワークショップ",
+          "subtitle": "実践的学習セッション"
+        },
+        "hackathon": {
+          "title": "グローバルハッカソン",
+          "subtitle": "イノベーション＆コンペティション"
+        },
+        "meetup": {
+          "title": "コミュニティミートアップ",
+          "subtitle": "地域・オンラインイベント"
+        },
+        "techtalk": {
+          "title": "技術講演シリーズ",
+          "subtitle": "知識の共有"
+        },
+        "summit": {
+          "title": "コミュニティサミット",
+          "subtitle": "年次総会"
+        }
+      },
+      "stats": {
+        "members": {
+          "value": "100K+",
+          "label": "コミュニティメンバー",
+          "description": "世界中のアクティブな開発者と愛好者"
+        },
+        "events": {
+          "value": "50+",
+          "label": "グローバルイベント",
+          "description": "年間のカンファレンス、ミートアップ、ワークショップ"
+        },
+        "countries": {
+          "value": "20+",
+          "label": "国・地域",
+          "description": "各大陸にわたるDubheコミュニティの存在"
+        }
+      }
+    }
+  },
+  "foundation": {
+    "hero": {
+      "title": "Dubheエコシステムの成長を支援",
+      "subtitle": "開発者支援、エコシステムイニシアチブ、分散化への取り組みを通じて、Dubhe財団はDubheプロトコルエコシステムの成長と採用を促進します。",
+      "cta": "チームに参加"
+    },
+    "mission": {
+      "title": "私たちの使命",
+      "subtitle": "すべての人のためのMoveイノベーションの加速",
+      "developerSupport": {
+        "title": "開発者支援",
+        "description": "Dubheエコシステム上で構築する開発者にグラント、リソース、メンターシップを提供。ハッカソンから長期プロジェクト資金まで。",
+        "features": [
+          "革新的プロジェクトのグラントプログラム",
+          "技術的メンターシップとガイダンス",
+          "教育ワークショップとハッカソン"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "エコシステムの成長",
+        "description": "戦略的パートナーシップとイニシアチブによりDubheエコシステムを拡大。異なるMoveチェーンとプロトコル間の橋渡し。",
+        "features": [
+          "クロスチェーン協力イニシアチブ",
+          "Moveチェーンとの戦略的パートナーシップ",
+          "インフラ開発支援"
+        ]
+      },
+      "decentralization": {
+        "title": "分散化",
+        "description": "ガバナンス、コミュニティ参加、分散意思決定プロセスを通じて、Dubheエコシステムが真に分散化されることを確保。",
+        "features": [
+          "ガバナンスフレームワーク開発",
+          "コミュニティ主導の意思決定",
+          "オープンソースプロトコル開発"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Dubhe. All rights reserved.",
+    "links": {
+      "about": "について",
+      "contact": "お問い合わせ",
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー"
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "私たちのチーム",
+      "title": "Dubhe財団チームにお会いください",
+      "description": "エンジニア、研究者、コミュニティビルダーからなる多様でグローバルなチームが、Moveエコシステムの発展と世界中の開発者の支援に専念しています。",
+      "stats": {
+        "members": "チームメンバー",
+        "countries": "国・地域",
+        "timezones": "タイムゾーン"
+      }
+    },
+    "leadership": {
+      "title": "リーダーシップチーム",
+      "description": "Move開発に革命をもたらすDubheの使命を率いるビジョナリーと専門家にお会いください",
+      "expertise": "専門分野"
+    },
+    "join": {
+      "title": "私たちのチームに参加",
+      "description": "ブロックチェーン技術の発展に情熱を持つ才能ある人材を常に募集しています",
+      "openPositions": "募集中のポジション",
+      "cta": "チームに参加",
+      "ctaDescription": "利用可能なポジションと機会についてお問い合わせください",
+      "departments": {
+        "engineering": {
+          "title": "エンジニアリング",
+          "description": "Move開発ツールとインフラの未来を構築"
+        },
+        "research": {
+          "title": "研究",
+          "description": "最先端のブロックチェーン技術とプロトコルの探求"
+        },
+        "community": {
+          "title": "コミュニティ",
+          "description": "グローバル開発者コミュニティの成長と支援"
+        },
+        "partnerships": {
+          "title": "パートナーシップ",
+          "description": "ブロックチェーンエコシステム全体での戦略的関係構築"
+        }
+      }
+    }
+  },
+  "grants": {
+    "hero": {
+      "badge": "Dubhe財団グラント",
+      "title": "あなたのイノベーションに資金提供",
+      "description": "Dubhe財団から返済不要のグラントを受け取り、オープンソースのMoveアプリケーション、インフラ、ツールを構築してください。すべてのプロジェクトは完全に機能し、すべてのマイルストーンを完了する必要があります。",
+      "stats": {
+        "totalFunded": "総資金提供額",
+        "projectsFunded": "資金提供プロジェクト数",
+        "successRate": "成功率",
+        "comingSoon": "近日公開"
+      },
+      "cta1": "グラントに応募",
+      "cta2": "ガイドラインを見る"
+    },
+    "categories": {
+      "title": "あなたのトラックを選択",
+      "badge": "グラントカテゴリー",
+      "infrastructure": {
+        "title": "インフラストラクチャーグラント",
+        "amount": "最大$100K",
+        "description": "コアインフラ、開発者ツール、エコシステムユーティリティの構築"
+      },
+      "dapp": {
+        "title": "DApp開発",
+        "amount": "最大$75K",
+        "description": "Dubheエコシステム上での革新的な分散型アプリケーションの作成"
+      },
+      "research": {
+        "title": "研究グラント",
+        "amount": "最大$50K",
+        "description": "学術研究、プロトコル改善、理論的貢献"
+      },
+      "community": {
+        "title": "コミュニティプロジェクト",
+        "amount": "最大$25K",
+        "description": "教育、ドキュメント、コミュニティツール、アウトリーチプログラム"
+      }
+    },
+    "process": {
+      "title": "申請プロセス",
+      "description": "プロジェクトの資金提供を受けるための簡単な5ステッププロセス",
+      "steps": {
+        "proposal": {
+          "title": "提案書の提出",
+          "description": "詳細なマイルストーンとオープンソースコミットメントを含む包括的な提案書を提出",
+          "duration": "1週間"
+        },
+        "review": {
+          "title": "財団審査",
+          "description": "Dubhe財団技術委員会が実現可能性とエコシステムへの影響を評価",
+          "duration": "2-3週間"
+        },
+        "interview": {
+          "title": "チーム面接",
+          "description": "プロジェクトロードマップを発表し、技術能力を実証",
+          "duration": "1週間"
+        },
+        "approval": {
+          "title": "グラント承認",
+          "description": "財団理事会がマイルストーン要件付きの返済不要グラントを承認",
+          "duration": "1週間"
+        },
+        "delivery": {
+          "title": "マイルストーン達成",
+          "description": "機能する成果物ですべてのマイルストーンを完了し、フルグラントを受領",
+          "duration": "3-12か月"
+        }
+      },
+      "requirements": {
+        "title": "申請要件",
+        "items": [
+          "完全なオープンソースコミットメント（MIT/Apache 2.0ライセンス必須）",
+          "詳細なマイルストーンベースの開発計画",
+          "実績のある開発実績を持つ経験豊富なチーム",
+          "完全に機能する成果物 - プロトタイプやデモは不可",
+          "包括的なドキュメントとデプロイメントガイド",
+          "Dubheエコシステムの成長目標との強い整合性"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "成功事例",
+      "description": "グラントを受け、大きな影響を与えたプロジェクト"
+    },
+    "terms": {
+      "title": "グラント条件",
+      "nonRepayable": {
+        "title": "返済不要グラント",
+        "description": "すべてのグラントはDubhe財団からの無条件寄付です。マイルストーン完了成功時の返済は不要です。"
+      },
+      "openSource": {
+        "title": "オープンソース必須",
+        "description": "資金提供されたすべてのプロジェクトはMITまたはApache 2.0ライセンスでリリースする必要があります。完全なソースコードは公開可能である必要があります。"
+      },
+      "completion": {
+        "title": "完全なマイルストーン完了",
+        "description": "プロジェクトは完全に機能する本番レディのソフトウェアを提供する必要があります。フルグラントを受けるには、すべてのマイルストーンを完了する必要があります。"
+      }
+    },
+    "finalCta": {
+      "title": "オープンソースを構築する準備はできましたか？",
+      "description": "財団グラントに申請し、オープンソースDubheエコシステムに貢献してください",
+      "cta1": "提案書を提出",
+      "cta2": "財団に問い合わせ"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "ページが見つかりません",
+      "description": "お探しのページは存在しないか、移動されました。",
+      "suggestion": "ご心配なく、正しい道に戸しましょう。",
+      "suggestions": {
+        "title": "人気ページ"
+      },
+      "actions": {
+        "home": "ホームページへ",
+        "back": "戻る",
+        "report": "壊れたリンクを報告"
+      }
+    },
+    "serverError": {
+      "title": "サーバーエラー",
+      "description": "サーバー側で問題が発生しました。",
+      "suggestion": "チームに通知し、修正作業を進めています。"
+    },
+    "unauthorized": {
+      "title": "認証が必要です",
+      "description": "このページにアクセスするにはサインインが必要です。",
+      "suggestion": "資格情報でログインしてください。"
+    },
+    "forbidden": {
+      "title": "アクセス禁止",
+      "description": "このリソースにアクセスする権限がありません。",
+      "suggestion": "資格情報を確認するか、管理者にお問い合わせください。"
+    },
+    "rateLimited": {
+      "title": "リクエストが多すぎます",
+      "description": "リクエストを送信するペースが速すぎます。ペースを落としてください。",
+      "suggestion": "少しお待ちいただいてから再度お試しください。"
+    },
+    "serviceUnavailable": {
+      "title": "サービス利用不可",
+      "description": "メンテナンスのため一時的にサービスを停止しています。",
+      "suggestion": "まもなくオンラインに戻ります。お待ちいただきありがとうございます！"
+    },
+    "badGateway": {
+      "title": "不正なゲートウェイ",
+      "description": "サーバー接続に問題があります。",
+      "suggestion": "これは通常一時的なものです。少し後に再度お試しください。"
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "言語を変更"
+  }
+}

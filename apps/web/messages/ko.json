@@ -1,0 +1,348 @@
+{
+  "navigation": {
+    "learn": "학습",
+    "build": "개발", 
+    "ecosystem": "생태계",
+    "media": "미디어",
+    "community": "커뮤니티",
+    "documentation": "문서",
+    "engine": "엔진",
+    "channel": "채널",
+    "os": "OS",
+    "foundation": "재단",
+    "labs": "랩",
+    "grants": "그랜트",
+    "incubation": "인큐베이션",
+    "proposal": "제안",
+    "ambassador": "앰버서더",
+    "moderators": "모더레이터",
+    "events": "이벤트",
+    "contact": "연락처",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기"
+  },
+  "home": {
+    "hero": {
+      "title1": "우리가 Dubhe를 만듭니다.",
+      "title2": "당신이 그것을 움직입니다.",
+      "subtitle": "검증 가능한 탈중앙화 애플리케이션(DApps)과 완전한 온체인 애플리케이션을 구축하기 위한 포괄적인 툴킷을 제공하는 오픈소스 Move 애플리케이션 스택입니다.",
+      "cta1": "Dubhe Stack 얻기",
+      "cta2": "라이선스에 대해 알아보기"
+    },
+    "features": {
+      "title": "기능",
+      "mainTitle": "무한한 가능성을 가진 Move 스택",
+      "moveCompatible": {
+        "title": "100% Move 호환",
+        "description": "기존 Move 생태계의 이점을 활용하세요."
+      },
+      "zeroGas": {
+        "title": "제로 가스 수수료",
+        "description": "프로젝트가 이 비용을 부담할 수 있어 유연한 확장과 맞춤화를 지원합니다."
+      },
+      "realTime": {
+        "title": "실시간 동기화"
+      },
+      "unlimited": {
+        "title": "무제한",
+        "subtitle": "초당 트랜잭션 수",
+        "description": "병렬로 실행되는 Dubhe 채널 수에 따라 달라집니다."
+      },
+      "syncFinality": {
+        "title": "1초 동기화 상태 확정성"
+      }
+    },
+    "community": {
+      "title": "커뮤니티",
+      "mainTitle": "Dubhe를 지지하는 글로벌 커뮤니티에 참여하세요",
+      "description": "전 세계 개발자들의 번성하는 커뮤니티와 함께, Dubhe는 Move 블록체인 기술의 미래를 이끄는 열정적인 지지자들의 지원을 받습니다. 차세대 탈중앙화 솔루션을 만들어가는 우리와 함께 연결하고, 협력하며, 성장하세요.",
+      "cta": "오늘 Dubhe 커뮤니티에 참여하세요.",
+      "events": {
+        "conference": {
+          "title": "개발자 컨퍼런스",
+          "subtitle": "함께 미래를 구축하기"
+        },
+        "workshop": {
+          "title": "개발자 워크샵",
+          "subtitle": "실습 학습 세션"
+        },
+        "hackathon": {
+          "title": "글로벌 해커톤",
+          "subtitle": "혁신과 경쟁"
+        },
+        "meetup": {
+          "title": "커뮤니티 밋업",
+          "subtitle": "로컬 및 온라인 이벤트"
+        },
+        "techtalk": {
+          "title": "기술 토크 시리즈",
+          "subtitle": "지식 공유"
+        },
+        "summit": {
+          "title": "커뮤니티 서밋",
+          "subtitle": "연례 모임"
+        }
+      },
+      "stats": {
+        "members": {
+          "value": "10만+",
+          "label": "커뮤니티 멤버",
+          "description": "전 세계 활발한 개발자와 애호가들"
+        },
+        "events": {
+          "value": "50+",
+          "label": "글로벌 이벤트",
+          "description": "연간 컨퍼런스, 밋업, 워크샵"
+        },
+        "countries": {
+          "value": "20+",
+          "label": "국가",
+          "description": "대륙 전반에 걸친 Dubhe 커뮤니티 존재"
+        }
+      }
+    }
+  },
+  "foundation": {
+    "hero": {
+      "title": "Dubhe 생태계 성장 지원",
+      "subtitle": "개발자 지원, 생태계 이니셔티브, 탈중앙화 노력을 통해 Dubhe 재단은 Dubhe 프로토콜 생태계의 성장과 채택을 촉진합니다.",
+      "cta": "팀 참여"
+    },
+    "mission": {
+      "title": "우리의 사명",
+      "subtitle": "모두를 위한 Move 혁신 가속화",
+      "developerSupport": {
+        "title": "개발자 지원",
+        "description": "Dubhe 생태계에서 구축하는 개발자들에게 그랜트, 리소스, 멘토십을 제공합니다. 해커톤부터 장기 프로젝트 펀딩까지.",
+        "features": [
+          "혁신적인 프로젝트를 위한 그랜트 프로그램",
+          "기술 멘토십과 가이던스",
+          "교육 워크샵과 해커톤"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "생태계 성장",
+        "description": "전략적 파트너십과 이니셔티브를 통해 Dubhe 생태계를 확장합니다. 다양한 Move 체인과 프로토콜 간의 다리 역할.",
+        "features": [
+          "크로스체인 협력 이니셔티브",
+          "Move 체인과의 전략적 파트너십",
+          "인프라 개발 지원"
+        ]
+      },
+      "decentralization": {
+        "title": "탈중앙화",
+        "description": "거버넌스, 커뮤니티 참여, 분산 의사결정 프로세스를 통해 Dubhe 생태계가 진정으로 탈중앙화되도록 보장합니다.",
+        "features": [
+          "거버넌스 프레임워크 개발",
+          "커뮤니티 주도 의사결정",
+          "오픈소스 프로토콜 개발"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Dubhe. All rights reserved.",
+    "links": {
+      "about": "소개",
+      "contact": "연락처",
+      "terms": "서비스 약관",
+      "privacy": "개인정보 보호정책"
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "우리의 팀",
+      "title": "Dubhe 재단 팀을 만나보세요",
+      "description": "우리의 다양하고 글로벌한 엔지니어, 연구원, 커뮤니티 빌더 팀은 Move 생태계를 발전시키고 전 세계 개발자들에게 힘을 실어주는 데 전념하고 있습니다.",
+      "stats": {
+        "members": "팀 멤버",
+        "countries": "국가",
+        "timezones": "시간대"
+      }
+    },
+    "leadership": {
+      "title": "리더십 팀",
+      "description": "Move 개발을 혁신하려는 Dubhe의 사명을 이끄는 비전가와 전문가들을 만나보세요",
+      "expertise": "전문 분야"
+    },
+    "join": {
+      "title": "우리 팀에 참여하세요",
+      "description": "블록체인 기술 발전에 열정을 가진 재능 있는 인재들을 항상 찾고 있습니다",
+      "openPositions": "채용 중인 포지션",
+      "cta": "팀 참여",
+      "ctaDescription": "가능한 포지션과 기회에 대해 문의하세요",
+      "departments": {
+        "engineering": {
+          "title": "엔지니어링",
+          "description": "Move 개발 도구와 인프라의 미래를 구축하기"
+        },
+        "research": {
+          "title": "연구",
+          "description": "최첨단 블록체인 기술과 프로토콜 탐구하기"
+        },
+        "community": {
+          "title": "커뮤니티",
+          "description": "글로벌 개발자 커뮤니티 성장시키고 지원하기"
+        },
+        "partnerships": {
+          "title": "파트너십",
+          "description": "블록체인 생태계 전반에서 전략적 관계 구축하기"
+        }
+      }
+    }
+  },
+  "grants": {
+    "hero": {
+      "badge": "Dubhe 재단 그랜트",
+      "title": "혁신에 자금을 지원하세요",
+      "description": "Dubhe 재단으로부터 상환 불필요한 그랜트를 받아 오픈소스 Move 애플리케이션, 인프라, 도구를 구축하세요. 모든 프로젝트는 완전히 기능해야 하며 모든 마일스톤을 완료해야 합니다.",
+      "stats": {
+        "totalFunded": "총 지원 금액",
+        "projectsFunded": "지원된 프로젝트",
+        "successRate": "성공률",
+        "comingSoon": "곧 출시 예정"
+      },
+      "cta1": "그랜트 신청",
+      "cta2": "가이드라인 보기"
+    },
+    "categories": {
+      "title": "트랙을 선택하세요",
+      "badge": "그랜트 카테고리",
+      "infrastructure": {
+        "title": "인프라 그랜트",
+        "amount": "최대 $100K",
+        "description": "핵심 인프라, 개발자 도구, 생태계 유틸리티 구축"
+      },
+      "dapp": {
+        "title": "DApp 개발",
+        "amount": "최대 $75K",
+        "description": "Dubhe 생태계에서 혁신적인 탈중앙화 애플리케이션 만들기"
+      },
+      "research": {
+        "title": "연구 그랜트",
+        "amount": "최대 $50K",
+        "description": "학술 연구, 프로토콜 개선, 이론적 기여"
+      },
+      "community": {
+        "title": "커뮤니티 프로젝트",
+        "amount": "최대 $25K",
+        "description": "교육, 문서화, 커뮤니티 도구, 아웃리치 프로그램"
+      }
+    },
+    "process": {
+      "title": "신청 절차",
+      "description": "프로젝트 자금 지원을 위한 간단한 5단계 과정",
+      "steps": {
+        "proposal": {
+          "title": "제안서 제출",
+          "description": "상세한 마일스톤과 오픈소스 약속을 포함한 포괄적인 제안서 제출",
+          "duration": "1주"
+        },
+        "review": {
+          "title": "재단 검토",
+          "description": "Dubhe 재단 기술 위원회가 실현 가능성과 생태계 영향을 평가",
+          "duration": "2-3주"
+        },
+        "interview": {
+          "title": "팀 인터뷰",
+          "description": "프로젝트 로드맵을 발표하고 기술적 역량을 입증",
+          "duration": "1주"
+        },
+        "approval": {
+          "title": "그랜트 승인",
+          "description": "재단 이사회가 마일스톤 요구사항을 포함한 상환 불필요 그랜트 승인",
+          "duration": "1주"
+        },
+        "delivery": {
+          "title": "마일스톤 전달",
+          "description": "기능적 결과물을 포함한 모든 마일스톤을 완료하고 전체 그랜트 수령",
+          "duration": "3-12개월"
+        }
+      },
+      "requirements": {
+        "title": "신청 요구사항",
+        "items": [
+          "완전한 오픈소스 약속 (MIT/Apache 2.0 라이선스 필요)",
+          "마일스톤 기반의 상세한 개발 계획",
+          "입증된 개발 경력을 가진 경험 있는 팀",
+          "완전히 기능하는 결과물 - 프로토타입이나 데모 불가",
+          "포괄적인 문서화 및 배포 가이드",
+          "Dubhe 생태계 성장 목표와의 강한 일치성"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "성공 사례",
+      "description": "그랜트를 받고 상당한 영향을 미친 프로젝트들"
+    },
+    "terms": {
+      "title": "그랜트 약관 및 조건",
+      "nonRepayable": {
+        "title": "상환 불필요 그랜트",
+        "description": "모든 그랜트는 Dubhe 재단의 무조건적 기부입니다. 마일스톤 성공적 완료 시 상환이 필요하지 않습니다."
+      },
+      "openSource": {
+        "title": "오픈소스 필수",
+        "description": "모든 지원 프로젝트는 MIT 또는 Apache 2.0 라이선스 하에 공개되어야 합니다. 완전한 소스 코드가 공개적으로 이용 가능해야 합니다."
+      },
+      "completion": {
+        "title": "전체 마일스톤 완료",
+        "description": "프로젝트는 완전히 기능하는 프로덕션 준비 소프트웨어를 제공해야 합니다. 전체 그랜트를 받기 위해서는 모든 마일스톤이 완료되어야 합니다."
+      }
+    },
+    "finalCta": {
+      "title": "오픈소스를 구축할 준비가 되셨나요?",
+      "description": "재단 그랜트를 신청하고 오픈소스 Dubhe 생태계에 기여하세요",
+      "cta1": "제안서 제출",
+      "cta2": "재단 연락처"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "페이지를 찾을 수 없습니다",
+      "description": "찾고 계신 페이지가 존재하지 않거나 이동되었습니다.",
+      "suggestion": "걱정하지 마세요, 다시 올바른 길로 안내해드리겠습니다.",
+      "suggestions": {
+        "title": "인기 페이지"
+      },
+      "actions": {
+        "home": "홈페이지로 이동",
+        "back": "뒤로 가기",
+        "report": "깨진 링크 신고"
+      }
+    },
+    "serverError": {
+      "title": "서버 오류",
+      "description": "서버에서 문제가 발생했습니다.",
+      "suggestion": "저희 팀이 알림을 받았으며 수정 작업을 진행하고 있습니다."
+    },
+    "unauthorized": {
+      "title": "인증이 필요합니다",
+      "description": "이 페이지에 접근하려면 로그인이 필요합니다.",
+      "suggestion": "자격 증명으로 로그인해 주세요."
+    },
+    "forbidden": {
+      "title": "접근 금지",
+      "description": "이 리소스에 접근할 권한이 없습니다.",
+      "suggestion": "자격 증명을 확인하거나 관리자에게 문의해 주세요."
+    },
+    "rateLimited": {
+      "title": "요청이 너무 많습니다",
+      "description": "요청을 너무 빠르게 보내고 있습니다. 속도를 늦춰주세요.",
+      "suggestion": "잠시 기다린 후 다시 시도해 주세요."
+    },
+    "serviceUnavailable": {
+      "title": "서비스 이용 불가",
+      "description": "유지보수를 위해 일시적으로 서비스가 중단되었습니다.",
+      "suggestion": "곧 다시 온라인 상태가 됩니다. 기다려 주셔서 감사합니다!"
+    },
+    "badGateway": {
+      "title": "잘못된 게이트웨이",
+      "description": "서버 연결에 문제가 있습니다.",
+      "suggestion": "이것은 일반적으로 일시적인 문제입니다. 잠시 후 다시 시도해 주세요."
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "언어 변경"
+  }
+}

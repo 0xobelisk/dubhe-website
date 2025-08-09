@@ -1,0 +1,348 @@
+{
+  "navigation": {
+    "learn": "Öğren",
+    "build": "Geliştir", 
+    "ecosystem": "Ekosistem",
+    "media": "Medya",
+    "community": "Topluluk",
+    "documentation": "Dokümantasyon",
+    "engine": "Motor",
+    "channel": "Kanal",
+    "os": "İS",
+    "foundation": "Vakıf",
+    "labs": "Laboratuvarlar",
+    "grants": "Bağışlar",
+    "incubation": "Kuluçka",
+    "proposal": "Teklif",
+    "ambassador": "Büyükelçi",
+    "moderators": "Moderatörler",
+    "events": "Etkinlikler",
+    "contact": "İletişim",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat"
+  },
+  "home": {
+    "hero": {
+      "title1": "Biz Dubhe'yi yaparız.",
+      "title2": "Siz onu hareket ettirirsiniz.",
+      "subtitle": "Doğrulanabilir merkezi olmayan uygulamalar (DApps) ve tamamen zincir üstü uygulamalar oluşturmak için kapsamlı bir araç seti sağlayan açık kaynaklı Move uygulama yığını.",
+      "cta1": "Dubhe Stack'i Alın",
+      "cta2": "Lisanslama hakkında bilgi edinin"
+    },
+    "features": {
+      "title": "Özellikler",
+      "mainTitle": "Sınırsız Potansiyeli olan Move Stack",
+      "moveCompatible": {
+        "title": "%100 Move-Uyumlu",
+        "description": "Mevcut Move ekosistemini kendi avantajınız için kullanın."
+      },
+      "zeroGas": {
+        "title": "Sıfır gas ücretleri",
+        "description": "Projenin bu gideri karşılamasına olanak tanır, esnek genişleme ve özelleştirmeyi destekler."
+      },
+      "realTime": {
+        "title": "Gerçek zamanlı senkronizasyon"
+      },
+      "unlimited": {
+        "title": "Sınırsız",
+        "subtitle": "Saniyede işlem",
+        "description": "Paralel çalışan dubhe kanallarının sayısına bağlıdır."
+      },
+      "syncFinality": {
+        "title": "1s Sync Durum kesinliği"
+      }
+    },
+    "community": {
+      "title": "Topluluk",
+      "mainTitle": "Dubhe'nin ardındaki küresel topluluğa katılın",
+      "description": "Dünya çapında gelişen geliştirici topluluğu ile Dubhe, Move blockchain teknolojisinin geleceğini yönlendiren tutkulu destekçiler tarafından desteklenmektedir. Merkezi olmayan çözümlerin yeni nesline şekil verirken bizimle bağlantı kurun, işbirliği yapın ve büyüyün.",
+      "cta": "Bugün Dubhe topluluğuna katılın.",
+      "events": {
+        "conference": {
+          "title": "Geliştirici Konferansı",
+          "subtitle": "Geleceği Birlikte İnşa Etmek"
+        },
+        "workshop": {
+          "title": "Geliştirici Atölyesi",
+          "subtitle": "Uygulamalı Öğrenme Oturumları"
+        },
+        "hackathon": {
+          "title": "Küresel Hackathon",
+          "subtitle": "İnovasyon ve Rekabet"
+        },
+        "meetup": {
+          "title": "Topluluk Buluşması",
+          "subtitle": "Yerel ve Çevrimiçi Etkinlikler"
+        },
+        "techtalk": {
+          "title": "Teknoloji Konuşmaları Serisi",
+          "subtitle": "Bilgi Paylaşımı"
+        },
+        "summit": {
+          "title": "Topluluk Zirvesi",
+          "subtitle": "Yıllık Toplantı"
+        }
+      },
+      "stats": {
+        "members": {
+          "value": "100B+",
+          "label": "Topluluk Üyeleri",
+          "description": "Dünya çapında aktif geliştiriciler ve meraklıları"
+        },
+        "events": {
+          "value": "50+",
+          "label": "Küresel Etkinlik",
+          "description": "Yıllık konferans, buluşma ve atölyeler"
+        },
+        "countries": {
+          "value": "20+",
+          "label": "Ülke",
+          "description": "Kıtalarda Dubhe topluluk varlığı"
+        }
+      }
+    }
+  },
+  "foundation": {
+    "hero": {
+      "title": "Dubhe Ekosisteminin büyümesini destekleme",
+      "subtitle": "Geliştirici desteği, ekosistem girişimleri ve merkezi olmayan çabalar aracılığıyla, Dubhe Vakfı Dubhe protokol ekosisteminin büyümesini ve benimsenmesini teşvik etmeye yardımcı olur.",
+      "cta": "Ekibe katıl"
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "subtitle": "Herkes için Move İnovasyonunu Hızlandırmak",
+      "developerSupport": {
+        "title": "Geliştirici Desteği",
+        "description": "Dubhe ekosisteminde geliştiren geliştiricilere bağış, kaynak ve mentorluk sağlama. Hackathonlardan uzun vadeli proje fonlamasına kadar.",
+        "features": [
+          "Yenilikçi projeler için bağış programları",
+          "Teknik mentorluk ve rehberlik",
+          "Eğitici workshoplar ve hackathonlar"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Ekosistem Büyümesi",
+        "description": "Dubhe ekosistemini genişletmek için stratejik ortaklıklar ve girişimler. Farklı Move zincir ve protokoller arasında köprü inşa etmek.",
+        "features": [
+          "Zincirler arası işbirliği girişimleri",
+          "Move zincirleri ile stratejik ortaklıklar",
+          "Altyapı geliştirme desteği"
+        ]
+      },
+      "decentralization": {
+        "title": "Merkezi Olmama",
+        "description": "Yönetişim, topluluk katılımı ve dağıtık karar verme süreçleri aracılığıyla Dubhe Ekosisteminin gerçekten merkezi olmayan kalmasını sağlamak.",
+        "features": [
+          "Yönetişim çerçevesi geliştirme",
+          "Topluluk odaklı karar verme",
+          "Açık kaynak protokol geliştirme"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Dubhe. Tüm hakları saklıdır.",
+    "links": {
+      "about": "Hakkında",
+      "contact": "İletişim",
+      "terms": "Hizmet Şartları",
+      "privacy": "Gizlilik Politikası"
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "Ekibimiz",
+      "title": "Dubhe Vakfı Ekibiyle Tanışın",
+      "description": "Mühendisler, araştırmacılar ve topluluk inşa edicilerinden oluşan çeşitli, küresel ekibimiz Move ekosistemini geliştirmeye ve dünya çapındaki geliştiricileri güçlendirmeye adanmıştır.",
+      "stats": {
+        "members": "Ekip Üyeleri",
+        "countries": "Ülkeler",
+        "timezones": "Zaman Dilimleri"
+      }
+    },
+    "leadership": {
+      "title": "Liderlik Ekibi",
+      "description": "Move geliştirmeyi devrimleştirme misyonunda Dubhe'yi yönlendiren vizyonerler ve uzmanlarla tanışın",
+      "expertise": "Uzmanlık"
+    },
+    "join": {
+      "title": "Ekibimize Katılın",
+      "description": "Blockchain teknolojisini ilerletme konusunda tutkulu yetenekli bireyler arıyoruz",
+      "openPositions": "Açık Pozisyonlar",
+      "cta": "Ekibe Katıl",
+      "ctaDescription": "Mevcut pozisyonlar ve fırsatlar hakkında bizimle iletişime geçin",
+      "departments": {
+        "engineering": {
+          "title": "Mühendislik",
+          "description": "Move geliştirme araçları ve altyapısının geleceğini inşa etmek"
+        },
+        "research": {
+          "title": "Araştırma",
+          "description": "Çığır açan blockchain teknolojileri ve protokolleri keşfetmek"
+        },
+        "community": {
+          "title": "Topluluk",
+          "description": "Küresel geliştirici topluluğumuzu büyütmek ve desteklemek"
+        },
+        "partnerships": {
+          "title": "Ortaklıklar",
+          "description": "Blockchain ekosisteminde stratejik ilişkiler kurmak"
+        }
+      }
+    }
+  },
+  "grants": {
+    "hero": {
+      "badge": "Dubhe Vakfı Bağışları",
+      "title": "İnovasyonunuzu Fonlayın",
+      "description": "Açık kaynak Move uygulamaları, altyapı ve araçlar geliştirmek için Dubhe Vakfı'ndan geri ödemesiz bağışlar alın. Tüm projeler tamamen işlevsel olmalı ve tüm kilometre taşlarını tamamlamalıdır.",
+      "stats": {
+        "totalFunded": "Toplam Fonlanan",
+        "projectsFunded": "Fonlanan Projeler",
+        "successRate": "Başarı Oranı",
+        "comingSoon": "Yakında"
+      },
+      "cta1": "Bağış Başvurusu Yap",
+      "cta2": "Yönergeleri Görüntüle"
+    },
+    "categories": {
+      "title": "Yolunuzu Seçin",
+      "badge": "Bağış Kategorileri",
+      "infrastructure": {
+        "title": "Altyapı Bağışları",
+        "amount": "100K$'a kadar",
+        "description": "Temel altyapı, geliştirici araçları ve ekosistem yardımcı programları oluşturun"
+      },
+      "dapp": {
+        "title": "DApp Geliştirme",
+        "amount": "75K$'a kadar",
+        "description": "Dubhe ekosisteminde yenilikçi merkezi olmayan uygulamalar oluşturun"
+      },
+      "research": {
+        "title": "Araştırma Bağışları",
+        "amount": "50K$'a kadar",
+        "description": "Akademik araştırma, protokol iyileştirmeleri ve teorik katkılar"
+      },
+      "community": {
+        "title": "Topluluk Projeleri",
+        "amount": "25K$'a kadar",
+        "description": "Eğitim, dokümantasyon, topluluk araçları ve tanıtım programları"
+      }
+    },
+    "process": {
+      "title": "Başvuru Süreci",
+      "description": "Projenizi fonlamak için basit 5 adımlı süreç",
+      "steps": {
+        "proposal": {
+          "title": "Teklif Sunumu",
+          "description": "Detaylı kilometre taşları ve açık kaynak taahhüdü ile kapsamlı teklif sunun",
+          "duration": "1 hafta"
+        },
+        "review": {
+          "title": "Vakıf İncelemesi",
+          "description": "Dubhe Vakfı teknik komitesi fizibilite ve ekosistem etkisini değerlendirir",
+          "duration": "2-3 hafta"
+        },
+        "interview": {
+          "title": "Ekip Görüşmesi",
+          "description": "Proje yol haritanızı sunun ve teknik yeteneklerinizi gösterin",
+          "duration": "1 hafta"
+        },
+        "approval": {
+          "title": "Bağış Onayı",
+          "description": "Vakıf yönetim kurulu kilometre taşı gereksinimleri ile geri ödemesiz bağışı onaylar",
+          "duration": "1 hafta"
+        },
+        "delivery": {
+          "title": "Kilometre Taşı Teslimi",
+          "description": "Tüm kilometre taşlarını işlevsel çıktılarla tamamlayın ve tam bağış alın",
+          "duration": "3-12 ay"
+        }
+      },
+      "requirements": {
+        "title": "Başvuru Gereksinimleri",
+        "items": [
+          "Tam açık kaynak taahhüdü (MIT/Apache 2.0 lisansı gerekli)",
+          "Detaylı kilometre taşı tabanlı geliştirme planı",
+          "Kanıtlanmış geliştirme geçmişi olan deneyimli ekip",
+          "Tamamen işlevsel çıktılar - prototip veya demo yok",
+          "Kapsamlı dokümantasyon ve dağıtım kılavuzları",
+          "Dubhe ekosistem büyüme hedefleri ile güçlü uyum"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "Başarı Hikayeleri",
+      "description": "Bağış alan ve önemli etki yaratan projeler"
+    },
+    "terms": {
+      "title": "Bağış Şartları ve Koşulları",
+      "nonRepayable": {
+        "title": "Geri Ödemesiz Bağış",
+        "description": "Tüm bağışlar Dubhe Vakfı'ndan koşulsuz bağışlardır. Başarılı kilometre taşı tamamlandığında geri ödeme gerekmez."
+      },
+      "openSource": {
+        "title": "Açık Kaynak Gerekli",
+        "description": "Tüm fonlanan projeler MIT veya Apache 2.0 lisansı altında yayınlanmalıdır. Tam kaynak kodu herkese açık olmalıdır."
+      },
+      "completion": {
+        "title": "Tam Kilometre Taşı Tamamlama",
+        "description": "Projeler tamamen işlevsel, üretime hazır yazılım teslim etmelidir. Tam bağışı almak için tüm kilometre taşları tamamlanmalıdır."
+      }
+    },
+    "finalCta": {
+      "title": "Açık Kaynak İnşa Etmeye Hazır mısınız?",
+      "description": "Vakıf bağışı için başvurun ve açık kaynak Dubhe ekosistemine katkıda bulunun",
+      "cta1": "Teklif Gönder",
+      "cta2": "Vakıf İletişim"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Sayfa Bulunamadı",
+      "description": "Aradığınız sayfa mevcut değil veya taşınmış.",
+      "suggestion": "Endişelenmeyin, sizi doğru yola geri döndürelim.",
+      "suggestions": {
+        "title": "Popüler Sayfalar"
+      },
+      "actions": {
+        "home": "Ana Sayfaya Git",
+        "back": "Geri Dön",
+        "report": "Bozuk linki bildir"
+      }
+    },
+    "serverError": {
+      "title": "Sunucu Hatası",
+      "description": "Bizim tarafımızda bir şeyler ters gitti.",
+      "suggestion": "Ekibimiz bilgilendirildi ve düzeltme üzerinde çalışıyor."
+    },
+    "unauthorized": {
+      "title": "Kimlik Doğrulama Gerekli",
+      "description": "Bu sayfaya erişmek için oturum açmanız gerekiyor.",
+      "suggestion": "Lütfen kimlik bilgilerinizle giriş yapın."
+    },
+    "forbidden": {
+      "title": "Erişim Yasak",
+      "description": "Bu kaynağa erişim izniniz yok.",
+      "suggestion": "Lütfen kimlik bilgilerinizi kontrol edin veya yöneticiyle iletişime geçin."
+    },
+    "rateLimited": {
+      "title": "Çok Fazla İstek",
+      "description": "İstekleri çok hızlı gönderiyorsunuz. Lütfen yavaşlayın.",
+      "suggestion": "Tekrar denemeden önce birkaç dakika bekleyin."
+    },
+    "serviceUnavailable": {
+      "title": "Hizmet Kullanılamıyor",
+      "description": "Bakım için geçici olarak kapalıyız.",
+      "suggestion": "Yakında tekrar çevrimiçi olacağız. Sabrınız için teşekkürler!"
+    },
+    "badGateway": {
+      "title": "Kötü Ağ Geçidi",
+      "description": "Sunucu bağlantımızda bir sorun var.",
+      "suggestion": "Bu genellikle geçicidir. Lütfen birkaç dakika sonra tekrar deneyin."
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Dili değiştir"
+  }
+}

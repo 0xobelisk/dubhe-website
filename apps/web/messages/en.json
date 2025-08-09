@@ -1,0 +1,348 @@
+{
+  "navigation": {
+    "learn": "Learn",
+    "build": "Build", 
+    "ecosystem": "Ecosystem",
+    "media": "Media",
+    "community": "Community",
+    "documentation": "Documentation",
+    "engine": "Engine",
+    "channel": "Channel",
+    "os": "OS",
+    "foundation": "Foundation",
+    "labs": "Labs",
+    "grants": "Grants",
+    "incubation": "Incubation",
+    "proposal": "Proposal",
+    "ambassador": "Ambassador",
+    "moderators": "Moderators",
+    "events": "Events",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "home": {
+    "hero": {
+      "title1": "We make the Dubhe.",
+      "title2": "You make it Move.",
+      "subtitle": "A open-source Move application stack that provides a comprehensive toolkit for building verifiable decentralized applications (DApps) and fully on-chain applications.",
+      "cta1": "Get Dubhe Stack",
+      "cta2": "Learn about licensing"
+    },
+    "features": {
+      "title": "Features",
+      "mainTitle": "The Move Stack with Limitless Potential",
+      "moveCompatible": {
+        "title": "100% Move-Compatible",
+        "description": "Use the existing Move ecosystem to your advantage."
+      },
+      "zeroGas": {
+        "title": "zero gas fees",
+        "description": "Allows project cover this expense, supporting flexible expansion and customisation."
+      },
+      "realTime": {
+        "title": "Real-time synchronization"
+      },
+      "unlimited": {
+        "title": "Unlimited",
+        "subtitle": "Transactions per second",
+        "description": "Depends on the number of dubhe channels running in parallel."
+      },
+      "syncFinality": {
+        "title": "1s Sync State finality"
+      }
+    },
+    "community": {
+      "title": "Community",
+      "mainTitle": "Join the global community behind Dubhe",
+      "description": "With a thriving community of developers worldwide, Dubhe is backed by passionate supporters driving the future of Move blockchain technology. Connect, collaborate, and grow with us as we shape the next generation of decentralized solutions.",
+      "cta": "Join the Dubhe community today.",
+      "events": {
+        "conference": {
+          "title": "Developer Conference",
+          "subtitle": "Building the Future Together"
+        },
+        "workshop": {
+          "title": "Developer Workshop", 
+          "subtitle": "Hands-on Learning Sessions"
+        },
+        "hackathon": {
+          "title": "Global Hackathon",
+          "subtitle": "Innovation & Competition"
+        },
+        "meetup": {
+          "title": "Community Meetup",
+          "subtitle": "Local & Online Events"
+        },
+        "techtalk": {
+          "title": "Tech Talk Series",
+          "subtitle": "Knowledge Sharing"
+        },
+        "summit": {
+          "title": "Community Summit",
+          "subtitle": "Annual Gathering"
+        }
+      },
+      "stats": {
+        "members": {
+          "value": "100K+",
+          "label": "Community Members",
+          "description": "Active developers and enthusiasts worldwide"
+        },
+        "events": {
+          "value": "50+",
+          "label": "Global Events", 
+          "description": "Conferences, meetups, and workshops annually"
+        },
+        "countries": {
+          "value": "20+",
+          "label": "Countries",
+          "description": "Dubhe community presence across continents"
+        }
+      }
+    }
+  },
+  "foundation": {
+    "hero": {
+      "title": "Supporting the growth of the Dubhe Ecosystem",
+      "subtitle": "Through developer support, ecosystem initiatives, and decentralization efforts, the Dubhe Foundation helps foster the growth and adoption of the Dubhe protocol's ecosystem.",
+      "cta": "Join the team"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "subtitle": "Accelerating Move Innovation for Everyone",
+      "developerSupport": {
+        "title": "Developer Support",
+        "description": "Providing grants, resources, and mentorship to developers building on the Dubhe ecosystem. From hackathons to long-term project funding.",
+        "features": [
+          "Grant programs for innovative projects",
+          "Technical mentorship and guidance", 
+          "Educational workshops and hackathons"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Ecosystem Growth",
+        "description": "Strategic partnerships and initiatives to expand the Dubhe ecosystem. Building bridges between different Move chains and protocols.",
+        "features": [
+          "Cross-chain collaboration initiatives",
+          "Strategic partnerships with Move chains",
+          "Infrastructure development support"
+        ]
+      },
+      "decentralization": {
+        "title": "Decentralization",
+        "description": "Ensuring the Dubhe Ecosystem remains truly decentralized through governance, community involvement, and distributed decision-making processes.",
+        "features": [
+          "Governance framework development",
+          "Community-driven decision making",
+          "Open-source protocol development"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Dubhe. All rights reserved.",
+    "links": {
+      "about": "About",
+      "contact": "Contact",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "Our Team",
+      "title": "Meet the Dubhe Foundation Team",
+      "description": "Our diverse, global team of engineers, researchers, and community builders is dedicated to advancing the Move ecosystem and empowering developers worldwide.",
+      "stats": {
+        "members": "Team Members",
+        "countries": "Countries",
+        "timezones": "Time Zones"
+      }
+    },
+    "leadership": {
+      "title": "Leadership Team",
+      "description": "Meet the visionaries and experts leading Dubhe's mission to revolutionize Move development",
+      "expertise": "Expertise"
+    },
+    "join": {
+      "title": "Join Our Team",
+      "description": "We're always looking for talented individuals passionate about advancing blockchain technology",
+      "openPositions": "Open Positions",
+      "cta": "Join the Team",
+      "ctaDescription": "Contact us about available positions and opportunities",
+      "departments": {
+        "engineering": {
+          "title": "Engineering",
+          "description": "Building the future of Move development tools and infrastructure"
+        },
+        "research": {
+          "title": "Research",
+          "description": "Exploring cutting-edge blockchain technologies and protocols"
+        },
+        "community": {
+          "title": "Community",
+          "description": "Growing and supporting our global developer community"
+        },
+        "partnerships": {
+          "title": "Partnerships",
+          "description": "Building strategic relationships across the blockchain ecosystem"
+        }
+      }
+    }
+  },
+  "grants": {
+    "hero": {
+      "badge": "Dubhe Foundation Grants",
+      "title": "Fund Your Innovation",
+      "description": "Receive non-repayable grants from Dubhe Foundation to build open-source Move applications, infrastructure, and tools. All projects must be fully functional and complete all milestones.",
+      "stats": {
+        "totalFunded": "Total Funded",
+        "projectsFunded": "Projects Funded",
+        "successRate": "Success Rate",
+        "comingSoon": "Coming Soon"
+      },
+      "cta1": "Apply for Grant",
+      "cta2": "View Guidelines"
+    },
+    "categories": {
+      "title": "Choose Your Track",
+      "badge": "Grant Categories",
+      "infrastructure": {
+        "title": "Infrastructure Grants",
+        "amount": "Up to $100K",
+        "description": "Build core infrastructure, developer tools, and ecosystem utilities"
+      },
+      "dapp": {
+        "title": "DApp Development",
+        "amount": "Up to $75K",
+        "description": "Create innovative decentralized applications on Dubhe ecosystem"
+      },
+      "research": {
+        "title": "Research Grants",
+        "amount": "Up to $50K",
+        "description": "Academic research, protocol improvements, and theoretical contributions"
+      },
+      "community": {
+        "title": "Community Projects",
+        "amount": "Up to $25K",
+        "description": "Education, documentation, community tools, and outreach programs"
+      }
+    },
+    "process": {
+      "title": "Application Process",
+      "description": "Simple 5-step process to get your project funded",
+      "steps": {
+        "proposal": {
+          "title": "Proposal Submission",
+          "description": "Submit comprehensive proposal with detailed milestones and open-source commitment",
+          "duration": "1 week"
+        },
+        "review": {
+          "title": "Foundation Review",
+          "description": "Dubhe Foundation technical committee evaluates feasibility and ecosystem impact",
+          "duration": "2-3 weeks"
+        },
+        "interview": {
+          "title": "Team Interview",
+          "description": "Present your project roadmap and demonstrate technical capabilities",
+          "duration": "1 week"
+        },
+        "approval": {
+          "title": "Grant Approval",
+          "description": "Foundation board approves non-repayable grant with milestone requirements",
+          "duration": "1 week"
+        },
+        "delivery": {
+          "title": "Milestone Delivery",
+          "description": "Complete all milestones with functional deliverables and receive full grant",
+          "duration": "3-12 months"
+        }
+      },
+      "requirements": {
+        "title": "Application Requirements",
+        "items": [
+          "Complete open-source commitment (MIT/Apache 2.0 license required)",
+          "Detailed milestone-based development plan",
+          "Experienced team with proven development track record",
+          "Fully functional deliverables - no prototypes or demos",
+          "Comprehensive documentation and deployment guides",
+          "Strong alignment with Dubhe ecosystem growth goals"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "description": "Projects that received grants and made significant impact"
+    },
+    "terms": {
+      "title": "Grant Terms & Conditions",
+      "nonRepayable": {
+        "title": "Non-Repayable Grant",
+        "description": "All grants are unconditional donations from Dubhe Foundation. No repayment required upon successful milestone completion."
+      },
+      "openSource": {
+        "title": "Open Source Required",
+        "description": "All funded projects must be released under MIT or Apache 2.0 license. Complete source code must be publicly available."
+      },
+      "completion": {
+        "title": "Full Milestone Completion",
+        "description": "Projects must deliver fully functional, production-ready software. All milestones must be completed to receive the full grant."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to Build Open Source?",
+      "description": "Apply for a Foundation grant and contribute to the open-source Dubhe ecosystem",
+      "cta1": "Submit Proposal",
+      "cta2": "Foundation Contact"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page Not Found",
+      "description": "The page you're looking for doesn't exist or has been moved.",
+      "suggestion": "Don't worry, let's get you back on track.",
+      "suggestions": {
+        "title": "Popular Pages"
+      },
+      "actions": {
+        "home": "Go to Homepage",
+        "back": "Go Back",
+        "report": "Report a broken link"
+      }
+    },
+    "serverError": {
+      "title": "Server Error",
+      "description": "Something went wrong on our end.",
+      "suggestion": "Our team has been notified and is working on a fix."
+    },
+    "unauthorized": {
+      "title": "Authentication Required",
+      "description": "You need to sign in to access this page.",
+      "suggestion": "Please log in with your credentials."
+    },
+    "forbidden": {
+      "title": "Access Forbidden",
+      "description": "You don't have permission to access this resource.",
+      "suggestion": "Please check your credentials or contact an administrator."
+    },
+    "rateLimited": {
+      "title": "Too Many Requests",
+      "description": "You're making requests too quickly. Please slow down.",
+      "suggestion": "Wait a few moments before trying again."
+    },
+    "serviceUnavailable": {
+      "title": "Service Unavailable",
+      "description": "We're temporarily down for maintenance.",
+      "suggestion": "We'll be back online shortly. Thanks for your patience!"
+    },
+    "badGateway": {
+      "title": "Bad Gateway",
+      "description": "There's a problem with our server connection.",
+      "suggestion": "This is usually temporary. Please try again in a few moments."
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Change language"
+  }
+}

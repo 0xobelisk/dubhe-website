@@ -22,9 +22,13 @@ export default defineConfig({
       '**/node_modules/**',
       'e2e/**', // 排除 E2E 测试文件，这些由 Playwright 运行
       '**/*.e2e.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
+      'apps/web/tests/**/*.spec.ts', // 排除Playwright测试文件
+      'apps/web/tests/**/*.spec.tsx',
       '.next/**',
       'dist/**',
-      'build/**'
+      'build/**',
+      'coverage/**',
+      'next-intl/**' // 排除next-intl示例项目
     ],
     coverage: {
       provider: 'v8',

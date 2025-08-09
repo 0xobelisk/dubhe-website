@@ -1,4 +1,5 @@
-import { render, screen } from '@testing-library/react'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { render, screen } from '../../test-utils'
 import { describe, it, expect } from 'vitest'
 import FeaturesSection from './FeaturesSection'
 

@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <div className="py-16 bg-slate-900 border-t border-slate-800">
+    <footer role="contentinfo" className="py-16 bg-slate-900 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
           {/* Logo and Description */}
@@ -41,9 +41,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Build</h4>
             <div className="space-y-2">
-              <a href="/engine" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Engine</a>
-              <a href="/channel" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Channel</a>
-              <a href="/os" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">OS</a>
+              <Link href="/engine" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Engine</Link>
+              <Link href="/channel" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Channel</Link>
+              <Link href="/os" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">OS</Link>
             </div>
           </div>
 
@@ -51,11 +51,11 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Ecosystem</h4>
             <div className="space-y-2">
-              <a href="/foundation" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Foundation</a>
-              <a href="/labs" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Labs</a>
-              <a href="/grants" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Grants</a>
-              <a href="/incubation" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Incubation</a>
-              <a href="/proposal" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Proposal</a>
+              <Link href="/foundation" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Foundation</Link>
+              <Link href="/labs" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Labs</Link>
+              <Link href="/grants" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Grants</Link>
+              <Link href="/incubation" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Incubation</Link>
+              <Link href="/proposal" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Proposal</Link>
             </div>
           </div>
 
@@ -94,9 +94,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Community</h4>
             <div className="space-y-2">
-              <a href="/ambassador" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Ambassador</a>
-              <a href="/moderators" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Moderators</a>
-              <a href="/events" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Events</a>
+              <Link href="/ambassador" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Ambassador</Link>
+              <Link href="/moderators" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Moderators</Link>
+              <Link href="/events" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Events</Link>
               <Link href="/contact" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">Contact</Link>
             </div>
           </div>
@@ -133,6 +133,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }

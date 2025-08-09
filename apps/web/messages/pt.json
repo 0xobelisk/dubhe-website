@@ -1,0 +1,348 @@
+{
+  "navigation": {
+    "learn": "Aprender",
+    "build": "Construir", 
+    "ecosystem": "Ecossistema",
+    "media": "Mídia",
+    "community": "Comunidade",
+    "documentation": "Documentação",
+    "engine": "Motor",
+    "channel": "Canal",
+    "os": "SO",
+    "foundation": "Fundação",
+    "labs": "Laboratórios",
+    "grants": "Subsídios",
+    "incubation": "Incubação",
+    "proposal": "Proposta",
+    "ambassador": "Embaixador",
+    "moderators": "Moderadores",
+    "events": "Eventos",
+    "contact": "Contato",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "home": {
+    "hero": {
+      "title1": "Nós fazemos o Dubhe.",
+      "title2": "Você o faz mover.",
+      "subtitle": "Uma pilha de aplicações Move de código aberto que fornece um kit de ferramentas abrangente para construir aplicações descentralizadas verificáveis (DApps) e aplicações totalmente on-chain.",
+      "cta1": "Obter Dubhe Stack",
+      "cta2": "Saiba sobre licenciamento"
+    },
+    "features": {
+      "title": "Recursos",
+      "mainTitle": "A Pilha Move com Potencial Ilimitado",
+      "moveCompatible": {
+        "title": "100% Compatível com Move",
+        "description": "Use o ecossistema Move existente a seu favor."
+      },
+      "zeroGas": {
+        "title": "taxas de gás zero",
+        "description": "Permite que o projeto cubra essa despesa, apoiando expansão flexível e personalização."
+      },
+      "realTime": {
+        "title": "Sincronização em tempo real"
+      },
+      "unlimited": {
+        "title": "Ilimitado",
+        "subtitle": "Transações por segundo",
+        "description": "Depende do número de canais Dubhe executando em paralelo."
+      },
+      "syncFinality": {
+        "title": "Finalidade de estado de sincronização de 1s"
+      }
+    },
+    "community": {
+      "title": "Comunidade",
+      "mainTitle": "Junte-se à comunidade global por trás do Dubhe",
+      "description": "Com uma comunidade próspera de desenvolvedores em todo o mundo, o Dubhe é apoiado por apoiadores apaixonados que impulsionam o futuro da tecnologia blockchain Move. Conecte-se, colabore e cresça conosco enquanto moldamos a próxima geração de soluções descentralizadas.",
+      "cta": "Junte-se à comunidade Dubhe hoje.",
+      "events": {
+        "conference": {
+          "title": "Conferência de Desenvolvedores",
+          "subtitle": "Construindo o Futuro Juntos"
+        },
+        "workshop": {
+          "title": "Workshop de Desenvolvedores", 
+          "subtitle": "Sessões de Aprendizado Prático"
+        },
+        "hackathon": {
+          "title": "Hackathon Global",
+          "subtitle": "Inovação e Competição"
+        },
+        "meetup": {
+          "title": "Encontro da Comunidade",
+          "subtitle": "Eventos Locais e Online"
+        },
+        "techtalk": {
+          "title": "Série de Palestras Técnicas",
+          "subtitle": "Compartilhamento de Conhecimento"
+        },
+        "summit": {
+          "title": "Cúpula da Comunidade",
+          "subtitle": "Encontro Anual"
+        }
+      },
+      "stats": {
+        "members": {
+          "value": "100K+",
+          "label": "Membros da Comunidade",
+          "description": "Desenvolvedores ativos e entusiastas em todo o mundo"
+        },
+        "events": {
+          "value": "50+",
+          "label": "Eventos Globais", 
+          "description": "Conferências, encontros e workshops anualmente"
+        },
+        "countries": {
+          "value": "20+",
+          "label": "Países",
+          "description": "Presença da comunidade Dubhe em continentes"
+        }
+      }
+    }
+  },
+  "foundation": {
+    "hero": {
+      "title": "Apoiando o crescimento do Ecossistema Dubhe",
+      "subtitle": "Através do apoio ao desenvolvedor, iniciativas do ecossistema e esforços de descentralização, a Fundação Dubhe ajuda a promover o crescimento e adoção do ecossistema do protocolo Dubhe.",
+      "cta": "Junte-se à equipe"
+    },
+    "mission": {
+      "title": "Nossa Missão",
+      "subtitle": "Acelerando a Inovação Move para Todos",
+      "developerSupport": {
+        "title": "Apoio ao Desenvolvedor",
+        "description": "Fornecendo subsídios, recursos e mentoria para desenvolvedores construindo no ecossistema Dubhe. De hackathons ao financiamento de projetos de longo prazo.",
+        "features": [
+          "Programas de subsídios para projetos inovadores",
+          "Mentoria técnica e orientação",
+          "Workshops educacionais e hackathons"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Crescimento do Ecossistema",
+        "description": "Parcerias estratégicas e iniciativas para expandir o ecossistema Dubhe. Construindo pontes entre diferentes cadeias Move e protocolos.",
+        "features": [
+          "Iniciativas de colaboração entre cadeias",
+          "Parcerias estratégicas com cadeias Move",
+          "Apoio ao desenvolvimento de infraestrutura"
+        ]
+      },
+      "decentralization": {
+        "title": "Descentralização",
+        "description": "Garantindo que o Ecossistema Dubhe permaneça verdadeiramente descentralizado através de governança, envolvimento da comunidade e processos de tomada de decisão distribuídos.",
+        "features": [
+          "Desenvolvimento de estrutura de governança",
+          "Tomada de decisão liderada pela comunidade",
+          "Desenvolvimento de protocolo de código aberto"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Dubhe. Todos os direitos reservados.",
+    "links": {
+      "about": "Sobre",
+      "contact": "Contato",
+      "terms": "Termos de Serviço",
+      "privacy": "Política de Privacidade"
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "Nossa Equipe",
+      "title": "Conheça a Equipe da Fundação Dubhe",
+      "description": "Nossa equipe diversa e global de engenheiros, pesquisadores e construtores de comunidade é dedicada ao avanço do ecossistema Move e ao empoderamento de desenvolvedores em todo o mundo.",
+      "stats": {
+        "members": "Membros da Equipe",
+        "countries": "Países",
+        "timezones": "Fusos Horários"
+      }
+    },
+    "leadership": {
+      "title": "Equipe de Liderança",
+      "description": "Conheça os visionários e especialistas que lideram a missão da Dubhe de revolucionar o desenvolvimento Move",
+      "expertise": "Especialidade"
+    },
+    "join": {
+      "title": "Junte-se à Nossa Equipe",
+      "description": "Estamos sempre procurando por indivíduos talentosos apaixonados pelo avanço da tecnologia blockchain",
+      "openPositions": "Posições Abertas",
+      "cta": "Juntar-se à Equipe",
+      "ctaDescription": "Entre em contato conosco sobre posições disponíveis e oportunidades",
+      "departments": {
+        "engineering": {
+          "title": "Engenharia",
+          "description": "Construindo o futuro das ferramentas de desenvolvimento Move e infraestrutura"
+        },
+        "research": {
+          "title": "Pesquisa",
+          "description": "Explorando tecnologias e protocolos blockchain de ponta"
+        },
+        "community": {
+          "title": "Comunidade",
+          "description": "Crescendo e apoiando nossa comunidade global de desenvolvedores"
+        },
+        "partnerships": {
+          "title": "Parcerias",
+          "description": "Construindo relacionamentos estratégicos em todo o ecossistema blockchain"
+        }
+      }
+    }
+  },
+  "grants": {
+    "hero": {
+      "badge": "Subsídios da Fundação Dubhe",
+      "title": "Financie Sua Inovação",
+      "description": "Receba subsídios não-reembolsáveis da Fundação Dubhe para construir aplicações Move de código aberto, infraestrutura e ferramentas. Todos os projetos devem ser totalmente funcionais e completar todos os marcos.",
+      "stats": {
+        "totalFunded": "Total Financiado",
+        "projectsFunded": "Projetos Financiados",
+        "successRate": "Taxa de Sucesso",
+        "comingSoon": "Em Breve"
+      },
+      "cta1": "Candidatar-se a Subsídio",
+      "cta2": "Ver Diretrizes"
+    },
+    "categories": {
+      "title": "Escolha Sua Trilha",
+      "badge": "Categorias de Subsídio",
+      "infrastructure": {
+        "title": "Subsídios de Infraestrutura",
+        "amount": "Até $100K",
+        "description": "Construir infraestrutura central, ferramentas de desenvolvedor e utilitários do ecossistema"
+      },
+      "dapp": {
+        "title": "Desenvolvimento de DApp",
+        "amount": "Até $75K",
+        "description": "Criar aplicações descentralizadas inovadoras no ecossistema Dubhe"
+      },
+      "research": {
+        "title": "Subsídios de Pesquisa",
+        "amount": "Até $50K",
+        "description": "Pesquisa acadêmica, melhorias de protocolo e contribuições teóricas"
+      },
+      "community": {
+        "title": "Projetos Comunitários",
+        "amount": "Até $25K",
+        "description": "Educação, documentação, ferramentas comunitárias e programas de divulgação"
+      }
+    },
+    "process": {
+      "title": "Processo de Candidatura",
+      "description": "Processo simples de 5 etapas para obter financiamento do seu projeto",
+      "steps": {
+        "proposal": {
+          "title": "Envio da Proposta",
+          "description": "Enviar proposta abrangente com marcos detalhados e compromisso com código aberto",
+          "duration": "1 semana"
+        },
+        "review": {
+          "title": "Revisão da Fundação",
+          "description": "O comitê técnico da Fundação Dubhe avalia viabilidade e impacto no ecossistema",
+          "duration": "2-3 semanas"
+        },
+        "interview": {
+          "title": "Entrevista da Equipe",
+          "description": "Apresentar o roteiro do seu projeto e demonstrar capacidades técnicas",
+          "duration": "1 semana"
+        },
+        "approval": {
+          "title": "Aprovação do Subsídio",
+          "description": "O conselho da fundação aprova subsídio não-reembolsável com requisitos de marco",
+          "duration": "1 semana"
+        },
+        "delivery": {
+          "title": "Entrega de Marco",
+          "description": "Completar todos os marcos com entregas funcionais e receber subsídio completo",
+          "duration": "3-12 meses"
+        }
+      },
+      "requirements": {
+        "title": "Requisitos de Candidatura",
+        "items": [
+          "Compromisso completo com código aberto (licença MIT/Apache 2.0 obrigatória)",
+          "Plano de desenvolvimento detalhado baseado em marcos",
+          "Equipe experiente com histórico comprovado de desenvolvimento",
+          "Entregas totalmente funcionais - nenhum protótipo ou demonstração",
+          "Documentação abrangente e guias de implantação",
+          "Forte alinhamento com os objetivos de crescimento do ecossistema Dubhe"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "Histórias de Sucesso",
+      "description": "Projetos que receberam subsídios e causaram impacto significativo"
+    },
+    "terms": {
+      "title": "Termos e Condições do Subsídio",
+      "nonRepayable": {
+        "title": "Subsídio Não-Reembolsável",
+        "description": "Todos os subsídios são doações incondicionais da Fundação Dubhe. Nenhum reembolso é necessário após a conclusão bem-sucedida dos marcos."
+      },
+      "openSource": {
+        "title": "Código Aberto Obrigatório",
+        "description": "Todos os projetos financiados devem ser lançados sob licença MIT ou Apache 2.0. O código fonte completo deve estar publicamente disponível."
+      },
+      "completion": {
+        "title": "Conclusão Completa dos Marcos",
+        "description": "Os projetos devem entregar software totalmente funcional e pronto para produção. Todos os marcos devem ser completados para receber o subsídio completo."
+      }
+    },
+    "finalCta": {
+      "title": "Pronto para Construir Código Aberto?",
+      "description": "Candidate-se a um subsídio da Fundação e contribua para o ecossistema Dubhe de código aberto",
+      "cta1": "Enviar Proposta",
+      "cta2": "Contato da Fundação"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Página Não Encontrada",
+      "description": "A página que você está procurando não existe ou foi movida.",
+      "suggestion": "Não se preocupe, vamos colocá-lo de volta no caminho certo.",
+      "suggestions": {
+        "title": "Páginas Populares"
+      },
+      "actions": {
+        "home": "Ir para a Página Inicial",
+        "back": "Voltar",
+        "report": "Reportar link quebrado"
+      }
+    },
+    "serverError": {
+      "title": "Erro do Servidor",
+      "description": "Algo deu errado do nosso lado.",
+      "suggestion": "Nossa equipe foi notificada e está trabalhando na correção."
+    },
+    "unauthorized": {
+      "title": "Autenticação Necessária",
+      "description": "Você precisa fazer login para acessar esta página.",
+      "suggestion": "Por favor, faça login com suas credenciais."
+    },
+    "forbidden": {
+      "title": "Acesso Proibido",
+      "description": "Você não tem permissão para acessar este recurso.",
+      "suggestion": "Por favor, verifique suas credenciais ou entre em contato com um administrador."
+    },
+    "rateLimited": {
+      "title": "Muitas Solicitações",
+      "description": "Você está fazendo solicitações muito rapidamente. Por favor, diminua o ritmo.",
+      "suggestion": "Aguarde alguns momentos antes de tentar novamente."
+    },
+    "serviceUnavailable": {
+      "title": "Serviço Indisponível",
+      "description": "Estamos temporariamente fora do ar para manutenção.",
+      "suggestion": "Estaremos de volta online em breve. Obrigado pela sua paciência!"
+    },
+    "badGateway": {
+      "title": "Gateway Ruim",
+      "description": "Há um problema com nossa conexão de servidor.",
+      "suggestion": "Isso geralmente é temporário. Por favor, tente novamente em alguns momentos."
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Alterar idioma"
+  }
+}

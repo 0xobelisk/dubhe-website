@@ -7,6 +7,7 @@ import { ArrowRight, TrendingUp, Users, DollarSign, Zap } from "lucide-react"
 import Section from "../ui/Section"
 import Card from "../ui/Card"
 import GradientText from "../ui/GradientText"
+import Image from "next/image"
 
 /**
  * 投资相关链接
@@ -225,11 +226,11 @@ export default function InvestorHero() {
             Building partnerships across the Move ecosystem
           </p>
           <div className="flex justify-center items-center gap-8">
-            <img src="/marketing/logos/sui.svg" alt="Sui" className="h-8 w-auto opacity-80 hover:opacity-100 transition-all duration-300 filter invert" />
-            <img src="/marketing/logos/aptos.svg" alt="Aptos" className="h-8 w-auto opacity-80 hover:opacity-100 transition-all duration-300 filter invert" />
-            <img src="/marketing/logos/rooch.svg" alt="Rooch" className="h-8 w-auto opacity-80 hover:opacity-100 transition-all duration-300 filter invert" />
-            <img src="/marketing/logos/movement.svg" alt="Movement" className="h-8 w-auto opacity-80 hover:opacity-100 transition-all duration-300 filter invert" />
-            <img src="/marketing/logos/initia.svg" alt="Initia" className="h-8 w-auto opacity-80 hover:opacity-100 transition-all duration-300 filter invert" />
+            <Image src="/marketing/logos/sui.svg" alt="Sui" width={32} height={32} className="h-8 w-auto opacity-80 hover:opacity-100 transition-all duration-300 filter invert" />
+            <Image src="/marketing/logos/aptos.svg" alt="Aptos" width={32} height={32} className="h-8 w-auto opacity-80 hover:opacity-100 transition-all duration-300 filter invert" />
+            <Image src="/marketing/logos/rooch.svg" alt="Rooch" width={32} height={32} className="h-8 w-auto opacity-80 hover:opacity-100 transition-all duration-300 filter invert" />
+            <Image src="/marketing/logos/movement.svg" alt="Movement" width={32} height={32} className="h-8 w-auto opacity-80 hover:opacity-100 transition-all duration-300 filter invert" />
+            <Image src="/marketing/logos/initia.svg" alt="Initia" width={32} height={32} className="h-8 w-auto opacity-80 hover:opacity-100 transition-all duration-300 filter invert" />
           </div>
         </motion.div>
 

@@ -1,7 +1,21 @@
 import '@testing-library/jest-dom'
 import { cleanup } from '@testing-library/react'
-import { afterEach, vi } from 'vitest'
+import { afterEach, vi, beforeAll } from 'vitest'
 import React from 'react'
+
+// Fix React 19 compatibility issues
+beforeAll(() => {
+  // Ensure React is properly initialized
+  if (typeof global.React === 'undefined') {
+    global.React = React
+  }
+  
+  // Fix React 19 hooks compatibility
+  const originalCreateElement = React.createElement
+  React.createElement = function(type, props, ...children) {
+    return originalCreateElement.call(this, type, props, ...children)
+  }
+})
 
 // Cleanup after each test case
 afterEach(() => {
