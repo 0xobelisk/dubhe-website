@@ -11,53 +11,62 @@ import {
   Building,
   Globe
 } from "lucide-react"
+import { useTranslations } from 'next-intl'
 
 export default function EventsPage() {
+  const t = useTranslations('events')
   const [searchQuery, setSearchQuery] = useState("")
-  const [selectedCategory, setSelectedCategory] = useState("All")
+  const [selectedCategory, setSelectedCategory] = useState("all")
   const [sortBy, setSortBy] = useState("Date")
 
   const events = [
     {
       date: "2025-02-15",
-      name: "Dubhe Engine Developer Workshop",
-      location: "Online",
-      category: "Workshop",
+      name: t('eventsList.engineWorkshop.name'),
+      location: t('eventsList.engineWorkshop.location'),
+      category: t('eventsList.engineWorkshop.category'),
       type: "Workshop",
-      description: "Deep dive into Dubhe Engine architecture and development best practices"
+      description: t('eventsList.engineWorkshop.description')
     },
     {
       date: "2025-02-28",
-      name: "Move Ecosystem AMA with Dubhe Foundation",
-      location: "Online",
-      category: "AMA",
+      name: t('eventsList.moveAma.name'),
+      location: t('eventsList.moveAma.location'),
+      category: t('eventsList.moveAma.category'),
       type: "AMA",
-      description: "Ask us anything about Dubhe protocol, roadmap, and ecosystem development"
+      description: t('eventsList.moveAma.description')
     },
     {
       date: "2025-03-10",
-      name: "Dubhe Community Meetup - San Francisco",
-      location: "San Francisco, CA",
-      category: "Meetup",
+      name: t('eventsList.sfMeetup.name'),
+      location: t('eventsList.sfMeetup.location'),
+      category: t('eventsList.sfMeetup.category'),
       type: "Meetup", 
-      description: "Network with Dubhe developers and community members in the Bay Area"
+      description: t('eventsList.sfMeetup.description')
     },
     {
       date: "2025-03-25",
-      name: "Zero-Knowledge Privacy Solutions Workshop",
-      location: "Online",
-      category: "Workshop",
+      name: t('eventsList.zkWorkshop.name'),
+      location: t('eventsList.zkWorkshop.location'),
+      category: t('eventsList.zkWorkshop.category'),
       type: "Workshop",
-      description: "Learn about ZK proofs and privacy-preserving protocols in the Dubhe ecosystem"
+      description: t('eventsList.zkWorkshop.description')
     }
   ]
 
-  const categories = ["All", "AMA", "Workshop", "Meetup"]
+  const categoryMap = {
+    'all': t('filters.categories.all'),
+    'ama': t('filters.categories.ama'),
+    'workshop': t('filters.categories.workshop'),
+    'meetup': t('filters.categories.meetup')
+  }
+  
+  const categories = Object.keys(categoryMap)
 
   const filteredEvents = events.filter(event => {
     const matchesSearch = event.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          event.location.toLowerCase().includes(searchQuery.toLowerCase())
-    const matchesCategory = selectedCategory === "All" || event.category === selectedCategory
+    const matchesCategory = selectedCategory === "all" || event.type.toLowerCase() === selectedCategory
     return matchesSearch && matchesCategory
   })
 
@@ -109,7 +118,7 @@ export default function EventsPage() {
                   transition={{ duration: 0.6 }}
                   className="inline-block bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-blue-500/20"
                 >
-                  Event Calendar
+                  {t('hero.badge')}
                 </motion.div>
 
                 {/* Main Headline */}
@@ -120,7 +129,7 @@ export default function EventsPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                   >
-                    Upcoming events
+                    {t('hero.title')}
                   </motion.h1>
                   
                   <motion.p 
@@ -129,9 +138,7 @@ export default function EventsPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                   >
-                    Participate in Dubhe-hosted events, industry conferences,
-                    <br />
-                    community meetups, developer workshops, and more.
+                    {t('hero.subtitle')}
                   </motion.p>
                 </div>
 
@@ -148,7 +155,7 @@ export default function EventsPage() {
                       <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
                       <input
                         type="text"
-                        placeholder="Search"
+                        placeholder={t('filters.search.placeholder')}
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         className="w-full pl-10 pr-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -164,7 +171,7 @@ export default function EventsPage() {
                           className="appearance-none bg-slate-800/50 border border-slate-700 rounded-lg px-4 py-3 pr-10 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         >
                           {categories.map(category => (
-                            <option key={category} value={category}>{category}</option>
+                            <option key={category} value={category}>{categoryMap[category as keyof typeof categoryMap]}</option>
                           ))}
                         </select>
                         <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none" />
@@ -176,9 +183,9 @@ export default function EventsPage() {
                           onChange={(e) => setSortBy(e.target.value)}
                           className="appearance-none bg-slate-800/50 border border-slate-700 rounded-lg px-4 py-3 pr-10 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         >
-                          <option value="Date">Sort: Date</option>
-                          <option value="Name">Sort: Name</option>
-                          <option value="Location">Sort: Location</option>
+                          <option value="Date">{t('filters.sort.date')}</option>
+                          <option value="Name">{t('filters.sort.name')}</option>
+                          <option value="Location">{t('filters.sort.location')}</option>
                         </select>
                         <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none" />
                       </div>
@@ -189,10 +196,10 @@ export default function EventsPage() {
                   <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden">
                     {/* Table Header */}
                     <div className="grid grid-cols-12 gap-4 p-6 border-b border-slate-700/50 text-gray-400 font-medium text-sm">
-                      <div className="col-span-3">Date</div>
-                      <div className="col-span-4">Name</div>
-                      <div className="col-span-3">Location</div>
-                      <div className="col-span-2 text-center">Category</div>
+                      <div className="col-span-3">{t('table.headers.date')}</div>
+                      <div className="col-span-4">{t('table.headers.name')}</div>
+                      <div className="col-span-3">{t('table.headers.location')}</div>
+                      <div className="col-span-2 text-center">{t('table.headers.category')}</div>
                     </div>
 
                     {/* Table Body */}
@@ -235,7 +242,7 @@ export default function EventsPage() {
                     {filteredEvents.length === 0 && (
                       <div className="p-12 text-center">
                         <Calendar className="w-12 h-12 text-gray-500 mx-auto mb-4" />
-                        <p className="text-gray-400">No events found matching your criteria.</p>
+                        <p className="text-gray-400">{t('table.noEvents')}</p>
                       </div>
                     )}
                   </div>
@@ -259,9 +266,9 @@ export default function EventsPage() {
       <div className="py-24 px-6 lg:px-8 bg-slate-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Join Our Global Community</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">{t('community.title')}</h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-              Connect with developers, enthusiasts, and innovators from around the world at our events
+              {t('community.description')}
             </p>
           </div>
 
@@ -275,7 +282,7 @@ export default function EventsPage() {
             >
               <Calendar className="w-12 h-12 text-blue-400 mx-auto mb-4" />
               <div className="text-3xl lg:text-4xl font-bold text-white mb-2">50+</div>
-              <div className="text-gray-400">Events This Year</div>
+              <div className="text-gray-400">{t('community.stats.eventsThisYear')}</div>
             </motion.div>
 
             <motion.div
@@ -287,7 +294,7 @@ export default function EventsPage() {
             >
               <Users className="w-12 h-12 text-purple-400 mx-auto mb-4" />
               <div className="text-3xl lg:text-4xl font-bold text-white mb-2">10K+</div>
-              <div className="text-gray-400">Attendees</div>
+              <div className="text-gray-400">{t('community.stats.attendees')}</div>
             </motion.div>
 
             <motion.div
@@ -299,7 +306,7 @@ export default function EventsPage() {
             >
               <Globe className="w-12 h-12 text-green-400 mx-auto mb-4" />
               <div className="text-3xl lg:text-4xl font-bold text-white mb-2">25+</div>
-              <div className="text-gray-400">Countries</div>
+              <div className="text-gray-400">{t('community.stats.countries')}</div>
             </motion.div>
 
             <motion.div
@@ -311,7 +318,7 @@ export default function EventsPage() {
             >
               <Building className="w-12 h-12 text-orange-400 mx-auto mb-4" />
               <div className="text-3xl lg:text-4xl font-bold text-white mb-2">100+</div>
-              <div className="text-gray-400">Speakers</div>
+              <div className="text-gray-400">{t('community.stats.speakers')}</div>
             </motion.div>
           </div>
         </div>

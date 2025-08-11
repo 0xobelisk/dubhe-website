@@ -19,8 +19,10 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { useTranslations } from 'next-intl'
 
 export default function IncubationPage() {
+  const t = useTranslations('incubation')
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -30,29 +32,29 @@ export default function IncubationPage() {
   const programs = [
     {
       icon: <Rocket className="w-6 h-6" />,
-      title: "Foundation Accelerator",
-      duration: "3 months",
-      funding: "Up to $500K",
-      description: "Dubhe Foundation-backed intensive program co-incubated with Obelisk Labs and ecosystem VCs",
-      benefits: ["Dubhe Foundation funding", "Obelisk Labs co-incubation", "Move development support", "Ecosystem VC partnerships"],
+      title: t('programs.accelerator.title'),
+      duration: t('programs.accelerator.duration'),
+      funding: t('programs.accelerator.funding'),
+      description: t('programs.accelerator.description'),
+      benefits: t.raw('programs.accelerator.benefits') as string[],
       color: "from-purple-500 to-pink-500"
     },
     {
       icon: <Building className="w-6 h-6" />,
-      title: "Collaborative Studio",
-      duration: "6-12 months", 
-      funding: "Up to $1M",
-      description: "Co-incubated by Dubhe Foundation, Obelisk Labs, and ecosystem VCs with shared resources",
-      benefits: ["Multi-partner co-incubation", "Shared technical resources", "Cross-project collaboration", "Ecosystem VC networks"],
+      title: t('programs.studio.title'),
+      duration: t('programs.studio.duration'), 
+      funding: t('programs.studio.funding'),
+      description: t('programs.studio.description'),
+      benefits: t.raw('programs.studio.benefits') as string[],
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: <Globe className="w-6 h-6" />,
-      title: "Ecosystem Scale",
-      duration: "6 months",
-      funding: "Up to $2M",
-      description: "Scale with comprehensive support from Dubhe Foundation, Obelisk Labs, and ecosystem VC partners",
-      benefits: ["Co-incubation network", "Strategic introductions", "Global market access", "Enterprise VC connections"],
+      title: t('programs.scale.title'),
+      duration: t('programs.scale.duration'),
+      funding: t('programs.scale.funding'),
+      description: t('programs.scale.description'),
+      benefits: t.raw('programs.scale.benefits') as string[],
       color: "from-green-500 to-emerald-500"
     }
   ]
@@ -120,33 +122,33 @@ export default function IncubationPage() {
   const resources = [
     {
       icon: <Users className="w-5 h-5" />,
-      title: "Multi-Partner Co-Incubation", 
-      description: "Joint guidance from Dubhe Foundation, Obelisk Labs, and ecosystem VCs"
+      title: t('resources.coIncubation.title'), 
+      description: t('resources.coIncubation.description')
     },
     {
       icon: <Briefcase className="w-5 h-5" />,
-      title: "Shared Infrastructure",
-      description: "Access to Obelisk Labs infrastructure and ecosystem VC resources"
+      title: t('resources.infrastructure.title'),
+      description: t('resources.infrastructure.description')
     },
     {
       icon: <Target className="w-5 h-5" />,
-      title: "Ecosystem Integration",
-      description: "Direct integration with Dubhe projects and partner networks"
+      title: t('resources.integration.title'),
+      description: t('resources.integration.description')
     },
     {
       icon: <Zap className="w-5 h-5" />,
-      title: "Collaborative Development",
-      description: "Technical support from Dubhe Foundation and Obelisk Labs engineering teams"
+      title: t('resources.development.title'),
+      description: t('resources.development.description')
     },
     {
       icon: <Award className="w-5 h-5" />,
-      title: "Partner Demo Days",
-      description: "Present to Dubhe Foundation board and ecosystem VC networks"
+      title: t('resources.demoDays.title'),
+      description: t('resources.demoDays.description')
     },
     {
       icon: <Globe className="w-5 h-5" />,
-      title: "Ecosystem Network",
-      description: "Access to the entire Dubhe and partner company ecosystem"
+      title: t('resources.network.title'),
+      description: t('resources.network.description')
     }
   ]
 
@@ -200,7 +202,7 @@ export default function IncubationPage() {
                 className="inline-block bg-purple-500/10 text-purple-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-purple-500/20"
               >
                 <Lightbulb className="w-4 h-4 inline mr-2" />
-                Dubhe Foundation Incubation
+                {t('hero.badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -211,10 +213,10 @@ export default function IncubationPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Build the Next
+                  {t('hero.title').split(' ').slice(0, 3).join(' ')}
                   <br />
                   <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                    Unicorn Startup
+                    {t('hero.title').split(' ').slice(3).join(' ')}
                   </span>
                 </motion.h1>
                 
@@ -224,8 +226,7 @@ export default function IncubationPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Join our collaborative incubation ecosystem supported by Dubhe Foundation, 
-                  co-incubated with Obelisk Labs and ecosystem VCs to build the next generation of Move startups.
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
 
@@ -237,20 +238,20 @@ export default function IncubationPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">Coming Soon</div>
-                  <div className="text-gray-300">Total Funding</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">{t('hero.stats.funding.value')}</div>
+                  <div className="text-gray-300">{t('hero.stats.funding.label')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">Coming Soon</div>
-                  <div className="text-gray-300">Startups Incubated</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">{t('hero.stats.startups.value')}</div>
+                  <div className="text-gray-300">{t('hero.stats.startups.label')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-pink-400 mb-2">Coming Soon</div>
-                  <div className="text-gray-300">Unicorns Created</div>
+                  <div className="text-3xl font-bold text-pink-400 mb-2">{t('hero.stats.unicorns.value')}</div>
+                  <div className="text-gray-300">{t('hero.stats.unicorns.label')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-cyan-400 mb-2">Coming Soon</div>
-                  <div className="text-gray-300">Success Rate</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-2">{t('hero.stats.success.value')}</div>
+                  <div className="text-gray-300">{t('hero.stats.success.label')}</div>
                 </div>
               </motion.div>
 
@@ -262,12 +263,12 @@ export default function IncubationPage() {
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
                 <Link href="/contact" className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-                  Apply Now
+                  {t('hero.cta.apply')}
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 
                 <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="border-2 border-purple-400/50 hover:border-purple-300 bg-purple-900/20 backdrop-blur-sm text-purple-100 hover:text-white hover:bg-purple-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-                  Learn More
+                  {t('hero.cta.learn')}
                 </Link>
               </motion.div>
             </div>

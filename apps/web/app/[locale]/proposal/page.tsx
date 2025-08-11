@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useTranslations } from 'next-intl'
 import { motion } from "framer-motion"
 import { 
   Vote, 
@@ -17,6 +18,7 @@ import {
 } from "lucide-react"
 
 export default function ProposalPage() {
+  const t = useTranslations('proposal')
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -26,30 +28,30 @@ export default function ProposalPage() {
   const proposalTypes = [
     {
       icon: <TrendingUp className="w-6 h-6" />,
-      title: "Treasury Spending",
-      description: "Request funding from Dubhe Treasury for development projects and initiatives",
-      examples: ["Development grants", "Infrastructure funding", "Research projects"],
+      title: t('types.treasury.title'),
+      description: t('types.treasury.description'),
+      examples: [t('types.treasury.examples.0'), t('types.treasury.examples.1'), t('types.treasury.examples.2')],
       color: "from-green-500 to-emerald-500"
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Governance Changes",
-      description: "Modifications to voting mechanisms, treasury management, and governance parameters",
-      examples: ["Voting thresholds", "Referendum parameters", "Track configurations"],
+      title: t('types.governance.title'),
+      description: t('types.governance.description'),
+      examples: [t('types.governance.examples.0'), t('types.governance.examples.1'), t('types.governance.examples.2')],
       color: "from-purple-500 to-pink-500"
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "Runtime Upgrades",
-      description: "Protocol improvements and runtime modifications requiring governance approval",
-      examples: ["Pallet upgrades", "Runtime optimizations", "New features"],
+      title: t('types.runtime.title'),
+      description: t('types.runtime.description'),
+      examples: [t('types.runtime.examples.0'), t('types.runtime.examples.1'), t('types.runtime.examples.2')],
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: "Emergency Actions",
-      description: "Time-sensitive proposals for security issues and critical protocol fixes",
-      examples: ["Security patches", "Emergency updates", "Critical bug fixes"],
+      title: t('types.emergency.title'),
+      description: t('types.emergency.description'),
+      examples: [t('types.emergency.examples.0'), t('types.emergency.examples.1'), t('types.emergency.examples.2')],
       color: "from-orange-500 to-red-500"
     }
   ]
@@ -200,7 +202,7 @@ export default function ProposalPage() {
                 className="inline-block bg-indigo-500/10 text-indigo-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-indigo-500/20"
               >
                 <Vote className="w-4 h-4 inline mr-2" />
-                Dubhe OpenGov
+                {t('badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -211,10 +213,10 @@ export default function ProposalPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Shape the Future
+                  {t('hero.title')}
                   <br />
                   <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-                    Together
+                    {t('hero.titleHighlight')}
                   </span>
                 </motion.h1>
                 
@@ -224,8 +226,7 @@ export default function ProposalPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Submit proposals through DubheOS to request treasury funding, upgrade the runtime, 
-                  or participate in governance using Polkadot&apos;s OpenGov framework with conviction voting.
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
 
@@ -260,7 +261,7 @@ export default function ProposalPage() {
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
                 >
-                  DubheOS Devnet
+                  {t('hero.cta.primary')}
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
                 
@@ -270,7 +271,7 @@ export default function ProposalPage() {
                   rel="noopener noreferrer"
                   className="border-2 border-indigo-400/50 hover:border-indigo-300 bg-indigo-900/20 backdrop-blur-sm text-indigo-100 hover:text-white hover:bg-indigo-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center"
                 >
-                  View All Referenda
+                  {t('hero.cta.secondary')}
                 </a>
               </motion.div>
             </div>
@@ -289,7 +290,7 @@ export default function ProposalPage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-indigo-200"
             >
-              Proposal Categories
+              {t('types.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -298,7 +299,7 @@ export default function ProposalPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Types of Governance Proposals
+              {t('types.title')}
             </motion.h2>
           </div>
 
@@ -318,7 +319,7 @@ export default function ProposalPage() {
                 <h3 className="text-2xl font-bold text-white mb-4">{type.title}</h3>
                 <p className="text-gray-300 mb-6 leading-relaxed">{type.description}</p>
                 <div className="space-y-2">
-                  <div className="text-sm text-indigo-400 font-medium mb-3">Example proposals:</div>
+                  <div className="text-sm text-indigo-400 font-medium mb-3">{t('types.exampleLabel')}:</div>
                   {type.examples.map((example, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2 flex-shrink-0" />
@@ -343,7 +344,7 @@ export default function ProposalPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Active Referenda
+              {t('active.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -352,7 +353,7 @@ export default function ProposalPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Current referenda in various governance tracks with conviction voting
+              {t('active.subtitle')}
             </motion.p>
           </div>
 
@@ -451,7 +452,7 @@ export default function ProposalPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Governance Process
+              {t('process.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -460,7 +461,7 @@ export default function ProposalPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Step-by-step process for creating and voting on governance proposals
+              {t('process.subtitle')}
             </motion.p>
           </div>
 
@@ -505,7 +506,7 @@ export default function ProposalPage() {
             transition={{ duration: 0.6 }}
             className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-indigo-500/20"
           >
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Proposal Requirements</h3>
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">{t('requirements.title')}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {requirements.map((requirement, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -528,7 +529,7 @@ export default function ProposalPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Ready to Participate?
+            {t('cta.title')}
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
@@ -537,7 +538,7 @@ export default function ProposalPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Join the governance process and help shape the future of Dubhe
+            {t('cta.subtitle')}
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -552,7 +553,7 @@ export default function ProposalPage() {
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
             >
-              Access DubheOS
+              {t('cta.primary')}
               <Sparkles className="w-5 h-5 ml-2" />
             </a>
             <a 
@@ -561,7 +562,7 @@ export default function ProposalPage() {
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2"
             >
-              OpenGov Guide
+              {t('cta.secondary')}
               <ExternalLink className="w-5 h-5" />
             </a>
           </motion.div>

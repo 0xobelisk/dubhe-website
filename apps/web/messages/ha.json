@@ -100,6 +100,252 @@
           "description": "Kasancewar al'ummar Dubhe a cikin nahiyoyi"
         }
       }
+    },
+    "ecosystem": {
+      "badge": "Yanayin muhalli",
+      "title": {
+        "line1": "Yanayin muhalli mai bunƙasa na",
+        "line2": "Aikace-aikacen Ƙirƙira"
+      },
+      "description": "Gano iri-iri na aikace-aikace, ka'idoji, da kayan aikin da aka gina akan Dubhe, daga DeFi da wasanni zuwa kayan aikin gini da NFTs.",
+      "categories": {
+        "defi": {
+          "title": "DeFi",
+          "description": "Ka'idojin kudin da ba su da tushe"
+        },
+        "gaming": {
+          "title": "Wasanni",
+          "description": "Wasanni akan sarkar da metaverse"
+        },
+        "infrastructure": {
+          "title": "Kayan Aikin Gini", 
+          "description": "Kayan aikin masu haɓakawa da kayan aikin gini"
+        },
+        "nfts": {
+          "title": "NFTs",
+          "description": "Abubuwan tari na dijital da kadarori"
+        }
+      },
+      "projects": {
+        "merak": {
+          "name": "Merak",
+          "description": "Mai Yin Kasuwa ta Atomatik",
+          "tvl": "$45M"
+        },
+        "numeron": {
+          "name": "Numeron",
+          "description": "Kasada na AI RPG na Fantasy",
+          "players": "12K+"
+        },
+        "cyferio": {
+          "name": "Cyferio SDK",
+          "description": "Kayan Haɓakawa",
+          "downloads": "50K+"
+        },
+        "objectsdao": {
+          "name": "Objectsdao",
+          "description": "Gwanjon NFT",
+          "volume": "$2.3M"
+        }
+      },
+      "metrics": {
+        "tvl": "TVL",
+        "players": "'Yan Wasa",
+        "downloads": "Zazzagawa",
+        "volume": "Girman Ma'amala"
+      }
+    },
+    "howItWorks": {
+      "title": "Yadda Yake Aiki",
+      "steps": {
+        "schemaDefinition": {
+          "title": "Ma'anar Schema",
+          "description": "Ayyana dabaran wasan ko dApp ɗin ku ta amfani da tsarin schema mai sauƙin fahimta na Dubhe. Bayyana abubuwa, sassa, da tsarine a cikin fayilolin saitawa masu sauƙi.",
+          "items": ["Abu", "Sashi", "Tsari", "Kuskure", "Taron"]
+        },
+        "codeGeneration": {
+          "title": "Samar da Code",
+          "description": "Injin Dubhe yana samar da 80% na kwangilolinku na Move masu wayo, ɗakunan karatu na abokan ciniki, da hanyoyin hulda da API ta atomatik daga ma'anin schema ɗinku."
+        },
+        "deploymentChannel": {
+          "title": "Turawa da Tashar",
+          "description": "Tura zuwa sarƙoƙin Move da yawa tare da umarni ɗaya. Tashar Dubhe tana ba da daidaitawar lokaci-lokaci da <50ms na jinkiri don ƙwarewar mai amfani mara kyau."
+        },
+        "multiChainExecution": {
+          "title": "Aiwatar da Sarƙoƙi da Yawa",
+          "description": "Aikace-aikacenku yana aiki ba tare da matsala ba a kan duk sarƙoƙin Move da aka tallafa tare da haɗin kai na sarƙa ta asali ta hanyar Dubhe OS."
+        }
+      },
+      "labels": {
+        "dubheEngine": "Injin Dubhe",
+        "you": "Ku",
+        "blockchain": "Blockchain",
+        "multiChainReady": "Sarƙoƙi da Yawa Shirye"
+      }
+    },
+    "competitiveAdvantage": {
+      "title": "Amfanin Gasa",
+      "subtitle": "Mafari na farko kuma kawai na cikakken bayani don ci gaban yanayin Move",
+      "table": {
+        "feature": "Sifa",
+        "dubhe": "Dubhe",
+        "others": "Sauran"
+      },
+      "features": {
+        "codeGeneration": {
+          "title": "Samar da Code",
+          "dubhe": "80% atomatik",
+          "others": "Yin code da hannu"
+        },
+        "uxPerformance": {
+          "title": "Aikin UX",
+          "dubhe": "<50ms",
+          "others": "dakika 3-15"
+        },
+        "multiChainSupport": {
+          "title": "Tallafin Sarkoki da Yawa",
+          "dubhe": "Tallafin asali",
+          "others": "Gadoji masu rikitarwa"
+        },
+        "developerExperience": {
+          "title": "Kwarewar Masu Haɓakawa",
+          "dubhe": "Turawa da dannawa ɗaya",
+          "others": "Saitin da ke da rikitarwa"
+        },
+        "realTimeFeatures": {
+          "title": "Ayyukan Lokaci-lokaci",
+          "dubhe": "Tashar da ke ciki",
+          "others": "Hanyoyin waje"
+        }
+      }
+    },
+    "productSuite": {
+      "badge": "JERIN SAMFURAN",
+      "title": "Cikakken Stack na Ci gaba da Move",
+      "description": "Samfuran uku da suka haɗu waɗanda ke magance kowane babban matsalar juzu'i a cikin ci gaban Move",
+      "products": {
+        "engine": {
+          "title": "Injin Dubhe",
+          "subtitle": "Samar da Code ta Atomatik 80%",
+          "description": "Kayan aikin ci gaba kaɗai da ke samar da 80% na code Move ta atomatik, yana barin masu ci gaba su mai da hankali kan mahimman ayyukan kasuwanci",
+          "features": [
+            "Rage lokacin ci gaba daga watanni zuwa makonni",
+            "90% ƙasan farashin kayan aikin gine-gine",
+            "Umarnin ɗaya ya tura zuwa dukkan sarƙoƙin Move"
+          ],
+          "highlight": "Ci gaba 10x Mai sauri"
+        },
+        "channel": {
+          "title": "Tashar Dubhe",
+          "subtitle": "Ƙwarewar Lokaci-Lokaci Matakin Web2",
+          "description": "Layer hulɗar P2P da za a iya shirya ta lokaci-lokaci da ke sanya blockchain ta zama kamar Web2",
+          "features": [
+            "Yin hoto na gaba nan take",
+            "Saurin aiwatarwa mai sauri sosai",
+            "Tallafin abokan ciniki da yawa na wayar hannu, tebur da yanar gizo"
+          ],
+          "highlight": "Jinkiri <50ms"
+        },
+        "os": {
+          "title": "Dubhe OS",
+          "subtitle": "Cross-Chain Interoperability OS",
+          "description": "Tsarin aiki na blockchain tare da goyon bayan haɗin gwiwar sarƙoƙi da tsarin ƙarfafawa masu ci gaba",
+          "features": [
+            "Tushen code ɗaya, dukkan sarƙoƙin Move",
+            "Ladan masu ci gaba da aka gina",
+            "Gada zuwa yanayin Multi-Chains"
+          ],
+          "highlight": "Asalin Multi-Chain"
+        }
+      }
+    },
+    "networkArchitecture": {
+      "badge": "GININ CIBIYAR SADARWA",
+      "title": "Cikakken Stack na Ci gaba da Move",
+      "description": "Daga kayan aikin haɓakawa zuwa tashoshin hulɗa na lokaci-hakika da kayan aikin rarrabawa - Dubhe yana ba da duk abin da ake buƙata don gina ƙarni na gaba na aikace-aikace masu cikakkun sarkar.",
+      "keyMetricsTitle": "Manyan Ma'auni",
+      "keyMetrics": [
+        "Ma'amaloli 10M+ da aka aiwatar",
+        "<200ms matsakaicin jinkiri",
+        "Gogewar mai amfani matakin Web2",
+        "Daidai da Sui, Aptos, Rooch, Movement, Initia"
+      ],
+      "moveEcosystemTitle": "Muhalli na Move",
+      "moveEcosystemFeatures": [
+        "Masu haɓaka Move 1,555 masu aiki",
+        "Girma 40% a kowane wata",
+        "Kasa da shekaru 3 da yawan",
+        "Babban yuwuwar girma"
+      ],
+      "pipelining": "Pipelining",
+      "architectureLayers": {
+        "moveApplications": {
+          "title": "Aikace-aikacen Move",
+          "subtitle": "DApps da Wasannin ku",
+          "description": "Gina hadaddun aikace-aikace rarraba tare da tsaro da sassauci na Move",
+          "features": ["Ka'idodin DeFi", "Apps na Wasanni", "Dandamalin NFT", "DApps na Zamantakewa"]
+        },
+        "dubheEngine": {
+          "title": "Injin Dubhe",
+          "subtitle": "Kayan Aikin Haɓakawa",
+          "description": "Yana samar da 80% na code ta atomatik kuma yana ba da cikakkiyar jerin kayan aikin masu haɓakawa",
+          "features": ["Samar da Code", "Ci gaba tushen Schema", "Turawa Multi-Chain", "Muhalli Dev"]
+        },
+        "dubheChannel": {
+          "title": "Tashar Dubhe",
+          "subtitle": "Layer Lokaci-Hakika",
+          "description": "Layer hulɗar P2P don gogewar mai amfani na lokaci-hakika matakin Web2",
+          "features": ["<50ms Jinkiri", "Daidaitawa Lokaci-Hakika", "Sadarwar P2P", "Tallafin Wayar Hannu"]
+        },
+        "dubheOS": {
+          "title": "Dubhe OS",
+          "subtitle": "Kayan Aikin Ketare-Sarkar",
+          "description": "Tsarin aiki rarraba tare da haɗin gwiwar sarƙoƙi da yawa na asali",
+          "features": ["Gadoji Ketare-Sarkar", "Yanayi Haɗe", "Ƙarfafawa Masu Haɓakawa", "Mulki"]
+        }
+      },
+      "completeStackSolution": {
+        "title": "Cikakkiyar Maganin Stack",
+        "description": "Dubhe shi ne na farko kuma kaɗai dandamali da ke ba da cikakkiyar mafita mai haɗewa don ci gaban muhalli na Move - daga samar da code zuwa gogewar mai amfani na lokaci-hakika."
+      },
+      "technicalFeatures": {
+        "securityFirst": {
+          "title": "Tsaro Da Farko",
+          "description": "Tabbatarwar al'ada na Move tana tabbatar da kwangilar mai wayo marasa kurakurai"
+        },
+        "highPerformance": {
+          "title": "Babban Aiki",
+          "description": "Aiwatarwa na gefe ɗaya da runtime da aka inganta don iyakar throughput"
+        },
+        "composable": {
+          "title": "Mai Hadewar",
+          "description": "Ginin modular yana ba da damar haɗawa da keɓaɓɓu mai sauƙi"
+        },
+        "unifiedState": {
+          "title": "Yanayi Haɗe",
+          "description": "Tushen gaskiya guda ɗaya a cikin dukan sarƙoƙi da aikace-aikace"
+        }
+      }
+    },
+    "networkStats": {
+      "title": "Ƙididdigan Cibiyar Sadarwa",
+      "description": "Ma'aunin lokaci-lokaci da ke nuna ci gaba da ayyuka a cikin yanayin Dubhe.",
+      "transactions": {
+        "label": "Ma'amalolin da aka Aiwatar",
+        "change": "+12.5%"
+      },
+      "operations": {
+        "label": "Ayyukan da aka Aiwatar",
+        "change": "+18.2%"
+      },
+      "users": {
+        "label": "Masu Amfani da suke Aiki",
+        "change": "+25.1%"
+      },
+      "income": {
+        "label": "Kudin Shiga na Ka'idar",
+        "change": "+15.8%"
+      }
     }
   },
   "foundation": {
@@ -141,13 +387,33 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Dubhe. Duk haƙƙoƙin an kiyaye su.",
+    "description": "Cikakkiyar dandamalin haɓakar Move tare da samar da lambar kai-kai 80%, tashoshi P2P na ainihin lokaci, da haɗin gwiwa tsakanin sarƙoƙi.",
+    "sections": {
+      "learn": "Koyo",
+      "build": "Gina",
+      "ecosystem": "Yanayin Muhalli",
+      "media": "Kafofin Yada Labarai",
+      "community": "Al'umma"
+    },
     "links": {
-      "about": "Game da",
+      "documentation": "Takaddun Rubutu",
+      "engine": "Injin",
+      "channel": "Tashar",
+      "os": "Tsarin Aiki",
+      "foundation": "Gidauniya",
+      "labs": "Dakunan Gwaji",
+      "grants": "Tallafi",
+      "incubation": "Shirye-shirye",
+      "proposal": "Shawara",
+      "ambassador": "Jakada",
+      "moderators": "Masu Gudanarwa",
+      "events": "Abubuwan da suka faru",
       "contact": "Tuntuɓar",
+      "about": "Game da",
       "terms": "Sharuɗɗan Sabis",
       "privacy": "Manufar Sirri"
-    }
+    },
+    "copyright": "© 2025 Dubhe. Duk haƙƙoƙin an kiyaye su."
   },
   "team": {
     "hero": {
@@ -164,6 +430,50 @@
       "title": "Ƙungiyar Jagora",
       "description": "Saduwa da masu hangen nesa da kwararu waɗanda ke jagorantar manufar Dubhe na juyin juya halin haɓakar Move",
       "expertise": "Gwaninta"
+    },
+    "members": {
+      "jason": {
+        "name": "Jason",
+        "role": "Jagoran Gidauniya",
+        "location": "San Francisco, CA",
+        "bio": "Jagora mai hangen nesa tare da shekaru 15+ a fasahar blockchain. Ya jagoranci Ƙungiyoƙi na injiniya a manyan kamfanonin fasaha kafin ya kafa Dubhe don juyin juya halin haɓakar Move.",
+        "expertise": ["Gine-ginen Blockchain", "Jagorar Ƙungiya", "Dabarun Samfur"]
+      },
+      "joan": {
+        "name": "Joan",
+        "role": "CTO & Shugaban Kafa",
+        "location": "New York, NY",
+        "bio": "Tsohuwar mai haɓakar Move tare da zurfin gwaninta a gine-ginen kwangila masu wayo. Tana jagorantar hangen nesanmu na fasaha kuma tana lura da duk ayyukan injiniya.",
+        "expertise": ["Harshen Move", "Kwangilolin Masu Wayo", "Gine-ginen Tsari"]
+      },
+      "david": {
+        "name": "David",
+        "role": "Babban Injiniya",
+        "location": "Seoul, Koriya ta Kudu",
+        "bio": "Injiniya na cikakken-stack mai sha'awar kayan aikin masu haɓakawa da ci gaban yanayin muhalli. Yana jagorantar Ƙungiyar haɓakar injin mu kuma yana gudanar da kirkire-kirkire na fasaha.",
+        "expertise": ["Haɓakar Cikakken-stack", "Kayan Aikin Masu Haɓakawa", "Buɗe Tushe"]
+      },
+      "bonnie": {
+        "name": "Bonnie",
+        "role": "Jagoran Al'umma",
+        "location": "Barcelona, Spain",
+        "bio": "Maginin al'umma tare da gogewa mai yawa wajen ci gaban yanayin masu haɓakawa. Tana gudanar da shirye-shiryenmu na al'ummar duniya da shirin jakadu.",
+        "expertise": ["Ginin Al'umma", "Dangantakar Masu Haɓakawa", "Gudanar da Abubuwan da Suka Faru"]
+      },
+      "liam": {
+        "name": "Liam McKenzie",
+        "role": "Jagoran Haɗin Gwiwa",
+        "location": "London, UK",
+        "bio": "Gwani na ci gaban kasuwanci mai mayar da hankali kan haɗin gwiwa na dabaru da ci gaban yanayin muhalli. Ya jagoranci haɗin gwiwa a manyan kamfanonin blockchain a baya.",
+        "expertise": ["Haɗin Gwiwa na Dabaru", "Ci Gaban Kasuwanci", "Ci Gaban Yanayin Muhalli"]
+      },
+      "emily": {
+        "name": "Emily Smith",
+        "role": "Darektan Bincike",
+        "location": "Beijing, China",
+        "bio": "PhD a Kimiyyar Kwamfuta mai gwaninta a tsarukan da aka rarraba. Tana jagorantar shirye-shiryenmu na bincike kuma tana binciken fasahoƙin blockchain na zamani.",
+        "expertise": ["Tsarukan Da Aka Rarraba", "Bincike", "Haɗin Gwiwar Ilimi"]
+      }
     },
     "join": {
       "title": "Shiga Ƙungiyarmu",
@@ -342,7 +652,1088 @@
       "suggestion": "Wannan yawanci na wucin gadi ne. Da fatan za ku sake gwadawa bayan ɗan lokaci."
     }
   },
+  "incubation": {
+    "hero": {
+      "badge": "Shirye-shiryen Gidauniyar Dubhe",
+      "title": "Gina Startup ta Unicorn na Gaba",
+      "subtitle": "Shiga yanayin shirye-shiryenmu na haɗin gwiwa da Gidauniyar Dubhe ke tallafawa, da aka shirye-shirye tare da Obelisk Labs da VCs na yanayin muhalli don gina Ƙarni na gaba na startups na Move.",
+      "stats": {
+        "funding": {
+          "value": "Yana Zuwa Ba da Jimawa Ba",
+          "label": "Jimlar Tallafi"
+        },
+        "startups": {
+          "value": "Yana Zuwa Ba da Jimawa Ba",
+          "label": "Startups da aka Shirye-shirye"
+        },
+        "unicorns": {
+          "value": "Yana Zuwa Ba da Jimawa Ba",
+          "label": "Unicorns da aka Kirkira"
+        },
+        "success": {
+          "value": "Yana Zuwa Ba da Jimawa Ba",
+          "label": "Adadin Nasara"
+        }
+      },
+      "cta": {
+        "apply": "Nemi Yanzu",
+        "learn": "Koyi Ƙari"
+      }
+    },
+    "programs": {
+      "accelerator": {
+        "title": "Mai Gudanar da Gidauniya",
+        "duration": "watanni 3",
+        "funding": "Har zuwa $500K",
+        "description": "Shirye-shiryen da aka taho da ke da tallafin Gidauniyar Dubhe da aka shirye-shirye tare da Obelisk Labs da VCs na yanayin muhalli",
+        "benefits": ["Tallafin Gidauniyar Dubhe", "Shirye-shiryen Obelisk Labs", "Tallafin haɓakar Move", "Haɗin gwiwar VCs na yanayin muhalli"]
+      },
+      "studio": {
+        "title": "Studio na Haɗin Gwiwa",
+        "duration": "watanni 6-12",
+        "funding": "Har zuwa $1M",
+        "description": "Da Gidauniyar Dubhe, Obelisk Labs, da VCs na yanayin muhalli suka shirye-shirye tare da albarkatu da aka raba",
+        "benefits": ["Shirye-shiryen da abokan hulda da yawa suka yi", "Albarkatu na fasaha da aka raba", "Haɗin gwiwar ayyuka", "Cibiyoyin Sadarwa na VCs yanayin muhalli"]
+      },
+      "scale": {
+        "title": "Ma'auni na Yanayin Muhalli",
+        "duration": "watanni 6",
+        "funding": "Har zuwa $2M",
+        "description": "Ma'auni tare da cikakken tallafi daga Gidauniyar Dubhe, Obelisk Labs, da abokan huldan VCs na yanayin muhalli",
+        "benefits": ["Cibiyar Sadarwa ta shirye-shirye", "Gabatarwar dabaru", "Samun damar kasuwar duniya", "Haɗin gwiwar VCs na kasuwanci"]
+      }
+    },
+    "resources": {
+      "coIncubation": {
+        "title": "Shirye-shiryen Abokan Hulda da Yawa",
+        "description": "Jagorar haɗa ta Gidauniyar Dubhe, Obelisk Labs da VCs na yanayin muhalli"
+      },
+      "infrastructure": {
+        "title": "Kayayyakin More Rayuwa da aka Raba",
+        "description": "Samun damar kayayyakin more rayuwar Obelisk Labs da albarkatun VCs na yanayin muhalli"
+      },
+      "integration": {
+        "title": "Haɗa kai na Yanayin Muhalli",
+        "description": "Haɗa kai kai tsaye da ayyukan Dubhe da cibiyoyin sadarwa na abokan hulda"
+      },
+      "development": {
+        "title": "Haɓakawa na Haɗin Gwiwa",
+        "description": "Tallafin fasaha daga Ƙungiyoƙin injiniya na Gidauniyar Dubhe da Obelisk Labs"
+      },
+      "demoDays": {
+        "title": "Ranakun Demo na Abokan Hulda",
+        "description": "Gabatarwa ga hukumar Gidauniyar Dubhe da cibiyoyin sadarwa na VCs yanayin muhalli"
+      },
+      "network": {
+        "title": "Cibiyar Sadarwa ta Yanayin Muhalli",
+        "description": "Samun damar duk yanayin Dubhe da kamfanonin abokan hulda"
+      }
+    }
+  },
+  "ambassador": {
+    "benefits": {
+      "exclusiveAccess": {
+        "title": "Samun Damar Keɓantacce",
+        "description": "Samun damar farko zuwa sabbin fasaloli, samfura, da sanarwa kafin fitowar jama'a"
+      },
+      "directCommunication": {
+        "title": "Sadarwar Kai tsaye",
+        "description": "Sadarwar yau da kullun da Gidauniyar Dubhe da tasiri akan yanke shawara na tsarin hanyar samfur"
+      },
+      "recognition": {
+        "title": "Sanin da Lada",
+        "description": "Sanin na musamman a cikin al'umma, kayan ciniki na musamman, da ladan alama don gudunmawa"
+      },
+      "globalNetwork": {
+        "title": "Cibiyar Sadarwa ta Duniya",
+        "description": "Haɗa kai da mutane masu tunani iri ɗaya kuma gina dangantaka a cikin al'ummar Dubhe ta duniya"
+      }
+    },
+    "requirements": [
+      "Memba mai aiki a cikin al'ummar Dubhe aƘalla watanni 3",
+      "Kyakkyawan fahimtar fasahar blockchain na Move",
+      "Gogewa a ginin al'umma ko Ƙirƙirar abun ciki",
+      "Alkawari don tallata yanayin Dubhe yadda ya kamata",
+      "Ana samunsa aƘalla sa'o'i 10 a mako",
+      "Ƙwarewa da Turanci da aƘalla wata harshe ɗaya"
+    ],
+    "responsibilities": {
+      "communityEngagement": {
+        "title": "Shisshigin Al'umma",
+        "tasks": [
+          "Kula da tattaunawar al'umma kuma kiyaye yanayi mai kyau",
+          "Amsa tambayoyin fasaha kuma taimaki sababbi",
+          "Shirya tarukan gida da abubuwan da suka faru akan Intanet",
+          "Ƙirƙirar abun ciki mai jan hankali (koyarwar, labaran, bidiyo)"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Ci Gaban Yanayin Muhalli",
+        "tasks": [
+          "Gano da shigar da sabbin masu haɓakawa zuwa Dubhe",
+          "Haɗin gwiwa da sauran jakadu akan shirye-shiryen duniya",
+          "Ba da ra'ayi akan samfura da rubutu",
+          "Wakiltar Dubhe a tarurruka da abubuwan blockchain"
+        ]
+      },
+      "contentCreation": {
+        "title": "Ƙirƙirar Abun Ciki",
+        "tasks": [
+          "Rubuta koyarwar fasaha da jagororin",
+          "Ƙirƙirar abun ciki na bidiyo da ke bayyana fasalolin Dubhe",
+          "Fassara rubutu zuwa harsunan gida",
+          "Raba sabunta yanayin muhalli akan kafofin watsa labarun"
+        ]
+      }
+    }
+  },
   "LocaleSwitcher": {
-    "label": "Canja harshe"
+    "label": "Harsuna"
+  },
+  "labs": {
+    "hero": {
+      "badge": "Dakunan Gwaje-gwajen Ci Gaba na Dubhe",
+      "title1": "Dakunan Gwaje-gwaje",
+      "title2": "na Ƙirƙira Tare",
+      "subtitle": "Ƙungiyoyi daban-daban masu ƙwarewa na ci gaba suna aiki tare ƙarƙashin Dubhe Foundation don gina makomar kayan aikin blockchain da ke dangane da Move, kamar Polkadot JAM.",
+      "stats": {
+        "activeLabs": "Dakunan Gwaje-gwaje Masu Aiki",
+        "coreEngineers": "Manyan Injiniyoyi",
+        "unifiedVision": "Hangen Nesa Na Ƙa'ida Haɗe"
+      },
+      "cta1": "Bincika Dakunan Gwaje-gwaje",
+      "cta2": "Shiga Dakin Gwaje-gwaje"
+    },
+    "overview": {
+      "badge": "Ƙungiyoyin Ci Gaba",
+      "title": "Dakunan Gwaje-gwaje Masu Ƙwarewa Hangen Nesa Haɗe",
+      "description": "Kowanne dakin gwaje-gwaje yana kawo ƙwarewa ta musamman yayin aiki zuwa manufa ɗaya ta ci gaban muhalli na Dubhe",
+      "visitLab": "Ziyarci Dakin Gwaje-gwaje",
+      "keyContributions": "Manyan Gudunmawa"
+    },
+    "labsList": {
+      "obelisk": {
+        "name": "Obelisk Labs",
+        "focus": "Ci Gaban Ƙa'ida Ta Asali",
+        "description": "Jagorantar ci gaban ƙa'idar blockchain ta asali na Dubhe da kayan aikin harshen Move. Mai mayar da hankali kan hanyoyin yarda, inganta kwangila mai wayo da kayan aikin masu haɓakawa.",
+        "contributions": [
+          "Ginin Ƙa'ida Ta Asali na Dubhe",
+          "Inganta Lokacin Aiki na Harshen Move",
+          "Injin Aiwatar da Kwangila Mai Wayo",
+          "SDK Masu Haɓakawa da Jerin Kayan Aiki",
+          "Hanyoyin Yarda Ta Ketare-sarkar"
+        ],
+        "status": "Yana Aiki",
+        "team": "Injiniyoyi 12"
+      },
+      "cyferio": {
+        "name": "Cyferio Labs",
+        "focus": "Keɓaɓɓu da Ilimi-Sifiri",
+        "description": "Ƙware a fasahohin kula da keɓaɓɓu, shaidun sifiri-ilimi da ƙa'idodin cryptographic na muhalli na Dubhe. Gina ƙarni na gaba na kwangila mai wayo na sirri.",
+        "contributions": [
+          "Tsarin Shaida na Ilimi-Sifiri",
+          "Kwangilar Mai Wayo Masu Kula da Keɓaɓɓu",
+          "Tsarin Ƙa'idodin Cryptographic",
+          "Mafita na Lissafi mai Sirri",
+          "Tsarin Ma'amala Rashin Sani"
+        ],
+        "status": "Yana Aiki",
+        "team": "Masu Bincike 8"
+      },
+      "network": {
+        "name": "Dubhe Network Labs",
+        "focus": "Kayan Aiki da Girma",
+        "description": "Gina mafita na sadarwa mai ƙarfi, ƙa'idodin sadarwa na lokaci-hakika da kayan aikin girma na muhalli na Dubhe.",
+        "contributions": [
+          "Sadarwa P2P Mai Ƙarfi",
+          "Sadarwar Tashar Lokaci-Hakika",
+          "Ginin Node Mai Girma",
+          "Inganta Ƙa'idodin Cibiyar Sadarwa",
+          "Kayan Aikin Gada Ta Ketare-sarkar"
+        ],
+        "status": "Ci Gaba",
+        "team": "Injiniyoyi 6"
+      },
+      "bridge": {
+        "name": "Dubhe Bridge Labs",
+        "focus": "Fasahar Ketare-Sarkar",
+        "description": "Haɓaka ƙa'idodin gada na duniya da mafita na haɗin kai don haɗa Dubhe da sauran muhallai na blockchain ba tare da matsala ba.",
+        "contributions": [
+          "Ƙa'idar Gada Ta Duniya",
+          "Canja wurin Kadarori Ta Ketare-sarkar",
+          "Mulkin Sarƙoƙi-da-yawa",
+          "Ma'aunin Haɗin Kai",
+          "Hanyoyin Tsaro na Gada"
+        ],
+        "status": "Bincike",
+        "team": "Injiniyoyi 4"
+      }
+    },
+    "research": {
+      "badge": "Mayar da Hankali kan Bincike",
+      "title": "Yankunan Binciken Haɗin Kai",
+      "areas": {
+        "protocol": {
+          "title": "Ci Gaban Ƙa'ida",
+          "description": "Ƙa'idodin blockchain na asali, hanyoyin yarda da inganta harshen Move",
+          "teams": ["Obelisk Labs"]
+        },
+        "infrastructure": {
+          "title": "Kayan Aiki da Girma",
+          "description": "Sadarwa mai ƙarfi, sadarwar lokaci-hakika da mafita na girma",
+          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+        },
+        "crossChain": {
+          "title": "Fasahar Ketare-Sarkar",
+          "description": "Ƙa'idodin haɗin kai, gada na duniya da mulkin sarƙoƙi-da-yawa",
+          "teams": ["Dubhe Bridge Labs"]
+        },
+        "privacy": {
+          "title": "Keɓaɓɓu da Tsaro",
+          "description": "Shaidun ilimi-sifiri, ƙa'idodin kula da keɓaɓɓu da binciken cryptographic",
+          "teams": ["Cyferio Labs"]
+        }
+      },
+      "contributingLabs": "Dakunan Gwaje-gwaje Masu Bayar da Gudunmawa:"
+    },
+    "collaboration": {
+      "title": "Tsarin Ci Gaban Haɗin Kai",
+      "description": "Yadda dakunan gwaje-gwaje da yawa ke daidaitawa don ba da aiwatar da ƙa'idodin haɗe",
+      "phases": {
+        "research": {
+          "title": "Bincike",
+          "description": "Binciken haɗin kai da tsarin ƙa'ida a cikin dukan ƙungiyoyi"
+        },
+        "development": {
+          "title": "Ci Gaba",
+          "description": "Aiwatarwa na gefe ɗaya tare da ma'auni da interfaces na rabo"
+        },
+        "testing": {
+          "title": "Gwaji",
+          "description": "Gwajin haɗin kai tsakanin ƙungiyoyi da tabbatarwa"
+        },
+        "deployment": {
+          "title": "Turawa",
+          "description": "Turawa mai daidaitawa da haɗin muhalli"
+        }
+      }
+    },
+    "cta": {
+      "title": "Shiga Ƙirƙira",
+      "description": "Zama ɓangare na gina makomar kayan aikin blockchain na tushen Move",
+      "apply": "Yi Neman Shiga Dakunan Gwaje-gwaje",
+      "positions": "Duba Matsayi Budaddiya"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Tuntube Mu",
+      "title1": "Shiga",
+      "title2": "Sadarwa",
+      "subtitle": "Kuna da tambayoyi game da Dubhe? Kuna son yin hadinkai da mu? Muna so mu ji muryarku."
+    },
+    "form": {
+      "title": "Aika mana da saƙo",
+      "validationError": "Kuskuren tabbatarwa",
+      "sendError": "An gaza aika saƙon. Da fatan za a sake gwadawa.",
+      "networkError": "Kuskuren cibiyar sadarwa. Da fatan za a bincika haɗinku kuma a sake gwadawa.",
+      "sending": "Aikawa...",
+      "submit": "Aika Saƙo",
+      "success": {
+        "title": "An aika saƙon!",
+        "message": "Za mu dawo gare ku cikin sa'o'i 24-48.",
+        "sendAnother": "Aika wani saƙo"
+      },
+      "fields": {
+        "name": {
+          "label": "Suna",
+          "placeholder": "Sunanku"
+        },
+        "email": {
+          "label": "Imel",
+          "placeholder": "your@email.com"
+        },
+        "subject": {
+          "label": "Batun",
+          "placeholder": "Zaɓi batun",
+          "options": {
+            "general": "Tambaya Ta Gabaɗaya",
+            "partnership": "Hadinkai",
+            "investment": "Tambaya Game da Saka Hannun Jari",
+            "grants": "Neman Tallafi",
+            "foundationJobs": "Ayyukan Gidauniya",
+            "technical": "Taimakon Fasaha",
+            "media": "Kafofin Watsa Labarai"
+          }
+        },
+        "message": {
+          "label": "Saƙo",
+          "placeholder": "Faɗa mana game da aikinku, tambayarku ko yadda za mu iya taimakawa..."
+        }
+      }
+    },
+    "info": {
+      "title": "Bayanin Tuntuɓa",
+      "description": "Ko kuna mai haɓakawa, mai saka hannun jari, ko kawai kuna sha'awar Dubhe, muna nan don taimakawa. Tuntuɓe mu ta kowanne hanyar da ke ƙasa.",
+      "email": {
+        "title": "Imel"
+      },
+      "business": {
+        "title": "Tambayoyin Kasuwanci"
+      },
+      "location": {
+        "title": "Wuri",
+        "content": "Duniya, Rarraba"
+      },
+      "responseTime": {
+        "title": "Lokacin Amsa",
+        "content": "sa'o'i 24-48"
+      }
+    },
+    "quickLinks": {
+      "title": "Hanyoyin Sauri",
+      "grant": "Nemi Tallafi",
+      "incubation": "Shiga Shirin Incubation",
+      "ambassador": "Zama Jakada",
+      "documentation": "Karanta Rubutu"
+    }
+  },
+  "events": {
+    "hero": {
+      "badge": "Kalandar Abubuwa",
+      "title": "Abubuwa masu zuwa",
+      "subtitle": "Shiga abubuwan da Dubhe ke shirya, taron masana'antu, haduwar al'umma, taron masu haɓakawa da sauransu."
+    },
+    "filters": {
+      "search": {
+        "placeholder": "Bincika"
+      },
+      "categories": {
+        "all": "Duka",
+        "ama": "AMA",
+        "workshop": "Taron Koyarwa",
+        "meetup": "Haduwa"
+      },
+      "sort": {
+        "date": "Jera: Kwanan wata",
+        "name": "Jera: Suna",
+        "location": "Jera: Wuri"
+      }
+    },
+    "table": {
+      "headers": {
+        "date": "Kwanan wata",
+        "name": "Suna",
+        "location": "Wuri",
+        "category": "Nau'i"
+      },
+      "noEvents": "Babu abubuwan da suka dace da bukatunku."
+    },
+    "eventsList": {
+      "engineWorkshop": {
+        "name": "Taron Koyarwar Masu Haɓaka Injin Dubhe",
+        "location": "Kan layi",
+        "category": "Taron Koyarwa",
+        "description": "Zurfafa bincike kan ginin Injin Dubhe da mafi kyawun ayyukan haɓakawa"
+      },
+      "moveAma": {
+        "name": "AMA Muhalli na Move tare da Dubhe Foundation",
+        "location": "Kan layi",
+        "category": "AMA",
+        "description": "Tambaya mu komai game da ƙa'idar Dubhe, taswirar hanya da ci gaban muhalli"
+      },
+      "sfMeetup": {
+        "name": "Haduwar Al'ummar Dubhe - San Francisco",
+        "location": "San Francisco, CA",
+        "category": "Haduwa",
+        "description": "Sadarwa da masu haɓaka Dubhe da membobin al'umma a yankin Bay"
+      },
+      "zkWorkshop": {
+        "name": "Taron Koyarwar Mafita na Keɓaɓɓu na Ilimi-Sifiri",
+        "location": "Kan layi",
+        "category": "Taron Koyarwa",
+        "description": "Koyi game da shaidun ZK da ƙa'idodin kula da keɓaɓɓu a muhalli na Dubhe"
+      }
+    },
+    "community": {
+      "title": "Shiga Al'ummarmu Ta Duniya",
+      "description": "Haɗa kai da masu haɓakawa, masu sha'awa da masu ƙirƙira daga ko'ina a duniya a abubuwan mu",
+      "stats": {
+        "eventsThisYear": "Abubuwa Wannan Shekara",
+        "attendees": "Masu Halarta",
+        "countries": "Ƙasashe",
+        "speakers": "Masu Magana"
+      }
+    }
+  },
+  "moderators": {
+    "hero": {
+      "badge": "Shirin Masu Gudanarwa",
+      "title1": "Masu Gudanarwa",
+      "title2": "Al'umma",
+      "subtitle": "Taimaka wajen kula da yanayi mai aminci, maraba da samar da aiki na al'ummarmu ta duniya. Shiga ƙungiyar masu gudanarwa masu himma da ke tabbatar da tattaunawa mai inganci da tallafawa dukan membobi.",
+      "stats": {
+        "coverage": "Rufe",
+        "activeModerators": "Masu Gudanarwa Masu Aiki",
+        "membersProtected": "Membobin da aka Kare"
+      },
+      "cta1": "Nemi don Gudanarwa",
+      "cta2": "Jagororin"
+    },
+    "responsibilitiesSection": {
+      "badge": "Manyan Nauyi",
+      "title": "Abin da Masu Gudanarwa Suke yi"
+    },
+    "responsibilities": {
+      "communityModeration": {
+        "title": "Gudanar da Al'umma",
+        "description": "Kula da tattaunawa masu lafiya, aiwatar da jagororin al'umma da tabbatar da yanayi mai maraba ga dukan membobi"
+      },
+      "securitySafety": {
+        "title": "Tsaro da Aminci",
+        "description": "Gano da hana spam, yaudara da ayyukan da ba su dace ba don kare membobin al'umma"
+      },
+      "memberSupport": {
+        "title": "Tallafin Membobi",
+        "description": "Taimaka wa sabbin membobi su fara, amsa tambayoyi da jagorantar masu amfani zuwa albarkatu masu dacewa"
+      },
+      "contentCuration": {
+        "title": "Tsara Abun Ciki",
+        "description": "Nuna abun ciki mai inganci, shirya bayanai da kula da ingancin tattaunawar al'umma"
+      }
+    },
+    "moderatorsSection": {
+      "title": "Sanar da Masu Gudanarwanmu",
+      "description": "Ƙungiyarmu mai himma tana ba da rufe 24/7 a dukan yankunan lokaci da dandamali",
+      "timezone": "Yankin Lokaci",
+      "platforms": "Dandamali",
+      "languages": "Harsuna"
+    },
+    "toolsSection": {
+      "title": "Kayan Aikin Gudanarwa"
+    },
+    "tools": {
+      "discord": {
+        "features": [
+          "Gudanar da saƙonni",
+          "Dakatar/hana masu amfani",
+          "Sa ido kan tashoshi",
+          "Haɗa bots"
+        ]
+      },
+      "telegram": {
+        "features": [
+          "Gudanar da ƙungiyoyi",
+          "Tace spam",
+          "Tabbatar da masu amfani",
+          "Amsoshi na atomatik"
+        ]
+      },
+      "forum": {
+        "features": [
+          "Gudanar da threads",
+          "Gudanar da abun ciki",
+          "Matsayin masu amfani",
+          "Gudanar da rahotanni"
+        ]
+      }
+    },
+    "requirementsSection": {
+      "title": "Buƙatu",
+      "guidelinesTitle": "Jagororin Gudanarwa"
+    },
+    "requirements": [
+      "Memba mai aiki na al'umma aƙalla watanni 3",
+      "Fahimtar zurfi na muhalli na Dubhe da fasahar Move",
+      "Kyawawan ƙwarewa na sadarwa da warware rikici",
+      "Samun damar yin ayyukan gudanarwa a yankunan lokaci daban-daban",
+      "Gogewa na gudanarwa na baya ya fi dacewa",
+      "Sadaukar da kai ga yanke shawara mai adalci da rashin son kai"
+    ],
+    "guidelines": {
+      "communication": {
+        "category": "Sadarwa",
+        "rules": [
+          "Bi da dukan membobin al'umma da girmamawa da ladabi",
+          "Yi amfani da harshe mai bayyana da ƙwarewa a dukan hulɗa",
+          "Rage rikici da inganta tattaunawa mai gina jiki",
+          "Kasance mai haƙuri da sababbi kuma ka ba da jagora mai amfani"
+        ]
+      },
+      "enforcement": {
+        "category": "Aiwatarwa",
+        "rules": [
+          "Aiwatar da dokokin al'umma cikin daidaito da adalci",
+          "Rubuta dukan ayyukan gudanarwa tare da dalilai masu bayyana",
+          "Ɗaga matsaloli masu rikitarwa zuwa manyan masu gudanarwa ko masu gudanarwa",
+          "Hanyoyin dubawa da neman ƙara yakamata su zama bayyane"
+        ]
+      },
+      "privacySecurity": {
+        "category": "Keɓaɓɓu da Tsaro",
+        "rules": [
+          "Kare keɓaɓɓun masu amfani da bayanai na sirri",
+          "Kada ku taɓa raba kayan aikin gudanarwa ko bayanan shiga",
+          "Bayar da rahoton raunukan tsaro nan da nan",
+          "Kula da sirrin tattaunawar ciki"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Shirye kuke don Taimaka wa Al'ummarmu?",
+      "description": "Shiga ƙungiyar gudanarwanmu kuma ku taimaka wajen samar da yanayi mai aminci da maraba ga kowa",
+      "apply": "Yi Nema Yanzu",
+      "guidelines": "Duba Jagororin"
+    }
+  },
+  "engine": {
+    "hero": {
+      "badge": "Injin Dubhe",
+      "title1": "80% Lambar",
+      "title2": "Atomatik-Samarwa",
+      "subtitle": "Dandamali na haɓakawa tushen schema wanda ke samar da kwangilar mai wayo, APIs da abubuwan UI ta atomatik. Mayar da hankali kan abin da ke da mahimmanci - dabaran kasuwancin ku na musamman.",
+      "stats": {
+        "codeAutoGenerated": "Lambar Atomatik-Samarwa",
+        "fasterDevelopment": "Ci Gaba Mai Sauri",
+        "moveEcosystem": "Muhalli na Move"
+      },
+      "cta1": "Fara Ginawa",
+      "cta2": "Duba Rubutu"
+    },
+    "featuresSection": {
+      "badge": "Manyan Fasaloli",
+      "title": "Gina Sauri, Jigilar Sauri",
+      "description": "Injin Dubhe yana ɗaukar nauyin aiki don haka za ku iya mayar da hankali kan ƙirƙira"
+    },
+    "features": {
+      "codeGeneration": {
+        "title": "80% Lambar Atomatik-Samarwa",
+        "description": "Rage lokacin haɓakawa sosai tare da samar da lambar mai hankali wanda ke ɗaukar boilerplate, tsarin bayanai da samfuran gama-gari ta atomatik.",
+        "details": [
+          "Samar da lambar da schema ke jagoranta",
+          "Samar da endpoints na API ta atomatik",
+          "Scaffolding na kwangilar mai wayo",
+          "Samar da abubuwan UI"
+        ]
+      },
+      "schemaBased": {
+        "title": "Ci Gaba Tushen Schema",
+        "description": "Bayyana tsarin bayananku sau ɗaya kuma barin Injin Dubhe ya samar da komai dabam. Canje-canje suna yaduwa ta atomatik a cikin dukan aikace-aikacenku.",
+        "details": [
+          "Tushen gaskiya guda ɗaya",
+          "Tsaron nau'i na atomatik",
+          "Tabbatarwa na lokaci-hakika",
+          "Dacewa da dandamali daban-daban"
+        ]
+      },
+      "realTimeToolchain": {
+        "title": "Jerin Kayan Aikin DApp na Lokaci-Hakika",
+        "description": "Gina aikace-aikace masu cikakkiyar sarkar tare da iyawar lokaci-hakika. Daga yanayin wasa zuwa aikace-aikacen kudi, komai yana faruwa nan take.",
+        "details": [
+          "Kammala ma'amala ƙasan sakan",
+          "Daidaitawa yanayi na lokaci-hakika",
+          "Ginin da abubuwa ke jagoranta",
+          "Sabunta UI masu kyakkyawa"
+        ]
+      },
+      "multiChain": {
+        "title": "Tallafin Sarƙoƙi-da-yawa",
+        "description": "Tura akan sarƙoƙi da yawa masu tushen Move ba tare da canza lambarku ba. Rubuta sau ɗaya, tura ko'ina.",
+        "details": [
+          "Haɗin cibiyar sadarwa Sui",
+          "Dacewa da Aptos",
+          "Tallafin cibiyar sadarwa Movement",
+          "Gudanar da yanayi na ketare-sarkar"
+        ]
+      }
+    },
+    "workflowSection": {
+      "badge": "Tsarin Ci Gaba",
+      "title": "Daga Ra'ayi zuwa Samarwa a Matakai Sauƙi 4"
+    },
+    "workflow": {
+      "defineSchema": {
+        "title": "Bayyana Schema",
+        "description": "Ƙirƙiri samfuran bayananku da dabarun kasuwanci ta amfani da harshen bayyana schema mai fahimta"
+      },
+      "generateCode": {
+        "title": "Samar da Lambar",
+        "description": "Injin Dubhe yana samar da 80% na lambar aikace-aikacenku ta atomatik gami da kwangilar mai wayo da APIs"
+      },
+      "customizeLogic": {
+        "title": "Keɓanta Dabara",
+        "description": "Mayar da hankali kan 20% na musamman - dabarar kasuwancin ku, fasaloli na musamman da gogewar mai amfani"
+      },
+      "deployInstantly": {
+        "title": "Tura Nan Take",
+        "description": "Turawa sau ɗaya akan sarƙoƙi da yawa na Move tare da ingantawa da sa ido ta atomatik"
+      }
+    },
+    "cta": {
+      "title": "Shirye kuke don Ninka Saurin Ci Gaban ku har 10x?",
+      "description": "Shiga masu haɓakawa da ke gina makomar aikace-aikace masu cikakkiyar sarkar",
+      "getStarted": "Fara Kyauta",
+      "scheduleDemo": "Tsara Demo"
+    }
+  },
+  "channel": {
+    "badge": "Tashar Dubhe",
+    "hero": {
+      "title": "Layer Hulɗa",
+      "titleHighlight": "P2P Lokaci-Hakika",
+      "subtitle": "Gogewar mai amfani matakin Web2 tare da kayan aikin Web3. Jinkiri ƙasan milliseconds 50 na aikace-aikacen wasa, dandamali na zamantakewa da kasuwanci da aka gina akan blockchains Move.",
+      "metrics": {
+        "latency": "Jinkiri",
+        "users": "Masu Amfani na Lokaci Guda",
+        "uptime": "Lokacin Aiki"
+      },
+      "cta1": "Shiga Cibiyar Sadarwa",
+      "cta2": "Takaddun Fasaha"
+    },
+    "features": {
+      "badge": "Manyan Fasaloli",
+      "title": "Kayan Aikin Lokaci-Hakika",
+      "subtitle": "na DApps Na Zamani",
+      "description": "An gina don aikace-aikace da ke buƙatar amsawa nan take da gogewar mai amfani mara kyau",
+      "items": {
+        "latency": {
+          "title": "Jinkiri Ƙasan-50ms",
+          "description": "Hulɗa P2P na lokaci-hakika tare da amsawa matakin Web2. An gina don aikace-aikacen wasa, kasuwanci da zamantakewa da ke buƙatar martani nan take.",
+          "details": [
+            "Sadarwa tushen WebRTC",
+            "Algorithms na hanya da aka inganta",
+            "Rarrabawar nodes edge",
+            "Daidaitawa yanayi mai hango"
+          ]
+        },
+        "network": {
+          "title": "Cibiyar Sadarwa P2P Mai Girma",
+          "description": "Girma na kwance wanda ke girma tare da tushen masu amfaninku. Daga daruruwa zuwa miliyoyin haɗin gwiwa na lokaci guda ba tare da raguwar aiki ba.",
+          "details": [
+            "Gano abokan hulɗa mai canzawa",
+            "Ƙa'idodin daidaita nauyi",
+            "Tsarin cibiyar sadarwa na mesh",
+            "Kayan aikin girma-atomatik"
+          ]
+        },
+        "security": {
+          "title": "Amintacce ta Asali",
+          "description": "Ɓoye ƙarshe-zuwa-ƙarshe da tabbatarwar cryptographic suna tabbatar da cewa bayananku da hulɗarku sun kasance masu zaman kansu da kuma rashin iya canzawa.",
+          "details": [
+            "Ƙa'idodin ɓoye E2E",
+            "Shaidun ilimi-sifiri",
+            "Sa hannun cryptographic",
+            "Tabbatarwa rarraba"
+          ]
+        },
+        "experience": {
+          "title": "UX Web2, Backend Web3",
+          "description": "Gogewar mai amfani da aka sani wanda kayan aikin rarraba ke tayar da shi. Masu amfani suna samun mafi kyau na duniyoyi biyu ba tare da rangwame ba.",
+          "details": [
+            "Haɗin wallet mara kyau",
+            "Ma'amaloli marasa gas",
+            "Tallafin Progressive Web App",
+            "Tsarin wayar hannu-farko"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "badge": "Yanayin Amfani",
+      "title": "An Gina don Aikace-aikacen Lokaci-Hakika",
+      "items": {
+        "gaming": {
+          "title": "Wasannin Lokaci-Hakika",
+          "description": "Wasannin ƴan wasa da yawa tare da lokutan amsa nan take",
+          "metrics": ["<50ms jinkiri", "1M+ ƴan wasa na lokaci guda", "99.9% lokacin aiki"]
+        },
+        "social": {
+          "title": "Dandamalin Zamantakewa",
+          "description": "Cibiyoyin sadarwar zamantakewa rarraba tare da saƙon lokaci-hakika",
+          "metrics": ["Saƙon nan take", "Kiran bidiyo kai tsaye", "Hira na ƙungiya"]
+        },
+        "trading": {
+          "title": "Aikace-aikacen Kasuwanci",
+          "description": "Kasuwancin mitar yawa tare da bayanan farashi na lokaci-hakika",
+          "metrics": ["Bayanai na lokaci-hakika", "Sabunta littafin oda", "Gano farashi"]
+        }
+      }
+    },
+    "architecture": {
+      "title": "Ginin Cibiyar Sadarwa",
+      "description": "Hanya mai matakan da yawa don ingantaccen aiki da girma",
+      "layers": {
+        "application": {
+          "title": "Layer Aikace-aikace",
+          "description": "DApp ɗinku yana haɗawa ta APIs masu sauƙi"
+        },
+        "channel": {
+          "title": "Layer Channel",
+          "description": "Ƙa'idar sadarwa P2P na lokaci-hakika"
+        },
+        "network": {
+          "title": "Layer Network",
+          "description": "Kayan aikin nodes rarraba"
+        },
+        "blockchain": {
+          "title": "Layer Blockchain",
+          "description": "Sasantawa da tabbatarwa tushen Move"
+        }
+      }
+    },
+    "network": {
+      "title": "Cibiyar Sadarwar P2P Ta Duniya",
+      "description": "Cibiyar sadarwar taurari ta Dubhe da ke haɗa nodes na duniya don sadarwar jinkiri kadan sosai",
+      "status": {
+        "title": "MATSAYIN CIBIYAR SADARWA",
+        "online": "KAN LAYI",
+        "latency": "Jinkiri: <50ms"
+      },
+      "nodes": {
+        "title": "NODES MASU AIKI",
+        "connected": "7/7 An Haɗa"
+      }
+    },
+    "cta": {
+      "title": "Shirye don DApps na Lokaci-Hakika?",
+      "subtitle": "Shiga cibiyar sadarwar da ke tayar da ƙarni na gaba na aikace-aikace masu hulɗa",
+      "primary": "Haɗa zuwa Cibiyar Sadarwa",
+      "secondary": "Duba Doc API"
+    }
+  },
+  "os": {
+    "badge": "Dubhe OS",
+    "hero": {
+      "title": "Muhalli na Move",
+      "titleHighlight": "Ketare-Sarkar",
+      "subtitle": "Muhalli haɗe da ke haɗa blockchains masu tushen Move tare da mulkin ketare-sarkar, gada na duniya da tsaro na rabo a cikin dukan cibiyar sadarwa.",
+      "stats": {
+        "multiChain": {
+          "value": "Sarƙoƙi-da-yawa",
+          "label": "Muhalli na Move"
+        },
+        "universal": {
+          "value": "Na Duniya",
+          "label": "Tattalin Arzikin Token"
+        },
+        "unified": {
+          "value": "Haɗe",
+          "label": "Mulki"
+        }
+      },
+      "cta": {
+        "primary": "Shiga Muhalli",
+        "secondary": "Koyi Karin"
+      }
+    },
+    "features": {
+      "badge": "Fasalolin Muhalli",
+      "title": "Token Daya, Sarƙoƙi da yawa",
+      "subtitle": "Gogewa Haɗe",
+      "description": "Yi hulɗa cikin sauƙi a cikin dukan muhalli na Move tare da mulki na rabo da gada na duniya",
+      "items": {
+        "token": {
+          "title": "Muhalli na Token na Asali",
+          "description": "Tattalin arzikin token haɗe da ke tayar da dukan muhalli tare da mulki, staking da fasalolin amfani a cikin dukan sarƙoƙi da aka haɗa.",
+          "details": [
+            "Zaɓen mulkin ketare-sarkar",
+            "Ladan staking da riba",
+            "Biyan kuɗin ma'amala",
+            "Shirye-shiryen ƙarfafawa masu haɓakawa"
+          ]
+        },
+        "bridging": {
+          "title": "Gada Na Duniya",
+          "description": "Canja wurin kadarori mara kyau tsakanin sarƙoƙi masu tushen Move tare da kammala nan take da kuɗin kadan.",
+          "details": [
+            "Gada Sui ↔ Aptos",
+            "Tallafin cibiyar sadarwa Movement",
+            "Musayar ketare-sarkar atomic",
+            "Gudanar da tafkunan ruwa"
+          ]
+        },
+        "governance": {
+          "title": "Mulki Rarraba",
+          "description": "Yanke shawara na al'umma don sabunta ƙa'ida, gudanar da baitulmali da ci gaban muhalli.",
+          "details": [
+            "Tsarin gabatar da shawarwari",
+            "Hanyoyin zaɓe masu nauyi",
+            "Rarraba kuɗin baitulmali",
+            "Sabunta sigogin ƙa'ida"
+          ]
+        },
+        "security": {
+          "title": "Tsarin Tsaro Haɗe",
+          "description": "Tsarin tsaro na rabo da ke ba da kariya a cikin dukan sarƙoƙi da aikace-aikace da aka haɗa.",
+          "details": [
+            "Tabbatarwa ketare-sarkar",
+            "Hanyoyin slashing",
+            "Tsarin shaida na damfara",
+            "Ƙa'idodin amsawar gaggawa"
+          ]
+        }
+      }
+    },
+    "chains": {
+      "badge": "Cibiyoyin Sadarwa da ake Tallafawa",
+      "title": "Muhalli na Move na Sarƙoƙi-da-yawa",
+      "items": {
+        "sui": {
+          "name": "Cibiyar Sadarwar Sui",
+          "status": "Mai Rai",
+          "features": ["Babban throughput", "Tsarin mai cibiyar abu", "Harshen Move"]
+        },
+        "aptos": {
+          "name": "Aptos",
+          "status": "Mai Rai",
+          "features": ["Aiwatarwa parallel", "Move VM", "Kwangilar mai wayo mai tsaro"]
+        },
+        "movement": {
+          "name": "Movement",
+          "status": "Haɗin gwiwa",
+          "features": ["Dacewa da EVM", "Runtime Move", "Ginin modular"]
+        },
+        "future": {
+          "name": "Sarƙoƙin Gaba",
+          "status": "An Shirya",
+          "features": ["Al'umma ke jagoranta", "Tushen Move", "Fadada muhalli"]
+        }
+      }
+    },
+    "cta": {
+      "title": "Shiga Muhalli na Move",
+      "subtitle": "Zama ɓangare na muhalli haɗe na Move ketare-sarkar",
+      "primary": "Shiga Muhalli",
+      "secondary": "Portal Mulki"
+    }
+  },
+  "proposal": {
+    "badge": "Dubhe OpenGov",
+    "hero": {
+      "title": "Tsara Makomar",
+      "titleHighlight": "Tare",
+      "subtitle": "Gabatar da shawarwari ta DubheOS don neman kuɗin baitulmali, sabunta runtime, ko shiga mulki ta amfani da tsarin OpenGov na Polkadot tare da zaɓen gaskiya.",
+      "cta": {
+        "primary": "DubheOS Devnet",
+        "secondary": "Duba Dukan Referenda"
+      }
+    },
+    "types": {
+      "badge": "Nau'ukan Shawarwari",
+      "title": "Nau'ukan Shawarwarin Mulki",
+      "exampleLabel": "Misalan shawarwari",
+      "treasury": {
+        "title": "Kashe Kuɗin Baitulmali",
+        "description": "Neman kuɗi daga Baitulmalin Dubhe don ayyukan ci gaba da shirye-shirye",
+        "examples": [
+          "Tallafin ci gaba",
+          "Kuɗin kayan aiki",
+          "Ayyukan bincike"
+        ]
+      },
+      "governance": {
+        "title": "Canje-canjen Mulki",
+        "description": "Gyare-gyare ga hanyoyin zaɓe, gudanar da baitulmali da sigogin mulki",
+        "examples": [
+          "Matakan zaɓe",
+          "Sigogin referendum",
+          "Tsarin hanyoyi"
+        ]
+      },
+      "runtime": {
+        "title": "Sabunta Runtime",
+        "description": "Inganta ƙa'ida da gyare-gyaren runtime da ke buƙatar amincewar mulki",
+        "examples": [
+          "Sabunta pallet",
+          "Inganta runtime",
+          "Sabbin fasaloli"
+        ]
+      },
+      "emergency": {
+        "title": "Ayyukan Gaggawa",
+        "description": "Shawarwari masu jin lokaci don matsalolin tsaro da gyare-gyaren ƙa'ida masu mahimmanci",
+        "examples": [
+          "Gyaran tsaro",
+          "Sabunta gaggawa",
+          "Gyara kurakuran mahimmanci"
+        ]
+      }
+    },
+    "active": {
+      "title": "Referenda Masu Aiki",
+      "subtitle": "Referenda na yanzu a cikin hanyoyin mulki daban-daban tare da zaɓen gaskiya"
+    },
+    "process": {
+      "title": "Tsarin Mulki",
+      "subtitle": "Tsari mataki-mataki na ƙirƙira da zaɓe shawarwarin mulki"
+    },
+    "requirements": {
+      "title": "Buƙatun Shawara"
+    },
+    "cta": {
+      "title": "Shirye don Shiga?",
+      "subtitle": "Shiga tsarin mulki kuma ku taimaka wajen tsara makomar Dubhe",
+      "primary": "Samun Damar DubheOS",
+      "secondary": "Jagoran OpenGov"
+    }
+  },
+  "privacy": {
+    "badge": "Manufar Keɓaɓɓu",
+    "hero": {
+      "title": "Keɓaɓɓenku",
+      "titleHighlight": "Ya Damu",
+      "subtitle": "Koyi yadda Dubhe Foundation ke kare keɓaɓɓenku da sarrafa bayananku da bayyane da tsaro.",
+      "lastUpdated": "An sabunta: Janairu 2025"
+    },
+    "introduction": {
+      "title": "Gabatarwa",
+      "content": "A Dubhe Foundation, muna sadaukar da kanmu wajen kare keɓaɓɓenku da tabbatar da tsaron bayanan ku na sirri. Wannan Manufar Keɓaɓɓu tana bayyana yadda muke tattara, amfani, bayyana da kare bayananku lokacin da kuke amfani da dandamali, ayyuka da aikace-aikace da suka shafi muhalli na Dubhe blockchain."
+    },
+    "sections": {
+      "collection": {
+        "title": "Bayanai Da Muke Tattarawa",
+        "items": [
+          "Bayanai na sirri da kuke bayarwa lokacin amfani da ayyukanmu",
+          "Bayanai na fasaha game da na'urarku da haɗin cibiyar sadarwa",
+          "Bayanai na amfani da bincike don inganta dandamalinmu",
+          "Adiresoshin wallet da bayanan ma'amaloli blockchain"
+        ]
+      },
+      "usage": {
+        "title": "Yadda Muke Amfani da Bayanai",
+        "items": [
+          "Don samar da inganta dandamalin haɓakawa blockchain dinmu",
+          "Don aiwatar da aikace-aikacen tallafi da shirye-shiryen incubation",
+          "Don sadarwa game da sabunta, abubuwa da damammaki",
+          "Don tabbatar da tsaron dandamali da hana damfara"
+        ]
+      },
+      "protection": {
+        "title": "Kariyar Bayanai",
+        "items": [
+          "Muna aiwatar da matakan tsaro na masana'antu",
+          "Ana ɓoye dukan bayanai masu hankali a cikin sufuri da hutawa",
+          "Ba mu taɓa ajiye makullan sirri ko bayanai masu hankali na wallet ba",
+          "Bincike na tsaro na yau da kullun da bitar bin doka"
+        ]
+      },
+      "sharing": {
+        "title": "Raba Bayanai",
+        "items": [
+          "Ba mu sayar da bayanai na sirri ga ɓangare na uku ba",
+          "Raba iyaka tare da masu ba da sabis ƙarƙashin yarjejeniya masu tsauri",
+          "Bayanai na blockchain na jama'a suna da bayyana a zahiri",
+          "Muna iya raba bayanai don cika buƙatun doka"
+        ]
+      }
+    },
+    "rights": {
+      "title": "Haƙƙoƙin Keɓaɓɓenku",
+      "access": {
+        "title": "Samun Dama da Sarrafawa",
+        "items": [
+          "Nemi samun dama ga bayanan ku na sirri",
+          "Gyara bayanai marasa daidaito",
+          "Share asusunku da bayananku",
+          "Fitar da bayananku"
+        ]
+      },
+      "communication": {
+        "title": "Sadarwa",
+        "items": [
+          "Fita daga sadarwar kasuwanci",
+          "Zaɓi abubuwan da aka fi so na sanarwa",
+          "Sarrafa saitunan cookies",
+          "Neman iyakoki akan sarrafa bayanai"
+        ]
+      }
+    },
+    "contact": {
+      "title": "Tambayoyi Game da Keɓaɓɓu?",
+      "description": "Idan kuna da wasu tambayoyi game da wannan Manufar Keɓaɓɓu ko ayyukanmu na bayanai, don Allah ku tuntuɓe mu."
+    }
+  },
+  "terms": {
+    "badge": "Sharuɗɗan Sabis",
+    "hero": {
+      "title": "Sharuɗɗan",
+      "titleHighlight": "Sabis",
+      "subtitle": "Waɗannan sharuɗɗa suna sarrafa amfaninku na ayyukan Dubhe, dandamali da kayan aikin blockchain.",
+      "lastUpdated": "An sabunta: Janairu 2025"
+    },
+    "introduction": {
+      "title": "Bayyani na Yarjejeniya",
+      "content1": "Barka da zuwa Dubhe! Waɗannan Sharuɗɗan Sabis (\"Sharuɗɗa\") suna samar da yarjejeniya mai ɗaure ta doka tsakanin ku da Dubhe Foundation (\"mu,\" \"namu\" ko \"namu\") game da amfaninku na dandamalin blockchain, kayan aikin haɓakawa da ayyuka masu alaƙa.",
+      "content2": "Ta amfani da ayyukanmu, kuna yarda cewa kun karanta, fahimta kuma kun yarda ku kasance ɗaure da waɗannan Sharuɗɗa da Manufar Keɓaɓɓunmu. Idan kuna amfani da ayyukanmu a madadin kungiya, kuna wakilta cewa kuna da ikon daure wannan kungiya ga waɗannan Sharuɗɗa."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "Karɓar Sharuɗɗa",
+        "items": [
+          "Ta samun dama ko amfani da ayyukan Dubhe, kuna yarda ku kasance ɗaure da waɗannan Sharuɗɗa",
+          "Idan ba ku yarda da kowane ɓangare na waɗannan sharuɗɗa ba, ba za ku iya samun dama ga ayyukanmu ba",
+          "Muna iya sabunta waɗannan sharuɗɗa lokaci-lokaci ba tare da sanarwa ba",
+          "Ci gaba da amfaninku yana samar da karɓar sharuɗɗan da aka gyara"
+        ]
+      },
+      "usage": {
+        "title": "Amfani da Ayyuka",
+        "items": [
+          "Dole ne ku kasance mai shekara 18 ko fiye don amfani da ayyukanmu",
+          "Kuna da alhakin kula da tsaron asusunku",
+          "Ba za ku iya amfani da ayyukanmu don wani dalili ba bisa ka'ida ko marar izini ba",
+          "Muna riƙe da hakkin kawo karshen asusun da suka karya waɗannan sharuɗɗa"
+        ]
+      },
+      "intellectual": {
+        "title": "Mallakar Hankali",
+        "items": [
+          "Dubhe Foundation tana riƙe da dukan hakkokin fasaharmu ta musamman",
+          "Abubuwan bude ido suna ƙarƙashin lasisin su daban-daban",
+          "Kuna riƙe da ikon mallakar abun ciki da kuka ƙirƙira ta amfani da dandamalinmu",
+          "Kuna ba mu lasisi don amfani da abun cikinku don ba da ayyukanmu"
+        ]
+      },
+      "disclaimers": {
+        "title": "Watsi da Alhakin da Iyakoki",
+        "items": [
+          "Ana ba da ayyukanmu 'kamar yadda suke' ba tare da garantin kowane nau'i ba",
+          "Ba mu da alhakin kowane barna mai kaiwa kai tsaye, abin da ya faru ko sakamako",
+          "Ma'amalolin blockchain ba za a iya juyar da su ba kuma ba za mu iya juyar da su ba",
+          "Kuna yarda da yanayin gwaji na fasahar blockchain"
+        ]
+      }
+    },
+    "blockchain": {
+      "title": "Sharuɗɗan Musamman na Blockchain",
+      "participation": {
+        "title": "Shiga Cibiyar Sadarwa",
+        "items": [
+          "Ana rikodin ma'amaloli akan blockchains na jama'a",
+          "Kudin cibiyar sadarwa ya shafi ayyukan blockchain",
+          "Kwangilar mai wayo ba ta canzawa da zarar an tura ta",
+          "Kuna da alhakin daidaiton ma'amaloli"
+        ]
+      },
+      "risks": {
+        "title": "Yarda da Hadari",
+        "items": [
+          "Fasahar blockchain tana gwaji ce",
+          "Darajar tokens na iya zama mai saurin canzawa",
+          "Kwangilar mai wayo na iya ƙunsar kurakurai",
+          "Cunkoson cibiyar sadarwa na iya shafar aiki"
+        ]
+      }
+    },
+    "governance": {
+      "title": "Doka da Sarrafa da Rigima",
+      "law": "Waɗannan Sharuɗɗa za a fassara su kuma a sarrafa su bisa ga dokokin yankin da aka kafa Dubhe Foundation, ba tare da la'akari da tanadin rikicin dokokinsa ba.",
+      "disputes": "Duk wani rikici da ya taso daga waɗannan Sharuɗɗa ko amfaninku na ayyukanmu za a warware ta hanyar sasantawa mai ɗaure bisa ga ka'idodin sasantawa na kasa da kasa.",
+      "modifications": "Muna riƙe da hakkin gyara waɗannan Sharuɗɗa koyaushe. Ci gaba da amfani da ayyukanmu bayan canje-canje yana samar da karɓar Sharuɗɗan da aka gyara."
+    },
+    "contact": {
+      "title": "Tambayoyi Game da Sharuɗɗa?",
+      "description": "Idan kuna da wasu tambayoyi game da waɗannan Sharuɗɗan Sabis, don Allah ku tuntuɓi ƙungiyar doka namu."
+    }
   }
 }

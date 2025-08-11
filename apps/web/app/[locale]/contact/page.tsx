@@ -4,8 +4,10 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { Mail, MessageSquare, Send, MapPin, Clock } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from 'next-intl'
 
 export default function ContactPage() {
+  const t = useTranslations('contact')
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -46,14 +48,14 @@ export default function ContactPage() {
         if (data.details && Array.isArray(data.details)) {
           // 显示验证错误详情
           const errorMessages = data.details.map((err: { message: string }) => err.message).join(', ')
-          setError(`Validation error: ${errorMessages}`)
+          setError(`${t('form.validationError')}: ${errorMessages}`)
         } else {
-          setError(data.error || 'Failed to send message. Please try again.')
+          setError(data.error || t('form.sendError'))
         }
       }
     } catch (err) {
       console.error('Error sending message:', err)
-      setError('Network error. Please check your connection and try again.')
+      setError(t('form.networkError'))
     } finally {
       setIsSubmitting(false)
     }
@@ -62,26 +64,26 @@ export default function ContactPage() {
   const contactInfo = [
     {
       icon: <Mail className="w-6 h-6" />,
-      title: "Email",
+      title: t('info.email.title'),
       content: "hello@dubhe.network",
       link: "mailto:hello@dubhe.network"
     },
     {
       icon: <MessageSquare className="w-6 h-6" />,
-      title: "Business Inquiries", 
+      title: t('info.business.title'), 
       content: "business@dubhe.network",
       link: "mailto:business@dubhe.network"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Location",
-      content: "Global, Decentralized",
+      title: t('info.location.title'),
+      content: t('info.location.content'),
       link: null
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "Response Time",
-      content: "24-48 hours",
+      title: t('info.responseTime.title'),
+      content: t('info.responseTime.content'),
       link: null
     }
   ]
@@ -110,7 +112,7 @@ export default function ContactPage() {
                 className="inline-block bg-green-500/10 text-green-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-green-500/20"
               >
                 <Mail className="w-4 h-4 inline mr-2" />
-                Contact Us
+                {t('hero.badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -121,10 +123,10 @@ export default function ContactPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Get in
+                  {t('hero.title1')}
                   <br />
                   <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-                    Touch
+                    {t('hero.title2')}
                   </span>
                 </motion.h1>
                 
@@ -134,7 +136,7 @@ export default function ContactPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Have questions about Dubhe? Want to partner with us? We&apos;d love to hear from you.
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
             </div>
@@ -155,15 +157,15 @@ export default function ContactPage() {
               transition={{ duration: 0.6 }}
             >
               <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700">
-                <h2 className="text-3xl font-bold text-white mb-6">Send us a message</h2>
+                <h2 className="text-3xl font-bold text-white mb-6">{t('form.title')}</h2>
                 
                 {submitted ? (
                   <div className="text-center py-8">
                     <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Send className="w-8 h-8 text-green-400" />
                     </div>
-                    <h3 className="text-xl font-semibold text-white mb-2">Message sent!</h3>
-                    <p className="text-gray-300">We&apos;ll get back to you within 24-48 hours.</p>
+                    <h3 className="text-xl font-semibold text-white mb-2">{t('form.success.title')}</h3>
+                    <p className="text-gray-300">{t('form.success.message')}</p>
                     <button 
                       onClick={() => {
                         setSubmitted(false)
@@ -171,7 +173,7 @@ export default function ContactPage() {
                       }}
                       className="mt-4 text-green-400 hover:text-green-300 transition-colors"
                     >
-                      Send another message
+                      {t('form.success.sendAnother')}
                     </button>
                   </div>
                 ) : (
@@ -184,7 +186,7 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                          Name *
+                          {t('form.fields.name.label')} *
                         </label>
                         <input
                           type="text"
@@ -194,12 +196,12 @@ export default function ContactPage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors"
-                          placeholder="Your name"
+                          placeholder={t('form.fields.name.placeholder')}
                         />
                       </div>
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                          Email *
+                          {t('form.fields.email.label')} *
                         </label>
                         <input
                           type="email"
@@ -209,14 +211,14 @@ export default function ContactPage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors"
-                          placeholder="your@email.com"
+                          placeholder={t('form.fields.email.placeholder')}
                         />
                       </div>
                     </div>
                     
                     <div>
                       <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                        Subject *
+                        {t('form.fields.subject.label')} *
                       </label>
                       <select
                         id="subject"
@@ -226,20 +228,20 @@ export default function ContactPage() {
                         required
                         className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:border-green-500 transition-colors"
                       >
-                        <option value="">Select a subject</option>
-                        <option value="general">General Inquiry</option>
-                        <option value="partnership">Partnership</option>
-                        <option value="investment">Investment Inquiry</option>
-                        <option value="grants">Grant Application</option>
-                        <option value="foundation-jobs">Foundation Jobs</option>
-                        <option value="technical">Technical Support</option>
-                        <option value="media">Media & Press</option>
+                        <option value="">{t('form.fields.subject.placeholder')}</option>
+                        <option value="general">{t('form.fields.subject.options.general')}</option>
+                        <option value="partnership">{t('form.fields.subject.options.partnership')}</option>
+                        <option value="investment">{t('form.fields.subject.options.investment')}</option>
+                        <option value="grants">{t('form.fields.subject.options.grants')}</option>
+                        <option value="foundation-jobs">{t('form.fields.subject.options.foundationJobs')}</option>
+                        <option value="technical">{t('form.fields.subject.options.technical')}</option>
+                        <option value="media">{t('form.fields.subject.options.media')}</option>
                       </select>
                     </div>
                     
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                        Message *
+                        {t('form.fields.message.label')} *
                       </label>
                       <textarea
                         id="message"
@@ -249,7 +251,7 @@ export default function ContactPage() {
                         required
                         rows={6}
                         className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors resize-none"
-                        placeholder="Tell us about your project, inquiry, or how we can help..."
+                        placeholder={t('form.fields.message.placeholder')}
                       />
                     </div>
                     
@@ -261,11 +263,11 @@ export default function ContactPage() {
                       {isSubmitting ? (
                         <>
                           <div className="w-5 h-5 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-                          Sending...
+                          {t('form.sending')}
                         </>
                       ) : (
                         <>
-                          Send Message
+                          {t('form.submit')}
                           <Send className="w-5 h-5" />
                         </>
                       )}
@@ -284,10 +286,9 @@ export default function ContactPage() {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-bold text-white mb-6">Contact Information</h2>
+                <h2 className="text-3xl font-bold text-white mb-6">{t('info.title')}</h2>
                 <p className="text-gray-300 leading-relaxed mb-8">
-                  Whether you&apos;re a developer, investor, or just curious about Dubhe, we&apos;re here to help. 
-                  Reach out through any of the channels below.
+                  {t('info.description')}
                 </p>
               </div>
 
@@ -316,25 +317,25 @@ export default function ContactPage() {
 
               {/* Additional Contact Options */}
               <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-2xl p-6 border border-green-500/20">
-                <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
+                <h3 className="text-xl font-semibold text-white mb-4">{t('quickLinks.title')}</h3>
                 <div className="space-y-3">
                   <Link 
                     href="/grants" 
                     className="block text-gray-300 hover:text-green-400 transition-colors"
                   >
-                    → Apply for a Grant
+                    → {t('quickLinks.grant')}
                   </Link>
                   <Link 
                     href="/incubation" 
                     className="block text-gray-300 hover:text-green-400 transition-colors"
                   >
-                    → Join Incubation Program
+                    → {t('quickLinks.incubation')}
                   </Link>
                   <Link 
                     href="/ambassador" 
                     className="block text-gray-300 hover:text-green-400 transition-colors"
                   >
-                    → Become an Ambassador
+                    → {t('quickLinks.ambassador')}
                   </Link>
                   <a 
                     href="https://dubhe-docs.obelisk.build/dubhe" 
@@ -342,7 +343,7 @@ export default function ContactPage() {
                     rel="noopener noreferrer"
                     className="block text-gray-300 hover:text-green-400 transition-colors"
                   >
-                    → Read Documentation
+                    → {t('quickLinks.documentation')}
                   </a>
                 </div>
               </div>

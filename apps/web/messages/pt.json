@@ -100,6 +100,252 @@
           "description": "Presença da comunidade Dubhe em continentes"
         }
       }
+    },
+    "ecosystem": {
+      "badge": "Ecossistema",
+      "title": {
+        "line1": "Ecossistema Próspero de",
+        "line2": "Aplicações Inovadoras"
+      },
+      "description": "Descubra a diversificada gama de aplicações, protocolos e ferramentas construídas no Dubhe, desde DeFi e gaming até infraestrutura e NFTs.",
+      "categories": {
+        "defi": {
+          "title": "DeFi",
+          "description": "Protocolos de finanças descentralizadas"
+        },
+        "gaming": {
+          "title": "Gaming",
+          "description": "Jogos on-chain e metaverso"
+        },
+        "infrastructure": {
+          "title": "Infraestrutura",
+          "description": "Ferramentas de desenvolvedor e infraestrutura"
+        },
+        "nfts": {
+          "title": "NFTs",
+          "description": "Colecionáveis digitais e ativos"
+        }
+      },
+      "projects": {
+        "merak": {
+          "name": "Merak",
+          "description": "Criador de Mercado Automatizado",
+          "tvl": "$45M"
+        },
+        "numeron": {
+          "name": "Numeron",
+          "description": "Aventura RPG AI de Fantasia",
+          "players": "12K+"
+        },
+        "cyferio": {
+          "name": "Cyferio SDK",
+          "description": "Kit de Desenvolvimento",
+          "downloads": "50K+"
+        },
+        "objectsdao": {
+          "name": "Objectsdao",
+          "description": "Leilão NFT",
+          "volume": "$2.3M"
+        }
+      },
+      "metrics": {
+        "tvl": "TVL",
+        "players": "Jogadores",
+        "downloads": "Downloads",
+        "volume": "Volume"
+      }
+    },
+    "howItWorks": {
+      "title": "Como Funciona",
+      "steps": {
+        "schemaDefinition": {
+          "title": "Definição de Schema",
+          "description": "Defina a lógica do seu jogo ou dApp usando o sistema de schema intuitivo do Dubhe. Descreva entidades, componentes e sistemas em arquivos de configuração simples.",
+          "items": ["Entidade", "Componente", "Sistema", "Erro", "Evento"]
+        },
+        "codeGeneration": {
+          "title": "Geração de Código",
+          "description": "O Motor Dubhe gera automaticamente 80% dos seus contratos inteligentes Move, bibliotecas cliente e interfaces API a partir das suas definições de schema."
+        },
+        "deploymentChannel": {
+          "title": "Deployment e Canal",
+          "description": "Implante em múltiplas chains Move com um comando. O Canal Dubhe fornece sincronização em tempo real e latência <50ms para uma experiência de usuário perfeita."
+        },
+        "multiChainExecution": {
+          "title": "Execução Multi-Chain",
+          "description": "Sua aplicação roda perfeitamente em todas as chains Move suportadas com interoperabilidade cross-chain nativa através do Dubhe OS."
+        }
+      },
+      "labels": {
+        "dubheEngine": "Motor Dubhe",
+        "you": "Você",
+        "blockchain": "Blockchain",
+        "multiChainReady": "Multi-Chain Pronto"
+      }
+    },
+    "competitiveAdvantage": {
+      "title": "Vantagem Competitiva",
+      "subtitle": "Primeira e única solução abrangente para desenvolvimento do ecossistema Move",
+      "table": {
+        "feature": "Funcionalidade",
+        "dubhe": "Dubhe",
+        "others": "Outros"
+      },
+      "features": {
+        "codeGeneration": {
+          "title": "Geração de Código",
+          "dubhe": "80% automatizado",
+          "others": "Codificação manual"
+        },
+        "uxPerformance": {
+          "title": "Performance UX",
+          "dubhe": "<50ms",
+          "others": "3-15 segundos"
+        },
+        "multiChainSupport": {
+          "title": "Suporte Multi-Chain",
+          "dubhe": "Suporte nativo",
+          "others": "Pontes complexas"
+        },
+        "developerExperience": {
+          "title": "Experiência do Desenvolvedor",
+          "dubhe": "Deploy com um clique",
+          "others": "Configuração complexa"
+        },
+        "realTimeFeatures": {
+          "title": "Recursos em Tempo Real",
+          "dubhe": "Canal integrado",
+          "others": "Soluções externas"
+        }
+      }
+    },
+    "productSuite": {
+      "badge": "SUITE DE PRODUTOS",
+      "title": "O Stack Completo de Desenvolvimento Move",
+      "description": "Três produtos integrados que resolvem todos os principais pontos de atrito no desenvolvimento Move",
+      "products": {
+        "engine": {
+          "title": "Motor Dubhe",
+          "subtitle": "80% de Geração Automática de Código",
+          "description": "O único toolkit de desenvolvimento que gera automaticamente 80% do código Move, permitindo que desenvolvedores foquem na lógica de negócio principal",
+          "features": [
+            "Reduzir tempo de desenvolvimento de meses para semanas",
+            "90% menos custos de infraestrutura",
+            "Um comando implanta em todas as chains Move"
+          ],
+          "highlight": "Desenvolvimento 10x Mais Rápido"
+        },
+        "channel": {
+          "title": "Canal Dubhe",
+          "subtitle": "Experiência em Tempo Real Nível Web2",
+          "description": "Camada de interação P2P programável em tempo real que faz blockchain parecer Web2",
+          "features": [
+            "Renderização frontend instantânea",
+            "Velocidade de execução ultra-rápida",
+            "Suporte multi-cliente móvel, desktop e web"
+          ],
+          "highlight": "Latência <50ms"
+        },
+        "os": {
+          "title": "Dubhe OS",
+          "subtitle": "OS de Interoperabilidade Cross-Chain",
+          "description": "Sistema operacional blockchain com suporte cross-chain nativo e mecanismos de incentivo para desenvolvedores",
+          "features": [
+            "Base de código única, todas as chains Move",
+            "Recompensas para desenvolvedores integradas",
+            "Ponte para ecossistemas Multi-Chains"
+          ],
+          "highlight": "Multi-Chain Nativo"
+        }
+      }
+    },
+    "networkArchitecture": {
+      "badge": "ARQUITETURA DE REDE",
+      "title": "Stack Completo de Desenvolvimento Move",
+      "description": "De ferramentas de desenvolvimento a canais de interação em tempo real e infraestrutura descentralizada - Dubhe fornece tudo o que é necessário para construir a próxima geração de aplicações totalmente on-chain.",
+      "keyMetricsTitle": "Métricas Principais",
+      "keyMetrics": [
+        "10M+ transações processadas",
+        "<200ms latência média",
+        "Experiência de usuário nível Web2",
+        "Compatível com Sui, Aptos, Rooch, Movement, Initia"
+      ],
+      "moveEcosystemTitle": "Ecossistema Move",
+      "moveEcosystemFeatures": [
+        "1,555 desenvolvedores Move ativos",
+        "40% crescimento mensal",
+        "Menos de 3 anos de história",
+        "Enorme potencial de crescimento"
+      ],
+      "pipelining": "Pipelining",
+      "architectureLayers": {
+        "moveApplications": {
+          "title": "Aplicações Move",
+          "subtitle": "Seus dApps e Jogos",
+          "description": "Construa aplicações descentralizadas complexas com a segurança e flexibilidade do Move",
+          "features": ["Protocolos DeFi", "Apps de Gaming", "Plataformas NFT", "dApps Sociais"]
+        },
+        "dubheEngine": {
+          "title": "Motor Dubhe",
+          "subtitle": "Kit de Ferramentas de Desenvolvimento",
+          "description": "Gera automaticamente 80% do código e fornece uma cadeia de ferramentas completa para desenvolvedores",
+          "features": ["Geração de Código", "Desenvolvimento Baseado em Schema", "Deploy Multi-Chain", "Ambiente Dev"]
+        },
+        "dubheChannel": {
+          "title": "Canal Dubhe",
+          "subtitle": "Camada em Tempo Real",
+          "description": "Camada de interação P2P para experiência de usuário em tempo real nível Web2",
+          "features": ["<50ms latência", "Sincronização em Tempo Real", "Comunicação P2P", "Suporte Mobile"]
+        },
+        "dubheOS": {
+          "title": "Dubhe OS",
+          "subtitle": "Infraestrutura Cross-Chain",
+          "description": "Sistema operacional descentralizado com interoperabilidade multi-chain nativa",
+          "features": ["Bridges Cross-Chain", "Estado Unificado", "Incentivos para Desenvolvedores", "Governança"]
+        }
+      },
+      "completeStackSolution": {
+        "title": "Solução de Stack Completa",
+        "description": "Dubhe é a primeira e única plataforma que fornece uma solução completa e integrada para desenvolvimento do ecossistema Move - desde geração de código até experiência de usuário em tempo real."
+      },
+      "technicalFeatures": {
+        "securityFirst": {
+          "title": "Segurança em Primeiro Lugar",
+          "description": "Verificação formal do Move garante contratos inteligentes livres de bugs"
+        },
+        "highPerformance": {
+          "title": "Alta Performance",
+          "description": "Execução paralela e runtime otimizado para throughput máximo"
+        },
+        "composable": {
+          "title": "Componível",
+          "description": "Arquitetura modular permite integração e customização fáceis"
+        },
+        "unifiedState": {
+          "title": "Estado Unificado",
+          "description": "Única fonte da verdade em todas as chains e aplicações"
+        }
+      }
+    },
+    "networkStats": {
+      "title": "Estatísticas da Rede",
+      "description": "Métricas em tempo real mostrando o crescimento e atividade em todo o ecossistema Dubhe.",
+      "transactions": {
+        "label": "Transações Processadas",
+        "change": "+12.5%"
+      },
+      "operations": {
+        "label": "Operações Executadas",
+        "change": "+18.2%"
+      },
+      "users": {
+        "label": "Usuários Ativos",
+        "change": "+25.1%"
+      },
+      "income": {
+        "label": "Receita do Protocolo",
+        "change": "+15.8%"
+      }
     }
   },
   "foundation": {
@@ -141,13 +387,33 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Dubhe. Todos os direitos reservados.",
+    "description": "A plataforma completa de desenvolvimento Move com 80% de geração automática de código, canais P2P em tempo real e interoperabilidade entre cadeias.",
+    "sections": {
+      "learn": "Aprender",
+      "build": "Construir",
+      "ecosystem": "Ecossistema",
+      "media": "Mídia",
+      "community": "Comunidade"
+    },
     "links": {
-      "about": "Sobre",
+      "documentation": "Documentação",
+      "engine": "Motor",
+      "channel": "Canal",
+      "os": "SO",
+      "foundation": "Fundação",
+      "labs": "Laboratórios",
+      "grants": "Subsídios",
+      "incubation": "Incubação",
+      "proposal": "Proposta",
+      "ambassador": "Embaixador",
+      "moderators": "Moderadores",
+      "events": "Eventos",
       "contact": "Contato",
+      "about": "Sobre",
       "terms": "Termos de Serviço",
       "privacy": "Política de Privacidade"
-    }
+    },
+    "copyright": "© 2025 Dubhe. Todos os direitos reservados."
   },
   "team": {
     "hero": {
@@ -297,6 +563,112 @@
       "cta2": "Contato da Fundação"
     }
   },
+  "os": {
+    "badge": "Dubhe OS",
+    "hero": {
+      "title": "Cross-Chain",
+      "titleHighlight": "Ecossistema Move",
+      "subtitle": "Ecossistema unificado conectando blockchains baseadas em Move com governança cross-chain, bridging universal e segurança compartilhada em toda a rede.",
+      "stats": {
+        "multiChain": {
+          "value": "Multi-Chain",
+          "label": "Ecossistema Move"
+        },
+        "universal": {
+          "value": "Universal",
+          "label": "Economia de Token"
+        },
+        "unified": {
+          "value": "Unificada",
+          "label": "Governança"
+        }
+      },
+      "cta": {
+        "primary": "Junte-se ao Ecossistema",
+        "secondary": "Saiba Mais"
+      }
+    },
+    "features": {
+      "badge": "Recursos do Ecossistema",
+      "title": "Um Token, Múltiplas Chains",
+      "subtitle": "Experiência Unificada",
+      "description": "Interaja perfeitamente em todo o ecossistema Move com governança compartilhada e bridging universal",
+      "items": {
+        "token": {
+          "title": "Ecossistema de Token Nativo",
+          "description": "Economia de token unificada alimentando todo o ecossistema com recursos de governança, staking e utilidade em todas as chains conectadas.",
+          "details": [
+            "Votação de governança cross-chain",
+            "Recompensas e rendimentos de staking",
+            "Pagamentos de taxas de transação",
+            "Programas de incentivo para desenvolvedores"
+          ]
+        },
+        "bridging": {
+          "title": "Bridging Universal",
+          "description": "Transferências de ativos perfeitas entre chains baseadas em Move com finalidade instantânea e taxas mínimas.",
+          "details": [
+            "Bridging Sui ↔ Aptos",
+            "Suporte à rede Movement",
+            "Swaps cross-chain atômicos",
+            "Gerenciamento de pool de liquidez"
+          ]
+        },
+        "governance": {
+          "title": "Governança Descentralizada",
+          "description": "Tomada de decisão orientada pela comunidade para atualizações de protocolo, gerenciamento de tesouraria e desenvolvimento do ecossistema.",
+          "details": [
+            "Sistema de submissão de propostas",
+            "Mecanismos de votação ponderada",
+            "Alocação de fundos da tesouraria",
+            "Atualizações de parâmetros de protocolo"
+          ]
+        },
+        "security": {
+          "title": "Modelo de Segurança Unificado",
+          "description": "Framework de segurança compartilhada fornecendo proteção em todas as chains e aplicações conectadas.",
+          "details": [
+            "Validação cross-chain",
+            "Mecanismos de slashing",
+            "Sistemas de prova de fraude",
+            "Protocolos de resposta de emergência"
+          ]
+        }
+      }
+    },
+    "chains": {
+      "badge": "Redes Suportadas",
+      "title": "Ecossistema Move Multi-Chain",
+      "items": {
+        "sui": {
+          "name": "Rede Sui",
+          "status": "Ativo",
+          "features": ["Alto throughput", "Modelo centrado em objeto", "Linguagem Move"]
+        },
+        "aptos": {
+          "name": "Aptos",
+          "status": "Ativo",
+          "features": ["Execução paralela", "Move VM", "Contratos inteligentes seguros"]
+        },
+        "movement": {
+          "name": "Movement",
+          "status": "Integração",
+          "features": ["Compatibilidade EVM", "Runtime Move", "Arquitetura modular"]
+        },
+        "future": {
+          "name": "Chains Futuras",
+          "status": "Planejado",
+          "features": ["Orientado pela comunidade", "Baseado em Move", "Expansão do ecossistema"]
+        }
+      }
+    },
+    "cta": {
+      "title": "Junte-se ao Ecossistema Move",
+      "subtitle": "Seja parte do ecossistema Move cross-chain unificado",
+      "primary": "Junte-se ao Ecossistema",
+      "secondary": "Portal de Governança"
+    }
+  },
   "errors": {
     "notFound": {
       "title": "Página Não Encontrada",
@@ -343,6 +715,6 @@
     }
   },
   "LocaleSwitcher": {
-    "label": "Alterar idioma"
+    "label": "Idiomas"
   }
 }

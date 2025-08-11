@@ -100,6 +100,252 @@
           "description": "Dubhe 社群遍布各大洲"
         }
       }
+    },
+    "ecosystem": {
+      "badge": "生態系統",
+      "title": {
+        "line1": "繁榮的創新應用",
+        "line2": "生態系統"
+      },
+      "description": "探索基於Dubhe構建的多樣化應用程式、協議和工具，從DeFi和遊戲到基礎設施和NFT。",
+      "categories": {
+        "defi": {
+          "title": "去中心化金融",
+          "description": "去中心化金融協議"
+        },
+        "gaming": {
+          "title": "遊戲",
+          "description": "鏈上遊戲和元宇宙"
+        },
+        "infrastructure": {
+          "title": "基礎設施", 
+          "description": "開發者工具和基礎設施"
+        },
+        "nfts": {
+          "title": "NFTs",
+          "description": "數位收藏品和資產"
+        }
+      },
+      "projects": {
+        "merak": {
+          "name": "Merak",
+          "description": "自動化做市商",
+          "tvl": "$45M"
+        },
+        "numeron": {
+          "name": "Numeron",
+          "description": "奇幻AI角色扮演冒險",
+          "players": "12K+"
+        },
+        "cyferio": {
+          "name": "Cyferio SDK",
+          "description": "開發套件",
+          "downloads": "50K+"
+        },
+        "objectsdao": {
+          "name": "Objectsdao",
+          "description": "NFT拍賣",
+          "volume": "$2.3M"
+        }
+      },
+      "metrics": {
+        "tvl": "總鎖定價值",
+        "players": "玩家",
+        "downloads": "下載量",
+        "volume": "交易量"
+      }
+    },
+    "howItWorks": {
+      "title": "運作原理",
+      "steps": {
+        "schemaDefinition": {
+          "title": "架構定義",
+          "description": "使用Dubhe直觀的架構系統定義您的遊戲或dApp邏輯。在簡單的配置文件中描述實體、組件和系統。",
+          "items": ["實體", "組件", "系統", "錯誤", "事件"]
+        },
+        "codeGeneration": {
+          "title": "代碼生成",
+          "description": "Dubhe引擎根據您的架構定義自動生成80%的Move智能合約、客戶端庫和API接口。"
+        },
+        "deploymentChannel": {
+          "title": "部署與通道",
+          "description": "一鍵部署到多個Move鏈。Dubhe通道提供即時同步和<50毫秒延遲，實現無縫用戶體驗。"
+        },
+        "multiChainExecution": {
+          "title": "多鏈執行",
+          "description": "您的應用程式通過Dubhe OS在所有支持的Move鏈上無縫運行，具有原生跨鏈互操作性。"
+        }
+      },
+      "labels": {
+        "dubheEngine": "Dubhe引擎",
+        "you": "您",
+        "blockchain": "區塊鏈",
+        "multiChainReady": "多鏈就緒"
+      }
+    },
+    "competitiveAdvantage": {
+      "title": "競爭優勢",
+      "subtitle": "Move生態系統開發的首個且唯一完整解決方案",
+      "table": {
+        "feature": "功能",
+        "dubhe": "Dubhe",
+        "others": "其他"
+      },
+      "features": {
+        "codeGeneration": {
+          "title": "代碼生成",
+          "dubhe": "80%自動化",
+          "others": "手動編碼"
+        },
+        "uxPerformance": {
+          "title": "用戶體驗性能",
+          "dubhe": "<50ms",
+          "others": "3-15秒"
+        },
+        "multiChainSupport": {
+          "title": "多鏈支援",
+          "dubhe": "原生支持",
+          "others": "複雜的橋接"
+        },
+        "developerExperience": {
+          "title": "開發者體驗",
+          "dubhe": "一鍵部署",
+          "others": "複雜設置"
+        },
+        "realTimeFeatures": {
+          "title": "即時功能",
+          "dubhe": "內建頻道",
+          "others": "外部解決方案"
+        }
+      }
+    },
+    "productSuite": {
+      "badge": "產品套件",
+      "title": "完整的Move開發堆棧",
+      "description": "三個整合產品解決Move開發中的每個主要摩擦點",
+      "products": {
+        "engine": {
+          "title": "Dubhe引擎",
+          "subtitle": "80%代碼自動生成",
+          "description": "唯一能自動生成80%Move代碼的開發工具包，讓開發者專注於核心業務邏輯",
+          "features": [
+            "將開發時間從數月縮短至數週",
+            "基礎設施成本降低90%",
+            "一個命令部署到所有Move鏈"
+          ],
+          "highlight": "開發速度提升10倍"
+        },
+        "channel": {
+          "title": "Dubhe頻道",
+          "subtitle": "Web2級別即時體驗",
+          "description": "即時可編程P2P互動層，讓區塊鏈感覺像Web2",
+          "features": [
+            "即時前端渲染",
+            "超快執行速度",
+            "支持多客戶端移動、桌面和網頁"
+          ],
+          "highlight": "<50毫秒延遲"
+        },
+        "os": {
+          "title": "Dubhe作業系統",
+          "subtitle": "跨鏈互操作性OS",
+          "description": "具有原生跨鏈支持和開發者激勵機制的區塊鏈作業系統",
+          "features": [
+            "單一代碼庫，所有Move鏈",
+            "內置開發者獎勵",
+            "橋接到多鏈生態系統"
+          ],
+          "highlight": "原生多鏈"
+        }
+      }
+    },
+    "networkArchitecture": {
+      "badge": "網路架構",
+      "title": "完整的Move開發堆棧",
+      "description": "從開發工具到即時互動通道和去中心化基礎設施——Dubhe提供構建下一代完全鏈上應用程式所需的一切。",
+      "keyMetricsTitle": "關鍵指標",
+      "keyMetrics": [
+        "處理超過1000萬筆交易",
+        "平均延遲<200毫秒",
+        "Web2級用戶體驗",
+        "兼容Sui、Aptos、Rooch、Movement、Initia"
+      ],
+      "moveEcosystemTitle": "Move生態系統",
+      "moveEcosystemFeatures": [
+        "1,555名活躍的Move開發者",
+        "每月增長40%",
+        "不到3年的歷史",
+        "巨大的增長潛力"
+      ],
+      "pipelining": "管道",
+      "architectureLayers": {
+        "moveApplications": {
+          "title": "Move應用程式",
+          "subtitle": "您的dApps和遊戲",
+          "description": "利用Move的安全性和靈活性構建複雜的去中心化應用程式",
+          "features": ["DeFi協議", "遊戲應用", "NFT平台", "社交dApps"]
+        },
+        "dubheEngine": {
+          "title": "Dubhe引擎",
+          "subtitle": "開發工具包",
+          "description": "自動生成80%的代碼並提供完整的開發者工具鏈",
+          "features": ["代碼生成", "基於架構的開發", "多鏈部署", "開發環境"]
+        },
+        "dubheChannel": {
+          "title": "Dubhe通道",
+          "subtitle": "即時層",
+          "description": "Web2級即時用戶體驗的P2P互動層",
+          "features": ["<50毫秒延遲", "即時同步", "P2P通信", "移動支持"]
+        },
+        "dubheOS": {
+          "title": "Dubhe作業系統",
+          "subtitle": "跨鏈基礎設施",
+          "description": "具有原生多鏈互操作性的去中心化作業系統",
+          "features": ["跨鏈橋接", "統一狀態", "開發者激勵", "治理"]
+        }
+      },
+      "completeStackSolution": {
+        "title": "完整堆棧解決方案",
+        "description": "Dubhe是第一個也是唯一一個為Move生態系統開發提供完整集成解決方案的平台——從代碼生成到即時用戶體驗。"
+      },
+      "technicalFeatures": {
+        "securityFirst": {
+          "title": "安全第一",
+          "description": "Move的形式化驗證確保無錯誤的智能合約"
+        },
+        "highPerformance": {
+          "title": "高性能",
+          "description": "並行執行和優化運行時實現最大吞吐量"
+        },
+        "composable": {
+          "title": "可組合",
+          "description": "模塊化架構允許輕鬆集成和定制"
+        },
+        "unifiedState": {
+          "title": "統一狀態",
+          "description": "所有鏈和應用程式的唯一真相來源"
+        }
+      }
+    },
+    "networkStats": {
+      "title": "網路統計",
+      "description": "展示Dubhe生態系統增長和活動的即時指標。",
+      "transactions": {
+        "label": "已處理交易",
+        "change": "+12.5%"
+      },
+      "operations": {
+        "label": "已執行操作",
+        "change": "+18.2%"
+      },
+      "users": {
+        "label": "活躍用戶",
+        "change": "+25.1%"
+      },
+      "income": {
+        "label": "協議收入",
+        "change": "+15.8%"
+      }
     }
   },
   "foundation": {
@@ -141,13 +387,33 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Dubhe. 保留所有權利。",
+    "description": "完整的 Move 開發平台，具有 80% 代碼自動生成、即時 P2P 通道和跨鏈互操作性。",
+    "sections": {
+      "learn": "學習",
+      "build": "開發",
+      "ecosystem": "生態系統",
+      "media": "媒體",
+      "community": "社群"
+    },
     "links": {
-      "about": "關於",
+      "documentation": "文件",
+      "engine": "引擎",
+      "channel": "頻道",
+      "os": "作業系統",
+      "foundation": "基金會",
+      "labs": "實驗室",
+      "grants": "資助",
+      "incubation": "孵化",
+      "proposal": "提案",
+      "ambassador": "大使",
+      "moderators": "版主",
+      "events": "活動",
       "contact": "聯絡",
+      "about": "關於",
       "terms": "服務條款",
       "privacy": "隱私政策"
-    }
+    },
+    "copyright": "© 2025 Dubhe. 保留所有權利。"
   },
   "team": {
     "hero": {
@@ -164,6 +430,50 @@
       "title": "領導團隊",
       "description": "認識領導 Dubhe 使命革新 Move 開發的遠見者和專家",
       "expertise": "專業領域"
+    },
+    "members": {
+      "jason": {
+        "name": "Jason",
+        "role": "基金會負責人",
+        "location": "美國加州舊金山",
+        "bio": "擁有15年以上區塊鏈技術經驗的遠見領袖。曾在大型科技公司領導工程團隊，後創立Dubhe以革命性地改變Move開發。",
+        "expertise": ["區塊鏈架構", "團隊領導", "產品策略"]
+      },
+      "joan": {
+        "name": "Joan", 
+        "role": "技術長兼聯合創始人",
+        "location": "美國紐約州紐約市",
+        "bio": "前Move核心開發者，在智能合約架構方面擁有深厚專業知識。領導我們的技術願景並監督所有工程倡議。",
+        "expertise": ["Move語言", "智能合約", "系統架構"]
+      },
+      "david": {
+        "name": "David",
+        "role": "工程總監", 
+        "location": "韓國首爾",
+        "bio": "對開發者工具和生態系統發展充滿熱情的全端工程師。領導我們的引擎開發團隊並推動技術創新。",
+        "expertise": ["全端開發", "開發者工具", "開源"]
+      },
+      "bonnie": {
+        "name": "Bonnie",
+        "role": "社群總監",
+        "location": "西班牙巴塞隆納", 
+        "bio": "在發展開發者生態系統方面擁有豐富經驗的社群建設者。管理我們的全球社群倡議和大使計劃。",
+        "expertise": ["社群建設", "開發者關係", "活動管理"]
+      },
+      "liam": {
+        "name": "Liam McKenzie",
+        "role": "合作總監",
+        "location": "英國倫敦",
+        "bio": "專注於戰略合作夥伴關係和生態系統發展的商業發展專家。曾在主要區塊鏈公司領導合作夥伴關係。",
+        "expertise": ["戰略合作夥伴關係", "商業發展", "生態系統發展"]
+      },
+      "emily": {
+        "name": "Emily Smith", 
+        "role": "研究總監",
+        "location": "中國北京",
+        "bio": "專精分散式系統的計算機科學博士。領導我們的研究倡議並探索尖端區塊鏈技術。",
+        "expertise": ["分散式系統", "研究", "學術合作夥伴關係"]
+      }
     },
     "join": {
       "title": "加入我們的團隊",
@@ -340,9 +650,976 @@
       "title": "不良網關",
       "description": "我們的伺服器連線有問題。",
       "suggestion": "這通常是暫時性的。請稍後再試。"
+    },
+    "common": {
+      "tryAgain": "重試",
+      "goHome": "返回首頁",
+      "contactSupport": "聯繫支援"
+    },
+    "status": {
+      "400": "錯誤請求",
+      "401": "未授權",
+      "403": "禁止訪問",
+      "404": "未找到",
+      "405": "方法不被允許",
+      "429": "請求過多",
+      "500": "內部服務器錯誤",
+      "502": "錯誤網關",
+      "503": "服務不可用",
+      "504": "網關超時",
+      "default": "錯誤"
     }
   },
   "LocaleSwitcher": {
-    "label": "切換語言"
+    "label": "語言"
+  },
+  "labs": {
+    "hero": {
+      "badge": "Dubhe 開發實驗室",
+      "title1": "協作式",
+      "title2": "創新實驗室",
+      "subtitle": "多個專業開發團隊在 Dubhe 基金會的支持下共同合作，構建基於 Move 的區塊鏈基礎設施的未來，就像 Polkadot JAM 一樣。",
+      "stats": {
+        "activeLabs": "活躍實驗室",
+        "coreEngineers": "核心工程師",
+        "unifiedVision": "統一協議願景"
+      },
+      "cta1": "探索實驗室",
+      "cta2": "加入實驗室"
+    },
+    "overview": {
+      "badge": "開發團隊",
+      "title": "專業實驗室 統一願景",
+      "description": "每個實驗室都帶來獨特的專業知識，同時朝著推進 Dubhe 生態系統的共同目標努力",
+      "visitLab": "訪問實驗室",
+      "keyContributions": "主要貢獻"
+    },
+    "labsList": {
+      "obelisk": {
+        "name": "Obelisk 實驗室",
+        "focus": "核心協議開發",
+        "description": "領導 Dubhe 核心區塊鏈協議和 Move 語言基礎設施的開發。專注於共識機制、智能合約優化和開發者工具。",
+        "contributions": [
+          "Dubhe 核心協議架構",
+          "Move 語言運行時優化",
+          "智能合約執行引擎",
+          "開發者 SDK 和工具鏈",
+          "跨鏈共識機制"
+        ],
+        "status": "活躍",
+        "team": "12 位工程師"
+      },
+      "cyferio": {
+        "name": "Cyferio 實驗室",
+        "focus": "隱私與零知識",
+        "description": "專門從事隱私保護技術、零知識證明和 Dubhe 生態系統的密碼學協議。構建下一代私有智能合約。",
+        "contributions": [
+          "零知識證明系統",
+          "隱私保護智能合約",
+          "密碼學協議設計",
+          "機密計算解決方案",
+          "匿名交易系統"
+        ],
+        "status": "活躍",
+        "team": "8 位研究員"
+      },
+      "network": {
+        "name": "Dubhe 網路實驗室",
+        "focus": "基礎設施與擴容",
+        "description": "為 Dubhe 生態系統構建高性能網路解決方案、即時通訊協議和可擴展性基礎設施。",
+        "contributions": [
+          "高性能 P2P 網路",
+          "即時通道通訊",
+          "可擴展節點架構",
+          "網路協議優化",
+          "跨鏈橋接基礎設施"
+        ],
+        "status": "開發中",
+        "team": "6 位工程師"
+      },
+      "bridge": {
+        "name": "Dubhe 橋接實驗室",
+        "focus": "跨鏈技術",
+        "description": "開發通用橋接協議和互操作性解決方案，將 Dubhe 與其他區塊鏈生態系統無縫連接。",
+        "contributions": [
+          "通用橋接協議",
+          "跨鏈資產轉移",
+          "多鏈治理",
+          "互操作性標準",
+          "橋接安全機制"
+        ],
+        "status": "研究中",
+        "team": "4 位工程師"
+      }
+    },
+    "research": {
+      "badge": "研究重點",
+      "title": "協作研究領域",
+      "areas": {
+        "protocol": {
+          "title": "協議開發",
+          "description": "核心區塊鏈協議、共識機制和 Move 語言增強",
+          "teams": ["Obelisk 實驗室"]
+        },
+        "infrastructure": {
+          "title": "基礎設施與擴容",
+          "description": "高性能網路、即時通訊和可擴展性解決方案",
+          "teams": ["Dubhe 網路實驗室", "Cyferio 實驗室"]
+        },
+        "crossChain": {
+          "title": "跨鏈技術",
+          "description": "互操作性協議、通用橋接和多鏈治理",
+          "teams": ["Dubhe 橋接實驗室"]
+        },
+        "privacy": {
+          "title": "隱私與安全",
+          "description": "零知識證明、隱私保護協議和密碼學研究",
+          "teams": ["Cyferio 實驗室"]
+        }
+      },
+      "contributingLabs": "貢獻實驗室："
+    },
+    "collaboration": {
+      "title": "協作開發流程",
+      "description": "多個實驗室如何協調交付統一的協議實現",
+      "phases": {
+        "research": {
+          "title": "研究",
+          "description": "所有團隊的協作研究和協議設計"
+        },
+        "development": {
+          "title": "開發",
+          "description": "具有共享標準和接口的並行實現"
+        },
+        "testing": {
+          "title": "測試",
+          "description": "跨團隊集成測試和驗證"
+        },
+        "deployment": {
+          "title": "部署",
+          "description": "協調推出和生態系統集成"
+        }
+      }
+    },
+    "cta": {
+      "title": "加入創新",
+      "description": "成為構建基於 Move 的區塊鏈基礎設施未來的一部分",
+      "apply": "申請加入實驗室",
+      "positions": "查看開放職位"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "聯繫我們",
+      "title1": "聯繫",
+      "title2": "我們",
+      "subtitle": "對 Dubhe 有疑問嗎？想與我們合作嗎？我們很樂意聽到您的聲音。"
+    },
+    "form": {
+      "title": "傳送訊息給我們",
+      "validationError": "驗證錯誤",
+      "sendError": "發送訊息失敗。請再試一次。",
+      "networkError": "網路錯誤。請檢查您的連線並再試一次。",
+      "sending": "傳送中...",
+      "submit": "發送訊息",
+      "success": {
+        "title": "訊息已發送！",
+        "message": "我們會在 24-48 小時內回覆您。",
+        "sendAnother": "發送另一則訊息"
+      },
+      "fields": {
+        "name": {
+          "label": "姓名",
+          "placeholder": "您的姓名"
+        },
+        "email": {
+          "label": "電子郵件",
+          "placeholder": "your@email.com"
+        },
+        "subject": {
+          "label": "主題",
+          "placeholder": "選擇主題",
+          "options": {
+            "general": "一般查詢",
+            "partnership": "合作夥伴",
+            "investment": "投資查詢",
+            "grants": "資助申請",
+            "foundationJobs": "基金會職位",
+            "technical": "技術支援",
+            "media": "媒體與新聞"
+          }
+        },
+        "message": {
+          "label": "訊息",
+          "placeholder": "請告訴我們您的專案、查詢或我們可以如何幫助..."
+        }
+      }
+    },
+    "info": {
+      "title": "聯繫資訊",
+      "description": "無論您是開發者、投資者，還是單純對 Dubhe 感到好奇，我們都在這裡幫助您。請透過以下任一管道聯繫我們。",
+      "email": {
+        "title": "電子郵件"
+      },
+      "business": {
+        "title": "商務查詢"
+      },
+      "location": {
+        "title": "地點",
+        "content": "全球，去中心化"
+      },
+      "responseTime": {
+        "title": "回覆時間",
+        "content": "24-48 小時"
+      }
+    },
+    "quickLinks": {
+      "title": "快速連結",
+      "grant": "申請資助",
+      "incubation": "加入孵化計劃",
+      "ambassador": "成為大使",
+      "documentation": "閱讀文件"
+    }
+  },
+  "events": {
+    "hero": {
+      "badge": "活動日曆",
+      "title": "即將舉行的活動",
+      "subtitle": "參與 Dubhe 主辦的活動、行業會議、社群聚會、開發者工作坊等等。"
+    },
+    "filters": {
+      "search": {
+        "placeholder": "搜尋"
+      },
+      "categories": {
+        "all": "全部",
+        "ama": "AMA",
+        "workshop": "工作坊",
+        "meetup": "聚會"
+      },
+      "sort": {
+        "date": "排序：日期",
+        "name": "排序：名稱",
+        "location": "排序：地點"
+      }
+    },
+    "table": {
+      "headers": {
+        "date": "日期",
+        "name": "名稱",
+        "location": "地點",
+        "category": "類別"
+      },
+      "noEvents": "找不到符合您條件的活動。"
+    },
+    "eventsList": {
+      "engineWorkshop": {
+        "name": "Dubhe 引擎開發者工作坊",
+        "location": "線上",
+        "category": "工作坊",
+        "description": "深入了解 Dubhe 引擎架構和開發最佳實踐"
+      },
+      "moveAma": {
+        "name": "Move 生態系統 AMA 與 Dubhe 基金會",
+        "location": "線上",
+        "category": "AMA",
+        "description": "就 Dubhe 協議、路線圖和生態系統開發的任何問題問我們"
+      },
+      "sfMeetup": {
+        "name": "Dubhe 社群聚會 - 旧金山",
+        "location": "美國加州旧金山",
+        "category": "聚會",
+        "description": "與灣區 Dubhe 開發者和社群成員交流"
+      },
+      "zkWorkshop": {
+        "name": "零知識隱私解決方案工作坊",
+        "location": "線上",
+        "category": "工作坊",
+        "description": "學習 Dubhe 生態系統中的 ZK 證明和隱私保護協議"
+      }
+    },
+    "community": {
+      "title": "加入我們的全球社群",
+      "description": "在我們的活動中與來自世界各地的開發者、愛好者和創新者連結",
+      "stats": {
+        "eventsThisYear": "今年的活動",
+        "attendees": "參與者",
+        "countries": "國家",
+        "speakers": "演講者"
+      }
+    }
+  },
+  "moderators": {
+    "hero": {
+      "badge": "版主計劃",
+      "title1": "社群",
+      "title2": "版主",
+      "subtitle": "幫助為我們的全球社群維持一個安全、歡迎和高效的環境。加入我們的專業版主團隊，確保優質討論並支持所有成員。",
+      "stats": {
+        "coverage": "覆蓋範圍",
+        "activeModerators": "活躍版主",
+        "membersProtected": "受保護成員"
+      },
+      "cta1": "申請成為版主",
+      "cta2": "指導原則"
+    },
+    "responsibilitiesSection": {
+      "badge": "主要職責",
+      "title": "版主的工作"
+    },
+    "responsibilities": {
+      "communityModeration": {
+        "title": "社群管理",
+        "description": "維持健康討論，執行社群指導原則，確保所有成員都有一個歡迎的環境"
+      },
+      "securitySafety": {
+        "title": "安全與防護",
+        "description": "識別和防止垃圾郵件、詐騙和惡意活動，保護社群成員"
+      },
+      "memberSupport": {
+        "title": "成員支援",
+        "description": "幫助新成員入門，回答問題，並引導用戶找到合適的資源"
+      },
+      "contentCuration": {
+        "title": "內容管理",
+        "description": "突出優質內容，組織資訊，並維持社群討論的品質"
+      }
+    },
+    "moderatorsSection": {
+      "title": "認識我們的版主",
+      "description": "我們的專業團隊確保在所有時區和平台上都有 24/7 全天候覆蓋",
+      "timezone": "時區",
+      "platforms": "平台",
+      "languages": "語言"
+    },
+    "toolsSection": {
+      "title": "管理工具"
+    },
+    "tools": {
+      "discord": {
+        "features": [
+          "訊息管理",
+          "用戶暫停/封鎖",
+          "频道監管",
+          "機器人整合"
+        ]
+      },
+      "telegram": {
+        "features": [
+          "群組管理",
+          "垃圾郵件過濾",
+          "用戶驗證",
+          "自動回復"
+        ]
+      },
+      "forum": {
+        "features": [
+          "主題管理",
+          "內容管理",
+          "用戶排名",
+          "舉報處理"
+        ]
+      }
+    },
+    "requirementsSection": {
+      "title": "申請要求",
+      "guidelinesTitle": "管理指導原則"
+    },
+    "requirements": [
+      "活躍社群成員至少 3 個月",
+      "對 Dubhe 生態系統和 Move 技術有深入了解",
+      "優秀的溝通和衆突解決技能",
+      "可以在不同時區執行管理職務",
+      "優先考慮有管理經驗者",
+      "承諾公正和公平的決策制定"
+    ],
+    "guidelines": {
+      "communication": {
+        "category": "溝通",
+        "rules": [
+          "對所有社群成員保持尊重和礼貌",
+          "在所有互動中使用清晰、專業的語言",
+          "緩解衆突並促進建設性對話",
+          "對新成員保持耐心並提供有用的指導"
+        ]
+      },
+      "enforcement": {
+        "category": "執行",
+        "rules": [
+          "一致和公平地應用社群規則",
+          "以明確的理由記錄所有管理行動",
+          "將複雜問題上報給資深版主或管理員",
+          "審查和申訴流程應該透明"
+        ]
+      },
+      "privacySecurity": {
+        "category": "隱私與安全",
+        "rules": [
+          "保護用戶隱私和個人資訊",
+          "永遠不分享管理工具或憑證",
+          "立即報告安全漏洞",
+          "保持內部討論的機密性"
+        ]
+      }
+    },
+    "cta": {
+      "title": "準備好幫助我們的社群了嗎？",
+      "description": "加入我們的管理團隊，幫助為所有人創造一個安全、歡迎的環境",
+      "apply": "立即申請",
+      "guidelines": "查看指導原則"
+    }
+  },
+  "engine": {
+    "hero": {
+      "badge": "Dubhe 引擎",
+      "title1": "80% 代碼",
+      "title2": "自動生成",
+      "subtitle": "基於架構的開發平台，自動生成智能合約、API 和 UI 組件。專注於真正重要的部分 - 您獨特的業務邏輯。",
+      "stats": {
+        "codeAutoGenerated": "自動生成代碼",
+        "fasterDevelopment": "快速開發",
+        "moveEcosystem": "Move 生態系統"
+      },
+      "cta1": "開始構建",
+      "cta2": "查看文件"
+    },
+    "featuresSection": {
+      "badge": "核心功能",
+      "title": "更快構建，更快交付",
+      "description": "Dubhe 引擎處理繁重的工作，讓您可以專注於創新"
+    },
+    "features": {
+      "codeGeneration": {
+        "title": "80% 代碼自動生成",
+        "description": "透過智能代碼生成大幅減少開發時間，自動處理樣板代碼、数據結構和常見模式。",
+        "details": [
+          "架構驅動的代碼生成",
+          "自動 API 端點創建",
+          "智能合約框架",
+          "UI 組件生成"
+        ]
+      },
+      "schemaBased": {
+        "title": "架構為基礎的開發",
+        "description": "一次定義您的数據結構，讓 Dubhe 引擎生成其他一切。更改會自動傳播到您的整個應用程式。",
+        "details": [
+          "單一真相來源",
+          "自動類型安全",
+          "即時驗證",
+          "跨平台相容性"
+        ]
+      },
+      "realTimeToolchain": {
+        "title": "即時 DApp 工具鏈",
+        "description": "構建具有即時能力的完全鏈上應用程式。從遊戲狀態到金融應用程式，一切都是即時發生。",
+        "details": [
+          "次秒級交易確定性",
+          "即時狀態同步",
+          "事件驅動架構",
+          "樂觀 UI 更新"
+        ]
+      },
+      "multiChain": {
+        "title": "多鏈支援",
+        "description": "在多個基於 Move 的鏈上部署，無需更改您的代碼。寫一次，部署到所有地方。",
+        "details": [
+          "Sui 網路整合",
+          "Aptos 相容性",
+          "Movement 網路支援",
+          "跨鏈狀態管理"
+        ]
+      }
+    },
+    "workflowSection": {
+      "badge": "開發工作流程",
+      "title": "從想法到生產 4 個簡單步驟"
+    },
+    "workflow": {
+      "defineSchema": {
+        "title": "定義架構",
+        "description": "使用我們直覺的架構定義語言創建您的數據模型和業務邏輯"
+      },
+      "generateCode": {
+        "title": "生成代碼",
+        "description": "Dubhe 引擎自動生成 80% 的應用程式代碼，包括智能合約和 API"
+      },
+      "customizeLogic": {
+        "title": "客製化邏輯",
+        "description": "專注於獨特的 20% - 您的業務邏輯、自定義功能和用戶體驗"
+      },
+      "deployInstantly": {
+        "title": "即時部署",
+        "description": "一鍵部署到多個 Move 鏈，具有自動優化和監控"
+      }
+    },
+    "cta": {
+      "title": "準備好將開發速度提高 10 倍了嗎？",
+      "description": "加入正在構建完全鏈上應用程式未來的開發者",
+      "getStarted": "免費開始",
+      "scheduleDemo": "安排示範"
+    }
+  },
+  "channel": {
+    "badge": "Dubhe 頻道",
+    "hero": {
+      "title": "即時點對點",
+      "titleHighlight": "互動層",
+      "subtitle": "Web2 級用戶體驗與 Web3 基礎設施。為遊戲、社交平台和基於 Move 區塊鏈構建的交易應用程式提供低於 50 毫秒的延遲。",
+      "metrics": {
+        "latency": "延遲",
+        "users": "併發用戶",
+        "uptime": "正常運行時間"
+      },
+      "cta1": "加入網路",
+      "cta2": "技術文件"
+    },
+    "features": {
+      "badge": "核心功能",
+      "title": "即時基礎設施",
+      "subtitle": "為現代 DApps",
+      "description": "專為需要即時響應和無縫用戶體驗的應用程式而構建",
+      "items": {
+        "latency": {
+          "title": "低於 50 毫秒延遲",
+          "description": "具有 Web2 級響應的即時點對點互動。專為需要即時反饋的遊戲、交易和社交應用程式而構建。",
+          "details": [
+            "基於 WebRTC 的通訊",
+            "優化的路由算法",
+            "邊緣節點分佈",
+            "預測性狀態同步"
+          ]
+        },
+        "network": {
+          "title": "可擴展的點對點網路",
+          "description": "隨著用戶群增長的水平擴展。從數百到數百萬個併發連接，性能不會下降。",
+          "details": [
+            "動態節點發現",
+            "負載平衡協議",
+            "網狀網路拓撲",
+            "自動擴展基礎設施"
+          ]
+        },
+        "security": {
+          "title": "預設安全",
+          "description": "端到端加密和加密驗證確保您的數據和互動保持私密和防篡改。",
+          "details": [
+            "端到端加密協議",
+            "零知識證明",
+            "加密簽名",
+            "去中心化驗證"
+          ]
+        },
+        "experience": {
+          "title": "Web2 用戶體驗，Web3 後端",
+          "description": "由去中心化基礎設施驅動的熟悉用戶體驗。用戶可以獲得兩個世界的最佳體驗，無需妥協。",
+          "details": [
+            "無縫錢包整合",
+            "無燃料費交易",
+            "漸進式 Web 應用程式支持",
+            "移動優先設計"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "badge": "使用案例",
+      "title": "專為即時應用程式而構建",
+      "items": {
+        "gaming": {
+          "title": "即時遊戲",
+          "description": "具有即時響應時間的多人遊戲",
+          "metrics": ["<50 毫秒延遲", "100 萬以上併發玩家", "99.9% 正常運行時間"]
+        },
+        "social": {
+          "title": "社交平台",
+          "description": "具有即時訊息的去中心化社交網路",
+          "metrics": ["即時訊息", "即時視訊通話", "群聊"]
+        },
+        "trading": {
+          "title": "交易應用程式",
+          "description": "具有即時價格流的高頻交易",
+          "metrics": ["即時數據", "訂單簿更新", "價格發現"]
+        }
+      }
+    },
+    "architecture": {
+      "title": "網路架構",
+      "description": "多層方法以實現最佳性能和可擴展性",
+      "layers": {
+        "application": {
+          "title": "應用程式層",
+          "description": "您的 DApp 透過簡單的 API 連接"
+        },
+        "channel": {
+          "title": "頻道層",
+          "description": "即時點對點通訊協議"
+        },
+        "network": {
+          "title": "網路層",
+          "description": "分佈式節點基礎設施"
+        },
+        "blockchain": {
+          "title": "區塊鏈層",
+          "description": "基於 Move 的結算和驗證"
+        }
+      }
+    },
+    "network": {
+      "title": "全球點對點網路",
+      "description": "連接全球節點的 Dubhe 星座網路，實現超低延遲通訊",
+      "status": {
+        "title": "網路狀態",
+        "online": "在線",
+        "latency": "延遲：<50 毫秒"
+      },
+      "nodes": {
+        "title": "活躍節點",
+        "connected": "7/7 已連接"
+      }
+    },
+    "cta": {
+      "title": "準備好即時 DApps 了嗎？",
+      "subtitle": "加入為下一代互動應用程式提供動力的網路",
+      "primary": "連接到網路",
+      "secondary": "查看 API 文件"
+    }
+  },
+  "os": {
+    "badge": "Dubhe OS",
+    "hero": {
+      "title": "跨鏈",
+      "titleHighlight": "Move 生態系統",
+      "subtitle": "統一生態系統連接基於 Move 的區塊鏈，具有跨鏈治理、通用橋接和整個網路的共享安全性。",
+      "stats": {
+        "multiChain": {
+          "value": "多鏈",
+          "label": "Move 生態系統"
+        },
+        "universal": {
+          "value": "通用",
+          "label": "代幣經濟"
+        },
+        "unified": {
+          "value": "統一",
+          "label": "治理"
+        }
+      },
+      "cta": {
+        "primary": "加入生態系統",
+        "secondary": "了解更多"
+      }
+    },
+    "features": {
+      "badge": "生態系統功能",
+      "title": "一個代幣，多條鏈",
+      "subtitle": "統一體驗",
+      "description": "透過共享治理和通用橋接在整個 Move 生態系統中無縫互動",
+      "items": {
+        "token": {
+          "title": "原生代幣生態系統",
+          "description": "統一的代幣經濟驅動整個生態系統，在所有連接的鏈上具有治理、質押和實用功能。",
+          "details": [
+            "跨鏈治理投票",
+            "質押獎勵和收益",
+            "交易費用支付",
+            "開發者激勵計劃"
+          ]
+        },
+        "bridging": {
+          "title": "通用橋接",
+          "description": "在基於 Move 的鏈之間無縫資產轉移，具有即時最終性和最低費用。",
+          "details": [
+            "Sui ↔ Aptos 橋接",
+            "Movement 網路支持",
+            "原子跨鏈交換",
+            "流動性池管理"
+          ]
+        },
+        "governance": {
+          "title": "去中心化治理",
+          "description": "社區驅動的協議升級、財庫管理和生態系統發展決策。",
+          "details": [
+            "提案提交系統",
+            "加權投票機制",
+            "財庫資金分配",
+            "協議參數更新"
+          ]
+        },
+        "security": {
+          "title": "統一安全模型",
+          "description": "共享安全框架為所有連接的鏈和應用程式提供保護。",
+          "details": [
+            "跨鏈驗證",
+            "懲罰機制",
+            "欺詐證明系統",
+            "緊急響應協議"
+          ]
+        }
+      }
+    },
+    "chains": {
+      "badge": "支援的網路",
+      "title": "多鏈 Move 生態系統",
+      "items": {
+        "sui": {
+          "name": "Sui 網路",
+          "status": "正式運行",
+          "features": ["高吞吐量", "以物件為中心的模型", "Move 語言"]
+        },
+        "aptos": {
+          "name": "Aptos",
+          "status": "正式運行",
+          "features": ["並行執行", "Move VM", "安全智能合約"]
+        },
+        "movement": {
+          "name": "Movement",
+          "status": "整合中",
+          "features": ["EVM 兼容性", "Move 運行時", "模組化架構"]
+        },
+        "future": {
+          "name": "未來鏈",
+          "status": "計劃中",
+          "features": ["社區驅動", "基於 Move", "生態系統擴展"]
+        }
+      }
+    },
+    "cta": {
+      "title": "加入 Move 生態系統",
+      "subtitle": "成為統一跨鏈 Move 生態系統的一部分",
+      "primary": "加入生態系統",
+      "secondary": "治理入口"
+    }
+  },
+  "proposal": {
+    "badge": "Dubhe 開放治理",
+    "hero": {
+      "title": "塑造未來",
+      "titleHighlight": "共同努力",
+      "subtitle": "透過 DubheOS 提交提案以請求財庫資助、升級運行時，或使用 Polkadot 的 OpenGov 框架參與治理，支援信念投票。",
+      "cta": {
+        "primary": "DubheOS 開發網",
+        "secondary": "查看所有公投"
+      }
+    },
+    "types": {
+      "badge": "提案類別",
+      "title": "治理提案類型",
+      "exampleLabel": "提案範例",
+      "treasury": {
+        "title": "財庫支出",
+        "description": "向 Dubhe 財庫請求開發項目和倡議的資助",
+        "examples": [
+          "開發資助",
+          "基礎設施資助",
+          "研究項目"
+        ]
+      },
+      "governance": {
+        "title": "治理變更",
+        "description": "對投票機制、財庫管理和治理參數的修改",
+        "examples": [
+          "投票門檻",
+          "公投參數",
+          "軌道配置"
+        ]
+      },
+      "runtime": {
+        "title": "運行時升級",
+        "description": "需要治理批准的協議改進和運行時修改",
+        "examples": [
+          "模組升級",
+          "運行時優化",
+          "新功能"
+        ]
+      },
+      "emergency": {
+        "title": "緊急行動",
+        "description": "針對安全問題和關鍵協議修復的時間敏感提案",
+        "examples": [
+          "安全補丁",
+          "緊急更新",
+          "關鍵錯誤修復"
+        ]
+      }
+    },
+    "active": {
+      "title": "活躍公投",
+      "subtitle": "在各種治理軌道中進行信念投票的當前公投"
+    },
+    "process": {
+      "title": "治理流程",
+      "subtitle": "創建和投票治理提案的逐步流程"
+    },
+    "requirements": {
+      "title": "提案要求"
+    },
+    "cta": {
+      "title": "準備參與了嗎？",
+      "subtitle": "加入治理流程，幫助塑造 Dubhe 的未來",
+      "primary": "訪問 DubheOS",
+      "secondary": "OpenGov 指南"
+    }
+  },
+  "privacy": {
+    "badge": "隱私政策",
+    "hero": {
+      "title": "您的隱私",
+      "titleHighlight": "很重要",
+      "subtitle": "了解 Dubhe 基金會如何保護您的隱私並透明安全地處理您的數據。",
+      "lastUpdated": "最後更新：2025 年 1 月"
+    },
+    "introduction": {
+      "title": "簡介",
+      "content": "在 Dubhe 基金會，我們致力於保護您的隱私並確保您個人信息的安全。本隱私政策說明我們在您使用我們的平台、服務和與 Dubhe 區塊鏈生態系統相關的應用程式時如何收集、使用、披露和保護您的信息。"
+    },
+    "sections": {
+      "collection": {
+        "title": "我們收集的信息",
+        "items": [
+          "您在使用我們服務時提供的個人信息",
+          "關於您的設備和網路連接的技術信息",
+          "用於改進我們平台的使用數據和分析",
+          "錢包地址和區塊鏈交易數據"
+        ]
+      },
+      "usage": {
+        "title": "我們如何使用信息",
+        "items": [
+          "提供和改進我們的區塊鏈開發平台",
+          "處理資助申請和孵化計劃",
+          "就更新、活動和機會進行溝通",
+          "確保平台安全並防止欺詐"
+        ]
+      },
+      "protection": {
+        "title": "數據保護",
+        "items": [
+          "我們實施行業標準的安全措施",
+          "所有敏感數據在傳輸和靜止時都經過加密",
+          "我們從不存儲私鑰或敏感錢包信息",
+          "定期安全審計和合規審查"
+        ]
+      },
+      "sharing": {
+        "title": "數據共享",
+        "items": [
+          "我們不向第三方出售個人信息",
+          "在嚴格協議下與服務提供商有限共享",
+          "公共區塊鏈數據本質上是透明的",
+          "我們可能會共享數據以遵守法律要求"
+        ]
+      }
+    },
+    "rights": {
+      "title": "您的隱私權",
+      "access": {
+        "title": "訪問與控制",
+        "items": [
+          "請求訪問您的個人數據",
+          "更正不準確的信息",
+          "刪除您的帳戶和數據",
+          "導出您的數據"
+        ]
+      },
+      "communication": {
+        "title": "通訊",
+        "items": [
+          "退出營銷通訊",
+          "選擇通知偏好",
+          "控制 Cookie 設置",
+          "請求數據處理限制"
+        ]
+      }
+    },
+    "contact": {
+      "title": "關於隱私的問題？",
+      "description": "如果您對本隱私政策或我們的數據實踐有任何問題，請聯繫我們。"
+    }
+  },
+  "terms": {
+    "badge": "服務條款",
+    "hero": {
+      "title": "服務",
+      "titleHighlight": "條款",
+      "subtitle": "這些條款管理您對 Dubhe 服務、平台和區塊鏈基礎設施的使用。",
+      "lastUpdated": "最後更新：2025 年 1 月"
+    },
+    "introduction": {
+      "title": "協議概述",
+      "content1": "歡迎來到 Dubhe！這些服務條款（\"條款\"）構成您與 Dubhe 基金會（\"我們\"、\"我們的\"或\"我們\"）之間關於您使用我們的區塊鏈平台、開發工具和相關服務的具有法律約束力的協議。",
+      "content2": "通過使用我們的服務，您承認您已閱讀、理解並同意受這些條款和我們的隱私政策約束。如果您代表組織使用我們的服務，您聲明您有權將該組織約束於這些條款。"
+    },
+    "sections": {
+      "acceptance": {
+        "title": "接受條款",
+        "items": [
+          "通過訪問或使用 Dubhe 服務，您同意受這些條款約束",
+          "如果您不同意這些條款的任何部分，您不得訪問我們的服務",
+          "我們可能會不時更新這些條款，恕不另行通知",
+          "您的持續使用構成對修訂條款的接受"
+        ]
+      },
+      "usage": {
+        "title": "服務使用",
+        "items": [
+          "您必須年滿 18 歲才能使用我們的服務",
+          "您負責維護帳戶的安全",
+          "您不得將我們的服務用於任何非法或未經授權的目的",
+          "我們保留終止違反這些條款的帳戶的權利"
+        ]
+      },
+      "intellectual": {
+        "title": "知識產權",
+        "items": [
+          "Dubhe 基金會保留我們專有技術的所有權利",
+          "開源組件受其各自許可證管轄",
+          "您保留使用我們平台創建內容的所有權",
+          "您授予我們使用您內容提供服務的許可"
+        ]
+      },
+      "disclaimers": {
+        "title": "免責聲明與限制",
+        "items": [
+          "我們的服務按\"現狀\"提供，不提供任何形式的保證",
+          "我們不對任何間接、偶然或後果性損害承擔責任",
+          "區塊鏈交易是不可逆的，我們無法撤銷它們",
+          "您承認區塊鏈技術的實驗性質"
+        ]
+      }
+    },
+    "blockchain": {
+      "title": "區塊鏈特定條款",
+      "participation": {
+        "title": "網路參與",
+        "items": [
+          "交易記錄在公共區塊鏈上",
+          "網路費用適用於區塊鏈操作",
+          "智能合約一旦部署就是不可變的",
+          "您對交易準確性負責"
+        ]
+      },
+      "risks": {
+        "title": "風險確認",
+        "items": [
+          "區塊鏈技術是實驗性的",
+          "代幣價值可能高度波動",
+          "智能合約可能包含錯誤",
+          "網路擁塞可能影響性能"
+        ]
+      }
+    },
+    "governance": {
+      "title": "管轄法律和爭議",
+      "law": "這些條款應根據 Dubhe 基金會成立所在司法管轄區的法律進行解釋和管轄，不考慮其法律衝突條款。",
+      "disputes": "因這些條款或您使用我們服務而產生的任何爭議應通過根據國際仲裁規則的有約束力仲裁解決。",
+      "modifications": "我們保留隨時修改這些條款的權利。修改後繼續使用我們的服務構成對修改條款的接受。"
+    },
+    "contact": {
+      "title": "關於條款的問題？",
+      "description": "如果您對這些服務條款有任何問題，請聯繫我們的法律團隊。"
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "語言"
   }
 }

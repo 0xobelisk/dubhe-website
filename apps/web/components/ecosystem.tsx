@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ExternalLink, Code, Coins, Gamepad2, DollarSign } from "lucide-react"
+import { useTranslations } from 'next-intl'
 
 type Project = {
   name: string;
@@ -14,37 +15,59 @@ type Project = {
 }
 
 export default function Ecosystem() {
+  const t = useTranslations('home.ecosystem')
+  
   const categories = [
     {
-      title: "DeFi",
+      title: t('categories.defi.title'),
       icon: DollarSign,
-      description: "Decentralized finance protocols",
+      description: t('categories.defi.description'),
       projects: [
-        { name: "Merak", description: "Automated Market Maker", tvl: "$45M", url: "https://merak-testnet.obelisk.build/" },
+        { 
+          name: t('projects.merak.name'), 
+          description: t('projects.merak.description'), 
+          tvl: t('projects.merak.tvl'), 
+          url: "https://merak-testnet.obelisk.build/" 
+        },
       ] as Project[]
     },
     {
-      title: "Gaming",
+      title: t('categories.gaming.title'),
       icon: Gamepad2,
-      description: "On-chain games and metaverse",
+      description: t('categories.gaming.description'),
       projects: [
-        { name: "Numeron", description: "Fantasy AI RPG Adventure", players: "12K+", url: "https://testnet.numeron.world/" },
+        { 
+          name: t('projects.numeron.name'), 
+          description: t('projects.numeron.description'), 
+          players: t('projects.numeron.players'), 
+          url: "https://testnet.numeron.world/" 
+        },
       ] as Project[]
     },
     {
-      title: "Infrastructure",
+      title: t('categories.infrastructure.title'),
       icon: Code,
-      description: "Developer tools and infrastructure",
+      description: t('categories.infrastructure.description'),
       projects: [
-        { name: "Cyferio SDK", description: "Development Kit", downloads: "50K+", url: "https://cyferio.com/" },
+        { 
+          name: t('projects.cyferio.name'), 
+          description: t('projects.cyferio.description'), 
+          downloads: t('projects.cyferio.downloads'), 
+          url: "https://cyferio.com/" 
+        },
       ] as Project[]
     },
     {
-      title: "NFTs",
+      title: t('categories.nfts.title'),
       icon: Coins,
-      description: "Digital collectibles and assets",
+      description: t('categories.nfts.description'),
       projects: [
-        { name: "Objectsdao", description: "NFT Auction", volume: "$2.3M", url: "https://objects-monorepo.vercel.app/" },
+        { 
+          name: t('projects.objectsdao.name'), 
+          description: t('projects.objectsdao.description'), 
+          volume: t('projects.objectsdao.volume'), 
+          url: "https://objects-monorepo.vercel.app/" 
+        },
       ] as Project[]
     }
   ]
@@ -54,16 +77,15 @@ export default function Ecosystem() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-purple-200">
-            Ecosystem
+            {t('badge')}
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 max-w-4xl mx-auto leading-tight">
-            Thriving Ecosystem of
+            {t('title.line1')}
             <br />
-            Innovative Applications
+            {t('title.line2')}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Discover the diverse range of applications, protocols, and tools built on Dubhe, 
-            from DeFi and gaming to infrastructure and NFTs.
+            {t('description')}
           </p>
         </div>
 
@@ -107,10 +129,10 @@ export default function Ecosystem() {
                       {project.tvl || project.players || project.downloads || project.volume || ''}
                     </div>
                     <div className="text-xs text-gray-500">
-                      {project.tvl ? 'TVL' : 
-                       project.players ? 'Players' :
-                       project.downloads ? 'Downloads' :
-                       project.volume ? 'Volume' : ''}
+                      {project.tvl ? t('metrics.tvl') : 
+                       project.players ? t('metrics.players') :
+                       project.downloads ? t('metrics.downloads') :
+                       project.volume ? t('metrics.volume') : ''}
                     </div>
                   </div>
                 </motion.a>

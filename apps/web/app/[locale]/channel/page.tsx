@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useTranslations } from 'next-intl'
 import { motion } from "framer-motion"
 import { 
   Globe, 
@@ -48,6 +49,7 @@ const customStyles = `
 `
 
 export default function ChannelPage() {
+  const t = useTranslations('channel')
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -57,90 +59,90 @@ export default function ChannelPage() {
   const features = [
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Sub-50ms Latency",
-      description: "Real-time P2P interactions with Web2-level responsiveness. Built for gaming, trading, and social applications that demand instant feedback.",
+      title: t('features.items.latency.title'),
+      description: t('features.items.latency.description'),
       details: [
-        "WebRTC-based communication",
-        "Optimized routing algorithms",
-        "Edge node distribution",
-        "Predictive state synchronization"
+        t('features.items.latency.details.0'),
+        t('features.items.latency.details.1'),
+        t('features.items.latency.details.2'),
+        t('features.items.latency.details.3')
       ]
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Scalable P2P Network",
-      description: "Horizontal scaling that grows with your user base. From hundreds to millions of concurrent connections without performance degradation.",
+      title: t('features.items.network.title'),
+      description: t('features.items.network.description'),
       details: [
-        "Dynamic peer discovery",
-        "Load balancing protocols",
-        "Mesh network topology",
-        "Auto-scaling infrastructure"
+        t('features.items.network.details.0'),
+        t('features.items.network.details.1'),
+        t('features.items.network.details.2'),
+        t('features.items.network.details.3')
       ]
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "Secure by Default",
-      description: "End-to-end encryption and cryptographic verification ensure your data and interactions remain private and tamper-proof.",
+      title: t('features.items.security.title'),
+      description: t('features.items.security.description'),
       details: [
-        "E2E encryption protocols",
-        "Zero-knowledge proofs",
-        "Cryptographic signatures",
-        "Decentralized verification"
+        t('features.items.security.details.0'),
+        t('features.items.security.details.1'),
+        t('features.items.security.details.2'),
+        t('features.items.security.details.3')
       ]
     },
     {
       icon: <Globe className="w-6 h-6" />,
-      title: "Web2 UX, Web3 Backend",
-      description: "Familiar user experience powered by decentralized infrastructure. Users get the best of both worlds without compromise.",
+      title: t('features.items.experience.title'),
+      description: t('features.items.experience.description'),
       details: [
-        "Seamless wallet integration",
-        "Gasless transactions",
-        "Progressive Web App support",
-        "Mobile-first design"
+        t('features.items.experience.details.0'),
+        t('features.items.experience.details.1'),
+        t('features.items.experience.details.2'),
+        t('features.items.experience.details.3')
       ]
     }
   ]
 
   const useCases = [
     {
-      title: "Real-Time Gaming",
-      description: "Multiplayer games with instant response times",
+      title: t('useCases.items.gaming.title'),
+      description: t('useCases.items.gaming.description'),
       icon: <Router className="w-8 h-8" />,
-      metrics: ["<50ms latency", "1M+ concurrent players", "99.9% uptime"]
+      metrics: [t('useCases.items.gaming.metrics.0'), t('useCases.items.gaming.metrics.1'), t('useCases.items.gaming.metrics.2')]
     },
     {
-      title: "Social Platforms",
-      description: "Decentralized social networks with real-time messaging",
+      title: t('useCases.items.social.title'),
+      description: t('useCases.items.social.description'),
       icon: <MessageCircle className="w-8 h-8" />,
-      metrics: ["Instant messaging", "Live video calls", "Group chats"]
+      metrics: [t('useCases.items.social.metrics.0'), t('useCases.items.social.metrics.1'), t('useCases.items.social.metrics.2')]
     },
     {
-      title: "Trading Applications",
-      description: "High-frequency trading with real-time price feeds",
+      title: t('useCases.items.trading.title'),
+      description: t('useCases.items.trading.description'),
       icon: <Signal className="w-8 h-8" />,
-      metrics: ["Real-time data", "Order book updates", "Price discovery"]
+      metrics: [t('useCases.items.trading.metrics.0'), t('useCases.items.trading.metrics.1'), t('useCases.items.trading.metrics.2')]
     }
   ]
 
   const architecture = [
     {
-      layer: "Application Layer",
-      description: "Your DApp connects through simple APIs",
+      layer: t('architecture.layers.application.title'),
+      description: t('architecture.layers.application.description'),
       color: "from-purple-500 to-pink-500"
     },
     {
-      layer: "Channel Layer", 
-      description: "Real-time P2P communication protocol",
+      layer: t('architecture.layers.channel.title'), 
+      description: t('architecture.layers.channel.description'),
       color: "from-blue-500 to-cyan-500"
     },
     {
-      layer: "Network Layer",
-      description: "Distributed node infrastructure",
+      layer: t('architecture.layers.network.title'),
+      description: t('architecture.layers.network.description'),
       color: "from-green-500 to-emerald-500"
     },
     {
-      layer: "Blockchain Layer",
-      description: "Move-based settlement and verification",
+      layer: t('architecture.layers.blockchain.title'),
+      description: t('architecture.layers.blockchain.description'),
       color: "from-orange-500 to-red-500"
     }
   ]
@@ -217,7 +219,7 @@ export default function ChannelPage() {
                 className="inline-block bg-green-500/10 text-green-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-green-500/20"
               >
                 <Wifi className="w-4 h-4 inline mr-2" />
-                Dubhe Channel
+                {t('badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -228,10 +230,10 @@ export default function ChannelPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Real-Time P2P
+                  {t('hero.title')}
                   <br />
                   <span className="channel-gradient bg-clip-text text-transparent">
-                    Interaction Layer
+                    {t('hero.titleHighlight')}
                   </span>
                 </motion.h1>
                 
@@ -241,8 +243,7 @@ export default function ChannelPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Web2-level user experience with Web3 infrastructure. Sub-50ms latency for gaming, 
-                  social platforms, and trading applications built on Move blockchains.
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
 
@@ -255,15 +256,15 @@ export default function ChannelPage() {
               >
                 <div className="text-center">
                   <div className="text-3xl font-bold text-green-400 mb-2">&lt;50ms</div>
-                  <div className="text-gray-300">Latency</div>
+                  <div className="text-gray-300">{t('hero.metrics.latency')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-400 mb-2">1M+</div>
-                  <div className="text-gray-300">Concurrent Users</div>
+                  <div className="text-gray-300">{t('hero.metrics.users')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-400 mb-2">99.9%</div>
-                  <div className="text-gray-300">Uptime</div>
+                  <div className="text-gray-300">{t('hero.metrics.uptime')}</div>
                 </div>
               </motion.div>
 
@@ -275,12 +276,12 @@ export default function ChannelPage() {
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
                 <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-                  Join Network
+                  {t('hero.cta1')}
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 
                 <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="border-2 border-green-400/50 hover:border-green-300 bg-green-900/20 backdrop-blur-sm text-green-100 hover:text-white hover:bg-green-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-                  Technical Docs
+                  {t('hero.cta2')}
                 </Link>
               </motion.div>
             </div>
@@ -300,7 +301,7 @@ export default function ChannelPage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-gradient-to-r from-green-100 to-blue-100 text-green-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-green-200"
             >
-              Core Features
+              {t('features.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -309,9 +310,9 @@ export default function ChannelPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Real-Time Infrastructure
+              {t('features.title')}
               <br />
-              for Modern DApps
+              {t('features.subtitle')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -320,7 +321,7 @@ export default function ChannelPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Built for applications that demand instant responsiveness and seamless user experiences
+              {t('features.description')}
             </motion.p>
           </div>
 
@@ -366,7 +367,7 @@ export default function ChannelPage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-green-500/10 text-green-400 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-green-500/20"
             >
-              Use Cases
+              {t('useCases.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -375,7 +376,7 @@ export default function ChannelPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Built for Real-Time Applications
+              {t('useCases.title')}
             </motion.h2>
           </div>
 
@@ -419,7 +420,7 @@ export default function ChannelPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Network Architecture
+              {t('architecture.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -428,7 +429,7 @@ export default function ChannelPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Multi-layered approach for optimal performance and scalability
+              {t('architecture.description')}
             </motion.p>
           </div>
 
@@ -477,7 +478,7 @@ export default function ChannelPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Global P2P Network
+              {t('network.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -486,7 +487,7 @@ export default function ChannelPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Dubhe constellation network connecting nodes worldwide for ultra-low latency communication
+              {t('network.description')}
             </motion.p>
           </div>
 
@@ -690,14 +691,14 @@ export default function ChannelPage() {
 
               {/* Network Stats Overlay */}
               <div className="absolute top-4 right-4 bg-black/30 border border-green-400/30 rounded p-3 backdrop-blur-sm">
-                <div className="text-xs text-green-400 font-mono">NETWORK STATUS</div>
-                <div className="text-xs text-green-400 font-mono">● ONLINE</div>
-                <div className="text-xs text-gray-300 font-mono">Latency: &lt;50ms</div>
+                <div className="text-xs text-green-400 font-mono">{t('network.status.title')}</div>
+                <div className="text-xs text-green-400 font-mono">● {t('network.status.online')}</div>
+                <div className="text-xs text-gray-300 font-mono">{t('network.status.latency')}</div>
               </div>
 
               <div className="absolute bottom-4 left-4 bg-black/30 border border-green-400/30 rounded p-3 backdrop-blur-sm">
-                <div className="text-xs text-green-400 font-mono">ACTIVE NODES</div>
-                <div className="text-xs text-white font-mono">7/7 Connected</div>
+                <div className="text-xs text-green-400 font-mono">{t('network.nodes.title')}</div>
+                <div className="text-xs text-white font-mono">{t('network.nodes.connected')}</div>
               </div>
             </div>
           </div>
@@ -714,7 +715,7 @@ export default function ChannelPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Ready for Real-Time DApps?
+            {t('cta.title')}
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
@@ -723,7 +724,7 @@ export default function ChannelPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Join the network powering the next generation of interactive applications
+            {t('cta.subtitle')}
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -733,11 +734,11 @@ export default function ChannelPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-              Connect to Network
+              {t('cta.primary')}
               <Sparkles className="w-5 h-5 ml-2" />
             </Link>
             <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-              View API Docs
+              {t('cta.secondary')}
             </Link>
           </motion.div>
         </div>

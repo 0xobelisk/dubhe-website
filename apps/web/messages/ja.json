@@ -100,6 +100,252 @@
           "description": "各大陸にわたるDubheコミュニティの存在"
         }
       }
+    },
+    "ecosystem": {
+      "badge": "エコシステム",
+      "title": {
+        "line1": "革新的なアプリケーションの",
+        "line2": "繁栄するエコシステム"
+      },
+      "description": "DeFiやゲーミングからインフラストラクチャやNFTまで、Dubhe上に構築された多様なアプリケーション、プロトコル、ツールを発見してください。",
+      "categories": {
+        "defi": {
+          "title": "DeFi",
+          "description": "分散型金融プロトコル"
+        },
+        "gaming": {
+          "title": "ゲーミング",
+          "description": "オンチェーンゲームとメタバース"
+        },
+        "infrastructure": {
+          "title": "インフラストラクチャ", 
+          "description": "開発者ツールとインフラストラクチャ"
+        },
+        "nfts": {
+          "title": "NFT",
+          "description": "デジタルコレクタブルとアセット"
+        }
+      },
+      "projects": {
+        "merak": {
+          "name": "Merak",
+          "description": "自動マーケットメーカー",
+          "tvl": "$45M"
+        },
+        "numeron": {
+          "name": "Numeron",
+          "description": "ファンタジーAI RPGアドベンチャー",
+          "players": "12K+"
+        },
+        "cyferio": {
+          "name": "Cyferio SDK",
+          "description": "開発キット",
+          "downloads": "50K+"
+        },
+        "objectsdao": {
+          "name": "Objectsdao",
+          "description": "NFTオークション",
+          "volume": "$2.3M"
+        }
+      },
+      "metrics": {
+        "tvl": "TVL",
+        "players": "プレイヤー",
+        "downloads": "ダウンロード",
+        "volume": "ボリューム"
+      }
+    },
+    "howItWorks": {
+      "title": "仕組み",
+      "steps": {
+        "schemaDefinition": {
+          "title": "スキーマ定義",
+          "description": "Dubheの直感的なスキーマシステムを使用してゲームやdAppのロジックを定義します。シンプルな設定ファイルでエンティティ、コンポーネント、システムを記述します。",
+          "items": ["エンティティ", "コンポーネント", "システム", "エラー", "イベント"]
+        },
+        "codeGeneration": {
+          "title": "コード生成",
+          "description": "Dubhe エンジンは、スキーマ定義から80%のMoveスマートコントラクト、クライアントライブラリ、APIインターフェースを自動生成します。"
+        },
+        "deploymentChannel": {
+          "title": "デプロイメントとチャネル",
+          "description": "一つのコマンドで複数のMoveチェーンにデプロイ。Dubhe チャンネルはリアルタイム同期と<50msのレイテンシを提供し、シームレスなユーザー体験を実現します。"
+        },
+        "multiChainExecution": {
+          "title": "マルチチェーン実行",
+          "description": "アプリケーションは、Dubhe OSを通じてネイティブなクロスチェーン相互運用性を持ち、サポートされているすべてのMoveチェーンでシームレスに動作します。"
+        }
+      },
+      "labels": {
+        "dubheEngine": "Dubhe エンジン",
+        "you": "あなた",
+        "blockchain": "ブロックチェーン",
+        "multiChainReady": "マルチチェーン対応"
+      }
+    },
+    "competitiveAdvantage": {
+      "title": "競争優位性",
+      "subtitle": "Move エコシステム開発のための最初で唯一の包括的ソリューション",
+      "table": {
+        "feature": "機能",
+        "dubhe": "Dubhe",
+        "others": "その他"
+      },
+      "features": {
+        "codeGeneration": {
+          "title": "コード生成",
+          "dubhe": "80%自動化",
+          "others": "手動コーディング"
+        },
+        "uxPerformance": {
+          "title": "UXパフォーマンス",
+          "dubhe": "<50ms",
+          "others": "3-15秒"
+        },
+        "multiChainSupport": {
+          "title": "マルチチェーンサポート",
+          "dubhe": "ネイティブサポート",
+          "others": "複雑なブリッジ"
+        },
+        "developerExperience": {
+          "title": "開発者体験",
+          "dubhe": "ワンクリックデプロイ",
+          "others": "複雑なセットアップ"
+        },
+        "realTimeFeatures": {
+          "title": "リアルタイム機能",
+          "dubhe": "組み込みチャンネル",
+          "others": "外部ソリューション"
+        }
+      }
+    },
+    "productSuite": {
+      "badge": "プロダクトスイート",
+      "title": "完全なMove開発スタック",
+      "description": "Move開発における主要な摩擦点を解決する3つの統合製品",
+      "products": {
+        "engine": {
+          "title": "Dubhe エンジン",
+          "subtitle": "80%コード自動生成",
+          "description": "Moveコードの80%を自動生成する唯一の開発ツールキット、開発者がコアビジネスロジックに集中できます",
+          "features": [
+            "開発時間を数ヶ月から数週間に短縮",
+            "インフラコストを90%削減",
+            "一つのコマンドで全てのMoveチェーンにデプロイ"
+          ],
+          "highlight": "10倍高速な開発"
+        },
+        "channel": {
+          "title": "Dubhe チャンネル",
+          "subtitle": "Web2レベルのリアルタイム体験",
+          "description": "ブロックチェーンをWeb2のように感じさせるリアルタイムプログラマブルP2P相互作用レイヤー",
+          "features": [
+            "瞬間的なフロントエンドレンダリング",
+            "超高速実行速度",
+            "マルチクライアント、モバイル、デスクトップ、Web対応"
+          ],
+          "highlight": "50ms未満の遅延"
+        },
+        "os": {
+          "title": "Dubhe OS",
+          "subtitle": "クロスチェーン相互運用性OS",
+          "description": "ネイティブクロスチェーンサポートと開発者インセンティブメカニズムを備えたブロックチェーンオペレーティングシステム",
+          "features": [
+            "単一コードベース、全てのMoveチェーン",
+            "組み込み開発者報酬",
+            "マルチチェーンエコシステムへのブリッジ"
+          ],
+          "highlight": "ネイティブマルチチェーン"
+        }
+      }
+    },
+    "networkArchitecture": {
+      "badge": "ネットワークアーキテクチャ",
+      "title": "完全なMove開発スタック",
+      "description": "開発ツールからリアルタイム相互作用チャネル、分散インフラストラクチャまで - Dubheは次世代の完全なオンチェーンアプリケーションを構築するために必要なすべてを提供します。",
+      "keyMetricsTitle": "主要メトリクス",
+      "keyMetrics": [
+        "1000万以上のトランザクション処理",
+        "平均200ms未満の遅延",
+        "Web2レベルのユーザー体験",
+        "Sui、Aptos、Rooch、Movement、Initiaと互換"
+      ],
+      "moveEcosystemTitle": "Moveエコシステム",
+      "moveEcosystemFeatures": [
+        "1,555人のアクティブなMove開発者",
+        "月間40%の成長",
+        "3年未満の歴史",
+        "巨大な成長ポテンシャル"
+      ],
+      "pipelining": "パイプライニング",
+      "architectureLayers": {
+        "moveApplications": {
+          "title": "Moveアプリケーション",
+          "subtitle": "あなたのdAppsとゲーム",
+          "description": "Moveの安全性と柔軟性で複雑な分散型アプリケーションを構築",
+          "features": ["DeFiプロトコル", "ゲームアプリ", "NFTプラットフォーム", "ソーシャルdApps"]
+        },
+        "dubheEngine": {
+          "title": "Dubhe エンジン",
+          "subtitle": "開発ツールキット",
+          "description": "80%のコードを自動生成し、完全な開発者ツールチェーンを提供",
+          "features": ["コード生成", "スキーマベース開発", "マルチチェーンデプロイ", "開発環境"]
+        },
+        "dubheChannel": {
+          "title": "Dubhe チャンネル",
+          "subtitle": "リアルタイムレイヤー",
+          "description": "Web2レベルのリアルタイムユーザー体験のためのP2P相互作用レイヤー",
+          "features": ["50ms未満の遅延", "リアルタイム同期", "P2P通信", "モバイルサポート"]
+        },
+        "dubheOS": {
+          "title": "Dubhe OS",
+          "subtitle": "クロスチェーンインフラ",
+          "description": "ネイティブマルチチェーン相互運用性を持つ分散オペレーティングシステム",
+          "features": ["クロスチェーンブリッジ", "統一状態", "開発者インセンティブ", "ガバナンス"]
+        }
+      },
+      "completeStackSolution": {
+        "title": "完全スタックソリューション",
+        "description": "Dubheは、コード生成からリアルタイムユーザー体験まで、Move エコシステム開発のための完全で統合されたソリューションを提供する最初で唯一のプラットフォームです。"
+      },
+      "technicalFeatures": {
+        "securityFirst": {
+          "title": "セキュリティファースト",
+          "description": "Moveの形式検証により、バグのないスマートコントラクトを保証"
+        },
+        "highPerformance": {
+          "title": "高性能",
+          "description": "並列実行と最適化されたランタイムで最大スループットを実現"
+        },
+        "composable": {
+          "title": "構成可能",
+          "description": "モジュラーアーキテクチャにより、簡単な統合とカスタマイゼーションを可能に"
+        },
+        "unifiedState": {
+          "title": "統一状態",
+          "description": "すべてのチェーンとアプリケーション間で単一の真実のソース"
+        }
+      }
+    },
+    "networkStats": {
+      "title": "ネットワーク統計",
+      "description": "Dubheエコシステム全体の成長と活動を示すリアルタイムメトリクス。",
+      "transactions": {
+        "label": "処理されたトランザクション",
+        "change": "+12.5%"
+      },
+      "operations": {
+        "label": "実行された操作",
+        "change": "+18.2%"
+      },
+      "users": {
+        "label": "アクティブユーザー",
+        "change": "+25.1%"
+      },
+      "income": {
+        "label": "プロトコル収益",
+        "change": "+15.8%"
+      }
     }
   },
   "foundation": {
@@ -141,13 +387,33 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Dubhe. All rights reserved.",
+    "description": "80%のコード自動生成、リアルタイムP2Pチャネル、およびクロスチェーン相互運用性を備えた完全なMove開発プラットフォーム。",
+    "sections": {
+      "learn": "学習",
+      "build": "開発",
+      "ecosystem": "エコシステム",
+      "media": "メディア",
+      "community": "コミュニティ"
+    },
     "links": {
-      "about": "について",
+      "documentation": "ドキュメント",
+      "engine": "エンジン",
+      "channel": "チャンネル",
+      "os": "OS",
+      "foundation": "財団",
+      "labs": "ラボ",
+      "grants": "グラント",
+      "incubation": "インキュベーション",
+      "proposal": "提案",
+      "ambassador": "アンバサダー",
+      "moderators": "モデレーター",
+      "events": "イベント",
       "contact": "お問い合わせ",
+      "about": "について",
       "terms": "利用規約",
       "privacy": "プライバシーポリシー"
-    }
+    },
+    "copyright": "© 2025 Dubhe. すべての権利を保有します。"
   },
   "team": {
     "hero": {
@@ -164,6 +430,50 @@
       "title": "リーダーシップチーム",
       "description": "Move開発に革命をもたらすDubheの使命を率いるビジョナリーと専門家にお会いください",
       "expertise": "専門分野"
+    },
+    "members": {
+      "jason": {
+        "name": "Jason",
+        "role": "財団リーダー",
+        "location": "サンフランシスコ、カリフォルニア",
+        "bio": "ブロックチェーン技術に15年以上の経験を持つビジョナリーリーダー。Move開発を革命するためにDubheを設立する前に、主要なテクノロジー企業でエンジニアリングチームを率いていました。",
+        "expertise": ["ブロックチェーンアーキテクチャ", "チームリーダーシップ", "製品戦略"]
+      },
+      "joan": {
+        "name": "Joan",
+        "role": "CTO兼共同創業者",
+        "location": "ニューヨーク、ニューヨーク",
+        "bio": "元Moveコア開発者で、スマートコントラクトアーキテクチャに深い専門知識を持っています。技術ビジョンを率い、すべてのエンジニアリングイニシアチブを監督しています。",
+        "expertise": ["Move言語", "スマートコントラクト", "システムアーキテクチャ"]
+      },
+      "david": {
+        "name": "David",
+        "role": "エンジニアリングヘッド",
+        "location": "ソウル、韓国",
+        "bio": "開発者ツールとエコシステムの成長に情熱を注ぐフルスタックエンジニア。エンジン開発チームを率い、技術革新を推進しています。",
+        "expertise": ["フルスタック開発", "開発者ツール", "オープンソース"]
+      },
+      "bonnie": {
+        "name": "Bonnie",
+        "role": "コミュニティヘッド",
+        "location": "バルセロナ、スペイン",
+        "bio": "開発者エコシステムの成長に豊富な経験を持つコミュニティビルダー。グローバルコミュニティイニシアチブとアンバサダープログラムを管理しています。",
+        "expertise": ["コミュニティ構築", "開発者関係", "イベント管理"]
+      },
+      "liam": {
+        "name": "Liam McKenzie",
+        "role": "パートナーシップヘッド",
+        "location": "ロンドン、イギリス",
+        "bio": "戦略的パートナーシップとエコシステムの成長に焦点を当てたビジネス開発の専門家。以前は主要なブロックチェーン企業でパートナーシップを率いていました。",
+        "expertise": ["戦略的パートナーシップ", "ビジネス開発", "エコシステム成長"]
+      },
+      "emily": {
+        "name": "Emily Smith",
+        "role": "研究ディレクター",
+        "location": "北京、中国",
+        "bio": "分散システムを専門とするコンピューターサイエンスの博士。研究イニシアチブを率い、最先端のブロックチェーン技術を探究しています。",
+        "expertise": ["分散システム", "研究", "学術提携"]
+      }
     },
     "join": {
       "title": "私たちのチームに参加",
@@ -297,6 +607,112 @@
       "cta2": "財団に問い合わせ"
     }
   },
+  "os": {
+    "badge": "Dubhe OS",
+    "hero": {
+      "title": "クロスチェーン",
+      "titleHighlight": "Moveエコシステム",
+      "subtitle": "クロスチェーンガバナンス、ユニバーサルブリッジング、ネットワーク全体での共有セキュリティを備えた、Moveベースのブロックチェーンを接続する統一エコシステム。",
+      "stats": {
+        "multiChain": {
+          "value": "マルチチェーン",
+          "label": "Moveエコシステム"
+        },
+        "universal": {
+          "value": "ユニバーサル",
+          "label": "トークンエコノミー"
+        },
+        "unified": {
+          "value": "統合",
+          "label": "ガバナンス"
+        }
+      },
+      "cta": {
+        "primary": "エコシステムに参加",
+        "secondary": "詳細を見る"
+      }
+    },
+    "features": {
+      "badge": "エコシステム機能",
+      "title": "1つのトークン、複数のチェーン",
+      "subtitle": "統一されたエクスペリエンス",
+      "description": "共有ガバナンスとユニバーサルブリッジングによって、Moveエコシステム全体でシームレスに相互作用",
+      "items": {
+        "token": {
+          "title": "ネイティブトークンエコシステム",
+          "description": "接続されたすべてのチェーンでガバナンス、ステーキング、ユーティリティ機能を備えた統一されたトークンエコノミーが全エコシステムに力を与えます。",
+          "details": [
+            "クロスチェーンガバナンス投票",
+            "ステーキング報酬と利回り",
+            "取引手数料の支払い",
+            "開発者インセンティブプログラム"
+          ]
+        },
+        "bridging": {
+          "title": "ユニバーサルブリッジング",
+          "description": "即座の最終性と最小限の手数料で、Moveベースのチェーン間でシームレスな資産転送を実現。",
+          "details": [
+            "Sui ↔ Aptosブリッジング",
+            "Movementネットワークサポート",
+            "アトミッククロスチェーンスワップ",
+            "流動性プール管理"
+          ]
+        },
+        "governance": {
+          "title": "分散型ガバナンス",
+          "description": "プロトコルのアップグレード、財務管理、エコシステム開発のためのコミュニティ主導の意思決定。",
+          "details": [
+            "提案提出システム",
+            "重み付き投票メカニズム",
+            "財務資金の割り当て",
+            "プロトコルパラメータの更新"
+          ]
+        },
+        "security": {
+          "title": "統一セキュリティモデル",
+          "description": "接続されたすべてのチェーンとアプリケーションで保護を提供する共有セキュリティフレームワーク。",
+          "details": [
+            "クロスチェーン検証",
+            "スラッシングメカニズム",
+            "詐欺証明システム",
+            "緊急対応プロトコル"
+          ]
+        }
+      }
+    },
+    "chains": {
+      "badge": "サポートネットワーク",
+      "title": "マルチチェーンMoveエコシステム",
+      "items": {
+        "sui": {
+          "name": "Suiネットワーク",
+          "status": "稼働中",
+          "features": ["高スループット", "オブジェクト中心モデル", "Move言語"]
+        },
+        "aptos": {
+          "name": "Aptos",
+          "status": "稼働中",
+          "features": ["並列実行", "Move VM", "安全なスマートコントラクト"]
+        },
+        "movement": {
+          "name": "Movement",
+          "status": "統合中",
+          "features": ["EVM互換性", "Moveランタイム", "モジュラーアーキテクチャ"]
+        },
+        "future": {
+          "name": "将来のチェーン",
+          "status": "計画中",
+          "features": ["コミュニティ主導", "Moveベース", "エコシステム拡張"]
+        }
+      }
+    },
+    "cta": {
+      "title": "Moveエコシステムに参加",
+      "subtitle": "統一されたクロスチェーンMoveエコシステムの一部になる",
+      "primary": "エコシステムに参加",
+      "secondary": "ガバナンスポータル"
+    }
+  },
   "errors": {
     "notFound": {
       "title": "ページが見つかりません",
@@ -342,7 +758,142 @@
       "suggestion": "これは通常一時的なものです。少し後に再度お試しください。"
     }
   },
+  "incubation": {
+    "hero": {
+      "badge": "Dubhe財団インキュベーション",
+      "title": "次のユニコーンスタートアップを構築",
+      "subtitle": "Dubhe財団がサポートするコラボラティブインキュベーションエコシステムに参加し、Obelisk LabsやエコシステムVCと共同インキュベートして次世代のMoveスタートアップを構築しましょう。",
+      "stats": {
+        "funding": {
+          "value": "近日公開",
+          "label": "総資金調達額"
+        },
+        "startups": {
+          "value": "近日公開",
+          "label": "インキュベーテッドスタートアップ"
+        },
+        "unicorns": {
+          "value": "近日公開",
+          "label": "創出されたユニコーン"
+        },
+        "success": {
+          "value": "近日公開",
+          "label": "成功率"
+        }
+      },
+      "cta": {
+        "apply": "今すぐ申し込む",
+        "learn": "詳細を知る"
+      }
+    },
+    "programs": {
+      "accelerator": {
+        "title": "財団アクセラレーター",
+        "duration": "3ヶ月",
+        "funding": "最大50万ドル",
+        "description": "Dubhe財団が支援する集中プログラムで、Obelisk LabsやエコシステムVCと共同インキュベート",
+        "benefits": ["Dubhe財団資金調達", "Obelisk Labs共同インキュベーション", "Move開発サポート", "エコシステムVCパートナーシップ"]
+      },
+      "studio": {
+        "title": "コラボラティブスタジオ",
+        "duration": "6-12ヶ月",
+        "funding": "最大100万ドル",
+        "description": "Dubhe財団、Obelisk Labs、エコシステムVCによる共同インキュベーションでリソースを共有",
+        "benefits": ["マルチパートナー共同インキュベーション", "技術リソース共有", "プロジェクト間コラボレーション", "エコシステムVCネットワーク"]
+      },
+      "scale": {
+        "title": "エコシステムスケール",
+        "duration": "6ヶ月",
+        "funding": "最大200万ドル",
+        "description": "Dubhe財団、Obelisk Labs、エコシステムVCパートナーからの包括的サポートでスケール",
+        "benefits": ["共同インキュベーションネットワーク", "戦略的紹介", "グローバル市場アクセス", "企業VC接続"]
+      }
+    },
+    "resources": {
+      "coIncubation": {
+        "title": "マルチパートナー共同インキュベーション",
+        "description": "Dubhe財団、Obelisk Labs、エコシステムVCからの共同ガイダンス"
+      },
+      "infrastructure": {
+        "title": "共有インフラストラクチャ",
+        "description": "Obelisk LabsインフラストラクチャとエコシステムVCリソースへのアクセス"
+      },
+      "integration": {
+        "title": "エコシステム統合",
+        "description": "Dubheプロジェクトとパートナーネットワークとの直接統合"
+      },
+      "development": {
+        "title": "コラボラティブ開発",
+        "description": "Dubhe財団とObelisk Labsエンジニアリングチームからの技術サポート"
+      },
+      "demoDays": {
+        "title": "パートナーデモデー",
+        "description": "Dubhe財団理事会とエコシステムVCネットワークへのプレゼンテーション"
+      },
+      "network": {
+        "title": "エコシステムネットワーク",
+        "description": "Dubhe全体とパートナー企業エコシステムへのアクセス"
+      }
+    }
+  },
+  "ambassador": {
+    "benefits": {
+      "exclusiveAccess": {
+        "title": "特権アクセス",
+        "description": "一般リリース前に新機能、製品、発表への早期アクセスを取得"
+      },
+      "directCommunication": {
+        "title": "直接コミュニケーション",
+        "description": "Dubhe財団との定期的なコミュニケーションと製品ロードマップの決定への影響力"
+      },
+      "recognition": {
+        "title": "認知と報酬",
+        "description": "コミュニティ内での特別認知、特権グッズ、貢献に対するトークン報酬"
+      },
+      "globalNetwork": {
+        "title": "グローバルネットワーク",
+        "description": "同じ志を持つ人々とつながり、グローバルDubheコミュニティ内で関係を構築"
+      }
+    },
+    "requirements": [
+      "最低3ヶ月間Dubheコミュニティでアクティブメンバー",
+      "Moveブロックチェーン技術の理解",
+      "コミュニティ構築またはコンテンツ作成の経験",
+      "Dubheエコシステムを積極的に推進するコミットメント",
+      "週に最低10時間の対応が可能",
+      "英語と最低1つ以上の他言語に精通"
+    ],
+    "responsibilities": {
+      "communityEngagement": {
+        "title": "コミュニティエンゲージメント",
+        "tasks": [
+          "コミュニティ討論をモデレートし、ポジティブな環境を維持",
+          "技術的質問に答え、新参加者を支援",
+          "ローカルミートアップやオンラインイベントの主催",
+          "魅力的なコンテンツ作成（チュートリアル、記事、動画）"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "エコシステム成長",
+        "tasks": [
+          "新しい開発者をDubheに特定し、オンボード",
+          "グローバルイニシアチブで他のアンバサダーと協力",
+          "製品やドキュメントにフィードバックを提供",
+          "ブロックチェーンカンファレンスやイベントでDubheを代表"
+        ]
+      },
+      "contentCreation": {
+        "title": "コンテンツ作成",
+        "tasks": [
+          "技術チュートリアルやガイドの執筆",
+          "Dubhe機能を説明する動画コンテンツの作成",
+          "ドキュメントの現地言語への翻訳",
+          "ソーシャルメディアでエコシステム更新を共有"
+        ]
+      }
+    }
+  },
   "LocaleSwitcher": {
-    "label": "言語を変更"
+    "label": "言語"
   }
 }

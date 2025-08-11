@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useTranslations } from 'next-intl'
 import { motion } from "framer-motion"
 import { 
   Coins, 
@@ -44,6 +45,7 @@ const customStyles = `
 `
 
 export default function OSPage() {
+  const t = useTranslations('os')
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -53,74 +55,74 @@ export default function OSPage() {
   const features = [
     {
       icon: <Coins className="w-6 h-6" />,
-      title: "Native Token Ecosystem",
-      description: "Unified token economy powering the entire ecosystem with governance, staking, and utility features across all connected chains.",
+      title: t('features.items.token.title'),
+      description: t('features.items.token.description'),
       details: [
-        "Cross-chain governance voting",
-        "Staking rewards and yields",
-        "Transaction fee payments",
-        "Developer incentive programs"
+        t('features.items.token.details.0'),
+        t('features.items.token.details.1'),
+        t('features.items.token.details.2'),
+        t('features.items.token.details.3')
       ]
     },
     {
       icon: <LinkIcon className="w-6 h-6" />,
-      title: "Universal Bridging",
-      description: "Seamless asset transfers between Move-based chains with instant finality and minimal fees.",
+      title: t('features.items.bridging.title'),
+      description: t('features.items.bridging.description'),
       details: [
-        "Sui ↔ Aptos bridging",
-        "Movement network support",
-        "Atomic cross-chain swaps",
-        "Liquidity pool management"
+        t('features.items.bridging.details.0'),
+        t('features.items.bridging.details.1'),
+        t('features.items.bridging.details.2'),
+        t('features.items.bridging.details.3')
       ]
     },
     {
       icon: <Vote className="w-6 h-6" />,
-      title: "Decentralized Governance",
-      description: "Community-driven decision making for protocol upgrades, treasury management, and ecosystem development.",
+      title: t('features.items.governance.title'),
+      description: t('features.items.governance.description'),
       details: [
-        "Proposal submission system",
-        "Weighted voting mechanisms",
-        "Treasury fund allocation",
-        "Protocol parameter updates"
+        t('features.items.governance.details.0'),
+        t('features.items.governance.details.1'),
+        t('features.items.governance.details.2'),
+        t('features.items.governance.details.3')
       ]
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "Unified Security Model",
-      description: "Shared security framework providing protection across all connected chains and applications.",
+      title: t('features.items.security.title'),
+      description: t('features.items.security.description'),
       details: [
-        "Cross-chain validation",
-        "Slashing mechanisms",
-        "Fraud proof systems",
-        "Emergency response protocols"
+        t('features.items.security.details.0'),
+        t('features.items.security.details.1'),
+        t('features.items.security.details.2'),
+        t('features.items.security.details.3')
       ]
     }
   ]
 
   const chains = [
     {
-      name: "Sui Network",
-      status: "Live",
+      name: t('chains.items.sui.name'),
+      status: t('chains.items.sui.status'),
       logo: "🌊",
-      features: ["High throughput", "Object-centric model", "Move language"]
+      features: [t('chains.items.sui.features.0'), t('chains.items.sui.features.1'), t('chains.items.sui.features.2')]
     },
     {
-      name: "Aptos",
-      status: "Live", 
+      name: t('chains.items.aptos.name'),
+      status: t('chains.items.aptos.status'), 
       logo: "🚀",
-      features: ["Parallel execution", "Move VM", "Safe smart contracts"]
+      features: [t('chains.items.aptos.features.0'), t('chains.items.aptos.features.1'), t('chains.items.aptos.features.2')]
     },
     {
-      name: "Movement",
-      status: "Integration",
+      name: t('chains.items.movement.name'),
+      status: t('chains.items.movement.status'),
       logo: "⚡",
-      features: ["EVM compatibility", "Move runtime", "Modular architecture"]
+      features: [t('chains.items.movement.features.0'), t('chains.items.movement.features.1'), t('chains.items.movement.features.2')]
     },
     {
-      name: "Future Chains",
-      status: "Planned",
+      name: t('chains.items.future.name'),
+      status: t('chains.items.future.status'),
       logo: "🔮",
-      features: ["Community driven", "Move-based", "Ecosystem expansion"]
+      features: [t('chains.items.future.features.0'), t('chains.items.future.features.1'), t('chains.items.future.features.2')]
     }
   ]
 
@@ -190,7 +192,7 @@ export default function OSPage() {
                 className="inline-block bg-rose-500/10 text-rose-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-rose-500/20"
               >
                 <Network className="w-4 h-4 inline mr-2" />
-                Dubhe OS
+                {t('badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -201,10 +203,10 @@ export default function OSPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Cross-Chain
+                  {t('hero.title')}
                   <br />
                   <span className="os-gradient bg-clip-text text-transparent">
-                    Move Ecosystem
+                    {t('hero.titleHighlight')}
                   </span>
                 </motion.h1>
                 
@@ -214,8 +216,7 @@ export default function OSPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Unified ecosystem connecting Move-based blockchains with cross-chain governance, 
-                  universal bridging, and shared security across the entire network.
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
 
@@ -227,16 +228,16 @@ export default function OSPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-rose-400 mb-2">Multi-Chain</div>
-                  <div className="text-gray-300">Move Ecosystem</div>
+                  <div className="text-3xl font-bold text-rose-400 mb-2">{t('hero.stats.multiChain.value')}</div>
+                  <div className="text-gray-300">{t('hero.stats.multiChain.label')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">Universal</div>
-                  <div className="text-gray-300">Token Economy</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">{t('hero.stats.universal.value')}</div>
+                  <div className="text-gray-300">{t('hero.stats.universal.label')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">Unified</div>
-                  <div className="text-gray-300">Governance</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">{t('hero.stats.unified.value')}</div>
+                  <div className="text-gray-300">{t('hero.stats.unified.label')}</div>
                 </div>
               </motion.div>
 
@@ -248,12 +249,12 @@ export default function OSPage() {
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
                 <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-rose-500 to-purple-500 hover:from-rose-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-                  Join Ecosystem
+                  {t('hero.cta.primary')}
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 
                 <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="border-2 border-rose-400/50 hover:border-rose-300 bg-rose-900/20 backdrop-blur-sm text-rose-100 hover:text-white hover:bg-rose-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-                  Learn More
+                  {t('hero.cta.secondary')}
                 </Link>
               </motion.div>
             </div>
@@ -273,7 +274,7 @@ export default function OSPage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-gradient-to-r from-rose-100 to-purple-100 text-rose-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-rose-200"
             >
-              Ecosystem Features
+              {t('features.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -282,9 +283,9 @@ export default function OSPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              One Token, Multiple Chains
+              {t('features.title')}
               <br />
-              Unified Experience
+              {t('features.subtitle')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -293,7 +294,7 @@ export default function OSPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Seamlessly interact across the entire Move ecosystem with shared governance and universal bridging
+              {t('features.description')}
             </motion.p>
           </div>
 
@@ -339,7 +340,7 @@ export default function OSPage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-rose-500/10 text-rose-400 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-rose-500/20"
             >
-              Supported Networks
+              {t('chains.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -348,7 +349,7 @@ export default function OSPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Multi-Chain Move Ecosystem
+              {t('chains.title')}
             </motion.h2>
           </div>
 
@@ -396,7 +397,7 @@ export default function OSPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Join the Move Ecosystem
+            {t('cta.title')}
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
@@ -405,7 +406,7 @@ export default function OSPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Be part of the unified cross-chain Move ecosystem
+            {t('cta.subtitle')}
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -415,11 +416,11 @@ export default function OSPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-rose-500 to-purple-500 hover:from-rose-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-              Join Ecosystem
+              {t('cta.primary')}
               <Sparkles className="w-5 h-5 ml-2" />
             </Link>
             <Link href="/contact" className="border-2 border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-              Governance Portal
+              {t('cta.secondary')}
             </Link>
           </motion.div>
         </div>

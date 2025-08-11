@@ -14,6 +14,7 @@ import {
   Zap
 } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from 'next-intl'
 
 const customStyles = `
   @keyframes lab-pulse {
@@ -45,6 +46,7 @@ const customStyles = `
 `
 
 export default function LabsPage() {
+  const t = useTranslations('labs')
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -53,110 +55,90 @@ export default function LabsPage() {
 
   const labs = [
     {
-      name: "Obelisk Labs",
+      name: t('labsList.obelisk.name'),
       logo: "🏛️",
-      focus: "Core Protocol Development",
-      description: "Leading the development of Dubhe Engine and core protocol infrastructure. Focused on Move language tooling and schema-based development platforms.",
+      focus: t('labsList.obelisk.focus'),
+      description: t('labsList.obelisk.description'),
       website: "https://obelisk.build",
-      contributions: [
-        "Dubhe Engine architecture",
-        "Move smart contract framework",
-        "Developer toolchain",
-        "Code generation systems"
-      ],
-      status: "Active",
-      team: "12+ Engineers"
+      contributions: t.raw('labsList.obelisk.contributions') as string[],
+      status: t('labsList.obelisk.status'),
+      team: t('labsList.obelisk.team')
     },
     {
-      name: "Cyferio Labs",
+      name: t('labsList.cyferio.name'),
       logo: "🔬",
-      focus: "Zero-Knowledge & Privacy",
-      description: "Specialized in zero-knowledge proofs, privacy-preserving protocols, and cryptographic research for the Dubhe ecosystem.",
+      focus: t('labsList.cyferio.focus'),
+      description: t('labsList.cyferio.description'),
       website: "https://cyferio.com",
-      contributions: [
-        "ZK proof systems",
-        "Privacy protocols",
-        "Cryptographic primitives",
-        "Scalability research"
-      ],
-      status: "Active",
-      team: "8+ Researchers"
+      contributions: t.raw('labsList.cyferio.contributions') as string[],
+      status: t('labsList.cyferio.status'),
+      team: t('labsList.cyferio.team')
     },
     {
-      name: "Dubhe Network Labs",
+      name: t('labsList.network.name'),
       logo: "⚡",
-      focus: "Real-Time Infrastructure",
-      description: "Building the real-time P2P communication layer and high-performance networking infrastructure for Dubhe Channel.",
+      focus: t('labsList.network.focus'),
+      description: t('labsList.network.description'),
       website: "https://network.dubhe.io",
-      contributions: [
-        "P2P networking protocols",
-        "Real-time communication",
-        "Performance optimization",
-        "Edge computing solutions"
-      ],
-      status: "Active",
-      team: "6+ Engineers"
+      contributions: t.raw('labsList.network.contributions') as string[],
+      status: t('labsList.network.status'),
+      team: t('labsList.network.team')
     },
     {
-      name: "Dubhe Bridge Labs",
+      name: t('labsList.bridge.name'),
       logo: "🌐",
-      focus: "Cross-Chain Solutions",
-      description: "Developing universal bridging protocols and cross-chain infrastructure to connect the Move ecosystem through Dubhe OS.",
+      focus: t('labsList.bridge.focus'),
+      description: t('labsList.bridge.description'),
       website: "https://bridge.dubhe.io",
-      contributions: [
-        "Cross-chain bridges",
-        "Interoperability protocols",
-        "Multi-chain governance",
-        "Asset transfer mechanisms"
-      ],
-      status: "Active",
-      team: "10+ Engineers"
+      contributions: t.raw('labsList.bridge.contributions') as string[],
+      status: t('labsList.bridge.status'),
+      team: t('labsList.bridge.team')
     }
   ]
 
   const researchAreas = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Protocol Development",
-      description: "Core blockchain protocols, consensus mechanisms, and Move language enhancements",
-      teams: ["Obelisk Labs"]
+      title: t('research.areas.protocol.title'),
+      description: t('research.areas.protocol.description'),
+      teams: t.raw('research.areas.protocol.teams') as string[]
     },
     {
       icon: <Network className="w-6 h-6" />,
-      title: "Infrastructure & Scaling",
-      description: "High-performance networking, real-time communication, and scalability solutions",
-      teams: ["Dubhe Network Labs", "Cyferio Labs"]
+      title: t('research.areas.infrastructure.title'),
+      description: t('research.areas.infrastructure.description'),
+      teams: t.raw('research.areas.infrastructure.teams') as string[]
     },
     {
       icon: <Layers className="w-6 h-6" />,
-      title: "Cross-Chain Technology",
-      description: "Interoperability protocols, universal bridging, and multi-chain governance",
-      teams: ["Dubhe Bridge Labs"]
+      title: t('research.areas.crossChain.title'),
+      description: t('research.areas.crossChain.description'),
+      teams: t.raw('research.areas.crossChain.teams') as string[]
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Privacy & Security",
-      description: "Zero-knowledge proofs, privacy-preserving protocols, and cryptographic research",
-      teams: ["Cyferio Labs"]
+      title: t('research.areas.privacy.title'),
+      description: t('research.areas.privacy.description'),
+      teams: t.raw('research.areas.privacy.teams') as string[]
     }
   ]
 
   const collaboration = [
     {
-      phase: "Research",
-      description: "Collaborative research and protocol design across all teams"
+      phase: t('collaboration.phases.research.title'),
+      description: t('collaboration.phases.research.description')
     },
     {
-      phase: "Development",
-      description: "Parallel implementation with shared standards and interfaces"
+      phase: t('collaboration.phases.development.title'),
+      description: t('collaboration.phases.development.description')
     },
     {
-      phase: "Testing",
-      description: "Cross-team integration testing and validation"
+      phase: t('collaboration.phases.testing.title'),
+      description: t('collaboration.phases.testing.description')
     },
     {
-      phase: "Deployment",
-      description: "Coordinated rollout and ecosystem integration"
+      phase: t('collaboration.phases.deployment.title'),
+      description: t('collaboration.phases.deployment.description')
     }
   ]
 
@@ -231,7 +213,7 @@ export default function LabsPage() {
                 className="inline-block bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-cyan-500/20"
               >
                 <Building className="w-4 h-4 inline mr-2" />
-                Dubhe Development Labs
+                {t('hero.badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -242,10 +224,10 @@ export default function LabsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Collaborative
+                  {t('hero.title1')}
                   <br />
                   <span className="labs-gradient bg-clip-text text-transparent">
-                    Innovation Labs
+                    {t('hero.title2')}
                   </span>
                 </motion.h1>
                 
@@ -255,8 +237,7 @@ export default function LabsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Multiple specialized development teams working together under the Dubhe Foundation 
-                  to build the future of Move-based blockchain infrastructure, just like Polkadot JAM.
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
 
@@ -269,15 +250,15 @@ export default function LabsPage() {
               >
                 <div className="text-center">
                   <div className="text-3xl font-bold text-cyan-400 mb-2">2+</div>
-                  <div className="text-gray-300">Active Labs</div>
+                  <div className="text-gray-300">{t('hero.stats.activeLabs')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-400 mb-2">20+</div>
-                  <div className="text-gray-300">Core Engineers</div>
+                  <div className="text-gray-300">{t('hero.stats.coreEngineers')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-400 mb-2">Unified</div>
-                  <div className="text-gray-300">Protocol Vision</div>
+                  <div className="text-gray-300">{t('hero.stats.unifiedVision')}</div>
                 </div>
               </motion.div>
 
@@ -289,12 +270,12 @@ export default function LabsPage() {
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
                 <Link href="/contact" className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-                  Explore Labs
+                  {t('hero.cta1')}
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 
                 <Link href="/contact" className="border-2 border-cyan-400/50 hover:border-cyan-300 bg-cyan-900/20 backdrop-blur-sm text-cyan-100 hover:text-white hover:bg-cyan-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-                  Join a Lab
+                  {t('hero.cta2')}
                 </Link>
               </motion.div>
             </div>
@@ -314,7 +295,7 @@ export default function LabsPage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-gradient-to-r from-cyan-100 to-blue-100 text-cyan-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-cyan-200"
             >
-              Development Teams
+              {t('overview.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -323,9 +304,7 @@ export default function LabsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Specialized Labs
-              <br />
-              Unified Vision
+              {t('overview.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -334,7 +313,7 @@ export default function LabsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Each lab brings unique expertise while working towards a common goal of advancing the Dubhe ecosystem
+              {t('overview.description')}
             </motion.p>
           </div>
 
@@ -370,7 +349,7 @@ export default function LabsPage() {
                 <p className="text-gray-300 mb-6 leading-relaxed">{lab.description}</p>
 
                 <div className="mb-6">
-                  <h4 className="text-white font-semibold mb-3">Key Contributions</h4>
+                  <h4 className="text-white font-semibold mb-3">{t('overview.keyContributions')}</h4>
                   <div className="space-y-2">
                     {lab.contributions.map((contribution, contribIndex) => (
                       <div key={contribIndex} className="flex items-center gap-3">
@@ -388,7 +367,7 @@ export default function LabsPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors duration-200"
                   >
-                    Visit Lab
+                    {t('overview.visitLab')}
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 )}
@@ -410,7 +389,7 @@ export default function LabsPage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-cyan-500/20"
             >
-              Research Focus
+              {t('research.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -419,7 +398,7 @@ export default function LabsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Collaborative Research Areas
+              {t('research.title')}
             </motion.h2>
           </div>
 
@@ -440,7 +419,7 @@ export default function LabsPage() {
                 <h3 className="text-2xl font-bold text-white mb-4">{area.title}</h3>
                 <p className="text-gray-300 mb-6">{area.description}</p>
                 <div>
-                  <h4 className="text-cyan-400 font-medium mb-2">Contributing Labs:</h4>
+                  <h4 className="text-cyan-400 font-medium mb-2">{t('research.contributingLabs')}</h4>
                   <div className="flex flex-wrap gap-2">
                     {area.teams.map((team, teamIndex) => (
                       <span key={teamIndex} className="bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-sm">
@@ -467,7 +446,7 @@ export default function LabsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Collaborative Development Process
+              {t('collaboration.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -476,7 +455,7 @@ export default function LabsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              How multiple labs coordinate to deliver unified protocol implementations
+              {t('collaboration.description')}
             </motion.p>
           </div>
 
@@ -519,7 +498,7 @@ export default function LabsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Join the Innovation
+            {t('cta.title')}
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
@@ -528,7 +507,7 @@ export default function LabsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Be part of building the future of Move-based blockchain infrastructure
+            {t('cta.description')}
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -538,11 +517,11 @@ export default function LabsPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Link href="/contact" className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-              Apply to Labs
+              {t('cta.apply')}
               <Sparkles className="w-5 h-5 ml-2" />
             </Link>
             <Link href="/contact" className="border-2 border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-              View Open Positions
+              {t('cta.positions')}
             </Link>
           </motion.div>
         </div>

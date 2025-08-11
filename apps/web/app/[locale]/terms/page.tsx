@@ -1,48 +1,50 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useTranslations } from 'next-intl'
 import { FileText, Scale, Shield, AlertTriangle, CheckCircle, Globe } from "lucide-react"
 
 export default function TermsPage() {
+  const t = useTranslations('terms')
   const sections = [
     {
       icon: <CheckCircle className="w-6 h-6" />,
-      title: "Acceptance of Terms",
+      title: t('sections.acceptance.title'),
       content: [
-        "By accessing or using Dubhe services, you agree to be bound by these Terms",
-        "If you disagree with any part of these terms, you may not access our services",
-        "We may update these terms from time to time without prior notice",
-        "Your continued use constitutes acceptance of revised terms"
+        t('sections.acceptance.items.0'),
+        t('sections.acceptance.items.1'),
+        t('sections.acceptance.items.2'),
+        t('sections.acceptance.items.3')
       ]
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "Use of Services",
+      title: t('sections.usage.title'),
       content: [
-        "You must be at least 18 years old to use our services",
-        "You are responsible for maintaining the security of your account",
-        "You may not use our services for any illegal or unauthorized purpose",
-        "We reserve the right to terminate accounts that violate these terms"
+        t('sections.usage.items.0'),
+        t('sections.usage.items.1'),
+        t('sections.usage.items.2'),
+        t('sections.usage.items.3')
       ]
     },
     {
       icon: <Scale className="w-6 h-6" />,
-      title: "Intellectual Property",
+      title: t('sections.intellectual.title'),
       content: [
-        "Dubhe Foundation retains all rights to our proprietary technology",
-        "Open-source components are governed by their respective licenses",
-        "You retain ownership of content you create using our platform",
-        "You grant us license to use your content to provide our services"
+        t('sections.intellectual.items.0'),
+        t('sections.intellectual.items.1'),
+        t('sections.intellectual.items.2'),
+        t('sections.intellectual.items.3')
       ]
     },
     {
       icon: <AlertTriangle className="w-6 h-6" />,
-      title: "Disclaimers & Limitations",
+      title: t('sections.disclaimers.title'),
       content: [
-        "Our services are provided 'as is' without warranties of any kind",
-        "We are not liable for any indirect, incidental, or consequential damages",
-        "Blockchain transactions are irreversible and we cannot reverse them",
-        "You acknowledge the experimental nature of blockchain technology"
+        t('sections.disclaimers.items.0'),
+        t('sections.disclaimers.items.1'),
+        t('sections.disclaimers.items.2'),
+        t('sections.disclaimers.items.3')
       ]
     }
   ]
@@ -71,7 +73,7 @@ export default function TermsPage() {
                 className="inline-block bg-purple-500/10 text-purple-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-purple-500/20"
               >
                 <FileText className="w-4 h-4 inline mr-2" />
-                Terms of Service
+                {t('badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -82,10 +84,10 @@ export default function TermsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Terms of
+                  {t('hero.title')}
                   <br />
                   <span className="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
-                    Service
+                    {t('hero.titleHighlight')}
                   </span>
                 </motion.h1>
                 
@@ -95,7 +97,7 @@ export default function TermsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  These terms govern your use of Dubhe services, platforms, and blockchain infrastructure.
+                  {t('hero.subtitle')}
                 </motion.p>
                 
                 <motion.p 
@@ -104,7 +106,7 @@ export default function TermsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                  Last updated: January 2025
+                  {t('hero.lastUpdated')}
                 </motion.p>
               </div>
             </div>
@@ -183,21 +185,21 @@ export default function TermsPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-lg font-semibold text-white mb-3">Network Participation</h4>
+                  <h4 className="text-lg font-semibold text-white mb-3">{t('blockchain.participation.title')}</h4>
                   <ul className="space-y-2 text-gray-300">
-                    <li>• Transactions are recorded on public blockchains</li>
-                    <li>• Network fees apply to blockchain operations</li>
-                    <li>• Smart contracts are immutable once deployed</li>
-                    <li>• You are responsible for transaction accuracy</li>
+                    <li>• {t('blockchain.participation.items.0')}</li>
+                    <li>• {t('blockchain.participation.items.1')}</li>
+                    <li>• {t('blockchain.participation.items.2')}</li>
+                    <li>• {t('blockchain.participation.items.3')}</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-white mb-3">Risk Acknowledgment</h4>
+                  <h4 className="text-lg font-semibold text-white mb-3">{t('blockchain.risks.title')}</h4>
                   <ul className="space-y-2 text-gray-300">
-                    <li>• Blockchain technology is experimental</li>
-                    <li>• Token values can be highly volatile</li>
-                    <li>• Smart contracts may contain bugs</li>
-                    <li>• Network congestion may affect performance</li>
+                    <li>• {t('blockchain.risks.items.0')}</li>
+                    <li>• {t('blockchain.risks.items.1')}</li>
+                    <li>• {t('blockchain.risks.items.2')}</li>
+                    <li>• {t('blockchain.risks.items.3')}</li>
                   </ul>
                 </div>
               </div>
@@ -213,19 +215,16 @@ export default function TermsPage() {
             className="mt-16"
           >
             <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700">
-              <h3 className="text-2xl font-bold text-white mb-6">Governing Law and Disputes</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">{t('governance.title')}</h3>
               <div className="space-y-4 text-gray-300">
                 <p>
-                  These Terms shall be interpreted and governed in accordance with the laws of the jurisdiction 
-                  where Dubhe Foundation is established, without regard to its conflict of law provisions.
+                  {t('governance.law')}
                 </p>
                 <p>
-                  Any disputes arising from these Terms or your use of our services shall be resolved through 
-                  binding arbitration in accordance with international arbitration rules.
+                  {t('governance.disputes')}
                 </p>
                 <p>
-                  We reserve the right to modify these Terms at any time. Continued use of our services after 
-                  changes constitutes acceptance of the modified Terms.
+                  {t('governance.modifications')}
                 </p>
               </div>
             </div>
@@ -241,9 +240,9 @@ export default function TermsPage() {
           >
             <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700 text-center">
               <Globe className="w-12 h-12 text-purple-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-white mb-4">Questions About Terms?</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">{t('contact.title')}</h3>
               <p className="text-gray-300 mb-6">
-                If you have any questions about these Terms of Service, please contact our legal team.
+                {t('contact.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { TrendingUp, Users, Zap, DollarSign } from "lucide-react"
+import { useTranslations } from 'next-intl'
 
 
 // Simulated real-time incrementing component
@@ -49,33 +50,35 @@ function LiveCounter({
 }
 
 export default function NetworkStats() {
+  const t = useTranslations('home.networkStats')
+  
   const stats = [
     {
       icon: Zap,
-      label: "Transactions",
+      label: t('transactions.label'),
       value: <LiveCounter baseValue={10000000} suffix="+" incrementRate={2} formatMillion={true} />,
-      change: "Live",
+      change: t('transactions.change'),
       changeType: "positive" as const
     },
     {
       icon: TrendingUp,
-      label: "Event-Driven Operations",
+      label: t('operations.label'),
       value: <LiveCounter baseValue={50000000} suffix="+" incrementRate={1.5} formatMillion={true} />,
-      change: "Real-time",
+      change: t('operations.change'),
       changeType: "positive" as const
     },
     {
       icon: Users,
-      label: "Users",
+      label: t('users.label'),
       value: <LiveCounter baseValue={50000} suffix="+" incrementRate={3} />,
-      change: "Growing",
+      change: t('users.change'),
       changeType: "positive" as const
     },
     {
       icon: DollarSign,
-      label: "Income (USD)",
+      label: t('income.label'),
       value: <LiveCounter baseValue={500000} prefix="$" suffix="" incrementRate={4} />,
-      change: "+15.2%",
+      change: t('income.change'),
       changeType: "positive" as const
     }
   ]
@@ -85,10 +88,10 @@ export default function NetworkStats() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-white mb-4">
-            Network Statistics
+            {t('title')}
           </h3>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Real-time metrics showcasing the growth and health of the Dubhe network
+            {t('description')}
           </p>
         </div>
 

@@ -269,6 +269,10 @@ export default function Navigation() {
                     ))}
                   </div>
                 ))}
+                {/* Language Selector for Mobile */}
+                <div className="pt-6 pb-4 px-4 border-t border-slate-700/50">
+                  <LanguageSelector />
+                </div>
                 {/* <div className="pt-6 pb-4 px-4">
                   <button 
                     className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-6 py-4 text-base font-semibold rounded-lg transition-all duration-200 shadow-lg"

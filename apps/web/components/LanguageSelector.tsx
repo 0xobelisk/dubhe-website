@@ -39,6 +39,7 @@ export default function LanguageSelector() {
   const router = useRouter();
   const pathname = usePathname();
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations('LocaleSwitcher');
 
   const currentLanguage = LANGUAGES.find(lang => lang.code === locale) || LANGUAGES[0];
 
@@ -82,7 +83,7 @@ export default function LanguageSelector() {
         aria-haspopup="listbox"
       >
         <span className="mr-2">🌐</span>
-        <span className="mr-2">Languages</span>
+        <span className="mr-2">{t('label')}</span>
         <span className="font-semibold text-purple-400">{locale.toUpperCase()}</span>
         <svg
           className={`ml-2 h-4 w-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}

@@ -100,6 +100,252 @@
           "description": "Sự hiện diện của cộng đồng Dubhe trên các châu lục"
         }
       }
+    },
+    "ecosystem": {
+      "badge": "Hệ sinh thái",
+      "title": {
+        "line1": "Hệ sinh thái phát triển của",
+        "line2": "Các Ứng dụng Sáng tạo"
+      },
+      "description": "Khám phá dải đa dạng các ứng dụng, giao thức và công cụ được xây dựng trên Dubhe, từ DeFi và game đến cơ sở hạ tầng và NFTs.",
+      "categories": {
+        "defi": {
+          "title": "DeFi",
+          "description": "Các giao thức tài chính phân tán"
+        },
+        "gaming": {
+          "title": "Game",
+          "description": "Game on-chain và metaverse"
+        },
+        "infrastructure": {
+          "title": "Cơ sở hạ tầng",
+          "description": "Công cụ phát triển và cơ sở hạ tầng"
+        },
+        "nfts": {
+          "title": "NFTs",
+          "description": "Sưu tập kỹ thuật số và tài sản"
+        }
+      },
+      "projects": {
+        "merak": {
+          "name": "Merak",
+          "description": "Nhà tạo lập thị trường tự động",
+          "tvl": "$45M"
+        },
+        "numeron": {
+          "name": "Numeron",
+          "description": "Cuộc phiêu lưu RPG AI giả tưởng",
+          "players": "12K+"
+        },
+        "cyferio": {
+          "name": "Cyferio SDK",
+          "description": "Bộ công cụ phát triển",
+          "downloads": "50K+"
+        },
+        "objectsdao": {
+          "name": "Objectsdao",
+          "description": "Đấu giá NFT",
+          "volume": "$2.3M"
+        }
+      },
+      "metrics": {
+        "tvl": "TVL",
+        "players": "Người chơi",
+        "downloads": "Lượt tải",
+        "volume": "Khối lượng"
+      }
+    },
+    "howItWorks": {
+      "title": "Cách thức hoạt động",
+      "steps": {
+        "schemaDefinition": {
+          "title": "Định nghĩa Schema",
+          "description": "Định nghĩa logic game hoặc dApp của bạn bằng hệ thống schema trực quan của Dubhe. Mô tả entities, components và systems trong các tập tin cấu hình đơn giản.",
+          "items": ["Entity", "Component", "System", "Error", "Event"]
+        },
+        "codeGeneration": {
+          "title": "Tạo mã",
+          "description": "Công cụ Dubhe tự động tạo ra 80% các hợp đồng thông minh Move, thư viện client và giao diện API từ các định nghĩa schema của bạn."
+        },
+        "deploymentChannel": {
+          "title": "Triển khai & Kênh",
+          "description": "Triển khai lên nhiều chuỗi Move chỉ với một lệnh. Kênh Dubhe cung cấp đồng bộ thời gian thực và độ trễ <50ms cho trải nghiệm người dùng liền mạch."
+        },
+        "multiChainExecution": {
+          "title": "Thực thi đa chuỗi",
+          "description": "Ứng dụng của bạn hoạt động mượt mà trên tất cả các chuỗi Move được hỗ trợ với khả năng tương tác xuyên chuỗi bản địa thông qua Dubhe OS."
+        }
+      },
+      "labels": {
+        "dubheEngine": "Công cụ Dubhe",
+        "you": "Bạn",
+        "blockchain": "Blockchain",
+        "multiChainReady": "Sẵn sàng Đa chuỗi"
+      }
+    },
+    "competitiveAdvantage": {
+      "title": "Lợi thế Cạnh tranh",
+      "subtitle": "Giải pháp toàn diện đầu tiên và duy nhất cho phát triển hệ sinh thái Move",
+      "table": {
+        "feature": "Tính năng",
+        "dubhe": "Dubhe",
+        "others": "Khác"
+      },
+      "features": {
+        "codeGeneration": {
+          "title": "Tạo Mã",
+          "dubhe": "80% tự động",
+          "others": "Mã hóa thủ công"
+        },
+        "uxPerformance": {
+          "title": "Hiệu năng UX",
+          "dubhe": "<50ms",
+          "others": "3-15 giây"
+        },
+        "multiChainSupport": {
+          "title": "Hỗ trợ Đa chuỗi",
+          "dubhe": "Hỗ trợ bản địa",
+          "others": "Cầu nối phức tạp"
+        },
+        "developerExperience": {
+          "title": "Trải nghiệm Nhà phát triển",
+          "dubhe": "Triển khai một cú nhấp",
+          "others": "Cài đặt phức tạp"
+        },
+        "realTimeFeatures": {
+          "title": "Tính năng Thời gian thực",
+          "dubhe": "Kênh tích hợp",
+          "others": "Giải pháp bên ngoài"
+        }
+      }
+    },
+    "networkArchitecture": {
+      "badge": "KIẾN TRÚC MẠNG",
+      "title": "Bộ Stack Phát Triển Move Hoàn Chỉnh",
+      "description": "Từ các công cụ phát triển đến kênh tương tác thời gian thực và cơ sở hạ tầng phi tập trung - Dubhe cung cấp mọi thứ cần thiết để xây dựng thế hệ tiếp theo của các ứng dụng hoàn toàn on-chain.",
+      "keyMetricsTitle": "Chỉ số Chính",
+      "keyMetrics": [
+        "Đã xử lý hơn 10 triệu giao dịch",
+        "Độ trễ trung bình <200ms",
+        "Trải nghiệm người dùng cấp Web2",
+        "Tương thích với Sui, Aptos, Rooch, Movement, Initia"
+      ],
+      "moveEcosystemTitle": "Hệ sinh thái Move",
+      "moveEcosystemFeatures": [
+        "1.555 nhà phát triển Move đang hoạt động",
+        "Tăng trưởng 40% hàng tháng",
+        "Chưa đến 3 tuổi",
+        "Tiềm năng tăng trưởng khổng lồ"
+      ],
+      "pipelining": "Pipelining",
+      "architectureLayers": {
+        "moveApplications": {
+          "title": "Ứng dụng Move",
+          "subtitle": "dApps & Trò chơi của Bạn",
+          "description": "Xây dựng các ứng dụng phi tập trung phức tạp với tính an toàn và linh hoạt của Move",
+          "features": ["Giao thức DeFi", "Ứng dụng Trò chơi", "Nền tảng NFT", "dApps Xã hội"]
+        },
+        "dubheEngine": {
+          "title": "Công cụ Dubhe",
+          "subtitle": "Bộ công cụ Phát triển",
+          "description": "Tự động tạo 80% mã và cung cấp chuỗi công cụ nhà phát triển hoàn chỉnh",
+          "features": ["Tạo mã", "Phát triển dựa trên Lược đồ", "Triển khai Đa chuỗi", "Môi trường Phát triển"]
+        },
+        "dubheChannel": {
+          "title": "Kênh Dubhe",
+          "subtitle": "Lớp Thời gian thực",
+          "description": "Lớp tương tác P2P cho trải nghiệm người dùng thời gian thực cấp Web2",
+          "features": ["Độ trễ <50ms", "Đồng bộ Thời gian thực", "Giao tiếp P2P", "Hỗ trợ Di động"]
+        },
+        "dubheOS": {
+          "title": "Dubhe OS",
+          "subtitle": "Cơ sở hạ tầng Liên chuỗi",
+          "description": "Hệ điều hành phi tập trung với khả năng tương tác đa chuỗi bản địa",
+          "features": ["Cầu nối Liên chuỗi", "Trạng thái Thống nhất", "Khuyến khích Nhà phát triển", "Quản trị"]
+        }
+      },
+      "completeStackSolution": {
+        "title": "Giải pháp Stack Hoàn chỉnh",
+        "description": "Dubhe là nền tảng đầu tiên và duy nhất cung cấp một giải pháp hoàn chỉnh, tích hợp cho phát triển hệ sinh thái Move - từ tạo mã đến trải nghiệm người dùng thời gian thực."
+      },
+      "technicalFeatures": {
+        "securityFirst": {
+          "title": "Bảo mật Đầu tiên",
+          "description": "Xác minh chính thức của Move đảm bảo hợp đồng thông minh không có lỗi"
+        },
+        "highPerformance": {
+          "title": "Hiệu suất Cao",
+          "description": "Thực thi song song và runtime được tối ưu hóa cho thông lượng tối đa"
+        },
+        "composable": {
+          "title": "Có thể Kết hợp",
+          "description": "Kiến trúc modular cho phép tích hợp và tùy chỉnh dễ dàng"
+        },
+        "unifiedState": {
+          "title": "Trạng thái Thống nhất",
+          "description": "Nguồn sự thật duy nhất trên tất cả các chuỗi và ứng dụng"
+        }
+      }
+    },
+    "productSuite": {
+      "badge": "BỘ SẢN PHẨM",
+      "title": "Bộ Stack Phát Triển Move Hoàn Chỉnh",
+      "description": "Ba sản phẩm tích hợp giải quyết mọi điểm ma sát chính trong phát triển Move",
+      "products": {
+        "engine": {
+          "title": "Công cụ Dubhe",
+          "subtitle": "Tự Động Tạo 80% Code",
+          "description": "Bộ công cụ phát triển duy nhất tự động tạo ra 80% code Move, cho phép các nhà phát triển tập trung vào logic kinh doanh cốt lõi",
+          "features": [
+            "Giảm thời gian phát triển từ tháng xuống tuần",
+            "Giảm 90% chi phí hạ tầng",
+            "Một lệnh triển khai lên tất cả chuỗi Move"
+          ],
+          "highlight": "Phát Triển Nhanh Hơn 10x"
+        },
+        "channel": {
+          "title": "Kênh Dubhe",
+          "subtitle": "Trải Nghiệm Thời Gian Thực Cấp Web2",
+          "description": "Lớp tương tác P2P có thể lập trình thời gian thực khiến blockchain cảm giác như Web2",
+          "features": [
+            "Hiển thị giao diện người dùng tức thì",
+            "Tốc độ thực thi siêu nhanh",
+            "Hỗ trợ đa khách hàng di động, máy tính để bàn và web"
+          ],
+          "highlight": "Độ Trễ <50ms"
+        },
+        "os": {
+          "title": "Dubhe OS",
+          "subtitle": "Hệ Điều Hành Tương Tác Liên Chuỗi",
+          "description": "Hệ điều hành blockchain với hỗ trợ liên chuỗi bản địa và cơ chế khuyến khích nhà phát triển",
+          "features": [
+            "Một codebase, tất cả chuỗi Move",
+            "Phần thưởng nhà phát triển tích hợp",
+            "Cầu nối đến hệ sinh thái Đa chuỗi"
+          ],
+          "highlight": "Đa Chuỗi Bản Địa"
+        }
+      }
+    },
+    "networkStats": {
+      "title": "Thống kê Mạng",
+      "description": "Các chỉ số thời gian thực thể hiện sự tăng trưởng và hoạt động trên toàn bộ hệ sinh thái Dubhe.",
+      "transactions": {
+        "label": "Giao dịch Đã xử lý",
+        "change": "+12.5%"
+      },
+      "operations": {
+        "label": "Các thao tác Đã thực hiện",
+        "change": "+18.2%"
+      },
+      "users": {
+        "label": "Người dùng Hoạt động",
+        "change": "+25.1%"
+      },
+      "income": {
+        "label": "Doanh thu Giao thức",
+        "change": "+15.8%"
+      }
     }
   },
   "foundation": {
@@ -141,13 +387,33 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Dubhe. Tất cả quyền được bảo lưu.",
+    "description": "Nền tảng phát triển Move hoàn chỉnh với 80% tự động tạo mã, kênh P2P thời gian thực và khả năng tương tác liên chuỗi.",
+    "sections": {
+      "learn": "Học tập",
+      "build": "Xây dựng",
+      "ecosystem": "Hệ sinh thái",
+      "media": "Truyền thông",
+      "community": "Cộng đồng"
+    },
     "links": {
-      "about": "Giới thiệu",
+      "documentation": "Tài liệu",
+      "engine": "Động cơ",
+      "channel": "Kênh",
+      "os": "HĐH",
+      "foundation": "Quỹ",
+      "labs": "Phòng thí nghiệm",
+      "grants": "Tài trợ",
+      "incubation": "Ấp ủ",
+      "proposal": "Đề xuất",
+      "ambassador": "Đại sứ",
+      "moderators": "Điều hành viên",
+      "events": "Sự kiện",
       "contact": "Liên hệ",
+      "about": "Giới thiệu",
       "terms": "Điều khoản Dịch vụ",
       "privacy": "Chính sách Bảo mật"
-    }
+    },
+    "copyright": "© 2025 Dubhe. Tất cả quyền được bảo lưu."
   },
   "team": {
     "hero": {
@@ -297,6 +563,112 @@
       "cta2": "Liên hệ Quỹ"
     }
   },
+  "os": {
+    "badge": "Dubhe OS",
+    "hero": {
+      "title": "Liên Chuỗi",
+      "titleHighlight": "Hệ sinh thái Move",
+      "subtitle": "Hệ sinh thái thống nhất kết nối các blockchain dựa trên Move với quản trị liên chuỗi, cầu nối toàn cầu và bảo mật chia sẻ trên toàn bộ mạng.",
+      "stats": {
+        "multiChain": {
+          "value": "Đa Chuỗi",
+          "label": "Hệ sinh thái Move"
+        },
+        "universal": {
+          "value": "Toàn cầu",
+          "label": "Nền kinh tế Token"
+        },
+        "unified": {
+          "value": "Thống nhất",
+          "label": "Quản trị"
+        }
+      },
+      "cta": {
+        "primary": "Tham gia Hệ sinh thái",
+        "secondary": "Tìm hiểu thêm"
+      }
+    },
+    "features": {
+      "badge": "Tính năng Hệ sinh thái",
+      "title": "Một Token, Nhiều Chuỗi",
+      "subtitle": "Trải nghiệm Thống nhất",
+      "description": "Tương tác liền mạch trên toàn bộ hệ sinh thái Move với quản trị chia sẻ và cầu nối toàn cầu",
+      "items": {
+        "token": {
+          "title": "Hệ sinh thái Token Bản địa",
+          "description": "Nền kinh tế token thống nhất cung cấp sức mạnh cho toàn bộ hệ sinh thái với các tính năng quản trị, staking và tiện ích trên tất cả các chuỗi kết nối.",
+          "details": [
+            "Bỏ phiếu quản trị liên chuỗi",
+            "Phần thưởng và lợi suất staking",
+            "Thanh toán phí giao dịch",
+            "Chương trình khuyến khích nhà phát triển"
+          ]
+        },
+        "bridging": {
+          "title": "Cầu nối Toàn cầu",
+          "description": "Chuyển giao tài sản liền mạch giữa các chuỗi dựa trên Move với tính hoàn thiện tức thì và phí tối thiểu.",
+          "details": [
+            "Cầu nối Sui ↔ Aptos",
+            "Hỗ trợ mạng Movement",
+            "Hoán đổi liên chuỗi nguyên tử",
+            "Quản lý pool thanh khoản"
+          ]
+        },
+        "governance": {
+          "title": "Quản trị Phi tập trung",
+          "description": "Ra quyết định do cộng đồng thúc đẩy cho nâng cấp giao thức, quản lý kho bạc và phát triển hệ sinh thái.",
+          "details": [
+            "Hệ thống nộp đề xuất",
+            "Cơ chế bỏ phiếu có trọng số",
+            "Phân bổ quỹ kho bạc",
+            "Cập nhật tham số giao thức"
+          ]
+        },
+        "security": {
+          "title": "Mô hình Bảo mật Thống nhất",
+          "description": "Khung bảo mật chia sẻ cung cấp bảo vệ trên tất cả các chuỗi và ứng dụng kết nối.",
+          "details": [
+            "Xác thực liên chuỗi",
+            "Cơ chế phạt slashing",
+            "Hệ thống chứng minh gian lận",
+            "Giao thức phản ứng khẩn cấp"
+          ]
+        }
+      }
+    },
+    "chains": {
+      "badge": "Mạng được Hỗ trợ",
+      "title": "Hệ sinh thái Move Đa Chuỗi",
+      "items": {
+        "sui": {
+          "name": "Mạng Sui",
+          "status": "Hoạt động",
+          "features": ["Thông lượng cao", "Mô hình hướng đối tượng", "Ngôn ngữ Move"]
+        },
+        "aptos": {
+          "name": "Aptos",
+          "status": "Hoạt động",
+          "features": ["Thực thi song song", "Máy ảo Move", "Hợp đồng thông minh an toàn"]
+        },
+        "movement": {
+          "name": "Movement",
+          "status": "Tích hợp",
+          "features": ["Tương thích EVM", "Thời gian chạy Move", "Kiến trúc mô-đun"]
+        },
+        "future": {
+          "name": "Chuỗi Tương lai",
+          "status": "Dự kiến",
+          "features": ["Do cộng đồng thúc đẩy", "Dựa trên Move", "Mở rộng hệ sinh thái"]
+        }
+      }
+    },
+    "cta": {
+      "title": "Tham gia Hệ sinh thái Move",
+      "subtitle": "Trở thành một phần của hệ sinh thái Move liên chuỗi thống nhất",
+      "primary": "Tham gia Hệ sinh thái",
+      "secondary": "Cổng Quản trị"
+    }
+  },
   "errors": {
     "notFound": {
       "title": "Không Tìm Thấy Trang",
@@ -343,6 +715,6 @@
     }
   },
   "LocaleSwitcher": {
-    "label": "Thay đổi ngôn ngữ"
+    "label": "Ngôn ngữ"
   }
 }

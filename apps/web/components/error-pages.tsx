@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Button } from '@workspace/ui/components/button'
+import { useTranslations } from 'next-intl'
 
 interface ErrorPageProps {
   statusCode: number
@@ -22,6 +23,7 @@ export function ErrorPage({
   showContact = false,
   onRetry
 }: ErrorPageProps) {
+  const t = useTranslations('errors')
   const getErrorIcon = () => {
     switch (Math.floor(statusCode / 100)) {
       case 4: // 4xx Client Errors
@@ -50,17 +52,17 @@ export function ErrorPage({
 
   const getStatusMessage = () => {
     switch (statusCode) {
-      case 400: return 'Bad Request'
-      case 401: return 'Unauthorized'
-      case 403: return 'Forbidden'
-      case 404: return 'Not Found'
-      case 405: return 'Method Not Allowed'
-      case 429: return 'Too Many Requests'
-      case 500: return 'Internal Server Error'
-      case 502: return 'Bad Gateway'
-      case 503: return 'Service Unavailable'
-      case 504: return 'Gateway Timeout'
-      default: return 'Error'
+      case 400: return t('status.400')
+      case 401: return t('status.401')
+      case 403: return t('status.403')
+      case 404: return t('status.404')
+      case 405: return t('status.405')
+      case 429: return t('status.429')
+      case 500: return t('status.500')
+      case 502: return t('status.502')
+      case 503: return t('status.503')
+      case 504: return t('status.504')
+      default: return t('status.default')
     }
   }
 
@@ -102,7 +104,7 @@ export function ErrorPage({
                 onClick={onRetry}
                 className="flex-1 bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105"
               >
-                Try Again
+                {t('common.tryAgain')}
               </Button>
             )}
             
@@ -112,7 +114,7 @@ export function ErrorPage({
                   variant={showRetry ? "outline" : "default"}
                   className={`w-full ${showRetry ? 'border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white' : 'bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white'} py-3 px-6 rounded-lg transition-all duration-200`}
                 >
-                  Go to Homepage
+                  {t('common.goHome')}
                 </Button>
               </Link>
             )}
@@ -123,7 +125,7 @@ export function ErrorPage({
               href="/en/contact"
               className="block w-full text-center text-gray-400 hover:text-gray-300 text-sm py-2 underline transition-colors duration-200"
             >
-              Contact Support
+              {t('common.contactSupport')}
             </Link>
           )}
         </div>
@@ -138,12 +140,13 @@ export function ErrorPage({
 
 // Specific error page components
 export function Forbidden403() {
+  const t = useTranslations('errors')
   return (
     <ErrorPage
       statusCode={403}
-      title="Access Forbidden"
-      description="You don't have permission to access this resource."
-      suggestion="Please check your credentials or contact an administrator."
+      title={t('403.title')}
+      description={t('403.description')}
+      suggestion={t('403.suggestion')}
       showHome={true}
       showContact={true}
     />
@@ -151,12 +154,13 @@ export function Forbidden403() {
 }
 
 export function RateLimited429() {
+  const t = useTranslations('errors')
   return (
     <ErrorPage
       statusCode={429}
-      title="Too Many Requests"
-      description="You're making requests too quickly. Please slow down."
-      suggestion="Wait a few moments before trying again."
+      title={t('429.title')}
+      description={t('429.description')}
+      suggestion={t('429.suggestion')}
       showRetry={true}
       showHome={true}
       onRetry={() => window.location.reload()}
@@ -165,12 +169,13 @@ export function RateLimited429() {
 }
 
 export function ServiceUnavailable503() {
+  const t = useTranslations('errors')
   return (
     <ErrorPage
       statusCode={503}
-      title="Service Unavailable"
-      description="We're temporarily down for maintenance."
-      suggestion="We'll be back online shortly. Thanks for your patience!"
+      title={t('503.title')}
+      description={t('503.description')}
+      suggestion={t('503.suggestion')}
       showRetry={true}
       showHome={true}
       showContact={true}
@@ -180,12 +185,13 @@ export function ServiceUnavailable503() {
 }
 
 export function BadGateway502() {
+  const t = useTranslations('errors')
   return (
     <ErrorPage
       statusCode={502}
-      title="Bad Gateway"
-      description="There's a problem with our server connection."
-      suggestion="This is usually temporary. Please try again in a few moments."
+      title={t('502.title')}
+      description={t('502.description')}
+      suggestion={t('502.suggestion')}
       showRetry={true}
       showHome={true}
       onRetry={() => window.location.reload()}
@@ -194,12 +200,13 @@ export function BadGateway502() {
 }
 
 export function Unauthorized401() {
+  const t = useTranslations('errors')
   return (
     <ErrorPage
       statusCode={401}
-      title="Authentication Required"
-      description="You need to sign in to access this page."
-      suggestion="Please log in with your credentials."
+      title={t('401.title')}
+      description={t('401.description')}
+      suggestion={t('401.suggestion')}
       showHome={true}
     />
   )
