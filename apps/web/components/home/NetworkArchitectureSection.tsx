@@ -2,94 +2,86 @@
 
 import { motion } from "framer-motion"
 import { CheckCircle, Layers, Zap, Globe, Database, Code, Network, Shield } from "lucide-react"
+import { useTranslations } from 'next-intl'
 
-const keyMetrics = [
-  "10M+ transactions processed",
-  "<200ms average latency", 
-  "Web2-level user experience",
-  "Compatible with Sui, Aptos, Rooch, Movement, Initia"
-]
 
-const moveEcosystemFeatures = [
-  "1,555 active Move developers",
-  "Growing 40% monthly",
-  "Less than 3 years old",
-  "Huge growth potential"
-]
-
-const architectureLayers = [
-  {
-    title: "Move Applications",
-    subtitle: "Your dApps & Games",
-    description: "Build complex decentralized applications with Move's safety and flexibility",
-    icon: Code,
-    features: ["DeFi Protocols", "Gaming Apps", "NFT Platforms", "Social dApps"],
-    gradient: "from-purple-500 to-blue-600"
-  },
-  {
-    title: "Dubhe Engine", 
-    subtitle: "Development Toolkit",
-    description: "Auto-generates 80% of code and provides complete developer toolchain",
-    icon: Zap,
-    features: ["Code Generation", "Schema-Based Development", "Multi-Chain Deployment", "Dev Environment"],
-    gradient: "from-blue-500 to-cyan-500"
-  },
-  {
-    title: "Dubhe Channel",
-    subtitle: "Real-time Layer", 
-    description: "P2P interaction layer for Web2-level real-time user experience",
-    icon: Network,
-    features: ["<50ms Latency", "Real-time Sync", "P2P Communication", "Mobile Support"],
-    gradient: "from-cyan-500 to-teal-500"
-  },
-  {
-    title: "Dubhe OS",
-    subtitle: "Cross-Chain Infrastructure",
-    description: "Decentralized operating system with native multi-chain interoperability",
-    icon: Globe,
-    features: ["Cross-Chain Bridges", "Unified State", "Developer Incentives", "Governance"],
-    gradient: "from-teal-500 to-green-500"
-  }
-]
-
-const technicalFeatures = [
-  {
-    icon: Shield,
-    title: "Security First",
-    description: "Move's formal verification ensures bug-free smart contracts"
-  },
-  {
-    icon: Zap,
-    title: "High Performance", 
-    description: "Parallel execution and optimized runtime for maximum throughput"
-  },
-  {
-    icon: Layers,
-    title: "Composable",
-    description: "Modular architecture allows easy integration and customization"
-  },
-  {
-    icon: Database,
-    title: "Unified State",
-    description: "Single source of truth across all chains and applications"
-  }
-]
 
 export default function NetworkArchitectureSection() {
+  const t = useTranslations('home.networkArchitecture')
+  
+  const keyMetrics = Array.isArray(t.raw('keyMetrics')) ? t.raw('keyMetrics') as string[] : []
+  const moveEcosystemFeatures = Array.isArray(t.raw('moveEcosystemFeatures')) ? t.raw('moveEcosystemFeatures') as string[] : []
+  
+  const architectureLayers = [
+    {
+      title: t('architectureLayers.moveApplications.title'),
+      subtitle: t('architectureLayers.moveApplications.subtitle'),
+      description: t('architectureLayers.moveApplications.description'),
+      icon: Code,
+      features: Array.isArray(t.raw('architectureLayers.moveApplications.features')) ? t.raw('architectureLayers.moveApplications.features') as string[] : [],
+      gradient: "from-purple-500 to-blue-600"
+    },
+    {
+      title: t('architectureLayers.dubheEngine.title'),
+      subtitle: t('architectureLayers.dubheEngine.subtitle'),
+      description: t('architectureLayers.dubheEngine.description'),
+      icon: Zap,
+      features: Array.isArray(t.raw('architectureLayers.dubheEngine.features')) ? t.raw('architectureLayers.dubheEngine.features') as string[] : [],
+      gradient: "from-blue-500 to-cyan-500"
+    },
+    {
+      title: t('architectureLayers.dubheChannel.title'),
+      subtitle: t('architectureLayers.dubheChannel.subtitle'),
+      description: t('architectureLayers.dubheChannel.description'),
+      icon: Network,
+      features: Array.isArray(t.raw('architectureLayers.dubheChannel.features')) ? t.raw('architectureLayers.dubheChannel.features') as string[] : [],
+      gradient: "from-cyan-500 to-teal-500"
+    },
+    {
+      title: t('architectureLayers.dubheOS.title'),
+      subtitle: t('architectureLayers.dubheOS.subtitle'),
+      description: t('architectureLayers.dubheOS.description'),
+      icon: Globe,
+      features: Array.isArray(t.raw('architectureLayers.dubheOS.features')) ? t.raw('architectureLayers.dubheOS.features') as string[] : [],
+      gradient: "from-teal-500 to-green-500"
+    }
+  ]
+
+  const technicalFeatures = [
+    {
+      icon: Shield,
+      title: t('technicalFeatures.securityFirst.title'),
+      description: t('technicalFeatures.securityFirst.description')
+    },
+    {
+      icon: Zap,
+      title: t('technicalFeatures.highPerformance.title'),
+      description: t('technicalFeatures.highPerformance.description')
+    },
+    {
+      icon: Layers,
+      title: t('technicalFeatures.composable.title'),
+      description: t('technicalFeatures.composable.description')
+    },
+    {
+      icon: Database,
+      title: t('technicalFeatures.unifiedState.title'),
+      description: t('technicalFeatures.unifiedState.description')
+    }
+  ]
   return (
     <div className="py-24 px-6 lg:px-8 bg-gray-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            NETWORK ARCHITECTURE
+            {t('badge')}
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 max-w-4xl mx-auto leading-tight">
-            The Complete Move Development Stack
+            {t('title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            From development tools to real-time interaction channels and decentralized infrastructure - 
-            Dubhe provides everything needed to build the next generation of fully on-chain applications.
+            {t('description')}
           </p>
         </div>
 
@@ -105,7 +97,7 @@ export default function NetworkArchitectureSection() {
             {/* Key Metrics */}
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
               <div className="text-center">
-                <h3 className="text-lg font-bold text-amber-900 mb-4">Key Metrics</h3>
+                <h3 className="text-lg font-bold text-amber-900 mb-4">{t('keyMetricsTitle')}</h3>
                 <div className="space-y-3">
                   {keyMetrics.map((feature, index) => (
                     <motion.div
@@ -127,7 +119,7 @@ export default function NetworkArchitectureSection() {
             {/* Move Ecosystem */}
             <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
               <div className="text-center">
-                <h3 className="text-lg font-bold text-emerald-900 mb-4">Move Ecosystem</h3>
+                <h3 className="text-lg font-bold text-emerald-900 mb-4">{t('moveEcosystemTitle')}</h3>
                 <div className="space-y-3">
                   {moveEcosystemFeatures.map((feature, index) => (
                     <motion.div
@@ -163,7 +155,7 @@ export default function NetworkArchitectureSection() {
               <div className="lg:w-1/2 space-y-6">
                 <div className={`inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gradient-to-r ${layer.gradient} text-white`}>
                   <layer.icon className="w-5 h-5" />
-                  <span className="font-semibold">Pipelining {index + 1}</span>
+                  <span className="font-semibold">{t('pipelining')} {index + 1}</span>
                 </div>
                 
                 <div>
@@ -192,7 +184,7 @@ export default function NetworkArchitectureSection() {
                   <div className="absolute inset-0 bg-black/10"></div>
                   <layer.icon className="w-16 h-16 text-white/90 relative z-10" />
                   <div className="absolute top-4 right-4 text-white/70 text-xs font-medium">
-                    Pipelining {index + 1}
+                    {t('pipelining')} {index + 1}
                   </div>
                 </div>
               </div>
@@ -215,11 +207,10 @@ export default function NetworkArchitectureSection() {
         >
           <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-              Complete Stack Solution
+              {t('completeStackSolution.title')}
             </h3>
             <p className="text-lg text-purple-100 max-w-3xl mx-auto">
-              Dubhe is the first and only platform that provides a complete, integrated solution 
-              for Move ecosystem development - from code generation to real-time user experience.
+              {t('completeStackSolution.description')}
             </p>
           </div>
         </motion.div>

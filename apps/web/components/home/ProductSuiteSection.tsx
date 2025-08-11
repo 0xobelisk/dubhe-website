@@ -2,70 +2,60 @@
 
 import { motion } from "framer-motion"
 import { Code, Zap, Globe } from "lucide-react"
+import { useTranslations } from 'next-intl'
 import ArchitectureComparisonSection from "./ArchitectureComparisonSection"
 
-const products = [
-  {
-    id: "engine",
-    icon: Code,
-    title: "Dubhe Engine",
-    subtitle: "80% Code Auto-Generation",
-    description: "The only development toolkit that auto-generates 80% of Move code, letting developers focus on core business logic",
-    features: [
-      "Reduce dev time from months to weeks",
-      "90% lower infrastructure costs",
-      "One command deploys to all Move chains"
-    ],
-    highlight: "10x Faster Development",
-    gradient: "from-purple-500 to-blue-500",
-    hoverBorder: "hover:border-blue-500/50"
-  },
-  {
-    id: "channel",
-    icon: Zap,
-    title: "Dubhe Channel",
-    subtitle: "Web2-Level Real-Time Experience",
-    description: "Real-time programmable P2P interaction layer that makes blockchain feel like Web2",
-    features: [
-      "Instant frontend rendering",
-      "Ultra-fast execution speed",
-      "Supports multi-client mobile, desktop, and web"
-    ],
-    highlight: "<50ms Latency",
-    gradient: "from-purple-500 to-pink-500",
-    hoverBorder: "hover:border-purple-500/50"
-  },
-  {
-    id: "os",
-    icon: Globe,
-    title: "Dubhe OS",
-    subtitle: "Cross-Chain Interoperability OS",
-    description: "Blockchain operating system with native cross-chain support and developer incentive mechanisms",
-    features: [
-      "Single codebase, all Move chains",
-      "Built-in developer rewards",
-      "Bridge to Multi-Chains ecosystems"
-    ],
-    highlight: "Native Multi-Chain",
-    gradient: "from-green-500 to-emerald-500",
-    hoverBorder: "hover:border-green-500/50"
-  }
-]
-
 export default function ProductSuiteSection() {
+  const t = useTranslations('home.productSuite')
+  
+  const products = [
+    {
+      id: "engine",
+      icon: Code,
+      title: t('products.engine.title'),
+      subtitle: t('products.engine.subtitle'),
+      description: t('products.engine.description'),
+      features: t.raw('products.engine.features') as string[],
+      highlight: t('products.engine.highlight'),
+      gradient: "from-purple-500 to-blue-500",
+      hoverBorder: "hover:border-blue-500/50"
+    },
+    {
+      id: "channel",
+      icon: Zap,
+      title: t('products.channel.title'),
+      subtitle: t('products.channel.subtitle'),
+      description: t('products.channel.description'),
+      features: t.raw('products.channel.features') as string[],
+      highlight: t('products.channel.highlight'),
+      gradient: "from-purple-500 to-pink-500",
+      hoverBorder: "hover:border-purple-500/50"
+    },
+    {
+      id: "os",
+      icon: Globe,
+      title: t('products.os.title'),
+      subtitle: t('products.os.subtitle'),
+      description: t('products.os.description'),
+      features: t.raw('products.os.features') as string[],
+      highlight: t('products.os.highlight'),
+      gradient: "from-green-500 to-emerald-500",
+      hoverBorder: "hover:border-green-500/50"
+    }
+  ]
   return (
     <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block bg-purple-500/10 text-purple-400 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-500/20">
-            PRODUCT SUITE
+            {t('badge')}
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight">
-            The Complete Move Development Stack
+            {t('title')}
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Three integrated products that solve every major friction point in Move development
+            {t('description')}
           </p>
         </div>
 

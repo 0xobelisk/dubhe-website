@@ -100,6 +100,252 @@
           "description": "Kıtalarda Dubhe topluluk varlığı"
         }
       }
+    },
+    "ecosystem": {
+      "badge": "Ekosistem",
+      "title": {
+        "line1": "Yenilikçi Uygulamaların",
+        "line2": "Gelişen Ekosistemi"
+      },
+      "description": "DeFi ve oyundan altyapı ve NFT'lere kadar Dubhe üzerine inşa edilmiş çeşitli uygulama, protokol ve araçları keşfedin.",
+      "categories": {
+        "defi": {
+          "title": "DeFi",
+          "description": "Merkezi olmayan finans protokolleri"
+        },
+        "gaming": {
+          "title": "Oyun",
+          "description": "Zincir üstü oyunlar ve metaverse"
+        },
+        "infrastructure": {
+          "title": "Altyapı",
+          "description": "Geliştirici araçları ve altyapı"
+        },
+        "nfts": {
+          "title": "NFT'ler",
+          "description": "Dijital koleksiyonlar ve varlıklar"
+        }
+      },
+      "projects": {
+        "merak": {
+          "name": "Merak",
+          "description": "Otomatik Pazar Yapıcısı",
+          "tvl": "$45M"
+        },
+        "numeron": {
+          "name": "Numeron",
+          "description": "Fantezi AI RPG Macerası",
+          "players": "12K+"
+        },
+        "cyferio": {
+          "name": "Cyferio SDK",
+          "description": "Geliştirme Kiti",
+          "downloads": "50K+"
+        },
+        "objectsdao": {
+          "name": "Objectsdao",
+          "description": "NFT Müzayedesi",
+          "volume": "$2.3M"
+        }
+      },
+      "metrics": {
+        "tvl": "TVL",
+        "players": "Oyuncular",
+        "downloads": "İndirmeler",
+        "volume": "Hacim"
+      }
+    },
+    "howItWorks": {
+      "title": "Nasıl Çalışır",
+      "steps": {
+        "schemaDefinition": {
+          "title": "Şema Tanımlama",
+          "description": "Dubhe'nin sezgisel şema sistemi kullanarak oyun veya dApp mantığınızı tanımlayın. Basit yapılandırma dosyalarında varlıkları, bileşenleri ve sistemleri tanımlayın.",
+          "items": ["Varlık", "Bileşen", "Sistem", "Hata", "Olay"]
+        },
+        "codeGeneration": {
+          "title": "Kod Üretimi",
+          "description": "Dubhe Motoru, şema tanımlarınızdan otomatik olarak Move akıllı sözleşmelerinizin, istemci kütüphanelerinizin ve API arayyüzlerinizin %80'ini oluşturur."
+        },
+        "deploymentChannel": {
+          "title": "Dağıtım ve Kanal",
+          "description": "Tek komutla birden fazla Move zincirine dağıtın. Dubhe Kanalı, kesintisiz kullanıcı deneyimi için gerçek zamanlı senkronizasyon ve <50ms gecikme sağlar."
+        },
+        "multiChainExecution": {
+          "title": "Mehrkettenausführung",
+          "description": "Uygulamaniz Dubhe OS aracılığıyla yerel çapraz zincir birlikte çalışabilirliği ile desteklenen tüm Move zincirlerinde sorunsuz çalışır."
+        }
+      },
+      "labels": {
+        "dubheEngine": "Dubhe Motoru",
+        "you": "Siz",
+        "blockchain": "Blockchain",
+        "multiChainReady": "Multi-Zincir Hazır"
+      }
+    },
+    "competitiveAdvantage": {
+      "title": "Rekabet Üstünlüğü",
+      "subtitle": "Move ekosistem geliştirmesi için ilk ve tek kapsamlı çözüm",
+      "table": {
+        "feature": "Özellik",
+        "dubhe": "Dubhe",
+        "others": "Diğerleri"
+      },
+      "features": {
+        "codeGeneration": {
+          "title": "Kod Üretimi",
+          "dubhe": "%80 otomatik",
+          "others": "Manuel kodlama"
+        },
+        "uxPerformance": {
+          "title": "UX Performansı",
+          "dubhe": "<50ms",
+          "others": "3-15 saniye"
+        },
+        "multiChainSupport": {
+          "title": "Çok Zincir Desteği",
+          "dubhe": "Yerel destek",
+          "others": "Karmaşık köprüler"
+        },
+        "developerExperience": {
+          "title": "Geliştirici Deneyimi",
+          "dubhe": "Tek tıkla dağıtım",
+          "others": "Karmaşık kurulum"
+        },
+        "realTimeFeatures": {
+          "title": "Gerçek Zamanlı Özellikler",
+          "dubhe": "Yerleşik kanal",
+          "others": "Harici çözümler"
+        }
+      }
+    },
+    "networkArchitecture": {
+      "badge": "AĞ MİMARİSİ",
+      "title": "Eksiksiz Move Geliştirme Yığını",
+      "description": "Geliştirme araçlarından gerçek zamanlı etkileşim kanallarına ve merkezi olmayan altyapıya kadar - Dubhe, tamamen zincir üstü uygulamaların yeni nesini oluşturmak için gereken her şeyi sağlar.",
+      "keyMetricsTitle": "Temel Metrikler",
+      "keyMetrics": [
+        "10 milyondan fazla işlem işlendi",
+        "Ortalama gecikme <200ms",
+        "Web2 düzeyinde kullanıcı deneyimi",
+        "Sui, Aptos, Rooch, Movement, Initia ile uyumlu"
+      ],
+      "moveEcosystemTitle": "Move Ekosistemi",
+      "moveEcosystemFeatures": [
+        "1,555 aktif Move geliştirici",
+        "Aylık %40 büyüyor",
+        "3 yaşından küçük",
+        "Büyük büyüme potansiyeli"
+      ],
+      "pipelining": "Boru Hattı",
+      "architectureLayers": {
+        "moveApplications": {
+          "title": "Move Uygulamaları",
+          "subtitle": "dApp'leriniz ve Oyunlarınız",
+          "description": "Move'un güvenliği ve esnekliği ile karmaşık merkezi olmayan uygulamalar oluşturun",
+          "features": ["DeFi Protokolleri", "Oyun Uygulamaları", "NFT Platformları", "Sosyal dApp'ler"]
+        },
+        "dubheEngine": {
+          "title": "Dubhe Motoru",
+          "subtitle": "Geliştirme Araç Seti",
+          "description": "Kodun %80'ini otomatik olarak oluşturur ve eksiksiz geliştirici araç zinciri sağlar",
+          "features": ["Kod Üretimi", "Şema Tabanlı Geliştirme", "Çok Zincir Dağıtımı", "Geliştirme Ortamı"]
+        },
+        "dubheChannel": {
+          "title": "Dubhe Kanalı",
+          "subtitle": "Gerçek Zamanlı Katman",
+          "description": "Web2 düzeyinde gerçek zamanlı kullanıcı deneyimi için P2P etkileşim katmanı",
+          "features": ["<50ms Gecikme", "Gerçek Zamanlı Senkronizasyon", "P2P İletişim", "Mobil Destek"]
+        },
+        "dubheOS": {
+          "title": "Dubhe OS",
+          "subtitle": "Çapraz Zincir Altyapısı",
+          "description": "Yerel çok zincirli birlikte çalışabilirlik ile merkezi olmayan işletim sistemi",
+          "features": ["Çapraz Zincir Köprüleri", "Birleşik Durum", "Geliştirici Teşvikleri", "Yönetişim"]
+        }
+      },
+      "completeStackSolution": {
+        "title": "Eksiksiz Yığın Çözümü",
+        "description": "Dubhe, Move ekosistem geliştirmesi için eksiksiz, entegre bir çözüm sağlayan ilk ve tek platformdur - kod üretiminden gerçek zamanlı kullanıcı deneyimine kadar."
+      },
+      "technicalFeatures": {
+        "securityFirst": {
+          "title": "Önce Güvenlik",
+          "description": "Move'un formal doğrulaması hatasız akıllı sözleşmeler sağlar"
+        },
+        "highPerformance": {
+          "title": "Yüksek Performans",
+          "description": "Maksimum verimlilik için paralel yürütme ve optimize edilmiş çalışma zamanı"
+        },
+        "composable": {
+          "title": "Birleştirilebilir",
+          "description": "Modüler mimari kolay entegrasyon ve özelleştirmeye izin verir"
+        },
+        "unifiedState": {
+          "title": "Birleşik Durum",
+          "description": "Tüm zincirler ve uygulamalarda tek gerçek kaynağı"
+        }
+      }
+    },
+    "productSuite": {
+      "badge": "ÜRÜN PAKETİ",
+      "title": "Eksiksiz Move Geliştirme Yığını",
+      "description": "Move geliştirmesindeki her büyük sürtünme noktasını çözen üç entegre ürün",
+      "products": {
+        "engine": {
+          "title": "Dubhe Motoru",
+          "subtitle": "%80 Otomatik Kod Oluşturma",
+          "description": "Move kodunun %80'ini otomatik olarak oluşturan tek geliştirme araç seti, geliştiricilerin temel iş mantığına odaklanmasını sağlar",
+          "features": [
+            "Geliştirme süresini aylardan haftalara düşür",
+            "%90 daha düşük altyapı maliyetleri",
+            "Tek komutla tüm Move zincirlerine dağıtım"
+          ],
+          "highlight": "10x Daha Hızlı Geliştirme"
+        },
+        "channel": {
+          "title": "Dubhe Kanalı",
+          "subtitle": "Web2 Seviyesi Gerçek Zamanlı Deneyim",
+          "description": "Blockchain'i Web2 gibi hissettiren gerçek zamanlı programlanabilir P2P etkileşim katmanı",
+          "features": [
+            "Anında frontend render",
+            "Ultra hızlı yürütme hızı",
+            "Çoklu istemci mobil, masaüstü ve web desteği"
+          ],
+          "highlight": "<50ms Gecikme"
+        },
+        "os": {
+          "title": "Dubhe OS",
+          "subtitle": "Çapraz Zincir Birlikte Çalışabilirlik İşletim Sistemi",
+          "description": "Yerel çapraz zincir desteği ve geliştirici teşvik mekanizmaları olan blockchain işletim sistemi",
+          "features": [
+            "Tek kod tabanı, tüm Move zincirleri",
+            "Yerleşik geliştirici ödülleri",
+            "Multi-Zincir ekosistemlere köprü"
+          ],
+          "highlight": "Yerel Multi-Zincir"
+        }
+      }
+    },
+    "networkStats": {
+      "title": "Ağ İstatistikleri",
+      "description": "Dubhe ekosistemi genelinde büyüme ve aktiviteyi gösteren gerçek zamanlı metrikler.",
+      "transactions": {
+        "label": "İşlenen İşlemler",
+        "change": "+12.5%"
+      },
+      "operations": {
+        "label": "Yürütülen Operasyonlar",
+        "change": "+18.2%"
+      },
+      "users": {
+        "label": "Aktif Kullanıcılar",
+        "change": "+25.1%"
+      },
+      "income": {
+        "label": "Protokol Geliri",
+        "change": "+15.8%"
+      }
     }
   },
   "foundation": {
@@ -141,13 +387,33 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Dubhe. Tüm hakları saklıdır.",
+    "description": "%80 otomatik kod üretimi, gerçek zamanlı P2P kanallar ve zincirler arası birlikte çalışabilirlik ile eksiksiz Move geliştirme platformu.",
+    "sections": {
+      "learn": "Öğren",
+      "build": "Geliştir",
+      "ecosystem": "Ekosistem",
+      "media": "Medya",
+      "community": "Topluluk"
+    },
     "links": {
-      "about": "Hakkında",
+      "documentation": "Dokümantasyon",
+      "engine": "Motor",
+      "channel": "Kanal",
+      "os": "İS",
+      "foundation": "Vakıf",
+      "labs": "Laboratuvarlar",
+      "grants": "Bağışlar",
+      "incubation": "Kuluçka",
+      "proposal": "Teklif",
+      "ambassador": "Büyükelçi",
+      "moderators": "Moderatörler",
+      "events": "Etkinlikler",
       "contact": "İletişim",
+      "about": "Hakkında",
       "terms": "Hizmet Şartları",
       "privacy": "Gizlilik Politikası"
-    }
+    },
+    "copyright": "© 2025 Dubhe. Tüm hakları saklıdır."
   },
   "team": {
     "hero": {
@@ -297,6 +563,112 @@
       "cta2": "Vakıf İletişim"
     }
   },
+  "os": {
+    "badge": "Dubhe OS",
+    "hero": {
+      "title": "Çapraz Zincir",
+      "titleHighlight": "Move Ekosistemi",
+      "subtitle": "Çapraz zincir yönetişim, evrensel köprüleme ve ağ genelinde paylaşılan güvenlik ile Move tabanlı blokzincirleri birleştiren birleşik ekosistem.",
+      "stats": {
+        "multiChain": {
+          "value": "Çoklu Zincir",
+          "label": "Move Ekosistemi"
+        },
+        "universal": {
+          "value": "Evrensel",
+          "label": "Token Ekonomisi"
+        },
+        "unified": {
+          "value": "Birleşik",
+          "label": "Yönetişim"
+        }
+      },
+      "cta": {
+        "primary": "Ekosisteme Katılın",
+        "secondary": "Daha Fazla Öğrenin"
+      }
+    },
+    "features": {
+      "badge": "Ekosistem Özellikleri",
+      "title": "Bir Token, Birden Fazla Zincir",
+      "subtitle": "Birleşik Deneyim",
+      "description": "Paylaşılan yönetişim ve evrensel köprüleme ile tüm Move ekosisteminde sorunsuz etkileşim",
+      "items": {
+        "token": {
+          "title": "Yerel Token Ekosistemi",
+          "description": "Bağlı tüm zincirlerde yönetişim, staking ve fayda özelliklerine sahip birleşik token ekonomisi tüm ekosistemi güçlendirir.",
+          "details": [
+            "Çapraz zincir yönetişim oylama",
+            "Staking ödülleri ve getiri",
+            "İşlem ücreti ödemeleri",
+            "Geliştirici teşvik programları"
+          ]
+        },
+        "bridging": {
+          "title": "Evrensel Köprüleme",
+          "description": "Anında kesinlik ve minimum ücretlerle Move tabanlı zincirler arası sorunsuz varlık transferleri.",
+          "details": [
+            "Sui ↔ Aptos köprüleme",
+            "Movement ağ desteği",
+            "Atomik çapraz zincir takasları",
+            "Likidite havuzu yönetimi"
+          ]
+        },
+        "governance": {
+          "title": "Merkezi Olmayan Yönetişim",
+          "description": "Protokol yükseltmeleri, hazine yönetimi ve ekosistem geliştirme için topluluk odaklı karar verme.",
+          "details": [
+            "Teklif sunma sistemi",
+            "Ağırlıklı oylama mekanizmaları",
+            "Hazine fon tahsisi",
+            "Protokol parametre güncellemeleri"
+          ]
+        },
+        "security": {
+          "title": "Birleşik Güvenlik Modeli",
+          "description": "Bağlı tüm zincirler ve uygulamalarda koruma sağlayan paylaşılan güvenlik çerçevesi.",
+          "details": [
+            "Çapraz zincir doğrulama",
+            "Slashing mekanizmaları",
+            "Sahtelik kanıtı sistemleri",
+            "Acil durum müdahale protokolleri"
+          ]
+        }
+      }
+    },
+    "chains": {
+      "badge": "Desteklenen Ağlar",
+      "title": "Çoklu Zincir Move Ekosistemi",
+      "items": {
+        "sui": {
+          "name": "Sui Ağı",
+          "status": "Canlı",
+          "features": ["Yüksek verimlilik", "Nesne merkezli model", "Move dili"]
+        },
+        "aptos": {
+          "name": "Aptos",
+          "status": "Canlı",
+          "features": ["Paralel yürütme", "Move VM", "Güvenli akıllı sözleşmeler"]
+        },
+        "movement": {
+          "name": "Movement",
+          "status": "Entegrasyon",
+          "features": ["EVM uyumluluğu", "Move çalışma zamanı", "Modüler mimari"]
+        },
+        "future": {
+          "name": "Gelecek Zincirler",
+          "status": "Planlanmış",
+          "features": ["Topluluk odaklı", "Move tabanlı", "Ekosistem genişlemesi"]
+        }
+      }
+    },
+    "cta": {
+      "title": "Move Ekosistemine Katılın",
+      "subtitle": "Birleşik çapraz zincir Move ekosisteminin bir parçası olun",
+      "primary": "Ekosisteme Katılın",
+      "secondary": "Yönetişim Portalı"
+    }
+  },
   "errors": {
     "notFound": {
       "title": "Sayfa Bulunamadı",
@@ -343,6 +715,6 @@
     }
   },
   "LocaleSwitcher": {
-    "label": "Dili değiştir"
+    "label": "Diller"
   }
 }

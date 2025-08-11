@@ -27,11 +27,11 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
 
   const teamMembers = [
     {
-      name: "Jason",
-      role: "Foundation Lead",
-      location: "San Francisco, CA",
-      bio: "Visionary leader with 15+ years in blockchain technology. Previously led engineering teams at major tech companies before founding Dubhe to revolutionize Move development.",
-      expertise: ["Blockchain Architecture", "Team Leadership", "Product Strategy"],
+      name: t('members.jason.name'),
+      role: t('members.jason.role'),
+      location: t('members.jason.location'),
+      bio: t('members.jason.bio'),
+      expertise: t.raw('members.jason.expertise') as string[],
       avatar: "/team/alex-chen.jpg",
       social: {
         linkedin: "https://linkedin.com/in/alexchen",
@@ -40,11 +40,11 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       }
     },
     {
-      name: "Joan",
-      role: "CTO & Co-founder",
-      location: "New York, NY", 
-      bio: "Former Move core developer with deep expertise in smart contract architecture. Leads our technical vision and oversees all engineering initiatives.",
-      expertise: ["Move Language", "Smart Contracts", "System Architecture"],
+      name: t('members.joan.name'),
+      role: t('members.joan.role'),
+      location: t('members.joan.location'), 
+      bio: t('members.joan.bio'),
+      expertise: t.raw('members.joan.expertise') as string[],
       avatar: "/team/sarah-johnson.jpg",
       social: {
         linkedin: "https://linkedin.com/in/sarahjohnson",
@@ -53,11 +53,11 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       }
     },
     {
-      name: "David",
-      role: "Head of Engineering",
-      location: "Seoul, South Korea",
-      bio: "Full-stack engineer passionate about developer tools and ecosystem growth. Leads our engine development team and drives technical innovation.",
-      expertise: ["Full-stack Development", "Developer Tools", "Open Source"],
+      name: t('members.david.name'),
+      role: t('members.david.role'),
+      location: t('members.david.location'),
+      bio: t('members.david.bio'),
+      expertise: t.raw('members.david.expertise') as string[],
       avatar: "/team/david-kim.jpg", 
       social: {
         github: "https://github.com/davidkim",
@@ -65,11 +65,11 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       }
     },
     {
-      name: "Bonnie",
-      role: "Head of Community",
-      location: "Barcelona, Spain",
-      bio: "Community builder with extensive experience growing developer ecosystems. Manages our global community initiatives and ambassador program.",
-      expertise: ["Community Building", "Developer Relations", "Event Management"],
+      name: t('members.bonnie.name'),
+      role: t('members.bonnie.role'),
+      location: t('members.bonnie.location'),
+      bio: t('members.bonnie.bio'),
+      expertise: t.raw('members.bonnie.expertise') as string[],
       avatar: "/team/maria-rodriguez.jpg",
       social: {
         twitter: "https://twitter.com/mariarodriguez",
@@ -77,11 +77,11 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       }
     },
     {
-      name: "Liam McKenzie",
-      role: "Head of Partnerships",
-      location: "London, UK",
-      bio: "Business development expert focused on strategic partnerships and ecosystem growth. Previously led partnerships at major blockchain companies.",
-      expertise: ["Strategic Partnerships", "Business Development", "Ecosystem Growth"],
+      name: t('members.liam.name'),
+      role: t('members.liam.role'),
+      location: t('members.liam.location'),
+      bio: t('members.liam.bio'),
+      expertise: t.raw('members.liam.expertise') as string[],
       avatar: "/team/robert-thompson.jpg",
       social: {
         linkedin: "https://linkedin.com/in/robertthompson",
@@ -89,11 +89,11 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       }
     },
     {
-      name: "Emily Smith",
-      role: "Research Director",
-      location: "Beijing, China",
-      bio: "PhD in Computer Science specializing in distributed systems. Leads our research initiatives and explores cutting-edge blockchain technologies.",
-      expertise: ["Distributed Systems", "Research", "Academic Partnerships"],
+      name: t('members.emily.name'),
+      role: t('members.emily.role'),
+      location: t('members.emily.location'),
+      bio: t('members.emily.bio'),
+      expertise: t.raw('members.emily.expertise') as string[],
       avatar: "/team/lisa-wang.jpg",
       social: {
         linkedin: "https://linkedin.com/in/lisawang",

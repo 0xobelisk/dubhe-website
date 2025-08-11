@@ -100,6 +100,252 @@
           "description": "Dubhe community presence across continents"
         }
       }
+    },
+    "ecosystem": {
+      "badge": "Ecosystem",
+      "title": {
+        "line1": "Thriving Ecosystem of",
+        "line2": "Innovative Applications"
+      },
+      "description": "Discover the diverse range of applications, protocols, and tools built on Dubhe, from DeFi and gaming to infrastructure and NFTs.",
+      "categories": {
+        "defi": {
+          "title": "DeFi",
+          "description": "Decentralized finance protocols"
+        },
+        "gaming": {
+          "title": "Gaming",
+          "description": "On-chain games and metaverse"
+        },
+        "infrastructure": {
+          "title": "Infrastructure", 
+          "description": "Developer tools and infrastructure"
+        },
+        "nfts": {
+          "title": "NFTs",
+          "description": "Digital collectibles and assets"
+        }
+      },
+      "projects": {
+        "merak": {
+          "name": "Merak",
+          "description": "Automated Market Maker",
+          "tvl": "$45M"
+        },
+        "numeron": {
+          "name": "Numeron",
+          "description": "Fantasy AI RPG Adventure",
+          "players": "12K+"
+        },
+        "cyferio": {
+          "name": "Cyferio SDK",
+          "description": "Development Kit",
+          "downloads": "50K+"
+        },
+        "objectsdao": {
+          "name": "Objectsdao",
+          "description": "NFT Auction",
+          "volume": "$2.3M"
+        }
+      },
+      "metrics": {
+        "tvl": "TVL",
+        "players": "Players",
+        "downloads": "Downloads",
+        "volume": "Volume"
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "steps": {
+        "schemaDefinition": {
+          "title": "Schema Definition",
+          "description": "Define your game or dApp logic using Dubhe's intuitive schema system. Describe entities, components, and systems in simple configuration files.",
+          "items": ["Entity", "Component", "System", "Error", "Event"]
+        },
+        "codeGeneration": {
+          "title": "Code Generation",
+          "description": "Dubhe Engine automatically generates 80% of your Move smart contracts, client libraries, and API interfaces from your schema definitions."
+        },
+        "deploymentChannel": {
+          "title": "Deployment & Channel",
+          "description": "Deploy to multiple Move chains with one command. Dubhe Channel provides real-time synchronization and <50ms latency for seamless user experience."
+        },
+        "multiChainExecution": {
+          "title": "Multi-Chain Execution",
+          "description": "Your application runs seamlessly across all supported Move chains with native cross-chain interoperability through Dubhe OS."
+        }
+      },
+      "labels": {
+        "dubheEngine": "Dubhe Engine",
+        "you": "You",
+        "blockchain": "Blockchain",
+        "multiChainReady": "Multi-Chain Ready"
+      }
+    },
+    "competitiveAdvantage": {
+      "title": "Competitive Advantage",
+      "subtitle": "First and only comprehensive solution for Move ecosystem development",
+      "table": {
+        "feature": "Feature",
+        "dubhe": "Dubhe",
+        "others": "Others"
+      },
+      "features": {
+        "codeGeneration": {
+          "title": "Code Generation",
+          "dubhe": "80% automated",
+          "others": "Manual coding"
+        },
+        "uxPerformance": {
+          "title": "UX Performance",
+          "dubhe": "<50ms",
+          "others": "3-15 seconds"
+        },
+        "multiChainSupport": {
+          "title": "Multi-Chain Support",
+          "dubhe": "Native support",
+          "others": "Complex bridges"
+        },
+        "developerExperience": {
+          "title": "Developer Experience",
+          "dubhe": "One-click deployment",
+          "others": "Complex setup"
+        },
+        "realTimeFeatures": {
+          "title": "Real-time Features",
+          "dubhe": "Built-in Channel",
+          "others": "External solutions"
+        }
+      }
+    },
+    "productSuite": {
+      "badge": "PRODUCT SUITE",
+      "title": "The Complete Move Development Stack",
+      "description": "Three integrated products that solve every major friction point in Move development",
+      "products": {
+        "engine": {
+          "title": "Dubhe Engine",
+          "subtitle": "80% Code Auto-Generation",
+          "description": "The only development toolkit that auto-generates 80% of Move code, letting developers focus on core business logic",
+          "features": [
+            "Reduce dev time from months to weeks",
+            "90% lower infrastructure costs",
+            "One command deploys to all Move chains"
+          ],
+          "highlight": "10x Faster Development"
+        },
+        "channel": {
+          "title": "Dubhe Channel",
+          "subtitle": "Web2-Level Real-Time Experience",
+          "description": "Real-time programmable P2P interaction layer that makes blockchain feel like Web2",
+          "features": [
+            "Instant frontend rendering",
+            "Ultra-fast execution speed",
+            "Supports multi-client mobile, desktop, and web"
+          ],
+          "highlight": "<50ms Latency"
+        },
+        "os": {
+          "title": "Dubhe OS",
+          "subtitle": "Cross-Chain Interoperability OS",
+          "description": "Blockchain operating system with native cross-chain support and developer incentive mechanisms",
+          "features": [
+            "Single codebase, all Move chains",
+            "Built-in developer rewards",
+            "Bridge to Multi-Chains ecosystems"
+          ],
+          "highlight": "Native Multi-Chain"
+        }
+      }
+    },
+    "networkArchitecture": {
+      "badge": "NETWORK ARCHITECTURE",
+      "title": "The Complete Move Development Stack",
+      "description": "From development tools to real-time interaction channels and decentralized infrastructure - Dubhe provides everything needed to build the next generation of fully on-chain applications.",
+      "keyMetricsTitle": "Key Metrics",
+      "keyMetrics": [
+        "10M+ transactions processed",
+        "<200ms average latency",
+        "Web2-level user experience",
+        "Compatible with Sui, Aptos, Rooch, Movement, Initia"
+      ],
+      "moveEcosystemTitle": "Move Ecosystem",
+      "moveEcosystemFeatures": [
+        "1,555 active Move developers",
+        "Growing 40% monthly",
+        "Less than 3 years old",
+        "Huge growth potential"
+      ],
+      "pipelining": "Pipelining",
+      "architectureLayers": {
+        "moveApplications": {
+          "title": "Move Applications",
+          "subtitle": "Your dApps & Games",
+          "description": "Build complex decentralized applications with Move's safety and flexibility",
+          "features": ["DeFi Protocols", "Gaming Apps", "NFT Platforms", "Social dApps"]
+        },
+        "dubheEngine": {
+          "title": "Dubhe Engine",
+          "subtitle": "Development Toolkit",
+          "description": "Auto-generates 80% of code and provides complete developer toolchain",
+          "features": ["Code Generation", "Schema-Based Development", "Multi-Chain Deployment", "Dev Environment"]
+        },
+        "dubheChannel": {
+          "title": "Dubhe Channel",
+          "subtitle": "Real-time Layer",
+          "description": "P2P interaction layer for Web2-level real-time user experience",
+          "features": ["<50ms Latency", "Real-time Sync", "P2P Communication", "Mobile Support"]
+        },
+        "dubheOS": {
+          "title": "Dubhe OS",
+          "subtitle": "Cross-Chain Infrastructure",
+          "description": "Decentralized operating system with native multi-chain interoperability",
+          "features": ["Cross-Chain Bridges", "Unified State", "Developer Incentives", "Governance"]
+        }
+      },
+      "completeStackSolution": {
+        "title": "Complete Stack Solution",
+        "description": "Dubhe is the first and only platform that provides a complete, integrated solution for Move ecosystem development - from code generation to real-time user experience."
+      },
+      "technicalFeatures": {
+        "securityFirst": {
+          "title": "Security First",
+          "description": "Move's formal verification ensures bug-free smart contracts"
+        },
+        "highPerformance": {
+          "title": "High Performance",
+          "description": "Parallel execution and optimized runtime for maximum throughput"
+        },
+        "composable": {
+          "title": "Composable",
+          "description": "Modular architecture allows easy integration and customization"
+        },
+        "unifiedState": {
+          "title": "Unified State",
+          "description": "Single source of truth across all chains and applications"
+        }
+      }
+    },
+    "networkStats": {
+      "title": "Network Statistics",
+      "description": "Real-time metrics showcasing the growth and activity across the Dubhe ecosystem.",
+      "transactions": {
+        "label": "Transactions Processed",
+        "change": "+12.5%"
+      },
+      "operations": {
+        "label": "Operations Executed",
+        "change": "+18.2%"
+      },
+      "users": {
+        "label": "Active Users",
+        "change": "+25.1%"
+      },
+      "income": {
+        "label": "Protocol Revenue",
+        "change": "+15.8%"
+      }
     }
   },
   "foundation": {
@@ -141,13 +387,33 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Dubhe. All rights reserved.",
+    "description": "The complete Move development platform with 80% code auto-generation, real-time P2P channels, and cross-chain interoperability.",
+    "sections": {
+      "learn": "Learn",
+      "build": "Build",
+      "ecosystem": "Ecosystem",
+      "media": "Media",
+      "community": "Community"
+    },
     "links": {
-      "about": "About",
+      "documentation": "Documentation",
+      "engine": "Engine",
+      "channel": "Channel",
+      "os": "OS",
+      "foundation": "Foundation",
+      "labs": "Labs",
+      "grants": "Grants",
+      "incubation": "Incubation",
+      "proposal": "Proposal",
+      "ambassador": "Ambassador",
+      "moderators": "Moderators",
+      "events": "Events",
       "contact": "Contact",
+      "about": "About",
       "terms": "Terms of Service",
       "privacy": "Privacy Policy"
-    }
+    },
+    "copyright": "© 2025 Dubhe. All rights reserved."
   },
   "team": {
     "hero": {
@@ -164,6 +430,50 @@
       "title": "Leadership Team",
       "description": "Meet the visionaries and experts leading Dubhe's mission to revolutionize Move development",
       "expertise": "Expertise"
+    },
+    "members": {
+      "jason": {
+        "name": "Jason",
+        "role": "Foundation Lead",
+        "location": "San Francisco, CA",
+        "bio": "Visionary leader with 15+ years in blockchain technology. Previously led engineering teams at major tech companies before founding Dubhe to revolutionize Move development.",
+        "expertise": ["Blockchain Architecture", "Team Leadership", "Product Strategy"]
+      },
+      "joan": {
+        "name": "Joan", 
+        "role": "CTO & Co-founder",
+        "location": "New York, NY",
+        "bio": "Former Move core developer with deep expertise in smart contract architecture. Leads our technical vision and oversees all engineering initiatives.",
+        "expertise": ["Move Language", "Smart Contracts", "System Architecture"]
+      },
+      "david": {
+        "name": "David",
+        "role": "Head of Engineering", 
+        "location": "Seoul, South Korea",
+        "bio": "Full-stack engineer passionate about developer tools and ecosystem growth. Leads our engine development team and drives technical innovation.",
+        "expertise": ["Full-stack Development", "Developer Tools", "Open Source"]
+      },
+      "bonnie": {
+        "name": "Bonnie",
+        "role": "Head of Community",
+        "location": "Barcelona, Spain", 
+        "bio": "Community builder with extensive experience growing developer ecosystems. Manages our global community initiatives and ambassador program.",
+        "expertise": ["Community Building", "Developer Relations", "Event Management"]
+      },
+      "liam": {
+        "name": "Liam McKenzie",
+        "role": "Head of Partnerships",
+        "location": "London, UK",
+        "bio": "Business development expert focused on strategic partnerships and ecosystem growth. Previously led partnerships at major blockchain companies.",
+        "expertise": ["Strategic Partnerships", "Business Development", "Ecosystem Growth"]
+      },
+      "emily": {
+        "name": "Emily Smith", 
+        "role": "Research Director",
+        "location": "Beijing, China",
+        "bio": "PhD in Computer Science specializing in distributed systems. Leads our research initiatives and explores cutting-edge blockchain technologies.",
+        "expertise": ["Distributed Systems", "Research", "Academic Partnerships"]
+      }
     },
     "join": {
       "title": "Join Our Team",
@@ -340,9 +650,1111 @@
       "title": "Bad Gateway",
       "description": "There's a problem with our server connection.",
       "suggestion": "This is usually temporary. Please try again in a few moments."
+    },
+    "common": {
+      "tryAgain": "Try Again",
+      "goHome": "Go to Homepage",
+      "contactSupport": "Contact Support"
+    },
+    "status": {
+      "400": "Bad Request",
+      "401": "Unauthorized",
+      "403": "Forbidden",
+      "404": "Not Found",
+      "405": "Method Not Allowed",
+      "429": "Too Many Requests",
+      "500": "Internal Server Error",
+      "502": "Bad Gateway",
+      "503": "Service Unavailable",
+      "504": "Gateway Timeout",
+      "default": "Error"
+    }
+  },
+  "incubation": {
+    "hero": {
+      "badge": "Dubhe Foundation Incubation",
+      "title": "Build the Next Unicorn Startup",
+      "subtitle": "Join our collaborative incubation ecosystem supported by Dubhe Foundation, co-incubated with Obelisk Labs and ecosystem VCs to build the next generation of Move startups.",
+      "stats": {
+        "funding": {
+          "value": "Coming Soon",
+          "label": "Total Funding"
+        },
+        "startups": {
+          "value": "Coming Soon", 
+          "label": "Startups Incubated"
+        },
+        "unicorns": {
+          "value": "Coming Soon",
+          "label": "Unicorns Created"
+        },
+        "success": {
+          "value": "Coming Soon",
+          "label": "Success Rate"
+        }
+      },
+      "cta": {
+        "apply": "Apply Now",
+        "learn": "Learn More"
+      }
+    },
+    "programs": {
+      "accelerator": {
+        "title": "Foundation Accelerator",
+        "duration": "3 months",
+        "funding": "Up to $500K",
+        "description": "Dubhe Foundation-backed intensive program co-incubated with Obelisk Labs and ecosystem VCs",
+        "benefits": ["Dubhe Foundation funding", "Obelisk Labs co-incubation", "Move development support", "Ecosystem VC partnerships"]
+      },
+      "studio": {
+        "title": "Collaborative Studio",
+        "duration": "6-12 months",
+        "funding": "Up to $1M", 
+        "description": "Co-incubated by Dubhe Foundation, Obelisk Labs, and ecosystem VCs with shared resources",
+        "benefits": ["Multi-partner co-incubation", "Shared technical resources", "Cross-project collaboration", "Ecosystem VC networks"]
+      },
+      "scale": {
+        "title": "Ecosystem Scale",
+        "duration": "6 months",
+        "funding": "Up to $2M",
+        "description": "Scale with comprehensive support from Dubhe Foundation, Obelisk Labs, and ecosystem VC partners",
+        "benefits": ["Co-incubation network", "Strategic introductions", "Global market access", "Enterprise VC connections"]
+      }
+    },
+    "resources": {
+      "coIncubation": {
+        "title": "Multi-Partner Co-Incubation",
+        "description": "Joint guidance from Dubhe Foundation, Obelisk Labs, and ecosystem VCs"
+      },
+      "infrastructure": {
+        "title": "Shared Infrastructure",
+        "description": "Access to Obelisk Labs infrastructure and ecosystem VC resources"
+      },
+      "integration": {
+        "title": "Ecosystem Integration",
+        "description": "Direct integration with Dubhe projects and partner networks"
+      },
+      "development": {
+        "title": "Collaborative Development",
+        "description": "Technical support from Dubhe Foundation and Obelisk Labs engineering teams"
+      },
+      "demoDays": {
+        "title": "Partner Demo Days",
+        "description": "Present to Dubhe Foundation board and ecosystem VC networks"
+      },
+      "network": {
+        "title": "Ecosystem Network",
+        "description": "Access to the entire Dubhe and partner company ecosystem"
+      }
+    }
+  },
+  "ambassador": {
+    "benefits": {
+      "exclusiveAccess": {
+        "title": "Exclusive Access",
+        "description": "Get early access to new features, products, and announcements before the public release"
+      },
+      "directCommunication": {
+        "title": "Direct Communication",
+        "description": "Regular communication with the Dubhe Foundation and influence on product roadmap decisions"
+      },
+      "recognition": {
+        "title": "Recognition & Rewards",
+        "description": "Special recognition in community, exclusive merchandise, and token rewards for contributions"
+      },
+      "globalNetwork": {
+        "title": "Global Network",
+        "description": "Connect with like-minded individuals and build relationships within the global Dubhe community"
+      }
+    },
+    "requirements": [
+      "Active member in Dubhe community for at least 3 months",
+      "Strong understanding of Move blockchain technology", 
+      "Experience in community building or content creation",
+      "Commitment to promote Dubhe ecosystem positively",
+      "Available for at least 10 hours per week",
+      "Proficient in English and at least one other language"
+    ],
+    "responsibilities": {
+      "communityEngagement": {
+        "title": "Community Engagement",
+        "tasks": [
+          "Moderate community discussions and maintain positive environment",
+          "Answer technical questions and help newcomers",
+          "Organize local meetups and online events",
+          "Create engaging content (tutorials, articles, videos)"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Ecosystem Growth",
+        "tasks": [
+          "Identify and onboard new developers to Dubhe",
+          "Collaborate with other ambassadors on global initiatives",
+          "Provide feedback on products and documentation",
+          "Represent Dubhe at blockchain conferences and events"
+        ]
+      },
+      "contentCreation": {
+        "title": "Content Creation",
+        "tasks": [
+          "Write technical tutorials and guides",
+          "Create video content explaining Dubhe features",
+          "Translate documentation to local languages",
+          "Share ecosystem updates on social media"
+        ]
+      }
     }
   },
   "LocaleSwitcher": {
-    "label": "Change language"
+    "label": "Languages"
+  },
+  "labs": {
+    "hero": {
+      "badge": "Dubhe Development Labs",
+      "title1": "Collaborative",
+      "title2": "Innovation Labs",
+      "subtitle": "Multiple specialized development teams working together under the Dubhe Foundation to build the future of Move-based blockchain infrastructure, just like Polkadot JAM.",
+      "stats": {
+        "activeLabs": "Active Labs",
+        "coreEngineers": "Core Engineers",
+        "unifiedVision": "Unified Protocol Vision"
+      },
+      "cta1": "Explore Labs",
+      "cta2": "Join a Lab"
+    },
+    "overview": {
+      "badge": "Development Teams",
+      "title": "Specialized Labs Unified Vision",
+      "description": "Each lab brings unique expertise while working towards a common goal of advancing the Dubhe ecosystem",
+      "visitLab": "Visit Lab",
+      "keyContributions": "Key Contributions"
+    },
+    "labsList": {
+      "obelisk": {
+        "name": "Obelisk Labs",
+        "focus": "Core Protocol Development",
+        "description": "Leading the development of Dubhe's core blockchain protocol and Move language infrastructure. Focused on consensus mechanisms, smart contract optimization, and developer tooling.",
+        "contributions": [
+          "Dubhe Core Protocol Architecture",
+          "Move Language Runtime Optimization",
+          "Smart Contract Execution Engine",
+          "Developer SDK and Toolchain",
+          "Cross-chain Consensus Mechanisms"
+        ],
+        "status": "Active",
+        "team": "12 Engineers"
+      },
+      "cyferio": {
+        "name": "Cyferio Labs",
+        "focus": "Privacy & Zero-Knowledge",
+        "description": "Specializing in privacy-preserving technologies, zero-knowledge proofs, and cryptographic protocols for the Dubhe ecosystem. Building the next generation of private smart contracts.",
+        "contributions": [
+          "Zero-Knowledge Proof Systems",
+          "Privacy-Preserving Smart Contracts",
+          "Cryptographic Protocol Design",
+          "Confidential Computing Solutions",
+          "Anonymous Transaction Systems"
+        ],
+        "status": "Active",
+        "team": "8 Researchers"
+      },
+      "network": {
+        "name": "Dubhe Network Labs",
+        "focus": "Infrastructure & Scaling",
+        "description": "Building high-performance networking solutions, real-time communication protocols, and scalability infrastructure for the Dubhe ecosystem.",
+        "contributions": [
+          "High-Performance P2P Networking",
+          "Real-time Channel Communication",
+          "Scalable Node Architecture",
+          "Network Protocol Optimization",
+          "Cross-Chain Bridge Infrastructure"
+        ],
+        "status": "Development",
+        "team": "6 Engineers"
+      },
+      "bridge": {
+        "name": "Dubhe Bridge Labs",
+        "focus": "Cross-Chain Technology",
+        "description": "Developing universal bridging protocols and interoperability solutions to connect Dubhe with other blockchain ecosystems seamlessly.",
+        "contributions": [
+          "Universal Bridge Protocol",
+          "Cross-Chain Asset Transfer",
+          "Multi-Chain Governance",
+          "Interoperability Standards",
+          "Bridge Security Mechanisms"
+        ],
+        "status": "Research",
+        "team": "4 Engineers"
+      }
+    },
+    "research": {
+      "badge": "Research Focus",
+      "title": "Collaborative Research Areas",
+      "areas": {
+        "protocol": {
+          "title": "Protocol Development",
+          "description": "Core blockchain protocols, consensus mechanisms, and Move language enhancements",
+          "teams": ["Obelisk Labs"]
+        },
+        "infrastructure": {
+          "title": "Infrastructure & Scaling",
+          "description": "High-performance networking, real-time communication, and scalability solutions",
+          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+        },
+        "crossChain": {
+          "title": "Cross-Chain Technology",
+          "description": "Interoperability protocols, universal bridging, and multi-chain governance",
+          "teams": ["Dubhe Bridge Labs"]
+        },
+        "privacy": {
+          "title": "Privacy & Security",
+          "description": "Zero-knowledge proofs, privacy-preserving protocols, and cryptographic research",
+          "teams": ["Cyferio Labs"]
+        }
+      },
+      "contributingLabs": "Contributing Labs:"
+    },
+    "collaboration": {
+      "title": "Collaborative Development Process",
+      "description": "How multiple labs coordinate to deliver unified protocol implementations",
+      "phases": {
+        "research": {
+          "title": "Research",
+          "description": "Collaborative research and protocol design across all teams"
+        },
+        "development": {
+          "title": "Development",
+          "description": "Parallel implementation with shared standards and interfaces"
+        },
+        "testing": {
+          "title": "Testing",
+          "description": "Cross-team integration testing and validation"
+        },
+        "deployment": {
+          "title": "Deployment",
+          "description": "Coordinated rollout and ecosystem integration"
+        }
+      }
+    },
+    "cta": {
+      "title": "Join the Innovation",
+      "description": "Be part of building the future of Move-based blockchain infrastructure",
+      "apply": "Apply to Labs",
+      "positions": "View Open Positions"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Contact Us",
+      "title1": "Get in",
+      "title2": "Touch",
+      "subtitle": "Have questions about Dubhe? Want to partner with us? We'd love to hear from you."
+    },
+    "form": {
+      "title": "Send us a message",
+      "validationError": "Validation error",
+      "sendError": "Failed to send message. Please try again.",
+      "networkError": "Network error. Please check your connection and try again.",
+      "sending": "Sending...",
+      "submit": "Send Message",
+      "success": {
+        "title": "Message sent!",
+        "message": "We'll get back to you within 24-48 hours.",
+        "sendAnother": "Send another message"
+      },
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "your@email.com"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Select a subject",
+          "options": {
+            "general": "General Inquiry",
+            "partnership": "Partnership",
+            "investment": "Investment Inquiry",
+            "grants": "Grant Application",
+            "foundationJobs": "Foundation Jobs",
+            "technical": "Technical Support",
+            "media": "Media & Press"
+          }
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Tell us about your project, inquiry, or how we can help..."
+        }
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "Whether you're a developer, investor, or just curious about Dubhe, we're here to help. Reach out through any of the channels below.",
+      "email": {
+        "title": "Email"
+      },
+      "business": {
+        "title": "Business Inquiries"
+      },
+      "location": {
+        "title": "Location",
+        "content": "Global, Decentralized"
+      },
+      "responseTime": {
+        "title": "Response Time",
+        "content": "24-48 hours"
+      }
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "grant": "Apply for a Grant",
+      "incubation": "Join Incubation Program",
+      "ambassador": "Become an Ambassador",
+      "documentation": "Read Documentation"
+    }
+  },
+  "events": {
+    "hero": {
+      "badge": "Event Calendar",
+      "title": "Upcoming events",
+      "subtitle": "Participate in Dubhe-hosted events, industry conferences, community meetups, developer workshops, and more."
+    },
+    "filters": {
+      "search": {
+        "placeholder": "Search"
+      },
+      "categories": {
+        "all": "All",
+        "ama": "AMA",
+        "workshop": "Workshop",
+        "meetup": "Meetup"
+      },
+      "sort": {
+        "date": "Sort: Date",
+        "name": "Sort: Name",
+        "location": "Sort: Location"
+      }
+    },
+    "table": {
+      "headers": {
+        "date": "Date",
+        "name": "Name",
+        "location": "Location",
+        "category": "Category"
+      },
+      "noEvents": "No events found matching your criteria."
+    },
+    "eventsList": {
+      "engineWorkshop": {
+        "name": "Dubhe Engine Developer Workshop",
+        "location": "Online",
+        "category": "Workshop",
+        "description": "Deep dive into Dubhe Engine architecture and development best practices"
+      },
+      "moveAma": {
+        "name": "Move Ecosystem AMA with Dubhe Foundation",
+        "location": "Online",
+        "category": "AMA",
+        "description": "Ask us anything about Dubhe protocol, roadmap, and ecosystem development"
+      },
+      "sfMeetup": {
+        "name": "Dubhe Community Meetup - San Francisco",
+        "location": "San Francisco, CA",
+        "category": "Meetup",
+        "description": "Network with Dubhe developers and community members in the Bay Area"
+      },
+      "zkWorkshop": {
+        "name": "Zero-Knowledge Privacy Solutions Workshop",
+        "location": "Online",
+        "category": "Workshop",
+        "description": "Learn about ZK proofs and privacy-preserving protocols in the Dubhe ecosystem"
+      }
+    },
+    "community": {
+      "title": "Join Our Global Community",
+      "description": "Connect with developers, enthusiasts, and innovators from around the world at our events",
+      "stats": {
+        "eventsThisYear": "Events This Year",
+        "attendees": "Attendees",
+        "countries": "Countries",
+        "speakers": "Speakers"
+      }
+    }
+  },
+  "moderators": {
+    "hero": {
+      "badge": "Moderator Program",
+      "title1": "Community",
+      "title2": "Moderators",
+      "subtitle": "Help maintain a safe, welcoming, and productive environment for our global community. Join our team of dedicated moderators who ensure quality discussions and support all members.",
+      "stats": {
+        "coverage": "Coverage",
+        "activeModerators": "Active Moderators",
+        "membersProtected": "Members Protected"
+      },
+      "cta1": "Apply to Moderate",
+      "cta2": "Guidelines"
+    },
+    "responsibilitiesSection": {
+      "badge": "Key Responsibilities",
+      "title": "What Moderators Do"
+    },
+    "responsibilities": {
+      "communityModeration": {
+        "title": "Community Moderation",
+        "description": "Maintain healthy discussions, enforce community guidelines, and ensure a welcoming environment for all members"
+      },
+      "securitySafety": {
+        "title": "Security & Safety",
+        "description": "Identify and prevent spam, scams, and malicious activities to protect community members"
+      },
+      "memberSupport": {
+        "title": "Member Support",
+        "description": "Help newcomers get started, answer questions, and guide users to appropriate resources"
+      },
+      "contentCuration": {
+        "title": "Content Curation",
+        "description": "Highlight quality content, organize information, and maintain the quality of community discussions"
+      }
+    },
+    "moderatorsSection": {
+      "title": "Meet Our Moderators",
+      "description": "Our dedicated team ensures 24/7 coverage across all time zones and platforms",
+      "timezone": "Timezone",
+      "platforms": "Platforms",
+      "languages": "Languages"
+    },
+    "toolsSection": {
+      "title": "Moderation Tools"
+    },
+    "tools": {
+      "discord": {
+        "features": [
+          "Message management",
+          "User timeout/ban",
+          "Channel oversight",
+          "Bot integration"
+        ]
+      },
+      "telegram": {
+        "features": [
+          "Group moderation",
+          "Spam filtering",
+          "User verification",
+          "Automated responses"
+        ]
+      },
+      "forum": {
+        "features": [
+          "Thread management",
+          "Content moderation",
+          "User ranking",
+          "Report handling"
+        ]
+      }
+    },
+    "requirementsSection": {
+      "title": "Requirements",
+      "guidelinesTitle": "Moderation Guidelines"
+    },
+    "requirements": [
+      "Active community member for at least 3 months",
+      "Deep understanding of Dubhe ecosystem and Move technology",
+      "Excellent communication and conflict resolution skills",
+      "Available for moderation duties across different time zones",
+      "Previous moderation experience preferred",
+      "Commitment to fair and impartial decision making"
+    ],
+    "guidelines": {
+      "communication": {
+        "category": "Communication",
+        "rules": [
+          "Treat all community members with respect and courtesy",
+          "Use clear, professional language in all interactions",
+          "De-escalate conflicts and promote constructive dialogue",
+          "Be patient with newcomers and provide helpful guidance"
+        ]
+      },
+      "enforcement": {
+        "category": "Enforcement",
+        "rules": [
+          "Apply community rules consistently and fairly",
+          "Document all moderation actions with clear reasoning",
+          "Escalate complex issues to senior moderators or admins",
+          "Review and appeal processes should be transparent"
+        ]
+      },
+      "privacySecurity": {
+        "category": "Privacy & Security",
+        "rules": [
+          "Protect user privacy and personal information",
+          "Never share moderation tools or credentials",
+          "Report security vulnerabilities immediately",
+          "Maintain confidentiality of internal discussions"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to Help Our Community?",
+      "description": "Join our moderation team and help create a safe, welcoming environment for all",
+      "apply": "Apply Now",
+      "guidelines": "View Guidelines"
+    }
+  },
+  "engine": {
+    "hero": {
+      "badge": "Dubhe Engine",
+      "title1": "80% Code",
+      "title2": "Auto-Generation",
+      "subtitle": "Schema-based development platform that generates smart contracts, APIs, and UI components automatically. Focus on what matters - your unique business logic.",
+      "stats": {
+        "codeAutoGenerated": "Code Auto-Generated",
+        "fasterDevelopment": "Faster Development",
+        "moveEcosystem": "Move Ecosystem"
+      },
+      "cta1": "Start Building",
+      "cta2": "View Documentation"
+    },
+    "featuresSection": {
+      "badge": "Core Features",
+      "title": "Build Faster, Ship Sooner",
+      "description": "Dubhe Engine handles the heavy lifting so you can focus on innovation"
+    },
+    "features": {
+      "codeGeneration": {
+        "title": "80% Code Auto-Generation",
+        "description": "Dramatically reduce development time with intelligent code generation that handles boilerplate, data structures, and common patterns automatically.",
+        "details": [
+          "Schema-driven code generation",
+          "Automatic API endpoint creation",
+          "Smart contract scaffolding",
+          "UI component generation"
+        ]
+      },
+      "schemaBased": {
+        "title": "Schema-Based Development",
+        "description": "Define your data structures once and let Dubhe Engine generate everything else. Changes propagate automatically across your entire application.",
+        "details": [
+          "Single source of truth",
+          "Automatic type safety",
+          "Real-time validation",
+          "Cross-platform compatibility"
+        ]
+      },
+      "realTimeToolchain": {
+        "title": "Real-Time DApp Toolchain",
+        "description": "Build fully on-chain applications with real-time capabilities. From game state to financial applications, everything happens instantly.",
+        "details": [
+          "Sub-second transaction finality",
+          "Real-time state synchronization",
+          "Event-driven architecture",
+          "Optimistic UI updates"
+        ]
+      },
+      "multiChain": {
+        "title": "Multi-Chain Support",
+        "description": "Deploy across multiple Move-based chains without changing your code. Write once, deploy everywhere.",
+        "details": [
+          "Sui network integration",
+          "Aptos compatibility",
+          "Movement network support",
+          "Cross-chain state management"
+        ]
+      }
+    },
+    "workflowSection": {
+      "badge": "Development Workflow",
+      "title": "From Idea to Production in 4 Simple Steps"
+    },
+    "workflow": {
+      "defineSchema": {
+        "title": "Define Schema",
+        "description": "Create your data models and business logic using our intuitive schema definition language"
+      },
+      "generateCode": {
+        "title": "Generate Code",
+        "description": "Dubhe Engine automatically generates 80% of your application code including smart contracts and APIs"
+      },
+      "customizeLogic": {
+        "title": "Customize Logic",
+        "description": "Focus on the unique 20% - your business logic, custom features, and user experience"
+      },
+      "deployInstantly": {
+        "title": "Deploy Instantly",
+        "description": "One-click deployment to multiple Move chains with automatic optimization and monitoring"
+      }
+    },
+    "cta": {
+      "title": "Ready to 10x Your Development Speed?",
+      "description": "Join developers building the future of fully on-chain applications",
+      "getStarted": "Get Started Free",
+      "scheduleDemo": "Schedule Demo"
+    }
+  },
+  "channel": {
+    "badge": "Dubhe Channel",
+    "hero": {
+      "title": "Real-Time P2P",
+      "titleHighlight": "Interaction Layer",
+      "subtitle": "Web2-level user experience with Web3 infrastructure. Sub-50ms latency for gaming, social platforms, and trading applications built on Move blockchains.",
+      "metrics": {
+        "latency": "Latency",
+        "users": "Concurrent Users",
+        "uptime": "Uptime"
+      },
+      "cta1": "Join Network",
+      "cta2": "Technical Docs"
+    },
+    "features": {
+      "badge": "Core Features",
+      "title": "Real-Time Infrastructure",
+      "subtitle": "for Modern DApps",
+      "description": "Built for applications that demand instant responsiveness and seamless user experiences",
+      "items": {
+        "latency": {
+          "title": "Sub-50ms Latency",
+          "description": "Real-time P2P interactions with Web2-level responsiveness. Built for gaming, trading, and social applications that demand instant feedback.",
+          "details": [
+            "WebRTC-based communication",
+            "Optimized routing algorithms",
+            "Edge node distribution",
+            "Predictive state synchronization"
+          ]
+        },
+        "network": {
+          "title": "Scalable P2P Network",
+          "description": "Horizontal scaling that grows with your user base. From hundreds to millions of concurrent connections without performance degradation.",
+          "details": [
+            "Dynamic peer discovery",
+            "Load balancing protocols",
+            "Mesh network topology",
+            "Auto-scaling infrastructure"
+          ]
+        },
+        "security": {
+          "title": "Secure by Default",
+          "description": "End-to-end encryption and cryptographic verification ensure your data and interactions remain private and tamper-proof.",
+          "details": [
+            "E2E encryption protocols",
+            "Zero-knowledge proofs",
+            "Cryptographic signatures",
+            "Decentralized verification"
+          ]
+        },
+        "experience": {
+          "title": "Web2 UX, Web3 Backend",
+          "description": "Familiar user experience powered by decentralized infrastructure. Users get the best of both worlds without compromise.",
+          "details": [
+            "Seamless wallet integration",
+            "Gasless transactions",
+            "Progressive Web App support",
+            "Mobile-first design"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "badge": "Use Cases",
+      "title": "Built for Real-Time Applications",
+      "items": {
+        "gaming": {
+          "title": "Real-Time Gaming",
+          "description": "Multiplayer games with instant response times",
+          "metrics": ["<50ms latency", "1M+ concurrent players", "99.9% uptime"]
+        },
+        "social": {
+          "title": "Social Platforms",
+          "description": "Decentralized social networks with real-time messaging",
+          "metrics": ["Instant messaging", "Live video calls", "Group chats"]
+        },
+        "trading": {
+          "title": "Trading Applications",
+          "description": "High-frequency trading with real-time price feeds",
+          "metrics": ["Real-time data", "Order book updates", "Price discovery"]
+        }
+      }
+    },
+    "architecture": {
+      "title": "Network Architecture",
+      "description": "Multi-layered approach for optimal performance and scalability",
+      "layers": {
+        "application": {
+          "title": "Application Layer",
+          "description": "Your DApp connects through simple APIs"
+        },
+        "channel": {
+          "title": "Channel Layer",
+          "description": "Real-time P2P communication protocol"
+        },
+        "network": {
+          "title": "Network Layer",
+          "description": "Distributed node infrastructure"
+        },
+        "blockchain": {
+          "title": "Blockchain Layer",
+          "description": "Move-based settlement and verification"
+        }
+      }
+    },
+    "network": {
+      "title": "Global P2P Network",
+      "description": "Dubhe constellation network connecting nodes worldwide for ultra-low latency communication",
+      "status": {
+        "title": "NETWORK STATUS",
+        "online": "ONLINE",
+        "latency": "Latency: <50ms"
+      },
+      "nodes": {
+        "title": "ACTIVE NODES",
+        "connected": "7/7 Connected"
+      }
+    },
+    "cta": {
+      "title": "Ready for Real-Time DApps?",
+      "subtitle": "Join the network powering the next generation of interactive applications",
+      "primary": "Connect to Network",
+      "secondary": "View API Docs"
+    }
+  },
+  "os": {
+    "badge": "Dubhe OS",
+    "hero": {
+      "title": "Cross-Chain",
+      "titleHighlight": "Move Ecosystem",
+      "subtitle": "Unified ecosystem connecting Move-based blockchains with cross-chain governance, universal bridging, and shared security across the entire network.",
+      "stats": {
+        "multiChain": {
+          "value": "Multi-Chain",
+          "label": "Move Ecosystem"
+        },
+        "universal": {
+          "value": "Universal",
+          "label": "Token Economy"
+        },
+        "unified": {
+          "value": "Unified",
+          "label": "Governance"
+        }
+      },
+      "cta": {
+        "primary": "Join Ecosystem",
+        "secondary": "Learn More"
+      }
+    },
+    "features": {
+      "badge": "Ecosystem Features",
+      "title": "One Token, Multiple Chains",
+      "subtitle": "Unified Experience",
+      "description": "Seamlessly interact across the entire Move ecosystem with shared governance and universal bridging",
+      "items": {
+        "token": {
+          "title": "Native Token Ecosystem",
+          "description": "Unified token economy powering the entire ecosystem with governance, staking, and utility features across all connected chains.",
+          "details": [
+            "Cross-chain governance voting",
+            "Staking rewards and yields",
+            "Transaction fee payments",
+            "Developer incentive programs"
+          ]
+        },
+        "bridging": {
+          "title": "Universal Bridging",
+          "description": "Seamless asset transfers between Move-based chains with instant finality and minimal fees.",
+          "details": [
+            "Sui ↔ Aptos bridging",
+            "Movement network support",
+            "Atomic cross-chain swaps",
+            "Liquidity pool management"
+          ]
+        },
+        "governance": {
+          "title": "Decentralized Governance",
+          "description": "Community-driven decision making for protocol upgrades, treasury management, and ecosystem development.",
+          "details": [
+            "Proposal submission system",
+            "Weighted voting mechanisms",
+            "Treasury fund allocation",
+            "Protocol parameter updates"
+          ]
+        },
+        "security": {
+          "title": "Unified Security Model",
+          "description": "Shared security framework providing protection across all connected chains and applications.",
+          "details": [
+            "Cross-chain validation",
+            "Slashing mechanisms",
+            "Fraud proof systems",
+            "Emergency response protocols"
+          ]
+        }
+      }
+    },
+    "chains": {
+      "badge": "Supported Networks",
+      "title": "Multi-Chain Move Ecosystem",
+      "items": {
+        "sui": {
+          "name": "Sui Network",
+          "status": "Live",
+          "features": ["High throughput", "Object-centric model", "Move language"]
+        },
+        "aptos": {
+          "name": "Aptos",
+          "status": "Live",
+          "features": ["Parallel execution", "Move VM", "Safe smart contracts"]
+        },
+        "movement": {
+          "name": "Movement",
+          "status": "Integration",
+          "features": ["EVM compatibility", "Move runtime", "Modular architecture"]
+        },
+        "future": {
+          "name": "Future Chains",
+          "status": "Planned",
+          "features": ["Community driven", "Move-based", "Ecosystem expansion"]
+        }
+      }
+    },
+    "cta": {
+      "title": "Join the Move Ecosystem",
+      "subtitle": "Be part of the unified cross-chain Move ecosystem",
+      "primary": "Join Ecosystem",
+      "secondary": "Governance Portal"
+    }
+  },
+  "proposal": {
+    "badge": "Dubhe OpenGov",
+    "hero": {
+      "title": "Shape the Future",
+      "titleHighlight": "Together",
+      "subtitle": "Submit proposals through DubheOS to request treasury funding, upgrade the runtime, or participate in governance using Polkadot's OpenGov framework with conviction voting.",
+      "cta": {
+        "primary": "DubheOS Devnet",
+        "secondary": "View All Referenda"
+      }
+    },
+    "types": {
+      "badge": "Proposal Categories",
+      "title": "Types of Governance Proposals",
+      "exampleLabel": "Example proposals",
+      "treasury": {
+        "title": "Treasury Spending",
+        "description": "Request funding from Dubhe Treasury for development projects and initiatives",
+        "examples": [
+          "Development grants",
+          "Infrastructure funding",
+          "Research projects"
+        ]
+      },
+      "governance": {
+        "title": "Governance Changes",
+        "description": "Modifications to voting mechanisms, treasury management, and governance parameters",
+        "examples": [
+          "Voting thresholds",
+          "Referendum parameters",
+          "Track configurations"
+        ]
+      },
+      "runtime": {
+        "title": "Runtime Upgrades",
+        "description": "Protocol improvements and runtime modifications requiring governance approval",
+        "examples": [
+          "Pallet upgrades",
+          "Runtime optimizations",
+          "New features"
+        ]
+      },
+      "emergency": {
+        "title": "Emergency Actions",
+        "description": "Time-sensitive proposals for security issues and critical protocol fixes",
+        "examples": [
+          "Security patches",
+          "Emergency updates",
+          "Critical bug fixes"
+        ]
+      }
+    },
+    "active": {
+      "title": "Active Referenda",
+      "subtitle": "Current referenda in various governance tracks with conviction voting"
+    },
+    "process": {
+      "title": "Governance Process",
+      "subtitle": "Step-by-step process for creating and voting on governance proposals"
+    },
+    "requirements": {
+      "title": "Proposal Requirements"
+    },
+    "cta": {
+      "title": "Ready to Participate?",
+      "subtitle": "Join the governance process and help shape the future of Dubhe",
+      "primary": "Access DubheOS",
+      "secondary": "OpenGov Guide"
+    }
+  },
+  "privacy": {
+    "badge": "Privacy Policy",
+    "hero": {
+      "title": "Your Privacy",
+      "titleHighlight": "Matters",
+      "subtitle": "Learn how Dubhe Foundation protects your privacy and handles your data with transparency and security.",
+      "lastUpdated": "Last updated: January 2025"
+    },
+    "introduction": {
+      "title": "Introduction",
+      "content": "At Dubhe Foundation, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform, services, and applications related to the Dubhe blockchain ecosystem."
+    },
+    "sections": {
+      "collection": {
+        "title": "Information We Collect",
+        "items": [
+          "Personal information you provide when using our services",
+          "Technical information about your device and network connection",
+          "Usage data and analytics to improve our platform",
+          "Wallet addresses and blockchain transaction data"
+        ]
+      },
+      "usage": {
+        "title": "How We Use Information",
+        "items": [
+          "To provide and improve our blockchain development platform",
+          "To process grant applications and incubation programs",
+          "To communicate about updates, events, and opportunities",
+          "To ensure platform security and prevent fraud"
+        ]
+      },
+      "protection": {
+        "title": "Data Protection",
+        "items": [
+          "We implement industry-standard security measures",
+          "All sensitive data is encrypted in transit and at rest",
+          "We never store private keys or sensitive wallet information",
+          "Regular security audits and compliance reviews"
+        ]
+      },
+      "sharing": {
+        "title": "Data Sharing",
+        "items": [
+          "We do not sell personal information to third parties",
+          "Limited sharing with service providers under strict agreements",
+          "Public blockchain data is inherently transparent",
+          "We may share data to comply with legal requirements"
+        ]
+      }
+    },
+    "rights": {
+      "title": "Your Privacy Rights",
+      "access": {
+        "title": "Access & Control",
+        "items": [
+          "Request access to your personal data",
+          "Correct inaccurate information",
+          "Delete your account and data",
+          "Export your data"
+        ]
+      },
+      "communication": {
+        "title": "Communication",
+        "items": [
+          "Opt out of marketing communications",
+          "Choose notification preferences",
+          "Control cookie settings",
+          "Request data processing limitations"
+        ]
+      }
+    },
+    "contact": {
+      "title": "Questions About Privacy?",
+      "description": "If you have any questions about this Privacy Policy or our data practices, please contact us."
+    }
+  },
+  "terms": {
+    "badge": "Terms of Service",
+    "hero": {
+      "title": "Terms of",
+      "titleHighlight": "Service",
+      "subtitle": "These terms govern your use of Dubhe services, platforms, and blockchain infrastructure.",
+      "lastUpdated": "Last updated: January 2025"
+    },
+    "introduction": {
+      "title": "Agreement Overview",
+      "content1": "Welcome to Dubhe! These Terms of Service (\"Terms\") form a legally binding agreement between you and Dubhe Foundation (\"we,\" \"us,\" or \"our\") regarding your use of our blockchain platform, development tools, and related services.",
+      "content2": "By using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If you are using our services on behalf of an organization, you represent that you have the authority to bind that organization to these Terms."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "items": [
+          "By accessing or using Dubhe services, you agree to be bound by these Terms",
+          "If you disagree with any part of these terms, you may not access our services",
+          "We may update these terms from time to time without prior notice",
+          "Your continued use constitutes acceptance of revised terms"
+        ]
+      },
+      "usage": {
+        "title": "Use of Services",
+        "items": [
+          "You must be at least 18 years old to use our services",
+          "You are responsible for maintaining the security of your account",
+          "You may not use our services for any illegal or unauthorized purpose",
+          "We reserve the right to terminate accounts that violate these terms"
+        ]
+      },
+      "intellectual": {
+        "title": "Intellectual Property",
+        "items": [
+          "Dubhe Foundation retains all rights to our proprietary technology",
+          "Open-source components are governed by their respective licenses",
+          "You retain ownership of content you create using our platform",
+          "You grant us license to use your content to provide our services"
+        ]
+      },
+      "disclaimers": {
+        "title": "Disclaimers & Limitations",
+        "items": [
+          "Our services are provided 'as is' without warranties of any kind",
+          "We are not liable for any indirect, incidental, or consequential damages",
+          "Blockchain transactions are irreversible and we cannot reverse them",
+          "You acknowledge the experimental nature of blockchain technology"
+        ]
+      }
+    },
+    "blockchain": {
+      "title": "Blockchain-Specific Terms",
+      "participation": {
+        "title": "Network Participation",
+        "items": [
+          "Transactions are recorded on public blockchains",
+          "Network fees apply to blockchain operations",
+          "Smart contracts are immutable once deployed",
+          "You are responsible for transaction accuracy"
+        ]
+      },
+      "risks": {
+        "title": "Risk Acknowledgment",
+        "items": [
+          "Blockchain technology is experimental",
+          "Token values can be highly volatile",
+          "Smart contracts may contain bugs",
+          "Network congestion may affect performance"
+        ]
+      }
+    },
+    "governance": {
+      "title": "Governing Law and Disputes",
+      "law": "These Terms shall be interpreted and governed in accordance with the laws of the jurisdiction where Dubhe Foundation is established, without regard to its conflict of law provisions.",
+      "disputes": "Any disputes arising from these Terms or your use of our services shall be resolved through binding arbitration in accordance with international arbitration rules.",
+      "modifications": "We reserve the right to modify these Terms at any time. Continued use of our services after changes constitutes acceptance of the modified Terms."
+    },
+    "contact": {
+      "title": "Questions About Terms?",
+      "description": "If you have any questions about these Terms of Service, please contact our legal team."
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Language"
   }
 }

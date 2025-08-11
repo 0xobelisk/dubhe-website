@@ -14,8 +14,10 @@ import {
   ExternalLink
 } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from 'next-intl'
 
 export default function AmbassadorPage() {
+  const t = useTranslations('ambassador')
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -25,62 +27,40 @@ export default function AmbassadorPage() {
   const benefits = [
     {
       icon: <Award className="w-6 h-6" />,
-      title: "Exclusive Access",
-      description: "Get early access to new features, products, and announcements before the public release"
+      title: t('benefits.exclusiveAccess.title'),
+      description: t('benefits.exclusiveAccess.description')
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Direct Communication",
-      description: "Regular communication with the Dubhe Foundation and influence on product roadmap decisions"
+      title: t('benefits.directCommunication.title'),
+      description: t('benefits.directCommunication.description')
     },
     {
       icon: <Star className="w-6 h-6" />,
-      title: "Recognition & Rewards",
-      description: "Special recognition in community, exclusive merchandise, and token rewards for contributions"
+      title: t('benefits.recognition.title'),
+      description: t('benefits.recognition.description')
     },
     {
       icon: <Globe className="w-6 h-6" />,
-      title: "Global Network",
-      description: "Connect with like-minded individuals and build relationships within the global Dubhe community"
+      title: t('benefits.globalNetwork.title'),
+      description: t('benefits.globalNetwork.description')
     }
   ]
 
-  const requirements = [
-    "Active member in Dubhe community for at least 3 months",
-    "Strong understanding of Move blockchain technology",
-    "Experience in community building or content creation",
-    "Commitment to promote Dubhe ecosystem positively",
-    "Available for at least 10 hours per week",
-    "Proficient in English and at least one other language"
-  ]
+  const requirements = t.raw('requirements') as string[]
 
   const responsibilities = [
     {
-      category: "Community Engagement",
-      tasks: [
-        "Moderate community discussions and maintain positive environment",
-        "Answer technical questions and help newcomers",
-        "Organize local meetups and online events",
-        "Create engaging content (tutorials, articles, videos)"
-      ]
+      category: t('responsibilities.communityEngagement.title'),
+      tasks: t.raw('responsibilities.communityEngagement.tasks') as string[]
     },
     {
-      category: "Ecosystem Growth",
-      tasks: [
-        "Identify and onboard new developers to Dubhe",
-        "Collaborate with other ambassadors on global initiatives",
-        "Provide feedback on products and documentation",
-        "Represent Dubhe at blockchain conferences and events"
-      ]
+      category: t('responsibilities.ecosystemGrowth.title'),
+      tasks: t.raw('responsibilities.ecosystemGrowth.tasks') as string[]
     },
     {
-      category: "Content Creation",
-      tasks: [
-        "Write technical tutorials and guides",
-        "Create video content explaining Dubhe features",
-        "Translate documentation to local languages",
-        "Share ecosystem updates on social media"
-      ]
+      category: t('responsibilities.contentCreation.title'),
+      tasks: t.raw('responsibilities.contentCreation.tasks') as string[]
     }
   ]
 

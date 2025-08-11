@@ -100,6 +100,252 @@
           "description": "대륙 전반에 걸친 Dubhe 커뮤니티 존재"
         }
       }
+    },
+    "ecosystem": {
+      "badge": "생태계",
+      "title": {
+        "line1": "혁신적인 애플리케이션의",
+        "line2": "번창하는 생태계"
+      },
+      "description": "DeFi와 게임부터 인프라와 NFT까지 Dubhe 위에 구축된 다양한 애플리케이션, 프로토콜, 도구를 발견하세요.",
+      "categories": {
+        "defi": {
+          "title": "DeFi",
+          "description": "탈중앙화 금융 프로토콜"
+        },
+        "gaming": {
+          "title": "게임",
+          "description": "온체인 게임과 메타버스"
+        },
+        "infrastructure": {
+          "title": "인프라",
+          "description": "개발자 도구와 인프라"
+        },
+        "nfts": {
+          "title": "NFT",
+          "description": "디지털 수집품과 자산"
+        }
+      },
+      "projects": {
+        "merak": {
+          "name": "Merak",
+          "description": "자동화된 마켓 메이커",
+          "tvl": "$45M"
+        },
+        "numeron": {
+          "name": "Numeron",
+          "description": "판타지 AI RPG 어드벤처",
+          "players": "12K+"
+        },
+        "cyferio": {
+          "name": "Cyferio SDK",
+          "description": "개발 키트",
+          "downloads": "50K+"
+        },
+        "objectsdao": {
+          "name": "Objectsdao",
+          "description": "NFT 경매",
+          "volume": "$2.3M"
+        }
+      },
+      "metrics": {
+        "tvl": "TVL",
+        "players": "플레이어",
+        "downloads": "다운로드",
+        "volume": "거래량"
+      }
+    },
+    "howItWorks": {
+      "title": "작동 원리",
+      "steps": {
+        "schemaDefinition": {
+          "title": "스키마 정의",
+          "description": "Dubhe의 직관적인 스키마 시스템을 사용하여 게임 또는 dApp 로직을 정의하세요. 간단한 구성 파일에서 엔티티, 컴포넌트, 시스템을 설명합니다.",
+          "items": ["엔티티", "컴포넌트", "시스템", "오류", "이벤트"]
+        },
+        "codeGeneration": {
+          "title": "코드 생성",
+          "description": "Dubhe 엔진은 스키마 정의에서 80%의 Move 스마트 계약, 클라이언트 라이브러리, API 인터페이스를 자동으로 생성합니다."
+        },
+        "deploymentChannel": {
+          "title": "배포 및 채널",
+          "description": "하나의 명령으로 여러 Move 체인에 배포하세요. Dubhe 채널은 원활한 사용자 경험을 위해 실시간 동기화와 <50ms 지연 시간을 제공합니다."
+        },
+        "multiChainExecution": {
+          "title": "멀티체인 실행",
+          "description": "애플리케이션은 Dubhe OS를 통한 네이티브 크로스체인 상호 운용성으로 지원되는 모든 Move 체인에서 원활하게 실행됩니다."
+        }
+      },
+      "labels": {
+        "dubheEngine": "Dubhe 엔진",
+        "you": "당신",
+        "blockchain": "블록체인",
+        "multiChainReady": "멀티체인 준비"
+      }
+    },
+    "competitiveAdvantage": {
+      "title": "경쟁 우위",
+      "subtitle": "Move 생태계 개발을 위한 최초이자 유일한 종합 솔루션",
+      "table": {
+        "feature": "기능",
+        "dubhe": "Dubhe",
+        "others": "기타"
+      },
+      "features": {
+        "codeGeneration": {
+          "title": "코드 생성",
+          "dubhe": "80% 자동화",
+          "others": "수동 코딩"
+        },
+        "uxPerformance": {
+          "title": "UX 성능",
+          "dubhe": "<50ms",
+          "others": "3-15초"
+        },
+        "multiChainSupport": {
+          "title": "멀티체인 지원",
+          "dubhe": "네이티브 지원",
+          "others": "복잡한 브릿지"
+        },
+        "developerExperience": {
+          "title": "개발자 경험",
+          "dubhe": "원클릭 배포",
+          "others": "복잡한 설정"
+        },
+        "realTimeFeatures": {
+          "title": "실시간 기능",
+          "dubhe": "내장 채널",
+          "others": "외부 솔루션"
+        }
+      }
+    },
+    "productSuite": {
+      "badge": "제품 스위트",
+      "title": "완전한 Move 개발 스택",
+      "description": "Move 개발의 모든 주요 마찰점을 해결하는 3개의 통합 제품",
+      "products": {
+        "engine": {
+          "title": "Dubhe 엔진",
+          "subtitle": "80% 코드 자동 생성",
+          "description": "Move 코드의 80%를 자동 생성하는 유일한 개발 툴킷으로, 개발자가 핵심 비즈니스 로직에 집중할 수 있게 해줍니다",
+          "features": [
+            "개발 시간을 몇 달에서 몇 주로 단축",
+            "인프라 비용 90% 절감",
+            "하나의 명령으로 모든 Move 체인에 배포"
+          ],
+          "highlight": "10배 빠른 개발"
+        },
+        "channel": {
+          "title": "Dubhe 채널",
+          "subtitle": "Web2 수준의 실시간 경험",
+          "description": "블록체인을 Web2처럼 느끼게 하는 실시간 프로그래머블 P2P 상호작용 레이어",
+          "features": [
+            "즉각적인 프론트엔드 렌더링",
+            "초고속 실행 속도",
+            "멀티 클라이언트 모바일, 데스크톱, 웹 지원"
+          ],
+          "highlight": "50ms 미만 지연시간"
+        },
+        "os": {
+          "title": "Dubhe OS",
+          "subtitle": "크로스체인 상호운용성 OS",
+          "description": "네이티브 크로스체인 지원과 개발자 인센티브 메커니즘을 갖춘 블록체인 운영 체제",
+          "features": [
+            "단일 코드베이스, 모든 Move 체인",
+            "내장된 개발자 보상",
+            "멀티체인 생태계로의 브릿지"
+          ],
+          "highlight": "네이티브 멀티체인"
+        }
+      }
+    },
+    "networkArchitecture": {
+      "badge": "네트워크 아키텍처",
+      "title": "완전한 Move 개발 스택",
+      "description": "개발 도구부터 실시간 상호작용 채널과 탈중앙화 인프라까지 - Dubhe는 차세대 완전한 온체인 애플리케이션을 구축하는데 필요한 모든 것을 제공합니다.",
+      "keyMetricsTitle": "핵심 지표",
+      "keyMetrics": [
+        "1000만+ 처리된 거래",
+        "<200ms 평균 지연 시간",
+        "Web2 수준의 사용자 경험",
+        "Sui, Aptos, Rooch, Movement, Initia와 호환"
+      ],
+      "moveEcosystemTitle": "Move 생태계",
+      "moveEcosystemFeatures": [
+        "1,555명의 활성 Move 개발자",
+        "월간 40% 성장",
+        "3년 미만의 역사",
+        "거대한 성장 잠재력"
+      ],
+      "pipelining": "파이프라이닝",
+      "architectureLayers": {
+        "moveApplications": {
+          "title": "Move 애플리케이션",
+          "subtitle": "당신의 dApps와 게임",
+          "description": "Move의 보안성과 유연성으로 복잡한 탈중앙화 애플리케이션을 구축하세요",
+          "features": ["DeFi 프로토콜", "게임 앱", "NFT 플랫폼", "소셜 dApps"]
+        },
+        "dubheEngine": {
+          "title": "Dubhe 엔진",
+          "subtitle": "개발 툴킷",
+          "description": "80%의 코드를 자동으로 생성하고 완전한 개발자 툴체인을 제공합니다",
+          "features": ["코드 생성", "스키마 기반 개발", "멀티체인 배포", "개발 환경"]
+        },
+        "dubheChannel": {
+          "title": "Dubhe 채널",
+          "subtitle": "실시간 레이어",
+          "description": "Web2 수준의 실시간 사용자 경험을 위한 P2P 상호작용 레이어",
+          "features": ["<50ms 지연 시간", "실시간 동기화", "P2P 통신", "모바일 지원"]
+        },
+        "dubheOS": {
+          "title": "Dubhe OS",
+          "subtitle": "크로스체인 인프라",
+          "description": "네이티브 멀티체인 상호운용성을 가진 탈중앙화 운영 체제",
+          "features": ["크로스체인 브릿지", "통합 상태", "개발자 인센티브", "거버넌스"]
+        }
+      },
+      "completeStackSolution": {
+        "title": "완전한 스택 솔루션",
+        "description": "Dubhe는 코드 생성부터 실시간 사용자 경험까지 Move 생태계 개발을 위한 완전하고 통합된 솔루션을 제공하는 최초이자 유일한 플랫폼입니다."
+      },
+      "technicalFeatures": {
+        "securityFirst": {
+          "title": "보안 우선",
+          "description": "Move의 형식 검증으로 버그 없는 스마트 계약을 보장합니다"
+        },
+        "highPerformance": {
+          "title": "고성능",
+          "description": "최대 처리량을 위한 병렬 실행과 최적화된 런타임"
+        },
+        "composable": {
+          "title": "구성 가능",
+          "description": "모듈러 아키텍처로 쉬운 통합과 커스터마이제이션이 가능합니다"
+        },
+        "unifiedState": {
+          "title": "통합 상태",
+          "description": "모든 체인과 애플리케이션에서 단일 진실의 소스"
+        }
+      }
+    },
+    "networkStats": {
+      "title": "네트워크 통계",
+      "description": "Dubhe 생태계 전반의 성장과 활동을 보여주는 실시간 지표.",
+      "transactions": {
+        "label": "처리된 거래",
+        "change": "+12.5%"
+      },
+      "operations": {
+        "label": "실행된 연산",
+        "change": "+18.2%"
+      },
+      "users": {
+        "label": "활성 사용자",
+        "change": "+25.1%"
+      },
+      "income": {
+        "label": "프로토콜 수익",
+        "change": "+15.8%"
+      }
     }
   },
   "foundation": {
@@ -141,13 +387,33 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Dubhe. All rights reserved.",
+    "description": "80% 코드 자동 생성, 리얼타임 P2P 채널, 그리고 크로스 체인 상호 운용성을 갖춤 완전한 Move 개발 플랫폼.",
+    "sections": {
+      "learn": "학습",
+      "build": "개발",
+      "ecosystem": "생태계",
+      "media": "미디어",
+      "community": "커뮤니티"
+    },
     "links": {
-      "about": "소개",
+      "documentation": "문서",
+      "engine": "엔진",
+      "channel": "채널",
+      "os": "OS",
+      "foundation": "재단",
+      "labs": "랩",
+      "grants": "그랜트",
+      "incubation": "인큐베이션",
+      "proposal": "제안",
+      "ambassador": "앰버서더",
+      "moderators": "모더레이터",
+      "events": "이벤트",
       "contact": "연락처",
+      "about": "소개",
       "terms": "서비스 약관",
       "privacy": "개인정보 보호정책"
-    }
+    },
+    "copyright": "© 2025 Dubhe. 모든 권리를 보유합니다."
   },
   "team": {
     "hero": {
@@ -297,6 +563,112 @@
       "cta2": "재단 연락처"
     }
   },
+  "os": {
+    "badge": "Dubhe OS",
+    "hero": {
+      "title": "크로스체인",
+      "titleHighlight": "Move 생태계",
+      "subtitle": "크로스체인 거버넌스, 유니버설 브리징, 네트워크 전체의 공유 보안을 갖춘 Move 기반 블록체인을 연결하는 통합 생태계.",
+      "stats": {
+        "multiChain": {
+          "value": "멀티체인",
+          "label": "Move 생태계"
+        },
+        "universal": {
+          "value": "유니버설",
+          "label": "토큰 경제"
+        },
+        "unified": {
+          "value": "통합",
+          "label": "거버넌스"
+        }
+      },
+      "cta": {
+        "primary": "생태계 참여",
+        "secondary": "자세히 보기"
+      }
+    },
+    "features": {
+      "badge": "생태계 기능",
+      "title": "하나의 토큰, 여러 체인",
+      "subtitle": "통합된 경험",
+      "description": "공유 거버넌스와 유니버설 브리징으로 전체 Move 생태계에서 원활한 상호작용",
+      "items": {
+        "token": {
+          "title": "네이티브 토큰 생태계",
+          "description": "연결된 모든 체인에서 거버넌스, 스테이킹, 유틸리티 기능을 갖춘 통합 토큰 경제가 전체 생태계에 힘을 실어줍니다.",
+          "details": [
+            "크로스체인 거버넌스 투표",
+            "스테이킹 보상 및 수익률",
+            "거래 수수료 지불",
+            "개발자 인센티브 프로그램"
+          ]
+        },
+        "bridging": {
+          "title": "유니버설 브리징",
+          "description": "즉시 최종성과 최소 수수료로 Move 기반 체인 간 원활한 자산 전송을 실현.",
+          "details": [
+            "Sui ↔ Aptos 브리징",
+            "Movement 네트워크 지원",
+            "원자적 크로스체인 스왑",
+            "유동성 풀 관리"
+          ]
+        },
+        "governance": {
+          "title": "탈중앙화 거버넌스",
+          "description": "프로토콜 업그레이드, 재무 관리, 생태계 개발을 위한 커뮤니티 주도 의사결정.",
+          "details": [
+            "제안 제출 시스템",
+            "가중 투표 메커니즘",
+            "재정 기금 할당",
+            "프로토콜 매개변수 업데이트"
+          ]
+        },
+        "security": {
+          "title": "통합 보안 모델",
+          "description": "연결된 모든 체인과 애플리케이션에서 보호를 제공하는 공유 보안 프레임워크.",
+          "details": [
+            "크로스체인 검증",
+            "슬래싱 메커니즘",
+            "사기 증명 시스템",
+            "긴급 대응 프로토콜"
+          ]
+        }
+      }
+    },
+    "chains": {
+      "badge": "지원 네트워크",
+      "title": "멀티체인 Move 생태계",
+      "items": {
+        "sui": {
+          "name": "Sui 네트워크",
+          "status": "운영중",
+          "features": ["높은 처리량", "객체 중심 모델", "Move 언어"]
+        },
+        "aptos": {
+          "name": "Aptos",
+          "status": "운영중",
+          "features": ["병렬 실행", "Move VM", "안전한 스마트 계약"]
+        },
+        "movement": {
+          "name": "Movement",
+          "status": "통합중",
+          "features": ["EVM 호환성", "Move 런타임", "모듈러 아키텍처"]
+        },
+        "future": {
+          "name": "미래 체인",
+          "status": "계획중",
+          "features": ["커뮤니티 주도", "Move 기반", "생태계 확장"]
+        }
+      }
+    },
+    "cta": {
+      "title": "Move 생태계에 참여",
+      "subtitle": "통합된 크로스체인 Move 생태계의 일부가 되세요",
+      "primary": "생태계 참여",
+      "secondary": "거버넌스 포털"
+    }
+  },
   "errors": {
     "notFound": {
       "title": "페이지를 찾을 수 없습니다",
@@ -343,6 +715,6 @@
     }
   },
   "LocaleSwitcher": {
-    "label": "언어 변경"
+    "label": "언어"
   }
 }

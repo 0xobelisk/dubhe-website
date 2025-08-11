@@ -1,43 +1,45 @@
 "use client"
 
 import { motion } from "framer-motion"
-
-const steps = [
-  {
-    id: 1,
-    title: "Schema Definition",
-    description: "Define your game or dApp logic using Dubhe's intuitive schema system. Describe entities, components, and systems in simple configuration files.",
-    items: ["Entity", "Component", "System", "Error", "Event"],
-    visualization: "checklist"
-  },
-  {
-    id: 2,
-    title: "Code Generation",
-    description: "Dubhe Engine automatically generates 80% of your Move smart contracts, client libraries, and API interfaces from your schema definitions.",
-    visualization: "generation"
-  },
-  {
-    id: 3,
-    title: "Deployment & Channel",
-    description: "Deploy to multiple Move chains with one command. Dubhe Channel provides real-time synchronization and <50ms latency for seamless user experience.",
-    visualization: "deployment"
-  },
-  {
-    id: 4,
-    title: "Multi-Chain Execution",
-    description: "Your application runs seamlessly across all supported Move chains with native cross-chain interoperability through Dubhe OS.",
-    visualization: "execution"
-  }
-]
+import { useTranslations } from 'next-intl'
 
 export default function HowItWorksSection() {
+  const t = useTranslations('home.howItWorks')
+  
+  const steps = [
+    {
+      id: 1,
+      title: t('steps.schemaDefinition.title'),
+      description: t('steps.schemaDefinition.description'),
+      items: t.raw('steps.schemaDefinition.items') as string[],
+      visualization: "checklist"
+    },
+    {
+      id: 2,
+      title: t('steps.codeGeneration.title'),
+      description: t('steps.codeGeneration.description'),
+      visualization: "generation"
+    },
+    {
+      id: 3,
+      title: t('steps.deploymentChannel.title'),
+      description: t('steps.deploymentChannel.description'),
+      visualization: "deployment"
+    },
+    {
+      id: 4,
+      title: t('steps.multiChainExecution.title'),
+      description: t('steps.multiChainExecution.description'),
+      visualization: "execution"
+    }
+  ]
   return (
     <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            How It Works
+            {t('title')}
           </h2>
         </div>
 
@@ -80,7 +82,7 @@ export default function HowItWorksSection() {
                   <div className="relative">
                     <div className="flex items-center justify-center mb-6">
                       <div className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium">
-                        Dubhe Engine
+                        {t('labels.dubheEngine')}
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -96,7 +98,7 @@ export default function HowItWorksSection() {
                     <div className="flex items-center justify-center mb-6">
                       <div className="relative">
                         <div className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium">
-                          You
+                          {t('labels.you')}
                         </div>
                         <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
                           <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-purple-500" />
@@ -104,7 +106,7 @@ export default function HowItWorksSection() {
                       </div>
                     </div>
                     <div className="text-center">
-                      <div className="text-gray-500 text-xs mb-2">Blockchain</div>
+                      <div className="text-gray-500 text-xs mb-2">{t('labels.blockchain')}</div>
                       <div className="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent" />
                     </div>
                   </>
@@ -123,7 +125,7 @@ export default function HowItWorksSection() {
                         </div>
                       ))}
                     </div>
-                    <div className="text-green-400 text-sm">Multi-Chain Ready</div>
+                    <div className="text-green-400 text-sm">{t('labels.multiChainReady')}</div>
                   </div>
                 )}
               </div>

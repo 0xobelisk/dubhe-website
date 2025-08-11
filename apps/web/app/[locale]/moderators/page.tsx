@@ -13,8 +13,10 @@ import {
   Sparkles,
   ExternalLink
 } from "lucide-react"
+import { useTranslations } from 'next-intl'
 
 export default function ModeratorsPage() {
+  const t = useTranslations('moderators')
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -24,49 +26,42 @@ export default function ModeratorsPage() {
   const responsibilities = [
     {
       icon: <MessageCircle className="w-6 h-6" />,
-      title: "Community Moderation",
-      description: "Maintain healthy discussions, enforce community guidelines, and ensure a welcoming environment for all members"
+      title: t('responsibilities.communityModeration.title'),
+      description: t('responsibilities.communityModeration.description')
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "Security & Safety",
-      description: "Identify and prevent spam, scams, and malicious activities to protect community members"
+      title: t('responsibilities.securitySafety.title'),
+      description: t('responsibilities.securitySafety.description')
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Member Support",
-      description: "Help newcomers get started, answer questions, and guide users to appropriate resources"
+      title: t('responsibilities.memberSupport.title'),
+      description: t('responsibilities.memberSupport.description')
     },
     {
       icon: <Star className="w-6 h-6" />,
-      title: "Content Curation",
-      description: "Highlight quality content, organize information, and maintain the quality of community discussions"
+      title: t('responsibilities.contentCuration.title'),
+      description: t('responsibilities.contentCuration.description')
     }
   ]
 
-  const requirements = [
-    "Active community member for at least 3 months",
-    "Deep understanding of Dubhe ecosystem and Move technology",
-    "Excellent communication and conflict resolution skills",
-    "Available for moderation duties across different time zones",
-    "Previous moderation experience preferred",
-    "Commitment to fair and impartial decision making"
-  ]
+  const requirements = t.raw('requirements') as string[]
 
   const tools = [
     {
       platform: "Discord",
-      features: ["Message management", "User timeout/ban", "Channel oversight", "Bot integration"],
+      features: t.raw('tools.discord.features') as string[],
       color: "from-indigo-500 to-purple-500"
     },
     {
       platform: "Telegram", 
-      features: ["Group moderation", "Spam filtering", "User verification", "Automated responses"],
+      features: t.raw('tools.telegram.features') as string[],
       color: "from-blue-500 to-cyan-500"
     },
     {
       platform: "Forum",
-      features: ["Thread management", "Content moderation", "User ranking", "Report handling"],
+      features: t.raw('tools.forum.features') as string[],
       color: "from-green-500 to-emerald-500"
     }
   ]
@@ -108,31 +103,16 @@ export default function ModeratorsPage() {
 
   const guidelines = [
     {
-      category: "Communication",
-      rules: [
-        "Treat all community members with respect and courtesy",
-        "Use clear, professional language in all interactions", 
-        "De-escalate conflicts and promote constructive dialogue",
-        "Be patient with newcomers and provide helpful guidance"
-      ]
+      category: t('guidelines.communication.category'),
+      rules: t.raw('guidelines.communication.rules') as string[]
     },
     {
-      category: "Enforcement",
-      rules: [
-        "Apply community rules consistently and fairly",
-        "Document all moderation actions with clear reasoning",
-        "Escalate complex issues to senior moderators or admins",
-        "Review and appeal processes should be transparent"
-      ]
+      category: t('guidelines.enforcement.category'),
+      rules: t.raw('guidelines.enforcement.rules') as string[]
     },
     {
-      category: "Privacy & Security",
-      rules: [
-        "Protect user privacy and personal information",
-        "Never share moderation tools or credentials",
-        "Report security vulnerabilities immediately",
-        "Maintain confidentiality of internal discussions"
-      ]
+      category: t('guidelines.privacySecurity.category'),
+      rules: t.raw('guidelines.privacySecurity.rules') as string[]
     }
   ]
 
@@ -185,7 +165,7 @@ export default function ModeratorsPage() {
                 className="inline-block bg-emerald-500/10 text-emerald-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-emerald-500/20"
               >
                 <Shield className="w-4 h-4 inline mr-2" />
-                Moderator Program
+                {t('hero.badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -196,10 +176,10 @@ export default function ModeratorsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Community
+                  {t('hero.title1')}
                   <br />
                   <span className="bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent">
-                    Moderators
+                    {t('hero.title2')}
                   </span>
                 </motion.h1>
                 
@@ -209,8 +189,7 @@ export default function ModeratorsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Help maintain a safe, welcoming, and productive environment for our global community. 
-                  Join our team of dedicated moderators who ensure quality discussions and support all members.
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
 
@@ -223,15 +202,15 @@ export default function ModeratorsPage() {
               >
                 <div className="text-center flex flex-col items-center justify-center">
                   <div className="text-3xl font-bold text-emerald-400 mb-2">24/7</div>
-                  <div className="text-gray-300">Coverage</div>
+                  <div className="text-gray-300">{t('hero.stats.coverage')}</div>
                 </div>
                 <div className="text-center flex flex-col items-center justify-center">
                   <div className="text-3xl font-bold text-blue-400 mb-2">8+</div>
-                  <div className="text-gray-300">Active Moderators</div>
+                  <div className="text-gray-300">{t('hero.stats.activeModerators')}</div>
                 </div>
                 <div className="text-center flex flex-col items-center justify-center">
                   <div className="text-3xl font-bold text-purple-400 mb-2">50K+</div>
-                  <div className="text-gray-300">Members Protected</div>
+                  <div className="text-gray-300">{t('hero.stats.membersProtected')}</div>
                 </div>
               </motion.div>
 
@@ -242,13 +221,18 @@ export default function ModeratorsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
-                <button className="bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
-                  Apply to Moderate
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSei3iIf7wGYxlhPL0jeQ2dlYx0l4_GEMzaBicVBcKNX8G2DaA/viewform?usp=header"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
+                >
+                  {t('hero.cta1')}
                   <ArrowRight className="w-5 h-5 inline ml-2" />
-                </button>
+                </a>
                 
                 <a href="#guidelines" className="border-2 border-emerald-400/50 hover:border-emerald-300 bg-emerald-900/20 backdrop-blur-sm text-emerald-100 hover:text-white hover:bg-emerald-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-                  Guidelines
+                  {t('hero.cta2')}
                 </a>
               </motion.div>
             </div>
@@ -267,7 +251,7 @@ export default function ModeratorsPage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-gradient-to-r from-emerald-100 to-blue-100 text-emerald-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-emerald-200"
             >
-              Key Responsibilities
+              {t('responsibilitiesSection.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -276,7 +260,7 @@ export default function ModeratorsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              What Moderators Do
+              {t('responsibilitiesSection.title')}
             </motion.h2>
           </div>
 
@@ -312,7 +296,7 @@ export default function ModeratorsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Meet Our Moderators
+              {t('moderatorsSection.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -321,7 +305,7 @@ export default function ModeratorsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Our dedicated team ensures 24/7 coverage across all time zones and platforms
+              {t('moderatorsSection.description')}
             </motion.p>
           </div>
 
@@ -355,11 +339,11 @@ export default function ModeratorsPage() {
 
                 <div className="space-y-3 text-sm">
                   <div>
-                    <span className="text-gray-400">Timezone:</span>
+                    <span className="text-gray-400">{t('moderatorsSection.timezone')}:</span>
                     <div className="text-white">{moderator.timezone}</div>
                   </div>
                   <div>
-                    <span className="text-gray-400">Platforms:</span>
+                    <span className="text-gray-400">{t('moderatorsSection.platforms')}:</span>
                     <div className="flex gap-1 mt-1">
                       {moderator.platforms.map((platform, i) => (
                         <span key={i} className="bg-emerald-500/20 text-emerald-300 px-2 py-1 rounded text-xs">
@@ -369,7 +353,7 @@ export default function ModeratorsPage() {
                     </div>
                   </div>
                   <div>
-                    <span className="text-gray-400">Languages:</span>
+                    <span className="text-gray-400">{t('moderatorsSection.languages')}:</span>
                     <div className="text-white">{moderator.languages.join(", ")}</div>
                   </div>
                 </div>
@@ -390,7 +374,7 @@ export default function ModeratorsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className="text-3xl font-bold text-white mb-8">Moderation Tools</h3>
+              <h3 className="text-3xl font-bold text-white mb-8">{t('toolsSection.title')}</h3>
               <div className="space-y-6">
                 {tools.map((tool, index) => (
                   <div key={index} className="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
@@ -420,7 +404,7 @@ export default function ModeratorsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="text-3xl font-bold text-white mb-8">Requirements</h3>
+              <h3 className="text-3xl font-bold text-white mb-8">{t('requirementsSection.title')}</h3>
               <div className="space-y-4 mb-12">
                 {requirements.map((requirement, index) => (
                   <div key={index} className="flex items-start gap-3">
@@ -430,7 +414,7 @@ export default function ModeratorsPage() {
                 ))}
               </div>
 
-              <h4 className="text-xl font-bold text-white mb-6">Moderation Guidelines</h4>
+              <h4 className="text-xl font-bold text-white mb-6">{t('requirementsSection.guidelinesTitle')}</h4>
               <div className="space-y-6">
                 {guidelines.map((guideline, index) => (
                   <div key={index}>
@@ -461,7 +445,7 @@ export default function ModeratorsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Ready to Help Our Community?
+            {t('cta.title')}
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
@@ -470,7 +454,7 @@ export default function ModeratorsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Join our moderation team and help create a safe, welcoming environment for all
+            {t('cta.description')}
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -479,12 +463,17 @@ export default function ModeratorsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <button className="bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
-              Apply Now
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSei3iIf7wGYxlhPL0jeQ2dlYx0l4_GEMzaBicVBcKNX8G2DaA/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
+            >
+              {t('cta.apply')}
               <Sparkles className="w-5 h-5 inline ml-2" />
-            </button>
+            </a>
             <a href="#guidelines" className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
-              View Guidelines
+              {t('cta.guidelines')}
               <ExternalLink className="w-5 h-5" />
             </a>
           </motion.div>

@@ -1,48 +1,50 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useTranslations } from 'next-intl'
 import { Shield, Eye, Lock, Users, Database, Globe } from "lucide-react"
 
 export default function PrivacyPage() {
+  const t = useTranslations('privacy')
   const sections = [
     {
       icon: <Database className="w-6 h-6" />,
-      title: "Information We Collect",
+      title: t('sections.collection.title'),
       content: [
-        "Personal information you provide when using our services",
-        "Technical information about your device and network connection", 
-        "Usage data and analytics to improve our platform",
-        "Wallet addresses and blockchain transaction data"
+        t('sections.collection.items.0'),
+        t('sections.collection.items.1'), 
+        t('sections.collection.items.2'),
+        t('sections.collection.items.3')
       ]
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "How We Use Information",
+      title: t('sections.usage.title'),
       content: [
-        "To provide and improve our blockchain development platform",
-        "To process grant applications and incubation programs",
-        "To communicate about updates, events, and opportunities",
-        "To ensure platform security and prevent fraud"
+        t('sections.usage.items.0'),
+        t('sections.usage.items.1'),
+        t('sections.usage.items.2'),
+        t('sections.usage.items.3')
       ]
     },
     {
       icon: <Lock className="w-6 h-6" />,
-      title: "Data Protection",
+      title: t('sections.protection.title'),
       content: [
-        "We implement industry-standard security measures",
-        "All sensitive data is encrypted in transit and at rest",
-        "We never store private keys or sensitive wallet information",
-        "Regular security audits and compliance reviews"
+        t('sections.protection.items.0'),
+        t('sections.protection.items.1'),
+        t('sections.protection.items.2'),
+        t('sections.protection.items.3')
       ]
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Data Sharing",
+      title: t('sections.sharing.title'),
       content: [
-        "We do not sell personal information to third parties",
-        "Limited sharing with service providers under strict agreements",
-        "Public blockchain data is inherently transparent",
-        "We may share data to comply with legal requirements"
+        t('sections.sharing.items.0'),
+        t('sections.sharing.items.1'),
+        t('sections.sharing.items.2'),
+        t('sections.sharing.items.3')
       ]
     }
   ]
@@ -71,7 +73,7 @@ export default function PrivacyPage() {
                 className="inline-block bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-blue-500/20"
               >
                 <Shield className="w-4 h-4 inline mr-2" />
-                Privacy Policy
+                {t('badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -82,10 +84,10 @@ export default function PrivacyPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Your Privacy
+                  {t('hero.title')}
                   <br />
                   <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
-                    Matters
+                    {t('hero.titleHighlight')}
                   </span>
                 </motion.h1>
                 
@@ -95,7 +97,7 @@ export default function PrivacyPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Learn how Dubhe Foundation protects your privacy and handles your data with transparency and security.
+                  {t('hero.subtitle')}
                 </motion.p>
                 
                 <motion.p 
@@ -104,7 +106,7 @@ export default function PrivacyPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                  Last updated: January 2025
+                  {t('hero.lastUpdated')}
                 </motion.p>
               </div>
             </div>
@@ -178,21 +180,21 @@ export default function PrivacyPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-lg font-semibold text-white mb-3">Access & Control</h4>
+                  <h4 className="text-lg font-semibold text-white mb-3">{t('rights.access.title')}</h4>
                   <ul className="space-y-2 text-gray-300">
-                    <li>• Request access to your personal data</li>
-                    <li>• Correct inaccurate information</li>
-                    <li>• Delete your account and data</li>
-                    <li>• Export your data</li>
+                    <li>• {t('rights.access.items.0')}</li>
+                    <li>• {t('rights.access.items.1')}</li>
+                    <li>• {t('rights.access.items.2')}</li>
+                    <li>• {t('rights.access.items.3')}</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-white mb-3">Communication</h4>
+                  <h4 className="text-lg font-semibold text-white mb-3">{t('rights.communication.title')}</h4>
                   <ul className="space-y-2 text-gray-300">
-                    <li>• Opt out of marketing communications</li>
-                    <li>• Choose notification preferences</li>
-                    <li>• Control cookie settings</li>
-                    <li>• Request data processing limitations</li>
+                    <li>• {t('rights.communication.items.0')}</li>
+                    <li>• {t('rights.communication.items.1')}</li>
+                    <li>• {t('rights.communication.items.2')}</li>
+                    <li>• {t('rights.communication.items.3')}</li>
                   </ul>
                 </div>
               </div>
@@ -209,9 +211,9 @@ export default function PrivacyPage() {
           >
             <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700 text-center">
               <Globe className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-white mb-4">Questions About Privacy?</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">{t('contact.title')}</h3>
               <p className="text-gray-300 mb-6">
-                If you have any questions about this Privacy Policy or our data practices, please contact us.
+                {t('contact.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 

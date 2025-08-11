@@ -3,41 +3,43 @@
 import { motion } from "framer-motion"
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { CheckCircle, XCircle } from "lucide-react"
-
-const comparisonData = [
-  {
-    feature: "Code Generation",
-    dubhe: "80% automated",
-    others: "Manual coding",
-    dubheStatus: "excellent"
-  },
-  {
-    feature: "UX Performance", 
-    dubhe: "<50ms",
-    others: "3-15 seconds",
-    dubheStatus: "excellent"
-  },
-  {
-    feature: "Multi-Chain Support",
-    dubhe: "Native support",
-    others: "Complex bridges",
-    dubheStatus: "good"
-  },
-  {
-    feature: "Developer Experience",
-    dubhe: "One-click deployment",
-    others: "Complex setup",
-    dubheStatus: "excellent"
-  },
-  {
-    feature: "Real-time Features",
-    dubhe: "Built-in Channel",
-    others: "External solutions",
-    dubheStatus: "good"
-  }
-]
+import { useTranslations } from "next-intl"
 
 export default function ArchitectureComparisonSection() {
+  const t = useTranslations('home.competitiveAdvantage')
+  
+  const comparisonData = [
+    {
+      feature: t('features.codeGeneration.title'),
+      dubhe: t('features.codeGeneration.dubhe'),
+      others: t('features.codeGeneration.others'),
+      dubheStatus: "excellent"
+    },
+    {
+      feature: t('features.uxPerformance.title'), 
+      dubhe: t('features.uxPerformance.dubhe'),
+      others: t('features.uxPerformance.others'),
+      dubheStatus: "excellent"
+    },
+    {
+      feature: t('features.multiChainSupport.title'),
+      dubhe: t('features.multiChainSupport.dubhe'),
+      others: t('features.multiChainSupport.others'),
+      dubheStatus: "good"
+    },
+    {
+      feature: t('features.developerExperience.title'),
+      dubhe: t('features.developerExperience.dubhe'),
+      others: t('features.developerExperience.others'),
+      dubheStatus: "excellent"
+    },
+    {
+      feature: t('features.realTimeFeatures.title'),
+      dubhe: t('features.realTimeFeatures.dubhe'),
+      others: t('features.realTimeFeatures.others'),
+      dubheStatus: "good"
+    }
+  ]
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -48,10 +50,10 @@ export default function ArchitectureComparisonSection() {
     >
       <div className="text-center mb-12">
         <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-4">
-          Competitive Advantage
+          {t('title')}
         </h3>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-          First and only comprehensive solution for Move ecosystem development
+          {t('subtitle')}
         </p>
       </div>
 
@@ -60,9 +62,9 @@ export default function ArchitectureComparisonSection() {
           <table className="w-full">
             <thead>
               <tr className="border-b border-gray-700">
-                <th className="text-left py-4 px-6 text-gray-400 font-semibold">Feature</th>
-                <th className="text-center py-4 px-6 text-green-400 font-semibold">Dubhe</th>
-                <th className="text-center py-4 px-6 text-gray-400 font-semibold">Others</th>
+                <th className="text-left py-4 px-6 text-gray-400 font-semibold">{t('table.feature')}</th>
+                <th className="text-center py-4 px-6 text-green-400 font-semibold">{t('table.dubhe')}</th>
+                <th className="text-center py-4 px-6 text-gray-400 font-semibold">{t('table.others')}</th>
               </tr>
             </thead>
             <tbody>

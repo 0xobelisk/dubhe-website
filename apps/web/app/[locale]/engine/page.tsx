@@ -13,6 +13,7 @@ import {
   Sparkles
 } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from 'next-intl'
 
 const customStyles = `
   @keyframes float {
@@ -44,6 +45,7 @@ const customStyles = `
 `
 
 export default function EnginePage() {
+  const t = useTranslations('engine')
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -53,70 +55,50 @@ export default function EnginePage() {
   const features = [
     {
       icon: <Code2 className="w-6 h-6" />,
-      title: "80% Code Auto-Generation",
-      description: "Dramatically reduce development time with intelligent code generation that handles boilerplate, data structures, and common patterns automatically.",
-      details: [
-        "Schema-driven code generation",
-        "Automatic API endpoint creation",
-        "Smart contract scaffolding",
-        "UI component generation"
-      ]
+      title: t('features.codeGeneration.title'),
+      description: t('features.codeGeneration.description'),
+      details: t.raw('features.codeGeneration.details') as string[]
     },
     {
       icon: <Database className="w-6 h-6" />,
-      title: "Schema-Based Development",
-      description: "Define your data structures once and let Dubhe Engine generate everything else. Changes propagate automatically across your entire application.",
-      details: [
-        "Single source of truth",
-        "Automatic type safety",
-        "Real-time validation",
-        "Cross-platform compatibility"
-      ]
+      title: t('features.schemaBased.title'),
+      description: t('features.schemaBased.description'),
+      details: t.raw('features.schemaBased.details') as string[]
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Real-Time DApp Toolchain",
-      description: "Build fully on-chain applications with real-time capabilities. From game state to financial applications, everything happens instantly.",
-      details: [
-        "Sub-second transaction finality",
-        "Real-time state synchronization",
-        "Event-driven architecture",
-        "Optimistic UI updates"
-      ]
+      title: t('features.realTimeToolchain.title'),
+      description: t('features.realTimeToolchain.description'),
+      details: t.raw('features.realTimeToolchain.details') as string[]
     },
     {
       icon: <Layers className="w-6 h-6" />,
-      title: "Multi-Chain Support",
-      description: "Deploy across multiple Move-based chains without changing your code. Write once, deploy everywhere.",
-      details: [
-        "Sui network integration",
-        "Aptos compatibility",
-        "Movement network support",
-        "Cross-chain state management"
-      ]
+      title: t('features.multiChain.title'),
+      description: t('features.multiChain.description'),
+      details: t.raw('features.multiChain.details') as string[]
     }
   ]
 
   const workflow = [
     {
       step: "01",
-      title: "Define Schema",
-      description: "Create your data models and business logic using our intuitive schema definition language"
+      title: t('workflow.defineSchema.title'),
+      description: t('workflow.defineSchema.description')
     },
     {
       step: "02", 
-      title: "Generate Code",
-      description: "Dubhe Engine automatically generates 80% of your application code including smart contracts and APIs"
+      title: t('workflow.generateCode.title'),
+      description: t('workflow.generateCode.description')
     },
     {
       step: "03",
-      title: "Customize Logic",
-      description: "Focus on the unique 20% - your business logic, custom features, and user experience"
+      title: t('workflow.customizeLogic.title'),
+      description: t('workflow.customizeLogic.description')
     },
     {
       step: "04",
-      title: "Deploy Instantly",
-      description: "One-click deployment to multiple Move chains with automatic optimization and monitoring"
+      title: t('workflow.deployInstantly.title'),
+      description: t('workflow.deployInstantly.description')
     }
   ]
 
@@ -172,7 +154,7 @@ export default function EnginePage() {
                 className="inline-block bg-purple-500/10 text-purple-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-purple-500/20"
               >
                 <Cpu className="w-4 h-4 inline mr-2" />
-                Dubhe Engine
+                {t('hero.badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -183,10 +165,10 @@ export default function EnginePage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  80% Code
+                  {t('hero.title1')}
                   <br />
                   <span className="engine-gradient bg-clip-text text-transparent">
-                    Auto-Generation
+                    {t('hero.title2')}
                   </span>
                 </motion.h1>
                 
@@ -196,8 +178,7 @@ export default function EnginePage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Schema-based development platform that generates smart contracts, APIs, and UI components automatically. 
-                  Focus on what matters - your unique business logic.
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
 
@@ -210,15 +191,15 @@ export default function EnginePage() {
               >
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-400 mb-2">80%</div>
-                  <div className="text-gray-300">Code Auto-Generated</div>
+                  <div className="text-gray-300">{t('hero.stats.codeAutoGenerated')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-400 mb-2">10x</div>
-                  <div className="text-gray-300">Faster Development</div>
+                  <div className="text-gray-300">{t('hero.stats.fasterDevelopment')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-cyan-400 mb-2">Multi-Chain</div>
-                  <div className="text-gray-300">Move Ecosystem</div>
+                  <div className="text-gray-300">{t('hero.stats.moveEcosystem')}</div>
                 </div>
               </motion.div>
 
@@ -230,12 +211,12 @@ export default function EnginePage() {
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
                 <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-                  Start Building
+                  {t('hero.cta1')}
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 
                 <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="border-2 border-purple-400/50 hover:border-purple-300 bg-purple-900/20 backdrop-blur-sm text-purple-100 hover:text-white hover:bg-purple-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-                  View Documentation
+                  {t('hero.cta2')}
                 </Link>
               </motion.div>
             </div>
@@ -255,7 +236,7 @@ export default function EnginePage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-purple-200"
             >
-              Core Features
+              {t('featuresSection.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -264,7 +245,7 @@ export default function EnginePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Build Faster, Ship Sooner
+              {t('featuresSection.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -273,7 +254,7 @@ export default function EnginePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Dubhe Engine handles the heavy lifting so you can focus on innovation
+              {t('featuresSection.description')}
             </motion.p>
           </div>
 
@@ -319,7 +300,7 @@ export default function EnginePage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-purple-500/10 text-purple-400 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-500/20"
             >
-              Development Workflow
+              {t('workflowSection.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -328,9 +309,7 @@ export default function EnginePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              From Idea to Production
-              <br />
-              in 4 Simple Steps
+              {t('workflowSection.title')}
             </motion.h2>
           </div>
 
@@ -373,7 +352,7 @@ export default function EnginePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Ready to 10x Your Development Speed?
+            {t('cta.title')}
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
@@ -382,7 +361,7 @@ export default function EnginePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Join developers building the future of fully on-chain applications
+            {t('cta.description')}
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -392,11 +371,11 @@ export default function EnginePage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Link href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
-              Get Started Free
+              {t('cta.getStarted')}
               <Sparkles className="w-5 h-5 ml-2" />
             </Link>
             <Link href="/contact" className="border-2 border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-              Schedule Demo
+              {t('cta.scheduleDemo')}
             </Link>
           </motion.div>
         </div>
