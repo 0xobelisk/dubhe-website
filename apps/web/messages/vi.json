@@ -563,6 +563,131 @@
       "cta2": "Liên hệ Quỹ"
     }
   },
+  "channel": {
+    "badge": "Dubhe Channel",
+    "hero": {
+      "title": "P2P Thời gian Thực",
+      "titleHighlight": "Lớp Tương tác",
+      "subtitle": "Trải nghiệm người dùng cấp Web2 với cơ sở hạ tầng Web3. Độ trễ dưới 50ms cho các ứng dụng game, nền tảng xã hội và giao dịch được xây dựng trên blockchain Move.",
+      "metrics": {
+        "latency": "Độ trễ",
+        "users": "Người dùng đồng thời",
+        "uptime": "Thời gian hoạt động"
+      },
+      "cta1": "Tham gia Mạng lưới",
+      "cta2": "Tài liệu Kỹ thuật"
+    },
+    "features": {
+      "badge": "Tính năng Cốt lõi",
+      "title": "Cơ sở hạ tầng Thời gian Thực",
+      "subtitle": "cho DApps Hiện đại",
+      "description": "Được xây dựng cho các ứng dụng đòi hỏi khả năng phản hồi tức thì và trải nghiệm người dùng liền mạch",
+      "items": {
+        "latency": {
+          "title": "Độ trễ Dưới 50ms",
+          "description": "Tương tác P2P thời gian thực với khả năng phản hồi cấp Web2. Được xây dựng cho game, giao dịch và ứng dụng xã hội đòi hỏi phản hồi tức thì.",
+          "details": [
+            "Giao tiếp dựa trên WebRTC",
+            "Thuật toán định tuyến được tối ưu hóa",
+            "Phân phối nút biên",
+            "Đồng bộ hóa trạng thái dự đoán"
+          ]
+        },
+        "network": {
+          "title": "Mạng P2P Có thể Mở rộng",
+          "description": "Mở rộng theo chiều ngang phát triển cùng với cơ sở người dùng của bạn. Từ hàng trăm đến hàng triệu kết nối đồng thời mà không bị suy giảm hiệu suất.",
+          "details": [
+            "Khám phá peer động",
+            "Giao thức cân bằng tải",
+            "Cấu trúc mạng lưới",
+            "Cơ sở hạ tầng tự động mở rộng"
+          ]
+        },
+        "security": {
+          "title": "Bảo mật Theo Mặc định",
+          "description": "Mã hóa đầu cuối và xác minh mật mã đảm bảo dữ liệu và tương tác của bạn vẫn riêng tư và chống giả mạo.",
+          "details": [
+            "Giao thức mã hóa E2E",
+            "Bằng chứng không kiến thức",
+            "Chữ ký mật mã",
+            "Xác minh phi tập trung"
+          ]
+        },
+        "experience": {
+          "title": "UX Web2, Backend Web3",
+          "description": "Trải nghiệm người dùng quen thuộc được hỗ trợ bởi cơ sở hạ tầng phi tập trung. Người dùng có được điều tốt nhất của cả hai thế giới mà không cần thỏa hiệp.",
+          "details": [
+            "Tích hợp ví liền mạch",
+            "Giao dịch không gas",
+            "Hỗ trợ Progressive Web App",
+            "Thiết kế ưu tiên di động"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "badge": "Trường hợp Sử dụng",
+      "title": "Được Xây dựng cho Ứng dụng Thời gian Thực",
+      "items": {
+        "gaming": {
+          "title": "Game Thời gian Thực",
+          "description": "Game nhiều người chơi với thời gian phản hồi tức thì",
+          "metrics": ["Độ trễ <50ms", "1M+ người chơi đồng thời", "99.9% thời gian hoạt động"]
+        },
+        "social": {
+          "title": "Nền tảng Xã hội",
+          "description": "Mạng xã hội phi tập trung với tin nhắn thời gian thực",
+          "metrics": ["Tin nhắn tức thì", "Cuộc gọi video trực tiếp", "Chat nhóm"]
+        },
+        "trading": {
+          "title": "Ứng dụng Giao dịch",
+          "description": "Giao dịch tần số cao với nguồn cấp giá thời gian thực",
+          "metrics": ["Dữ liệu thời gian thực", "Cập nhật sổ lệnh", "Khám phá giá"]
+        }
+      }
+    },
+    "architecture": {
+      "title": "Kiến trúc Mạng",
+      "description": "Phương pháp đa lớp cho hiệu suất và khả năng mở rộng tối ưu",
+      "layers": {
+        "application": {
+          "title": "Lớp Ứng dụng",
+          "description": "DApp của bạn kết nối thông qua API đơn giản"
+        },
+        "channel": {
+          "title": "Lớp Kênh",
+          "description": "Giao thức giao tiếp P2P thời gian thực"
+        },
+        "network": {
+          "title": "Lớp Mạng",
+          "description": "Cơ sở hạ tầng nút phân tán"
+        },
+        "blockchain": {
+          "title": "Lớp Blockchain",
+          "description": "Thanh toán và xác minh dựa trên Move"
+        }
+      }
+    },
+    "network": {
+      "title": "Mạng P2P Toàn cầu",
+      "description": "Mạng chòm sao Dubhe kết nối các nút trên toàn thế giới để giao tiếp độ trễ cực thấp",
+      "status": {
+        "title": "TRẠNG THÁI MẠNG",
+        "online": "TRỰC TUYẾN",
+        "latency": "Độ trễ: <50ms"
+      },
+      "nodes": {
+        "title": "CÁC NÚT HOẠT ĐỘNG",
+        "connected": "7/7 Đã kết nối"
+      }
+    },
+    "cta": {
+      "title": "Sẵn sàng cho DApps Thời gian Thực?",
+      "subtitle": "Tham gia mạng lưới hỗ trợ thế hệ tiếp theo của các ứng dụng tương tác",
+      "primary": "Kết nối với Mạng",
+      "secondary": "Xem Tài liệu API"
+    }
+  },
   "os": {
     "badge": "Dubhe OS",
     "hero": {
@@ -714,6 +839,84 @@
       "suggestion": "Điều này thường chỉ tạm thời. Vui lòng thử lại sau vài phút."
     }
   },
+  "incubation": {
+    "hero": {
+      "badge": "Ủ ấp Quỹ Dubhe",
+      "title": "Xây dựng Startup Unicorn Tiếp theo",
+      "subtitle": "Tham gia hệ sinh thái ủ ấp hợp tác được hỗ trợ bởi Quỹ Dubhe, đồng ủ ấp với Obelisk Labs và các VC hệ sinh thái để xây dựng thế hệ startup Move tiếp theo.",
+      "stats": {
+        "funding": {
+          "value": "Sắp ra mắt",
+          "label": "Tổng Vốn"
+        },
+        "startups": {
+          "value": "Sắp ra mắt", 
+          "label": "Startup Được Ủ ấp"
+        },
+        "unicorns": {
+          "value": "Sắp ra mắt",
+          "label": "Unicorn Được Tạo"
+        },
+        "success": {
+          "value": "Sắp ra mắt",
+          "label": "Tỷ lệ Thành công"
+        }
+      },
+      "cta": {
+        "apply": "Ứng tuyển Ngay",
+        "learn": "Tìm hiểu Thêm"
+      }
+    },
+    "programs": {
+      "accelerator": {
+        "title": "Máy gia tốc Quỹ",
+        "duration": "3 tháng",
+        "funding": "Lên đến $500K",
+        "description": "Chương trình chuyên sâu được hỗ trợ bởi Quỹ Dubhe đồng ủ ấp với Obelisk Labs và các VC hệ sinh thái",
+        "benefits": ["Tài trợ Quỹ Dubhe", "Đồng ủ ấp Obelisk Labs", "Hỗ trợ phát triển Move", "Đối tác VC hệ sinh thái"]
+      },
+      "studio": {
+        "title": "Studio Hợp tác",
+        "duration": "6-12 tháng",
+        "funding": "Lên đến $1M", 
+        "description": "Đồng ủ ấp bởi Quỹ Dubhe, Obelisk Labs và các VC hệ sinh thái với tài nguyên chia sẻ",
+        "benefits": ["Đồng ủ ấp đa đối tác", "Tài nguyên kỹ thuật chia sẻ", "Hợp tác liên dự án", "Mạng lưới VC hệ sinh thái"]
+      },
+      "scale": {
+        "title": "Mở rộng Hệ sinh thái",
+        "duration": "6 tháng",
+        "funding": "Lên đến $2M",
+        "description": "Mở rộng với hỗ trợ toàn diện từ Quỹ Dubhe, Obelisk Labs và các đối tác VC hệ sinh thái",
+        "benefits": ["Mạng lưới đồng ủ ấp", "Giới thiệu chiến lược", "Tiếp cận thị trường toàn cầu", "Kết nối VC doanh nghiệp"]
+      }
+    },
+    "resources": {
+      "coIncubation": {
+        "title": "Đồng Ủ ấp Đa Đối tác",
+        "description": "Hướng dẫn chung từ Quỹ Dubhe, Obelisk Labs và các VC hệ sinh thái"
+      },
+      "infrastructure": {
+        "title": "Cơ sở hạ tầng Chia sẻ",
+        "description": "Truy cập cơ sở hạ tầng Obelisk Labs và tài nguyên VC hệ sinh thái"
+      },
+      "integration": {
+        "title": "Tích hợp Hệ sinh thái",
+        "description": "Tích hợp trực tiếp với các dự án Dubhe và mạng lưới đối tác"
+      },
+      "development": {
+        "title": "Phát triển Hợp tác",
+        "description": "Hỗ trợ kỹ thuật từ đội ngũ kỹ sư Quỹ Dubhe và Obelisk Labs"
+      },
+      "demoDays": {
+        "title": "Ngày Demo Đối tác",
+        "description": "Trình bày cho ban giám đốc Quỹ Dubhe và mạng lưới VC hệ sinh thái"
+      },
+      "network": {
+        "title": "Mạng lưới Hệ sinh thái",
+        "description": "Truy cập toàn bộ hệ sinh thái Dubhe và công ty đối tác"
+      }
+    }
+  },
   "ambassador": {
     "hero": {
       "badge": "Chương trình Đại sứ",
@@ -805,6 +1008,721 @@
       "description": "Tham gia chương trình đại sứ của chúng tôi và trở thành nhà lãnh đạo trong hệ sinh thái Move",
       "apply": "Ứng tuyển Ngay",
       "contact": "Liên hệ với Chúng tôi"
+    }
+  },
+  "moderators": {
+    "hero": {
+      "badge": "Chương trình Điều hành viên",
+      "title1": "Cộng đồng",
+      "title2": "Điều hành viên",
+      "subtitle": "Giúp duy trì môi trường an toàn, thân thiện và hiệu quả cho cộng đồng toàn cầu của chúng tôi. Tham gia đội ngũ điều hành viên tận tâm đảm bảo các cuộc thảo luận chất lượng và hỗ trợ tất cả thành viên.",
+      "stats": {
+        "coverage": "Bao phủ",
+        "activeModerators": "Điều hành viên Hoạt động",
+        "membersProtected": "Thành viên được Bảo vệ"
+      },
+      "cta1": "Đăng ký Điều hành",
+      "cta2": "Hướng dẫn"
+    },
+    "responsibilitiesSection": {
+      "badge": "Trách nhiệm Chính",
+      "title": "Điều hành viên làm gì"
+    },
+    "responsibilities": {
+      "communityModeration": {
+        "title": "Điều hành Cộng đồng",
+        "description": "Duy trì các cuộc thảo luận lành mạnh, thực thi hướng dẫn cộng đồng và đảm bảo môi trường thân thiện cho tất cả thành viên"
+      },
+      "securitySafety": {
+        "title": "Bảo mật & An toàn",
+        "description": "Xác định và ngăn chặn spam, lừa đảo và các hoạt động độc hại để bảo vệ thành viên cộng đồng"
+      },
+      "memberSupport": {
+        "title": "Hỗ trợ Thành viên",
+        "description": "Giúp người mới bắt đầu, trả lời câu hỏi và hướng dẫn người dùng đến các tài nguyên phù hợp"
+      },
+      "contentCuration": {
+        "title": "Quản lý Nội dung",
+        "description": "Làm nổi bật nội dung chất lượng, tổ chức thông tin và duy trì chất lượng thảo luận cộng đồng"
+      }
+    },
+    "moderatorsSection": {
+      "title": "Gặp gỡ Điều hành viên của chúng tôi",
+      "description": "Đội ngũ tận tâm của chúng tôi đảm bảo bao phủ 24/7 trên tất cả múi giờ và nền tảng",
+      "timezone": "Múi giờ",
+      "platforms": "Nền tảng",
+      "languages": "Ngôn ngữ"
+    },
+    "toolsSection": {
+      "title": "Công cụ Điều hành"
+    },
+    "tools": {
+      "discord": {
+        "features": [
+          "Quản lý tin nhắn",
+          "Tạm thời/cấm người dùng",
+          "Giám sát kênh",
+          "Tích hợp bot"
+        ]
+      },
+      "telegram": {
+        "features": [
+          "Điều hành nhóm",
+          "Lọc spam",
+          "Xác minh người dùng",
+          "Phản hồi tự động"
+        ]
+      },
+      "forum": {
+        "features": [
+          "Quản lý chủ đề",
+          "Điều hành nội dung",
+          "Xếp hạng người dùng",
+          "Xử lý báo cáo"
+        ]
+      }
+    },
+    "requirementsSection": {
+      "title": "Yêu cầu",
+      "guidelinesTitle": "Hướng dẫn Điều hành"
+    },
+    "requirements": [
+      "Thành viên cộng đồng tích cực ít nhất 3 tháng",
+      "Hiểu biết sâu sắc về hệ sinh thái Dubhe và công nghệ Move",
+      "Kỹ năng giao tiếp và giải quyết xung đột xuất sắc",
+      "Có thể điều hành trong các múi giờ khác nhau",
+      "Kinh nghiệm điều hành trước đây được ưu tiên",
+      "Cam kết ra quyết định công bằng và không thiên vị"
+    ],
+    "guidelines": {
+      "communication": {
+        "category": "Giao tiếp",
+        "rules": [
+          "Đối xử với tất cả thành viên cộng đồng bằng sự tôn trọng và lịch sự",
+          "Sử dụng ngôn ngữ rõ ràng, chuyên nghiệp trong mọi tương tác",
+          "Giảm thiểu xung đột và thúc đẩy đối thoại xây dựng",
+          "Kiên nhẫn với người mới và cung cấp hướng dẫn hữu ích"
+        ]
+      },
+      "enforcement": {
+        "category": "Thực thi",
+        "rules": [
+          "Áp dụng quy tắc cộng đồng một cách nhất quán và công bằng",
+          "Ghi chép tất cả hành động điều hành với lý do rõ ràng",
+          "Báo cáo các vấn đề phức tạp cho điều hành viên cấp cao hoặc quản trị viên",
+          "Quy trình xem xét và kháng cáo phải minh bạch"
+        ]
+      },
+      "privacySecurity": {
+        "category": "Quyền riêng tư & Bảo mật",
+        "rules": [
+          "Bảo vệ quyền riêng tư và thông tin cá nhân của người dùng",
+          "Không bao giờ chia sẻ công cụ điều hành hoặc thông tin đăng nhập",
+          "Báo cáo ngay lập tức các lỗ hổng bảo mật",
+          "Duy trì tính bảo mật của các cuộc thảo luận nội bộ"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Sẵn sàng Giúp đỡ Cộng đồng của chúng tôi?",
+      "description": "Tham gia đội ngũ điều hành và giúp tạo ra môi trường an toàn, thân thiện cho tất cả mọi người",
+      "apply": "Ứng tuyển Ngay",
+      "guidelines": "Xem Hướng dẫn"
+    }
+  },
+  "events": {
+    "hero": {
+      "badge": "Lịch Sự kiện",
+      "title": "Các Sự kiện Sắp tới",
+      "subtitle": "Tham gia các sự kiện do Dubhe tổ chức, kết nối với các nhà phát triển Move và cập nhật thông tin mới nhất về hệ sinh thái."
+    },
+    "filters": {
+      "search": {
+        "placeholder": "Tìm kiếm"
+      },
+      "categories": {
+        "all": "Tất cả",
+        "ama": "AMA",
+        "workshop": "Hội thảo",
+        "meetup": "Gặp mặt"
+      },
+      "sort": {
+        "date": "Sắp xếp: Ngày",
+        "name": "Sắp xếp: Tên",
+        "location": "Sắp xếp: Địa điểm"
+      }
+    },
+    "table": {
+      "headers": {
+        "date": "Ngày",
+        "name": "Tên",
+        "location": "Địa điểm",
+        "category": "Danh mục"
+      },
+      "noEvents": "Không tìm thấy sự kiện nào phù hợp với tiêu chí của bạn"
+    },
+    "eventsList": {
+      "engineWorkshop": {
+        "name": "Hội thảo Nhà phát triển Dubhe Engine",
+        "location": "Trực tuyến",
+        "category": "Hội thảo",
+        "description": "Tìm hiểu sâu về Dubhe Engine và học những kỹ thuật mới nhất cũng như thực hành tốt nhất để xây dựng các ứng dụng hoàn toàn on-chain."
+      },
+      "moveAma": {
+        "name": "AMA Hệ sinh thái Move với Dubhe Foundation",
+        "location": "Trực tuyến",
+        "category": "AMA",
+        "description": "Hỏi chúng tôi bất cứ điều gì về giao thức Dubhe, chi tiết kỹ thuật và lộ trình phát triển."
+      },
+      "sfMeetup": {
+        "name": "Gặp mặt Cộng đồng Dubhe - San Francisco",
+        "location": "San Francisco, CA",
+        "category": "Gặp mặt",
+        "description": "Kết nối với các nhà phát triển Dubhe, chia sẻ các dự án mới nhất và khám phá cơ hội hợp tác trong hệ sinh thái Move."
+      },
+      "zkWorkshop": {
+        "name": "Hội thảo Giải pháp Bảo mật Zero-Knowledge",
+        "location": "Trực tuyến",
+        "category": "Hội thảo",
+        "description": "Tìm hiểu về bằng chứng ZK và các ứng dụng bảo vệ quyền riêng tư trên Dubhe với trải nghiệm thực hành."
+      }
+    },
+    "community": {
+      "title": "Tham gia Cộng đồng Toàn cầu của Chúng tôi",
+      "description": "Kết nối với các nhà phát triển, người đam mê và những người đổi mới công nghệ Move trên toàn thế giới.",
+      "stats": {
+        "eventsThisYear": "Sự kiện Năm nay",
+        "attendees": "Người tham dự",
+        "countries": "Quốc gia",
+        "speakers": "Diễn giả"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Liên hệ với Chúng tôi",
+      "title1": "Liên hệ",
+      "title2": "với Chúng tôi",
+      "subtitle": "Có câu hỏi về Dubhe? Muốn hợp tác với chúng tôi? Chúng tôi rất muốn nghe từ bạn."
+    },
+    "form": {
+      "title": "Gửi tin nhắn cho chúng tôi",
+      "validationError": "Lỗi xác thực",
+      "sendError": "Gửi tin nhắn thất bại. Vui lòng thử lại.",
+      "networkError": "Lỗi mạng. Vui lòng kiểm tra kết nối và thử lại.",
+      "sending": "Đang gửi...",
+      "submit": "Gửi Tin nhắn",
+      "success": {
+        "title": "Tin nhắn đã được gửi!",
+        "message": "Chúng tôi sẽ phản hồi trong vòng 24-48 giờ.",
+        "sendAnother": "Gửi tin nhắn khác"
+      },
+      "fields": {
+        "name": {
+          "label": "Tên",
+          "placeholder": "Tên của bạn"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "your@email.com"
+        },
+        "subject": {
+          "label": "Chủ đề",
+          "placeholder": "Chọn chủ đề",
+          "options": {
+            "general": "Yêu cầu Chung",
+            "partnership": "Hợp tác",
+            "investment": "Yêu cầu Đầu tư",
+            "grants": "Đơn xin Tài trợ",
+            "foundationJobs": "Việc làm Quỹ",
+            "technical": "Hỗ trợ Kỹ thuật",
+            "media": "Truyền thông & Báo chí"
+          }
+        },
+        "message": {
+          "label": "Tin nhắn",
+          "placeholder": "Hãy cho chúng tôi biết về dự án, yêu cầu của bạn hoặc cách chúng tôi có thể giúp đỡ..."
+        }
+      }
+    },
+    "info": {
+      "title": "Thông tin Liên hệ",
+      "description": "Dù bạn là nhà phát triển, nhà đầu tư hay chỉ tò mò về Dubhe, chúng tôi ở đây để giúp đỡ. Liên hệ thông qua bất kỳ kênh nào dưới đây.",
+      "email": {
+        "title": "Email"
+      },
+      "business": {
+        "title": "Yêu cầu Kinh doanh"
+      },
+      "location": {
+        "title": "Vị trí",
+        "content": "Toàn cầu, Phi tập trung"
+      },
+      "responseTime": {
+        "title": "Thời gian Phản hồi",
+        "content": "24-48 giờ"
+      }
+    },
+    "quickLinks": {
+      "title": "Liên kết Nhanh",
+      "grant": "Đăng ký Tài trợ",
+      "incubation": "Tham gia Chương trình Ủ ấp",
+      "ambassador": "Trở thành Đại sứ",
+      "documentation": "Đọc Tài liệu"
+    }
+  },
+  "engine": {
+    "hero": {
+      "badge": "Dubhe Engine",
+      "title1": "80% Code",
+      "title2": "Tự động tạo",
+      "subtitle": "Nền tảng phát triển dựa trên lược đồ tự động tạo smart contracts, APIs và UI components. Tập trung vào điều quan trọng - logic kinh doanh độc đáo của bạn.",
+      "stats": {
+        "codeAutoGenerated": "Code Tự động tạo",
+        "fasterDevelopment": "Phát triển Nhanh hơn",
+        "moveEcosystem": "Move Ecosystem"
+      },
+      "cta1": "Bắt đầu Xây dựng",
+      "cta2": "Xem Tài liệu"
+    },
+    "featuresSection": {
+      "badge": "Tính năng Cốt lõi",
+      "title": "Xây dựng Nhanh hơn, Ra mắt Sớm hơn",
+      "description": "Dubhe Engine xử lý công việc nặng nhọc để bạn có thể tập trung vào sáng tạo"
+    },
+    "features": {
+      "codeGeneration": {
+        "title": "80% Tự động tạo Code",
+        "description": "Giảm thời gian phát triển một cách đáng kể với việc tạo mã thông minh tự động xử lý boilerplate, cấu trúc dữ liệu và các mẫu phổ biến.",
+        "details": [
+          "Tạo mã dựa trên lược đồ",
+          "Tự động tạo API endpoints",
+          "Khung smart contract",
+          "Tạo UI components"
+        ]
+      },
+      "schemaBased": {
+        "title": "Phát triển Dựa trên Lược đồ",
+        "description": "Định nghĩa cấu trúc dữ liệu một lần và để Dubhe Engine tạo phần còn lại. Các thay đổi tự động lan truyền khắp ứng dụng của bạn.",
+        "details": [
+          "Nguồn chân lý duy nhất",
+          "Type safety tự động",
+          "Xác thực thời gian thực",
+          "Tương thích đa nền tảng"
+        ]
+      },
+      "realTimeToolchain": {
+        "title": "Bộ công cụ DApp Thời gian thực",
+        "description": "Xây dựng ứng dụng hoàn toàn on-chain với khả năng thời gian thực. Từ trạng thái game đến ứng dụng tài chính, mọi thứ xảy ra ngay lập tức.",
+        "details": [
+          "Tính cuối cùng giao dịch dưới giây",
+          "Đồng bộ trạng thái thời gian thực",
+          "Kiến trúc hướng sự kiện",
+          "Cập nhật UI lạc quan"
+        ]
+      },
+      "multiChain": {
+        "title": "Hỗ trợ Đa chuỗi",
+        "description": "Triển khai trên nhiều chuỗi dựa trên Move mà không cần thay đổi mã. Viết một lần, triển khai mọi nơi.",
+        "details": [
+          "Tích hợp mạng Sui",
+          "Tương thích Aptos",
+          "Hỗ trợ mạng Movement",
+          "Quản lý trạng thái đa chuỗi"
+        ]
+      }
+    },
+    "workflowSection": {
+      "badge": "Quy trình Phát triển",
+      "title": "Từ Ý tưởng đến Sản xuất trong 4 Bước Đơn giản"
+    },
+    "workflow": {
+      "defineSchema": {
+        "title": "Định nghĩa Lược đồ",
+        "description": "Tạo các mô hình dữ liệu và logic kinh doanh bằng ngôn ngữ định nghĩa lược đồ trực quan của chúng tôi"
+      },
+      "generateCode": {
+        "title": "Tạo Code",
+        "description": "Dubhe Engine tự động tạo 80% mã ứng dụng của bạn bao gồm smart contracts và APIs"
+      },
+      "customizeLogic": {
+        "title": "Tùy chỉnh Logic",
+        "description": "Tập trung vào 20% độc đáo - logic kinh doanh, tính năng tùy chỉnh và trải nghiệm người dùng của bạn"
+      },
+      "deployInstantly": {
+        "title": "Triển khai Ngay lập tức",
+        "description": "Triển khai một cú nhấp chuột trên nhiều chuỗi Move với tối ưu hóa và giám sát tự động"
+      }
+    },
+    "cta": {
+      "title": "Sẵn sàng tăng tốc Phát triển 10 lần?",
+      "description": "Tham gia cùng các nhà phát triển đang xây dựng tương lai của ứng dụng hoàn toàn on-chain",
+      "getStarted": "Bắt đầu Miễn phí",
+      "scheduleDemo": "Lên lịch Demo"
+    }
+  },
+  "labs": {
+    "hero": {
+      "badge": "Phòng thí nghiệm Phát triển Dubhe",
+      "title1": "Phòng thí nghiệm",
+      "title2": "Đổi mới Hợp tác",
+      "subtitle": "Nhiều đội phát triển chuyên biệt làm việc cùng nhau dưới sự bảo trợ của Quỹ Dubhe để xây dựng tương lai của cơ sở hạ tầng blockchain dựa trên Move, tương tự như Polkadot JAM.",
+      "stats": {
+        "activeLabs": "Phòng thí nghiệm Hoạt động",
+        "coreEngineers": "Kỹ sư Cốt lõi",
+        "unifiedVision": "Tầm nhìn Giao thức Thống nhất"
+      },
+      "cta1": "Khám phá Phòng thí nghiệm",
+      "cta2": "Tham gia Phòng thí nghiệm"
+    },
+    "overview": {
+      "badge": "Đội ngũ Phát triển",
+      "title": "Phòng thí nghiệm Chuyên biệt với Tầm nhìn Thống nhất",
+      "description": "Mỗi phòng thí nghiệm mang đến chuyên môn độc đáo trong khi làm việc hướng tới mục tiêu chung là thúc đẩy hệ sinh thái Dubhe",
+      "visitLab": "Thăm Phòng thí nghiệm",
+      "keyContributions": "Đóng góp Chính"
+    },
+    "labsList": {
+      "obelisk": {
+        "name": "Obelisk Labs",
+        "focus": "Phát triển Giao thức Cốt lõi",
+        "description": "Dẫn đầu việc phát triển giao thức blockchain cốt lõi của Dubhe và cơ sở hạ tầng ngôn ngữ Move. Tập trung vào cơ chế đồng thuận, tối ưu hóa hợp đồng thông minh và công cụ phát triển.",
+        "contributions": [
+          "Kiến trúc Giao thức Cốt lõi Dubhe",
+          "Tối ưu hóa Runtime Ngôn ngữ Move",
+          "Công cụ Thực thi Hợp đồng Thông minh",
+          "SDK và Chuỗi công cụ Nhà phát triển",
+          "Cơ chế Đồng thuận Đa chuỗi"
+        ],
+        "status": "Hoạt động",
+        "team": "12 Kỹ sư"
+      },
+      "cyferio": {
+        "name": "Cyferio Labs",
+        "focus": "Quyền riêng tư và Không kiến thức",
+        "description": "Chuyên biệt về các công nghệ bảo vệ quyền riêng tư, bằng chứng không kiến thức và giao thức mật mã cho hệ sinh thái Dubhe. Xây dựng thế hệ tiếp theo của hợp đồng thông minh riêng tư.",
+        "contributions": [
+          "Hệ thống Bằng chứng Không kiến thức",
+          "Hợp đồng Thông minh Bảo vệ Quyền riêng tư",
+          "Thiết kế Giao thức Mật mã",
+          "Giải pháp Tính toán Bí mật",
+          "Hệ thống Giao dịch Ẩn danh"
+        ],
+        "status": "Hoạt động",
+        "team": "8 Nhà nghiên cứu"
+      },
+      "network": {
+        "name": "Dubhe Network Labs",
+        "focus": "Cơ sở hạ tầng và Mở rộng",
+        "description": "Xây dựng giải pháp mạng hiệu suất cao, giao thức giao tiếp thời gian thực và cơ sở hạ tầng khả năng mở rộng cho hệ sinh thái Dubhe.",
+        "contributions": [
+          "Mạng P2P Hiệu suất Cao",
+          "Giao tiếp Kênh Thời gian thực",
+          "Kiến trúc Node Có thể Mở rộng",
+          "Tối ưu hóa Giao thức Mạng",
+          "Cơ sở hạ tầng Cầu nối Đa chuỗi"
+        ],
+        "status": "Đang phát triển",
+        "team": "6 Kỹ sư"
+      },
+      "bridge": {
+        "name": "Dubhe Bridge Labs",
+        "focus": "Công nghệ Đa chuỗi",
+        "description": "Phát triển giao thức cầu nối phổ quát và giải pháp khả năng tương tác để kết nối Dubhe với các hệ sinh thái blockchain khác một cách liền mạch.",
+        "contributions": [
+          "Giao thức Cầu nối Phổ quát",
+          "Chuyển giao Tài sản Đa chuỗi",
+          "Quản trị Đa chuỗi",
+          "Tiêu chuẩn Khả năng Tương tác",
+          "Cơ chế Bảo mật Cầu nối"
+        ],
+        "status": "Nghiên cứu",
+        "team": "4 Kỹ sư"
+      }
+    },
+    "research": {
+      "badge": "Trọng tâm Nghiên cứu",
+      "title": "Lĩnh vực Nghiên cứu Hợp tác",
+      "areas": {
+        "protocol": {
+          "title": "Phát triển Giao thức",
+          "description": "Giao thức blockchain cốt lõi, cơ chế đồng thuận và cải tiến ngôn ngữ Move",
+          "teams": ["Obelisk Labs"]
+        },
+        "infrastructure": {
+          "title": "Cơ sở hạ tầng và Mở rộng",
+          "description": "Mạng hiệu suất cao, giao tiếp thời gian thực và giải pháp khả năng mở rộng",
+          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+        },
+        "crossChain": {
+          "title": "Công nghệ Đa chuỗi",
+          "description": "Giao thức khả năng tương tác, cầu nối phổ quát và quản trị đa chuỗi",
+          "teams": ["Dubhe Bridge Labs"]
+        },
+        "privacy": {
+          "title": "Quyền riêng tư và Bảo mật",
+          "description": "Bằng chứng không kiến thức, giao thức bảo vệ quyền riêng tư và nghiên cứu mật mã",
+          "teams": ["Cyferio Labs"]
+        }
+      },
+      "contributingLabs": "Phòng thí nghiệm Đóng góp:"
+    },
+    "collaboration": {
+      "title": "Quy trình Phát triển Hợp tác",
+      "description": "Cách nhiều phòng thí nghiệm phối hợp để cung cấp các triển khai giao thức thống nhất",
+      "phases": {
+        "research": {
+          "title": "Nghiên cứu",
+          "description": "Nghiên cứu hợp tác và thiết kế giao thức trên tất cả các đội"
+        },
+        "development": {
+          "title": "Phát triển",
+          "description": "Triển khai song song với tiêu chuẩn và giao diện chung"
+        },
+        "testing": {
+          "title": "Kiểm tra",
+          "description": "Kiểm tra tích hợp và xác thực giữa các đội"
+        },
+        "deployment": {
+          "title": "Triển khai",
+          "description": "Triển khai phối hợp và tích hợp hệ sinh thái"
+        }
+      }
+    },
+    "cta": {
+      "title": "Tham gia Đổi mới",
+      "description": "Trở thành một phần của việc xây dựng tương lai cơ sở hạ tầng blockchain dựa trên Move",
+      "apply": "Ứng tuyển vào Phòng thí nghiệm",
+      "positions": "Xem Vị trí Mở"
+    }
+  },
+  "privacy": {
+    "badge": "Chính sách Bảo mật",
+    "hero": {
+      "title": "Quyền riêng tư của bạn",
+      "titleHighlight": "quan trọng",
+      "subtitle": "Tìm hiểu cách Quỹ Dubhe bảo vệ quyền riêng tư của bạn và xử lý dữ liệu của bạn với tính minh bạch và bảo mật.",
+      "lastUpdated": "Cập nhật lần cuối: Tháng 1 năm 2025"
+    },
+    "introduction": {
+      "title": "Giới thiệu",
+      "content": "Tại Quỹ Dubhe, chúng tôi cam kết bảo vệ quyền riêng tư của bạn và đảm bảo tính bảo mật của thông tin cá nhân của bạn. Chính sách Bảo mật này giải thích cách chúng tôi thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn khi bạn sử dụng nền tảng, dịch vụ và ứng dụng của chúng tôi liên quan đến hệ sinh thái blockchain Dubhe."
+    },
+    "sections": {
+      "collection": {
+        "title": "Thông tin chúng tôi thu thập",
+        "items": [
+          "Thông tin cá nhân bạn cung cấp khi sử dụng dịch vụ của chúng tôi",
+          "Thông tin kỹ thuật về thiết bị và kết nối mạng của bạn",
+          "Dữ liệu sử dụng và phân tích để cải thiện nền tảng của chúng tôi",
+          "Địa chỉ ví và dữ liệu giao dịch blockchain"
+        ]
+      },
+      "usage": {
+        "title": "Cách chúng tôi sử dụng thông tin",
+        "items": [
+          "Để cung cấp và cải thiện nền tảng phát triển blockchain của chúng tôi",
+          "Để xử lý đơn xin cấp tài trợ và chương trình ươm tạo",
+          "Để giao tiếp về cập nhật, sự kiện và cơ hội",
+          "Để đảm bảo an toàn nền tảng và ngăn chặn gian lận"
+        ]
+      },
+      "protection": {
+        "title": "Bảo vệ dữ liệu",
+        "items": [
+          "Chúng tôi thực hiện các biện pháp bảo mật tiêu chuẩn ngành",
+          "Tất cả dữ liệu nhạy cảm được mã hóa khi truyền tải và lưu trữ",
+          "Chúng tôi không bao giờ lưu trữ khóa riêng hoặc thông tin ví nhạy cảm",
+          "Kiểm toán bảo mật thường xuyên và đánh giá tuân thủ"
+        ]
+      },
+      "sharing": {
+        "title": "Chia sẻ dữ liệu",
+        "items": [
+          "Chúng tôi không bán thông tin cá nhân cho bên thứ ba",
+          "Chia sẻ hạn chế với các nhà cung cấp dịch vụ theo thỏa thuận nghiêm ngặt",
+          "Dữ liệu blockchain công khai về bản chất là minh bạch",
+          "Chúng tôi có thể chia sẻ dữ liệu để tuân thủ các yêu cầu pháp lý"
+        ]
+      }
+    },
+    "rights": {
+      "title": "Quyền riêng tư của bạn",
+      "access": {
+        "title": "Truy cập và Kiểm soát",
+        "items": [
+          "Yêu cầu truy cập vào dữ liệu cá nhân của bạn",
+          "Sửa chữa thông tin không chính xác",
+          "Xóa tài khoản và dữ liệu của bạn",
+          "Xuất dữ liệu của bạn"
+        ]
+      },
+      "communication": {
+        "title": "Giao tiếp",
+        "items": [
+          "Từ chối nhận thông tin tiếp thị",
+          "Chọn tùy chọn thông báo",
+          "Kiểm soát cài đặt cookie",
+          "Yêu cầu hạn chế xử lý dữ liệu"
+        ]
+      }
+    },
+    "contact": {
+      "title": "Câu hỏi về Quyền riêng tư?",
+      "description": "Nếu bạn có bất kỳ câu hỏi nào về Chính sách Bảo mật này hoặc các thực hành dữ liệu của chúng tôi, vui lòng liên hệ với chúng tôi."
+    }
+  },
+  "proposal": {
+    "badge": "Dubhe OpenGov",
+    "hero": {
+      "title": "Cùng Nhậu Định Hình",
+      "titleHighlight": "Tương Lai",
+      "subtitle": "Gửi đề xuất thông qua DubheOS để yêu cầu tài trợ từ quỹ, nâng cấp runtime, hoặc tham gia quản trị sử dụng framework OpenGov của Polkadot với việc bỏ phiếu theo niềm tin.",
+      "cta": {
+        "primary": "DubheOS Devnet",
+        "secondary": "Xem Tất Cả Các Referenda"
+      }
+    },
+    "types": {
+      "badge": "Danh Mục Đề Xuất",
+      "title": "Các Loại Đề Xuất Quản Trị",
+      "exampleLabel": "Các ví dụ đề xuất",
+      "treasury": {
+        "title": "Chi Tiêu Quỹ",
+        "description": "Yêu cầu tài trợ từ Quỹ Dubhe cho các dự án phát triển và sáng kiến",
+        "examples": [
+          "Quỹ phát triển",
+          "Tài trợ cơ sở hạ tầng",
+          "Dự án nghiên cứu"
+        ]
+      },
+      "governance": {
+        "title": "Thay Đổi Quản Trị",
+        "description": "Các thay đổi của cơ chế bỏ phiếu, quản lý quỹ, và các tham số quản trị",
+        "examples": [
+          "Ngưỡng bỏ phiếu",
+          "Tham số referendum",
+          "Cấu hình track"
+        ]
+      },
+      "runtime": {
+        "title": "Nâng Cấp Runtime",
+        "description": "Các cải tiến giao thức và thay đổi runtime cần sự chấp thuận của quản trị",
+        "examples": [
+          "Nâng cấp pallet",
+          "Tối ưu hóa runtime",
+          "Tính năng mới"
+        ]
+      },
+      "emergency": {
+        "title": "Hành Động Khẩn Cấp",
+        "description": "Các đề xuất nhạy cảm về thời gian cho các vấn đề bảo mật và sửa lỗi giao thức quan trọng",
+        "examples": [
+          "Bản vá bảo mật",
+          "Cập nhật khẩn cấp",
+          "Sửa lỗi quan trọng"
+        ]
+      }
+    },
+    "active": {
+      "title": "Các Referendum Đang Hoạt Động",
+      "subtitle": "Các referendum hiện tại trong các track quản trị khác nhau với bỏ phiếu conviction"
+    },
+    "process": {
+      "title": "Quy Trình Quản Trị",
+      "subtitle": "Quy trình từng bước để tạo và bỏ phiếu cho các đề xuất quản trị"
+    },
+    "requirements": {
+      "title": "Yêu Cầu Đề Xuất"
+    },
+    "cta": {
+      "title": "Sẵn Sàng Tham Gia?",
+      "subtitle": "Tham gia vào quy trình quản trị và giúp định hình tương lai của Dubhe",
+      "primary": "Truy Cập DubheOS",
+      "secondary": "Hướng Dẫn OpenGov"
+    }
+  },
+  "terms": {
+    "badge": "Điều Khoản Dịch Vụ",
+    "hero": {
+      "title": "Điều Khoản",
+      "titleHighlight": "Dịch Vụ",
+      "subtitle": "Những điều khoản này điều chỉnh việc sử dụng dịch vụ, nền tảng và cơ sở hạ tầng blockchain của Dubhe.",
+      "lastUpdated": "Cập nhật lần cuối: Tháng 1 năm 2025"
+    },
+    "introduction": {
+      "title": "Tổng Quan Thỏa Thuận",
+      "content1": "Chào mừng đến với Dubhe! Các Điều Khoản Dịch Vụ này (\"Điều Khoản\") tạo thành một thỏa thuận có ràng buộc pháp lý giữa bạn và Dubhe Foundation (\"chúng tôi\", \"của chúng tôi\" hoặc \"chúng ta\") liên quan đến việc sử dụng nền tảng blockchain, công cụ phát triển và các dịch vụ liên quan của chúng tôi.",
+      "content2": "Bằng cách sử dụng dịch vụ của chúng tôi, bạn xác nhận rằng bạn đã đọc, hiểu và đồng ý bị ràng buộc bởi các Điều Khoản này và Chính Sách Bảo Mật của chúng tôi. Nếu bạn đang sử dụng dịch vụ của chúng tôi thay mặt cho một tổ chức, bạn tuyên bố rằng bạn có thẩm quyền để ràng buộc tổ chức đó với các Điều Khoản này."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "Chấp Nhận Điều Khoản",
+        "items": [
+          "Bằng cách truy cập hoặc sử dụng dịch vụ Dubhe, bạn đồng ý bị ràng buộc bởi các Điều Khoản này",
+          "Nếu bạn không đồng ý với bất kỳ phần nào của các điều khoản này, bạn không được truy cập dịch vụ của chúng tôi",
+          "Chúng tôi có thể cập nhật các điều khoản này theo thời gian mà không cần thông báo trước",
+          "Việc tiếp tục sử dụng của bạn tạo thành sự chấp nhận các điều khoản đã được sửa đổi"
+        ]
+      },
+      "usage": {
+        "title": "Sử Dụng Dịch Vụ",
+        "items": [
+          "Bạn phải ít nhất 18 tuổi để sử dụng dịch vụ của chúng tôi",
+          "Bạn có trách nhiệm duy trì bảo mật tài khoản của mình",
+          "Bạn không được sử dụng dịch vụ của chúng tôi cho bất kỳ mục đích bất hợp pháp hoặc không được ủy quyền nào",
+          "Chúng tôi bảo lưu quyền chấm dứt các tài khoản vi phạm các điều khoản này"
+        ]
+      },
+      "intellectual": {
+        "title": "Sở Hữu Trí Tuệ",
+        "items": [
+          "Dubhe Foundation giữ lại tất cả quyền đối với công nghệ độc quyền của chúng tôi",
+          "Các thành phần mã nguồn mở được điều chỉnh bởi các giấy phép tương ứng của chúng",
+          "Bạn giữ lại quyền sở hữu nội dung mà bạn tạo bằng cách sử dụng nền tảng của chúng tôi",
+          "Bạn cấp cho chúng tôi giấy phép sử dụng nội dung của bạn để cung cấp dịch vụ của chúng tôi"
+        ]
+      },
+      "disclaimers": {
+        "title": "Từ Chối Trách Nhiệm & Giới Hạn",
+        "items": [
+          "Dịch vụ của chúng tôi được cung cấp 'như hiện có' mà không có bảo hành dưới bất kỳ hình thức nào",
+          "Chúng tôi không chịu trách nhiệm cho bất kỳ thiệt hại gián tiếp, ngẫu nhiên hoặc hậu quả nào",
+          "Giao dịch blockchain không thể đảo ngược và chúng tôi không thể đảo ngược chúng",
+          "Bạn thừa nhận tính chất thử nghiệm của công nghệ blockchain"
+        ]
+      }
+    },
+    "blockchain": {
+      "title": "Điều Khoản Cụ Thể Về Blockchain",
+      "participation": {
+        "title": "Tham Gia Mạng Lưới",
+        "items": [
+          "Giao dịch được ghi lại trên các blockchain công khai",
+          "Phí mạng áp dụng cho các hoạt động blockchain",
+          "Hợp đồng thông minh không thể thay đổi sau khi triển khai",
+          "Bạn chịu trách nhiệm về độ chính xác của giao dịch"
+        ]
+      },
+      "risks": {
+        "title": "Thừa Nhận Rủi Ro",
+        "items": [
+          "Công nghệ blockchain mang tính thử nghiệm",
+          "Giá trị token có thể rất biến động",
+          "Hợp đồng thông minh có thể chứa lỗi",
+          "Tắc nghẽn mạng có thể ảnh hưởng đến hiệu suất"
+        ]
+      }
+    },
+    "governance": {
+      "title": "Luật Điều Chỉnh và Tranh Chấp",
+      "law": "Các Điều Khoản này sẽ được diễn giải và điều chỉnh theo luật pháp của khu vực pháp lý nơi Dubhe Foundation được thành lập, không quan tâm đến các điều khoản xung đột pháp luật của nó.",
+      "disputes": "Bất kỳ tranh chấp nào phát sinh từ các Điều Khoản này hoặc việc sử dụng dịch vụ của chúng tôi sẽ được giải quyết thông qua trọng tài ràng buộc theo quy tắc trọng tài quốc tế.",
+      "modifications": "Chúng tôi bảo lưu quyền sửa đổi các Điều Khoản này bất kỳ lúc nào. Việc tiếp tục sử dụng dịch vụ của chúng tôi sau các thay đổi tạo thành sự chấp nhận các Điều Khoản đã sửa đổi."
+    },
+    "contact": {
+      "title": "Có Câu Hỏi Về Điều Khoản?",
+      "description": "Nếu bạn có bất kỳ câu hỏi nào về các Điều Khoản Dịch Vụ này, vui lòng liên hệ với đội ngũ pháp lý của chúng tôi."
     }
   },
   "LocaleSwitcher": {

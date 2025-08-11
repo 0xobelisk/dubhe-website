@@ -563,6 +563,131 @@
       "cta2": "재단 연락처"
     }
   },
+  "channel": {
+    "badge": "Dubhe 채널",
+    "hero": {
+      "title": "실시간 P2P",
+      "titleHighlight": "상호작용 레이어",
+      "subtitle": "Web3 인프라를 통한 Web2 수준의 사용자 경험. Move 블록체인에서 구축된 게임, 소셜 플랫폼, 거래 애플리케이션을 위한 50ms 미만의 지연 시간.",
+      "metrics": {
+        "latency": "지연 시간",
+        "users": "동시 사용자",
+        "uptime": "가동 시간"
+      },
+      "cta1": "네트워크에 참여",
+      "cta2": "기술 문서"
+    },
+    "features": {
+      "badge": "핵심 기능",
+      "title": "실시간 인프라",
+      "subtitle": "현대 DApp을 위한",
+      "description": "즉각적인 응답성과 매끄러운 사용자 경험을 요구하는 애플리케이션을 위해 구축됨",
+      "items": {
+        "latency": {
+          "title": "50ms 미만의 지연 시간",
+          "description": "Web2 수준의 응답성을 가진 실시간 P2P 상호작용. 즉각적인 피드백을 요구하는 게임, 거래, 소셜 애플리케이션을 위해 구축됨.",
+          "details": [
+            "WebRTC 기반 통신",
+            "최적화된 라우팅 알고리즘",
+            "엣지 노드 분산",
+            "예측적 상태 동기화"
+          ]
+        },
+        "network": {
+          "title": "확장 가능한 P2P 네트워크",
+          "description": "사용자 기반과 함께 성장하는 수평 확장. 성능 저하 없이 수백에서 수백만의 동시 연결까지.",
+          "details": [
+            "동적 피어 발견",
+            "로드 밸런싱 프로토콜",
+            "메시 네트워크 토폴로지",
+            "자동 확장 인프라"
+          ]
+        },
+        "security": {
+          "title": "기본적으로 안전",
+          "description": "엔드투엔드 암호화와 암호학적 검증으로 데이터와 상호작용이 비공개이고 변조 불가능하도록 보장.",
+          "details": [
+            "E2E 암호화 프로토콜",
+            "영지식 증명",
+            "암호학적 서명",
+            "탈중앙화 검증"
+          ]
+        },
+        "experience": {
+          "title": "Web2 UX, Web3 백엔드",
+          "description": "탈중앙화 인프라로 구동되는 친숙한 사용자 경험. 사용자는 타협 없이 두 세계의 최고를 얻습니다.",
+          "details": [
+            "매끄러운 지갑 통합",
+            "가스 없는 거래",
+            "프로그레시브 웹 앱 지원",
+            "모바일 우선 디자인"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "badge": "사용 사례",
+      "title": "실시간 애플리케이션을 위해 구축",
+      "items": {
+        "gaming": {
+          "title": "실시간 게임",
+          "description": "즉각적인 응답 시간을 가진 멀티플레이어 게임",
+          "metrics": ["50ms 미만의 지연 시간", "100만 이상의 동시 플레이어", "99.9% 가동 시간"]
+        },
+        "social": {
+          "title": "소셜 플랫폼",
+          "description": "실시간 메시징을 가진 탈중앙화 소셜 네트워크",
+          "metrics": ["즉석 메시징", "라이브 영상 통화", "그룹 채팅"]
+        },
+        "trading": {
+          "title": "거래 애플리케이션",
+          "description": "실시간 가격 피드를 가진 고빈도 거래",
+          "metrics": ["실시간 데이터", "주문장 업데이트", "가격 발견"]
+        }
+      }
+    },
+    "architecture": {
+      "title": "네트워크 아키텍처",
+      "description": "최적의 성능과 확장성을 위한 다계층 접근법",
+      "layers": {
+        "application": {
+          "title": "애플리케이션 레이어",
+          "description": "귀하의 DApp이 간단한 API를 통해 연결"
+        },
+        "channel": {
+          "title": "채널 레이어",
+          "description": "실시간 P2P 통신 프로토콜"
+        },
+        "network": {
+          "title": "네트워크 레이어",
+          "description": "분산 노드 인프라"
+        },
+        "blockchain": {
+          "title": "블록체인 레이어",
+          "description": "Move 기반 결제 및 검증"
+        }
+      }
+    },
+    "network": {
+      "title": "글로벌 P2P 네트워크",
+      "description": "초저지연 통신을 위해 전 세계 노드를 연결하는 Dubhe 성좌 네트워크",
+      "status": {
+        "title": "네트워크 상태",
+        "online": "온라인",
+        "latency": "지연 시간: 50ms 미만"
+      },
+      "nodes": {
+        "title": "활성 노드",
+        "connected": "7/7 연결됨"
+      }
+    },
+    "cta": {
+      "title": "실시간 DApp 준비가 되셨나요?",
+      "subtitle": "차세대 인터랙티브 애플리케이션을 구동하는 네트워크에 참여하세요",
+      "primary": "네트워크에 연결",
+      "secondary": "API 문서 보기"
+    }
+  },
   "os": {
     "badge": "Dubhe OS",
     "hero": {
@@ -714,6 +839,84 @@
       "suggestion": "이것은 일반적으로 일시적인 문제입니다. 잠시 후 다시 시도해 주세요."
     }
   },
+  "incubation": {
+    "hero": {
+      "badge": "Dubhe 재단 인큐베이션",
+      "title": "다음 유니콘 스타트업을 구축하세요",
+      "subtitle": "Dubhe 재단이 지원하는 협업 인큐베이션 생태계에 참여하여 Obelisk Labs 및 생태계 VC와 공동 인큐베이션하여 차세대 Move 스타트업을 구축하세요.",
+      "stats": {
+        "funding": {
+          "value": "곧 출시 예정",
+          "label": "총 자금 조달"
+        },
+        "startups": {
+          "value": "곧 출시 예정", 
+          "label": "인큐베이팅된 스타트업"
+        },
+        "unicorns": {
+          "value": "곧 출시 예정",
+          "label": "창출된 유니콘"
+        },
+        "success": {
+          "value": "곧 출시 예정",
+          "label": "성공률"
+        }
+      },
+      "cta": {
+        "apply": "지금 지원하기",
+        "learn": "더 알아보기"
+      }
+    },
+    "programs": {
+      "accelerator": {
+        "title": "재단 액셀러레이터",
+        "duration": "3개월",
+        "funding": "최대 $500K",
+        "description": "Dubhe 재단이 지원하는 집중 프로그램으로 Obelisk Labs 및 생태계 VC와 공동 인큐베이션",
+        "benefits": ["Dubhe 재단 자금 지원", "Obelisk Labs 공동 인큐베이션", "Move 개발 지원", "생태계 VC 파트너십"]
+      },
+      "studio": {
+        "title": "협업 스튜디오",
+        "duration": "6-12개월",
+        "funding": "최대 $1M", 
+        "description": "Dubhe 재단, Obelisk Labs, 생태계 VC가 공유 리소스로 공동 인큐베이션",
+        "benefits": ["다중 파트너 공동 인큐베이션", "공유 기술 리소스", "프로젝트 간 협업", "생태계 VC 네트워크"]
+      },
+      "scale": {
+        "title": "생태계 스케일",
+        "duration": "6개월",
+        "funding": "최대 $2M",
+        "description": "Dubhe 재단, Obelisk Labs, 생태계 VC 파트너의 포괄적인 지원으로 스케일업",
+        "benefits": ["공동 인큐베이션 네트워크", "전략적 소개", "글로벌 시장 접근", "기업 VC 연결"]
+      }
+    },
+    "resources": {
+      "coIncubation": {
+        "title": "다중 파트너 공동 인큐베이션",
+        "description": "Dubhe 재단, Obelisk Labs, 생태계 VC의 공동 지도"
+      },
+      "infrastructure": {
+        "title": "공유 인프라",
+        "description": "Obelisk Labs 인프라 및 생태계 VC 리소스 접근"
+      },
+      "integration": {
+        "title": "생태계 통합",
+        "description": "Dubhe 프로젝트 및 파트너 네트워크와의 직접 통합"
+      },
+      "development": {
+        "title": "협업 개발",
+        "description": "Dubhe 재단 및 Obelisk Labs 엔지니어링 팀의 기술 지원"
+      },
+      "demoDays": {
+        "title": "파트너 데모 데이",
+        "description": "Dubhe 재단 이사회 및 생태계 VC 네트워크에 발표"
+      },
+      "network": {
+        "title": "생태계 네트워크",
+        "description": "전체 Dubhe 및 파트너 회사 생태계에 접근"
+      }
+    }
+  },
   "ambassador": {
     "hero": {
       "badge": "앰배서더 프로그램",
@@ -805,6 +1008,721 @@
       "description": "우리의 앰배서더 프로그램에 참여하여 Move 생태계의 리더가 되세요",
       "apply": "지금 신청하기",
       "contact": "문의하기"
+    }
+  },
+  "moderators": {
+    "hero": {
+      "badge": "모더레이터 프로그램",
+      "title1": "커뮤니티",
+      "title2": "모더레이터",
+      "subtitle": "글로벌 커뮤니티를 위한 안전하고 환영받는 생산적인 환경을 유지하는 데 도움을 주세요. 모든 구성원을 지원하고 양질의 토론을 보장하는 전담 모더레이터 팀에 참여하세요.",
+      "stats": {
+        "coverage": "커버리지",
+        "activeModerators": "활성 모더레이터",
+        "membersProtected": "보호된 멤버"
+      },
+      "cta1": "모더레이터 신청",
+      "cta2": "가이드라인"
+    },
+    "responsibilitiesSection": {
+      "badge": "주요 책임",
+      "title": "모더레이터가 하는 일"
+    },
+    "responsibilities": {
+      "communityModeration": {
+        "title": "커뮤니티 모더레이션",
+        "description": "건전한 토론을 유지하고, 커뮤니티 가이드라인을 시행하며, 모든 구성원을 위한 환영받는 환경을 보장합니다"
+      },
+      "securitySafety": {
+        "title": "보안 및 안전",
+        "description": "스팸, 사기 및 악성 활동을 식별하고 방지하여 커뮤니티 구성원을 보호합니다"
+      },
+      "memberSupport": {
+        "title": "구성원 지원",
+        "description": "신규 사용자가 시작할 수 있도록 도움을 주고, 질문에 답변하며, 적절한 리소스로 안내합니다"
+      },
+      "contentCuration": {
+        "title": "콘텐츠 큐레이션",
+        "description": "양질의 콘텐츠를 강조하고, 정보를 정리하며, 커뮤니티 토론의 품질을 유지합니다"
+      }
+    },
+    "moderatorsSection": {
+      "title": "우리의 모더레이터를 만나보세요",
+      "description": "우리의 전담 팀은 모든 시간대와 플랫폼에서 24시간 365일 커버리지를 보장합니다",
+      "timezone": "시간대",
+      "platforms": "플랫폼",
+      "languages": "언어"
+    },
+    "toolsSection": {
+      "title": "모더레이션 도구"
+    },
+    "tools": {
+      "discord": {
+        "features": [
+          "메시지 관리",
+          "사용자 타임아웃/밴",
+          "채널 감시",
+          "봇 통합"
+        ]
+      },
+      "telegram": {
+        "features": [
+          "그룹 모더레이션",
+          "스팸 필터링",
+          "사용자 인증",
+          "자동 응답"
+        ]
+      },
+      "forum": {
+        "features": [
+          "스레드 관리",
+          "콘텐츠 모더레이션",
+          "사용자 순위",
+          "신고 처리"
+        ]
+      }
+    },
+    "requirementsSection": {
+      "title": "요구사항",
+      "guidelinesTitle": "모더레이션 가이드라인"
+    },
+    "requirements": [
+      "최소 3개월 동안 활성 커뮤니티 구성원",
+      "Dubhe 생태계와 Move 기술에 대한 깊은 이해",
+      "뛰어난 커뮤니케이션 및 갈등 해결 능력",
+      "다양한 시간대의 모더레이션 업무에 대한 가용성",
+      "이전 모더레이션 경험 선호",
+      "공정하고 공평한 의사 결정에 대한 헌신"
+    ],
+    "guidelines": {
+      "communication": {
+        "category": "커뮤니케이션",
+        "rules": [
+          "모든 커뮤니티 구성원을 존중하고 예의를 갖춰 대하기",
+          "모든 상호작용에서 명확하고 전문적인 언어 사용하기",
+          "갈등을 완화하고 건설적인 대화 촉진하기",
+          "신규 사용자에게 인내심을 갖고 유용한 안내 제공하기"
+        ]
+      },
+      "enforcement": {
+        "category": "시행",
+        "rules": [
+          "커뮤니티 규칙을 일관되고 공정하게 적용하기",
+          "명확한 이유와 함께 모든 모더레이션 행동 문서화하기",
+          "복잡한 문제를 선임 모더레이터나 관리자에게 에스컬레이션하기",
+          "검토 및 이의제기 프로세스는 투명해야 함"
+        ]
+      },
+      "privacySecurity": {
+        "category": "개인정보보호 및 보안",
+        "rules": [
+          "사용자 개인정보와 개인정보 보호하기",
+          "모더레이션 도구나 자격 증명을 절대 공유하지 않기",
+          "보안 취약점을 즉시 보고하기",
+          "내부 논의의 기밀성 유지하기"
+        ]
+      }
+    },
+    "cta": {
+      "title": "우리 커뮤니티를 도울 준비가 되셨나요?",
+      "description": "모더레이션 팀에 참여하여 모두를 위한 안전하고 환영받는 환경을 만드는 데 도움을 주세요",
+      "apply": "지금 신청하기",
+      "guidelines": "가이드라인 보기"
+    }
+  },
+  "events": {
+    "hero": {
+      "badge": "이벤트 캘린더",
+      "title": "예정된 이벤트",
+      "subtitle": "Dubhe 주최 이벤트에 참여하고 Move 개발자들과 연결하며 생태계의 최신 정보를 받아보세요."
+    },
+    "filters": {
+      "search": {
+        "placeholder": "검색"
+      },
+      "categories": {
+        "all": "전체",
+        "ama": "AMA",
+        "workshop": "워크샵",
+        "meetup": "밋업"
+      },
+      "sort": {
+        "date": "정렬: 날짜",
+        "name": "정렬: 이름",
+        "location": "정렬: 위치"
+      }
+    },
+    "table": {
+      "headers": {
+        "date": "날짜",
+        "name": "이름",
+        "location": "위치",
+        "category": "카테고리"
+      },
+      "noEvents": "조건에 맞는 이벤트를 찾을 수 없습니다"
+    },
+    "eventsList": {
+      "engineWorkshop": {
+        "name": "Dubhe 엔진 개발자 워크샵",
+        "location": "온라인",
+        "category": "워크샵",
+        "description": "Dubhe 엔진에 대해 깊이 알아보고 완전 온체인 애플리케이션 구축의 최신 기술과 모범 사례를 배워보세요."
+      },
+      "moveAma": {
+        "name": "Dubhe 재단과의 Move 생태계 AMA",
+        "location": "온라인",
+        "category": "AMA",
+        "description": "Dubhe 프로토콜, 기술적 세부사항, 로드맵에 대해 궁금한 것을 무엇이든 물어보세요."
+      },
+      "sfMeetup": {
+        "name": "Dubhe 커뮤니티 밋업 - 샌프란시스코",
+        "location": "샌프란시스코, 캘리포니아",
+        "category": "밋업",
+        "description": "Dubhe 개발자들과 네트워킹하고 최신 프로젝트를 공유하며 Move 생태계에서의 협력 기회를 탐색해보세요."
+      },
+      "zkWorkshop": {
+        "name": "영지식 프라이버시 솔루션 워크샵",
+        "location": "온라인",
+        "category": "워크샵",
+        "description": "ZK 증명과 Dubhe에서의 프라이버시 보호 애플리케이션에 대해 배우고 실습 경험을 쌓아보세요."
+      }
+    },
+    "community": {
+      "title": "글로벌 커뮤니티에 참여하세요",
+      "description": "전 세계의 개발자, 애호가, Move 기술 혁신가들과 연결하세요.",
+      "stats": {
+        "eventsThisYear": "올해 이벤트",
+        "attendees": "참석자",
+        "countries": "국가",
+        "speakers": "연사"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "문의하기",
+      "title1": "연락",
+      "title2": "주세요",
+      "subtitle": "Dubhe에 대한 질문이 있으시거나 파트너십을 고려하고 계시나요? 언제든지 문의해 주세요."
+    },
+    "form": {
+      "title": "메시지 보내기",
+      "validationError": "유효성 검사 오류",
+      "sendError": "메시지 전송에 실패했습니다. 다시 시도해 주세요.",
+      "networkError": "네트워크 오류입니다. 연결을 확인하고 다시 시도해 주세요.",
+      "sending": "전송 중...",
+      "submit": "메시지 보내기",
+      "success": {
+        "title": "메시지가 전송되었습니다!",
+        "message": "24-48시간 내에 답변드리겠습니다.",
+        "sendAnother": "다른 메시지 보내기"
+      },
+      "fields": {
+        "name": {
+          "label": "이름",
+          "placeholder": "성함을 입력해주세요"
+        },
+        "email": {
+          "label": "이메일",
+          "placeholder": "your@email.com"
+        },
+        "subject": {
+          "label": "제목",
+          "placeholder": "제목을 선택해주세요",
+          "options": {
+            "general": "일반 문의",
+            "partnership": "파트너십",
+            "investment": "투자 문의",
+            "grants": "그랜트 신청",
+            "foundationJobs": "재단 채용",
+            "technical": "기술 지원",
+            "media": "미디어 및 보도"
+          }
+        },
+        "message": {
+          "label": "메시지",
+          "placeholder": "프로젝트, 문의사항 또는 저희가 도와드릴 수 있는 일에 대해 알려주세요..."
+        }
+      }
+    },
+    "info": {
+      "title": "연락처 정보",
+      "description": "개발자, 투자자 또는 Dubhe에 대해 궁금한 점이 있으시든, 저희가 도와드리겠습니다. 아래 채널을 통해 연락해 주세요.",
+      "email": {
+        "title": "이메일"
+      },
+      "business": {
+        "title": "비즈니스 문의"
+      },
+      "location": {
+        "title": "위치",
+        "content": "글로벌, 분산형"
+      },
+      "responseTime": {
+        "title": "응답 시간",
+        "content": "24-48시간"
+      }
+    },
+    "quickLinks": {
+      "title": "빠른 링크",
+      "grant": "그랜트 신청",
+      "incubation": "인큐베이션 프로그램 참가",
+      "ambassador": "앰버서더 되기",
+      "documentation": "문서 읽기"
+    }
+  },
+  "engine": {
+    "hero": {
+      "badge": "Dubhe 엔진",
+      "title1": "80% 코드",
+      "title2": "자동 생성",
+      "subtitle": "스마트 컨트랙트, API, UI 컴포넌트를 자동으로 생성하는 스키마 기반 개발 플랫폼. 중요한 것에 집중하세요 - 당신만의 고유한 비즈니스 로직.",
+      "stats": {
+        "codeAutoGenerated": "코드 자동 생성",
+        "fasterDevelopment": "빠른 개발",
+        "moveEcosystem": "Move 생태계"
+      },
+      "cta1": "개발 시작하기",
+      "cta2": "문서 보기"
+    },
+    "featuresSection": {
+      "badge": "핵심 기능",
+      "title": "더 빠르게 개발하고, 더 빠르게 출시",
+      "description": "Dubhe 엔진이 무거운 작업을 처리하므로 혁신에 집중할 수 있습니다"
+    },
+    "features": {
+      "codeGeneration": {
+        "title": "80% 코드 자동 생성",
+        "description": "보일러플레이트, 데이터 구조, 일반적인 패턴을 자동으로 처리하는 지능형 코드 생성으로 개발 시간을 극적으로 단축합니다.",
+        "details": [
+          "스키마 기반 코드 생성",
+          "자동 API 엔드포인트 생성",
+          "스마트 컨트랙트 스캐폴딩",
+          "UI 컴포넌트 생성"
+        ]
+      },
+      "schemaBased": {
+        "title": "스키마 기반 개발",
+        "description": "데이터 구조를 한 번 정의하면 Dubhe 엔진이 나머지를 모두 생성합니다. 변경사항이 전체 애플리케이션에 자동으로 전파됩니다.",
+        "details": [
+          "단일 진실 소스",
+          "자동 타입 안전성",
+          "실시간 검증",
+          "크로스 플랫폼 호환성"
+        ]
+      },
+      "realTimeToolchain": {
+        "title": "실시간 DApp 툴체인",
+        "description": "실시간 기능을 갖춘 완전한 온체인 애플리케이션을 구축합니다. 게임 상태부터 금융 애플리케이션까지 모든 것이 즉시 발생합니다.",
+        "details": [
+          "서브초 트랜잭션 최종성",
+          "실시간 상태 동기화",
+          "이벤트 기반 아키텍처",
+          "낙관적 UI 업데이트"
+        ]
+      },
+      "multiChain": {
+        "title": "멀티체인 지원",
+        "description": "코드를 변경하지 않고 여러 Move 기반 체인에 배포합니다. 한 번 작성하여 어디든 배포하세요.",
+        "details": [
+          "Sui 네트워크 통합",
+          "Aptos 호환성",
+          "Movement 네트워크 지원",
+          "크로스체인 상태 관리"
+        ]
+      }
+    },
+    "workflowSection": {
+      "badge": "개발 워크플로",
+      "title": "아이디어에서 프로덕션까지 4가지 간단한 단계"
+    },
+    "workflow": {
+      "defineSchema": {
+        "title": "스키마 정의",
+        "description": "직관적인 스키마 정의 언어를 사용하여 데이터 모델과 비즈니스 로직을 생성합니다"
+      },
+      "generateCode": {
+        "title": "코드 생성",
+        "description": "Dubhe 엔진이 스마트 컨트랙트와 API를 포함한 애플리케이션 코드의 80%를 자동 생성합니다"
+      },
+      "customizeLogic": {
+        "title": "로직 커스터마이징",
+        "description": "고유한 20%에 집중하세요 - 비즈니스 로직, 커스텀 기능, 사용자 경험"
+      },
+      "deployInstantly": {
+        "title": "즉시 배포",
+        "description": "자동 최적화와 모니터링으로 여러 Move 체인에 원클릭 배포"
+      }
+    },
+    "cta": {
+      "title": "개발 속도를 10배 높일 준비가 되셨나요?",
+      "description": "완전한 온체인 애플리케이션의 미래를 구축하는 개발자들과 함께하세요",
+      "getStarted": "무료로 시작하기",
+      "scheduleDemo": "데모 예약하기"
+    }
+  },
+  "labs": {
+    "hero": {
+      "badge": "Dubhe 개발 연구소",
+      "title1": "협력적",
+      "title2": "혁신 연구소",
+      "subtitle": "Polkadot JAM과 같이 Dubhe 재단 하에서 여러 전문 개발팀이 협력하여 Move 기반 블록체인 인프라의 미래를 구축하고 있습니다.",
+      "stats": {
+        "activeLabs": "활성 연구소",
+        "coreEngineers": "핵심 엔지니어",
+        "unifiedVision": "통합 프로토콜 비전"
+      },
+      "cta1": "연구소 탐색",
+      "cta2": "연구소 참여"
+    },
+    "overview": {
+      "badge": "개발팀",
+      "title": "전문 연구소 통합 비전",
+      "description": "각 연구소는 고유한 전문성을 가지고 있으면서도 Dubhe 생태계 발전이라는 공통 목표를 향해 노력하고 있습니다",
+      "visitLab": "연구소 방문",
+      "keyContributions": "주요 기여"
+    },
+    "labsList": {
+      "obelisk": {
+        "name": "Obelisk Labs",
+        "focus": "핵심 프로토콜 개발",
+        "description": "Dubhe의 핵심 블록체인 프로토콜과 Move 언어 인프라 개발을 주도합니다. 합의 메커니즘, 스마트 계약 최적화, 개발자 도구에 중점을 둡니다.",
+        "contributions": [
+          "Dubhe 핵심 프로토콜 아키텍처",
+          "Move 언어 런타임 최적화",
+          "스마트 계약 실행 엔진",
+          "개발자 SDK 및 툴체인",
+          "크로스체인 합의 메커니즘"
+        ],
+        "status": "활성화",
+        "team": "12명의 엔지니어"
+      },
+      "cyferio": {
+        "name": "Cyferio Labs",
+        "focus": "프라이버시 & 영지식 증명",
+        "description": "Dubhe 생태계를 위한 프라이버시 보호 기술, 영지식 증명, 암호화 프로토콜에 전문화되어 있습니다. 차세대 프라이버시 스마트 계약을 구축하고 있습니다.",
+        "contributions": [
+          "영지식 증명 시스템",
+          "프라이버시 보호 스마트 계약",
+          "암호화 프로토콜 설계",
+          "기밀 컴퓨팅 솔루션",
+          "익명 거래 시스템"
+        ],
+        "status": "활성화",
+        "team": "8명의 연구원"
+      },
+      "network": {
+        "name": "Dubhe Network Labs",
+        "focus": "인프라 & 스케일링",
+        "description": "Dubhe 생태계를 위한 고성능 네트워킹 솔루션, 실시간 통신 프로토콜, 확장성 인프라를 구축하고 있습니다.",
+        "contributions": [
+          "고성능 P2P 네트워킹",
+          "실시간 채널 통신",
+          "확장 가능한 노드 아키텍처",
+          "네트워크 프로토콜 최적화",
+          "크로스체인 브리지 인프라"
+        ],
+        "status": "개발중",
+        "team": "6명의 엔지니어"
+      },
+      "bridge": {
+        "name": "Dubhe Bridge Labs",
+        "focus": "크로스체인 기술",
+        "description": "Dubhe를 다른 블록체인 생태계와 원활하게 연결하는 범용 브리징 프로토콜과 상호운용성 솔루션을 개발하고 있습니다.",
+        "contributions": [
+          "범용 브리지 프로토콜",
+          "크로스체인 자산 전송",
+          "멀티체인 거버넌스",
+          "상호운용성 표준",
+          "브리지 보안 메커니즘"
+        ],
+        "status": "연구",
+        "team": "4명의 엔지니어"
+      }
+    },
+    "research": {
+      "badge": "연구 중점",
+      "title": "협력 연구 분야",
+      "areas": {
+        "protocol": {
+          "title": "프로토콜 개발",
+          "description": "핵심 블록체인 프로토콜, 합의 메커니즘, Move 언어 개선",
+          "teams": ["Obelisk Labs"]
+        },
+        "infrastructure": {
+          "title": "인프라 & 스케일링",
+          "description": "고성능 네트워킹, 실시간 통신, 확장성 솔루션",
+          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+        },
+        "crossChain": {
+          "title": "크로스체인 기술",
+          "description": "상호운용성 프로토콜, 범용 브리징, 멀티체인 거버넌스",
+          "teams": ["Dubhe Bridge Labs"]
+        },
+        "privacy": {
+          "title": "프라이버시 & 보안",
+          "description": "영지식 증명, 프라이버시 보호 프로토콜, 암호화 연구",
+          "teams": ["Cyferio Labs"]
+        }
+      },
+      "contributingLabs": "기여 연구소:"
+    },
+    "collaboration": {
+      "title": "협력 개발 프로세스",
+      "description": "통합된 프로토콜 구현을 제공하기 위한 여러 연구소의 협력 방식",
+      "phases": {
+        "research": {
+          "title": "연구",
+          "description": "모든 팀의 협력 연구 및 프로토콜 설계"
+        },
+        "development": {
+          "title": "개발",
+          "description": "공유 표준과 인터페이스를 통한 병렬 구현"
+        },
+        "testing": {
+          "title": "테스트",
+          "description": "팀 간 통합 테스트 및 검증"
+        },
+        "deployment": {
+          "title": "배포",
+          "description": "조정된 롤아웃 및 생태계 통합"
+        }
+      }
+    },
+    "cta": {
+      "title": "혁신에 참여하세요",
+      "description": "Move 기반 블록체인 인프라의 미래를 구축하는 데 참여하세요",
+      "apply": "연구소 지원",
+      "positions": "채용 중인 포지션 보기"
+    }
+  },
+  "privacy": {
+    "badge": "개인정보보호정책",
+    "hero": {
+      "title": "귀하의 개인정보는",
+      "titleHighlight": "중요합니다",
+      "subtitle": "Dubhe 재단이 어떻게 귀하의 개인정보를 보호하고 투명성과 보안을 통해 데이터를 처리하는지 알아보세요.",
+      "lastUpdated": "최종 업데이트: 2025년 1월"
+    },
+    "introduction": {
+      "title": "소개",
+      "content": "Dubhe 재단에서는 귀하의 개인정보를 보호하고 개인정보의 보안을 보장하기 위해 최선을 다하고 있습니다. 이 개인정보보호정책은 Dubhe 블록체인 생태계와 관련된 플랫폼, 서비스 및 애플리케이션을 사용할 때 정보를 수집, 사용, 공개 및 보호하는 방법에 대해 설명합니다."
+    },
+    "sections": {
+      "collection": {
+        "title": "수집하는 정보",
+        "items": [
+          "서비스 이용 시 제공하는 개인정보",
+          "기기 및 네트워크 연결에 관한 기술 정보",
+          "플랫폼 개선을 위한 사용 데이터 및 분석",
+          "지갑 주소 및 블록체인 거래 데이터"
+        ]
+      },
+      "usage": {
+        "title": "정보 사용 방법",
+        "items": [
+          "블록체인 개발 플랫폼 제공 및 개선",
+          "보조금 신청 및 인큐베이션 프로그램 처리",
+          "업데이트, 이벤트 및 기회에 대한 커뮤니케이션",
+          "플랫폼 보안 보장 및 사기 방지"
+        ]
+      },
+      "protection": {
+        "title": "데이터 보호",
+        "items": [
+          "업계 표준 보안 조치 구현",
+          "모든 민감한 데이터는 전송 및 보관 시 암호화",
+          "개인키나 민감한 지갑 정보는 저장하지 않습니다",
+          "정기적인 보안 감사 및 규정 준수 검토"
+        ]
+      },
+      "sharing": {
+        "title": "데이터 공유",
+        "items": [
+          "개인정보를 제3자에게 판매하지 않습니다",
+          "엄격한 계약 하에 서비스 제공업체와의 제한적 공유",
+          "공개 블록체인 데이터는 본질적으로 투명합니다",
+          "법적 요구사항을 준수하기 위해 데이터를 공유할 수 있습니다"
+        ]
+      }
+    },
+    "rights": {
+      "title": "귀하의 개인정보보호 권리",
+      "access": {
+        "title": "접근 및 관리",
+        "items": [
+          "개인 데이터에 대한 접근 요청",
+          "부정확한 정보 수정",
+          "계정 및 데이터 삭제",
+          "데이터 내보내기"
+        ]
+      },
+      "communication": {
+        "title": "커뮤니케이션",
+        "items": [
+          "마케팅 커뮤니케이션 수신 거부",
+          "알림 설정 선택",
+          "쿠키 설정 관리",
+          "데이터 처리 제한 요청"
+        ]
+      }
+    },
+    "contact": {
+      "title": "개인정보보호에 대한 질문이 있으신가요?",
+      "description": "이 개인정보보호정책이나 당사의 데이터 관행에 대해 질문이 있으시면 언제든지 문의해 주세요."
+    }
+  },
+  "proposal": {
+    "badge": "Dubhe OpenGov",
+    "hero": {
+      "title": "함께 미래를",
+      "titleHighlight": "만들어가요",
+      "subtitle": "DubheOS를 통해 제안서를 제출하여 재무부 자금 요청, 런타임 업그레이드, 또는 Polkadot의 OpenGov 프레임워크와 확신 투표를 사용한 거버넌스에 참여하세요.",
+      "cta": {
+        "primary": "DubheOS Devnet",
+        "secondary": "모든 국민투표 보기"
+      }
+    },
+    "types": {
+      "badge": "제안 카테고리",
+      "title": "거버넌스 제안 유형",
+      "exampleLabel": "제안 예시",
+      "treasury": {
+        "title": "재무부 지출",
+        "description": "개발 프로젝트와 이니셔티브를 위한 Dubhe 재무부에서의 자금 요청",
+        "examples": [
+          "개발 보조금",
+          "인프라 자금",
+          "연구 프로젝트"
+        ]
+      },
+      "governance": {
+        "title": "거버넌스 변경",
+        "description": "투표 메커니즘, 재무부 관리, 거버넌스 매개변수의 수정",
+        "examples": [
+          "투표 임계값",
+          "국민투표 매개변수",
+          "트랙 구성"
+        ]
+      },
+      "runtime": {
+        "title": "런타임 업그레이드",
+        "description": "거버넌스 승인이 필요한 프로토콜 개선 및 런타임 수정",
+        "examples": [
+          "팔렛 업그레이드",
+          "런타임 최적화",
+          "새로운 기능"
+        ]
+      },
+      "emergency": {
+        "title": "긴급 조치",
+        "description": "보안 문제와 중요한 프로토콜 수정을 위한 시간에 민감한 제안",
+        "examples": [
+          "보안 패치",
+          "긴급 업데이트",
+          "중요한 버그 수정"
+        ]
+      }
+    },
+    "active": {
+      "title": "활성 국민투표",
+      "subtitle": "확신 투표를 통한 다양한 거버넌스 트랙의 현재 국민투표"
+    },
+    "process": {
+      "title": "거버넌스 프로세스",
+      "subtitle": "거버넌스 제안 생성 및 투표를 위한 단계별 프로세스"
+    },
+    "requirements": {
+      "title": "제안 요구사항"
+    },
+    "cta": {
+      "title": "참여할 준비가 되셨나요?",
+      "subtitle": "거버넌스 프로세스에 참여하여 Dubhe의 미래를 함께 만들어가세요",
+      "primary": "DubheOS 접근",
+      "secondary": "OpenGov 가이드"
+    }
+  },
+  "terms": {
+    "badge": "서비스 약관",
+    "hero": {
+      "title": "서비스",
+      "titleHighlight": "약관",
+      "subtitle": "이 약관은 Dubhe 서비스, 플랫폼 및 블록체인 인프라 사용을 규율합니다.",
+      "lastUpdated": "최종 업데이트: 2025년 1월"
+    },
+    "introduction": {
+      "title": "계약 개요",
+      "content1": "Dubhe에 오신 것을 환영합니다! 본 서비스 약관(\"약관\")은 귀하와 Dubhe 재단(\"당사\", \"우리\" 또는 \"저희\") 간의 블록체인 플랫폼, 개발 도구 및 관련 서비스 사용에 관한 법적 구속력이 있는 계약을 구성합니다.",
+      "content2": "당사의 서비스를 사용함으로써, 귀하는 본 약관과 개인정보보호정책을 읽고, 이해하고, 이에 구속되는 것에 동의했음을 인정합니다. 조직을 대표하여 당사의 서비스를 사용하는 경우, 해당 조직을 본 약관에 구속할 권한이 있음을 진술합니다."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "약관의 승인",
+        "items": [
+          "Dubhe 서비스에 접근하거나 사용함으로써 본 약관에 구속되는 것에 동의합니다",
+          "본 약관의 어떤 부분이든 동의하지 않는다면, 당사의 서비스에 접근할 수 없습니다",
+          "당사는 사전 통지 없이 수시로 본 약관을 업데이트할 수 있습니다",
+          "변경 후 지속적인 사용은 수정된 약관의 승인을 구성합니다"
+        ]
+      },
+      "usage": {
+        "title": "서비스 사용",
+        "items": [
+          "당사의 서비스를 사용하려면 최소 18세 이상이어야 합니다",
+          "계정의 보안을 유지하는 것은 귀하의 책임입니다",
+          "불법적이거나 승인되지 않은 목적으로 당사의 서비스를 사용할 수 없습니다",
+          "본 약관을 위반하는 계정을 종료할 권리를 보유합니다"
+        ]
+      },
+      "intellectual": {
+        "title": "지적 재산권",
+        "items": [
+          "Dubhe 재단은 당사의 독점 기술에 대한 모든 권리를 보유합니다",
+          "오픈 소스 구성 요소는 각자의 라이선스에 따라 규율됩니다",
+          "당사의 플랫폼을 사용하여 생성한 콘텐츠의 소유권은 귀하가 보유합니다",
+          "당사의 서비스를 제공하기 위해 귀하의 콘텐츠를 사용할 라이선스를 당사에 부여합니다"
+        ]
+      },
+      "disclaimers": {
+        "title": "면책사항 및 제한",
+        "items": [
+          "당사의 서비스는 어떠한 종류의 보증도 없이 '있는 그대로' 제공됩니다",
+          "당사는 어떠한 간접적, 우발적 또는 결과적 손해에 대해서도 책임지지 않습니다",
+          "블록체인 거래는 되돌릴 수 없으며 당사가 이를 되돌릴 수 없습니다",
+          "블록체인 기술의 실험적 성격을 인정합니다"
+        ]
+      }
+    },
+    "blockchain": {
+      "title": "블록체인 특정 약관",
+      "participation": {
+        "title": "네트워크 참여",
+        "items": [
+          "거래는 공개 블록체인에 기록됩니다",
+          "블록체인 운영에는 네트워크 수수료가 적용됩니다",
+          "스마트 컨트랙트는 배포되면 변경할 수 없습니다",
+          "거래의 정확성에 대한 책임은 귀하에게 있습니다"
+        ]
+      },
+      "risks": {
+        "title": "위험 인정",
+        "items": [
+          "블록체인 기술은 실험적입니다",
+          "토큰 가치는 매우 변동성이 클 수 있습니다",
+          "스마트 컨트랙트에는 버그가 포함될 수 있습니다",
+          "네트워크 혼잡이 성능에 영향을 줄 수 있습니다"
+        ]
+      }
+    },
+    "governance": {
+      "title": "준거법 및 분쟁",
+      "law": "본 약관은 법률 충돌 조항과 관계없이 Dubhe 재단이 설립된 관할권의 법률에 따라 해석되고 규율됩니다.",
+      "disputes": "본 약관 또는 당사 서비스의 사용으로 인해 발생하는 모든 분쟁은 국제 중재 규칙에 따른 구속력 있는 중재를 통해 해결됩니다.",
+      "modifications": "당사는 언제든지 본 약관을 수정할 권리를 보유합니다. 변경 후 당사 서비스의 지속적인 사용은 수정된 약관의 승인을 구성합니다."
+    },
+    "contact": {
+      "title": "약관에 대한 질문이 있으신가요?",
+      "description": "본 서비스 약관에 대한 질문이 있으시면 법무팀에 문의하시기 바랍니다."
     }
   },
   "LocaleSwitcher": {

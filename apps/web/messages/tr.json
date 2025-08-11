@@ -563,6 +563,131 @@
       "cta2": "Vakıf İletişim"
     }
   },
+  "channel": {
+    "badge": "Dubhe Kanalı",
+    "hero": {
+      "title": "Gerçek Zamanlı P2P",
+      "titleHighlight": "Etkileşim Katmanı",
+      "subtitle": "Web3 altyapısıyla Web2 seviyesinde kullanıcı deneyimi. Move blokzincirlerinde inşa edilen oyun, sosyal platform ve ticaret uygulamaları için 50ms altı gecikme.",
+      "metrics": {
+        "latency": "Gecikme",
+        "users": "Eş Zamanlı Kullanıcılar",
+        "uptime": "Çalışma Süresi"
+      },
+      "cta1": "Ağa Katıl",
+      "cta2": "Teknik Dokümanlar"
+    },
+    "features": {
+      "badge": "Temel Özellikler",
+      "title": "Gerçek Zamanlı Altyapı",
+      "subtitle": "Modern DApp'ler İçin",
+      "description": "Anlık yanıt verme ve kusursuz kullanıcı deneyimleri gerektiren uygulamalar için inşa edildi",
+      "items": {
+        "latency": {
+          "title": "50ms Altı Gecikme",
+          "description": "Web2 seviyesinde yanıt veren gerçek zamanlı P2P etkileşimler. Anlık geri bildirim gerektiren oyun, ticaret ve sosyal uygulamalar için inşa edildi.",
+          "details": [
+            "WebRTC tabanlı iletişim",
+            "Optimize edilmiş yönlendirme algoritmaları",
+            "Kenar düğüm dağıtımı",
+            "Öngörücü durum senkronizasyonu"
+          ]
+        },
+        "network": {
+          "title": "Ölçeklenebilir P2P Ağ",
+          "description": "Kullanıcı tabanınızla büyüyen yatay ölçeklendirme. Performans kaybı olmadan yüzlerceden milyonlarca eş zamanlı bağlantıya kadar.",
+          "details": [
+            "Dinamik eş keşfi",
+            "Yük dengeleme protokolleri",
+            "Mesh ağ topolojisi",
+            "Otomatik ölçeklendirme altyapısı"
+          ]
+        },
+        "security": {
+          "title": "Varsayılan Olarak Güvenli",
+          "description": "Uçtan uca şifreleme ve kriptografik doğrulama, verilerinizin ve etkileşimlerinizin gizli ve kurcalamaya karşı dayanıklı kalmasını sağlar.",
+          "details": [
+            "E2E şifreleme protokolleri",
+            "Sıfır bilgi ispatları",
+            "Kriptografik imzalar",
+            "Merkezi olmayan doğrulama"
+          ]
+        },
+        "experience": {
+          "title": "Web2 UX, Web3 Arka Uç",
+          "description": "Merkezi olmayan altyapı tarafından desteklenen tanıdık kullanıcı deneyimi. Kullanıcılar taviz vermeden her iki dünyanın en iyisini elde eder.",
+          "details": [
+            "Sorunsuz cüzdan entegrasyonu",
+            "Gazsız işlemler",
+            "Progressive Web App desteği",
+            "Mobil öncelikli tasarım"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "badge": "Kullanım Durumları",
+      "title": "Gerçek Zamanlı Uygulamalar İçin İnşa Edildi",
+      "items": {
+        "gaming": {
+          "title": "Gerçek Zamanlı Oyun",
+          "description": "Anlık yanıt süreleri olan çok oyunculu oyunlar",
+          "metrics": ["<50ms gecikme", "1M+ eş zamanlı oyuncu", "%99.9 çalışma süresi"]
+        },
+        "social": {
+          "title": "Sosyal Platformlar",
+          "description": "Gerçek zamanlı mesajlaşmalı merkezi olmayan sosyal ağlar",
+          "metrics": ["Anlık mesajlaşma", "Canlı video aramaları", "Grup sohbetleri"]
+        },
+        "trading": {
+          "title": "Ticaret Uygulamaları",
+          "description": "Gerçek zamanlı fiyat akışları ile yüksek frekanslı ticaret",
+          "metrics": ["Gerçek zamanlı veri", "Emir defteri güncellemeleri", "Fiyat keşfi"]
+        }
+      }
+    },
+    "architecture": {
+      "title": "Ağ Mimarisi",
+      "description": "Optimal performans ve ölçeklenebilirlik için çok katmanlı yaklaşım",
+      "layers": {
+        "application": {
+          "title": "Uygulama Katmanı",
+          "description": "DApp'iniz basit API'ler aracılığıyla bağlanır"
+        },
+        "channel": {
+          "title": "Kanal Katmanı",
+          "description": "Gerçek zamanlı P2P iletişim protokolü"
+        },
+        "network": {
+          "title": "Ağ Katmanı",
+          "description": "Dağıtık düğüm altyapısı"
+        },
+        "blockchain": {
+          "title": "Blokzincir Katmanı",
+          "description": "Move tabanlı ödeme ve doğrulama"
+        }
+      }
+    },
+    "network": {
+      "title": "Küresel P2P Ağ",
+      "description": "Ultra düşük gecikme iletişimi için dünya çapında düğümleri bağlayan Dubhe takımyıldızı ağı",
+      "status": {
+        "title": "AĞ DURUMU",
+        "online": "ÇEVRİMİÇİ",
+        "latency": "Gecikme: <50ms"
+      },
+      "nodes": {
+        "title": "AKTİF DÜĞÜMLER",
+        "connected": "7/7 Bağlı"
+      }
+    },
+    "cta": {
+      "title": "Gerçek Zamanlı DApp'lere Hazır mısınız?",
+      "subtitle": "Yeni nesil etkileşimli uygulamaları destekleyen ağa katılın",
+      "primary": "Ağa Bağlan",
+      "secondary": "API Dokümanlarını Görüntüle"
+    }
+  },
   "os": {
     "badge": "Dubhe OS",
     "hero": {
@@ -714,6 +839,84 @@
       "suggestion": "Bu genellikle geçicidir. Lütfen birkaç dakika sonra tekrar deneyin."
     }
   },
+  "incubation": {
+    "hero": {
+      "badge": "Dubhe Vakfı İnkübasyon",
+      "title": "Bir Sonraki Unicorn Girişimi Oluşturun",
+      "subtitle": "Dubhe Vakfı tarafından desteklenen, Obelisk Labs ve ekosistem VC'leri ile birlikte inkübe edilen işbirlikçi inkübasyon ekosistemine katılın ve yeni nesil Move girişimlerini oluşturun.",
+      "stats": {
+        "funding": {
+          "value": "Yakında",
+          "label": "Toplam Fon"
+        },
+        "startups": {
+          "value": "Yakında", 
+          "label": "İnkübe Edilen Girişimler"
+        },
+        "unicorns": {
+          "value": "Yakında",
+          "label": "Yaratılan Unicornlar"
+        },
+        "success": {
+          "value": "Yakında",
+          "label": "Başarı Oranı"
+        }
+      },
+      "cta": {
+        "apply": "Şimdi Başvur",
+        "learn": "Daha Fazla Öğren"
+      }
+    },
+    "programs": {
+      "accelerator": {
+        "title": "Vakıf Hızlandırıcısı",
+        "duration": "3 ay",
+        "funding": "$500K'ya kadar",
+        "description": "Dubhe Vakfı destekli yoğun program, Obelisk Labs ve ekosistem VC'leri ile birlikte inkübe edilir",
+        "benefits": ["Dubhe Vakfı fonlaması", "Obelisk Labs ortak inkübasyonu", "Move geliştirme desteği", "Ekosistem VC ortaklıkları"]
+      },
+      "studio": {
+        "title": "İşbirlikçi Stüdyo",
+        "duration": "6-12 ay",
+        "funding": "$1M'a kadar", 
+        "description": "Dubhe Vakfı, Obelisk Labs ve ekosistem VC'leri tarafından paylaşılan kaynaklarla ortak inkübe edilir",
+        "benefits": ["Çok ortaklı ortak inkübasyon", "Paylaşılan teknik kaynaklar", "Projeler arası işbirliği", "Ekosistem VC ağları"]
+      },
+      "scale": {
+        "title": "Ekosistem Ölçekleme",
+        "duration": "6 ay",
+        "funding": "$2M'a kadar",
+        "description": "Dubhe Vakfı, Obelisk Labs ve ekosistem VC ortaklarından kapsamlı destekle ölçeklenin",
+        "benefits": ["Ortak inkübasyon ağı", "Stratejik tanıtımlar", "Küresel pazar erişimi", "Kurumsal VC bağlantıları"]
+      }
+    },
+    "resources": {
+      "coIncubation": {
+        "title": "Çok Ortaklı Ortak İnkübasyon",
+        "description": "Dubhe Vakfı, Obelisk Labs ve ekosistem VC'lerinden ortak rehberlik"
+      },
+      "infrastructure": {
+        "title": "Paylaşılan Altyapı",
+        "description": "Obelisk Labs altyapısına ve ekosistem VC kaynaklarına erişim"
+      },
+      "integration": {
+        "title": "Ekosistem Entegrasyonu",
+        "description": "Dubhe projeleri ve ortak ağlarla doğrudan entegrasyon"
+      },
+      "development": {
+        "title": "İşbirlikçi Geliştirme",
+        "description": "Dubhe Vakfı ve Obelisk Labs mühendislik ekiplerinden teknik destek"
+      },
+      "demoDays": {
+        "title": "Ortak Demo Günleri",
+        "description": "Dubhe Vakfı yönetimine ve ekosistem VC ağlarına sunum"
+      },
+      "network": {
+        "title": "Ekosistem Ağı",
+        "description": "Tüm Dubhe ve ortak şirket ekosistemine erişim"
+      }
+    }
+  },
   "ambassador": {
     "hero": {
       "badge": "Büyükelçi Programı",
@@ -805,6 +1008,721 @@
       "description": "Büyükelçi programımıza katılın ve Move ekosisteminde bir lider olun",
       "apply": "Şimdi Başvur",
       "contact": "İletişime Geç"
+    }
+  },
+  "moderators": {
+    "hero": {
+      "badge": "Moderatör Programı",
+      "title1": "Topluluk",
+      "title2": "Moderatörleri",
+      "subtitle": "Küresel topluluğumuz için güvenli, misafirperver ve üretken bir ortam sürdürmeye yardımcı olun. Kaliteli tartışmalar sağlayan ve tüm üyeleri destekleyen adanmış moderatör ekibimize katılın.",
+      "stats": {
+        "coverage": "Kapsama",
+        "activeModerators": "Aktif Moderatörler",
+        "membersProtected": "Korunan Üyeler"
+      },
+      "cta1": "Moderatörlüğe Başvur",
+      "cta2": "Yönergeler"
+    },
+    "responsibilitiesSection": {
+      "badge": "Ana Sorumluluklar",
+      "title": "Moderatörlerin Yaptıkları"
+    },
+    "responsibilities": {
+      "communityModeration": {
+        "title": "Topluluk Moderasyonu",
+        "description": "Sağlıklı tartışmaları sürdürün, topluluk kurallarını uygulayın ve tüm üyeler için misafirperver bir ortam sağlayın"
+      },
+      "securitySafety": {
+        "title": "Güvenlik ve Korunma",
+        "description": "Topluluk üyelerini korumak için spam, dolandırıcılık ve kötü niyetli faaliyetleri tespit edin ve önleyin"
+      },
+      "memberSupport": {
+        "title": "Üye Desteği",
+        "description": "Yeni gelenlerin başlamasına yardımcı olun, soruları yanıtlayın ve kullanıcıları uygun kaynaklara yönlendirin"
+      },
+      "contentCuration": {
+        "title": "İçerik Düzenlemesi",
+        "description": "Kaliteli içeriği öne çıkarın, bilgileri düzenleyin ve topluluk tartışmalarının kalitesini koruyun"
+      }
+    },
+    "moderatorsSection": {
+      "title": "Moderatörlerimizle Tanışın",
+      "description": "Adanmış ekibimiz tüm saat dilimlerinde ve platformlarda 7/24 kapsama sağlar",
+      "timezone": "Saat Dilimi",
+      "platforms": "Platformlar",
+      "languages": "Diller"
+    },
+    "toolsSection": {
+      "title": "Moderasyon Araçları"
+    },
+    "tools": {
+      "discord": {
+        "features": [
+          "Mesaj yönetimi",
+          "Kullanıcı timeout/yasaklama",
+          "Kanal gözetimi",
+          "Bot entegrasyonu"
+        ]
+      },
+      "telegram": {
+        "features": [
+          "Grup moderasyonu",
+          "Spam filtreleme",
+          "Kullanıcı doğrulama",
+          "Otomatik yanıtlar"
+        ]
+      },
+      "forum": {
+        "features": [
+          "Konu yönetimi",
+          "İçerik moderasyonu",
+          "Kullanıcı sıralaması",
+          "Rapor işleme"
+        ]
+      }
+    },
+    "requirementsSection": {
+      "title": "Gereksinimler",
+      "guidelinesTitle": "Moderasyon Yönergeleri"
+    },
+    "requirements": [
+      "En az 3 ay aktif topluluk üyesi",
+      "Dubhe ekosistemi ve Move teknolojisine derin anlayış",
+      "Mükemmel iletişim ve çakışma çözme becerileri",
+      "Farklı saat dilimlerinde moderasyon görevleri için uygunluk",
+      "Önceki moderasyon deneyimi tercih edilir",
+      "Adil ve tarafsız karar vermeye bağlılık"
+    ],
+    "guidelines": {
+      "communication": {
+        "category": "İletişim",
+        "rules": [
+          "Tüm topluluk üyelerine saygı ve nezaketle davranın",
+          "Tüm etkileşimlerde açık, profesyonel dil kullanın",
+          "Çatışmaları sakinleştirin ve yapıcı diyalogu teşvik edin",
+          "Yeni gelenlere sabırlı olun ve yararlı rehberlik sağlayın"
+        ]
+      },
+      "enforcement": {
+        "category": "Uygulama",
+        "rules": [
+          "Topluluk kurallarını tutarlı ve adil bir şekilde uygulayın",
+          "Tüm moderasyon eylemlerini açık gerekçelerle belgeleyin",
+          "Karmaşık sorunları üst düzey moderatörlere veya yöneticilere iletin",
+          "İnceleme ve itiraz süreçleri şeffaf olmalıdır"
+        ]
+      },
+      "privacySecurity": {
+        "category": "Gizlilik ve Güvenlik",
+        "rules": [
+          "Kullanıcı gizliliğini ve kişisel bilgilerini koruyun",
+          "Moderasyon araçlarını veya kimlik bilgilerini asla paylaşmayın",
+          "Güvenlik açıklarını hemen bildirin",
+          "İç tartışmaların gizliliğini koruyun"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Topluluğumuza Yardım Etmeye Hazır mısınız?",
+      "description": "Moderasyon ekibimize katılın ve herkes için güvenli, misafirperver bir ortam yaratmaya yardımcı olun",
+      "apply": "Şimdi Başvur",
+      "guidelines": "Yönergeleri Görüntüle"
+    }
+  },
+  "events": {
+    "hero": {
+      "badge": "Etkinlik Takvimi",
+      "title": "Yaklaşan Etkinlikler",
+      "subtitle": "Dubhe tarafından düzenlenen etkinliklere katılın, Move geliştiricileriyle bağlantı kurun ve ekosistemde güncel kalın."
+    },
+    "filters": {
+      "search": {
+        "placeholder": "Ara"
+      },
+      "categories": {
+        "all": "Tümü",
+        "ama": "AMA",
+        "workshop": "Atölye",
+        "meetup": "Buluşma"
+      },
+      "sort": {
+        "date": "Sırala: Tarih",
+        "name": "Sırala: İsim",
+        "location": "Sırala: Konum"
+      }
+    },
+    "table": {
+      "headers": {
+        "date": "Tarih",
+        "name": "İsim",
+        "location": "Konum",
+        "category": "Kategori"
+      },
+      "noEvents": "Kriterlerinizle eşleşen etkinlik bulunamadı"
+    },
+    "eventsList": {
+      "engineWorkshop": {
+        "name": "Dubhe Engine Geliştirici Atölyesi",
+        "location": "Çevrimiçi",
+        "category": "Atölye",
+        "description": "Dubhe Engine'i derinlemesine keşfedin ve tamamen on-chain uygulamalar oluşturmak için en son teknikleri ve en iyi uygulamaları öğrenin."
+      },
+      "moveAma": {
+        "name": "Dubhe Foundation ile Move Ekosistemi AMA",
+        "location": "Çevrimiçi",
+        "category": "AMA",
+        "description": "Dubhe protokolü, teknik detaylar ve yol haritası hakkında bize her şeyi sorun."
+      },
+      "sfMeetup": {
+        "name": "Dubhe Topluluk Buluşması - San Francisco",
+        "location": "San Francisco, CA",
+        "category": "Buluşma",
+        "description": "Dubhe geliştiricileriyle ağ kurun, en son projeleri paylaşın ve Move ekosisteminde işbirliği fırsatlarını keşfedin."
+      },
+      "zkWorkshop": {
+        "name": "Sıfır Bilgi Gizlilik Çözümleri Atölyesi",
+        "location": "Çevrimiçi",
+        "category": "Atölye",
+        "description": "ZK kanıtları ve Dubhe'de gizliliği koruyan uygulamalar hakkında uygulamalı deneyimle öğrenin."
+      }
+    },
+    "community": {
+      "title": "Küresel Topluluğumuza Katılın",
+      "description": "Dünyanın dört bir yanından geliştiriciler, meraklılar ve Move teknolojisi yenilikçileri ile bağlantı kurun.",
+      "stats": {
+        "eventsThisYear": "Bu Yıl Etkinlikler",
+        "attendees": "Katılımcılar",
+        "countries": "Ülkeler",
+        "speakers": "Konuşmacılar"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "İletişim",
+      "title1": "İletişime",
+      "title2": "Geçin",
+      "subtitle": "Dubhe hakkında sorularınız mı var? Bizimle ortaklık kurmak mı istiyorsunuz? Sizden haber almayı çok isteriz."
+    },
+    "form": {
+      "title": "Bize mesaj gönderin",
+      "validationError": "Doğrulama hatası",
+      "sendError": "Mesaj gönderme başarısız. Lütfen tekrar deneyin.",
+      "networkError": "Ağ hatası. Lütfen bağlantınızı kontrol edin ve tekrar deneyin.",
+      "sending": "Gönderiliyor...",
+      "submit": "Mesaj Gönder",
+      "success": {
+        "title": "Mesaj gönderildi!",
+        "message": "24-48 saat içinde size geri döneceğiz.",
+        "sendAnother": "Başka mesaj gönder"
+      },
+      "fields": {
+        "name": {
+          "label": "İsim",
+          "placeholder": "Adınız"
+        },
+        "email": {
+          "label": "E-posta",
+          "placeholder": "your@email.com"
+        },
+        "subject": {
+          "label": "Konu",
+          "placeholder": "Bir konu seçin",
+          "options": {
+            "general": "Genel Soru",
+            "partnership": "Ortaklık",
+            "investment": "Yatırım Sorgusu",
+            "grants": "Hibe Başvurusu",
+            "foundationJobs": "Vakfı İş İlanları",
+            "technical": "Teknik Destek",
+            "media": "Medya ve Basın"
+          }
+        },
+        "message": {
+          "label": "Mesaj",
+          "placeholder": "Projeniz, sorgunuz veya nasıl yardımcı olabileceğimiz hakkında bize anlatın..."
+        }
+      }
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "description": "Gelishtirici, yatırımcı veya sadece Dubhe hakkında meraklı olsun, yardım etmek için buradayiz. Aşağıdaki kanallardan herhangi biri aracılığıyla ulaşın.",
+      "email": {
+        "title": "E-posta"
+      },
+      "business": {
+        "title": "İş Sorgulamaları"
+      },
+      "location": {
+        "title": "Konum",
+        "content": "Küresel, Merkezi Olmayan"
+      },
+      "responseTime": {
+        "title": "Yanıt Süresi",
+        "content": "24-48 saat"
+      }
+    },
+    "quickLinks": {
+      "title": "Hızlı Bağlantılar",
+      "grant": "Hibe Başvurusu Yap",
+      "incubation": "Kulusetme Programına Katıl",
+      "ambassador": "Bürosüatcı Ol",
+      "documentation": "Belgeleri Oku"
+    }
+  },
+  "engine": {
+    "hero": {
+      "badge": "Dubhe Engine",
+      "title1": "80% Kod",
+      "title2": "Otomatik Üretim",
+      "subtitle": "Akıllı sözleşmeleri, API'leri ve UI bileşenlerini otomatik olarak üreten şema tabanlı geliştirme platformu. Önemli olana odaklanın - benzersiz iş mantığınız.",
+      "stats": {
+        "codeAutoGenerated": "Kod Otomatik Üretildi",
+        "fasterDevelopment": "Hızlı Geliştirme",
+        "moveEcosystem": "Move Ekosistemi"
+      },
+      "cta1": "İnşa Etmeye Başla",
+      "cta2": "Belgeleri Görüntüle"
+    },
+    "featuresSection": {
+      "badge": "Temel Özellikler",
+      "title": "Daha Hızlı İnşa Et, Daha Erken Yayınla",
+      "description": "Dubhe Engine ağır işleri halleder, böylece siz inovasyona odaklanabilirsiniz"
+    },
+    "features": {
+      "codeGeneration": {
+        "title": "80% Otomatik Kod Üretimi",
+        "description": "Boilerplate, veri yapıları ve yaygın kalıpları otomatik olarak işleyen akıllı kod üretimiyle geliştirme süresini dramatik şekilde azaltın.",
+        "details": [
+          "Şema odaklı kod üretimi",
+          "Otomatik API endpoint oluşturma",
+          "Akıllı sözleşme iskeleti",
+          "UI bileşen üretimi"
+        ]
+      },
+      "schemaBased": {
+        "title": "Şema Tabanlı Geliştirme",
+        "description": "Veri yapılarınızı bir kez tanımlayın ve Dubhe Engine'in gerisini üretmesine izin verin. Değişiklikler otomatik olarak tüm uygulamanıza yayılır.",
+        "details": [
+          "Tek gerçek kaynağı",
+          "Otomatik tip güvenliği",
+          "Gerçek zamanlı doğrulama",
+          "Çapraz platform uyumluluğu"
+        ]
+      },
+      "realTimeToolchain": {
+        "title": "Gerçek Zamanlı DApp Araç Zinciri",
+        "description": "Gerçek zamanlı yeteneklere sahip tamamen on-chain uygulamalar oluşturun. Oyun durumundan finansal uygulamalara kadar her şey anında gerçekleşir.",
+        "details": [
+          "Alt saniye işlem kesinliği",
+          "Gerçek zamanlı durum senkronizasyonu",
+          "Olay odaklı mimari",
+          "İyimser UI güncellemeleri"
+        ]
+      },
+      "multiChain": {
+        "title": "Çoklu Zincir Desteği",
+        "description": "Kodunuzu değiştirmeden birden fazla Move tabanlı zincirde dağıtın. Bir kez yazın, her yerde dağıtın.",
+        "details": [
+          "Sui ağ entegrasyonu",
+          "Aptos uyumluluğu",
+          "Movement ağ desteği",
+          "Çapraz zincir durum yönetimi"
+        ]
+      }
+    },
+    "workflowSection": {
+      "badge": "Geliştirme İş Akışı",
+      "title": "Fikirden Üretime 4 Basit Adım"
+    },
+    "workflow": {
+      "defineSchema": {
+        "title": "Şema Tanımla",
+        "description": "Sezgisel şema tanımlama dilimizi kullanarak veri modellerinizi ve iş mantığınızı oluşturun"
+      },
+      "generateCode": {
+        "title": "Kod Üret",
+        "description": "Dubhe Engine, akıllı sözleşmeler ve API'ler dahil olmak üzere uygulama kodunuzun %80'ini otomatik olarak üretir"
+      },
+      "customizeLogic": {
+        "title": "Mantığı Özelleştir",
+        "description": "Benzersiz %20'ye odaklanın - iş mantığınız, özel özellikler ve kullanıcı deneyimi"
+      },
+      "deployInstantly": {
+        "title": "Anında Dağıt",
+        "description": "Otomatik optimizasyon ve izleme ile birden fazla Move zincirinde tek tıkla dağıtım"
+      }
+    },
+    "cta": {
+      "title": "Geliştirme Hızınızı 10x Artırmaya Hazır mısınız?",
+      "description": "Tamamen on-chain uygulamaların geleceğini inşa eden geliştiricilere katılın",
+      "getStarted": "Ücretsiz Başla",
+      "scheduleDemo": "Demo Planla"
+    }
+  },
+  "labs": {
+    "hero": {
+      "badge": "Dubhe Geliştirme Laboratuvarları",
+      "title1": "İşbirlikçi",
+      "title2": "İnovasyon Laboratuvarları",
+      "subtitle": "Polkadot JAM gibi, Move tabanlı blockchain altyapısının geleceğini inşa etmek için Dubhe Vakfı altında birlikte çalışan birden çok uzmanlaşmış geliştirme ekibi.",
+      "stats": {
+        "activeLabs": "Aktif Laboratuvarlar",
+        "coreEngineers": "Çekirdek Mühendisler",
+        "unifiedVision": "Birleşik Protokol Vizyonu"
+      },
+      "cta1": "Laboratuvarları Keşfedin",
+      "cta2": "Laboratuvara Katılın"
+    },
+    "overview": {
+      "badge": "Geliştirme Ekipleri",
+      "title": "Uzmanlaşmış Laboratuvarlar Birleşik Vizyon",
+      "description": "Her laboratuvar benzersiz uzmanlık getirirken Dubhe ekosistemini ilerletmenin ortak hedefine doğru çalışıyor",
+      "visitLab": "Laboratuvarı Ziyaret Et",
+      "keyContributions": "Temel Katkılar"
+    },
+    "labsList": {
+      "obelisk": {
+        "name": "Obelisk Labs",
+        "focus": "Çekirdek Protokol Geliştirme",
+        "description": "Dubhe'nin çekirdek blockchain protokolü ve Move dili altyapısının geliştirilmesine öncülük ediyor. Konsensüs mekanizmaları, akıllı sözleşme optimizasyonu ve geliştirici araçları üzerine odaklanmış.",
+        "contributions": [
+          "Dubhe Çekirdek Protokol Mimarisi",
+          "Move Dili Runtime Optimizasyonu",
+          "Akıllı Sözleşme Yürütme Motoru",
+          "Geliştirici SDK ve Araç Zinciri",
+          "Çapraz Zincir Konsensüs Mekanizmaları"
+        ],
+        "status": "Aktif",
+        "team": "12 Mühendis"
+      },
+      "cyferio": {
+        "name": "Cyferio Labs",
+        "focus": "Gizlilik ve Sıfır Bilgi",
+        "description": "Dubhe ekosistemi için gizlilik koruyucu teknolojiler, sıfır bilgi kanıtları ve kriptografik protokollerde uzmanlaşmış. Yeni nesil özel akıllı sözleşmeler inşa ediyor.",
+        "contributions": [
+          "Sıfır Bilgi Kanıt Sistemleri",
+          "Gizlilik Koruyucu Akıllı Sözleşmeler",
+          "Kriptografik Protokol Tasarımı",
+          "Gizli Hesaplama Çözümleri",
+          "Anonim İşlem Sistemleri"
+        ],
+        "status": "Aktif",
+        "team": "8 Araştırmacı"
+      },
+      "network": {
+        "name": "Dubhe Network Labs",
+        "focus": "Altyapı ve Ölçeklendirme",
+        "description": "Dubhe ekosistemi için yüksek performanslı ağ çözümleri, gerçek zamanlı iletişim protokolleri ve ölçeklenebilirlik altyapısı inşa ediyor.",
+        "contributions": [
+          "Yüksek Performanslı P2P Ağ",
+          "Gerçek Zamanlı Kanal İletişimi",
+          "Ölçeklenebilir Düğüm Mimarisi",
+          "Ağ Protokolü Optimizasyonu",
+          "Çapraz Zincir Köprü Altyapısı"
+        ],
+        "status": "Geliştirme",
+        "team": "6 Mühendis"
+      },
+      "bridge": {
+        "name": "Dubhe Bridge Labs",
+        "focus": "Çapraz Zincir Teknolojisi",
+        "description": "Dubhe'yi diğer blockchain ekosistemleriyle sorunsuzca bağlamak için evrensel köprüleme protokolleri ve birlikte çalışabilirlik çözümleri geliştiriyor.",
+        "contributions": [
+          "Evrensel Köprü Protokolü",
+          "Çapraz Zincir Varlık Transferi",
+          "Çoklu Zincir Yönetişimi",
+          "Birlikte Çalışabilirlik Standartları",
+          "Köprü Güvenlik Mekanizmaları"
+        ],
+        "status": "Araştırma",
+        "team": "4 Mühendis"
+      }
+    },
+    "research": {
+      "badge": "Araştırma Odağı",
+      "title": "İşbirlikçi Araştırma Alanları",
+      "areas": {
+        "protocol": {
+          "title": "Protokol Geliştirme",
+          "description": "Çekirdek blockchain protokolleri, konsensüs mekanizmaları ve Move dili geliştirmeleri",
+          "teams": ["Obelisk Labs"]
+        },
+        "infrastructure": {
+          "title": "Altyapı ve Ölçeklendirme",
+          "description": "Yüksek performanslı ağ, gerçek zamanlı iletişim ve ölçeklenebilirlik çözümleri",
+          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+        },
+        "crossChain": {
+          "title": "Çapraz Zincir Teknolojisi",
+          "description": "Birlikte çalışabilirlik protokolleri, evrensel köprüleme ve çoklu zincir yönetişimi",
+          "teams": ["Dubhe Bridge Labs"]
+        },
+        "privacy": {
+          "title": "Gizlilik ve Güvenlik",
+          "description": "Sıfır bilgi kanıtları, gizlilik koruyucu protokoller ve kriptografik araştırma",
+          "teams": ["Cyferio Labs"]
+        }
+      },
+      "contributingLabs": "Katkıda Bulunan Laboratuvarlar:"
+    },
+    "collaboration": {
+      "title": "İşbirlikçi Geliştirme Süreci",
+      "description": "Birleşik protokol uygulamaları sunmak için birden çok laboratuvarın nasıl koordine olduğu",
+      "phases": {
+        "research": {
+          "title": "Araştırma",
+          "description": "Tüm ekiplerde işbirlikçi araştırma ve protokol tasarımı"
+        },
+        "development": {
+          "title": "Geliştirme",
+          "description": "Paylaşılan standartlar ve arayüzlerle paralel uygulama"
+        },
+        "testing": {
+          "title": "Test",
+          "description": "Ekipler arası entegrasyon testi ve doğrulama"
+        },
+        "deployment": {
+          "title": "Dağıtım",
+          "description": "Koordineli piyasaya sürüm ve ekosistem entegrasyonu"
+        }
+      }
+    },
+    "cta": {
+      "title": "İnovasyona Katılın",
+      "description": "Move tabanlı blockchain altyapısının geleceğini inşa etmenin bir parçası olun",
+      "apply": "Laboratuvarlara Başvur",
+      "positions": "Açık Pozisyonları Görüntüle"
+    }
+  },
+  "privacy": {
+    "badge": "Gizlilik Politikası",
+    "hero": {
+      "title": "Gizliliğiniz",
+      "titleHighlight": "Önemli",
+      "subtitle": "Dubhe Vakfı'nın gizliliğinizi nasıl koruduğunu ve verilerinizi şeffaflık ve güvenlikle nasıl işlediğini öğrenin.",
+      "lastUpdated": "Son güncelleme: Ocak 2025"
+    },
+    "introduction": {
+      "title": "Giriş",
+      "content": "Dubhe Vakfı'nda gizliliğinizi korumaya ve kişisel bilgilerinizin güvenliğini sağlamaya kararlıyız. Bu Gizlilik Politikası, Dubhe blokzinciri ekosistemine ilişkin platformumuz, hizmetlerimiz ve uygulamalarımızı kullandığınızda bilgilerinizi nasıl topladığımızı, kullandığımızı, açıkladığımızı ve koruduğumuzu açıklar."
+    },
+    "sections": {
+      "collection": {
+        "title": "Topladığımız Bilgiler",
+        "items": [
+          "Hizmetlerimizi kullanırken sağladığınız kişisel bilgiler",
+          "Cihazınız ve ağ bağlantınızla ilgili teknik bilgiler",
+          "Platformumuzu geliştirmek için kullanım verileri ve analitik",
+          "Cüzdan adresleri ve blokzinciri işlem verileri"
+        ]
+      },
+      "usage": {
+        "title": "Bilgileri Nasıl Kullanırız",
+        "items": [
+          "Blokzinciri geliştirme platformumuzu sağlamak ve geliştirmek için",
+          "Hibe başvurularını ve kuluçka programlarını işlemek için",
+          "Güncellemeler, etkinlikler ve fırsatlar hakkında iletişim kurmak için",
+          "Platform güvenliğini sağlamak ve dolandırıcılığı önlemek için"
+        ]
+      },
+      "protection": {
+        "title": "Veri Koruması",
+        "items": [
+          "Endüstri standardı güvenlik önlemlerini uygularız",
+          "Tüm hassas veriler aktarım ve saklamada şifrelenir",
+          "Özel anahtarları veya hassas cüzdan bilgilerini asla saklamayız",
+          "Düzenli güvenlik denetimleri ve uyumluluk incelemeleri"
+        ]
+      },
+      "sharing": {
+        "title": "Veri Paylaşımı",
+        "items": [
+          "Kişisel bilgileri üçüncü taraflara satmayız",
+          "Sıkı anlaşmalar altında hizmet sağlayıcılarla sınırlı paylaşım",
+          "Halka açık blokzinciri verileri doğası gereği şeffaftır",
+          "Yasal gereksinimlere uymak için veri paylaşabiliriz"
+        ]
+      }
+    },
+    "rights": {
+      "title": "Gizlilik Haklarınız",
+      "access": {
+        "title": "Erişim ve Kontrol",
+        "items": [
+          "Kişisel verilerinize erişim talep edin",
+          "Yanlış bilgileri düzeltin",
+          "Hesabınızı ve verilerinizi silin",
+          "Verilerinizi dışa aktarın"
+        ]
+      },
+      "communication": {
+        "title": "İletişim",
+        "items": [
+          "Pazarlama iletişimlerinden çıkın",
+          "Bildirim tercihlerini seçin",
+          "Çerez ayarlarını kontrol edin",
+          "Veri işleme sınırlamaları talep edin"
+        ]
+      }
+    },
+    "contact": {
+      "title": "Gizlilik Hakkında Sorularınız mı Var?",
+      "description": "Bu Gizlilik Politikası veya veri uygulamalarımız hakkında sorularınız varsa, lütfen bizimle iletişime geçin."
+    }
+  },
+  "proposal": {
+    "badge": "Dubhe OpenGov",
+    "hero": {
+      "title": "Geleceği Birlikte",
+      "titleHighlight": "Şekillendirelim",
+      "subtitle": "DubheOS üzerinden hazine finansmanı talep etmek, runtime yükseltmek veya Polkadot'un OpenGov çerçevesini ve inanç oylamalarını kullanarak yönetişime katılmak için teklifler gönderin.",
+      "cta": {
+        "primary": "DubheOS Devnet",
+        "secondary": "Tüm Referandumları Gör"
+      }
+    },
+    "types": {
+      "badge": "Teklif Kategorileri",
+      "title": "Yönetim Teklifi Türleri",
+      "exampleLabel": "Teklif örnekleri",
+      "treasury": {
+        "title": "Hazine Harcamaları",
+        "description": "Geliştirme projeleri ve girişimler için Dubhe Hazinesi'nden finansman talep etme",
+        "examples": [
+          "Geliştirme hibeler",
+          "Altyapı finansmanı",
+          "Araştırma projeleri"
+        ]
+      },
+      "governance": {
+        "title": "Yönetim Değişiklikleri",
+        "description": "Oylama mekanizmaları, hazine yönetimi ve yönetim parametrelerindeki değişiklikler",
+        "examples": [
+          "Oylama eşikleri",
+          "Referandum parametreleri",
+          "Hat yapılandırmaları"
+        ]
+      },
+      "runtime": {
+        "title": "Runtime Yükseltmeleri",
+        "description": "Yönetim onayı gerektiren protokol iyileştirmeleri ve runtime değişiklikleri",
+        "examples": [
+          "Pallet yükseltmeleri",
+          "Runtime optimizasyonları",
+          "Yeni özellikler"
+        ]
+      },
+      "emergency": {
+        "title": "Acil Durumlar",
+        "description": "Güvenlik sorunları ve kritik protokol düzeltmeleri için zaman duyarlı teklifler",
+        "examples": [
+          "Güvenlik yamaları",
+          "Acil güncellemeler",
+          "Kritik hata düzeltmeleri"
+        ]
+      }
+    },
+    "active": {
+      "title": "Aktif Referandumlar",
+      "subtitle": "Inanç oylamaları ile çeşitli yönetim hatlarındaki mevcut referandumlar"
+    },
+    "process": {
+      "title": "Yönetim Süreci",
+      "subtitle": "Yönetim teklifleri oluşturmak ve oylamak için adım adım süreç"
+    },
+    "requirements": {
+      "title": "Teklif Gereksinimleri"
+    },
+    "cta": {
+      "title": "Katılmaya Hazır mısınız?",
+      "subtitle": "Yönetim sürecine katılın ve Dubhe'nin geleceğini şekillendirmeye yardım edin",
+      "primary": "DubheOS'e Eriş",
+      "secondary": "OpenGov Rehberi"
+    }
+  },
+  "terms": {
+    "badge": "Hizmet Şartları",
+    "hero": {
+      "title": "Hizmet",
+      "titleHighlight": "Şartları",
+      "subtitle": "Bu şartlar Dubhe hizmetleri, platformları ve blokzincir altyapısının kullanımını yönetir.",
+      "lastUpdated": "Son güncellenme: Ocak 2025"
+    },
+    "introduction": {
+      "title": "Sözleşme Genel Bakış",
+      "content1": "Dubhe'ye hoş geldiniz! Bu Hizmet Şartları (\"Şartlar\"), sizin ve Dubhe Foundation (\"biz\", \"bizim\" veya \"kuruluşumuz\") arasında blokzincir platformumuz, geliştirme araçları ve ilgili hizmetlerin kullanımına ilişkin yasal olarak bağlayıcı bir anlaşma oluşturur.",
+      "content2": "Hizmetlerimizi kullanarak, bu Şartları ve Gizlilik Politikamızı okuduğunuzu, anladığınızı ve bunlarla bağlı olmayı kabul ettiğinizi kabul ediyorsunuz. Hizmetlerimizi bir organizasyon adına kullanıyorsanız, o organizasyonu bu Şartlara bağlama yetkiniz olduğunu beyan ediyorsunuz."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "Şartların Kabulü",
+        "items": [
+          "Dubhe hizmetlerine erişerek veya kullanarak bu Şartlarla bağlı olmayı kabul ediyorsunuz",
+          "Bu şartların herhangi bir kısmına katılmıyorsanız, hizmetlerimize erişemezsiniz",
+          "Bu şartları zaman zaman önceden haber vermeksizin güncelleyebiliriz",
+          "Sürekli kullanımınız, revize edilmiş şartların kabulü anlamına gelir"
+        ]
+      },
+      "usage": {
+        "title": "Hizmetlerin Kullanımı",
+        "items": [
+          "Hizmetlerimizi kullanmak için en az 18 yaşında olmalısınız",
+          "Hesabınızın güvenliğini sağlamaktan siz sorumlusunuz",
+          "Hizmetlerimizi herhangi bir yasa dışı veya yetkisiz amaç için kullanamazsınız",
+          "Bu şartları ihlal eden hesapları sonlandırma hakkını saklı tutuyoruz"
+        ]
+      },
+      "intellectual": {
+        "title": "Fikri Mülkiyet",
+        "items": [
+          "Dubhe Foundation tescilli teknolojimizin tüm haklarını saklı tutar",
+          "Açık kaynak bileşenler kendi lisansları tarafından yönetilir",
+          "Platformumuzu kullanarak oluşturduğunuz içeriğin sahipliğini siz korursunuz",
+          "Hizmetlerimizi sağlamak için içeriğinizi kullanma lisansını bize veriyorsunuz"
+        ]
+      },
+      "disclaimers": {
+        "title": "Sorumluluk Reddi ve Sınırlamalar",
+        "items": [
+          "Hizmetlerimiz herhangi bir türde garanti olmaksızın 'olduğu gibi' sağlanır",
+          "Herhangi bir dolaylı, tesadüfi veya sonuçsal zararlardan sorumlu değiliz",
+          "Blokzincir işlemleri geri döndürülemez ve biz bunları geri alamayız",
+          "Blokzincir teknolojisinin deneysel doğasını kabul ediyorsunuz"
+        ]
+      }
+    },
+    "blockchain": {
+      "title": "Blokzincire Özel Şartlar",
+      "participation": {
+        "title": "Ağ Katılımı",
+        "items": [
+          "İşlemler halka açık blokzincirlerde kaydedilir",
+          "Ağ ücretleri blokzincir işlemleri için geçerlidir",
+          "Akıllı kontratlar dağıtıldıktan sonra değiştirilemez",
+          "İşlemlerin doğruluğundan siz sorumlusunuz"
+        ]
+      },
+      "risks": {
+        "title": "Risk Kabulu",
+        "items": [
+          "Blokzincir teknolojisi deneyseldir",
+          "Token değerleri son derece oynak olabilir",
+          "Akıllı kontratlarda hatalar bulunabilir",
+          "Ağ tıkanıklığı performansı etkileyebilir"
+        ]
+      }
+    },
+    "governance": {
+      "title": "Geçerli Hukuk ve Anlaşmazlıklar",
+      "law": "Bu Şartlar, Dubhe Foundation'ın kurulduğu yargı bölgesinin yasalarına göre, hukuk çatışması hükümlerine bakılmaksızın yorumlanacak ve yönetilecektir.",
+      "disputes": "Bu Şartlardan veya hizmetlerimizin kullanımından kaynaklanan herhangi bir anlaşmazlık, uluslararası tahkim kurallarına uygun olarak bağlayıcı tahkim yoluyla çözülecektir.",
+      "modifications": "Bu Şartları herhangi bir zamanda değiştirme hakkını saklı tutuyoruz. Değişikliklerden sonra hizmetlerimizi sürekli kullanım, değiştirilen Şartların kabulü anlamına gelir."
+    },
+    "contact": {
+      "title": "Şartlar Hakkında Sorularınız mı Var?",
+      "description": "Bu Hizmet Şartları hakkında herhangi bir sorunuz varsa, lütfen hukuk ekibimizle iletişime geçin."
     }
   },
   "LocaleSwitcher": {

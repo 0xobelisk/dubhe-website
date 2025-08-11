@@ -563,6 +563,131 @@
       "cta2": "Contato da Fundação"
     }
   },
+  "channel": {
+    "badge": "Dubhe Channel",
+    "hero": {
+      "title": "P2P em Tempo Real",
+      "titleHighlight": "Camada de Interação",
+      "subtitle": "Experiência do usuário nível Web2 com infraestrutura Web3. Latência sub-50ms para jogos, plataformas sociais e aplicações de trading construídas em blockchains Move.",
+      "metrics": {
+        "latency": "Latência",
+        "users": "Usuários Simultâneos",
+        "uptime": "Uptime"
+      },
+      "cta1": "Juntar-se à Rede",
+      "cta2": "Documentação Técnica"
+    },
+    "features": {
+      "badge": "Recursos Principais",
+      "title": "Infraestrutura em Tempo Real",
+      "subtitle": "para DApps Modernos",
+      "description": "Construído para aplicações que exigem responsividade instantânea e experiências de usuário perfeitas",
+      "items": {
+        "latency": {
+          "title": "Latência Sub-50ms",
+          "description": "Interações P2P em tempo real com responsividade nível Web2. Construído para jogos, trading e aplicações sociais que exigem feedback instantâneo.",
+          "details": [
+            "Comunicação baseada em WebRTC",
+            "Algoritmos de roteamento otimizados",
+            "Distribuição de nós de borda",
+            "Sincronização de estado preditiva"
+          ]
+        },
+        "network": {
+          "title": "Rede P2P Escalável",
+          "description": "Escalabilidade horizontal que cresce com sua base de usuários. De centenas a milhões de conexões simultâneas sem degradação de performance.",
+          "details": [
+            "Descoberta dinâmica de peers",
+            "Protocolos de balanceamento de carga",
+            "Topologia de rede em malha",
+            "Infraestrutura de auto-escalonamento"
+          ]
+        },
+        "security": {
+          "title": "Seguro por Padrão",
+          "description": "Criptografia ponta a ponta e verificação criptográfica garantem que seus dados e interações permaneçam privados e à prova de adulteração.",
+          "details": [
+            "Protocolos de criptografia E2E",
+            "Provas de conhecimento zero",
+            "Assinaturas criptográficas",
+            "Verificação descentralizada"
+          ]
+        },
+        "experience": {
+          "title": "UX Web2, Backend Web3",
+          "description": "Experiência de usuário familiar alimentada por infraestrutura descentralizada. Os usuários obtêm o melhor dos dois mundos sem compromissos.",
+          "details": [
+            "Integração perfeita com carteiras",
+            "Transações sem gas",
+            "Suporte a Progressive Web Apps",
+            "Design mobile-first"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "badge": "Casos de Uso",
+      "title": "Construído para Aplicações em Tempo Real",
+      "items": {
+        "gaming": {
+          "title": "Jogos em Tempo Real",
+          "description": "Jogos multiplayer com tempos de resposta instantâneos",
+          "metrics": ["Latência <50ms", "1M+ jogadores simultâneos", "99.9% uptime"]
+        },
+        "social": {
+          "title": "Plataformas Sociais",
+          "description": "Redes sociais descentralizadas com mensagens em tempo real",
+          "metrics": ["Mensagens instantâneas", "Chamadas de vídeo ao vivo", "Chats em grupo"]
+        },
+        "trading": {
+          "title": "Aplicações de Trading",
+          "description": "Negociação de alta frequência com feeds de preços em tempo real",
+          "metrics": ["Dados em tempo real", "Atualizações do livro de ordens", "Descoberta de preços"]
+        }
+      }
+    },
+    "architecture": {
+      "title": "Arquitetura de Rede",
+      "description": "Abordagem multicamadas para performance e escalabilidade ótimas",
+      "layers": {
+        "application": {
+          "title": "Camada de Aplicação",
+          "description": "Seu DApp conecta através de APIs simples"
+        },
+        "channel": {
+          "title": "Camada de Canal",
+          "description": "Protocolo de comunicação P2P em tempo real"
+        },
+        "network": {
+          "title": "Camada de Rede",
+          "description": "Infraestrutura de nós distribuídos"
+        },
+        "blockchain": {
+          "title": "Camada de Blockchain",
+          "description": "Liquidação e verificação baseadas em Move"
+        }
+      }
+    },
+    "network": {
+      "title": "Rede P2P Global",
+      "description": "Rede constelação Dubhe conectando nós em todo o mundo para comunicação de ultra-baixa latência",
+      "status": {
+        "title": "STATUS DA REDE",
+        "online": "ONLINE",
+        "latency": "Latência: <50ms"
+      },
+      "nodes": {
+        "title": "NÓS ATIVOS",
+        "connected": "7/7 Conectados"
+      }
+    },
+    "cta": {
+      "title": "Pronto para DApps em Tempo Real?",
+      "subtitle": "Junte-se à rede que alimenta a próxima geração de aplicações interativas",
+      "primary": "Conectar à Rede",
+      "secondary": "Ver Documentação da API"
+    }
+  },
   "os": {
     "badge": "Dubhe OS",
     "hero": {
@@ -714,6 +839,84 @@
       "suggestion": "Isso geralmente é temporário. Por favor, tente novamente em alguns momentos."
     }
   },
+  "incubation": {
+    "hero": {
+      "badge": "Incubação da Fundação Dubhe",
+      "title": "Construa a Próxima Startup Unicórnio",
+      "subtitle": "Junte-se ao nosso ecossistema de incubação colaborativa apoiado pela Fundação Dubhe, co-incubado com Obelisk Labs e VCs do ecossistema para construir a próxima geração de startups Move.",
+      "stats": {
+        "funding": {
+          "value": "Em Breve",
+          "label": "Financiamento Total"
+        },
+        "startups": {
+          "value": "Em Breve", 
+          "label": "Startups Incubadas"
+        },
+        "unicorns": {
+          "value": "Em Breve",
+          "label": "Unicórnios Criados"
+        },
+        "success": {
+          "value": "Em Breve",
+          "label": "Taxa de Sucesso"
+        }
+      },
+      "cta": {
+        "apply": "Candidatar Agora",
+        "learn": "Saiba Mais"
+      }
+    },
+    "programs": {
+      "accelerator": {
+        "title": "Acelerador da Fundação",
+        "duration": "3 meses",
+        "funding": "Até $500K",
+        "description": "Programa intensivo apoiado pela Fundação Dubhe co-incubado com Obelisk Labs e VCs do ecossistema",
+        "benefits": ["Financiamento da Fundação Dubhe", "Co-incubação Obelisk Labs", "Suporte ao desenvolvimento Move", "Parcerias VC do ecossistema"]
+      },
+      "studio": {
+        "title": "Estúdio Colaborativo",
+        "duration": "6-12 meses",
+        "funding": "Até $1M", 
+        "description": "Co-incubado pela Fundação Dubhe, Obelisk Labs e VCs do ecossistema com recursos compartilhados",
+        "benefits": ["Co-incubação multi-parceiros", "Recursos técnicos compartilhados", "Colaboração entre projetos", "Redes VC do ecossistema"]
+      },
+      "scale": {
+        "title": "Escala do Ecossistema",
+        "duration": "6 meses",
+        "funding": "Até $2M",
+        "description": "Escale com suporte abrangente da Fundação Dubhe, Obelisk Labs e parceiros VC do ecossistema",
+        "benefits": ["Rede de co-incubação", "Apresentações estratégicas", "Acesso ao mercado global", "Conexões VC empresariais"]
+      }
+    },
+    "resources": {
+      "coIncubation": {
+        "title": "Co-Incubação Multi-Parceiros",
+        "description": "Orientação conjunta da Fundação Dubhe, Obelisk Labs e VCs do ecossistema"
+      },
+      "infrastructure": {
+        "title": "Infraestrutura Compartilhada",
+        "description": "Acesso à infraestrutura Obelisk Labs e recursos VC do ecossistema"
+      },
+      "integration": {
+        "title": "Integração do Ecossistema",
+        "description": "Integração direta com projetos Dubhe e redes de parceiros"
+      },
+      "development": {
+        "title": "Desenvolvimento Colaborativo",
+        "description": "Suporte técnico das equipes de engenharia da Fundação Dubhe e Obelisk Labs"
+      },
+      "demoDays": {
+        "title": "Dias de Demo de Parceiros",
+        "description": "Apresentar ao conselho da Fundação Dubhe e redes VC do ecossistema"
+      },
+      "network": {
+        "title": "Rede do Ecossistema",
+        "description": "Acesso a todo o ecossistema Dubhe e empresas parceiras"
+      }
+    }
+  },
   "ambassador": {
     "hero": {
       "badge": "Programa de Embaixador",
@@ -805,6 +1008,721 @@
       "description": "Junte-se ao nosso programa de embaixador e torne-se um líder no ecossistema Move",
       "apply": "Candidate-se Agora",
       "contact": "Entre em Contato"
+    }
+  },
+  "moderators": {
+    "hero": {
+      "badge": "Programa de Moderadores",
+      "title1": "Comunidade",
+      "title2": "Moderadores",
+      "subtitle": "Ajude a manter um ambiente seguro, acolhedor e produtivo para nossa comunidade global. Junte-se à nossa equipe de moderadores dedicados que garantem discussões de qualidade e apoiam todos os membros.",
+      "stats": {
+        "coverage": "Cobertura",
+        "activeModerators": "Moderadores Ativos",
+        "membersProtected": "Membros Protegidos"
+      },
+      "cta1": "Candidatar-se para Moderar",
+      "cta2": "Diretrizes"
+    },
+    "responsibilitiesSection": {
+      "badge": "Principais Responsabilidades",
+      "title": "O que os Moderadores Fazem"
+    },
+    "responsibilities": {
+      "communityModeration": {
+        "title": "Moderação da Comunidade",
+        "description": "Manter discussões saudáveis, fazer cumprir as diretrizes da comunidade e garantir um ambiente acolhedor para todos os membros"
+      },
+      "securitySafety": {
+        "title": "Segurança e Proteção",
+        "description": "Identificar e prevenir spam, golpes e atividades maliciosas para proteger os membros da comunidade"
+      },
+      "memberSupport": {
+        "title": "Apoio aos Membros",
+        "description": "Ajudar novatos a começar, responder perguntas e orientar usuários para recursos apropriados"
+      },
+      "contentCuration": {
+        "title": "Curadoria de Conteúdo",
+        "description": "Destacar conteúdo de qualidade, organizar informações e manter a qualidade das discussões da comunidade"
+      }
+    },
+    "moderatorsSection": {
+      "title": "Conheça Nossos Moderadores",
+      "description": "Nossa equipe dedicada garante cobertura 24/7 em todos os fusos horários e plataformas",
+      "timezone": "Fuso Horário",
+      "platforms": "Plataformas",
+      "languages": "Idiomas"
+    },
+    "toolsSection": {
+      "title": "Ferramentas de Moderação"
+    },
+    "tools": {
+      "discord": {
+        "features": [
+          "Gerenciamento de mensagens",
+          "Timeout/ban de usuários",
+          "Supervisão de canais",
+          "Integração de bots"
+        ]
+      },
+      "telegram": {
+        "features": [
+          "Moderação de grupos",
+          "Filtragem de spam",
+          "Verificação de usuários",
+          "Respostas automatizadas"
+        ]
+      },
+      "forum": {
+        "features": [
+          "Gerenciamento de tópicos",
+          "Moderação de conteúdo",
+          "Classificação de usuários",
+          "Tratamento de denúncias"
+        ]
+      }
+    },
+    "requirementsSection": {
+      "title": "Requisitos",
+      "guidelinesTitle": "Diretrizes de Moderação"
+    },
+    "requirements": [
+      "Membro ativo da comunidade por pelo menos 3 meses",
+      "Profundo entendimento do ecossistema Dubhe e tecnologia Move",
+      "Excelentes habilidades de comunicação e resolução de conflitos",
+      "Disponível para funções de moderação em diferentes fusos horários",
+      "Experiência prévia em moderação preferencial",
+      "Compromisso com tomada de decisões justa e imparcial"
+    ],
+    "guidelines": {
+      "communication": {
+        "category": "Comunicação",
+        "rules": [
+          "Tratar todos os membros da comunidade com respeito e cortesia",
+          "Usar linguagem clara e profissional em todas as interações",
+          "Desescalar conflitos e promover diálogo construtivo",
+          "Ser paciente com novatos e fornecer orientação útil"
+        ]
+      },
+      "enforcement": {
+        "category": "Aplicação",
+        "rules": [
+          "Aplicar regras da comunidade de forma consistente e justa",
+          "Documentar todas as ações de moderação com razões claras",
+          "Escalar questões complexas para moderadores seniores ou administradores",
+          "Processos de revisão e apelação devem ser transparentes"
+        ]
+      },
+      "privacySecurity": {
+        "category": "Privacidade e Segurança",
+        "rules": [
+          "Proteger a privacidade e informações pessoais dos usuários",
+          "Nunca compartilhar ferramentas de moderação ou credenciais",
+          "Relatar vulnerabilidades de segurança imediatamente",
+          "Manter confidencialidade das discussões internas"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para Ajudar Nossa Comunidade?",
+      "description": "Junte-se à nossa equipe de moderação e ajude a criar um ambiente seguro e acolhedor para todos",
+      "apply": "Candidatar-se Agora",
+      "guidelines": "Ver Diretrizes"
+    }
+  },
+  "events": {
+    "hero": {
+      "badge": "Calendário de Eventos",
+      "title": "Próximos Eventos",
+      "subtitle": "Participe dos eventos organizados pela Dubhe, conecte-se com desenvolvedores Move e mantenha-se atualizado com o ecossistema."
+    },
+    "filters": {
+      "search": {
+        "placeholder": "Pesquisar"
+      },
+      "categories": {
+        "all": "Todos",
+        "ama": "AMA",
+        "workshop": "Workshop",
+        "meetup": "Meetup"
+      },
+      "sort": {
+        "date": "Ordenar: Data",
+        "name": "Ordenar: Nome",
+        "location": "Ordenar: Localização"
+      }
+    },
+    "table": {
+      "headers": {
+        "date": "Data",
+        "name": "Nome",
+        "location": "Localização",
+        "category": "Categoria"
+      },
+      "noEvents": "Nenhum evento encontrado que corresponda aos seus critérios"
+    },
+    "eventsList": {
+      "engineWorkshop": {
+        "name": "Workshop de Desenvolvedores do Dubhe Engine",
+        "location": "Online",
+        "category": "Workshop",
+        "description": "Mergulhe fundo no Dubhe Engine e aprenda as últimas técnicas e melhores práticas para construir aplicações totalmente on-chain."
+      },
+      "moveAma": {
+        "name": "AMA do Ecossistema Move com a Fundação Dubhe",
+        "location": "Online",
+        "category": "AMA",
+        "description": "Pergunte-nos qualquer coisa sobre o protocolo Dubhe, detalhes técnicos e roteiro."
+      },
+      "sfMeetup": {
+        "name": "Meetup da Comunidade Dubhe - San Francisco",
+        "location": "San Francisco, CA",
+        "category": "Meetup",
+        "description": "Conecte-se com desenvolvedores Dubhe, compartilhe projetos mais recentes e explore oportunidades de colaboração no ecossistema Move."
+      },
+      "zkWorkshop": {
+        "name": "Workshop de Soluções de Privacidade Zero-Knowledge",
+        "location": "Online",
+        "category": "Workshop",
+        "description": "Aprenda sobre provas ZK e aplicações que preservam privacidade no Dubhe com experiência prática."
+      }
+    },
+    "community": {
+      "title": "Junte-se à Nossa Comunidade Global",
+      "description": "Conecte-se com desenvolvedores, entusiastas e inovadores da tecnologia Move ao redor do mundo.",
+      "stats": {
+        "eventsThisYear": "Eventos Este Ano",
+        "attendees": "Participantes",
+        "countries": "Países",
+        "speakers": "Palestrantes"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Entre em Contato",
+      "title1": "Entre em",
+      "title2": "Contato",
+      "subtitle": "Tem perguntas sobre o Dubhe? Quer fazer uma parceria conosco? Gostaríamos de ouvir você."
+    },
+    "form": {
+      "title": "Envie-nos uma mensagem",
+      "validationError": "Erro de validação",
+      "sendError": "Falha ao enviar mensagem. Tente novamente.",
+      "networkError": "Erro de rede. Verifique sua conexão e tente novamente.",
+      "sending": "Enviando...",
+      "submit": "Enviar Mensagem",
+      "success": {
+        "title": "Mensagem enviada!",
+        "message": "Entraremos em contato em 24-48 horas.",
+        "sendAnother": "Enviar outra mensagem"
+      },
+      "fields": {
+        "name": {
+          "label": "Nome",
+          "placeholder": "Seu nome"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "seu@email.com"
+        },
+        "subject": {
+          "label": "Assunto",
+          "placeholder": "Selecione um assunto",
+          "options": {
+            "general": "Consulta Geral",
+            "partnership": "Parceria",
+            "investment": "Consulta de Investimento",
+            "grants": "Aplicação de Grants",
+            "foundationJobs": "Empregos na Fundação",
+            "technical": "Suporte Técnico",
+            "media": "Mídia e Imprensa"
+          }
+        },
+        "message": {
+          "label": "Mensagem",
+          "placeholder": "Conte-nos sobre seu projeto, consulta ou como podemos ajudar..."
+        }
+      }
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "description": "Seja você um desenvolvedor, investidor ou apenas curioso sobre o Dubhe, estamos aqui para ajudar. Entre em contato através de qualquer um dos canais abaixo.",
+      "email": {
+        "title": "E-mail"
+      },
+      "business": {
+        "title": "Consultas Comerciais"
+      },
+      "location": {
+        "title": "Localização",
+        "content": "Global, Descentralizado"
+      },
+      "responseTime": {
+        "title": "Tempo de Resposta",
+        "content": "24-48 horas"
+      }
+    },
+    "quickLinks": {
+      "title": "Links Rápidos",
+      "grant": "Solicitar um Grant",
+      "incubation": "Participar do Programa de Incubação",
+      "ambassador": "Tornar-se um Embaixador",
+      "documentation": "Ler Documentação"
+    }
+  },
+  "engine": {
+    "hero": {
+      "badge": "Dubhe Engine",
+      "title1": "80% de Código",
+      "title2": "Auto-Gerado",
+      "subtitle": "Plataforma de desenvolvimento baseada em esquema que gera automaticamente contratos inteligentes, APIs e componentes de UI. Foque no que importa - sua lógica de negócio única.",
+      "stats": {
+        "codeAutoGenerated": "Código Auto-Gerado",
+        "fasterDevelopment": "Desenvolvimento Mais Rápido",
+        "moveEcosystem": "Ecossistema Move"
+      },
+      "cta1": "Começar a Construir",
+      "cta2": "Ver Documentação"
+    },
+    "featuresSection": {
+      "badge": "Recursos Principais",
+      "title": "Construa Mais Rápido, Lance Mais Cedo",
+      "description": "O Dubhe Engine cuida do trabalho pesado para que você possa focar na inovação"
+    },
+    "features": {
+      "codeGeneration": {
+        "title": "80% de Auto-Geração de Código",
+        "description": "Reduza drasticamente o tempo de desenvolvimento com geração inteligente de código que cuida automaticamente de boilerplate, estruturas de dados e padrões comuns.",
+        "details": [
+          "Geração de código dirigida por esquema",
+          "Criação automática de endpoints de API",
+          "Scaffolding de contratos inteligentes",
+          "Geração de componentes de UI"
+        ]
+      },
+      "schemaBased": {
+        "title": "Desenvolvimento Baseado em Esquema",
+        "description": "Defina suas estruturas de dados uma vez e deixe o Dubhe Engine gerar todo o resto. Mudanças se propagam automaticamente por toda sua aplicação.",
+        "details": [
+          "Fonte única da verdade",
+          "Segurança de tipo automática",
+          "Validação em tempo real",
+          "Compatibilidade multiplataforma"
+        ]
+      },
+      "realTimeToolchain": {
+        "title": "Toolchain DApp em Tempo Real",
+        "description": "Construa aplicações totalmente on-chain com capacidades em tempo real. Do estado do jogo às aplicações financeiras, tudo acontece instantaneamente.",
+        "details": [
+          "Finalidade de transação sub-segundo",
+          "Sincronização de estado em tempo real",
+          "Arquitetura dirigida por eventos",
+          "Atualizações de UI otimistas"
+        ]
+      },
+      "multiChain": {
+        "title": "Suporte Multi-Chain",
+        "description": "Implante em múltiplas chains baseadas em Move sem alterar seu código. Escreva uma vez, implante em qualquer lugar.",
+        "details": [
+          "Integração com rede Sui",
+          "Compatibilidade com Aptos",
+          "Suporte à rede Movement",
+          "Gestão de estado cross-chain"
+        ]
+      }
+    },
+    "workflowSection": {
+      "badge": "Fluxo de Desenvolvimento",
+      "title": "Da Ideia à Produção em 4 Passos Simples"
+    },
+    "workflow": {
+      "defineSchema": {
+        "title": "Definir Esquema",
+        "description": "Crie seus modelos de dados e lógica de negócio usando nossa linguagem de definição de esquema intuitiva"
+      },
+      "generateCode": {
+        "title": "Gerar Código",
+        "description": "O Dubhe Engine gera automaticamente 80% do código da sua aplicação incluindo contratos inteligentes e APIs"
+      },
+      "customizeLogic": {
+        "title": "Personalizar Lógica",
+        "description": "Foque nos 20% únicos - sua lógica de negócio, recursos personalizados e experiência do usuário"
+      },
+      "deployInstantly": {
+        "title": "Implantar Instantaneamente",
+        "description": "Implantação com um clique em múltiplas chains Move com otimização automática e monitoramento"
+      }
+    },
+    "cta": {
+      "title": "Pronto para Acelerar seu Desenvolvimento 10x?",
+      "description": "Junte-se aos desenvolvedores construindo o futuro das aplicações totalmente on-chain",
+      "getStarted": "Começar Grátis",
+      "scheduleDemo": "Agendar Demo"
+    }
+  },
+  "labs": {
+    "hero": {
+      "badge": "Laboratórios de Desenvolvimento Dubhe",
+      "title1": "Laboratórios de",
+      "title2": "Inovação Colaborativa",
+      "subtitle": "Múltiplas equipes de desenvolvimento especializadas trabalhando juntas sob a Fundação Dubhe para construir o futuro da infraestrutura blockchain baseada em Move, assim como o Polkadot JAM.",
+      "stats": {
+        "activeLabs": "Laboratórios Ativos",
+        "coreEngineers": "Engenheiros Principais",
+        "unifiedVision": "Visão de Protocolo Unificada"
+      },
+      "cta1": "Explorar Laboratórios",
+      "cta2": "Junte-se a um Laboratório"
+    },
+    "overview": {
+      "badge": "Equipes de Desenvolvimento",
+      "title": "Laboratórios Especializados, Visão Unificada",
+      "description": "Cada laboratório traz expertise única enquanto trabalha em direção ao objetivo comum de avançar o ecossistema Dubhe",
+      "visitLab": "Visitar Laboratório",
+      "keyContributions": "Contribuições Principais"
+    },
+    "labsList": {
+      "obelisk": {
+        "name": "Obelisk Labs",
+        "focus": "Desenvolvimento de Protocolo Principal",
+        "description": "Liderando o desenvolvimento do protocolo blockchain principal do Dubhe e infraestrutura da linguagem Move. Focado em mecanismos de consenso, otimização de contratos inteligentes e ferramentas para desenvolvedores.",
+        "contributions": [
+          "Arquitetura do Protocolo Principal Dubhe",
+          "Otimização do Runtime da Linguagem Move",
+          "Motor de Execução de Contratos Inteligentes",
+          "SDK e Toolchain para Desenvolvedores",
+          "Mecanismos de Consenso Cross-Chain"
+        ],
+        "status": "Ativo",
+        "team": "12 Engenheiros"
+      },
+      "cyferio": {
+        "name": "Cyferio Labs",
+        "focus": "Privacidade & Conhecimento Zero",
+        "description": "Especializando em tecnologias de preservação de privacidade, provas de conhecimento zero e protocolos criptográficos para o ecossistema Dubhe. Construindo a próxima geração de contratos inteligentes privados.",
+        "contributions": [
+          "Sistemas de Prova de Conhecimento Zero",
+          "Contratos Inteligentes de Preservação de Privacidade",
+          "Design de Protocolo Criptográfico",
+          "Soluções de Computação Confidencial",
+          "Sistemas de Transação Anônima"
+        ],
+        "status": "Ativo",
+        "team": "8 Pesquisadores"
+      },
+      "network": {
+        "name": "Dubhe Network Labs",
+        "focus": "Infraestrutura & Escalabilidade",
+        "description": "Construindo soluções de rede de alta performance, protocolos de comunicação em tempo real e infraestrutura de escalabilidade para o ecossistema Dubhe.",
+        "contributions": [
+          "Rede P2P de Alta Performance",
+          "Comunicação de Canal em Tempo Real",
+          "Arquitetura de Nó Escalável",
+          "Otimização de Protocolo de Rede",
+          "Infraestrutura de Bridge Cross-Chain"
+        ],
+        "status": "Desenvolvimento",
+        "team": "6 Engenheiros"
+      },
+      "bridge": {
+        "name": "Dubhe Bridge Labs",
+        "focus": "Tecnologia Cross-Chain",
+        "description": "Desenvolvendo protocolos de bridging universais e soluções de interoperabilidade para conectar Dubhe com outros ecossistemas blockchain perfeitamente.",
+        "contributions": [
+          "Protocolo de Bridge Universal",
+          "Transferência de Ativos Cross-Chain",
+          "Governança Multi-Chain",
+          "Padrões de Interoperabilidade",
+          "Mecanismos de Segurança de Bridge"
+        ],
+        "status": "Pesquisa",
+        "team": "4 Engenheiros"
+      }
+    },
+    "research": {
+      "badge": "Foco de Pesquisa",
+      "title": "Áreas de Pesquisa Colaborativa",
+      "areas": {
+        "protocol": {
+          "title": "Desenvolvimento de Protocolo",
+          "description": "Protocolos blockchain principais, mecanismos de consenso e melhorias na linguagem Move",
+          "teams": ["Obelisk Labs"]
+        },
+        "infrastructure": {
+          "title": "Infraestrutura & Escalabilidade",
+          "description": "Rede de alta performance, comunicação em tempo real e soluções de escalabilidade",
+          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+        },
+        "crossChain": {
+          "title": "Tecnologia Cross-Chain",
+          "description": "Protocolos de interoperabilidade, bridging universal e governança multi-chain",
+          "teams": ["Dubhe Bridge Labs"]
+        },
+        "privacy": {
+          "title": "Privacidade & Segurança",
+          "description": "Provas de conhecimento zero, protocolos de preservação de privacidade e pesquisa criptográfica",
+          "teams": ["Cyferio Labs"]
+        }
+      },
+      "contributingLabs": "Laboratórios Contribuintes:"
+    },
+    "collaboration": {
+      "title": "Processo de Desenvolvimento Colaborativo",
+      "description": "Como múltiplos laboratórios se coordenam para entregar implementações de protocolo unificadas",
+      "phases": {
+        "research": {
+          "title": "Pesquisa",
+          "description": "Pesquisa colaborativa e design de protocolo em todas as equipes"
+        },
+        "development": {
+          "title": "Desenvolvimento",
+          "description": "Implementação paralela com padrões e interfaces compartilhados"
+        },
+        "testing": {
+          "title": "Teste",
+          "description": "Teste de integração e validação entre equipes"
+        },
+        "deployment": {
+          "title": "Implantação",
+          "description": "Lançamento coordenado e integração com o ecossistema"
+        }
+      }
+    },
+    "cta": {
+      "title": "Junte-se à Inovação",
+      "description": "Seja parte da construção do futuro da infraestrutura blockchain baseada em Move",
+      "apply": "Aplicar aos Laboratórios",
+      "positions": "Ver Posições Abertas"
+    }
+  },
+  "privacy": {
+    "badge": "Política de Privacidade",
+    "hero": {
+      "title": "Sua Privacidade",
+      "titleHighlight": "Importa",
+      "subtitle": "Saiba como a Fundação Dubhe protege sua privacidade e lida com seus dados com transparência e segurança.",
+      "lastUpdated": "Última atualização: Janeiro de 2025"
+    },
+    "introduction": {
+      "title": "Introdução",
+      "content": "Na Fundação Dubhe, estamos comprometidos em proteger sua privacidade e garantir a segurança de suas informações pessoais. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informações quando você usa nossa plataforma, serviços e aplicativos relacionados ao ecossistema blockchain Dubhe."
+    },
+    "sections": {
+      "collection": {
+        "title": "Informações que Coletamos",
+        "items": [
+          "Informações pessoais que você fornece ao usar nossos serviços",
+          "Informações técnicas sobre seu dispositivo e conexão de rede",
+          "Dados de uso e análises para melhorar nossa plataforma",
+          "Endereços de carteira e dados de transações blockchain"
+        ]
+      },
+      "usage": {
+        "title": "Como Usamos as Informações",
+        "items": [
+          "Para fornecer e melhorar nossa plataforma de desenvolvimento blockchain",
+          "Para processar aplicações de subsídios e programas de incubação",
+          "Para comunicar sobre atualizações, eventos e oportunidades",
+          "Para garantir a segurança da plataforma e prevenir fraudes"
+        ]
+      },
+      "protection": {
+        "title": "Proteção de Dados",
+        "items": [
+          "Implementamos medidas de segurança padrão da indústria",
+          "Todos os dados sensíveis são criptografados em trânsito e em repouso",
+          "Nunca armazenamos chaves privadas ou informações sensíveis de carteira",
+          "Auditorias de segurança regulares e revisões de conformidade"
+        ]
+      },
+      "sharing": {
+        "title": "Compartilhamento de Dados",
+        "items": [
+          "Não vendemos informações pessoais para terceiros",
+          "Compartilhamento limitado com provedores de serviços sob acordos rigorosos",
+          "Dados de blockchain públicos são inerentemente transparentes",
+          "Podemos compartilhar dados para cumprir requisitos legais"
+        ]
+      }
+    },
+    "rights": {
+      "title": "Seus Direitos de Privacidade",
+      "access": {
+        "title": "Acesso e Controle",
+        "items": [
+          "Solicitar acesso aos seus dados pessoais",
+          "Corrigir informações imprecisas",
+          "Excluir sua conta e dados",
+          "Exportar seus dados"
+        ]
+      },
+      "communication": {
+        "title": "Comunicação",
+        "items": [
+          "Cancelar comunicações de marketing",
+          "Escolher preferências de notificação",
+          "Controlar configurações de cookies",
+          "Solicitar limitações de processamento de dados"
+        ]
+      }
+    },
+    "contact": {
+      "title": "Dúvidas sobre Privacidade?",
+      "description": "Se você tiver alguma dúvida sobre esta Política de Privacidade ou nossas práticas de dados, entre em contato conosco."
+    }
+  },
+  "proposal": {
+    "badge": "Dubhe OpenGov",
+    "hero": {
+      "title": "Molde o Futuro",
+      "titleHighlight": "Juntos",
+      "subtitle": "Envie propostas através do DubheOS para solicitar financiamento do tesouro, atualizar o runtime ou participar na governança usando o framework OpenGov do Polkadot com votação por convicção.",
+      "cta": {
+        "primary": "DubheOS Devnet",
+        "secondary": "Ver Todos os Referendos"
+      }
+    },
+    "types": {
+      "badge": "Categorias de Propostas",
+      "title": "Tipos de Propostas de Governança",
+      "exampleLabel": "Exemplos de propostas",
+      "treasury": {
+        "title": "Gastos do Tesouro",
+        "description": "Solicitar financiamento do Tesouro Dubhe para projetos de desenvolvimento e iniciativas",
+        "examples": [
+          "Subsídios de desenvolvimento",
+          "Financiamento de infraestrutura",
+          "Projetos de pesquisa"
+        ]
+      },
+      "governance": {
+        "title": "Mudanças de Governança",
+        "description": "Modificações nos mecanismos de votação, gestão do tesouro e parâmetros de governança",
+        "examples": [
+          "Limites de votação",
+          "Parâmetros de referendo",
+          "Configurações de faixa"
+        ]
+      },
+      "runtime": {
+        "title": "Atualizações de Runtime",
+        "description": "Melhorias de protocolo e modificações de runtime que exigem aprovação de governança",
+        "examples": [
+          "Atualizações de pallet",
+          "Otimizações de runtime",
+          "Novos recursos"
+        ]
+      },
+      "emergency": {
+        "title": "Ações de Emergência",
+        "description": "Propostas urgentes para questões de segurança e correções críticas de protocolo",
+        "examples": [
+          "Patches de segurança",
+          "Atualizações de emergência",
+          "Correções críticas de bugs"
+        ]
+      }
+    },
+    "active": {
+      "title": "Referendos Ativos",
+      "subtitle": "Referendos atuais em várias faixas de governança com votação por convicção"
+    },
+    "process": {
+      "title": "Processo de Governança",
+      "subtitle": "Processo passo a passo para criar e votar em propostas de governança"
+    },
+    "requirements": {
+      "title": "Requisitos da Proposta"
+    },
+    "cta": {
+      "title": "Pronto para Participar?",
+      "subtitle": "Junte-se ao processo de governança e ajude a moldar o futuro do Dubhe",
+      "primary": "Acessar DubheOS",
+      "secondary": "Guia OpenGov"
+    }
+  },
+  "terms": {
+    "badge": "Termos de Serviço",
+    "hero": {
+      "title": "Termos de",
+      "titleHighlight": "Serviço",
+      "subtitle": "Estes termos regem o uso dos serviços, plataformas e infraestrutura blockchain da Dubhe.",
+      "lastUpdated": "Última atualização: Janeiro de 2025"
+    },
+    "introduction": {
+      "title": "Visão Geral do Acordo",
+      "content1": "Bem-vindo ao Dubhe! Estes Termos de Serviço (\"Termos\") formam um acordo legalmente vinculativo entre você e a Dubhe Foundation (\"nós\", \"nosso\" ou \"nossa\") em relação ao uso de nossa plataforma blockchain, ferramentas de desenvolvimento e serviços relacionados.",
+      "content2": "Ao usar nossos serviços, você reconhece ter lido, entendido e concordado em ficar vinculado por estes Termos e nossa Política de Privacidade. Se você estiver usando nossos serviços em nome de uma organização, você declara ter autoridade para vincular essa organização a estes Termos."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "Aceitação dos Termos",
+        "items": [
+          "Ao acessar ou usar os serviços Dubhe, você concorda em ficar vinculado por estes Termos",
+          "Se você discordar de qualquer parte destes termos, não poderá acessar nossos serviços",
+          "Podemos atualizar estes termos de tempos em tempos sem aviso prévio",
+          "Seu uso contínuo constitui aceitação dos termos revisados"
+        ]
+      },
+      "usage": {
+        "title": "Uso dos Serviços",
+        "items": [
+          "Você deve ter pelo menos 18 anos para usar nossos serviços",
+          "Você é responsável por manter a segurança de sua conta",
+          "Você não pode usar nossos serviços para qualquer propósito ilegal ou não autorizado",
+          "Reservamo-nos o direito de encerrar contas que violem estes termos"
+        ]
+      },
+      "intellectual": {
+        "title": "Propriedade Intelectual",
+        "items": [
+          "A Dubhe Foundation retém todos os direitos sobre nossa tecnologia proprietária",
+          "Componentes de código aberto são regidos por suas respectivas licenças",
+          "Você mantém a propriedade do conteúdo que cria usando nossa plataforma",
+          "Você nos concede licença para usar seu conteúdo para fornecer nossos serviços"
+        ]
+      },
+      "disclaimers": {
+        "title": "Isenções de Responsabilidade e Limitações",
+        "items": [
+          "Nossos serviços são fornecidos 'como estão' sem garantias de qualquer tipo",
+          "Não somos responsáveis por quaisquer danos indiretos, incidentais ou consequenciais",
+          "Transações blockchain são irreversíveis e não podemos revertê-las",
+          "Você reconhece a natureza experimental da tecnologia blockchain"
+        ]
+      }
+    },
+    "blockchain": {
+      "title": "Termos Específicos do Blockchain",
+      "participation": {
+        "title": "Participação na Rede",
+        "items": [
+          "As transações são registradas em blockchains públicos",
+          "Taxas de rede se aplicam a operações blockchain",
+          "Contratos inteligentes são imutáveis uma vez implantados",
+          "Você é responsável pela precisão das transações"
+        ]
+      },
+      "risks": {
+        "title": "Reconhecimento de Risco",
+        "items": [
+          "A tecnologia blockchain é experimental",
+          "Os valores dos tokens podem ser altamente voláteis",
+          "Contratos inteligentes podem conter bugs",
+          "O congestionamento da rede pode afetar o desempenho"
+        ]
+      }
+    },
+    "governance": {
+      "title": "Lei Aplicável e Disputas",
+      "law": "Estes Termos devem ser interpretados e regidos de acordo com as leis da jurisdição onde a Dubhe Foundation está estabelecida, sem consideração às suas disposições de conflito de leis.",
+      "disputes": "Quaisquer disputas decorrentes destes Termos ou do uso de nossos serviços devem ser resolvidas por meio de arbitragem vinculativa de acordo com as regras internacionais de arbitragem.",
+      "modifications": "Reservamo-nos o direito de modificar estes Termos a qualquer momento. O uso contínuo de nossos serviços após as mudanças constitui aceitação dos Termos modificados."
+    },
+    "contact": {
+      "title": "Dúvidas Sobre os Termos?",
+      "description": "Se você tiver alguma dúvida sobre estes Termos de Serviço, entre em contato com nossa equipe jurídica."
     }
   },
   "LocaleSwitcher": {
