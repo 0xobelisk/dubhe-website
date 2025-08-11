@@ -714,6 +714,99 @@
       "suggestion": "Bu genellikle geçicidir. Lütfen birkaç dakika sonra tekrar deneyin."
     }
   },
+  "ambassador": {
+    "hero": {
+      "badge": "Büyükelçi Programı",
+      "title1": "Bir",
+      "title2": "Dubhe Büyükelçisi Ol",
+      "subtitle": "Tutkulu destekçilerin küresel topluluğuna katılın ve Move blockchain geliştirmesinin geleceğini şekillendirmeye yardımcı olun. Yerel toplulukları yönetin, içerik oluşturun ve ekosistemi dünya çapında büyütün.",
+      "stats": {
+        "activeAmbassadors": "Aktif Büyükelçiler",
+        "countries": "Ülkeler",
+        "communityReach": "Topluluk Erişimi"
+      },
+      "cta1": "Şimdi Başvur",
+      "cta2": "Daha Fazla Öğren"
+    },
+    "benefitsSection": {
+      "badge": "Program Faydaları",
+      "title": "Büyükelçi Programımıza Neden Katılmalısınız?"
+    },
+    "benefits": {
+      "exclusiveAccess": {
+        "title": "Özel Erişim",
+        "description": "Yeni özellikler, ürünler ve duyurulara genel lansmanlardan önce erken erişim elde edin"
+      },
+      "directCommunication": {
+        "title": "Doğrudan İletişim",
+        "description": "Dubhe Foundation ile düzenli iletişim ve ürün yol haritası kararlarında etkili olma"
+      },
+      "recognition": {
+        "title": "Tanınma ve Ödüller",
+        "description": "Toplulukta özel tanınma, özel ürünler ve katkılarınız için token ödülleri"
+      },
+      "globalNetwork": {
+        "title": "Küresel Ağ",
+        "description": "Benzer düşünceli bireylerle bağlantı kurun ve küresel Dubhe topluluğu içinde ilişkiler geliştirin"
+      }
+    },
+    "ambassadorsSection": {
+      "title": "Küresel Büyükelçilerimizle Tanışın",
+      "description": "Büyükelçilerimiz bölgelerinde değişimi yönetiyor, topluluklar inşa ediyor ve benimsenmeyi sağlıyor",
+      "location": "Konum",
+      "expertise": "Uzmanlık",
+      "projectsLed": "Yönetilen Projeler"
+    },
+    "requirementsSection": {
+      "title": "Gereksinimler"
+    },
+    "requirements": [
+      "En az 3 ay boyunca Dubhe topluluğunda aktif üye olma",
+      "Move blockchain teknolojisi hakkında derinlemesine anlayış",
+      "Topluluk oluşturma veya içerik yaratma deneyimi",
+      "Dubhe ekosistemini olumlu yönde teşvik etme taahhüdü",
+      "Haftada en az 10 saat uygunluk",
+      "İngilizce ve en az bir diğer dilde yetkinlik"
+    ],
+    "responsibilitiesSection": {
+      "title": "Sorumluluklar"
+    },
+    "responsibilities": {
+      "communityEngagement": {
+        "title": "Topluluk Katılımı",
+        "tasks": [
+          "Topluluk tartışmalarını denetleme ve pozitif bir ortam sürdürme",
+          "Teknik soruları yanıtlama ve yeni gelenlere yardım etme",
+          "Yerel buluşmalar ve çevrimiçi etkinlikler düzenleme",
+          "İlgi çekici içerik oluşturma (eğitimler, makaleler, videolar)"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Ekosistem Büyümesi",
+        "tasks": [
+          "Yeni geliştiricileri belirleyip Dubhe'ye dahil etme",
+          "Küresel girişimlerde diğer büyükelçilerle işbirliği yapma",
+          "Ürünler ve belgeler hakkında geri bildirim sağlama",
+          "Blockchain konferans ve etkinliklerinde Dubhe'yi temsil etme"
+        ]
+      },
+      "contentCreation": {
+        "title": "İçerik Oluşturma",
+        "tasks": [
+          "Teknik eğitimler ve kılavuzlar yazma",
+          "Dubhe özelliklerini açıklayan video içeriği oluşturma",
+          "Belgeleri yerel dillere çevirme",
+          "Sosyal medyada ekosistem güncellemelerini paylaşma"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Topluluğunuzu Yönetmeye Hazır mısınız?",
+      "description": "Büyükelçi programımıza katılın ve Move ekosisteminde bir lider olun",
+      "apply": "Şimdi Başvur",
+      "contact": "İletişime Geç"
+    }
+  },
   "LocaleSwitcher": {
     "label": "Diller"
   }

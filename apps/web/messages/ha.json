@@ -1735,5 +1735,98 @@
       "title": "Tambayoyi Game da Sharuɗɗa?",
       "description": "Idan kuna da wasu tambayoyi game da waɗannan Sharuɗɗan Sabis, don Allah ku tuntuɓi ƙungiyar doka namu."
     }
+  },
+  "ambassador": {
+    "hero": {
+      "badge": "Shirin Jakadanci",
+      "title1": "Zama",
+      "title2": "Jakada na Dubhe",
+      "subtitle": "Shiga cikin al'ummarmu ta duniya na masu goyon baya masu himma kuma ka taimaka wajen gina makomar ci gaban blockchain na Move. Ka jagoranci al'ummomi na gida, ka kirkiro abun ciki kuma ka bunkasa tsarin halittu a duk duniya.",
+      "stats": {
+        "activeAmbassadors": "Jakadodi Masu Aiki",
+        "countries": "Kasashe",
+        "communityReach": "Isa ga Al'umma"
+      },
+      "cta1": "Nema Yanzu",
+      "cta2": "Koyi Kari"
+    },
+    "benefitsSection": {
+      "badge": "Amfanin Shiri",
+      "title": "Me yasa za ku shiga Shirinmu na Jakadanci?"
+    },
+    "benefits": {
+      "exclusiveAccess": {
+        "title": "Samun Dama na Musamman",
+        "description": "Samu damar farko ga sababbin fasali, kayayyaki da sanarwa kafin a fitar da su ga jama'a"
+      },
+      "directCommunication": {
+        "title": "Sadarwa kai tsaye",
+        "description": "Sadarwa akai-akai da Gidauniyar Dubhe da kuma tasiri akan yanke shawarar hanyar ci gaba"
+      },
+      "recognition": {
+        "title": "Yabo da Lada",
+        "description": "Yabo na musamman a cikin al'umma, kayayyaki na musamman da kyautar alamun gudummawar"
+      },
+      "globalNetwork": {
+        "title": "Cibiyar Sadarwa ta Duniya",
+        "description": "Haɗa kai da mutane masu ra'ayi ɗaya kuma gina dangantaka a cikin al'ummar Dubhe ta duniya"
+      }
+    },
+    "ambassadorsSection": {
+      "title": "Saduwa da Jakadodinmu na Duniya",
+      "description": "Jakadodinmu suna jagorantar ci gaba a yankuna nasu, suna gina al'ummomi da kuma inganta karɓa",
+      "location": "Wuri",
+      "expertise": "Gwaninta",
+      "projectsLed": "Ayyukan da aka Jagoranta"
+    },
+    "requirementsSection": {
+      "title": "Buƙatu"
+    },
+    "requirements": [
+      "Memba mai aiki a cikin al'ummar Dubhe aƙalla watanni 3",
+      "Fahimtar zurfi game da fasahar blockchain na Move",
+      "Gwaninta a ginin al'umma ko ƙirƙirar abun ciki",
+      "Alƙawari na inganta tsarin Dubhe da kyau",
+      "Samun lokaci aƙalla sa'o'i 10 a mako",
+      "Sanin Turanci da aƙalla wata harshe ɗaya"
+    ],
+    "responsibilitiesSection": {
+      "title": "Nauyi"
+    },
+    "responsibilities": {
+      "communityEngagement": {
+        "title": "Haɗin kai da Al'umma",
+        "tasks": [
+          "Gudanar da tattaunawar al'umma da kuma kiyaye yanayi mai kyau",
+          "Amsa tambayoyin fasaha da taimakon sabbin mutane",
+          "Shirya tarurrukan gida da ayyukan kan layi",
+          "Ƙirƙirar abun ciki mai jan hankali (koyarwa, labarai, bidiyo)"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Ci gaban Tsarin Halittu",
+        "tasks": [
+          "Gano da shigar da sabbin masu ci gaba zuwa Dubhe",
+          "Haɗin gwiwa da sauran jakadodi kan shirye-shiryen duniya",
+          "Bayar da ra'ayi akan kayayyaki da takaddun",
+          "Wakiltar Dubhe a tarurrukan blockchain da al'amuran"
+        ]
+      },
+      "contentCreation": {
+        "title": "Ƙirƙirar Abun Ciki",
+        "tasks": [
+          "Rubuta koyarwa da jagororin fasaha",
+          "Ƙirƙirar abun cikin bidiyo da ke bayyana fasalin Dubhe",
+          "Fassara takaddun zuwa harsunan gida",
+          "Raba sabuntawar tsarin halittu akan kafofin watsa labarun"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Shirye ka Jagoranci Al'ummarkka?",
+      "description": "Shiga shirinmu na jakadanci ka zama jagora a cikin tsarin Move",
+      "apply": "Nema Yanzu",
+      "contact": "Tuntube Mu"
+    }
   }
 }

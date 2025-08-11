@@ -1619,6 +1619,99 @@
       "description": "如果您對這些服務條款有任何問題，請聯繫我們的法律團隊。"
     }
   },
+  "ambassador": {
+    "hero": {
+      "badge": "大使計劃",
+      "title1": "成為",
+      "title2": "Dubhe 大使",
+      "subtitle": "加入我們充滿熱忱的全球倡議者社群，幫助塑造 Move 區塊鏈開發的未來。領導本地社群、創建內容，並在全球範圍內發展生態系統。",
+      "stats": {
+        "activeAmbassadors": "活躍大使",
+        "countries": "國家",
+        "communityReach": "社群覆蓋"
+      },
+      "cta1": "立即申請",
+      "cta2": "了解更多"
+    },
+    "benefitsSection": {
+      "badge": "計劃優勢",
+      "title": "為什麼加入我們的大使計劃？"
+    },
+    "benefits": {
+      "exclusiveAccess": {
+        "title": "獨家訪問",
+        "description": "在公開發布之前率先訪問新功能、產品和公告"
+      },
+      "directCommunication": {
+        "title": "直接溝通",
+        "description": "與 Dubhe 基金會定期溝通，並對產品路線圖決策產生影響"
+      },
+      "recognition": {
+        "title": "認可與獎勵",
+        "description": "在社群中獲得特殊認可、獨家商品，以及貢獻的代幣獎勵"
+      },
+      "globalNetwork": {
+        "title": "全球網路",
+        "description": "與志同道合的人建立聯繫，在全球 Dubhe 社群中建立關係"
+      }
+    },
+    "ambassadorsSection": {
+      "title": "認識我們的全球大使",
+      "description": "我們的大使正在各自的地區引領變革，建設社群並推動採用",
+      "location": "地點",
+      "expertise": "專業領域",
+      "projectsLed": "主導項目"
+    },
+    "requirementsSection": {
+      "title": "申請要求"
+    },
+    "requirements": [
+      "在 Dubhe 社群中活躍至少 3 個月",
+      "對 Move 區塊鏈技術有深度理解",
+      "具有社群建設或內容創作經驗",
+      "承諾積極推廣 Dubhe 生態系統",
+      "每週至少有 10 小時可投入",
+      "精通英語和至少一種其他語言"
+    ],
+    "responsibilitiesSection": {
+      "title": "職責範圍"
+    },
+    "responsibilities": {
+      "communityEngagement": {
+        "title": "社群參與",
+        "tasks": [
+          "管理社群討論並維持正面環境",
+          "回答技術問題並幫助新成員",
+          "組織本地聚會和線上活動",
+          "創建引人入勝的內容（教程、文章、影片）"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "生態系統成長",
+        "tasks": [
+          "識別並引入新開發者到 Dubhe",
+          "與其他大使合作推進全球倡議",
+          "對產品和文檔提供反饋",
+          "在區塊鏈會議和活動中代表 Dubhe"
+        ]
+      },
+      "contentCreation": {
+        "title": "內容創建",
+        "tasks": [
+          "撰寫技術教程和指南",
+          "創建解釋 Dubhe 功能的影片內容",
+          "將文檔翻譯為本地語言",
+          "在社交媒體上分享生態系統更新"
+        ]
+      }
+    },
+    "cta": {
+      "title": "準備好領導您的社群了嗎？",
+      "description": "加入我們的大使計劃，成為 Move 生態系統的領導者",
+      "apply": "立即申請",
+      "contact": "聯繫我們"
+    }
+  },
   "LocaleSwitcher": {
     "label": "語言"
   }

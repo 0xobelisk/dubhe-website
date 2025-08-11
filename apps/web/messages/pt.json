@@ -714,6 +714,99 @@
       "suggestion": "Isso geralmente é temporário. Por favor, tente novamente em alguns momentos."
     }
   },
+  "ambassador": {
+    "hero": {
+      "badge": "Programa de Embaixador",
+      "title1": "Torne-se um",
+      "title2": "Embaixador Dubhe",
+      "subtitle": "Junte-se à nossa comunidade global de defensores apaixonados e ajude a moldar o futuro do desenvolvimento blockchain Move. Lidere comunidades locais, crie conteúdo e faça crescer o ecossistema mundialmente.",
+      "stats": {
+        "activeAmbassadors": "Embaixadores Ativos",
+        "countries": "Países",
+        "communityReach": "Alcance da Comunidade"
+      },
+      "cta1": "Candidate-se Agora",
+      "cta2": "Saiba Mais"
+    },
+    "benefitsSection": {
+      "badge": "Benefícios do Programa",
+      "title": "Por que Participar do Nosso Programa de Embaixador?"
+    },
+    "benefits": {
+      "exclusiveAccess": {
+        "title": "Acesso Exclusivo",
+        "description": "Obtenha acesso antecipado a novos recursos, produtos e anúncios antes do lançamento público"
+      },
+      "directCommunication": {
+        "title": "Comunicação Direta",
+        "description": "Comunicação regular com a Dubhe Foundation e influência nas decisões do roadmap do produto"
+      },
+      "recognition": {
+        "title": "Reconhecimento e Recompensas",
+        "description": "Reconhecimento especial na comunidade, merchandise exclusivo e recompensas em tokens por contribuições"
+      },
+      "globalNetwork": {
+        "title": "Rede Global",
+        "description": "Conecte-se com indivíduos com ideias semelhantes e construa relacionamentos dentro da comunidade global Dubhe"
+      }
+    },
+    "ambassadorsSection": {
+      "title": "Conheça Nossos Embaixadores Globais",
+      "description": "Nossos embaixadores estão liderando a transformação em suas regiões, construindo comunidades e promovendo a adoção",
+      "location": "Localização",
+      "expertise": "Especialidade",
+      "projectsLed": "Projetos Liderados"
+    },
+    "requirementsSection": {
+      "title": "Requisitos"
+    },
+    "requirements": [
+      "Membro ativo na comunidade Dubhe há pelo menos 3 meses",
+      "Forte compreensão da tecnologia blockchain Move",
+      "Experiência em construção de comunidade ou criação de conteúdo",
+      "Compromisso em promover positivamente o ecossistema Dubhe",
+      "Disponível por pelo menos 10 horas por semana",
+      "Proficiente em inglês e pelo menos uma outra linguagem"
+    ],
+    "responsibilitiesSection": {
+      "title": "Responsabilidades"
+    },
+    "responsibilities": {
+      "communityEngagement": {
+        "title": "Engajamento da Comunidade",
+        "tasks": [
+          "Moderar discussões da comunidade e manter um ambiente positivo",
+          "Responder questões técnicas e ajudar novatos",
+          "Organizar meetups locais e eventos online",
+          "Criar conteúdo envolvente (tutoriais, artigos, vídeos)"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Crescimento do Ecossistema",
+        "tasks": [
+          "Identificar e integrar novos desenvolvedores ao Dubhe",
+          "Colaborar com outros embaixadores em iniciativas globais",
+          "Fornecer feedback sobre produtos e documentação",
+          "Representar Dubhe em conferências blockchain e eventos"
+        ]
+      },
+      "contentCreation": {
+        "title": "Criação de Conteúdo",
+        "tasks": [
+          "Escrever tutoriais técnicos e guias",
+          "Criar conteúdo em vídeo explicando recursos Dubhe",
+          "Traduzir documentação para idiomas locais",
+          "Compartilhar atualizações do ecossistema nas redes sociais"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para Liderar Sua Comunidade?",
+      "description": "Junte-se ao nosso programa de embaixador e torne-se um líder no ecossistema Move",
+      "apply": "Candidate-se Agora",
+      "contact": "Entre em Contato"
+    }
+  },
   "LocaleSwitcher": {
     "label": "Idiomas"
   }
