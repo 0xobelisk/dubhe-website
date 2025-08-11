@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { Button } from '@workspace/ui/components/button'
 import { useTranslations } from 'next-intl'
