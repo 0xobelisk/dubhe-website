@@ -47,20 +47,20 @@ export default function AmbassadorPage() {
     }
   ]
 
-  const requirements = t.raw('requirements') as string[]
+  const requirements = Array.isArray(t.raw('requirements')) ? t.raw('requirements') as string[] : []
 
   const responsibilities = [
     {
       category: t('responsibilities.communityEngagement.title'),
-      tasks: t.raw('responsibilities.communityEngagement.tasks') as string[]
+      tasks: Array.isArray(t.raw('responsibilities.communityEngagement.tasks')) ? t.raw('responsibilities.communityEngagement.tasks') as string[] : []
     },
     {
       category: t('responsibilities.ecosystemGrowth.title'),
-      tasks: t.raw('responsibilities.ecosystemGrowth.tasks') as string[]
+      tasks: Array.isArray(t.raw('responsibilities.ecosystemGrowth.tasks')) ? t.raw('responsibilities.ecosystemGrowth.tasks') as string[] : []
     },
     {
       category: t('responsibilities.contentCreation.title'),
-      tasks: t.raw('responsibilities.contentCreation.tasks') as string[]
+      tasks: Array.isArray(t.raw('responsibilities.contentCreation.tasks')) ? t.raw('responsibilities.contentCreation.tasks') as string[] : []
     }
   ]
 
@@ -164,7 +164,7 @@ export default function AmbassadorPage() {
                 className="inline-block bg-rose-500/10 text-rose-400 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-rose-500/20"
               >
                 <Users className="w-4 h-4 inline mr-2" />
-                Ambassador Program
+                {t('hero.badge')}
               </motion.div>
 
               {/* Main Headline */}
@@ -175,10 +175,10 @@ export default function AmbassadorPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Become a
+                  {t('hero.title1')}
                   <br />
                   <span className="bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent">
-                    Dubhe Ambassador
+                    {t('hero.title2')}
                   </span>
                 </motion.h1>
                 
@@ -188,8 +188,7 @@ export default function AmbassadorPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Join our global community of passionate advocates and help shape the future of Move blockchain development. 
-                  Lead local communities, create content, and grow the ecosystem worldwide.
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
 
@@ -202,15 +201,15 @@ export default function AmbassadorPage() {
               >
                 <div className="text-center">
                   <div className="text-3xl font-bold text-rose-400 mb-2">8+</div>
-                  <div className="text-gray-300">Active Ambassadors</div>
+                  <div className="text-gray-300">{t('hero.stats.activeAmbassadors')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-400 mb-2">8+</div>
-                  <div className="text-gray-300">Countries</div>
+                  <div className="text-gray-300">{t('hero.stats.countries')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-400 mb-2">100K+</div>
-                  <div className="text-gray-300">Community Reach</div>
+                  <div className="text-gray-300">{t('hero.stats.communityReach')}</div>
                 </div>
               </motion.div>
 
@@ -222,12 +221,12 @@ export default function AmbassadorPage() {
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDcEdrHgI-ATQWQ7_h1XdGXPaJYL5VWsnmUnMfHc3XRiaXvA/viewform" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-rose-500 to-purple-500 hover:from-rose-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center">
-                  Apply Now
+                  {t('hero.cta1')}
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
                 
                 <a href="#responsibilities" className="border-2 border-rose-400/50 hover:border-rose-300 bg-rose-900/20 backdrop-blur-sm text-rose-100 hover:text-white hover:bg-rose-800/30 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center">
-                  Learn More
+                  {t('hero.cta2')}
                 </a>
               </motion.div>
             </div>
@@ -246,7 +245,7 @@ export default function AmbassadorPage() {
               transition={{ duration: 0.6 }}
               className="inline-block bg-gradient-to-r from-rose-100 to-purple-100 text-rose-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-rose-200"
             >
-              Program Benefits
+              {t('benefitsSection.badge')}
             </motion.div>
             <motion.h2 
               className="text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight"
@@ -255,7 +254,7 @@ export default function AmbassadorPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Why Join Our Ambassador Program?
+              {t('benefitsSection.title')}
             </motion.h2>
           </div>
 
@@ -291,7 +290,7 @@ export default function AmbassadorPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Meet Our Global Ambassadors
+              {t('ambassadorsSection.title')}
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-300 max-w-3xl mx-auto"
@@ -300,7 +299,7 @@ export default function AmbassadorPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Our ambassadors are leading the charge in their regions, building communities and driving adoption
+              {t('ambassadorsSection.description')}
             </motion.p>
           </div>
 
@@ -342,15 +341,15 @@ export default function AmbassadorPage() {
 
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-400 text-sm">Location</span>
+                    <span className="text-gray-400 text-sm">{t('ambassadorsSection.location')}</span>
                     <span className="text-white text-sm">{ambassador.country}</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-400 text-sm">Expertise</span>
+                    <span className="text-gray-400 text-sm">{t('ambassadorsSection.expertise')}</span>
                     <span className="text-white text-sm">{ambassador.expertise}</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-400 text-sm">Projects Led</span>
+                    <span className="text-gray-400 text-sm">{t('ambassadorsSection.projectsLed')}</span>
                     <span className="text-rose-400 font-semibold text-sm">{ambassador.projects}</span>
                   </div>
                 </div>
@@ -371,7 +370,7 @@ export default function AmbassadorPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className="text-3xl font-bold text-white mb-8">Requirements</h3>
+              <h3 className="text-3xl font-bold text-white mb-8">{t('requirementsSection.title')}</h3>
               <div className="space-y-4">
                 {requirements.map((requirement, index) => (
                   <div key={index} className="flex items-start gap-3">
@@ -389,7 +388,7 @@ export default function AmbassadorPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="text-3xl font-bold text-white mb-8">Responsibilities</h3>
+              <h3 className="text-3xl font-bold text-white mb-8">{t('responsibilitiesSection.title')}</h3>
               <div className="space-y-6">
                 {responsibilities.map((category, index) => (
                   <div key={index}>
@@ -420,7 +419,7 @@ export default function AmbassadorPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Ready to Lead Your Community?
+            {t('cta.title')}
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
@@ -429,7 +428,7 @@ export default function AmbassadorPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Join our ambassador program and become a leader in the Move ecosystem
+            {t('cta.description')}
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -439,11 +438,11 @@ export default function AmbassadorPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDcEdrHgI-ATQWQ7_h1XdGXPaJYL5VWsnmUnMfHc3XRiaXvA/viewform" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-rose-500 to-purple-500 hover:from-rose-400 hover:to-purple-400 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center">
-              Apply Now
+              {t('cta.apply')}
               <Sparkles className="w-5 h-5 ml-2" />
             </a>
             <Link href="/contact" className="text-gray-300 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 flex items-center gap-2">
-              Contact Us
+              {t('cta.contact')}
               <ExternalLink className="w-5 h-5" />
             </Link>
           </motion.div>

@@ -731,6 +731,23 @@
     }
   },
   "ambassador": {
+    "hero": {
+      "badge": "Programme d'Ambassadeurs",
+      "title1": "Devenez un",
+      "title2": "Ambassadeur Dubhe",
+      "subtitle": "Rejoignez notre communauté mondiale de défenseurs passionnés et aidez à façonner l'avenir du développement blockchain Move. Dirigez les communautés locales, créez du contenu et développez l'écosystème à l'échelle mondiale.",
+      "stats": {
+        "activeAmbassadors": "Ambassadeurs Actifs",
+        "countries": "Pays",
+        "communityReach": "Portée Communautaire"
+      },
+      "cta1": "Postuler Maintenant",
+      "cta2": "En Savoir Plus"
+    },
+    "benefitsSection": {
+      "badge": "Avantages du Programme",
+      "title": "Pourquoi Rejoindre Notre Programme d'Ambassadeurs?"
+    },
     "benefits": {
       "exclusiveAccess": {
         "title": "Accès Exclusif",
@@ -749,6 +766,16 @@
         "description": "Connectez-vous avec des individus partageant les mêmes idées et construisez des relations au sein de la communauté mondiale Dubhe"
       }
     },
+    "ambassadorsSection": {
+      "title": "Rencontrez Nos Ambassadeurs Mondiaux",
+      "description": "Nos ambassadeurs mènent la charge dans leurs régions, construisant des communautés et stimulant l'adoption",
+      "location": "Localisation",
+      "expertise": "Expertise",
+      "projectsLed": "Projets Dirigés"
+    },
+    "requirementsSection": {
+      "title": "Exigences"
+    },
     "requirements": [
       "Membre actif dans la communauté Dubhe depuis au moins 3 mois",
       "Forte compréhension de la technologie blockchain Move",
@@ -757,6 +784,9 @@
       "Disponible au moins 10 heures par semaine",
       "Maîtrise de l'anglais et d'au moins une autre langue"
     ],
+    "responsibilitiesSection": {
+      "title": "Responsabilités"
+    },
     "responsibilities": {
       "communityEngagement": {
         "title": "Engagement Communautaire",
@@ -785,6 +815,12 @@
           "Partager les mises à jour de l'écosystème sur les réseaux sociaux"
         ]
       }
+    },
+    "cta": {
+      "title": "Prêt à Diriger Votre Communauté?",
+      "description": "Rejoignez notre programme d'ambassadeurs et devenez un leader dans l'écosystème Move",
+      "apply": "Postuler Maintenant",
+      "contact": "Nous Contacter"
     }
   },
   "LocaleSwitcher": {

@@ -1735,5 +1735,98 @@
       "title": "Pertanyaan Tentang Syarat?",
       "description": "Jika Anda memiliki pertanyaan tentang Syarat Layanan ini, silakan hubungi tim hukum kami."
     }
+  },
+  "ambassador": {
+    "hero": {
+      "badge": "Program Ambassador",
+      "title1": "Menjadi",
+      "title2": "Ambassador Dubhe",
+      "subtitle": "Bergabunglah dengan komunitas global pendukung yang penuh semangat dan bantu membentuk masa depan pengembangan blockchain Move. Pimpin komunitas lokal, buat konten, dan kembangkan ekosistem di seluruh dunia.",
+      "stats": {
+        "activeAmbassadors": "Ambassador Aktif",
+        "countries": "Negara",
+        "communityReach": "Jangkauan Komunitas"
+      },
+      "cta1": "Lamar Sekarang",
+      "cta2": "Pelajari Lebih Lanjut"
+    },
+    "benefitsSection": {
+      "badge": "Manfaat Program",
+      "title": "Mengapa Bergabung dengan Program Ambassador Kami?"
+    },
+    "benefits": {
+      "exclusiveAccess": {
+        "title": "Akses Eksklusif",
+        "description": "Dapatkan akses awal ke fitur baru, produk, dan pengumuman sebelum rilis publik"
+      },
+      "directCommunication": {
+        "title": "Komunikasi Langsung",
+        "description": "Komunikasi rutin dengan Dubhe Foundation dan pengaruh terhadap keputusan roadmap produk"
+      },
+      "recognition": {
+        "title": "Pengakuan & Hadiah",
+        "description": "Pengakuan khusus di komunitas, merchandise eksklusif, dan hadiah token untuk kontribusi"
+      },
+      "globalNetwork": {
+        "title": "Jaringan Global",
+        "description": "Terhubung dengan individu yang berpikiran sama dan membangun hubungan dalam komunitas Dubhe global"
+      }
+    },
+    "ambassadorsSection": {
+      "title": "Bertemu Ambassador Global Kami",
+      "description": "Ambassador kami memimpin perubahan di wilayah mereka, membangun komunitas dan mendorong adopsi",
+      "location": "Lokasi",
+      "expertise": "Keahlian",
+      "projectsLed": "Proyek yang Dipimpin"
+    },
+    "requirementsSection": {
+      "title": "Persyaratan"
+    },
+    "requirements": [
+      "Anggota aktif di komunitas Dubhe selama minimal 3 bulan",
+      "Pemahaman yang kuat tentang teknologi blockchain Move",
+      "Pengalaman dalam membangun komunitas atau membuat konten",
+      "Komitmen untuk mempromosikan ekosistem Dubhe secara positif",
+      "Tersedia minimal 10 jam per minggu",
+      "Mahir dalam bahasa Inggris dan setidaknya satu bahasa lainnya"
+    ],
+    "responsibilitiesSection": {
+      "title": "Tanggung Jawab"
+    },
+    "responsibilities": {
+      "communityEngagement": {
+        "title": "Keterlibatan Komunitas",
+        "tasks": [
+          "Moderasi diskusi komunitas dan menjaga lingkungan yang positif",
+          "Menjawab pertanyaan teknis dan membantu pendatang baru",
+          "Mengorganisir meetup lokal dan acara online",
+          "Membuat konten yang menarik (tutorial, artikel, video)"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Pertumbuhan Ekosistem",
+        "tasks": [
+          "Mengidentifikasi dan membawa developer baru ke Dubhe",
+          "Berkolaborasi dengan ambassador lain dalam inisiatif global",
+          "Memberikan feedback tentang produk dan dokumentasi",
+          "Mewakili Dubhe di konferensi blockchain dan acara"
+        ]
+      },
+      "contentCreation": {
+        "title": "Pembuatan Konten",
+        "tasks": [
+          "Menulis tutorial teknis dan panduan",
+          "Membuat konten video yang menjelaskan fitur Dubhe",
+          "Menerjemahkan dokumentasi ke bahasa lokal",
+          "Berbagi pembaruan ekosistem di media sosial"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Siap Memimpin Komunitas Anda?",
+      "description": "Bergabunglah dengan program ambassador kami dan menjadi pemimpin di ekosistem Move",
+      "apply": "Lamar Sekarang",
+      "contact": "Hubungi Kami"
+    }
   }
 }

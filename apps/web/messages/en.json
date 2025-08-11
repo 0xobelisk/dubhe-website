@@ -749,6 +749,23 @@
     }
   },
   "ambassador": {
+    "hero": {
+      "badge": "Ambassador Program",
+      "title1": "Become a",
+      "title2": "Dubhe Ambassador",
+      "subtitle": "Join our global community of passionate advocates and help shape the future of Move blockchain development. Lead local communities, create content, and grow the ecosystem worldwide.",
+      "stats": {
+        "activeAmbassadors": "Active Ambassadors",
+        "countries": "Countries",
+        "communityReach": "Community Reach"
+      },
+      "cta1": "Apply Now",
+      "cta2": "Learn More"
+    },
+    "benefitsSection": {
+      "badge": "Program Benefits",
+      "title": "Why Join Our Ambassador Program?"
+    },
     "benefits": {
       "exclusiveAccess": {
         "title": "Exclusive Access",
@@ -767,6 +784,16 @@
         "description": "Connect with like-minded individuals and build relationships within the global Dubhe community"
       }
     },
+    "ambassadorsSection": {
+      "title": "Meet Our Global Ambassadors",
+      "description": "Our ambassadors are leading the charge in their regions, building communities and driving adoption",
+      "location": "Location",
+      "expertise": "Expertise",
+      "projectsLed": "Projects Led"
+    },
+    "requirementsSection": {
+      "title": "Requirements"
+    },
     "requirements": [
       "Active member in Dubhe community for at least 3 months",
       "Strong understanding of Move blockchain technology", 
@@ -775,6 +802,9 @@
       "Available for at least 10 hours per week",
       "Proficient in English and at least one other language"
     ],
+    "responsibilitiesSection": {
+      "title": "Responsibilities"
+    },
     "responsibilities": {
       "communityEngagement": {
         "title": "Community Engagement",
@@ -803,6 +833,12 @@
           "Share ecosystem updates on social media"
         ]
       }
+    },
+    "cta": {
+      "title": "Ready to Lead Your Community?",
+      "description": "Join our ambassador program and become a leader in the Move ecosystem",
+      "apply": "Apply Now",
+      "contact": "Contact Us"
     }
   },
   "LocaleSwitcher": {

@@ -714,6 +714,99 @@
       "suggestion": "Điều này thường chỉ tạm thời. Vui lòng thử lại sau vài phút."
     }
   },
+  "ambassador": {
+    "hero": {
+      "badge": "Chương trình Đại sứ",
+      "title1": "Trở thành",
+      "title2": "Đại sứ Dubhe",
+      "subtitle": "Tham gia cộng đồng toàn cầu của những người ủng hộ đầy nhiệt huyết và giúp định hình tương lai của việc phát triển blockchain Move. Lãnh đạo các cộng đồng địa phương, tạo nội dung và phát triển hệ sinh thái trên toàn thế giới.",
+      "stats": {
+        "activeAmbassadors": "Đại sứ Hoạt động",
+        "countries": "Quốc gia",
+        "communityReach": "Phạm vi Cộng đồng"
+      },
+      "cta1": "Ứng tuyển Ngay",
+      "cta2": "Tìm hiểu Thêm"
+    },
+    "benefitsSection": {
+      "badge": "Lợi ích Chương trình",
+      "title": "Tại sao Tham gia Chương trình Đại sứ của Chúng tôi?"
+    },
+    "benefits": {
+      "exclusiveAccess": {
+        "title": "Quyền Truy cập Độc quyền",
+        "description": "Được truy cập sớm vào các tính năng, sản phẩm và thông báo mới trước khi phát hành công khai"
+      },
+      "directCommunication": {
+        "title": "Giao tiếp Trực tiếp",
+        "description": "Giao tiếp thường xuyên với Quỹ Dubhe và có ảnh hưởng đến các quyết định lộ trình sản phẩm"
+      },
+      "recognition": {
+        "title": "Công nhận & Phần thưởng",
+        "description": "Sự công nhận đặc biệt trong cộng đồng, hàng hóa độc quyền và phần thưởng token cho những đóng góp"
+      },
+      "globalNetwork": {
+        "title": "Mạng lưới Toàn cầu",
+        "description": "Kết nối với những cá nhân cùng chí hướng và xây dựng mối quan hệ trong cộng đồng Dubhe toàn cầu"
+      }
+    },
+    "ambassadorsSection": {
+      "title": "Gặp gỡ Đại sứ Toàn cầu của Chúng tôi",
+      "description": "Các đại sứ của chúng tôi đang dẫn đầu trong khu vực của họ, xây dựng cộng đồng và thúc đẩy việc áp dụng",
+      "location": "Địa điểm",
+      "expertise": "Chuyên môn",
+      "projectsLed": "Dự án Dẫn đầu"
+    },
+    "requirementsSection": {
+      "title": "Yêu cầu"
+    },
+    "requirements": [
+      "Thành viên tích cực trong cộng đồng Dubhe ít nhất 3 tháng",
+      "Hiểu biết sâu về công nghệ blockchain Move",
+      "Kinh nghiệm trong xây dựng cộng đồng hoặc tạo nội dung",
+      "Cam kết thúc đẩy hệ sinh thái Dubhe một cách tích cực",
+      "Có sẵn ít nhất 10 giờ mỗi tuần",
+      "Thành thạo tiếng Anh và ít nhất một ngôn ngữ khác"
+    ],
+    "responsibilitiesSection": {
+      "title": "Trách nhiệm"
+    },
+    "responsibilities": {
+      "communityEngagement": {
+        "title": "Tương tác Cộng đồng",
+        "tasks": [
+          "Điều hành các cuộc thảo luận cộng đồng và duy trì môi trường tích cực",
+          "Trả lời các câu hỏi kỹ thuật và giúp đỡ người mới",
+          "Tổ chức các cuộc gặp mặt địa phương và sự kiện trực tuyến",
+          "Tạo nội dung hấp dẫn (hướng dẫn, bài viết, video)"
+        ]
+      },
+      "ecosystemGrowth": {
+        "title": "Tăng trưởng Hệ sinh thái",
+        "tasks": [
+          "Xác định và thu hút các nhà phát triển mới vào Dubhe",
+          "Hợp tác với các đại sứ khác trong các sáng kiến toàn cầu",
+          "Cung cấp phản hồi về sản phẩm và tài liệu",
+          "Đại diện cho Dubhe tại các hội nghị blockchain và sự kiện"
+        ]
+      },
+      "contentCreation": {
+        "title": "Tạo Nội dung",
+        "tasks": [
+          "Viết các hướng dẫn kỹ thuật và hướng dẫn",
+          "Tạo nội dung video giải thích các tính năng của Dubhe",
+          "Dịch tài liệu sang ngôn ngữ địa phương",
+          "Chia sẻ cập nhật hệ sinh thái trên mạng xã hội"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Sẵn sàng Lãnh đạo Cộng đồng của Bạn?",
+      "description": "Tham gia chương trình đại sứ của chúng tôi và trở thành nhà lãnh đạo trong hệ sinh thái Move",
+      "apply": "Ứng tuyển Ngay",
+      "contact": "Liên hệ với Chúng tôi"
+    }
+  },
   "LocaleSwitcher": {
     "label": "Ngôn ngữ"
   }
