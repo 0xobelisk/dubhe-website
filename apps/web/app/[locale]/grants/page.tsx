@@ -17,7 +17,6 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import {useTranslations} from 'next-intl'
 
 type Params = {
@@ -537,8 +536,6 @@ export default function GrantsPage({params}: {params: Promise<Params>}) {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   )
 }
