@@ -1,18 +1,7 @@
-import Link from "next/link"
-import { Button } from "@workspace/ui/components/button"
-import Hero from "@/components/hero"
-import Features from "@/components/features"
-import Showcase from "@/components/showcase"
-import GetStarted from "@/components/get-started"
+import {redirect} from 'next/navigation';
+import {routing} from '../i18n/routing';
 
-
-export default function Page() {
-  return (
-    <main className="flex flex-col min-h-screen">
-      <Hero />
-      <Features />
-      <Showcase />
-      <GetStarted />
-    </main>
-  )
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect(`/${routing.defaultLocale}`);
 }

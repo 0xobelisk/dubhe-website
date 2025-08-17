@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.turbo/
+out/
+dist/
+build/
+.env*
+*.config.js
+*.config.mjs
+*.config.ts
+public/
