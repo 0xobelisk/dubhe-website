@@ -76,7 +76,7 @@ export default function AmbassadorPage() {
     {
       name: "SHAHID",
       region: "shahid114",
-      country: "🇧🇩 Bangladesh",
+      country: "South Asia",
       expertise: "Community Building",
       projects: 1,
       image: "/amb/SHAHID.png" // 没有对应图片，保持文字头像
