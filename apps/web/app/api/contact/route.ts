@@ -14,20 +14,23 @@ const contactSchema = z.object({
 
 export async function POST(req: NextRequest) {
   try {
+    const body = await req.json()
+    
     // Check if API key is available at runtime
     const isDevMode = process.env.NODE_ENV === 'development'
     const hasValidApiKey = process.env.RESEND_API_KEY && 
                            process.env.RESEND_API_KEY !== 'placeholder' &&
                            process.env.RESEND_API_KEY.startsWith('re_')
     
-    if (!hasValidApiKey && !isDevMode) {
-      console.error('RESEND_API_KEY not configured')
-      return NextResponse.json({ 
-        error: 'Email service not configured. Please contact support.' 
-      }, { status: 500 })
-    }
-
-    const body = await req.json()
+    // Log API key status for debugging in production
+    console.log('Production email config:', {
+      isDevMode,
+      hasValidApiKey,
+      hasResendApiKey: !!process.env.RESEND_API_KEY,
+      apiKeyPrefix: process.env.RESEND_API_KEY?.substring(0, 5) + '...',
+      fromEmail: process.env.RESEND_FROM_EMAIL,
+      toEmail: process.env.RESEND_TO_EMAIL
+    })
     
     // Enhanced security validation
     const clientIP = req.headers.get('x-forwarded-for')?.split(',')[0] || 
