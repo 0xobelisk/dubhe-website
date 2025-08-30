@@ -6,6 +6,7 @@
     "media": "Media",
     "community": "Komunitas",
     "documentation": "Dokumentasi",
+    "papers": "Dokumen",
     "engine": "Mesin",
     "channel": "Saluran",
     "os": "OS",
@@ -589,6 +590,7 @@
     },
     "links": {
       "documentation": "Dokumentasi",
+      "papers": "Papers",
       "engine": "Mesin",
       "channel": "Saluran",
       "os": "OS",
@@ -786,6 +788,24 @@
         ]
       }
     }
+  },
+  "papers": {
+    "hero": {
+      "badge": "Dokumentasi Teknis",
+      "title": "Dokumen Teknis",
+      "subtitle": "Jelajahi arsitektur teknis Dubhe dan detail implementasi melalui dokumentasi komprehensif kami."
+    },
+    "whitepaper": {
+      "title": "Whitepaper",
+      "description": "Ikhtisar teknis komprehensif arsitektur Dubhe, mekanisme konsensus, dan desain ekosistem.",
+      "downloadLabel": "Unduh Whitepaper"
+    },
+    "lightpaper": {
+      "title": "Lightpaper",
+      "description": "Ikhtisar ringkas fitur utama, kasus penggunaan, dan inovasi teknis Dubhe.",
+      "downloadLabel": "Unduh Lightpaper"
+    },
+    "openInNewTab": "Buka di tab baru"
   },
   "LocaleSwitcher": {
     "label": "Bahasa"

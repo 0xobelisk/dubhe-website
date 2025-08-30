@@ -1,11 +1,12 @@
 {
   "navigation": {
     "learn": "Öğren",
-    "build": "Geliştir", 
+    "build": "Geliştir",
     "ecosystem": "Ekosistem",
     "media": "Medya",
     "community": "Topluluk",
     "documentation": "Dokümantasyon",
+    "papers": "Papers",
     "engine": "Motor",
     "channel": "Kanal",
     "os": "İS",
@@ -161,7 +162,13 @@
         "schemaDefinition": {
           "title": "Şema Tanımlama",
           "description": "Dubhe'nin sezgisel şema sistemi kullanarak oyun veya dApp mantığınızı tanımlayın. Basit yapılandırma dosyalarında varlıkları, bileşenleri ve sistemleri tanımlayın.",
-          "items": ["Varlık", "Bileşen", "Sistem", "Hata", "Olay"]
+          "items": [
+            "Varlık",
+            "Bileşen",
+            "Sistem",
+            "Hata",
+            "Olay"
+          ]
         },
         "codeGeneration": {
           "title": "Kod Üretimi",
@@ -243,25 +250,45 @@
           "title": "Move Uygulamaları",
           "subtitle": "dApp'leriniz ve Oyunlarınız",
           "description": "Move'un güvenliği ve esnekliği ile karmaşık merkezi olmayan uygulamalar oluşturun",
-          "features": ["DeFi Protokolleri", "Oyun Uygulamaları", "NFT Platformları", "Sosyal dApp'ler"]
+          "features": [
+            "DeFi Protokolleri",
+            "Oyun Uygulamaları",
+            "NFT Platformları",
+            "Sosyal dApp'ler"
+          ]
         },
         "dubheEngine": {
           "title": "Dubhe Motoru",
           "subtitle": "Geliştirme Araç Seti",
           "description": "Kodun %80'ini otomatik olarak oluşturur ve eksiksiz geliştirici araç zinciri sağlar",
-          "features": ["Kod Üretimi", "Şema Tabanlı Geliştirme", "Çok Zincir Dağıtımı", "Geliştirme Ortamı"]
+          "features": [
+            "Kod Üretimi",
+            "Şema Tabanlı Geliştirme",
+            "Çok Zincir Dağıtımı",
+            "Geliştirme Ortamı"
+          ]
         },
         "dubheChannel": {
           "title": "Dubhe Kanalı",
           "subtitle": "Gerçek Zamanlı Katman",
           "description": "Web2 düzeyinde gerçek zamanlı kullanıcı deneyimi için P2P etkileşim katmanı",
-          "features": ["<50ms Gecikme", "Gerçek Zamanlı Senkronizasyon", "P2P İletişim", "Mobil Destek"]
+          "features": [
+            "<50ms Gecikme",
+            "Gerçek Zamanlı Senkronizasyon",
+            "P2P İletişim",
+            "Mobil Destek"
+          ]
         },
         "dubheOS": {
           "title": "Dubhe OS",
           "subtitle": "Çapraz Zincir Altyapısı",
           "description": "Yerel çok zincirli birlikte çalışabilirlik ile merkezi olmayan işletim sistemi",
-          "features": ["Çapraz Zincir Köprüleri", "Birleşik Durum", "Geliştirici Teşvikleri", "Yönetişim"]
+          "features": [
+            "Çapraz Zincir Köprüleri",
+            "Birleşik Durum",
+            "Geliştirici Teşvikleri",
+            "Yönetişim"
+          ]
         }
       },
       "completeStackSolution": {
@@ -397,6 +424,7 @@
     },
     "links": {
       "documentation": "Dokümantasyon",
+      "papers": "Papers",
       "engine": "Motor",
       "channel": "Kanal",
       "os": "İS",
@@ -632,17 +660,29 @@
         "gaming": {
           "title": "Gerçek Zamanlı Oyun",
           "description": "Anlık yanıt süreleri olan çok oyunculu oyunlar",
-          "metrics": ["<50ms gecikme", "1M+ eş zamanlı oyuncu", "%99.9 çalışma süresi"]
+          "metrics": [
+            "<50ms gecikme",
+            "1M+ eş zamanlı oyuncu",
+            "%99.9 çalışma süresi"
+          ]
         },
         "social": {
           "title": "Sosyal Platformlar",
           "description": "Gerçek zamanlı mesajlaşmalı merkezi olmayan sosyal ağlar",
-          "metrics": ["Anlık mesajlaşma", "Canlı video aramaları", "Grup sohbetleri"]
+          "metrics": [
+            "Anlık mesajlaşma",
+            "Canlı video aramaları",
+            "Grup sohbetleri"
+          ]
         },
         "trading": {
           "title": "Ticaret Uygulamaları",
           "description": "Gerçek zamanlı fiyat akışları ile yüksek frekanslı ticaret",
-          "metrics": ["Gerçek zamanlı veri", "Emir defteri güncellemeleri", "Fiyat keşfi"]
+          "metrics": [
+            "Gerçek zamanlı veri",
+            "Emir defteri güncellemeleri",
+            "Fiyat keşfi"
+          ]
         }
       }
     },
@@ -768,22 +808,38 @@
         "sui": {
           "name": "Sui Ağı",
           "status": "Canlı",
-          "features": ["Yüksek verimlilik", "Nesne merkezli model", "Move dili"]
+          "features": [
+            "Yüksek verimlilik",
+            "Nesne merkezli model",
+            "Move dili"
+          ]
         },
         "aptos": {
           "name": "Aptos",
           "status": "Canlı",
-          "features": ["Paralel yürütme", "Move VM", "Güvenli akıllı sözleşmeler"]
+          "features": [
+            "Paralel yürütme",
+            "Move VM",
+            "Güvenli akıllı sözleşmeler"
+          ]
         },
         "movement": {
           "name": "Movement",
           "status": "Entegrasyon",
-          "features": ["EVM uyumluluğu", "Move çalışma zamanı", "Modüler mimari"]
+          "features": [
+            "EVM uyumluluğu",
+            "Move çalışma zamanı",
+            "Modüler mimari"
+          ]
         },
         "future": {
           "name": "Gelecek Zincirler",
           "status": "Planlanmış",
-          "features": ["Topluluk odaklı", "Move tabanlı", "Ekosistem genişlemesi"]
+          "features": [
+            "Topluluk odaklı",
+            "Move tabanlı",
+            "Ekosistem genişlemesi"
+          ]
         }
       }
     },
@@ -850,7 +906,7 @@
           "label": "Toplam Fon"
         },
         "startups": {
-          "value": "Yakında", 
+          "value": "Yakında",
           "label": "İnkübe Edilen Girişimler"
         },
         "unicorns": {
@@ -873,21 +929,36 @@
         "duration": "3 ay",
         "funding": "$500K'ya kadar",
         "description": "Dubhe Vakfı destekli yoğun program, Obelisk Labs ve ekosistem VC'leri ile birlikte inkübe edilir",
-        "benefits": ["Dubhe Vakfı fonlaması", "Obelisk Labs ortak inkübasyonu", "Move geliştirme desteği", "Ekosistem VC ortaklıkları"]
+        "benefits": [
+          "Dubhe Vakfı fonlaması",
+          "Obelisk Labs ortak inkübasyonu",
+          "Move geliştirme desteği",
+          "Ekosistem VC ortaklıkları"
+        ]
       },
       "studio": {
         "title": "İşbirlikçi Stüdyo",
         "duration": "6-12 ay",
-        "funding": "$1M'a kadar", 
+        "funding": "$1M'a kadar",
         "description": "Dubhe Vakfı, Obelisk Labs ve ekosistem VC'leri tarafından paylaşılan kaynaklarla ortak inkübe edilir",
-        "benefits": ["Çok ortaklı ortak inkübasyon", "Paylaşılan teknik kaynaklar", "Projeler arası işbirliği", "Ekosistem VC ağları"]
+        "benefits": [
+          "Çok ortaklı ortak inkübasyon",
+          "Paylaşılan teknik kaynaklar",
+          "Projeler arası işbirliği",
+          "Ekosistem VC ağları"
+        ]
       },
       "scale": {
         "title": "Ekosistem Ölçekleme",
         "duration": "6 ay",
         "funding": "$2M'a kadar",
         "description": "Dubhe Vakfı, Obelisk Labs ve ekosistem VC ortaklarından kapsamlı destekle ölçeklenin",
-        "benefits": ["Ortak inkübasyon ağı", "Stratejik tanıtımlar", "Küresel pazar erişimi", "Kurumsal VC bağlantıları"]
+        "benefits": [
+          "Ortak inkübasyon ağı",
+          "Stratejik tanıtımlar",
+          "Küresel pazar erişimi",
+          "Kurumsal VC bağlantıları"
+        ]
       }
     },
     "resources": {
@@ -1447,22 +1518,31 @@
         "protocol": {
           "title": "Protokol Geliştirme",
           "description": "Çekirdek blockchain protokolleri, konsensüs mekanizmaları ve Move dili geliştirmeleri",
-          "teams": ["Obelisk Labs"]
+          "teams": [
+            "Obelisk Labs"
+          ]
         },
         "infrastructure": {
           "title": "Altyapı ve Ölçeklendirme",
           "description": "Yüksek performanslı ağ, gerçek zamanlı iletişim ve ölçeklenebilirlik çözümleri",
-          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+          "teams": [
+            "Dubhe Network Labs",
+            "Cyferio Labs"
+          ]
         },
         "crossChain": {
           "title": "Çapraz Zincir Teknolojisi",
           "description": "Birlikte çalışabilirlik protokolleri, evrensel köprüleme ve çoklu zincir yönetişimi",
-          "teams": ["Dubhe Bridge Labs"]
+          "teams": [
+            "Dubhe Bridge Labs"
+          ]
         },
         "privacy": {
           "title": "Gizlilik ve Güvenlik",
           "description": "Sıfır bilgi kanıtları, gizlilik koruyucu protokoller ve kriptografik araştırma",
-          "teams": ["Cyferio Labs"]
+          "teams": [
+            "Cyferio Labs"
+          ]
         }
       },
       "contributingLabs": "Katkıda Bulunan Laboratuvarlar:"

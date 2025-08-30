@@ -35,6 +35,9 @@ export default function Footer() {
                 {t('links.documentation')}
                 <ExternalLink className="w-3 h-3" />
               </a>
+              <Link href="/papers" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">
+                {t('links.papers')}
+              </Link>
             </div>
           </div>
 

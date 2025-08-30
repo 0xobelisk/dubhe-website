@@ -8,7 +8,10 @@ const mockMessages = {
     learn: 'Learn',
     build: 'Build',
     ecosystem: 'Ecosystem',
+    media: 'Media',
     community: 'Community',
+    documentation: 'Documentation',
+    papers: 'Papers',
     openMenu: 'Open Menu',
     closeMenu: 'Close Menu'
   },
@@ -45,6 +48,24 @@ const mockMessages = {
       title: 'Network Architecture',
       description: 'Architecture Description'
     }
+  },
+  papers: {
+    hero: {
+      badge: 'Technical Documentation',
+      title: 'Technical Papers',
+      subtitle: 'Explore Dubhe\'s technical architecture and implementation details through our comprehensive documentation.'
+    },
+    whitepaper: {
+      title: 'Whitepaper',
+      description: 'Comprehensive technical overview of Dubhe\'s architecture, consensus mechanisms, and ecosystem design.',
+      downloadLabel: 'Download Whitepaper'
+    },
+    lightpaper: {
+      title: 'Lightpaper',
+      description: 'Concise overview of Dubhe\'s key features, use cases, and technical innovations.',
+      downloadLabel: 'Download Lightpaper'
+    },
+    openInNewTab: 'Opens in new tab'
   },
   common: {
     learnMore: 'Learn More',

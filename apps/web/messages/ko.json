@@ -6,6 +6,7 @@
     "media": "미디어",
     "community": "커뮤니티",
     "documentation": "문서",
+    "papers": "기술문서",
     "engine": "엔진",
     "channel": "채널",
     "os": "OS",
@@ -397,6 +398,7 @@
     },
     "links": {
       "documentation": "문서",
+      "papers": "Papers",
       "engine": "엔진",
       "channel": "채널",
       "os": "OS",
@@ -1724,6 +1726,24 @@
       "title": "약관에 대한 질문이 있으신가요?",
       "description": "본 서비스 약관에 대한 질문이 있으시면 법무팀에 문의하시기 바랍니다."
     }
+  },
+  "papers": {
+    "hero": {
+      "badge": "기술 문서",
+      "title": "기술 문서",
+      "subtitle": "포괄적인 문서를 통해 Dubhe의 기술 아키텍처와 구현 세부 사항을 탐색하세요."
+    },
+    "whitepaper": {
+      "title": "백서",
+      "description": "Dubhe의 아키텍처, 합의 메커니즘 및 생태계 설계에 대한 포괄적인 기술 개요.",
+      "downloadLabel": "백서 다운로드"
+    },
+    "lightpaper": {
+      "title": "라이트페이퍼",
+      "description": "Dubhe의 주요 기능, 사용 사례 및 기술 혁신에 대한 간결한 개요.",
+      "downloadLabel": "라이트페이퍼 다운로드"
+    },
+    "openInNewTab": "새 탭에서 열기"
   },
   "LocaleSwitcher": {
     "label": "언어"

@@ -6,6 +6,7 @@
     "media": "Media",
     "community": "Community",
     "documentation": "Documentation",
+    "papers": "Papers",
     "engine": "Engine",
     "channel": "Channel",
     "os": "OS",
@@ -397,6 +398,7 @@
     },
     "links": {
       "documentation": "Documentation",
+      "papers": "Papers",
       "engine": "Engine",
       "channel": "Channel",
       "os": "OS",
@@ -1789,6 +1791,24 @@
       "title": "Questions About Terms?",
       "description": "If you have any questions about these Terms of Service, please contact our legal team."
     }
+  },
+  "papers": {
+    "hero": {
+      "badge": "Technical Documentation",
+      "title": "Technical Papers",
+      "subtitle": "Explore Dubhe's technical architecture and implementation details through our comprehensive documentation."
+    },
+    "whitepaper": {
+      "title": "Whitepaper",
+      "description": "Comprehensive technical overview of Dubhe's architecture, consensus mechanisms, and ecosystem design.",
+      "downloadLabel": "Download Whitepaper"
+    },
+    "lightpaper": {
+      "title": "Lightpaper", 
+      "description": "Concise overview of Dubhe's key features, use cases, and technical innovations.",
+      "downloadLabel": "Download Lightpaper"
+    },
+    "openInNewTab": "Opens in new tab"
   },
   "LocaleSwitcher": {
     "label": "Language"

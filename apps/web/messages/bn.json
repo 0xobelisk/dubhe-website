@@ -6,6 +6,7 @@
     "media": "মিডিয়া",
     "community": "কমিউনিটি",
     "documentation": "ডকুমেন্টেশন",
+    "papers": "Papers",
     "engine": "ইঞ্জিন",
     "channel": "চ্যানেল",
     "os": "OS",
@@ -397,6 +398,7 @@
     },
     "links": {
       "documentation": "ডকুমেন্টেশন",
+      "papers": "Papers",
       "engine": "ইঞ্জিন",
       "channel": "চ্যানেল",
       "os": "OS",

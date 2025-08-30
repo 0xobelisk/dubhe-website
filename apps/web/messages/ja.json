@@ -6,6 +6,7 @@
     "media": "メディア",
     "community": "コミュニティ",
     "documentation": "ドキュメント",
+    "papers": "技術資料",
     "engine": "エンジン",
     "channel": "チャンネル",
     "os": "OS",
@@ -397,6 +398,7 @@
     },
     "links": {
       "documentation": "ドキュメント",
+      "papers": "Papers",
       "engine": "エンジン",
       "channel": "チャンネル",
       "os": "OS",
@@ -1825,6 +1827,24 @@
       "title": "規約について質問がありますか？",
       "description": "この利用規約についてご質問がございましたら、法務チームまでお問い合わせください。"
     }
+  },
+  "papers": {
+    "hero": {
+      "badge": "技術文書",
+      "title": "技術論文",
+      "subtitle": "包括的なドキュメントを通じて、Dubheの技術アーキテクチャと実装の詳細をご覧ください。"
+    },
+    "whitepaper": {
+      "title": "ホワイトペーパー",
+      "description": "Dubheのアーキテクチャ、コンセンサスメカニズム、エコシステム設計の包括的な技術概要。",
+      "downloadLabel": "ホワイトペーパーをダウンロード"
+    },
+    "lightpaper": {
+      "title": "ライトペーパー", 
+      "description": "Dubheの主要機能、使用例、技術革新の簡潔な概要。",
+      "downloadLabel": "ライトペーパーをダウンロード"
+    },
+    "openInNewTab": "新しいタブで開く"
   },
   "LocaleSwitcher": {
     "label": "言語"
