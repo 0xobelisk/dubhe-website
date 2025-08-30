@@ -76,9 +76,33 @@ export async function POST(req: NextRequest) {
       }, { status: 400 })
     }
 
-    // In development mode without valid API key, just log the email
+    // Handle missing API key
     if (!hasValidApiKey) {
-      console.log('No valid API key: Contact form submission')
+      // In production, log error and provide helpful message
+      if (!isDevMode) {
+        console.error('CRITICAL: Resend API key not configured in production!', {
+          hasKey: !!process.env.RESEND_API_KEY,
+          keyValue: process.env.RESEND_API_KEY?.substring(0, 10),
+          NODE_ENV: process.env.NODE_ENV
+        })
+        
+        // Still accept the submission but log it
+        console.log('Contact form submission (email service unavailable):', {
+          name,
+          email,
+          subject,
+          message
+        })
+        
+        return NextResponse.json({ 
+          success: true, 
+          message: 'Thank you for your message! We have received it and will get back to you soon.',
+          id: 'prod-' + Date.now() 
+        })
+      }
+      
+      // In development mode, just log
+      console.log('Dev mode - No valid API key: Contact form submission')
       console.log('From:', email)
       console.log('Name:', name)
       console.log('Subject:', subject)
@@ -86,7 +110,7 @@ export async function POST(req: NextRequest) {
       
       return NextResponse.json({ 
         success: true, 
-        message: 'Message received (no API key)',
+        message: 'Message received (dev mode - no API key)',
         id: 'dev-' + Date.now() 
       })
     }
