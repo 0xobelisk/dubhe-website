@@ -3,7 +3,9 @@ import { Resend } from 'resend'
 import { z } from 'zod'
 import { validateAndSanitizeContactForm, checkForMaliciousPatterns } from '@/lib/security'
 
-const resend = new Resend(process.env.RESEND_API_KEY || 'placeholder')
+// Initialize Resend with the API key
+const apiKey = process.env.RESEND_API_KEY
+const resend = new Resend(apiKey || 'placeholder')
 
 const contactSchema = z.object({
   name: z.string().min(1, 'Name is required').max(100, 'Name too long'),
@@ -90,9 +92,19 @@ export async function POST(req: NextRequest) {
     }
     
     // 发送邮件给团队
+    const fromEmail = process.env.RESEND_FROM_EMAIL || 'contact@noreply.obelisk.build'
+    const toEmail = process.env.RESEND_TO_EMAIL || 'hello@dubhe.network'
+    
+    console.log('Sending email with config:', {
+      from: fromEmail,
+      to: toEmail,
+      replyTo: email,
+      subject: `Contact Form: ${subject}`
+    })
+    
     const { data, error } = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'contact@noreply.obelisk.build',
-      to: [process.env.RESEND_TO_EMAIL || 'hello@dubhe.network'],
+      from: fromEmail,
+      to: [toEmail],
       replyTo: email,
       subject: `Contact Form: ${subject}`,
       html: `
@@ -254,7 +266,7 @@ export async function POST(req: NextRequest) {
 
     // 发送确认邮件给用户
     await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'contact@noreply.obelisk.build',
+      from: fromEmail,
       to: email,
       subject: 'Thank you for contacting Dubhe',
       html: `
