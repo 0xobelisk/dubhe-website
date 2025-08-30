@@ -6,6 +6,7 @@
     "media": "Truyền thông",
     "community": "Cộng đồng",
     "documentation": "Tài liệu",
+    "papers": "Papers",
     "engine": "Động cơ",
     "channel": "Kênh",
     "os": "HĐH",
@@ -161,7 +162,13 @@
         "schemaDefinition": {
           "title": "Định nghĩa Schema",
           "description": "Định nghĩa logic game hoặc dApp của bạn bằng hệ thống schema trực quan của Dubhe. Mô tả entities, components và systems trong các tập tin cấu hình đơn giản.",
-          "items": ["Entity", "Component", "System", "Error", "Event"]
+          "items": [
+            "Entity",
+            "Component",
+            "System",
+            "Error",
+            "Event"
+          ]
         },
         "codeGeneration": {
           "title": "Tạo mã",
@@ -243,25 +250,45 @@
           "title": "Ứng dụng Move",
           "subtitle": "dApps & Trò chơi của Bạn",
           "description": "Xây dựng các ứng dụng phi tập trung phức tạp với tính an toàn và linh hoạt của Move",
-          "features": ["Giao thức DeFi", "Ứng dụng Trò chơi", "Nền tảng NFT", "dApps Xã hội"]
+          "features": [
+            "Giao thức DeFi",
+            "Ứng dụng Trò chơi",
+            "Nền tảng NFT",
+            "dApps Xã hội"
+          ]
         },
         "dubheEngine": {
           "title": "Công cụ Dubhe",
           "subtitle": "Bộ công cụ Phát triển",
           "description": "Tự động tạo 80% mã và cung cấp chuỗi công cụ nhà phát triển hoàn chỉnh",
-          "features": ["Tạo mã", "Phát triển dựa trên Lược đồ", "Triển khai Đa chuỗi", "Môi trường Phát triển"]
+          "features": [
+            "Tạo mã",
+            "Phát triển dựa trên Lược đồ",
+            "Triển khai Đa chuỗi",
+            "Môi trường Phát triển"
+          ]
         },
         "dubheChannel": {
           "title": "Kênh Dubhe",
           "subtitle": "Lớp Thời gian thực",
           "description": "Lớp tương tác P2P cho trải nghiệm người dùng thời gian thực cấp Web2",
-          "features": ["Độ trễ <50ms", "Đồng bộ Thời gian thực", "Giao tiếp P2P", "Hỗ trợ Di động"]
+          "features": [
+            "Độ trễ <50ms",
+            "Đồng bộ Thời gian thực",
+            "Giao tiếp P2P",
+            "Hỗ trợ Di động"
+          ]
         },
         "dubheOS": {
           "title": "Dubhe OS",
           "subtitle": "Cơ sở hạ tầng Liên chuỗi",
           "description": "Hệ điều hành phi tập trung với khả năng tương tác đa chuỗi bản địa",
-          "features": ["Cầu nối Liên chuỗi", "Trạng thái Thống nhất", "Khuyến khích Nhà phát triển", "Quản trị"]
+          "features": [
+            "Cầu nối Liên chuỗi",
+            "Trạng thái Thống nhất",
+            "Khuyến khích Nhà phát triển",
+            "Quản trị"
+          ]
         }
       },
       "completeStackSolution": {
@@ -397,6 +424,7 @@
     },
     "links": {
       "documentation": "Tài liệu",
+      "papers": "Papers",
       "engine": "Động cơ",
       "channel": "Kênh",
       "os": "HĐH",
@@ -632,17 +660,29 @@
         "gaming": {
           "title": "Game Thời gian Thực",
           "description": "Game nhiều người chơi với thời gian phản hồi tức thì",
-          "metrics": ["Độ trễ <50ms", "1M+ người chơi đồng thời", "99.9% thời gian hoạt động"]
+          "metrics": [
+            "Độ trễ <50ms",
+            "1M+ người chơi đồng thời",
+            "99.9% thời gian hoạt động"
+          ]
         },
         "social": {
           "title": "Nền tảng Xã hội",
           "description": "Mạng xã hội phi tập trung với tin nhắn thời gian thực",
-          "metrics": ["Tin nhắn tức thì", "Cuộc gọi video trực tiếp", "Chat nhóm"]
+          "metrics": [
+            "Tin nhắn tức thì",
+            "Cuộc gọi video trực tiếp",
+            "Chat nhóm"
+          ]
         },
         "trading": {
           "title": "Ứng dụng Giao dịch",
           "description": "Giao dịch tần số cao với nguồn cấp giá thời gian thực",
-          "metrics": ["Dữ liệu thời gian thực", "Cập nhật sổ lệnh", "Khám phá giá"]
+          "metrics": [
+            "Dữ liệu thời gian thực",
+            "Cập nhật sổ lệnh",
+            "Khám phá giá"
+          ]
         }
       }
     },
@@ -768,22 +808,38 @@
         "sui": {
           "name": "Mạng Sui",
           "status": "Hoạt động",
-          "features": ["Thông lượng cao", "Mô hình hướng đối tượng", "Ngôn ngữ Move"]
+          "features": [
+            "Thông lượng cao",
+            "Mô hình hướng đối tượng",
+            "Ngôn ngữ Move"
+          ]
         },
         "aptos": {
           "name": "Aptos",
           "status": "Hoạt động",
-          "features": ["Thực thi song song", "Máy ảo Move", "Hợp đồng thông minh an toàn"]
+          "features": [
+            "Thực thi song song",
+            "Máy ảo Move",
+            "Hợp đồng thông minh an toàn"
+          ]
         },
         "movement": {
           "name": "Movement",
           "status": "Tích hợp",
-          "features": ["Tương thích EVM", "Thời gian chạy Move", "Kiến trúc mô-đun"]
+          "features": [
+            "Tương thích EVM",
+            "Thời gian chạy Move",
+            "Kiến trúc mô-đun"
+          ]
         },
         "future": {
           "name": "Chuỗi Tương lai",
           "status": "Dự kiến",
-          "features": ["Do cộng đồng thúc đẩy", "Dựa trên Move", "Mở rộng hệ sinh thái"]
+          "features": [
+            "Do cộng đồng thúc đẩy",
+            "Dựa trên Move",
+            "Mở rộng hệ sinh thái"
+          ]
         }
       }
     },
@@ -850,7 +906,7 @@
           "label": "Tổng Vốn"
         },
         "startups": {
-          "value": "Sắp ra mắt", 
+          "value": "Sắp ra mắt",
           "label": "Startup Được Ủ ấp"
         },
         "unicorns": {
@@ -873,21 +929,36 @@
         "duration": "3 tháng",
         "funding": "Lên đến $500K",
         "description": "Chương trình chuyên sâu được hỗ trợ bởi Quỹ Dubhe đồng ủ ấp với Obelisk Labs và các VC hệ sinh thái",
-        "benefits": ["Tài trợ Quỹ Dubhe", "Đồng ủ ấp Obelisk Labs", "Hỗ trợ phát triển Move", "Đối tác VC hệ sinh thái"]
+        "benefits": [
+          "Tài trợ Quỹ Dubhe",
+          "Đồng ủ ấp Obelisk Labs",
+          "Hỗ trợ phát triển Move",
+          "Đối tác VC hệ sinh thái"
+        ]
       },
       "studio": {
         "title": "Studio Hợp tác",
         "duration": "6-12 tháng",
-        "funding": "Lên đến $1M", 
+        "funding": "Lên đến $1M",
         "description": "Đồng ủ ấp bởi Quỹ Dubhe, Obelisk Labs và các VC hệ sinh thái với tài nguyên chia sẻ",
-        "benefits": ["Đồng ủ ấp đa đối tác", "Tài nguyên kỹ thuật chia sẻ", "Hợp tác liên dự án", "Mạng lưới VC hệ sinh thái"]
+        "benefits": [
+          "Đồng ủ ấp đa đối tác",
+          "Tài nguyên kỹ thuật chia sẻ",
+          "Hợp tác liên dự án",
+          "Mạng lưới VC hệ sinh thái"
+        ]
       },
       "scale": {
         "title": "Mở rộng Hệ sinh thái",
         "duration": "6 tháng",
         "funding": "Lên đến $2M",
         "description": "Mở rộng với hỗ trợ toàn diện từ Quỹ Dubhe, Obelisk Labs và các đối tác VC hệ sinh thái",
-        "benefits": ["Mạng lưới đồng ủ ấp", "Giới thiệu chiến lược", "Tiếp cận thị trường toàn cầu", "Kết nối VC doanh nghiệp"]
+        "benefits": [
+          "Mạng lưới đồng ủ ấp",
+          "Giới thiệu chiến lược",
+          "Tiếp cận thị trường toàn cầu",
+          "Kết nối VC doanh nghiệp"
+        ]
       }
     },
     "resources": {
@@ -1447,22 +1518,31 @@
         "protocol": {
           "title": "Phát triển Giao thức",
           "description": "Giao thức blockchain cốt lõi, cơ chế đồng thuận và cải tiến ngôn ngữ Move",
-          "teams": ["Obelisk Labs"]
+          "teams": [
+            "Obelisk Labs"
+          ]
         },
         "infrastructure": {
           "title": "Cơ sở hạ tầng và Mở rộng",
           "description": "Mạng hiệu suất cao, giao tiếp thời gian thực và giải pháp khả năng mở rộng",
-          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+          "teams": [
+            "Dubhe Network Labs",
+            "Cyferio Labs"
+          ]
         },
         "crossChain": {
           "title": "Công nghệ Đa chuỗi",
           "description": "Giao thức khả năng tương tác, cầu nối phổ quát và quản trị đa chuỗi",
-          "teams": ["Dubhe Bridge Labs"]
+          "teams": [
+            "Dubhe Bridge Labs"
+          ]
         },
         "privacy": {
           "title": "Quyền riêng tư và Bảo mật",
           "description": "Bằng chứng không kiến thức, giao thức bảo vệ quyền riêng tư và nghiên cứu mật mã",
-          "teams": ["Cyferio Labs"]
+          "teams": [
+            "Cyferio Labs"
+          ]
         }
       },
       "contributingLabs": "Phòng thí nghiệm Đóng góp:"

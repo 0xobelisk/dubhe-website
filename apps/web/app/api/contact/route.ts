@@ -15,7 +15,12 @@ const contactSchema = z.object({
 export async function POST(req: NextRequest) {
   try {
     // Check if API key is available at runtime
-    if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY === 'placeholder') {
+    const isDevMode = process.env.NODE_ENV === 'development'
+    const hasValidApiKey = process.env.RESEND_API_KEY && 
+                           process.env.RESEND_API_KEY !== 'placeholder' &&
+                           process.env.RESEND_API_KEY.startsWith('re_')
+    
+    if (!hasValidApiKey && !isDevMode) {
       console.error('RESEND_API_KEY not configured')
       return NextResponse.json({ 
         error: 'Email service not configured. Please contact support.' 
@@ -66,10 +71,25 @@ export async function POST(req: NextRequest) {
       }, { status: 400 })
     }
 
+    // In development mode without valid API key, just log the email
+    if (!hasValidApiKey) {
+      console.log('No valid API key: Contact form submission')
+      console.log('From:', email)
+      console.log('Name:', name)
+      console.log('Subject:', subject)
+      console.log('Message:', message)
+      
+      return NextResponse.json({ 
+        success: true, 
+        message: 'Message received (no API key)',
+        id: 'dev-' + Date.now() 
+      })
+    }
+    
     // 发送邮件给团队
     const { data, error } = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || 'contact@noreply.obelisk.build',
-      to: [process.env.RESEND_TO_EMAIL || 'team@dubhe.network'],
+      to: [process.env.RESEND_TO_EMAIL || 'hello@dubhe.network'],
       replyTo: email,
       subject: `Contact Form: ${subject}`,
       html: `

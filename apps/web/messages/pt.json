@@ -6,6 +6,7 @@
     "media": "Mídia",
     "community": "Comunidade",
     "documentation": "Documentação",
+    "papers": "Documentos",
     "engine": "Motor",
     "channel": "Canal",
     "os": "SO",
@@ -397,6 +398,7 @@
     },
     "links": {
       "documentation": "Documentação",
+      "papers": "Papers",
       "engine": "Motor",
       "channel": "Canal",
       "os": "SO",
@@ -1724,6 +1726,24 @@
       "title": "Dúvidas Sobre os Termos?",
       "description": "Se você tiver alguma dúvida sobre estes Termos de Serviço, entre em contato com nossa equipe jurídica."
     }
+  },
+  "papers": {
+    "hero": {
+      "badge": "Documentação Técnica",
+      "title": "Documentos Técnicos",
+      "subtitle": "Explore a arquitetura técnica do Dubhe e detalhes de implementação através da nossa documentação abrangente."
+    },
+    "whitepaper": {
+      "title": "Whitepaper",
+      "description": "Visão geral técnica abrangente da arquitetura do Dubhe, mecanismos de consenso e design do ecossistema.",
+      "downloadLabel": "Baixar Whitepaper"
+    },
+    "lightpaper": {
+      "title": "Lightpaper",
+      "description": "Visão geral concisa das principais funcionalidades, casos de uso e inovações técnicas do Dubhe.",
+      "downloadLabel": "Baixar Lightpaper"
+    },
+    "openInNewTab": "Abre em nova aba"
   },
   "LocaleSwitcher": {
     "label": "Idiomas"

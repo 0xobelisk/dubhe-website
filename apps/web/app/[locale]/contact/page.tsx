@@ -17,6 +17,7 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [notification, setNotification] = useState<{ type: 'success' | 'error', message: string } | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -30,6 +31,8 @@ export default function ContactPage() {
     setIsSubmitting(true)
     setError(null)
     
+    console.log('Submitting form with data:', formData)
+    
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -40,22 +43,38 @@ export default function ContactPage() {
       })
 
       const data = await response.json()
+      console.log('Response status:', response.status, 'Response data:', data)
 
-      if (response.ok) {
+      if (response.ok && data.success) {
+        console.log('Form submitted successfully')
         setSubmitted(true)
         setFormData({ name: '', email: '', subject: '', message: '' })
+        setNotification({ type: 'success', message: t('form.success.message') })
+        // Show success message for 5 seconds then reset
+        setTimeout(() => {
+          setSubmitted(false)
+          setNotification(null)
+        }, 5000)
       } else {
+        console.error('Form submission failed:', data)
+        let errorMsg = ''
         if (data.details && Array.isArray(data.details)) {
           // 显示验证错误详情
           const errorMessages = data.details.map((err: { message: string }) => err.message).join(', ')
-          setError(`${t('form.validationError')}: ${errorMessages}`)
+          errorMsg = `${t('form.validationError')}: ${errorMessages}`
         } else {
-          setError(data.error || t('form.sendError'))
+          errorMsg = data.error || t('form.sendError')
         }
+        setError(errorMsg)
+        setNotification({ type: 'error', message: errorMsg })
+        setTimeout(() => setNotification(null), 5000)
       }
     } catch (err) {
       console.error('Error sending message:', err)
-      setError(t('form.networkError'))
+      const errorMsg = t('form.networkError')
+      setError(errorMsg)
+      setNotification({ type: 'error', message: errorMsg })
+      setTimeout(() => setNotification(null), 5000)
     } finally {
       setIsSubmitting(false)
     }
@@ -90,6 +109,28 @@ export default function ContactPage() {
 
   return (
     <>
+      {/* Fixed Notification */}
+      {notification && (
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -50 }}
+          className={`fixed top-20 left-1/2 transform -translate-x-1/2 z-50 px-6 py-3 rounded-lg shadow-lg ${
+            notification.type === 'success' 
+              ? 'bg-green-500 text-white' 
+              : 'bg-red-500 text-white'
+          }`}
+        >
+          <div className="flex items-center gap-2">
+            {notification.type === 'success' ? (
+              <Send className="w-5 h-5" />
+            ) : (
+              <span className="text-xl">⚠️</span>
+            )}
+            <span>{notification.message}</span>
+          </div>
+        </motion.div>
+      )}
       
       {/* Hero Section */}
       <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-green-900 to-blue-900 overflow-hidden pt-16">
@@ -160,7 +201,12 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-bold text-white mb-6">{t('form.title')}</h2>
                 
                 {submitted ? (
-                  <div className="text-center py-8">
+                  <motion.div 
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                    className="text-center py-8"
+                  >
                     <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Send className="w-8 h-8 text-green-400" />
                     </div>
@@ -175,7 +221,7 @@ export default function ContactPage() {
                     >
                       {t('form.success.sendAnother')}
                     </button>
-                  </div>
+                  </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     {error && (

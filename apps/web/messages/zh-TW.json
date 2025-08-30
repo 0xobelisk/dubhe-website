@@ -6,6 +6,7 @@
     "media": "媒體",
     "community": "社群",
     "documentation": "文件",
+    "papers": "技術文件",
     "engine": "引擎",
     "channel": "頻道",
     "os": "作業系統",
@@ -397,6 +398,7 @@
     },
     "links": {
       "documentation": "文件",
+      "papers": "Papers",
       "engine": "引擎",
       "channel": "頻道",
       "os": "作業系統",
@@ -1711,6 +1713,24 @@
       "apply": "立即申請",
       "contact": "聯繫我們"
     }
+  },
+  "papers": {
+    "hero": {
+      "badge": "技術文件",
+      "title": "技術白皮書",
+      "subtitle": "透過我們全面的文件探索 Dubhe 的技術架構和實作細節。"
+    },
+    "whitepaper": {
+      "title": "白皮書",
+      "description": "Dubhe 架構、共識機制和生態系統設計的全面技術概述。",
+      "downloadLabel": "下載白皮書"
+    },
+    "lightpaper": {
+      "title": "輕白皮書", 
+      "description": "Dubhe 關鍵功能、使用案例和技術創新的簡明概述。",
+      "downloadLabel": "下載輕白皮書"
+    },
+    "openInNewTab": "在新分頁中開啟"
   },
   "LocaleSwitcher": {
     "label": "語言"

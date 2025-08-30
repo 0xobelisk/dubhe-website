@@ -6,6 +6,7 @@
     "media": "Médias",
     "community": "Communauté",
     "documentation": "Documentation",
+    "papers": "Documents",
     "engine": "Moteur",
     "channel": "Canal",
     "os": "OS",
@@ -397,6 +398,7 @@
     },
     "links": {
       "documentation": "Documentation",
+      "papers": "Papers",
       "engine": "Moteur",
       "channel": "Canal",
       "os": "OS",
@@ -822,6 +824,24 @@
       "apply": "Postuler Maintenant",
       "contact": "Nous Contacter"
     }
+  },
+  "papers": {
+    "hero": {
+      "badge": "Documentation Technique",
+      "title": "Documents Techniques",
+      "subtitle": "Explorez l'architecture technique de Dubhe et les détails d'implémentation à travers notre documentation complète."
+    },
+    "whitepaper": {
+      "title": "Livre Blanc",
+      "description": "Vue d'ensemble technique complète de l'architecture de Dubhe, des mécanismes de consensus et de la conception de l'écosystème.",
+      "downloadLabel": "Télécharger le Livre Blanc"
+    },
+    "lightpaper": {
+      "title": "Résumé Technique",
+      "description": "Vue d'ensemble concise des fonctionnalités clés, des cas d'utilisation et des innovations techniques de Dubhe.",
+      "downloadLabel": "Télécharger le Résumé Technique"
+    },
+    "openInNewTab": "Ouvre dans un nouvel onglet"
   },
   "LocaleSwitcher": {
     "label": "Langues"

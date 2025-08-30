@@ -76,8 +76,13 @@ function checkRateLimit(key: string): { allowed: boolean; remaining: number } {
 export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   
-  // Apply security headers to all responses
-  const response = intlMiddleware(request) || NextResponse.next()
+  // Skip i18n middleware for API routes
+  const isApiRoute = pathname.startsWith('/api/')
+  
+  // Apply i18n middleware only for non-API routes
+  const response = isApiRoute 
+    ? NextResponse.next() 
+    : (intlMiddleware(request) || NextResponse.next())
   
   // Set security headers
   Object.entries(securityHeaders).forEach(([key, value]) => {
@@ -85,7 +90,6 @@ export default async function middleware(request: NextRequest) {
   })
 
   // Rate limiting for API routes and form submissions
-  const isApiRoute = pathname.startsWith('/api/')
   const isFormSubmission = request.method === 'POST' && pathname.includes('contact')
   
   if (isApiRoute || isFormSubmission) {

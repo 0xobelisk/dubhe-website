@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
-import { routing } from '../i18n/routing';
 
 interface LanguageInfo {
   code: string;
@@ -41,7 +40,6 @@ export default function LanguageSelector() {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const t = useTranslations('LocaleSwitcher');
 
-  const currentLanguage = LANGUAGES.find(lang => lang.code === locale) || LANGUAGES[0];
 
   const filteredLanguages = LANGUAGES.filter(lang => 
     lang.name.toLowerCase().includes(filter.toLowerCase()) ||
