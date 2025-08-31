@@ -1808,6 +1808,11 @@
       "description": "Concise overview of Dubhe's key features, use cases, and technical innovations.",
       "downloadLabel": "Download Lightpaper"
     },
+    "onepager": {
+      "title": "OnePager",
+      "description": "Executive summary highlighting Dubhe's core value proposition and key benefits.",
+      "downloadLabel": "Download OnePager"
+    },
     "openInNewTab": "Opens in new tab"
   },
   "LocaleSwitcher": {

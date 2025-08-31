@@ -1743,6 +1743,11 @@
       "description": "Visão geral concisa das principais funcionalidades, casos de uso e inovações técnicas do Dubhe.",
       "downloadLabel": "Baixar Lightpaper"
     },
+    "onepager": {
+      "title": "OnePager",
+      "description": "Executive summary highlighting Dubhe's core value proposition and key benefits.",
+      "downloadLabel": "Download OnePager"
+    },
     "openInNewTab": "Abre em nova aba"
   },
   "LocaleSwitcher": {

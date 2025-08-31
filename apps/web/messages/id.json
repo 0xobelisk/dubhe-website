@@ -805,6 +805,11 @@
       "description": "Ikhtisar ringkas fitur utama, kasus penggunaan, dan inovasi teknis Dubhe.",
       "downloadLabel": "Unduh Lightpaper"
     },
+    "onepager": {
+      "title": "OnePager",
+      "description": "Executive summary highlighting Dubhe's core value proposition and key benefits.",
+      "downloadLabel": "Download OnePager"
+    },
     "openInNewTab": "Buka di tab baru"
   },
   "LocaleSwitcher": {

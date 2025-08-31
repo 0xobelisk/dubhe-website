@@ -1844,6 +1844,11 @@
       "description": "Dubheの主要機能、使用例、技術革新の簡潔な概要。",
       "downloadLabel": "ライトペーパーをダウンロード"
     },
+    "onepager": {
+      "title": "OnePager",
+      "description": "Executive summary highlighting Dubhe's core value proposition and key benefits.",
+      "downloadLabel": "Download OnePager"
+    },
     "openInNewTab": "新しいタブで開く"
   },
   "LocaleSwitcher": {

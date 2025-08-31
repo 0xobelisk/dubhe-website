@@ -1743,6 +1743,11 @@
       "description": "Краткий обзор ключевых функций, случаев использования и технических инноваций Dubhe.",
       "downloadLabel": "Скачать Краткий Документ"
     },
+    "onepager": {
+      "title": "OnePager",
+      "description": "Executive summary highlighting Dubhe's core value proposition and key benefits.",
+      "downloadLabel": "Download OnePager"
+    },
     "openInNewTab": "Открывается в новой вкладке"
   },
   "LocaleSwitcher": {

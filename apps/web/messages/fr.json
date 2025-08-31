@@ -841,6 +841,11 @@
       "description": "Vue d'ensemble concise des fonctionnalités clés, des cas d'utilisation et des innovations techniques de Dubhe.",
       "downloadLabel": "Télécharger le Résumé Technique"
     },
+    "onepager": {
+      "title": "OnePager",
+      "description": "Executive summary highlighting Dubhe's core value proposition and key benefits.",
+      "downloadLabel": "Download OnePager"
+    },
     "openInNewTab": "Ouvre dans un nouvel onglet"
   },
   "LocaleSwitcher": {

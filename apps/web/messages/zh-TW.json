@@ -1730,6 +1730,11 @@
       "description": "Dubhe 關鍵功能、使用案例和技術創新的簡明概述。",
       "downloadLabel": "下載輕白皮書"
     },
+    "onepager": {
+      "title": "一頁簡報",
+      "description": "強調 Dubhe 核心價值主張和關鍵優勢的執行摘要。",
+      "downloadLabel": "下載一頁簡報"
+    },
     "openInNewTab": "在新分頁中開啟"
   },
   "LocaleSwitcher": {

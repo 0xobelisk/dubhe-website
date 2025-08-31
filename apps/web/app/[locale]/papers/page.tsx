@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { FileText, ExternalLink, Download } from "lucide-react"
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import Card from "@/components/ui/Card"
@@ -16,22 +16,8 @@ interface PaperCardProps {
 }
 
 function PaperCard({ title, description, pdfUrl, icon, downloadLabel }: PaperCardProps) {
-  const handleDownload = async () => {
-    try {
-      // Check if the PDF exists by making a HEAD request
-      const response = await fetch(pdfUrl, { method: 'HEAD' });
-      if (response.ok) {
-        window.open(pdfUrl, '_blank', 'noopener,noreferrer');
-      } else {
-        // Fallback to English version if locale-specific version doesn't exist
-        const fallbackUrl = pdfUrl.replace(/-[a-z]{2}(-[A-Z]{2})?\.pdf$/, '-en.pdf');
-        window.open(fallbackUrl, '_blank', 'noopener,noreferrer');
-      }
-    } catch {
-      // If there's any error, try the fallback URL
-      const fallbackUrl = pdfUrl.replace(/-[a-z]{2}(-[A-Z]{2})?\.pdf$/, '-en.pdf');
-      window.open(fallbackUrl, '_blank', 'noopener,noreferrer');
-    }
+  const handleDownload = () => {
+    window.open(pdfUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -64,15 +50,14 @@ function PaperCard({ title, description, pdfUrl, icon, downloadLabel }: PaperCar
 
 export default function PapersPage() {
   const t = useTranslations('papers')
-  const locale = useLocale()
   
-  // Generate PDF URLs with fallback to English
-  const getWhitepaperUrl = () => {
-    return `/papers/whitepaper-${locale}.pdf`;
+  // PDF URLs pointing to assets directory
+  const getLightpaperUrl = () => {
+    return `/assets/Lightpaper.pdf`;
   };
   
-  const getLightpaperUrl = () => {
-    return `/papers/lightpaper-${locale}.pdf`;
+  const getOnepaperUrl = () => {
+    return `/assets/Onepaper.pdf`;
   };
 
 
@@ -119,19 +104,19 @@ export default function PapersPage() {
               </motion.p>
             </div>
 
-            {/* Papers Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Papers Grid - 2 column layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
                 <PaperCard
-                  title={t('whitepaper.title')}
-                  description={t('whitepaper.description')}
-                  pdfUrl={getWhitepaperUrl()}
+                  title={t('lightpaper.title')}
+                  description={t('lightpaper.description')}
+                  pdfUrl={getLightpaperUrl()}
                   icon={<FileText className="w-8 h-8" />}
-                  downloadLabel={t('whitepaper.downloadLabel')}
+                  downloadLabel={t('lightpaper.downloadLabel')}
                 />
               </motion.div>
               
@@ -141,11 +126,11 @@ export default function PapersPage() {
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
                 <PaperCard
-                  title={t('lightpaper.title')}
-                  description={t('lightpaper.description')}
-                  pdfUrl={getLightpaperUrl()}
+                  title={t('onepager.title')}
+                  description={t('onepager.description')}
+                  pdfUrl={getOnepaperUrl()}
                   icon={<FileText className="w-8 h-8" />}
-                  downloadLabel={t('lightpaper.downloadLabel')}
+                  downloadLabel={t('onepager.downloadLabel')}
                 />
               </motion.div>
             </div>

@@ -1743,6 +1743,11 @@
       "description": "Dubhe의 주요 기능, 사용 사례 및 기술 혁신에 대한 간결한 개요.",
       "downloadLabel": "라이트페이퍼 다운로드"
     },
+    "onepager": {
+      "title": "OnePager",
+      "description": "Executive summary highlighting Dubhe's core value proposition and key benefits.",
+      "downloadLabel": "Download OnePager"
+    },
     "openInNewTab": "새 탭에서 열기"
   },
   "LocaleSwitcher": {
