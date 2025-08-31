@@ -53,11 +53,11 @@ export default function PapersPage() {
   
   // PDF URLs pointing to assets directory
   const getLightpaperUrl = () => {
-    return `/assets/Lightpaper.pdf`;
+    return `/en/assets/Lightpaper.pdf`;
   };
   
   const getOnepaperUrl = () => {
-    return `/assets/Onepaper.pdf`;
+    return `/en/assets/Onepaper.pdf`;
   };
 
 
