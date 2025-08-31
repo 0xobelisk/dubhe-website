@@ -51,13 +51,35 @@ function PaperCard({ title, description, pdfUrl, icon, downloadLabel }: PaperCar
 export default function PapersPage() {
   const t = useTranslations('papers')
   
-  // PDF URLs pointing to assets directory
+  // PDF URLs pointing to Google Drive with proper validation and logging
   const getLightpaperUrl = () => {
-    return `/en/assets/Lightpaper.pdf`;
+    const envUrl = process.env.NEXT_PUBLIC_LIGHTPAPER_URL;
+    const fallbackUrl = 'https://drive.google.com/file/d/18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/view?usp=sharing';
+    
+    // Check if environment variable exists and is not an empty string
+    if (!envUrl || envUrl.trim() === '') {
+      if (process.env.NODE_ENV === 'development') {
+        console.log('NEXT_PUBLIC_LIGHTPAPER_URL not set or empty, using fallback Google Drive URL');
+      }
+      return fallbackUrl;
+    }
+    
+    return envUrl;
   };
   
   const getOnepaperUrl = () => {
-    return `/en/assets/Onepaper.pdf`;
+    const envUrl = process.env.NEXT_PUBLIC_ONEPAPER_URL;
+    const fallbackUrl = 'https://drive.google.com/file/d/1aUwBNGsEuZ4cg0qeDpqDC4LbyEb9Q5OY/view?usp=sharing';
+    
+    // Check if environment variable exists and is not an empty string
+    if (!envUrl || envUrl.trim() === '') {
+      if (process.env.NODE_ENV === 'development') {
+        console.log('NEXT_PUBLIC_ONEPAPER_URL not set or empty, using fallback Google Drive URL');
+      }
+      return fallbackUrl;
+    }
+    
+    return envUrl;
   };
 
 

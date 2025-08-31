@@ -133,31 +133,42 @@ test.describe('Papers Feature - End-to-End Tests', () => {
     })
 
     test('can trigger PDF download for whitepaper', async () => {
-      // Set up download promise before triggering
-      const downloadPromise = page.waitForEvent('download')
+      // Monitor new tab creation since Google Drive URLs open in new tabs
+      const newPagePromise = context.waitForEvent('page')
       
       // Click on whitepaper card
       await page.click('text=Whitepaper')
       
-      // Wait for download or new tab
+      // Wait for new tab to open
       try {
-        const download = await downloadPromise
-        expect(download.suggestedFilename()).toMatch(/whitepaper.*\.pdf/)
+        const newPage = await newPagePromise
+        
+        // Verify the new page has Google Drive URL
+        expect(newPage.url()).toMatch(/drive\.google\.com.*18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/)
+        
+        // Close the new page
+        await newPage.close()
       } catch {
-        // If download doesn't trigger, check if new tab opened
+        // Fallback: check if any new tab opened
         const pages = context.pages()
         expect(pages.length).toBeGreaterThan(1)
       }
     })
 
     test('can trigger PDF download for lightpaper', async () => {
-      const downloadPromise = page.waitForEvent('download')
+      // Monitor new tab creation since Google Drive URLs open in new tabs
+      const newPagePromise = context.waitForEvent('page')
       
       await page.click('text=Lightpaper')
       
       try {
-        const download = await downloadPromise
-        expect(download.suggestedFilename()).toMatch(/lightpaper.*\.pdf/)
+        const newPage = await newPagePromise
+        
+        // Verify the new page has Google Drive URL
+        expect(newPage.url()).toMatch(/drive\.google\.com.*1aUwBNGsEuZ4cg0qeDpqDC4LbyEb9Q5OY/)
+        
+        // Close the new page
+        await newPage.close()
       } catch {
         const pages = context.pages()
         expect(pages.length).toBeGreaterThan(1)
@@ -173,14 +184,14 @@ test.describe('Papers Feature - End-to-End Tests', () => {
       try {
         const newPage = await newPagePromise
         
-        // Verify the new page has proper URL
-        expect(newPage.url()).toMatch(/\/papers\/whitepaper.*\.pdf/)
+        // Verify the new page has Google Drive URL
+        expect(newPage.url()).toMatch(/drive\.google\.com.*18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/)
         
         // Close the new page
         await newPage.close()
       } catch {
-        // Download might have triggered instead of new tab
-        console.log('Download triggered instead of new tab')
+        // Google Drive might handle differently
+        console.log('Google Drive PDF handled differently')
       }
     })
 
@@ -315,19 +326,21 @@ test.describe('Papers Feature - End-to-End Tests', () => {
       // Test French locale
       await page.goto('/fr/papers')
       
-      // Monitor network requests for PDF
-      const networkRequests: string[] = []
-      page.on('request', request => {
-        if (request.url().includes('.pdf')) {
-          networkRequests.push(request.url())
-        }
-      })
+      // Monitor new tab creation since PDFs now use Google Drive URLs
+      const newPagePromise = context.waitForEvent('page')
       
       await page.click('text=Whitepaper')
       
-      // Should request French PDF first, then fallback to English
-      await page.waitForTimeout(1000)
-      expect(networkRequests.some(url => url.includes('whitepaper-fr.pdf') || url.includes('whitepaper-en.pdf'))).toBeTruthy()
+      // Should open Google Drive URL (same for all locales now)
+      try {
+        const newPage = await newPagePromise
+        expect(newPage.url()).toMatch(/drive\.google\.com.*18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/)
+        await newPage.close()
+      } catch {
+        // Fallback: check if any new tab opened
+        const pages = context.pages()
+        expect(pages.length).toBeGreaterThan(1)
+      }
     })
   })
 
@@ -335,8 +348,8 @@ test.describe('Papers Feature - End-to-End Tests', () => {
     test('handles missing PDF files gracefully', async () => {
       await page.goto('/papers')
       
-      // Mock network to simulate missing PDF
-      await page.route('**/papers/whitepaper-*.pdf', route => {
+      // Mock network to simulate Google Drive being unavailable
+      await page.route('**/drive.google.com/**', route => {
         route.fulfill({ status: 404, body: 'Not Found' })
       })
       
@@ -350,8 +363,8 @@ test.describe('Papers Feature - End-to-End Tests', () => {
     test('handles network errors during PDF download', async () => {
       await page.goto('/papers')
       
-      // Mock network failure
-      await page.route('**/papers/**/*.pdf', route => {
+      // Mock network failure for Google Drive
+      await page.route('**/drive.google.com/**', route => {
         route.abort('failed')
       })
       

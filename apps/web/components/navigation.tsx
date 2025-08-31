@@ -79,6 +79,7 @@ export default function Navigation() {
         { name: t('ambassador'), href: "/ambassador" },
         { name: t('moderators'), href: "/moderators" },
         { name: t('events'), href: "/events" },
+        { name: t('contact'), href: "/contact" },
         // { name: "Brand Kit", href: "/brand-kit" }
       ]
     },

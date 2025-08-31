@@ -18,8 +18,14 @@ vi.mock('@/components/navigation', () => ({
 
 // Mock Card component
 vi.mock('@/components/ui/Card', () => ({
-  default: ({ children, onClick, ...props }: any) => (
-    <div data-testid="card" onClick={onClick} {...props}>
+  default: ({ children, onClick, clickable, ...props }: any) => (
+    <div 
+      data-testid="card" 
+      onClick={onClick} 
+      role={clickable ? "button" : undefined}
+      tabIndex={clickable ? 0 : undefined}
+      {...props}
+    >
       {children}
     </div>
   )
@@ -42,8 +48,24 @@ vi.mock('next-intl', () => ({
 }))
 
 // Global mocks
-global.fetch = vi.fn()
 global.window.open = vi.fn()
+
+// Mock Footer component to avoid complex dependencies
+vi.mock('@/components/footer', () => ({
+  default: () => <footer data-testid="footer">Footer</footer>
+}))
+
+// Mock environment variables
+const mockEnv = {
+  NEXT_PUBLIC_LIGHTPAPER_URL: '',
+  NEXT_PUBLIC_ONEPAPER_URL: '',
+  NODE_ENV: 'test'
+}
+
+Object.defineProperty(process, 'env', {
+  value: mockEnv,
+  writable: true
+})
 
 describe('Papers Page - Internationalization Tests', () => {
   beforeEach(() => {
@@ -54,12 +76,12 @@ describe('Papers Page - Internationalization Tests', () => {
         'hero.badge': 'Technical Documentation',
         'hero.title': 'Technical Papers',
         'hero.subtitle': 'Explore Dubhe\'s technical architecture',
-        'whitepaper.title': 'Whitepaper',
-        'whitepaper.description': 'Comprehensive technical overview',
-        'whitepaper.downloadLabel': 'Download Whitepaper',
         'lightpaper.title': 'Lightpaper',
-        'lightpaper.description': 'Concise overview',
+        'lightpaper.description': 'Comprehensive technical overview',
         'lightpaper.downloadLabel': 'Download Lightpaper',
+        'onepager.title': 'Onepager', 
+        'onepager.description': 'Concise overview',
+        'onepager.downloadLabel': 'Download Onepager',
         'openInNewTab': 'Opens in new tab'
       }
       return translations[key as keyof typeof translations] || key
@@ -75,29 +97,43 @@ describe('Papers Page - Internationalization Tests', () => {
       render(<PapersPage />)
       
       expect(screen.getByText('Technical Papers')).toBeInTheDocument()
-      expect(screen.getByText('Whitepaper')).toBeInTheDocument()
       expect(screen.getByText('Lightpaper')).toBeInTheDocument()
-      expect(screen.getByText('Download Whitepaper')).toBeInTheDocument()
+      expect(screen.getByText('Onepager')).toBeInTheDocument()
       expect(screen.getByText('Download Lightpaper')).toBeInTheDocument()
+      expect(screen.getByText('Download Onepager')).toBeInTheDocument()
     })
 
-    it('generates English PDF URLs by default', async () => {
-      const mockFetch = vi.mocked(fetch)
+    it('opens Google Drive lightpaper URL when clicked', async () => {
       const mockWindowOpen = vi.mocked(window.open)
-      
-      mockFetch.mockResolvedValueOnce({
-        ok: true,
-        status: 200
-      } as Response)
       
       render(<PapersPage />)
       
-      const whitepaperCard = screen.getAllByTestId('card')[0]
-      fireEvent.click(whitepaperCard)
+      const lightpaperCard = screen.getAllByTestId('card')[0]
+      fireEvent.click(lightpaperCard)
       
       await waitFor(() => {
-        expect(mockFetch).toHaveBeenCalledWith('/papers/whitepaper-en.pdf', { method: 'HEAD' })
-        expect(mockWindowOpen).toHaveBeenCalledWith('/papers/whitepaper-en.pdf', '_blank', 'noopener,noreferrer')
+        expect(mockWindowOpen).toHaveBeenCalledWith(
+          'https://drive.google.com/file/d/18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/view?usp=sharing', 
+          '_blank', 
+          'noopener,noreferrer'
+        )
+      })
+    })
+
+    it('opens Google Drive onepager URL when clicked', async () => {
+      const mockWindowOpen = vi.mocked(window.open)
+      
+      render(<PapersPage />)
+      
+      const onepaperCard = screen.getAllByTestId('card')[1]
+      fireEvent.click(onepaperCard)
+      
+      await waitFor(() => {
+        expect(mockWindowOpen).toHaveBeenCalledWith(
+          'https://drive.google.com/file/d/1aUwBNGsEuZ4cg0qeDpqDC4LbyEb9Q5OY/view?usp=sharing', 
+          '_blank', 
+          'noopener,noreferrer'
+        )
       })
     })
   })
@@ -110,12 +146,12 @@ describe('Papers Page - Internationalization Tests', () => {
           'hero.badge': 'Documentation Technique',
           'hero.title': 'Documents Techniques',
           'hero.subtitle': 'Explorez l\'architecture technique de Dubhe',
-          'whitepaper.title': 'Livre Blanc',
-          'whitepaper.description': 'Aperçu technique complet',
-          'whitepaper.downloadLabel': 'Télécharger le Livre Blanc',
           'lightpaper.title': 'Document Léger',
-          'lightpaper.description': 'Aperçu concis',
-          'lightpaper.downloadLabel': 'Télécharger le Document',
+          'lightpaper.description': 'Aperçu technique complet',
+          'lightpaper.downloadLabel': 'Télécharger le Document Léger',
+          'onepager.title': 'Document Sommaire',
+          'onepager.description': 'Aperçu concis',
+          'onepager.downloadLabel': 'Télécharger le Document',
           'openInNewTab': 'S\'ouvre dans un nouvel onglet'
         }
         return translations[key as keyof typeof translations] || key
@@ -126,50 +162,35 @@ describe('Papers Page - Internationalization Tests', () => {
       render(<PapersPage />)
       
       expect(screen.getByText('Documents Techniques')).toBeInTheDocument()
-      expect(screen.getByText('Livre Blanc')).toBeInTheDocument()
       expect(screen.getByText('Document Léger')).toBeInTheDocument()
-      expect(screen.getByText('Télécharger le Livre Blanc')).toBeInTheDocument()
+      expect(screen.getByText('Document Sommaire')).toBeInTheDocument()
+      expect(screen.getByText('Télécharger le Document Léger')).toBeInTheDocument()
     })
 
-    it('generates French PDF URLs and falls back to English on 404', async () => {
-      const mockFetch = vi.mocked(fetch)
+    it('opens same Google Drive URLs regardless of locale', async () => {
       const mockWindowOpen = vi.mocked(window.open)
-      
-      // Simulate French PDF not found
-      mockFetch.mockResolvedValueOnce({
-        ok: false,
-        status: 404
-      } as Response)
       
       render(<PapersPage />)
       
-      const whitepaperCard = screen.getAllByTestId('card')[0]
-      fireEvent.click(whitepaperCard)
+      const lightpaperCard = screen.getAllByTestId('card')[0]
+      fireEvent.click(lightpaperCard)
       
       await waitFor(() => {
-        expect(mockFetch).toHaveBeenCalledWith('/papers/whitepaper-fr.pdf', { method: 'HEAD' })
-        expect(mockWindowOpen).toHaveBeenCalledWith('/papers/whitepaper-en.pdf', '_blank', 'noopener,noreferrer')
+        expect(mockWindowOpen).toHaveBeenCalledWith(
+          'https://drive.google.com/file/d/18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/view?usp=sharing', 
+          '_blank', 
+          'noopener,noreferrer'
+        )
       })
     })
 
-    it('uses French PDF when available', async () => {
-      const mockFetch = vi.mocked(fetch)
-      const mockWindowOpen = vi.mocked(window.open)
-      
-      mockFetch.mockResolvedValueOnce({
-        ok: true,
-        status: 200
-      } as Response)
-      
+    it('displays French translations but uses same PDF URLs', () => {
       render(<PapersPage />)
       
-      const whitepaperCard = screen.getAllByTestId('card')[0]
-      fireEvent.click(whitepaperCard)
-      
-      await waitFor(() => {
-        expect(mockFetch).toHaveBeenCalledWith('/papers/whitepaper-fr.pdf', { method: 'HEAD' })
-        expect(mockWindowOpen).toHaveBeenCalledWith('/papers/whitepaper-fr.pdf', '_blank', 'noopener,noreferrer')
-      })
+      expect(screen.getByText('Documents Techniques')).toBeInTheDocument()
+      expect(screen.getByText('Document Léger')).toBeInTheDocument()
+      expect(screen.getByText('Document Sommaire')).toBeInTheDocument()
+      expect(screen.getByText('Télécharger le Document Léger')).toBeInTheDocument()
     })
   })
 
@@ -180,31 +201,27 @@ describe('Papers Page - Internationalization Tests', () => {
         const translations = {
           'hero.badge': '技術文檔',
           'hero.title': '技術文件',
-          'whitepaper.title': '白皮書',
-          'lightpaper.title': '精簡白皮書'
+          'lightpaper.title': '精簡白皮書',
+          'onepager.title': '簡要文件'
         }
         return translations[key as keyof typeof translations] || key
       })
     })
 
-    it('handles complex locale patterns in PDF URLs', async () => {
-      const mockFetch = vi.mocked(fetch)
+    it('uses same Google Drive URLs for complex locales', async () => {
       const mockWindowOpen = vi.mocked(window.open)
-      
-      // Simulate Traditional Chinese PDF not found
-      mockFetch.mockResolvedValueOnce({
-        ok: false,
-        status: 404
-      } as Response)
       
       render(<PapersPage />)
       
-      const whitepaperCard = screen.getAllByTestId('card')[0]
-      fireEvent.click(whitepaperCard)
+      const lightpaperCard = screen.getAllByTestId('card')[0]
+      fireEvent.click(lightpaperCard)
       
       await waitFor(() => {
-        expect(mockFetch).toHaveBeenCalledWith('/papers/whitepaper-zh-TW.pdf', { method: 'HEAD' })
-        expect(mockWindowOpen).toHaveBeenCalledWith('/papers/whitepaper-en.pdf', '_blank', 'noopener,noreferrer')
+        expect(mockWindowOpen).toHaveBeenCalledWith(
+          'https://drive.google.com/file/d/18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/view?usp=sharing', 
+          '_blank', 
+          'noopener,noreferrer'
+        )
       })
     })
   })
@@ -219,27 +236,24 @@ describe('Papers Page - Internationalization Tests', () => {
       render(<PapersPage />)
       
       expect(screen.getByText('hero.title')).toBeInTheDocument()
-      expect(screen.getByText('whitepaper.title')).toBeInTheDocument()
       expect(screen.getByText('lightpaper.title')).toBeInTheDocument()
+      expect(screen.getByText('onepager.title')).toBeInTheDocument()
     })
 
-    it('still attempts PDF download with unsupported locale', async () => {
-      const mockFetch = vi.mocked(fetch)
+    it('works with unsupported locales using Google Drive URLs', async () => {
       const mockWindowOpen = vi.mocked(window.open)
-      
-      mockFetch.mockResolvedValueOnce({
-        ok: false,
-        status: 404
-      } as Response)
       
       render(<PapersPage />)
       
-      const whitepaperCard = screen.getAllByTestId('card')[0]
-      fireEvent.click(whitepaperCard)
+      const lightpaperCard = screen.getAllByTestId('card')[0]
+      fireEvent.click(lightpaperCard)
       
       await waitFor(() => {
-        expect(mockFetch).toHaveBeenCalledWith('/papers/whitepaper-xyz.pdf', { method: 'HEAD' })
-        expect(mockWindowOpen).toHaveBeenCalledWith('/papers/whitepaper-en.pdf', '_blank', 'noopener,noreferrer')
+        expect(mockWindowOpen).toHaveBeenCalledWith(
+          'https://drive.google.com/file/d/18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/view?usp=sharing', 
+          '_blank', 
+          'noopener,noreferrer'
+        )
       })
     })
   })
@@ -250,82 +264,81 @@ describe('Papers Page - Internationalization Tests', () => {
       mockUseTranslations.mockImplementation((key: string) => `es.${key}`)
     })
 
-    it('falls back to English when network error occurs', async () => {
-      const mockFetch = vi.mocked(fetch)
+    it('uses Google Drive URLs regardless of network conditions', async () => {
       const mockWindowOpen = vi.mocked(window.open)
-      
-      mockFetch.mockRejectedValueOnce(new Error('Network error'))
       
       render(<PapersPage />)
       
-      const whitepaperCard = screen.getAllByTestId('card')[0]
-      fireEvent.click(whitepaperCard)
+      const lightpaperCard = screen.getAllByTestId('card')[0]
+      fireEvent.click(lightpaperCard)
       
       await waitFor(() => {
-        expect(mockFetch).toHaveBeenCalledWith('/papers/whitepaper-es.pdf', { method: 'HEAD' })
-        expect(mockWindowOpen).toHaveBeenCalledWith('/papers/whitepaper-en.pdf', '_blank', 'noopener,noreferrer')
+        expect(mockWindowOpen).toHaveBeenCalledWith(
+          'https://drive.google.com/file/d/18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/view?usp=sharing', 
+          '_blank', 
+          'noopener,noreferrer'
+        )
       })
     })
   })
 
-  describe('PDF URL Generation Edge Cases', () => {
-    it('handles single letter locales correctly', async () => {
-      mockUseLocale.mockReturnValue('x')
+  describe('Environment Variable Integration', () => {
+    it('uses environment variable when available for lightpaper', async () => {
+      const customUrl = 'https://custom-cdn.com/lightpaper.pdf'
+      mockEnv.NEXT_PUBLIC_LIGHTPAPER_URL = customUrl
       
-      const mockFetch = vi.mocked(fetch)
-      mockFetch.mockResolvedValueOnce({ ok: false } as Response)
-      
-      render(<PapersPage />)
-      
-      const whitepaperCard = screen.getAllByTestId('card')[0]
-      fireEvent.click(whitepaperCard)
-      
-      await waitFor(() => {
-        expect(mockFetch).toHaveBeenCalledWith('/papers/whitepaper-x.pdf', { method: 'HEAD' })
-      })
-    })
-
-    it('correctly processes English locale without modification', async () => {
-      mockUseLocale.mockReturnValue('en')
-      
-      const mockFetch = vi.mocked(fetch)
       const mockWindowOpen = vi.mocked(window.open)
-      mockFetch.mockResolvedValueOnce({ ok: true } as Response)
       
       render(<PapersPage />)
       
-      const whitepaperCard = screen.getAllByTestId('card')[0]
-      fireEvent.click(whitepaperCard)
+      const lightpaperCard = screen.getAllByTestId('card')[0]
+      fireEvent.click(lightpaperCard)
       
       await waitFor(() => {
-        expect(mockFetch).toHaveBeenCalledWith('/papers/whitepaper-en.pdf', { method: 'HEAD' })
-        expect(mockWindowOpen).toHaveBeenCalledWith('/papers/whitepaper-en.pdf', '_blank', 'noopener,noreferrer')
+        expect(mockWindowOpen).toHaveBeenCalledWith(customUrl, '_blank', 'noopener,noreferrer')
       })
+      
+      // Reset for other tests
+      mockEnv.NEXT_PUBLIC_LIGHTPAPER_URL = ''
     })
 
-    it('handles regex pattern matching for locale fallback correctly', async () => {
-      // Test various locale patterns
-      const testLocales = ['en-US', 'zh-TW', 'pt-BR', 'fr-CA']
+    it('uses environment variable when available for onepaper', async () => {
+      const customUrl = 'https://custom-cdn.com/onepaper.pdf'
+      mockEnv.NEXT_PUBLIC_ONEPAPER_URL = customUrl
       
-      for (const locale of testLocales) {
-        mockUseLocale.mockReturnValue(locale)
-        
-        const mockFetch = vi.mocked(fetch)
-        const mockWindowOpen = vi.mocked(window.open)
-        mockFetch.mockResolvedValueOnce({ ok: false } as Response)
-        
-        render(<PapersPage />)
-        
-        const whitepaperCard = screen.getAllByTestId('card')[0]
-        fireEvent.click(whitepaperCard)
-        
-        await waitFor(() => {
-          expect(mockFetch).toHaveBeenCalledWith(`/papers/whitepaper-${locale}.pdf`, { method: 'HEAD' })
-          expect(mockWindowOpen).toHaveBeenCalledWith('/papers/whitepaper-en.pdf', '_blank', 'noopener,noreferrer')
-        })
-        
-        vi.clearAllMocks()
-      }
+      const mockWindowOpen = vi.mocked(window.open)
+      
+      render(<PapersPage />)
+      
+      const onepaperCard = screen.getAllByTestId('card')[1]
+      fireEvent.click(onepaperCard)
+      
+      await waitFor(() => {
+        expect(mockWindowOpen).toHaveBeenCalledWith(customUrl, '_blank', 'noopener,noreferrer')
+      })
+      
+      // Reset for other tests
+      mockEnv.NEXT_PUBLIC_ONEPAPER_URL = ''
+    })
+
+    it('falls back to Google Drive URLs when env variables are empty strings', async () => {
+      mockEnv.NEXT_PUBLIC_LIGHTPAPER_URL = ''
+      mockEnv.NEXT_PUBLIC_ONEPAPER_URL = ''
+      
+      const mockWindowOpen = vi.mocked(window.open)
+      
+      render(<PapersPage />)
+      
+      const lightpaperCard = screen.getAllByTestId('card')[0]
+      fireEvent.click(lightpaperCard)
+      
+      await waitFor(() => {
+        expect(mockWindowOpen).toHaveBeenCalledWith(
+          'https://drive.google.com/file/d/18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/view?usp=sharing', 
+          '_blank', 
+          'noopener,noreferrer'
+        )
+      })
     })
   })
 
@@ -337,7 +350,7 @@ describe('Papers Page - Internationalization Tests', () => {
       mockUseTranslations.mockImplementation((key: string) => {
         const newTranslations = {
           'hero.title': 'Updated Technical Papers',
-          'whitepaper.title': 'Updated Whitepaper'
+          'lightpaper.title': 'Updated Lightpaper'
         }
         return newTranslations[key as keyof typeof newTranslations] || key
       })
@@ -347,22 +360,26 @@ describe('Papers Page - Internationalization Tests', () => {
       // Component should update with new translations
       expect(screen.queryByText('Technical Papers')).not.toBeInTheDocument()
       expect(screen.getByText('Updated Technical Papers')).toBeInTheDocument()
+      expect(screen.getByText('Updated Lightpaper')).toBeInTheDocument()
     })
 
     it('handles undefined or null locale gracefully', async () => {
       mockUseLocale.mockReturnValue(undefined as any)
       
-      const mockFetch = vi.mocked(fetch)
-      mockFetch.mockResolvedValueOnce({ ok: false } as Response)
+      const mockWindowOpen = vi.mocked(window.open)
       
       render(<PapersPage />)
       
-      const whitepaperCard = screen.getAllByTestId('card')[0]
-      fireEvent.click(whitepaperCard)
+      const lightpaperCard = screen.getAllByTestId('card')[0]
+      fireEvent.click(lightpaperCard)
       
-      // Should fallback to English when locale is undefined
+      // Should use Google Drive URL regardless of locale
       await waitFor(() => {
-        expect(mockFetch).toHaveBeenCalledWith('/papers/whitepaper-undefined.pdf', { method: 'HEAD' })
+        expect(mockWindowOpen).toHaveBeenCalledWith(
+          'https://drive.google.com/file/d/18VPJaivmd5FXYuFFhhhvUOWpeQyP-q1F/view?usp=sharing', 
+          '_blank', 
+          'noopener,noreferrer'
+        )
       })
     })
   })
