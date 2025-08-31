@@ -39,3 +39,7 @@ npm-debug.log*
 # Misc
 .DS_Store
 *.pem
+
+# Large PDF files
+# apps/web/public/assets/*.pdf
+# public/assets/*.pdf
