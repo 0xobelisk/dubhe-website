@@ -19,10 +19,23 @@ export default function ContactPage() {
   const [error, setError] = useState<string | null>(null)
   const [notification, setNotification] = useState<{ type: 'success' | 'error', message: string } | null>(null)
 
+  const getCharacterCountColor = (count: number): string => {
+    if (count >= 4000) return 'text-red-500'
+    if (count >= 3600) return 'text-orange-500'
+    return 'text-gray-400'
+  }
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target
+    
+    // Prevent input beyond 4000 characters for message field
+    if (name === 'message' && value.length > 4000) {
+      return
+    }
+    
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [name]: value
     })
   }
 
@@ -289,16 +302,22 @@ export default function ContactPage() {
                       <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                         {t('form.fields.message.label')} *
                       </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        rows={6}
-                        className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors resize-none"
-                        placeholder={t('form.fields.message.placeholder')}
-                      />
+                      <div className="relative">
+                        <textarea
+                          id="message"
+                          name="message"
+                          value={formData.message}
+                          onChange={handleChange}
+                          required
+                          rows={6}
+                          maxLength={4000}
+                          className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors resize-none"
+                          placeholder={t('form.fields.message.placeholder')}
+                        />
+                        <div className={`text-sm ${getCharacterCountColor(formData.message.length)} absolute bottom-2 right-3`}>
+                          {formData.message.length}/4000
+                        </div>
+                      </div>
                     </div>
                     
                     <button
