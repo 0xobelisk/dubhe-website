@@ -40,6 +40,4 @@ npm-debug.log*
 .DS_Store
 *.pem
 
-# Large PDF files
-apps/web/public/**/*.pdf
-*.pdf
+# Large PDF files are tracked by Git LFS, not ignored
