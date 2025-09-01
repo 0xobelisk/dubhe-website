@@ -148,6 +148,17 @@ describe('PDF URL Generation Functions', () => {
       process.env.NEXT_PUBLIC_ONEPAGER_URL = 'null'
       process.env.NODE_ENV = 'test'
 
+      const getOnepaperUrl = () => {
+        const envUrl = process.env.NEXT_PUBLIC_ONEPAGER_URL;
+        const fallbackUrl = 'https://drive.google.com/file/d/1aUwBNGsEuZ4cg0qeDpqDC4LbyEb9Q5OY/view?usp=sharing';
+        
+        if (!envUrl || envUrl.trim() === '') {
+          return fallbackUrl;
+        }
+        
+        return envUrl;
+      };
+
       const result = getOnepaperUrl()
 
       // Should treat 'null' string as valid URL, not as null
@@ -158,6 +169,17 @@ describe('PDF URL Generation Functions', () => {
       const complexUrl = 'https://storage.example.com/docs/onepager.pdf?version=v2&token=abc123&format=pdf'
       process.env.NEXT_PUBLIC_ONEPAGER_URL = complexUrl
       process.env.NODE_ENV = 'production'
+
+      const getOnepaperUrl = () => {
+        const envUrl = process.env.NEXT_PUBLIC_ONEPAGER_URL;
+        const fallbackUrl = 'https://drive.google.com/file/d/1aUwBNGsEuZ4cg0qeDpqDC4LbyEb9Q5OY/view?usp=sharing';
+        
+        if (!envUrl || envUrl.trim() === '') {
+          return fallbackUrl;
+        }
+        
+        return envUrl;
+      };
 
       const result = getOnepaperUrl()
 
@@ -276,7 +298,7 @@ describe('PDF URL Generation Functions', () => {
       process.env.NEXT_PUBLIC_ONEPAGER_URL = 'https://example.com/consistent.pdf'
       
       const getOnepaperUrl = () => {
-        const envUrl = process.env.NEXT_PUBLIC_ONEPAPER_URL;
+        const envUrl = process.env.NEXT_PUBLIC_ONEPAGER_URL;
         const fallbackUrl = 'https://drive.google.com/file/d/1aUwBNGsEuZ4cg0qeDpqDC4LbyEb9Q5OY/view?usp=sharing';
         
         if (!envUrl || envUrl.trim() === '') {

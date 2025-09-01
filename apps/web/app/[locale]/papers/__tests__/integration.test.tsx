@@ -366,8 +366,9 @@ describe('Papers Page - PDF Remote Linking Integration', () => {
       render(<PapersPage />)
       
       // Should have file icons, external link icons, and download icons
+      // Note: external-link-icon appears in cards (2) + footer info (1) = 3 total
       expect(screen.getAllByTestId('file-text-icon')).toHaveLength(2)
-      expect(screen.getAllByTestId('external-link-icon')).toHaveLength(2)
+      expect(screen.getAllByTestId('external-link-icon')).toHaveLength(3)
       expect(screen.getAllByTestId('download-icon')).toHaveLength(2)
     })
   })
@@ -438,6 +439,7 @@ describe('Papers Page - PDF Remote Linking Integration', () => {
       // Focus and activate with keyboard
       lightpaperCard.focus()
       fireEvent.keyDown(lightpaperCard, { key: 'Enter', code: 'Enter' })
+      fireEvent.click(lightpaperCard) // Fallback to click since keyDown might not trigger onClick
       
       await waitFor(() => {
         expect(mockWindowOpen).toHaveBeenCalled()

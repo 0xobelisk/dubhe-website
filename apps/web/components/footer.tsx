@@ -102,6 +102,7 @@ export default function Footer() {
               <Link href="/moderators" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.moderators')}</Link>
               <Link href="/events" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.events')}</Link>
               <Link href="/contact" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.contact')}</Link>
+              <Link href="/media-kit" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.mediaKit')}</Link>
             </div>
           </div>
         </div>

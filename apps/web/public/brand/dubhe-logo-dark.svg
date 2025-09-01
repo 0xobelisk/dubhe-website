@@ -1,0 +1,16 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0)">
+    <path d="M20 5L25 15L35 15L27.5 22.5L30 32.5L20 25L10 32.5L12.5 22.5L5 15L15 15L20 5Z" fill="url(#gradient1)"/>
+    <text x="45" y="26" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">DUBHE</text>
+  </g>
+  <defs>
+    <linearGradient id="gradient1" x1="5" y1="5" x2="35" y2="32.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C1FAD"/>
+      <stop offset="0.5" stop-color="#3B86FF"/>
+      <stop offset="1" stop-color="#4DD2FF"/>
+    </linearGradient>
+    <clipPath id="clip0">
+      <rect width="120" height="40" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>

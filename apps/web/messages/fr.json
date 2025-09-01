@@ -19,6 +19,7 @@
     "moderators": "Modérateurs",
     "events": "Événements",
     "contact": "Contact",
+    "mediaKit": "Kit Médias",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu"
   },
@@ -411,6 +412,7 @@
       "moderators": "Modérateurs",
       "events": "Événements",
       "contact": "Contact",
+      "mediaKit": "Kit Médias",
       "about": "À propos",
       "terms": "Conditions de Service",
       "privacy": "Politique de Confidentialité"
