@@ -870,61 +870,61 @@
       "keyContributions": "Key Contributions"
     },
     "labsList": {
+      "dubheos": {
+        "name": "DubheOS",
+        "focus": "Ecosystem & Toolchain",
+        "description": "Dubhe's global decentralized community contributing ecosystem toolchain and infrastructure. Building developer tools, libraries, and community-driven utilities to empower the entire ecosystem.",
+        "contributions": [
+          "Community governance framework",
+          "Ecosystem toolchain development",
+          "Developer resource coordination",
+          "Cross-chain protocol standards",
+          "Community-driven innovations"
+        ],
+        "status": "Active",
+        "team": "Global Community"
+      },
       "obelisk": {
         "name": "Obelisk Labs",
         "focus": "Core Protocol Development",
-        "description": "Leading the development of Dubhe's core blockchain protocol and Move language infrastructure. Focused on consensus mechanisms, smart contract optimization, and developer tooling.",
+        "description": "Leading the development of Dubhe's core components including Engine, Channel, and OS protocols. Responsible for the fundamental architecture and protocol design of the Dubhe ecosystem.",
         "contributions": [
-          "Dubhe Core Protocol Architecture",
-          "Move Language Runtime Optimization",
-          "Smart Contract Execution Engine",
-          "Developer SDK and Toolchain",
-          "Cross-chain Consensus Mechanisms"
+          "Dubhe Engine development",
+          "Channel protocol implementation",
+          "OS protocol architecture",
+          "Core infrastructure systems",
+          "Protocol optimization"
         ],
         "status": "Active",
-        "team": "12 Engineers"
+        "team": "15 Engineers"
       },
       "cyferio": {
         "name": "Cyferio Labs",
-        "focus": "Privacy & Zero-Knowledge",
-        "description": "Specializing in privacy-preserving technologies, zero-knowledge proofs, and cryptographic protocols for the Dubhe ecosystem. Building the next generation of private smart contracts.",
+        "focus": "Cryptography & Rollups",
+        "description": "Specializing in cryptographic research and rollup technology components. Building advanced cryptographic solutions and scalability infrastructure for the Dubhe ecosystem.",
         "contributions": [
-          "Zero-Knowledge Proof Systems",
-          "Privacy-Preserving Smart Contracts",
-          "Cryptographic Protocol Design",
-          "Confidential Computing Solutions",
-          "Anonymous Transaction Systems"
+          "Zero-knowledge proof systems",
+          "Rollup technology components",
+          "Cryptographic protocol design",
+          "Privacy-preserving solutions",
+          "Scalability optimization"
         ],
         "status": "Active",
-        "team": "8 Researchers"
+        "team": "12 Researchers"
       },
-      "network": {
-        "name": "Dubhe Network Labs",
-        "focus": "Infrastructure & Scaling",
-        "description": "Building high-performance networking solutions, real-time communication protocols, and scalability infrastructure for the Dubhe ecosystem.",
+      "numeron": {
+        "name": "Numeron OS",
+        "focus": "Gaming & Integration",
+        "description": "Building gaming applications and providing technical integration solutions for entertainment. Focused on bringing blockchain gaming and interactive experiences to the Dubhe ecosystem.",
         "contributions": [
-          "High-Performance P2P Networking",
-          "Real-time Channel Communication",
-          "Scalable Node Architecture",
-          "Network Protocol Optimization",
-          "Cross-Chain Bridge Infrastructure"
+          "Game engine integration",
+          "Entertainment platform development",
+          "User experience optimization",
+          "Technical integration solutions",
+          "Gaming ecosystem tools"
         ],
         "status": "Development",
-        "team": "6 Engineers"
-      },
-      "bridge": {
-        "name": "Dubhe Bridge Labs",
-        "focus": "Cross-Chain Technology",
-        "description": "Developing universal bridging protocols and interoperability solutions to connect Dubhe with other blockchain ecosystems seamlessly.",
-        "contributions": [
-          "Universal Bridge Protocol",
-          "Cross-Chain Asset Transfer",
-          "Multi-Chain Governance",
-          "Interoperability Standards",
-          "Bridge Security Mechanisms"
-        ],
-        "status": "Research",
-        "team": "4 Engineers"
+        "team": "10 Engineers"
       }
     },
     "research": {
@@ -934,22 +934,22 @@
         "protocol": {
           "title": "Protocol Development",
           "description": "Core blockchain protocols, consensus mechanisms, and Move language enhancements",
-          "teams": ["Obelisk Labs"]
+          "teams": ["Obelisk Labs", "DubheOS"]
         },
         "infrastructure": {
           "title": "Infrastructure & Scaling",
           "description": "High-performance networking, real-time communication, and scalability solutions",
-          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+          "teams": ["Obelisk Labs", "Cyferio Labs"]
         },
         "crossChain": {
           "title": "Cross-Chain Technology",
           "description": "Interoperability protocols, universal bridging, and multi-chain governance",
-          "teams": ["Dubhe Bridge Labs"]
+          "teams": ["DubheOS", "Cyferio Labs"]
         },
         "privacy": {
           "title": "Privacy & Security",
           "description": "Zero-knowledge proofs, privacy-preserving protocols, and cryptographic research",
-          "teams": ["Cyferio Labs"]
+          "teams": ["Cyferio Labs", "Numeron OS"]
         }
       },
       "contributingLabs": "Contributing Labs:"
@@ -1929,5 +1929,71 @@
   },
   "LocaleSwitcher": {
     "label": "Language"
+  },
+  "organizations": {
+    "section": {
+      "badge": "Our Organizations",
+      "title": "Building the Future Together",
+      "subtitle": "Four specialized organizations working in harmony to advance the Move ecosystem"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "Global Decentralized Community",
+      "description": "Contributing ecosystem toolchain and infrastructure for the Move blockchain ecosystem",
+      "focus": "Community & Ecosystem Development",
+      "contributions": [
+        "Community governance framework",
+        "Ecosystem toolchain development",
+        "Developer resource coordination",
+        "Cross-chain protocol standards"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "Core Protocol Development",
+      "description": "Leading development of Engine, Channel, and OS protocols for the Dubhe ecosystem",
+      "focus": "Protocol Engineering",
+      "contributions": [
+        "Dubhe Engine development",
+        "Channel protocol implementation",
+        "OS protocol architecture",
+        "Core infrastructure systems"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "Cryptography & Rollups",
+      "description": "Specialized in cryptographic research and rollup technology components for enhanced security",
+      "focus": "Cryptography & Privacy",
+      "contributions": [
+        "Zero-knowledge proof systems",
+        "Rollup technology components",
+        "Cryptographic protocol design",
+        "Privacy-preserving solutions"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "Gaming & Integration",
+      "description": "Building gaming applications and providing technical integration solutions for entertainment",
+      "focus": "Gaming Applications",
+      "contributions": [
+        "Game engine integration",
+        "Entertainment platform development",
+        "User experience optimization",
+        "Technical integration services"
+      ]
+    },
+    "status": {
+      "active": "Active",
+      "development": "In Development",
+      "research": "Research Phase"
+    },
+    "labels": {
+      "focus": "Focus Area",
+      "contributions": "Key Contributions",
+      "status": "Status",
+      "website": "Visit Website"
+    }
   }
 }

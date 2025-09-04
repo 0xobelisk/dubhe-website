@@ -1805,6 +1805,72 @@
       "description": "اگر آپ کے پاس ان سروس کی شرائط کے بارے میں کوئی سوال ہے، تو برائے کرم ہماری قانونی ٹیم سے رابطہ کریں۔"
     }
   },
+  "organizations": {
+    "section": {
+      "badge": "ہماری تنظیمات",
+      "title": "مل کر مستقبل تعمیر کرنا",
+      "subtitle": "Move ecosystem کی ترقی کے لیے ہم آہنگی سے کام کرنے والی چار مخصوص تنظیمات"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "Global Decentralized Community",
+      "description": "Move blockchain ecosystem کے لیے ecosystem toolchain اور infrastructure میں تعاون",
+      "focus": "Community & Ecosystem Development",
+      "contributions": [
+        "Community governance framework",
+        "Ecosystem toolchain development",
+        "Developer resource coordination",
+        "Cross-chain protocol standards"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "Core Protocol Development",
+      "description": "Dubhe ecosystem کے لیے Engine، Channel، اور OS protocols کی development میں قیادت",
+      "focus": "Protocol Engineering",
+      "contributions": [
+        "Dubhe Engine development",
+        "Channel protocol implementation",
+        "OS protocol architecture",
+        "Core infrastructure systems"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "Cryptography & Rollups",
+      "description": "Enhanced security کے لیے cryptographic research اور rollup technology components میں مہارت",
+      "focus": "Cryptography & Privacy",
+      "contributions": [
+        "Zero-knowledge proof systems",
+        "Rollup technology components",
+        "Cryptographic protocol design",
+        "Privacy-preserving solutions"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "Gaming & Integration",
+      "description": "Entertainment کے لیے gaming applications تعمیر کرنا اور technical integration solutions فراہم کرنا",
+      "focus": "Gaming Applications",
+      "contributions": [
+        "Game engine integration",
+        "Entertainment platform development",
+        "User experience optimization",
+        "Technical integration services"
+      ]
+    },
+    "status": {
+      "active": "فعال",
+      "development": "ترقی میں",
+      "research": "تحقیقی مرحلہ"
+    },
+    "labels": {
+      "focus": "Focus Area",
+      "contributions": "Key Contributions",
+      "status": "Status",
+      "website": "Website دیکھیں"
+    }
+  },
   "LocaleSwitcher": {
     "label": "زبانیں"
   }

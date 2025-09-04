@@ -1853,5 +1853,71 @@
       "apply": "Lamar Sekarang",
       "contact": "Hubungi Kami"
     }
+  },
+  "organizations": {
+    "section": {
+      "badge": "Organisasi Kami",
+      "title": "Membangun Masa Depan Bersama",
+      "subtitle": "Empat organisasi khusus yang bekerja harmonis untuk memajukan ekosistem Move"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "Komunitas Terdesentralisasi Global",
+      "description": "Berkontribusi pada toolchain ekosistem dan infrastruktur untuk ekosistem blockchain Move",
+      "focus": "Pengembangan Komunitas & Ekosistem",
+      "contributions": [
+        "Kerangka tata kelola komunitas",
+        "Pengembangan toolchain ekosistem",
+        "Koordinasi sumber daya pengembang",
+        "Standar protokol lintas rantai"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "Pengembangan Protokol Inti",
+      "description": "Memimpin pengembangan protokol Engine, Channel, dan OS untuk ekosistem Dubhe",
+      "focus": "Rekayasa Protokol",
+      "contributions": [
+        "Pengembangan Dubhe Engine",
+        "Implementasi protokol Channel",
+        "Arsitektur protokol OS",
+        "Sistem infrastruktur inti"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "Kriptografi & Rollup",
+      "description": "Spesialisasi dalam penelitian kriptografi dan komponen teknologi rollup untuk keamanan yang ditingkatkan",
+      "focus": "Kriptografi & Privasi",
+      "contributions": [
+        "Sistem pembuktian zero-knowledge",
+        "Komponen teknologi rollup",
+        "Desain protokol kriptografi",
+        "Solusi pelestarian privasi"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "Gaming & Integrasi",
+      "description": "Membangun aplikasi gaming dan menyediakan solusi integrasi teknis untuk hiburan",
+      "focus": "Aplikasi Gaming",
+      "contributions": [
+        "Integrasi engine game",
+        "Pengembangan platform hiburan",
+        "Optimisasi pengalaman pengguna",
+        "Layanan integrasi teknis"
+      ]
+    },
+    "status": {
+      "active": "Aktif",
+      "development": "Dalam Pengembangan",
+      "research": "Fase Penelitian"
+    },
+    "labels": {
+      "focus": "Area Fokus",
+      "contributions": "Kontribusi Utama",
+      "status": "Status",
+      "website": "Kunjungi Website"
+    }
   }
 }

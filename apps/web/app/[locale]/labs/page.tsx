@@ -55,6 +55,16 @@ export default function LabsPage() {
 
   const labs = [
     {
+      name: t('labsList.dubheos.name'),
+      logo: "🌍",
+      focus: t('labsList.dubheos.focus'),
+      description: t('labsList.dubheos.description'),
+      website: "https://dubheos.org",
+      contributions: t.raw('labsList.dubheos.contributions') as string[],
+      status: t('labsList.dubheos.status'),
+      team: t('labsList.dubheos.team')
+    },
+    {
       name: t('labsList.obelisk.name'),
       logo: "🏛️",
       focus: t('labsList.obelisk.focus'),
@@ -75,24 +85,14 @@ export default function LabsPage() {
       team: t('labsList.cyferio.team')
     },
     {
-      name: t('labsList.network.name'),
-      logo: "⚡",
-      focus: t('labsList.network.focus'),
-      description: t('labsList.network.description'),
-      website: "https://network.dubhe.io",
-      contributions: t.raw('labsList.network.contributions') as string[],
-      status: t('labsList.network.status'),
-      team: t('labsList.network.team')
-    },
-    {
-      name: t('labsList.bridge.name'),
-      logo: "🌐",
-      focus: t('labsList.bridge.focus'),
-      description: t('labsList.bridge.description'),
-      website: "https://bridge.dubhe.io",
-      contributions: t.raw('labsList.bridge.contributions') as string[],
-      status: t('labsList.bridge.status'),
-      team: t('labsList.bridge.team')
+      name: t('labsList.numeron.name'),
+      logo: "🎮",
+      focus: t('labsList.numeron.focus'),
+      description: t('labsList.numeron.description'),
+      website: "https://numeronos.com",
+      contributions: t.raw('labsList.numeron.contributions') as string[],
+      status: t('labsList.numeron.status'),
+      team: t('labsList.numeron.team')
     }
   ]
 
@@ -249,11 +249,11 @@ export default function LabsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-cyan-400 mb-2">2+</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-2">4</div>
                   <div className="text-gray-300">{t('hero.stats.activeLabs')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">20+</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">50+</div>
                   <div className="text-gray-300">{t('hero.stats.coreEngineers')}</div>
                 </div>
                 <div className="text-center">

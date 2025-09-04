@@ -1750,6 +1750,72 @@
     },
     "openInNewTab": "Abre em nova aba"
   },
+  "organizations": {
+    "section": {
+      "badge": "Nossas Organizações",
+      "title": "Construindo o Futuro Juntos",
+      "subtitle": "Quatro organizações especializadas trabalhando em harmonia para avançar o ecossistema Move"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "Comunidade Descentralizada Global",
+      "description": "Contribuindo com toolchain do ecossistema e infraestrutura para o ecossistema blockchain Move",
+      "focus": "Desenvolvimento de Comunidade e Ecossistema",
+      "contributions": [
+        "Framework de governança da comunidade",
+        "Desenvolvimento de toolchain do ecossistema",
+        "Coordenação de recursos para desenvolvedores",
+        "Padrões de protocolo cross-chain"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "Desenvolvimento de Protocolo Principal",
+      "description": "Liderando o desenvolvimento dos protocolos Engine, Channel e OS para o ecossistema Dubhe",
+      "focus": "Engenharia de Protocolo",
+      "contributions": [
+        "Desenvolvimento Dubhe Engine",
+        "Implementação do protocolo Channel",
+        "Arquitetura do protocolo OS",
+        "Sistemas de infraestrutura principal"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "Criptografia e Rollups",
+      "description": "Especializado em pesquisa criptográfica e componentes de tecnologia rollup para segurança aprimorada",
+      "focus": "Criptografia e Privacidade",
+      "contributions": [
+        "Sistemas de prova de conhecimento zero",
+        "Componentes de tecnologia rollup",
+        "Design de protocolo criptográfico",
+        "Soluções preservadoras de privacidade"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "Jogos e Integração",
+      "description": "Construindo aplicações de jogos e fornecendo soluções de integração técnica para entretenimento",
+      "focus": "Aplicações de Jogos",
+      "contributions": [
+        "Integração de motor de jogos",
+        "Desenvolvimento de plataforma de entretenimento",
+        "Otimização da experiência do usuário",
+        "Serviços de integração técnica"
+      ]
+    },
+    "status": {
+      "active": "Ativo",
+      "development": "Em Desenvolvimento",
+      "research": "Fase de Pesquisa"
+    },
+    "labels": {
+      "focus": "Área de Foco",
+      "contributions": "Principais Contribuições",
+      "status": "Status",
+      "website": "Visitar Website"
+    }
+  },
   "LocaleSwitcher": {
     "label": "Idiomas"
   }

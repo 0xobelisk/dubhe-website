@@ -1875,5 +1875,71 @@
       "title": "Tambayoyi Game da Sharuɗɗa?",
       "description": "Idan kuna da wasu tambayoyi game da waɗannan Sharuɗɗan Sabis, don Allah ku tuntuɓi ƙungiyar doka namu."
     }
+  },
+  "organizations": {
+    "section": {
+      "badge": "Ƙungiyoyin Mu",
+      "title": "Gina Makomar Gaba Tare",
+      "subtitle": "Ƙungiyoyi huɗu na musamman da ke aiki cikin jituwa don ci gaba da yanayin Move ecosystem"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "Global Decentralized Community",
+      "description": "Contributing ecosystem toolchain and infrastructure for the Move blockchain ecosystem",
+      "focus": "Community & Ecosystem Development",
+      "contributions": [
+        "Community governance framework",
+        "Ecosystem toolchain development",
+        "Developer resource coordination",
+        "Cross-chain protocol standards"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "Core Protocol Development",
+      "description": "Leading development of Engine, Channel, and OS protocols for the Dubhe ecosystem",
+      "focus": "Protocol Engineering",
+      "contributions": [
+        "Dubhe Engine development",
+        "Channel protocol implementation",
+        "OS protocol architecture",
+        "Core infrastructure systems"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "Cryptography & Rollups",
+      "description": "Specialized in cryptographic research and rollup technology components for enhanced security",
+      "focus": "Cryptography & Privacy",
+      "contributions": [
+        "Zero-knowledge proof systems",
+        "Rollup technology components",
+        "Cryptographic protocol design",
+        "Privacy-preserving solutions"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "Gaming & Integration",
+      "description": "Building gaming applications and providing technical integration solutions for entertainment",
+      "focus": "Gaming Applications",
+      "contributions": [
+        "Game engine integration",
+        "Entertainment platform development",
+        "User experience optimization",
+        "Technical integration services"
+      ]
+    },
+    "status": {
+      "active": "Mai Aiki",
+      "development": "Cikin Ci Gaba",
+      "research": "Lokacin Bincike"
+    },
+    "labels": {
+      "focus": "Focus Area",
+      "contributions": "Key Contributions",
+      "status": "Status",
+      "website": "Visit Website"
+    }
   }
 }

@@ -1875,5 +1875,71 @@
       "title": "शर्तों के बारे में प्रश्न?",
       "description": "यदि आपके पास इन सेवा की शर्तों के बारे में कोई प्रश्न हैं, तो कृपया हमारी कानूनी टीम से संपर्क करें।"
     }
+  },
+  "organizations": {
+    "section": {
+      "badge": "हमारे संगठन",
+      "title": "मिलकर भविष्य बनाना",
+      "subtitle": "Move ecosystem को आगे बढ़ाने के लिए सद्भावना से काम करने वाले चार विशेषज्ञ संगठन"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "वैश्विक विकेंद्रीकृत समुदाय",
+      "description": "Move blockchain ecosystem के लिए ecosystem toolchain और infrastructure में योगदान",
+      "focus": "समुदाय और पारिस्थितिकी तंत्र विकास",
+      "contributions": [
+        "समुदाय शासन ढाँचा",
+        "Ecosystem toolchain विकास",
+        "डेवलपर संसाधन समन्वय",
+        "Cross-chain protocol मानक"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "मूल प्रोटोकॉल विकास",
+      "description": "Dubhe ecosystem के लिए Engine, Channel, और OS protocols के विकास में नेतृत्व",
+      "focus": "प्रोटोकॉल इंजीनियरिंग",
+      "contributions": [
+        "Dubhe Engine विकास",
+        "Channel protocol implementation",
+        "OS protocol architecture",
+        "मूल infrastructure systems"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "क्रिप्टोग्राफी और Rollups",
+      "description": "बढ़ी हुई सुरक्षा के लिए cryptographic research और rollup technology components में विशेषज्ञता",
+      "focus": "क्रिप्टोग्राफी और गोपनीयता",
+      "contributions": [
+        "Zero-knowledge proof systems",
+        "Rollup technology components",
+        "Cryptographic protocol design",
+        "Privacy-preserving solutions"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "गेमिंग और इंटीग्रेशन",
+      "description": "मनोरंजन के लिए gaming applications बनाना और technical integration solutions प्रदान करना",
+      "focus": "Gaming Applications",
+      "contributions": [
+        "Game engine integration",
+        "Entertainment platform development",
+        "User experience optimization",
+        "Technical integration services"
+      ]
+    },
+    "status": {
+      "active": "सक्रिय",
+      "development": "विकास में",
+      "research": "शोध चरण"
+    },
+    "labels": {
+      "focus": "Focus Area",
+      "contributions": "Key Contributions",
+      "status": "Status",
+      "website": "Website देखें"
+    }
   }
 }

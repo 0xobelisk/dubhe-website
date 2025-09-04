@@ -1798,5 +1798,71 @@
       "title": "Questions sur les Conditions?",
       "description": "Si vous avez des questions sur ces Conditions de Service, veuillez contacter notre équipe juridique."
     }
+  },
+  "organizations": {
+    "section": {
+      "badge": "Nos Organisations",
+      "title": "Construire l'Avenir Ensemble",
+      "subtitle": "Quatre organisations spécialisées travaillant en harmonie pour faire avancer l'écosystème Move"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "Communauté Décentralisée Mondiale",
+      "description": "Contribution de la chaîne d'outils écosystémique et de l'infrastructure pour l'écosystème blockchain Move",
+      "focus": "Développement Communautaire et Écosystémique",
+      "contributions": [
+        "Cadre de gouvernance communautaire",
+        "Développement de chaîne d'outils écosystémique",
+        "Coordination des ressources développeurs",
+        "Standards de protocoles inter-chaînes"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "Développement de Protocole Central",
+      "description": "Leader du développement des protocoles Engine, Channel et OS pour l'écosystème Dubhe",
+      "focus": "Ingénierie de Protocole",
+      "contributions": [
+        "Développement Dubhe Engine",
+        "Implémentation du protocole Channel",
+        "Architecture du protocole OS",
+        "Systèmes d'infrastructure centrale"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "Cryptographie et Rollups",
+      "description": "Spécialisé dans la recherche cryptographique et les composants de technologie rollup pour une sécurité renforcée",
+      "focus": "Cryptographie et Confidentialité",
+      "contributions": [
+        "Systèmes de preuve à connaissance nulle",
+        "Composants de technologie rollup",
+        "Conception de protocoles cryptographiques",
+        "Solutions préservant la confidentialité"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "Jeux et Intégration",
+      "description": "Construction d'applications de jeux et fourniture de solutions d'intégration technique pour le divertissement",
+      "focus": "Applications de Jeux",
+      "contributions": [
+        "Intégration de moteur de jeu",
+        "Développement de plateforme de divertissement",
+        "Optimisation de l'expérience utilisateur",
+        "Services d'intégration technique"
+      ]
+    },
+    "status": {
+      "active": "Actif",
+      "development": "En Développement",
+      "research": "Phase de Recherche"
+    },
+    "labels": {
+      "focus": "Domaine de Focus",
+      "contributions": "Contributions Clés",
+      "status": "Statut",
+      "website": "Visiter le Site Web"
+    }
   }
 }

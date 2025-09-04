@@ -64,13 +64,13 @@ export default function ContactLayout({
                 {
                   "@type": "ContactPoint",
                   "contactType": "Customer Service",
-                  "email": "hello@dubhe.network",
+                  "email": "hello@obelisk.build",
                   "availableLanguage": ["English"]
                 },
                 {
                   "@type": "ContactPoint", 
                   "contactType": "Business Development",
-                  "email": "business@dubhe.network",
+                  "email": "dubhe@obelisk.build",
                   "availableLanguage": ["English"]
                 }
               ]

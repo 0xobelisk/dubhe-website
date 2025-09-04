@@ -1737,6 +1737,72 @@
     },
     "openInNewTab": "在新分頁中開啟"
   },
+  "organizations": {
+    "section": {
+      "badge": "我們的組織",
+      "title": "攜手共建未來",
+      "subtitle": "四個專業組織和諧協作，推動Move生態系統的發展"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "全球去中心化社群",
+      "description": "為Move區塊鏈生態系統貢獻生態系統工具鏈和基礎設施",
+      "focus": "社群與生態系統開發",
+      "contributions": [
+        "社群治理框架",
+        "生態系統工具鏈開發",
+        "開發者資源協調",
+        "跨鏈協議標準"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "核心協議開發",
+      "description": "領導Dubhe生態系統的Engine、Channel和OS協議開發",
+      "focus": "協議工程",
+      "contributions": [
+        "Dubhe Engine開發",
+        "Channel協議實作",
+        "OS協議架構",
+        "核心基礎設施系統"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "密碼學與Rollups",
+      "description": "專精於密碼學研究和rollup技術組件，以增強安全性",
+      "focus": "密碼學與隱私",
+      "contributions": [
+        "零知識證明系統",
+        "Rollup技術組件",
+        "密碼學協議設計",
+        "隱私保護解決方案"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "遊戲與整合",
+      "description": "建構遊戲應用程式並為娛樂產業提供技術整合解決方案",
+      "focus": "遊戲應用程式",
+      "contributions": [
+        "遊戲引擎整合",
+        "娛樂平台開發",
+        "用戶體驗優化",
+        "技術整合服務"
+      ]
+    },
+    "status": {
+      "active": "活躍",
+      "development": "開發中",
+      "research": "研究階段"
+    },
+    "labels": {
+      "focus": "專注領域",
+      "contributions": "主要貢獻",
+      "status": "狀態",
+      "website": "造訪網站"
+    }
+  },
   "LocaleSwitcher": {
     "label": "語言"
   }

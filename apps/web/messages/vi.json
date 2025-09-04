@@ -1805,6 +1805,72 @@
       "description": "Nếu bạn có bất kỳ câu hỏi nào về các Điều Khoản Dịch Vụ này, vui lòng liên hệ với đội ngũ pháp lý của chúng tôi."
     }
   },
+  "organizations": {
+    "section": {
+      "badge": "Các Tổ Chức Của Chúng Tôi",
+      "title": "Cùng Xây Dựng Tương Lai",
+      "subtitle": "Bốn tổ chức chuyên môn làm việc hài hòa để thúc đẩy hệ sinh thái Move"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "Cộng Đồng Phi Tập Trung Toàn Cầu",
+      "description": "Đóng góp chuỗi công cụ hệ sinh thái và cơ sở hạ tầng cho hệ sinh thái blockchain Move",
+      "focus": "Phát Triển Cộng Đồng & Hệ Sinh Thái",
+      "contributions": [
+        "Khung quản trị cộng đồng",
+        "Phát triển chuỗi công cụ hệ sinh thái",
+        "Điều phối tài nguyên nhà phát triển",
+        "Tiêu chuẩn giao thức chuỗi chéo"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "Phát Triển Giao Thức Cốt Lõi",
+      "description": "Dẫn đầu phát triển các giao thức Engine, Channel và OS cho hệ sinh thái Dubhe",
+      "focus": "Kỹ Thuật Giao Thức",
+      "contributions": [
+        "Phát triển Dubhe Engine",
+        "Triển khai giao thức Channel",
+        "Kiến trúc giao thức OS",
+        "Hệ thống cơ sở hạ tầng cốt lõi"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "Mật Mã Học & Rollups",
+      "description": "Chuyên về nghiên cứu mật mã và các thành phần công nghệ rollup để tăng cường bảo mật",
+      "focus": "Mật Mã Học & Quyền Riêng Tư",
+      "contributions": [
+        "Hệ thống bằng chứng không tri thức",
+        "Các thành phần công nghệ rollup",
+        "Thiết kế giao thức mật mã",
+        "Giải pháp bảo vệ quyền riêng tư"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "Game & Tích Hợp",
+      "description": "Xây dựng ứng dụng game và cung cấp giải pháp tích hợp kỹ thuật cho giải trí",
+      "focus": "Ứng Dụng Game",
+      "contributions": [
+        "Tích hợp engine game",
+        "Phát triển nền tảng giải trí",
+        "Tối ưu trải nghiệm người dùng",
+        "Dịch vụ tích hợp kỹ thuật"
+      ]
+    },
+    "status": {
+      "active": "Hoạt Động",
+      "development": "Đang Phát Triển",
+      "research": "Giai Đoạn Nghiên Cứu"
+    },
+    "labels": {
+      "focus": "Lĩnh Vực Tập Trung",
+      "contributions": "Đóng Góp Chính",
+      "status": "Trạng Thái",
+      "website": "Thăm Website"
+    }
+  },
   "LocaleSwitcher": {
     "label": "Ngôn ngữ"
   }

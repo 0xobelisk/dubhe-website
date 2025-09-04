@@ -1851,6 +1851,72 @@
     },
     "openInNewTab": "新しいタブで開く"
   },
+  "organizations": {
+    "section": {
+      "badge": "私たちの組織",
+      "title": "共に未来を築く",
+      "subtitle": "Moveエコシステムの発展のために調和して働く4つの専門組織"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "グローバル分散コミュニティ",
+      "description": "Moveブロックチェーンエコシステム向けのエコシステムツールチェーンとインフラストラクチャへの貢献",
+      "focus": "コミュニティ＆エコシステム開発",
+      "contributions": [
+        "コミュニティガバナンスフレームワーク",
+        "エコシステムツールチェーン開発",
+        "開発者リソース調整",
+        "クロスチェーンプロトコル標準"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "コアプロトコル開発",
+      "description": "DubheエコシステムのためのEngine、Channel、OSプロトコルの開発をリード",
+      "focus": "プロトコルエンジニアリング",
+      "contributions": [
+        "Dubhe Engine開発",
+        "Channelプロトコル実装",
+        "OSプロトコルアーキテクチャ",
+        "コアインフラストラクチャシステム"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "暗号学とロールアップ",
+      "description": "セキュリティ強化のための暗号学研究とロールアップ技術コンポーネントに特化",
+      "focus": "暗号学＆プライバシー",
+      "contributions": [
+        "ゼロ知識証明システム",
+        "ロールアップ技術コンポーネント",
+        "暗号学プロトコル設計",
+        "プライバシー保護ソリューション"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "ゲーミング＆統合",
+      "description": "エンターテイメント向けのゲームアプリケーション構築と技術統合ソリューション提供",
+      "focus": "ゲームアプリケーション",
+      "contributions": [
+        "ゲームエンジン統合",
+        "エンターテイメントプラットフォーム開発",
+        "ユーザーエクスペリエンス最適化",
+        "技術統合サービス"
+      ]
+    },
+    "status": {
+      "active": "アクティブ",
+      "development": "開発中",
+      "research": "研究段階"
+    },
+    "labels": {
+      "focus": "フォーカスエリア",
+      "contributions": "主要な貢献",
+      "status": "ステータス",
+      "website": "ウェブサイトを訪問"
+    }
+  },
   "LocaleSwitcher": {
     "label": "言語"
   }

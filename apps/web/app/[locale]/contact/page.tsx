@@ -97,14 +97,14 @@ export default function ContactPage() {
     {
       icon: <Mail className="w-6 h-6" />,
       title: t('info.email.title'),
-      content: "hello@dubhe.network",
-      link: "mailto:hello@dubhe.network"
+      content: "hello@obelisk.build",
+      link: "mailto:hello@obelisk.build"
     },
     {
       icon: <MessageSquare className="w-6 h-6" />,
       title: t('info.business.title'), 
-      content: "business@dubhe.network",
-      link: "mailto:business@dubhe.network"
+      content: "dubhe@obelisk.build",
+      link: "mailto:dubhe@obelisk.build"
     },
     {
       icon: <MapPin className="w-6 h-6" />,

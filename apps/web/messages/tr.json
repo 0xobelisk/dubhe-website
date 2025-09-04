@@ -1805,6 +1805,72 @@
       "description": "Bu Hizmet Şartları hakkında herhangi bir sorunuz varsa, lütfen hukuk ekibimizle iletişime geçin."
     }
   },
+  "organizations": {
+    "section": {
+      "badge": "Organizasyonlarımız",
+      "title": "Geleceği Birlikte İnşa Ediyoruz",
+      "subtitle": "Move ekosistemini geliştirmek için uyum içinde çalışan dört özel organizasyon"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "Küresel Merkezi Olmayan Topluluk",
+      "description": "Move blockchain ekosistemi için ekosistemin araç zinciri ve altyapısına katkıda bulunma",
+      "focus": "Topluluk ve Ekosistem Geliştirme",
+      "contributions": [
+        "Topluluk yönetişim çerçevesi",
+        "Ekosistem araç zinciri geliştirme",
+        "Geliştirici kaynak koordinasyonu",
+        "Çapraz zincir protokol standartları"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "Ana Protokol Geliştirme",
+      "description": "Dubhe ekosistemi için Engine, Channel ve OS protokollerinin geliştirilmesine öncülük etme",
+      "focus": "Protokol Mühendisliği",
+      "contributions": [
+        "Dubhe Engine geliştirme",
+        "Channel protokol implementasyonu",
+        "OS protokol mimarisi",
+        "Ana altyapı sistemleri"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "Kriptografi ve Rolluplar",
+      "description": "Gelişmiş güvenlik için kriptografik araştırma ve rollup teknolojisi bileşenlerinde uzmanlaşma",
+      "focus": "Kriptografi ve Gizlilik",
+      "contributions": [
+        "Sıfır bilgi kanıt sistemleri",
+        "Rollup teknolojisi bileşenleri",
+        "Kriptografik protokol tasarımı",
+        "Gizlilik koruyucu çözümler"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "Oyun ve Entegrasyon",
+      "description": "Eğlence için oyun uygulamaları geliştirme ve teknik entegrasyon çözümleri sağlama",
+      "focus": "Oyun Uygulamaları",
+      "contributions": [
+        "Oyun motoru entegrasyonu",
+        "Eğlence platformu geliştirme",
+        "Kullanıcı deneyimi optimizasyonu",
+        "Teknik entegrasyon hizmetleri"
+      ]
+    },
+    "status": {
+      "active": "Aktif",
+      "development": "Geliştirme Aşamasında",
+      "research": "Araştırma Aşaması"
+    },
+    "labels": {
+      "focus": "Odak Alanı",
+      "contributions": "Temel Katkılar",
+      "status": "Durum",
+      "website": "Web Sitesini Ziyaret Et"
+    }
+  },
   "LocaleSwitcher": {
     "label": "Diller"
   }

@@ -1750,6 +1750,72 @@
     },
     "openInNewTab": "새 탭에서 열기"
   },
+  "organizations": {
+    "section": {
+      "badge": "우리의 조직",
+      "title": "함께 미래를 만들어가다",
+      "subtitle": "Move 생태계 발전을 위해 조화롭게 협력하는 네 개의 전문 조직"
+    },
+    "dubheos": {
+      "name": "DubheOS",
+      "tagline": "글로벌 탈중앙화 커뮤니티",
+      "description": "Move 블록체인 생태계를 위한 생태계 도구체인 및 인프라 기여",
+      "focus": "커뮤니티 및 생태계 개발",
+      "contributions": [
+        "커뮤니티 거버넌스 프레임워크",
+        "생태계 도구체인 개발",
+        "개발자 리소스 조정",
+        "크로스체인 프로토콜 표준"
+      ]
+    },
+    "obelisk": {
+      "name": "Obelisk Labs",
+      "tagline": "코어 프로토콜 개발",
+      "description": "Dubhe 생태계를 위한 엔진, 채널, OS 프로토콜 개발을 주도",
+      "focus": "프로토콜 엔지니어링",
+      "contributions": [
+        "Dubhe Engine 개발",
+        "Channel 프로토콜 구현",
+        "OS 프로토콜 아키텍처",
+        "코어 인프라 시스템"
+      ]
+    },
+    "cyferio": {
+      "name": "Cyferio Labs",
+      "tagline": "암호학 및 롤업",
+      "description": "강화된 보안을 위한 암호학 연구 및 롤업 기술 구성 요소에 특화",
+      "focus": "암호학 및 프라이버시",
+      "contributions": [
+        "영지식 증명 시스템",
+        "롤업 기술 구성 요소",
+        "암호학 프로토콜 설계",
+        "프라이버시 보호 솔루션"
+      ]
+    },
+    "numeron": {
+      "name": "Numeron OS",
+      "tagline": "게이밍 및 통합",
+      "description": "엔터테인먼트를 위한 게임 애플리케이션 구축 및 기술 통합 솔루션 제공",
+      "focus": "게임 애플리케이션",
+      "contributions": [
+        "게임 엔진 통합",
+        "엔터테인먼트 플랫폼 개발",
+        "사용자 경험 최적화",
+        "기술 통합 서비스"
+      ]
+    },
+    "status": {
+      "active": "활성",
+      "development": "개발 중",
+      "research": "연구 단계"
+    },
+    "labels": {
+      "focus": "집중 영역",
+      "contributions": "주요 기여",
+      "status": "상태",
+      "website": "웹사이트 방문"
+    }
+  },
   "LocaleSwitcher": {
     "label": "언어"
   }
