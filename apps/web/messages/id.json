@@ -19,6 +19,7 @@
     "moderators": "Moderator",
     "events": "Acara",
     "contact": "Kontak",
+    "mediaKit": "Kit Media",
     "openMenu": "Buka menu",
     "closeMenu": "Tutup menu"
   },
@@ -603,6 +604,7 @@
       "moderators": "Moderator",
       "events": "Acara",
       "contact": "Kontak",
+      "mediaKit": "Kit Media",
       "about": "Tentang",
       "terms": "Syarat Layanan",
       "privacy": "Kebijakan Privasi"
@@ -1918,6 +1920,116 @@
       "contributions": "Kontribusi Utama",
       "status": "Status",
       "website": "Kunjungi Website"
+    }
+  },
+  "mediaKit": {
+    "hero": {
+      "badge": "Sumber Daya Merek",
+      "title1": "Dubhe",
+      "title2": "Kit Media",
+      "subtitle": "Unduh aset merek, pedoman, dan sumber daya kami untuk kemitraan, liputan media, dan konten komunitas.",
+      "downloadPack": "Unduh Paket Merek"
+    },
+    "logo": {
+      "title": "Logo & Aset Merek",
+      "subtitle": "Logo kami mewakili inovasi dan keandalan platform blockchain Dubhe. Gunakan aset ini untuk menjaga konsistensi merek.",
+      "availableFormats": "Format tersedia",
+      "download": "Unduh",
+      "dos": {
+        "title": "Pedoman Penggunaan Logo",
+        "item1": "Gunakan file logo asli tanpa modifikasi",
+        "item2": "Pertahankan ruang bersih minimum di sekitar logo",
+        "item3": "Gunakan pada latar belakang kontras tinggi",
+        "item4": "Pastikan penskalaan dan proporsi yang tepat"
+      },
+      "donts": {
+        "title": "Pembatasan Penggunaan Logo",
+        "hide": "Sembunyikan pembatasan",
+        "show": "Tampilkan pembatasan",
+        "item1": "Jangan meregangkan, mendistorsi, atau memodifikasi logo",
+        "item2": "Jangan gunakan versi resolusi rendah atau berpiksel",
+        "item3": "Jangan tempatkan pada latar belakang yang sibuk atau kontras rendah",
+        "item4": "Jangan buat ulang logo dengan font yang berbeda"
+      }
+    },
+    "clearspace": {
+      "title": "Pedoman Ruang Bersih",
+      "subtitle": "Pertahankan jarak yang tepat di sekitar logo Dubhe untuk memastikan dampak visual dan pengenalan merek.",
+      "minimum": "Ruang Bersih Minimum",
+      "description": "Logo Dubhe harus selalu dikelilingi oleh ruang bersih untuk menjaga integritas visual dan dampaknya. Ruang bersih ini berdasarkan tinggi huruf 'D' pada logo.",
+      "specifications": "Spesifikasi Teknis",
+      "spec1": "Ruang bersih minimum: 1x tinggi logo di semua sisi",
+      "spec2": "Untuk penggunaan digital: tinggi minimum 32px disarankan",
+      "spec3": "Untuk penggunaan cetak: tinggi minimum 0,5 inci disarankan"
+    },
+    "symbol": {
+      "title": "Simbol & Tanda",
+      "subtitle": "Simbol Dubhe dapat digunakan secara independen ketika logo lengkap tidak sesuai atau ruang terbatas.",
+      "meaning": {
+        "title": "Makna Simbol",
+        "description": "Simbol Dubhe mewakili konstelasi yang memandu navigasi, melambangkan peran kami dalam memandu pengembang melalui ekosistem blockchain dengan alat yang andal dan inovatif."
+      },
+      "usage": {
+        "standalone": "Penggunaan Mandiri",
+        "standaloneDesc": "Gunakan ketika ruang terbatas atau pengenalan merek telah terbentuk",
+        "app": "Ikon Aplikasi",
+        "appDesc": "Sempurna untuk aplikasi mobile, favicon, dan aplikasi format kecil"
+      }
+    },
+    "partnership": {
+      "title": "Pedoman Kemitraan",
+      "subtitle": "Pedoman untuk co-branding dan materi kemitraan untuk memastikan presentasi merek yang konsisten.",
+      "cobranding": "Contoh Co-branding",
+      "partnerLogo": "Logo Partner",
+      "spacing": {
+        "title": "Aturan Jarak Logo",
+        "rule1": "Pertahankan bobot visual yang sama antar logo",
+        "rule2": "Gunakan garis pemisah atau ruang putih yang memadai",
+        "rule3": "Sejajarkan logo pada baseline yang sama"
+      },
+      "approval": {
+        "title": "Persetujuan Kemitraan",
+        "description": "Semua materi kemitraan dan co-branding memerlukan persetujuan dari tim Dubhe sebelum publikasi.",
+        "contact": "Kontak untuk Persetujuan"
+      }
+    },
+    "colors": {
+      "title": "Palet Warna",
+      "subtitle": "Sistem warna kami menciptakan pengalaman merek yang kohesif dan dapat diakses di semua titik sentuh.",
+      "base": {
+        "title": "Warna Dasar"
+      },
+      "primary": {
+        "title": "Warna Merek Utama"
+      }
+    },
+    "typography": {
+      "title": "Tipografi",
+      "subtitle": "Sistem tipografi kami memastikan komunikasi yang konsisten dan dapat dibaca di semua materi merek.",
+      "primary": {
+        "title": "Typeface Utama",
+        "description": "Geist Sans adalah typeface utama kami untuk semua komunikasi merek"
+      },
+      "mono": {
+        "title": "Typeface Monospace",
+        "description": "Geist Mono digunakan untuk kode, dokumentasi teknis, dan konten pengembang"
+      },
+      "scale": {
+        "title": "Skala Tipografi"
+      }
+    },
+    "download": {
+      "title": "Unduh Sumber Daya",
+      "subtitle": "Akses semua aset merek, pedoman, dan sumber daya dalam satu paket yang mudah.",
+      "pack": {
+        "title": "Paket Merek Lengkap",
+        "description": "Termasuk logo, palet warna, pedoman tipografi, dan contoh penggunaan dalam berbagai format.",
+        "button": "Unduh Paket Merek"
+      },
+      "contact": {
+        "description": "Butuh aset kustom atau ada pertanyaan?",
+        "button": "Hubungi Tim Kami"
+      }
     }
   }
 }

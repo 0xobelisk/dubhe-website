@@ -19,6 +19,7 @@
     "moderators": "Masu Gudanarwa",
     "events": "Abubuwan da suka faru",
     "contact": "Tuntuɓar",
+    "mediaKit": "Kit ɗin Kafofin Yada Labarai",
     "openMenu": "Bude menu",
     "closeMenu": "Rufe menu"
   },
@@ -437,6 +438,7 @@
       "moderators": "Masu Gudanarwa",
       "events": "Abubuwan da suka faru",
       "contact": "Tuntuɓar",
+      "mediaKit": "Kit ɗin Kafofin Yada Labarai",
       "about": "Game da",
       "terms": "Sharuɗɗan Sabis",
       "privacy": "Manufar Sirri"
@@ -1940,6 +1942,116 @@
       "contributions": "Key Contributions",
       "status": "Status",
       "website": "Visit Website"
+    }
+  },
+  "mediaKit": {
+    "hero": {
+      "badge": "Albarkatun Alama",
+      "title1": "Dubhe",
+      "title2": "Kit ɗin Kafofin Yada Labarai",
+      "subtitle": "Sauke albarkatun alamar mu, jagororin, da kayayyakin don haɗin gwiwa, ɗaukar labarin kafofin yada labarai, da abun cikin al'umma.",
+      "downloadPack": "Sauke Fakitin Alama"
+    },
+    "logo": {
+      "title": "Tambari & Albarkatun Alama",
+      "subtitle": "Tambarin mu yana wakiltar kirkire-kirkire da amintacciyar dandamalin Dubhe blockchain. Yi amfani da waɗannan albarkatu don kula da daidaiton alama.",
+      "availableFormats": "Nau'ikan da ake samu",
+      "download": "Sauke",
+      "dos": {
+        "title": "Jagororin Amfani da Tambari",
+        "item1": "Yi amfani da fayilolin tambari na asali ba tare da gyarawa ba",
+        "item2": "Kula da mafi ƙarancin sararin da ke kewaye da tambari",
+        "item3": "Yi amfani akan bangon da ke da babban bambanci",
+        "item4": "Tabbatar da daidaitaccen girma da daidaito"
+      },
+      "donts": {
+        "title": "Ƙuntataccen Amfani da Tambari",
+        "hide": "Ɓoye ƙuntatawa",
+        "show": "Nuna ƙuntatawa",
+        "item1": "Kada ku miƙe, gurbata, ko canza tambari",
+        "item2": "Kada ku yi amfani da ƙarancin ƙarfi ko nau'ikan da suke da pixels",
+        "item3": "Kada ku sanya akan bangon da ke da shagaltu ko ƙarancin bambanci",
+        "item4": "Kada ku sake gina tambari da nau'ikan rubutu daban-daban"
+      }
+    },
+    "clearspace": {
+      "title": "Jagororin Sararin Sharewa",
+      "subtitle": "Kula da daidaitaccen tazarar kewaye da tambarin Dubhe don tabbatar da tasirin gani da sanin alama.",
+      "minimum": "Mafi Ƙarancin Sararin Sharewa",
+      "description": "Tambarin Dubhe ya kamata ko da yaushe ya kasance an kewaye shi da sararin sharewa don kula da amintaccen gani da tasirinsa. Wannan sararin sharewa yana dogara kan tsayin harafin 'D' a cikin tambari.",
+      "specifications": "Ƙayyadaddun Fasaha",
+      "spec1": "Mafi ƙarancin sararin sharewa: 1x tsayin tambari a kowane gefe",
+      "spec2": "Don amfani na dijital: ana ba da shawarar mafi ƙarancin tsayin 32px",
+      "spec3": "Don amfani na bugawa: ana ba da shawarar mafi ƙarancin tsayin inci 0.5"
+    },
+    "symbol": {
+      "title": "Alama & Tambari",
+      "subtitle": "Ana iya amfani da alamar Dubhe ita kaɗai lokacin da cikakken tambari bai dace ba ko sarari ya iyakance.",
+      "meaning": {
+        "title": "Ma'anar Alama",
+        "description": "Alamar Dubhe tana wakiltar ƙungiyar taurari da ke jagorantar kewayawa, tana nuna rawar da muke takawa wajen jagorantar masu haɓakawa ta cikin tsarin blockchain da ingantattun da kuma sabbin kayayyaki."
+      },
+      "usage": {
+        "standalone": "Amfani da kansa",
+        "standaloneDesc": "Yi amfani lokacin da sarari ya iyakance ko sanin alama ya kafa",
+        "app": "Guntuwar App",
+        "appDesc": "Mai kyau don aikace-aikacen wayar hannu, favicons, da aikace-aikacen ƙaramin tsari"
+      }
+    },
+    "partnership": {
+      "title": "Jagororin Haɗin Gwiwa",
+      "subtitle": "Jagororin don haɗin alamomin da kayan aiki na haɗin gwiwa don tabbatar da daidaitaccen gabatar da alama.",
+      "cobranding": "Misalin Haɗin Alamomin",
+      "partnerLogo": "Tambarin Abokin Haɗin Gwiwa",
+      "spacing": {
+        "title": "Ka'idojin Tazarar Tambari",
+        "rule1": "Kula da daidaitaccen nauyin gani tsakanin tambarori",
+        "rule2": "Yi amfani da layin raba ko isasshen farin sarari",
+        "rule3": "Daidaita tambarori akan layin tushe iri ɗaya"
+      },
+      "approval": {
+        "title": "Amincewar Haɗin Gwiwa",
+        "description": "Duk kayan aiki na haɗin gwiwa da haɗin alamomin suna buƙatar amincewa daga ƙungiyar Dubhe kafin bugawa.",
+        "contact": "Tuntuɓe don Amincewa"
+      }
+    },
+    "colors": {
+      "title": "Palette na Launuka",
+      "subtitle": "Tsarin launukanmu yana ƙirƙirar gogewar alama mai haɗin kai da mai sauƙin isa a duk wuraren taɓawa.",
+      "base": {
+        "title": "Launukan Tushe"
+      },
+      "primary": {
+        "title": "Launukan Alama na Farko"
+      }
+    },
+    "typography": {
+      "title": "Typography",
+      "subtitle": "Tsarin rubutun mu yana tabbatar da daidaitaccen da karatu sadarwa a duk kayan alama.",
+      "primary": {
+        "title": "Nau'in Rubutu na Farko",
+        "description": "Geist Sans shine nau'in rubutun mu na farko don duk sadarwar alama"
+      },
+      "mono": {
+        "title": "Nau'in Rubutu na Monospace",
+        "description": "Ana amfani da Geist Mono don lambar, takaddun fasaha, da abun cikin masu haɓakawa"
+      },
+      "scale": {
+        "title": "Ma'aunin Typography"
+      }
+    },
+    "download": {
+      "title": "Sauke Albarkatu",
+      "subtitle": "Samun damin duk albarkatun alama, jagororin, da kayayyaki a cikin fakiti ɗaya mai sauƙi.",
+      "pack": {
+        "title": "Cikakken Fakitin Alama",
+        "description": "Ya haɗa da tambarori, palette na launuka, jagororin typography, da misalan amfani a cikin nau'ikan da yawa.",
+        "button": "Sauke Fakitin Alama"
+      },
+      "contact": {
+        "description": "Kuna buƙatar albarkatun keɓantacce ko kuna da tambayoyi?",
+        "button": "Tuntuɓi Ƙungiyarmu"
+      }
     }
   }
 }

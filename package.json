@@ -19,7 +19,10 @@
     "test:performance:local": "lighthouse http://localhost:3000 --output=html --output-path=./lighthouse-report.html",
     "test:all": "pnpm test:unit",
     "test:all:with-e2e": "pnpm test:unit && pnpm test:e2e:headless",
-    "test:e2e:headless": "playwright test --project=chromium --reporter=line"
+    "test:e2e:headless": "playwright test --project=chromium --reporter=line",
+    "test:media-kit-i18n": "vitest run apps/web/__tests__/media-kit-*.test.*",
+    "test:media-kit-e2e": "playwright test e2e/media-kit-i18n.spec.ts",
+    "validate:media-kit-i18n": "node scripts/validate-media-kit-i18n.js"
   },
   "devDependencies": {
     "@lhci/cli": "^0.15.1",
