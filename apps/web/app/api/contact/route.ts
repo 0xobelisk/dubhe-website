@@ -400,7 +400,7 @@ export async function POST(req: NextRequest) {
                                   <span style="font-weight: bold;">While you wait, feel free to explore:</span>
                                 </p>
                                 <p style="mso-line-height-rule:exactly; font-size:15px; line-height:125%">
-                                  • Our <a href="https://dubhe-docs.obelisk.build/dubhe" style="color:#6366f1" target="_blank"><strong>Documentation</strong></a> to learn more about Dubhe<br>
+                                  • Our <a href="https://dubhe.mintlify.app" style="color:#6366f1" target="_blank"><strong>Documentation</strong></a> to learn more about Dubhe<br>
                                   • Follow our progress on <a href="https://github.com/0xobelisk/dubhe" style="color:#6366f1" target="_blank"><strong>GitHub</strong></a>
                                 </p>
                                 <p style="mso-line-height-rule:exactly; line-height:125%">&nbsp;</p>

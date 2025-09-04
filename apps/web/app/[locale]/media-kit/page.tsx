@@ -77,8 +77,8 @@ export default function MediaKitPage() {
     {
       name: "Primary Logo (Dark)",
       formats: ["SVG", "PNG"], 
-      path: "/logo/dark.png",
-      preview: "/logo/dark.png"
+      path: "/logo/white.png",
+      preview: "/logo/white.png"
     },
     {
       name: "Symbol Mark",
@@ -241,13 +241,17 @@ export default function MediaKitPage() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <Card variant="glass" className="text-center">
-                <div className="bg-white/5 rounded-lg p-8 mb-4">
+                <div className="bg-white/5 rounded-lg p-8 mb-4 relative h-20 flex items-center justify-center">
                   <Image
                     src={asset.preview}
                     alt={asset.name}
-                    width={200}
-                    height={60}
-                    className="mx-auto object-contain"
+                    fill
+                    className="object-contain"
+                    priority={index < 2}
+                    onError={(e) => {
+                      console.error('Image failed to load:', asset.preview)
+                      e.currentTarget.style.display = 'none'
+                    }}
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{asset.name}</h3>
@@ -330,7 +334,7 @@ export default function MediaKitPage() {
                     src="/logo/light.png"
                     alt="Logo with clearspace"
                     width={160}
-                    height={48}
+                    height={38}
                     className="object-contain"
                   />
                 </div>
@@ -379,13 +383,12 @@ export default function MediaKitPage() {
             className="lg:col-span-1"
           >
             <Card variant="glass" className="text-center">
-              <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-lg p-12">
+              <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-lg p-12 relative h-32 flex items-center justify-center">
                 <Image
                   src="/mediakit/dubhe/png/a.png"
                   alt="Dubhe Symbol"
-                  width={120}
-                  height={120}
-                  className="mx-auto object-contain"
+                  fill
+                  className="object-contain"
                 />
               </div>
             </Card>
@@ -440,7 +443,7 @@ export default function MediaKitPage() {
                     src="/logo/light.png"
                     alt="Dubhe Logo"
                     width={120}
-                    height={36}
+                    height={28}
                     className="object-contain"
                   />
                   <div className="w-px h-12 bg-gray-600"></div>

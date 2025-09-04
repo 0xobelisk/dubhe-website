@@ -307,7 +307,7 @@ export const apiDocumentation = {
   ],
   externalDocs: {
     description: 'Find more info about Dubhe',
-    url: 'https://dubhe-docs.obelisk.build/dubhe'
+    url: 'https://dubhe.mintlify.app'
   }
 }
 

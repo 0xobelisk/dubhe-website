@@ -403,7 +403,7 @@ export default function ContactPage() {
                     → {t('quickLinks.ambassador')}
                   </Link>
                   <a 
-                    href="https://dubhe-docs.obelisk.build/dubhe" 
+                    href="https://dubhe.mintlify.app" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-gray-300 hover:text-green-400 transition-colors"

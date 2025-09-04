@@ -19,6 +19,7 @@
     "moderators": "版主",
     "events": "活動",
     "contact": "聯絡",
+    "mediaKit": "媒體素材包",
     "openMenu": "打開選單",
     "closeMenu": "關閉選單"
   },
@@ -411,6 +412,7 @@
       "moderators": "版主",
       "events": "活動",
       "contact": "聯絡",
+      "mediaKit": "媒體素材包",
       "about": "關於",
       "terms": "服務條款",
       "privacy": "隱私政策"
@@ -1805,5 +1807,115 @@
   },
   "LocaleSwitcher": {
     "label": "語言"
+  },
+  "mediaKit": {
+    "hero": {
+      "badge": "品牌資源",
+      "title1": "Dubhe",
+      "title2": "媒體素材包",
+      "subtitle": "下載我們的品牌資產、指南和資源，用於合作夥伴關係、媒體報導和社群內容。",
+      "downloadPack": "下載品牌包"
+    },
+    "logo": {
+      "title": "標誌與品牌資產",
+      "subtitle": "我們的標誌代表 Dubhe 區塊鏈平台的創新和可靠性。使用這些資產來保持品牌一致性。",
+      "availableFormats": "可用格式",
+      "download": "下載",
+      "dos": {
+        "title": "標誌使用指南",
+        "item1": "使用原始標誌檔案，不進行修改",
+        "item2": "保持標誌周圍的最小留白區域",
+        "item3": "在高對比度背景上使用",
+        "item4": "確保正確的縮放和比例"
+      },
+      "donts": {
+        "title": "標誌使用限制",
+        "hide": "隱藏限制",
+        "show": "顯示限制",
+        "item1": "不要拉伸、扭曲或修改標誌",
+        "item2": "不要使用低解析度或像素化版本",
+        "item3": "不要放置在繁忙或低對比度的背景上",
+        "item4": "不要使用不同字體重新創建標誌"
+      }
+    },
+    "clearspace": {
+      "title": "留白區域指南",
+      "subtitle": "保持 Dubhe 標誌周圍適當的間距，以確保視覺衝擊力和品牌識別。",
+      "minimum": "最小留白區域",
+      "description": "Dubhe 標誌應始終被留白區域包圍，以保持其視覺完整性和影響力。此留白區域基於標誌中字母「D」的高度。",
+      "specifications": "技術規格",
+      "spec1": "最小留白區域：所有邊 1 倍標誌高度",
+      "spec2": "數位使用：建議最小高度 32px",
+      "spec3": "印刷使用：建議最小高度 0.5 英吋"
+    },
+    "symbol": {
+      "title": "符號與標記",
+      "subtitle": "當完整標誌不合適或空間有限時，可以獨立使用 Dubhe 符號。",
+      "meaning": {
+        "title": "符號含義",
+        "description": "Dubhe 符號代表指引導航的星座，象徵我們在用可靠和創新的工具引導開發者通過區塊鏈生態系統中的角色。"
+      },
+      "usage": {
+        "standalone": "獨立使用",
+        "standaloneDesc": "當空間有限或品牌識別已建立時使用",
+        "app": "應用程式圖示",
+        "appDesc": "適合行動應用程式、網站圖示和小格式應用"
+      }
+    },
+    "partnership": {
+      "title": "合作夥伴關係指南",
+      "subtitle": "共同品牌和合作夥伴材料的指南，確保一致的品牌呈現。",
+      "cobranding": "共同品牌範例",
+      "partnerLogo": "合作夥伴標誌",
+      "spacing": {
+        "title": "標誌間距規則",
+        "rule1": "保持標誌間相等的視覺權重",
+        "rule2": "使用分隔線或適當的留白",
+        "rule3": "將標誌對齊在相同基線上"
+      },
+      "approval": {
+        "title": "合作夥伴關係審批",
+        "description": "所有合作夥伴材料和共同品牌在發布前都需要 Dubhe 團隊的審批。",
+        "contact": "聯絡審批"
+      }
+    },
+    "colors": {
+      "title": "色彩調色板",
+      "subtitle": "我們的色彩系統在所有品牌接觸點創造凝聚且易於訪問的品牌體驗。",
+      "base": {
+        "title": "基礎色彩"
+      },
+      "primary": {
+        "title": "主要品牌色彩"
+      }
+    },
+    "typography": {
+      "title": "字體設計",
+      "subtitle": "我們的字體系統確保所有品牌材料中一致且易讀的溝通。",
+      "primary": {
+        "title": "主要字體",
+        "description": "Geist Sans 是我們所有品牌溝通的主要字體"
+      },
+      "mono": {
+        "title": "等寬字體",
+        "description": "Geist Mono 用於程式碼、技術文件和開發者內容"
+      },
+      "scale": {
+        "title": "字體比例"
+      }
+    },
+    "download": {
+      "title": "下載資源",
+      "subtitle": "在一個簡單的包裝中訪問所有品牌資產、指南和資源。",
+      "pack": {
+        "title": "完整品牌包",
+        "description": "包括標誌、色彩調色板、字體指南，以及各種格式的使用範例。",
+        "button": "下載品牌包"
+      },
+      "contact": {
+        "description": "需要自訂資產或有問題嗎？",
+        "button": "聯絡我們的團隊"
+      }
+    }
   }
 }

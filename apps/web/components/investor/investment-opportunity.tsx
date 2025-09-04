@@ -107,7 +107,7 @@ const investmentLinks = {
 const contactInfo = {
   primary: "dubhe@obelisk.build",
   telegram: "@dubheengine", 
-  website: "https://dubhe-docs.obelisk.build"
+  website: "https://dubhe.mintlify.app"
 }
 
 /**

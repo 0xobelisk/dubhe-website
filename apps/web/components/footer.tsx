@@ -31,7 +31,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">{t('sections.learn')}</h4>
             <div className="space-y-2">
-              <a href="https://dubhe-docs.obelisk.build/dubhe" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
+              <a href="https://dubhe.mintlify.app" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2">
                 {t('links.documentation')}
                 <ExternalLink className="w-3 h-3" />
               </a>
