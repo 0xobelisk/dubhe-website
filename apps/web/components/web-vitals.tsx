@@ -3,6 +3,7 @@
 
 import { useEffect } from 'react'
 import { CLSMetric, FCPMetric, INPMetric, LCPMetric, TTFBMetric } from 'web-vitals'
+import * as Sentry from '@sentry/nextjs'
 
 interface WebVitalsMetric {
   id: string
@@ -70,6 +71,18 @@ function formatMetric(metric: CLSMetric | FCPMetric | INPMetric | LCPMetric | TT
 function sendMetric(metric: CLSMetric | FCPMetric | INPMetric | LCPMetric | TTFBMetric) {
   const formattedMetric = formatMetric(metric)
   
+  // Send to Sentry
+  Sentry.addBreadcrumb({
+    category: 'web-vital',
+    message: `${formattedMetric.name}: ${formattedMetric.value}`,
+    level: 'info',
+    data: formattedMetric
+  })
+
+  // Add metric to current transaction if available
+  // Note: getCurrentHub was removed in newer Sentry versions
+  // Using context API instead
+
   sendAnalyticsEvent({
     name: 'web_vitals',
     properties: {

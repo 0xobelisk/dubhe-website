@@ -2,8 +2,17 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import CosmicLoader from '@/components/cosmic-loader'
-import NewHomePage from '@/components/NewHomePage'
+import dynamic from 'next/dynamic'
+
+// Dynamic imports for heavy components
+const CosmicLoader = dynamic(() => import('@/components/cosmic-loader'), {
+  ssr: false,
+})
+
+const NewHomePage = dynamic(() => import('@/components/NewHomePage'), {
+  loading: () => <div className="min-h-screen bg-black" />,
+  ssr: true,
+})
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState(true)

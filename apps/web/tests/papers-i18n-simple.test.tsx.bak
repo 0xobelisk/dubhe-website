@@ -1,13 +1,13 @@
-import { render, screen, fireEvent, waitFor } from '../test-utils'
+import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import PapersPage from '../app/[locale]/papers/page'
 
 // Mock framer-motion
 vi.mock('framer-motion', () => ({
   motion: {
-    h1: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <h1 {...props}>{children}</h1>,
-    p: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <p {...props}>{children}</p>,
-    div: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <div {...props}>{children}</div>,
+    h1: ({ children, ...props }: any) => <h1 {...props}>{children}</h1>,
+    p: ({ children, ...props }: any) => <p {...props}>{children}</p>,
+    div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
   },
 }))
 
@@ -18,10 +18,7 @@ vi.mock('@/components/navigation', () => ({
 
 // Mock Card component
 vi.mock('@/components/ui/Card', () => ({
-  default: ({ children, onClick, clickable, ...props }: React.PropsWithChildren<{
-    onClick?: () => void;
-    clickable?: boolean;
-  }>) => (
+  default: ({ children, onClick, clickable, ...props }: any) => (
     <div 
       data-testid="card" 
       onClick={onClick} 
@@ -47,8 +44,7 @@ const mockUseLocale = vi.fn()
 
 vi.mock('next-intl', () => ({
   useTranslations: () => mockUseTranslations,
-  useLocale: () => mockUseLocale(),
-  NextIntlClientProvider: ({ children }: { children: React.ReactNode }) => children
+  useLocale: () => mockUseLocale()
 }))
 
 // Global mocks

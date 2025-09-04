@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any, @next/next/no-img-element */
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen, fireEvent } from '../../test-utils'
 import { describe, it, expect, vi } from 'vitest'
 import Navigation from './navigation'
 
@@ -14,6 +14,7 @@ vi.mock('framer-motion', () => ({
 // Mock next-intl
 vi.mock('next-intl', () => ({
   useTranslations: () => (key: string) => key,
+  NextIntlClientProvider: ({ children }: { children: React.ReactNode }) => children,
   useLocale: () => 'en'
 }))
 

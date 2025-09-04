@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, memo, useMemo } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
 // Pre-generated random data to avoid hydration mismatch
@@ -34,13 +34,16 @@ interface CosmicLoaderProps {
 
 const defaultOnComplete = () => {}
 
-export default function CosmicLoader({ onComplete = defaultOnComplete, duration = 4000 }: CosmicLoaderProps) {
+const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete, duration = 4000 }: CosmicLoaderProps) {
   const [progress, setProgress] = useState(0)
   const [phase, setPhase] = useState<'searching' | 'found' | 'complete'>('searching')
   const [loadingText, setLoadingText] = useState('Exploring the cosmos...')
-
-  // 添加调试日志
-  console.log('CosmicLoader rendered with duration:', duration)
+  
+  // Memoize static arrays to avoid re-creation on each render
+  const randomData = useMemo(() => RANDOM_DATA, [])
+  const sensorData = useMemo(() => SENSOR_DATA, [])
+  const starPositions = useMemo(() => STAR_POSITIONS, [])
+  const shootingStarPositions = useMemo(() => SHOOTING_STAR_POSITIONS, [])
 
   const stableOnComplete = useCallback(onComplete, [onComplete])
 
@@ -180,7 +183,7 @@ export default function CosmicLoader({ onComplete = defaultOnComplete, duration 
 
         {/* Left side data stream */}
         <div className="absolute left-4 top-1/4 space-y-1">
-          {RANDOM_DATA.map((data, i) => (
+          {randomData.map((data, i) => (
             <motion.div
               key={i}
               className="text-xs font-mono text-green-400/60"
@@ -199,7 +202,7 @@ export default function CosmicLoader({ onComplete = defaultOnComplete, duration 
 
         {/* Right side data stream */}
         <div className="absolute right-4 top-1/3 space-y-1">
-          {SENSOR_DATA.map((data, i) => (
+          {sensorData.map((data, i) => (
             <motion.div
               key={i}
               className="text-xs font-mono text-blue-400/60"
@@ -260,7 +263,7 @@ export default function CosmicLoader({ onComplete = defaultOnComplete, duration 
       </div>
       {/* Starfield Background */}
       <div className="absolute inset-0">
-        {STAR_POSITIONS.map((star, i) => (
+        {starPositions.map((star, i) => (
           <motion.div
             key={`star-${i}`}
             className="absolute w-1 h-1 bg-white rounded-full"
@@ -290,7 +293,7 @@ export default function CosmicLoader({ onComplete = defaultOnComplete, duration 
 
       {/* Shooting Stars */}
       <div className="absolute inset-0">
-        {SHOOTING_STAR_POSITIONS.map((shootingStar, i) => (
+        {shootingStarPositions.map((shootingStar, i) => (
           <motion.div
             key={`shooting-star-${i}`}
             className="absolute w-2 h-2 bg-white rounded-full"
@@ -577,4 +580,6 @@ export default function CosmicLoader({ onComplete = defaultOnComplete, duration 
 
     </div>
   )
-}
+})
+
+export default CosmicLoader

@@ -3,12 +3,13 @@
 import { motion } from "framer-motion"
 import { Code, Zap, Globe } from "lucide-react"
 import { useTranslations } from 'next-intl'
+import { memo, useMemo } from "react"
 import ArchitectureComparisonSection from "./ArchitectureComparisonSection"
 
-export default function ProductSuiteSection() {
+const ProductSuiteSection = memo(function ProductSuiteSection() {
   const t = useTranslations('home.productSuite')
   
-  const products = [
+  const products = useMemo(() => [
     {
       id: "engine",
       icon: Code,
@@ -42,7 +43,8 @@ export default function ProductSuiteSection() {
       gradient: "from-green-500 to-emerald-500",
       hoverBorder: "hover:border-green-500/50"
     }
-  ]
+  ], [t])
+  
   return (
     <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -101,4 +103,6 @@ export default function ProductSuiteSection() {
       </div>
     </div>
   )
-}
+})
+
+export default ProductSuiteSection

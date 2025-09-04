@@ -11,6 +11,7 @@ import { Providers } from '@/components/providers';
 import ServiceWorkerCleanup from '@/components/sw-cleanup';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { WebVitals } from '@/components/web-vitals';
+import { ServiceWorkerProvider } from '@/components/service-worker-provider';
 
 const fontSans = Geist({
 	subsets: ['latin'],
@@ -295,6 +296,7 @@ export default async function LocaleLayout({
           <ErrorBoundary>
             <Providers>
               <WebVitals />
+              <ServiceWorkerProvider />
               <ServiceWorkerCleanup />
               {children}
             </Providers>

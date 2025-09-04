@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { useState } from "react"
+import { useState, memo, useCallback } from "react"
 
 /**
  * AnimatedIcon组件Props接口
@@ -36,7 +36,7 @@ interface AnimatedIconProps {
  * @param onClick 点击回调
  * @returns AnimatedIcon组件JSX元素
  */
-export default function AnimatedIcon({ 
+const AnimatedIcon = memo(function AnimatedIcon({ 
   children, 
   gradient, 
   isActive = false, 
@@ -48,7 +48,7 @@ export default function AnimatedIcon({
   /**
    * 获取尺寸样式
    */
-  const getSizeClasses = () => {
+  const getSizeClasses = useCallback(() => {
     switch (size) {
       case "sm":
         return "w-16 h-16";
@@ -61,7 +61,7 @@ export default function AnimatedIcon({
       default:
         return "w-32 h-32";
     }
-  };
+  }, [size]);
 
   return (
     <div className="relative flex justify-center">
@@ -167,4 +167,6 @@ export default function AnimatedIcon({
       )}
     </div>
   );
-}
+})
+
+export default AnimatedIcon

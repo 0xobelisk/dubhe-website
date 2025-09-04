@@ -1,8 +1,12 @@
 import {NextConfig} from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
 import { withSentryConfig } from '@sentry/nextjs';
+import bundleAnalyzer from '@next/bundle-analyzer';
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+});
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -24,8 +28,11 @@ const nextConfig: NextConfig = {
   compress: true,
   // Enable experimental features for better performance
   experimental: {
-    optimizePackageImports: ['lucide-react', 'framer-motion'],
+    optimizePackageImports: ['lucide-react', 'framer-motion', '@sentry/nextjs', 'react-countup'],
   },
+  // Optimize production builds
+  productionBrowserSourceMaps: false,
+  poweredByHeader: false,
   // Webpack optimizations
   webpack(config, { dev, isServer }) {
     // Optimize bundle size
@@ -34,19 +41,62 @@ const nextConfig: NextConfig = {
         ...config.optimization,
         usedExports: true,
         sideEffects: false,
+        moduleIds: 'deterministic',
+        runtimeChunk: 'single',
         splitChunks: {
           chunks: 'all',
+          maxInitialRequests: 25,
+          minSize: 20000,
           cacheGroups: {
-            default: {
-              minChunks: 2,
-              priority: -20,
-              reuseExistingChunk: true,
+            default: false,
+            vendors: false,
+            // Framework chunks
+            framework: {
+              name: 'framework',
+              test: /[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|use-sync-external-store)[\\/]/,
+              priority: 40,
+              enforce: true,
             },
-            vendor: {
-              test: /[\\/]node_modules[\\/]/,
-              name: 'vendors',
-              priority: -10,
-              chunks: 'all',
+            // Commons chunk for shared code
+            commons: {
+              name: 'commons',
+              minChunks: 2,
+              priority: 20,
+            },
+            // Vendor chunks split by package
+            lib: {
+              test(module: any) {
+                return module.size() > 160000 &&
+                  /node_modules[\\/]/.test(module.identifier());
+              },
+              name(module: any) {
+                const hash = require('crypto').createHash('sha1');
+                hash.update(module.identifier());
+                return hash.digest('hex').substring(0, 8);
+              },
+              priority: 30,
+              minChunks: 1,
+            },
+            // Sentry separate chunk
+            sentry: {
+              test: /[\\/]node_modules[\\/]@sentry[\\/]/,
+              name: 'sentry',
+              priority: 35,
+              enforce: true,
+            },
+            // Intl separate chunk
+            intl: {
+              test: /[\\/]node_modules[\\/]next-intl[\\/]/,
+              name: 'intl',
+              priority: 35,
+              enforce: true,
+            },
+            // Animation libraries
+            motion: {
+              test: /[\\/]node_modules[\\/]framer-motion[\\/]/,
+              name: 'motion',
+              priority: 35,
+              enforce: true,
             },
           },
         },
@@ -82,4 +132,4 @@ const sentryOptions = {
   automaticVercelMonitors: true,
 }
 
-export default withSentryConfig(withNextIntl(nextConfig), sentryOptions);
+export default withSentryConfig(withBundleAnalyzer(withNextIntl(nextConfig)), sentryOptions);

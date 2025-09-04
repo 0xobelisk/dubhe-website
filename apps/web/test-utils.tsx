@@ -59,7 +59,35 @@ const mockMessages = {
     },
     networkArchitecture: {
       title: 'Network Architecture',
-      description: 'Architecture Description'
+      description: 'Architecture Description',
+      keyMetrics: 'Key Metrics',
+      moveEcosystemFeatures: 'Move Ecosystem Features',
+      architectureLayers: {
+        moveApplications: {
+          title: 'Move Applications',
+          subtitle: 'Decentralized Applications',
+          description: 'Build powerful dApps with Move',
+          features: ['Smart Contracts', 'DeFi', 'Gaming', 'NFTs']
+        },
+        dubheEngine: {
+          title: 'Dubhe Engine',
+          subtitle: 'High-Performance Blockchain',
+          description: 'Scalable and secure blockchain infrastructure',
+          features: ['High Throughput', 'Low Latency', 'Secure']
+        },
+        dubheChannel: {
+          title: 'Dubhe Channel',
+          subtitle: 'Cross-chain Communication',
+          description: 'Seamless interoperability',
+          features: ['Bridge', 'Messaging', 'Asset Transfer']
+        },
+        dubheOS: {
+          title: 'Dubhe OS',
+          subtitle: 'Operating System',
+          description: 'Complete blockchain OS',
+          features: ['SDK', 'Tools', 'Runtime']
+        }
+      }
     }
   },
   papers: {
@@ -194,6 +222,66 @@ const mockMessages = {
         description: 'Need custom assets or have questions?',
         button: 'Contact Our Team'
       }
+    }
+  },
+  errors: {
+    status: {
+      404: '404',
+      401: '401',
+      403: '403',
+      429: '429',
+      500: '500',
+      502: '502',
+      503: '503'
+    },
+    common: {
+      goHome: 'Go Home',
+      goBack: 'Go Back',
+      tryAgain: 'Try Again',
+      contactSupport: 'Contact Support'
+    },
+    notFound: {
+      title: 'Page Not Found',
+      description: 'The page you are looking for does not exist or has been moved.',
+      suggestion: 'Don\'t worry, let\'s get you back on track.',
+      suggestions: {
+        title: 'Popular Pages'
+      },
+      actions: {
+        home: 'Go Home',
+        back: 'Go Back',
+        report: 'Report broken link'
+      }
+    },
+    serverError: {
+      title: 'Server Error',
+      description: 'An error occurred on our side.',
+      suggestion: 'Our team has been notified and is working on a fix.'
+    },
+    unauthorized: {
+      title: 'Authentication Required',
+      description: 'You need to be logged in to access this page.',
+      suggestion: 'Please log in with your credentials.'
+    },
+    forbidden: {
+      title: 'Access Forbidden',
+      description: 'You do not have permission to access this resource.',
+      suggestion: 'Please check your credentials or contact the administrator.'
+    },
+    rateLimited: {
+      title: 'Too Many Requests',
+      description: 'You\'re making requests too quickly. Please slow down.',
+      suggestion: 'Wait a moment before trying again.'
+    },
+    serviceUnavailable: {
+      title: 'Service Unavailable',
+      description: 'We\'re temporarily under maintenance.',
+      suggestion: 'We\'ll be back online shortly. Thank you for your patience!'
+    },
+    badGateway: {
+      title: 'Bad Gateway',
+      description: 'There\'s an issue with our server connection.',
+      suggestion: 'This is usually temporary. Please try again in a few moments.'
     }
   }
 }

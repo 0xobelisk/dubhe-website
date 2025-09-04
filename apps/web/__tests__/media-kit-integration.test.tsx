@@ -21,21 +21,28 @@ vi.mock('next-intl', async () => {
   return {
     ...actual,
     useTranslations: () => mockT,
-    useLocale: () => 'en'
+    useLocale: () => 'en',
+    NextIntlClientProvider: ({ children }: { children: React.ReactNode }) => children
   }
 })
 
 // Mock Next.js components
 vi.mock('next/image', () => ({
   __esModule: true,
-  default: ({ src, alt, width, height, className, ...props }: any) => (
+  default: ({ src, alt, width, height, className, ...props }: {
+    src: string;
+    alt: string;
+    width?: number;
+    height?: number;
+    className?: string;
+  }) => (
     <img src={src} alt={alt} width={width} height={height} className={className} {...props} />
   )
 }))
 
 vi.mock('next/link', () => ({
   __esModule: true,
-  default: ({ children, href, ...props }: any) => (
+  default: ({ children, href, ...props }: React.PropsWithChildren<{ href: string }>) => (
     <a href={href} {...props}>{children}</a>
   )
 }))

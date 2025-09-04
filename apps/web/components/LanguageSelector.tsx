@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, memo, useCallback, useMemo } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 
@@ -31,7 +31,7 @@ const LANGUAGES: LanguageInfo[] = [
   { code: 'bn', name: 'Bengali', nativeName: 'বাংলা', translatedPercentage: 100, wordCount: 2850 },
 ];
 
-export default function LanguageSelector() {
+const LanguageSelector = memo(function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
   const [filter, setFilter] = useState('');
   const locale = useLocale();
@@ -41,10 +41,12 @@ export default function LanguageSelector() {
   const t = useTranslations('LocaleSwitcher');
 
 
-  const filteredLanguages = LANGUAGES.filter(lang => 
-    lang.name.toLowerCase().includes(filter.toLowerCase()) ||
-    lang.nativeName.toLowerCase().includes(filter.toLowerCase())
-  );
+  const filteredLanguages = useMemo(() => {
+    return LANGUAGES.filter(lang => 
+      lang.name.toLowerCase().includes(filter.toLowerCase()) ||
+      lang.nativeName.toLowerCase().includes(filter.toLowerCase())
+    );
+  }, [filter]);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -57,19 +59,19 @@ export default function LanguageSelector() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  function onLanguageChange(languageCode: string) {
+  const onLanguageChange = useCallback((languageCode: string) => {
     const newPathname = pathname.replace(`/${locale}`, `/${languageCode}`);
     router.replace(newPathname);
     setIsOpen(false);
     setFilter('');
-  }
+  }, [locale, pathname, router]);
 
-  const getProgressBarColor = (percentage: number) => {
+  const getProgressBarColor = useCallback((percentage: number) => {
     if (percentage >= 80) return 'bg-green-500';
     if (percentage >= 50) return 'bg-yellow-500';
     if (percentage >= 20) return 'bg-orange-500';
     return 'bg-red-400';
-  };
+  }, []);
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -163,4 +165,6 @@ export default function LanguageSelector() {
       )}
     </div>
   );
-}
+})
+
+export default LanguageSelector;

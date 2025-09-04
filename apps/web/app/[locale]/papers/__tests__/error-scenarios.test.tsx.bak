@@ -1,13 +1,13 @@
-import { render, screen, fireEvent, waitFor } from '../../../../test-utils'
+import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import PapersPage from '../page'
 
 // Error scenario tests for PDF remote linking
 describe('Papers Page - Error Scenarios and Edge Cases', () => {
   let originalEnv: NodeJS.ProcessEnv
-  let consoleErrorSpy: ReturnType<typeof vi.spyOn>
-  let consoleWarnSpy: ReturnType<typeof vi.spyOn>
-  let consoleLogSpy: ReturnType<typeof vi.spyOn>
+  let consoleErrorSpy: any
+  let consoleWarnSpy: any
+  let consoleLogSpy: any
   
   beforeEach(() => {
     originalEnv = { ...process.env }
@@ -21,9 +21,9 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
     // Mock framer-motion
     vi.mock('framer-motion', () => ({
       motion: {
-        h1: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <h1 {...props}>{children}</h1>,
-        p: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <p {...props}>{children}</p>,
-        div: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <div {...props}>{children}</div>,
+        h1: ({ children, ...props }: any) => <h1 {...props}>{children}</h1>,
+        p: ({ children, ...props }: any) => <p {...props}>{children}</p>,
+        div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
       },
     }))
 
@@ -37,10 +37,7 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
     }))
 
     vi.mock('@/components/ui/Card', () => ({
-      default: ({ children, onClick, clickable, ...props }: React.PropsWithChildren<{
-        onClick?: () => void;
-        clickable?: boolean;
-      }>) => (
+      default: ({ children, onClick, clickable, ...props }: any) => (
         <div 
           data-testid="card" 
           onClick={onClick} 
@@ -62,7 +59,6 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
 
     // Mock next-intl
     vi.mock('next-intl', () => ({
-      NextIntlClientProvider: ({ children }: { children: React.ReactNode }) => children,
       useTranslations: () => (key: string) => {
         const translations = {
           'hero.badge': 'Technical Documentation',
@@ -238,7 +234,6 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
 
     it('handles missing translation keys gracefully', () => {
       vi.mock('next-intl', () => ({
-        NextIntlClientProvider: ({ children }: { children: React.ReactNode }) => children,
         useTranslations: () => (key: string) => {
           // Return undefined for some keys to test error handling
           if (key === 'lightpaper.title') return undefined
@@ -257,15 +252,15 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
       // Test that component works even if framer-motion has issues
       vi.mock('framer-motion', () => ({
         motion: {
-          h1: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => {
+          h1: ({ children, ...props }: any) => {
             if (props.animate && typeof props.animate === 'object') {
               // Handle potential animation prop errors
               return <h1>{children}</h1>
             }
             return <h1 {...props}>{children}</h1>
           },
-          p: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <p {...props}>{children}</p>,
-          div: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <div {...props}>{children}</div>,
+          p: ({ children, ...props }: any) => <p {...props}>{children}</p>,
+          div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
         },
       }))
       
@@ -382,7 +377,7 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
     it('handles missing ARIA attributes gracefully', () => {
       // Component should work even if Card component doesn't provide proper ARIA
       vi.mock('@/components/ui/Card', () => ({
-        default: ({ children, onClick }: React.PropsWithChildren<{ onClick?: () => void }>) => (
+        default: ({ children, onClick }: any) => (
           <div onClick={onClick} data-testid="card">
             {children}
           </div>

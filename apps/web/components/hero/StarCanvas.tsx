@@ -1,10 +1,11 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, memo, useMemo } from "react"
 import { motion, MotionValue } from "framer-motion"
 
+// Move static data outside component for better performance
 // Constellation data for Big Dipper/Ursa Major
-const bigDipperStars = [
+const BIG_DIPPER_STARS = [
   { name: "Dubhe", size: 2.5, brightness: 1.0, color: "#4D9DFF", main: true }, // Alpha UMa - Dubhe (highlighted)
   { name: "Merak", size: 1.8, brightness: 0.9, color: "#FFFFFF" },  // Beta UMa
   { name: "Phecda", size: 1.8, brightness: 0.9, color: "#FFFFFF" }, // Gamma UMa
@@ -15,7 +16,7 @@ const bigDipperStars = [
 ];
 
 // Constellation lines connecting the stars (indices of bigDipperStars)
-const constellationLines = [
+const CONSTELLATION_LINES = [
   [0, 1], // Dubhe to Merak
   [1, 2], // Merak to Phecda
   [2, 3], // Phecda to Megrez
@@ -25,8 +26,8 @@ const constellationLines = [
   [5, 6]  // Mizar to Alkaid
 ] as const; // Make this a readonly tuple to ensure type safety
 
-// Star colors for background stars
-const starColors = [
+// Star colors for background stars - memoized constant
+const STAR_COLORS = [
   "#FFFFFF", // White
   "#FFD700", // Gold
   "#4D9DFF", // Blue
@@ -101,8 +102,8 @@ const createBackgroundStars = (numStars: number): Star[] => {
     const size = Math.random() * 2.5 + 0.5; // Range from 0.5 to 3
     const brightness = Math.random() * 0.8 + 0.2; // Range from 0.2 to 1
     const twinkleSpeed = Math.random() * 0.02 + 0.005; // Varied twinkle speeds
-    const colorIndex = Math.floor(Math.random() * starColors.length);
-    const color = starColors[colorIndex] || '#FFFFFF'; // Fallback to white if undefined
+    const colorIndex = Math.floor(Math.random() * STAR_COLORS.length);
+    const color = STAR_COLORS[colorIndex] || '#FFFFFF'; // Fallback to white if undefined
     
     // Add drift parameters for floating motion
     const driftSpeed = Math.random() * 0.0002 + 0.00005; // Slower drift
@@ -156,7 +157,7 @@ const createConstellationStars = (canvas: HTMLCanvasElement, scale: number) => {
   ];
   
   // Create constellation stars
-  bigDipperStars.forEach((star, index) => {
+  BIG_DIPPER_STARS.forEach((star, index) => {
     // Ensure position exists at index
     const position = positions[index];
     if (!position) return;
@@ -195,7 +196,7 @@ const createConstellationStars = (canvas: HTMLCanvasElement, scale: number) => {
  * @param hex 十六进制颜色值
  * @returns RGB值字符串 "r, g, b"
  */
-function hexToRgb(hex: string): string {
+const hexToRgb = (hex: string): string => {
   // Remove the hash if it exists
   hex = hex.replace('#', '');
   
@@ -239,8 +240,11 @@ const getTransitionColor = (baseColor: string, phase: number, intensity: number 
  * @param backgroundOpacity 背景透明度变换
  * @returns StarCanvas组件JSX元素
  */
-export default function StarCanvas({ backgroundOpacity }: StarCanvasProps) {
+const StarCanvas = memo(function StarCanvas({ backgroundOpacity }: StarCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  // Memoize expensive star generation
+  const backgroundStars = useMemo(() => createBackgroundStars(200), [])
 
   useEffect(() => {
     // Constellation animation in canvas
@@ -262,8 +266,7 @@ export default function StarCanvas({ backgroundOpacity }: StarCanvasProps) {
     // Scale for constellation
     const scale = Math.min(canvas.width, canvas.height) * 0.3
     
-    // Create stars
-    const backgroundStars = createBackgroundStars(200)
+    // Create constellation stars (backgroundStars already memoized)
     const constellationStars = createConstellationStars(canvas, scale)
     
     // Animation time tracker
@@ -362,7 +365,7 @@ export default function StarCanvas({ backgroundOpacity }: StarCanvasProps) {
       
       // Draw constellation lines with subtle animation
       ctx.beginPath();
-      constellationLines.forEach(([fromIdx, toIdx]) => {
+      CONSTELLATION_LINES.forEach(([fromIdx, toIdx]) => {
         // Type safety: Ensure these stars exist before accessing
         const fromStar = constellationStars[fromIdx];
         const toStar = constellationStars[toIdx];
@@ -406,7 +409,7 @@ export default function StarCanvas({ backgroundOpacity }: StarCanvasProps) {
       
       // Draw over with a more solid line
       ctx.beginPath();
-      constellationLines.forEach(([fromIdx, toIdx]) => {
+      CONSTELLATION_LINES.forEach(([fromIdx, toIdx]) => {
         const fromStar = constellationStars[fromIdx];
         const toStar = constellationStars[toIdx];
         
@@ -558,7 +561,7 @@ export default function StarCanvas({ backgroundOpacity }: StarCanvasProps) {
     return () => {
       window.removeEventListener('resize', resizeCanvas);
     }
-  }, [])
+  }, [backgroundStars]) // Add backgroundStars as dependency since it's used inside
 
   return (
     <motion.canvas 
@@ -567,4 +570,6 @@ export default function StarCanvas({ backgroundOpacity }: StarCanvasProps) {
       style={{ opacity: backgroundOpacity }}
     />
   )
-}
+})
+
+export default StarCanvas

@@ -1,11 +1,11 @@
-import { render, screen, fireEvent, waitFor } from '../../../test-utils'
+import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import userEvent from '@testing-library/user-event'
 import ContactPage from './page'
 
 // Mock Next.js modules
 vi.mock('next/link', () => ({
-  default: ({ children, href, ...props }: React.PropsWithChildren<{ href: string }>) => (
+  default: ({ children, href, ...props }: any) => (
     <a href={href} {...props}>
       {children}
     </a>
@@ -14,7 +14,6 @@ vi.mock('next/link', () => ({
 
 // Mock next-intl
 vi.mock('next-intl', () => ({
-  NextIntlClientProvider: ({ children }: { children: React.ReactNode }) => children,
   useTranslations: () => (key: string) => {
     const translations: Record<string, string> = {
       'hero.badge': 'Contact Us',

@@ -1,15 +1,37 @@
 "use client"
 
 import { lazy, Suspense } from "react"
-import HeroSection from './HeroSection'
-import FeaturesSection from './FeaturesSection'
-import ProductSuiteSection from './ProductSuiteSection'
-import HowItWorksSection from './HowItWorksSection'
-import NetworkArchitectureSection from './NetworkArchitectureSection'
-import CommunitySection from './CommunitySection'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import CompaniesSection from './CompaniesSection'
+import dynamic from 'next/dynamic'
 import './styles.css'
+
+// Critical above-the-fold content - load immediately
+import HeroSection from './HeroSection'
+
+// Dynamic imports with prefetch for visible sections
+const FeaturesSection = dynamic(() => import('./FeaturesSection'), {
+  loading: () => <div className="min-h-[400px] bg-white" />,
+})
+
+const ProductSuiteSection = dynamic(() => import('./ProductSuiteSection'), {
+  loading: () => <div className="min-h-[600px] bg-gradient-to-br from-gray-50 to-white" />,
+})
+
+const HowItWorksSection = dynamic(() => import('./HowItWorksSection'), {
+  loading: () => <div className="min-h-[500px] bg-white" />,
+})
+
+const NetworkArchitectureSection = dynamic(() => import('./NetworkArchitectureSection'), {
+  loading: () => <div className="min-h-[800px] bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900" />,
+})
+
+const CommunitySection = dynamic(() => import('./CommunitySection'), {
+  loading: () => <div className="min-h-[400px] bg-gradient-to-br from-indigo-50 via-white to-purple-50" />,
+})
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const CompaniesSection = dynamic(() => import('./CompaniesSection'), {
+  loading: () => <div className="min-h-[200px] bg-white" />,
+})
 
 // Lazy load heavy components
 const NetworkStats = lazy(() => import('../network-stats'))
