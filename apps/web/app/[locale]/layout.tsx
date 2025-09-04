@@ -12,6 +12,7 @@ import ServiceWorkerCleanup from '@/components/sw-cleanup';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { WebVitals } from '@/components/web-vitals';
 import { ServiceWorkerProvider } from '@/components/service-worker-provider';
+import { WebVitalsDashboard } from '@/components/web-vitals-dashboard';
 
 const fontSans = Geist({
 	subsets: ['latin'],
@@ -171,8 +172,22 @@ export default async function LocaleLayout({
         {/* Performance Optimizations for Core Web Vitals */}
         <link rel="preload" href="/logo/light.png" as="image" type="image/png" />
         <link rel="preload" href="/marketing/logos/move-white.svg" as="image" type="image/svg+xml" />
+        
+        {/* DNS Prefetch for external domains */}
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://cdn.prod.website-files.com" />
+        
+        {/* Preconnect to critical third-party services */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://o1293971.ingest.sentry.io" />
+        
+        {/* Prefetch critical routes */}
+        <link rel="prefetch" href="/" as="document" />
+        <link rel="prefetch" href="/foundation" as="document" />
+        <link rel="prefetch" href="/grants" as="document" />
         
         {/* Prevent layout shift and optimize animations */}
         <style dangerouslySetInnerHTML={{
@@ -296,6 +311,7 @@ export default async function LocaleLayout({
           <ErrorBoundary>
             <Providers>
               <WebVitals />
+              <WebVitalsDashboard />
               <ServiceWorkerProvider />
               <ServiceWorkerCleanup />
               {children}

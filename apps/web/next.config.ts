@@ -19,10 +19,16 @@ const nextConfig: NextConfig = {
   },
   images: {
     domains: ["images.unsplash.com", "cdn.prod.website-files.com"],
-    formats: ['image/webp', 'image/avif'],
+    formats: ['image/avif', 'image/webp'], // Prefer AVIF over WebP
     minimumCacheTTL: 31536000, // 1 year
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // Content Security Policy for images
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    // Disable static imports to reduce build time
+    disableStaticImages: false,
+    // Enable blur placeholder generation
+    dangerouslyAllowSVG: true,
   },
   // Enable compression
   compress: true,

@@ -4,13 +4,22 @@
 const CACHE_NAME = 'dubhe-cache-v1';
 const RUNTIME_CACHE = 'dubhe-runtime-v1';
 
-// Assets to cache immediately on install
+// Assets to cache immediately on install (critical resources only)
 const STATIC_CACHE_URLS = [
   '/',
   '/favicon-black.ico',
   '/favicon-white.ico',
   '/logo/light.png',
   '/logo/dark.png',
+  '/marketing/logos/move-white.svg',
+];
+
+// Routes to precache after installation
+const PRECACHE_ROUTES = [
+  '/foundation',
+  '/grants',
+  '/incubation',
+  '/contact',
 ];
 
 // Cache strategies configuration
@@ -50,10 +59,25 @@ const CACHE_STRATEGIES = {
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      // Only cache critical assets initially
-      return cache.addAll(STATIC_CACHE_URLS.slice(0, 3)).catch(err => {
+      // Cache critical assets first
+      return cache.addAll(STATIC_CACHE_URLS).catch(err => {
         console.warn('Failed to cache some assets:', err);
       });
+    }).then(() => {
+      // Precache routes in background after installation
+      if ('requestIdleCallback' in self) {
+        requestIdleCallback(() => {
+          caches.open(CACHE_NAME).then((cache) => {
+            PRECACHE_ROUTES.forEach(route => {
+              fetch(route).then(response => {
+                if (response.ok) {
+                  cache.put(route, response);
+                }
+              }).catch(() => {});
+            });
+          });
+        });
+      }
     })
   );
   self.skipWaiting();
