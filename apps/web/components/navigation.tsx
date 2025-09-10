@@ -31,7 +31,7 @@ export default function Navigation() {
       name: t('learn'), 
       href: "#learn",
       dropdown: [
-        { name: t('documentation'), href: "https://dubhe.mintlify.app", external: true },
+        { name: t('documentation'), href: "https://dubhe-docs.obelisk.build", external: true },
         { name: t('papers'), href: "/papers" },
         // { name: "Token", href: "/token" },
         // { name: "Tutorials", href: "/tutorials" },
