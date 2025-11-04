@@ -97,14 +97,14 @@ export default function AmbassadorPage() {
       projects: 1,
       image: "/amb/artems11.png" // 没有对应图片，保持文字头像
     },
-    // {
-    //   name: "Ahmed Hassan",
-    //   region: "EMEA",
-    //   country: "🇦🇪 UAE",
-    //   expertise: "Enterprise Solutions",
-    //   projects: 18,
-    //   image: "AH"
-    // },
+    {
+      name: "cevin",
+      region: "EMEA",
+      country: "🇦China",
+      expertise: "Enterprise Solutions",
+      projects: 1,
+      image: "/amb/cevin.png"
+    },
     // {
     //   name: "Lisa Johnson",
     //   region: "North America",
