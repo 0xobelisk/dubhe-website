@@ -100,7 +100,7 @@ export default function AmbassadorPage() {
     {
       name: "cevin",
       region: "EMEA",
-      country: "🇦China",
+      country: "China",
       expertise: "Enterprise Solutions",
       projects: 1,
       image: "/amb/cevin.png"
