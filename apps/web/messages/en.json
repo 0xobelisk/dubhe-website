@@ -791,6 +791,7 @@
     "ambassadorsSection": {
       "title": "Meet Our Global Ambassadors",
       "description": "Our ambassadors are leading the charge in their regions, building communities and driving adoption",
+      "timezone": "Timezone",
       "location": "Location",
       "expertise": "Expertise",
       "projectsLed": "Projects Led"

@@ -1027,6 +1027,7 @@
     "ambassadorsSection": {
       "title": "Küresel Büyükelçilerimizle Tanışın",
       "description": "Büyükelçilerimiz bölgelerinde değişimi yönetiyor, topluluklar inşa ediyor ve benimsenmeyi sağlıyor",
+      "timezone": "Saat dilimi",
       "location": "Konum",
       "expertise": "Uzmanlık",
       "projectsLed": "Yönetilen Projeler"

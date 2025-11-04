@@ -1027,6 +1027,7 @@
     "ambassadorsSection": {
       "title": "Gặp gỡ Đại sứ Toàn cầu của Chúng tôi",
       "description": "Các đại sứ của chúng tôi đang dẫn đầu trong khu vực của họ, xây dựng cộng đồng và thúc đẩy việc áp dụng",
+      "timezone": "Múi giờ",
       "location": "Địa điểm",
       "expertise": "Chuyên môn",
       "projectsLed": "Dự án Dẫn đầu"

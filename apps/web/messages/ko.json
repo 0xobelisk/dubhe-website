@@ -958,6 +958,7 @@
     "ambassadorsSection": {
       "title": "우리의 글로벌 앰배서더들을 만나보세요",
       "description": "우리의 앰배서더들은 각자의 지역에서 선두를 달리며 커뮤니티를 구축하고 채택을 촉진하고 있습니다",
+      "timezone": "시간대",
       "location": "위치",
       "expertise": "전문 분야",
       "projectsLed": "주도한 프로젝트"

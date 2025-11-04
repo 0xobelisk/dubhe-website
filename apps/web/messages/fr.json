@@ -773,6 +773,7 @@
     "ambassadorsSection": {
       "title": "Rencontrez Nos Ambassadeurs Mondiaux",
       "description": "Nos ambassadeurs mènent la charge dans leurs régions, construisant des communautés et stimulant l'adoption",
+      "timezone": "Fuseau horaire",
       "location": "Localisation",
       "expertise": "Expertise",
       "projectsLed": "Projets Dirigés"

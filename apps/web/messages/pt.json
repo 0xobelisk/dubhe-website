@@ -958,6 +958,7 @@
     "ambassadorsSection": {
       "title": "Conheça Nossos Embaixadores Globais",
       "description": "Nossos embaixadores estão liderando a transformação em suas regiões, construindo comunidades e promovendo a adoção",
+      "timezone": "Fuso horário",
       "location": "Localização",
       "expertise": "Especialidade",
       "projectsLed": "Projetos Liderados"

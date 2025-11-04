@@ -83,7 +83,7 @@ export default function AmbassadorPage() {
     // }
     {
       name: "DfilipenKov",
-      region: "shahid114",
+      timezone: "UTC+3",
       country: "Belarus",
       expertise: "Community Building",
       projects: 1,
@@ -91,7 +91,7 @@ export default function AmbassadorPage() {
     },
     {
       name: "artems11",
-      region: "shahid114",
+      timezone: "UTC+2",
       country: "Ukraine",
       expertise: "Community Building",
       projects: 1,
@@ -99,7 +99,7 @@ export default function AmbassadorPage() {
     },
     {
       name: "cevin",
-      region: "EMEA",
+      timezone: "UTC+8",
       country: "China",
       expertise: "Enterprise Solutions",
       projects: 1,
@@ -351,11 +351,15 @@ export default function AmbassadorPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">{ambassador.name}</h3>
-                    <p className="text-rose-400 text-sm">{ambassador.region}</p>
+                    <p className="text-rose-400 text-sm">{ambassador.timezone}</p>
                   </div>
                 </div>
 
                 <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400 text-sm">{t('ambassadorsSection.timezone')}</span>
+                    <span className="text-white text-sm">{ambassador.timezone}</span>
+                  </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400 text-sm">{t('ambassadorsSection.location')}</span>
                     <span className="text-white text-sm">{ambassador.country}</span>

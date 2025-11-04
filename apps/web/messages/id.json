@@ -1802,6 +1802,7 @@
     "ambassadorsSection": {
       "title": "Bertemu Ambassador Global Kami",
       "description": "Ambassador kami memimpin perubahan di wilayah mereka, membangun komunitas dan mendorong adopsi",
+      "timezone": "Zona waktu",
       "location": "Lokasi",
       "expertise": "Keahlian",
       "projectsLed": "Proyek yang Dipimpin"

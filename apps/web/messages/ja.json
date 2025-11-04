@@ -1061,6 +1061,7 @@
     "ambassadorsSection": {
       "title": "私たちのグローバルアンバサダーと出会う",
       "description": "私たちのアンバサダーは彼らの地域で先頭に立ち、コミュニティを構築し、採用を推進しています",
+      "timezone": "タイムゾーン",
       "location": "場所",
       "expertise": "専門知識",
       "projectsLed": "リードしたプロジェクト"
