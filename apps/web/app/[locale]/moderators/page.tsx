@@ -98,7 +98,39 @@ export default function ModeratorsPage() {
       platforms: ["Discord", "Telegram"],
       languages: ["English"],
       image: "/mod/Jenny.png"
-    }
+    },
+    {
+      name: "Myzulll",
+      timezone: "UTC+7:00",
+      speciality: "Community Moderator",
+      platforms: ["Discord", "Telegram"],
+      languages: ["English"],
+      image: "/mod/Myzulll.png"
+    },
+    {
+      name: "Mira",
+      timezone: "UTC+1:00",
+      speciality: "Community Moderator",
+      platforms: ["Discord", "Telegram"],
+      languages: ["English","Nigerian languages", "French"],
+      image: "/mod/Mira.png"
+    },
+    {
+      name: "oleksiichumachenko",
+      timezone: "UTC+3:00",
+      speciality: "Community Moderator",
+      platforms: ["Discord", "Telegram"],
+      languages: ["Ukrainian","Russian", "English"],
+      image: "/mod/oleksiichumachenko.png"
+    },
+    {
+      name: "SHAHID HASAN",
+      timezone: "UTC+5:00",
+      speciality: "Community Moderator",
+      platforms: ["Discord", "Telegram"],
+      languages: ["English"],
+      image: "/mod/shahidhasan.png"
+    },
   ]
 
   const guidelines = [

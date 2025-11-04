@@ -65,21 +65,37 @@ export default function AmbassadorPage() {
   ]
 
   const ambassadors = [
+    // {
+    //   name: "DfilipenKov",
+    //   timezone: "UTC+5:00",
+    //   speciality: "Community Moderator",
+    //   platforms: ["Discord", "Telegram"],
+    //   languages: ["English","Hindi", "Urdu, Arabic","Bangla"],
+    //   image: "/mod/Belarus.png"
+    // },
+    // {
+    //   name: "artems11",
+    //   timezone: "UTC+5:00",
+    //   speciality: "Community Moderator",
+    //   platforms: ["Discord", "Telegram"],
+    //   languages: ["English","Hindi", "Urdu, Arabic","Bangla"],
+    //   image: "/mod/artems11.png"
+    // }
     {
-      name: "Cryptømaster",
-      region: "cryptomaster7018",
-      country: "🇳🇬 Nigeria",
+      name: "DfilipenKov",
+      region: "shahid114",
+      country: "Belarus",
       expertise: "Community Building",
       projects: 1,
-      image: "/amb/Cryptomaster.png"
+      image: "/amb/DfilipenKov.png" // 没有对应图片，保持文字头像
     },
     {
-      name: "SHAHID",
+      name: "artems11",
       region: "shahid114",
-      country: "South Asia",
+      country: "Ukraine",
       expertise: "Community Building",
       projects: 1,
-      image: "/amb/SHAHID.png" // 没有对应图片，保持文字头像
+      image: "/amb/artems11.png" // 没有对应图片，保持文字头像
     },
     // {
     //   name: "Ahmed Hassan",
