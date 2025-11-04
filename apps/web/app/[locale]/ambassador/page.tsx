@@ -91,7 +91,7 @@ export default function AmbassadorPage() {
     },
     {
       name: "artems11",
-      timezone: "UTC+2",
+      timezone: "UTC+3",
       country: "Ukraine",
       expertise: "Community Building",
       projects: 1,
