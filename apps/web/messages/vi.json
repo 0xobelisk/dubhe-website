@@ -19,6 +19,7 @@
     "moderators": "Điều hành viên",
     "events": "Sự kiện",
     "contact": "Liên hệ",
+    "mediaKit": "Bộ Tài Liệu Truyền Thông",
     "openMenu": "Mở menu",
     "closeMenu": "Đóng menu"
   },
@@ -1804,6 +1805,116 @@
     "contact": {
       "title": "Có Câu Hỏi Về Điều Khoản?",
       "description": "Nếu bạn có bất kỳ câu hỏi nào về các Điều Khoản Dịch Vụ này, vui lòng liên hệ với đội ngũ pháp lý của chúng tôi."
+    }
+  },
+  "mediaKit": {
+    "hero": {
+      "badge": "Tài Nguyên Thương Hiệu",
+      "title1": "Dubhe",
+      "title2": "Bộ Tài Liệu Truyền Thông",
+      "subtitle": "Tải xuống các tài sản thương hiệu, hướng dẫn và tài nguyên của chúng tôi cho quan hệ đối tác, đưa tin truyền thông và nội dung cộng đồng.",
+      "downloadPack": "Tải Xuống Gói Thương Hiệu"
+    },
+    "logo": {
+      "title": "Logo và Tài Sản Thương Hiệu",
+      "subtitle": "Logo của chúng tôi đại diện cho sự đổi mới và độ tin cậy của nền tảng blockchain Dubhe. Sử dụng các tài sản này để duy trì tính nhất quán của thương hiệu.",
+      "availableFormats": "Định dạng có sẵn",
+      "download": "Tải xuống",
+      "dos": {
+        "title": "Hướng Dẫn Sử Dụng Logo",
+        "item1": "Sử dụng các tệp logo gốc không có sửa đổi",
+        "item2": "Duy trì khoảng trống tối thiểu xung quanh logo",
+        "item3": "Sử dụng trên nền có độ tương phản cao",
+        "item4": "Đảm bảo tỷ lệ và kích thước phù hợp"
+      },
+      "donts": {
+        "title": "Hạn Chế Sử Dụng Logo",
+        "hide": "Ẩn hạn chế",
+        "show": "Hiện hạn chế",
+        "item1": "Không kéo dài, bóp méo hoặc sửa đổi logo",
+        "item2": "Không sử dụng phiên bản độ phân giải thấp hoặc bị pixel hóa",
+        "item3": "Không đặt trên nền phức tạp hoặc có độ tương phản thấp",
+        "item4": "Không tạo lại logo với phông chữ khác"
+      }
+    },
+    "clearspace": {
+      "title": "Hướng Dẫn Khoảng Trống",
+      "subtitle": "Duy trì khoảng cách phù hợp xung quanh logo Dubhe để đảm bảo tác động hình ảnh và nhận diện thương hiệu.",
+      "minimum": "Khoảng Trống Tối Thiểu",
+      "description": "Logo Dubhe phải luôn được bao quanh bởi khoảng trống để duy trì tính toàn vẹn và tác động hình ảnh. Khoảng trống này dựa trên chiều cao của chữ 'D' trong logo.",
+      "specifications": "Thông Số Kỹ Thuật",
+      "spec1": "Khoảng trống tối thiểu: 1x chiều cao logo ở tất cả các bên",
+      "spec2": "Đối với sử dụng kỹ thuật số: đề xuất chiều cao tối thiểu 32px",
+      "spec3": "Đối với sử dụng in ấn: đề xuất chiều cao tối thiểu 0,5 inch"
+    },
+    "symbol": {
+      "title": "Biểu Tượng và Dấu Hiệu",
+      "subtitle": "Biểu tượng Dubhe có thể được sử dụng độc lập khi logo đầy đủ không phù hợp hoặc không gian bị hạn chế.",
+      "meaning": {
+        "title": "Ý Nghĩa Biểu Tượng",
+        "description": "Biểu tượng Dubhe đại diện cho chòm sao dẫn đường điều hướng, tượng trưng cho vai trò của chúng tôi trong việc hướng dẫn các nhà phát triển qua hệ sinh thái blockchain với các công cụ đáng tin cậy và sáng tạo."
+      },
+      "usage": {
+        "standalone": "Sử Dụng Độc Lập",
+        "standaloneDesc": "Sử dụng khi không gian bị hạn chế hoặc nhận diện thương hiệu đã được thiết lập",
+        "app": "Biểu Tượng Ứng Dụng",
+        "appDesc": "Hoàn hảo cho ứng dụng di động, favicon và ứng dụng định dạng nhỏ"
+      }
+    },
+    "partnership": {
+      "title": "Hướng Dẫn Đối Tác",
+      "subtitle": "Hướng dẫn cho các tài liệu đồng thương hiệu và đối tác để đảm bảo trình bày thương hiệu nhất quán.",
+      "cobranding": "Ví Dụ Đồng Thương Hiệu",
+      "partnerLogo": "Logo Đối Tác",
+      "spacing": {
+        "title": "Quy Tắc Khoảng Cách Logo",
+        "rule1": "Duy trì trọng lượng hình ảnh bằng nhau giữa các logo",
+        "rule2": "Sử dụng đường phân cách hoặc khoảng trống trắng đầy đủ",
+        "rule3": "Căn chỉnh logo trên cùng một đường cơ sở"
+      },
+      "approval": {
+        "title": "Phê Duyệt Đối Tác",
+        "description": "Tất cả các tài liệu đối tác và đồng thương hiệu yêu cầu phê duyệt từ đội ngũ Dubhe trước khi xuất bản.",
+        "contact": "Liên Hệ Để Phê Duyệt"
+      }
+    },
+    "colors": {
+      "title": "Bảng Màu",
+      "subtitle": "Hệ thống màu sắc của chúng tôi tạo ra trải nghiệm thương hiệu gắn kết và dễ tiếp cận trên tất cả các điểm chạm.",
+      "base": {
+        "title": "Màu Cơ Bản"
+      },
+      "primary": {
+        "title": "Màu Thương Hiệu Chính"
+      }
+    },
+    "typography": {
+      "title": "Kiểu Chữ",
+      "subtitle": "Hệ thống kiểu chữ của chúng tôi đảm bảo giao tiếp nhất quán và dễ đọc trên tất cả các tài liệu thương hiệu.",
+      "primary": {
+        "title": "Phông Chữ Chính",
+        "description": "Geist Sans là phông chữ chính của chúng tôi cho tất cả các giao tiếp thương hiệu"
+      },
+      "mono": {
+        "title": "Phông Chữ Monospace",
+        "description": "Geist Mono được sử dụng cho mã, tài liệu kỹ thuật và nội dung dành cho nhà phát triển"
+      },
+      "scale": {
+        "title": "Thang Đo Kiểu Chữ"
+      }
+    },
+    "download": {
+      "title": "Tải Xuống Tài Nguyên",
+      "subtitle": "Truy cập tất cả các tài sản thương hiệu, hướng dẫn và tài nguyên trong một gói tiện lợi.",
+      "pack": {
+        "title": "Gói Thương Hiệu Hoàn Chỉnh",
+        "description": "Bao gồm logo, bảng màu, hướng dẫn kiểu chữ và ví dụ sử dụng ở nhiều định dạng.",
+        "button": "Tải Xuống Gói Thương Hiệu"
+      },
+      "contact": {
+        "description": "Cần tài sản tùy chỉnh hoặc có câu hỏi?",
+        "button": "Liên Hệ Với Đội Ngũ Của Chúng Tôi"
+      }
     }
   },
   "organizations": {

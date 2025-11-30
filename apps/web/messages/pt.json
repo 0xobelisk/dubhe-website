@@ -19,6 +19,7 @@
     "moderators": "Moderadores",
     "events": "Eventos",
     "contact": "Contato",
+    "mediaKit": "Kit de Mídia",
     "openMenu": "Abrir menu",
     "closeMenu": "Fechar menu"
   },
@@ -1750,6 +1751,116 @@
       "downloadLabel": "Download OnePager"
     },
     "openInNewTab": "Abre em nova aba"
+  },
+  "mediaKit": {
+    "hero": {
+      "badge": "Recursos da Marca",
+      "title1": "Dubhe",
+      "title2": "Kit de Mídia",
+      "subtitle": "Baixe nossos recursos de marca, diretrizes e recursos para parcerias, cobertura de mídia e conteúdo da comunidade.",
+      "downloadPack": "Baixar Pacote da Marca"
+    },
+    "logo": {
+      "title": "Logotipo e Recursos da Marca",
+      "subtitle": "Nosso logotipo representa a inovação e confiabilidade da plataforma blockchain Dubhe. Use esses recursos para manter a consistência da marca.",
+      "availableFormats": "Formatos disponíveis",
+      "download": "Baixar",
+      "dos": {
+        "title": "Diretrizes de Uso do Logotipo",
+        "item1": "Use arquivos de logotipo originais sem modificação",
+        "item2": "Mantenha o espaço livre mínimo ao redor do logotipo",
+        "item3": "Use em fundos de alto contraste",
+        "item4": "Garanta dimensionamento e proporções adequados"
+      },
+      "donts": {
+        "title": "Restrições de Uso do Logotipo",
+        "hide": "Ocultar restrições",
+        "show": "Mostrar restrições",
+        "item1": "Não estique, distorça ou modifique o logotipo",
+        "item2": "Não use versões de baixa resolução ou pixeladas",
+        "item3": "Não coloque em fundos ocupados ou de baixo contraste",
+        "item4": "Não recrie o logotipo com fontes diferentes"
+      }
+    },
+    "clearspace": {
+      "title": "Diretrizes de Espaço Livre",
+      "subtitle": "Mantenha o espaçamento adequado ao redor do logotipo Dubhe para garantir impacto visual e reconhecimento da marca.",
+      "minimum": "Espaço Livre Mínimo",
+      "description": "O logotipo Dubhe deve sempre estar cercado por espaço livre para manter sua integridade visual e impacto. Este espaço livre é baseado na altura da letra 'D' no logotipo.",
+      "specifications": "Especificações Técnicas",
+      "spec1": "Espaço livre mínimo: 1x altura do logotipo em todos os lados",
+      "spec2": "Para uso digital: altura mínima de 32px recomendada",
+      "spec3": "Para uso impresso: altura mínima de 0,5 polegada recomendada"
+    },
+    "symbol": {
+      "title": "Símbolo e Marca",
+      "subtitle": "O símbolo Dubhe pode ser usado independentemente quando o logotipo completo não é adequado ou o espaço é limitado.",
+      "meaning": {
+        "title": "Significado do Símbolo",
+        "description": "O símbolo Dubhe representa a constelação que guia a navegação, simbolizando nosso papel em guiar desenvolvedores através do ecossistema blockchain com ferramentas confiáveis e inovadoras."
+      },
+      "usage": {
+        "standalone": "Uso Independente",
+        "standaloneDesc": "Use quando o espaço é limitado ou o reconhecimento da marca está estabelecido",
+        "app": "Ícones de Aplicativo",
+        "appDesc": "Perfeito para aplicativos móveis, favicons e aplicações de formato pequeno"
+      }
+    },
+    "partnership": {
+      "title": "Diretrizes de Parceria",
+      "subtitle": "Diretrizes para co-branding e materiais de parceria para garantir apresentação consistente da marca.",
+      "cobranding": "Exemplo de Co-branding",
+      "partnerLogo": "Logotipo do Parceiro",
+      "spacing": {
+        "title": "Regras de Espaçamento do Logotipo",
+        "rule1": "Mantenha peso visual igual entre os logotipos",
+        "rule2": "Use linha separadora ou espaço em branco adequado",
+        "rule3": "Alinhe os logotipos na mesma linha de base"
+      },
+      "approval": {
+        "title": "Aprovação de Parceria",
+        "description": "Todos os materiais de parceria e co-branding requerem aprovação da equipe Dubhe antes da publicação.",
+        "contact": "Contato para Aprovação"
+      }
+    },
+    "colors": {
+      "title": "Paleta de Cores",
+      "subtitle": "Nosso sistema de cores cria uma experiência de marca coesa e acessível em todos os pontos de contato.",
+      "base": {
+        "title": "Cores Base"
+      },
+      "primary": {
+        "title": "Cores Primárias da Marca"
+      }
+    },
+    "typography": {
+      "title": "Tipografia",
+      "subtitle": "Nosso sistema tipográfico garante comunicação consistente e legível em todos os materiais da marca.",
+      "primary": {
+        "title": "Tipografia Primária",
+        "description": "Geist Sans é nossa tipografia primária para todas as comunicações da marca"
+      },
+      "mono": {
+        "title": "Tipografia Monoespaçada",
+        "description": "Geist Mono é usado para código, documentação técnica e conteúdo de desenvolvedor"
+      },
+      "scale": {
+        "title": "Escala Tipográfica"
+      }
+    },
+    "download": {
+      "title": "Baixar Recursos",
+      "subtitle": "Acesse todos os recursos de marca, diretrizes e recursos em um pacote conveniente.",
+      "pack": {
+        "title": "Pacote Completo da Marca",
+        "description": "Inclui logotipos, paletas de cores, diretrizes tipográficas e exemplos de uso em vários formatos.",
+        "button": "Baixar Pacote da Marca"
+      },
+      "contact": {
+        "description": "Precisa de recursos personalizados ou tem dúvidas?",
+        "button": "Entre em Contato com Nossa Equipe"
+      }
+    }
   },
   "organizations": {
     "section": {

@@ -19,6 +19,7 @@
     "moderators": "Moderatörler",
     "events": "Etkinlikler",
     "contact": "İletişim",
+    "mediaKit": "Medya Kiti",
     "openMenu": "Menüyü aç",
     "closeMenu": "Menüyü kapat"
   },
@@ -1804,6 +1805,116 @@
     "contact": {
       "title": "Şartlar Hakkında Sorularınız mı Var?",
       "description": "Bu Hizmet Şartları hakkında herhangi bir sorunuz varsa, lütfen hukuk ekibimizle iletişime geçin."
+    }
+  },
+  "mediaKit": {
+    "hero": {
+      "badge": "Marka Kaynakları",
+      "title1": "Dubhe",
+      "title2": "Medya Kiti",
+      "subtitle": "Ortaklıklar, medya kapsamı ve topluluk içeriği için marka varlıklarımızı, yönergelerimizi ve kaynaklarımızı indirin.",
+      "downloadPack": "Marka Paketini İndir"
+    },
+    "logo": {
+      "title": "Logo ve Marka Varlıkları",
+      "subtitle": "Logomuz Dubhe blockchain platformunun inovasyonunu ve güvenilirliğini temsil eder. Marka tutarlılığını korumak için bu varlıkları kullanın.",
+      "availableFormats": "Mevcut formatlar",
+      "download": "İndir",
+      "dos": {
+        "title": "Logo Kullanım Yönergeleri",
+        "item1": "Orijinal logo dosyalarını değiştirmeden kullanın",
+        "item2": "Logo etrafında minimum boşluk bırakın",
+        "item3": "Yüksek kontrastlı arka planlarda kullanın",
+        "item4": "Uygun ölçeklendirme ve oranları sağlayın"
+      },
+      "donts": {
+        "title": "Logo Kullanım Kısıtlamaları",
+        "hide": "Kısıtlamaları gizle",
+        "show": "Kısıtlamaları göster",
+        "item1": "Logoyu uzatmayın,왜곡하거나 değiştirmeyin",
+        "item2": "Düşük çözünürlüklü veya pikselleşmiş sürümler kullanmayın",
+        "item3": "Yoğun veya düşük kontrastlı arka planlara yerleştirmeyin",
+        "item4": "Farklı yazı tipleriyle logoyu yeniden oluşturmayın"
+      }
+    },
+    "clearspace": {
+      "title": "Boşluk Yönergeleri",
+      "subtitle": "Görsel etki ve marka tanınırlığını sağlamak için Dubhe logosu etrafında uygun mesafe bırakın.",
+      "minimum": "Minimum Boşluk",
+      "description": "Dubhe logosu, görsel bütünlüğünü ve etkisini korumak için her zaman boşlukla çevrelenmelidir. Bu boşluk, logodaki 'D' harfinin yüksekliğine dayanır.",
+      "specifications": "Teknik Özellikler",
+      "spec1": "Minimum boşluk: tüm taraflarda logo yüksekliğinin 1 katı",
+      "spec2": "Dijital kullanım için: minimum 32px yükseklik önerilir",
+      "spec3": "Baskı kullanımı için: minimum 0,5 inç yükseklik önerilir"
+    },
+    "symbol": {
+      "title": "Sembol ve İşaret",
+      "subtitle": "Dubhe sembolü, tam logo uygun olmadığında veya alan sınırlı olduğunda bağımsız olarak kullanılabilir.",
+      "meaning": {
+        "title": "Sembol Anlamı",
+        "description": "Dubhe sembolü, navigasyonu yönlendiren takımyıldızı temsil eder ve geliştiricileri güvenilir ve yenilikçi araçlarla blockchain ekosisteminde yönlendirme rolümüzü simgeler."
+      },
+      "usage": {
+        "standalone": "Bağımsız Kullanım",
+        "standaloneDesc": "Alan sınırlı olduğunda veya marka tanınırlığı sağlandığında kullanın",
+        "app": "Uygulama İkonları",
+        "appDesc": "Mobil uygulamalar, favicon'lar ve küçük format uygulamalar için mükemmel"
+      }
+    },
+    "partnership": {
+      "title": "Ortaklık Yönergeleri",
+      "subtitle": "Tutarlı marka sunumunu sağlamak için ortak markalama ve ortaklık materyalleri için yönergeler.",
+      "cobranding": "Ortak Markalama Örneği",
+      "partnerLogo": "Partner Logosu",
+      "spacing": {
+        "title": "Logo Aralık Kuralları",
+        "rule1": "Logolar arasında eşit görsel ağırlık koruyun",
+        "rule2": "Ayırıcı çizgi veya yeterli beyaz boşluk kullanın",
+        "rule3": "Logoları aynı taban çizgisinde hizalayın"
+      },
+      "approval": {
+        "title": "Ortaklık Onayı",
+        "description": "Tüm ortaklık ve ortak markalama materyalleri yayınlanmadan önce Dubhe ekibinden onay gerektirir.",
+        "contact": "Onay İçin İletişime Geçin"
+      }
+    },
+    "colors": {
+      "title": "Renk Paleti",
+      "subtitle": "Renk sistemimiz tüm temas noktalarında uyumlu ve erişilebilir bir marka deneyimi yaratır.",
+      "base": {
+        "title": "Temel Renkler"
+      },
+      "primary": {
+        "title": "Ana Marka Renkleri"
+      }
+    },
+    "typography": {
+      "title": "Tipografi",
+      "subtitle": "Tipografi sistemimiz tüm marka materyallerinde tutarlı ve okunabilir iletişimi sağlar.",
+      "primary": {
+        "title": "Ana Yazı Tipi",
+        "description": "Geist Sans tüm marka iletişimleri için ana yazı tipimizdir"
+      },
+      "mono": {
+        "title": "Monospace Yazı Tipi",
+        "description": "Geist Mono kod, teknik dokümantasyon ve geliştirici içeriği için kullanılır"
+      },
+      "scale": {
+        "title": "Tipografi Ölçeği"
+      }
+    },
+    "download": {
+      "title": "Kaynakları İndir",
+      "subtitle": "Tüm marka varlıklarına, yönergelere ve kaynaklara tek bir uygun pakette erişin.",
+      "pack": {
+        "title": "Tam Marka Paketi",
+        "description": "Birden fazla formatta logolar, renk paletleri, tipografi yönergeleri ve kullanım örneklerini içerir.",
+        "button": "Marka Paketini İndir"
+      },
+      "contact": {
+        "description": "Özel varlıklara mı ihtiyacınız var veya sorularınız mı var?",
+        "button": "Ekibimizle İletişime Geçin"
+      }
     }
   },
   "organizations": {
