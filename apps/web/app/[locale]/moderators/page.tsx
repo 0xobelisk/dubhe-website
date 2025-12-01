@@ -67,14 +67,14 @@ export default function ModeratorsPage() {
   ]
 
   const moderators = [
-    {
-      name: "Emmaprof",
-      timezone: "UTC+1",
-      speciality: "Community Moderator Lead",
-      platforms: ["Discord", "Telegram"],
-      languages: ["English"],
-      image: "/mod/Emmaprof.png"
-    },
+    // {
+    //   name: "Emmaprof",
+    //   timezone: "UTC+1",
+    //   speciality: "Community Moderator Lead",
+    //   platforms: ["Discord", "Telegram"],
+    //   languages: ["English"],
+    //   image: "/mod/Emmaprof.png"
+    // },
     {
       name: "Purple_Rain_",
       timezone: "UTC+3",
