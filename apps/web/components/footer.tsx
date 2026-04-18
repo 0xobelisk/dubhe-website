@@ -100,7 +100,6 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">{t('sections.community')}</h4>
             <div className="space-y-2">
-              <Link href="/ambassador" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.ambassador')}</Link>
               <Link href="/moderators" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.moderators')}</Link>
               <Link href="/events" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.events')}</Link>
               <Link href="/contact" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.contact')}</Link>

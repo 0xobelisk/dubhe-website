@@ -77,7 +77,6 @@ export default function Navigation() {
       href: "#community",
       dropdown: [
         // { name: "Careers", href: "/careers" },
-        { name: t('ambassador'), href: "/ambassador" },
         { name: t('moderators'), href: "/moderators" },
         { name: t('events'), href: "/events" },
         { name: t('contact'), href: "/contact" },
