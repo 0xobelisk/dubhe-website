@@ -129,7 +129,6 @@ export function useSmartPrefetch() {
     if (typeof window === 'undefined') return
 
     // Track mouse position for predictive prefetching
-    let lastX = 0
     let lastY = 0
     
     const handleMouseMove = (e: MouseEvent) => {
@@ -143,7 +142,6 @@ export function useSmartPrefetch() {
         })
       }
       
-      lastX = e.clientX
       lastY = e.clientY
     }
 

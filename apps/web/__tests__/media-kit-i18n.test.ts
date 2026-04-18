@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
 
@@ -104,8 +104,6 @@ const REQUIRED_MEDIAKIT_KEYS = [
 ]
 
 // Technical terms that should remain in English
-const TECHNICAL_TERMS = ['SVG', 'PNG', 'RGB', 'HEX', 'Dubhe', 'Move', 'Geist Sans', 'Geist Mono']
-
 describe('Media Kit Internationalization Unit Tests', () => {
   describe('JSON Structure Validation', () => {
     LOCALES_WITH_MEDIAKIT.forEach(locale => {

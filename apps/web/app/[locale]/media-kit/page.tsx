@@ -6,11 +6,6 @@ import {
   Download, 
   Copy, 
   CheckCircle, 
-  Palette, 
-  Type, 
-  Image as ImageIcon,
-  Users,
-  Shield,
   Sparkles,
   ExternalLink,
   Eye,
@@ -630,8 +625,8 @@ export default function MediaKitPage() {
                   <h4 className="text-3xl font-bold text-white mb-2">Geist Mono</h4>
                   <p className="text-gray-400">{t('typography.mono.description')}</p>
                   <div className="mt-4 space-y-2 text-gray-300">
-                    <div className="text-lg">console.log("Hello World")</div>
-                    <div className="text-lg">const dubhe = "Move Platform"</div>
+                    <div className="text-lg">console.log(&quot;Hello World&quot;)</div>
+                    <div className="text-lg">const dubhe = &quot;Move Platform&quot;</div>
                     <div className="text-lg">function buildDApp() {}</div>
                   </div>
                 </div>

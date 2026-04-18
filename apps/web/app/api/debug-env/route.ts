@@ -1,11 +1,6 @@
 import { NextResponse } from 'next/server'
 
 export async function GET() {
-  // Only allow in development or with a secret key
-  const debugKey = process.env.DEBUG_KEY || 'debug-dubhe-2024'
-  const isAuthorized = process.env.NODE_ENV === 'development' || 
-                       (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('key') === debugKey)
-  
   return NextResponse.json({
     environment: {
       NODE_ENV: process.env.NODE_ENV,

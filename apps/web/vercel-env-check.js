@@ -1,3 +1,4 @@
+/* eslint-env node */
 // This script helps verify environment variables in Vercel
 // Run this in your API route to debug
 

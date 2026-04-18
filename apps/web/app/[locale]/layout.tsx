@@ -173,14 +173,10 @@ export default async function LocaleLayout({
         <link rel="preload" href="/marketing/logos/move-white.svg" as="image" type="image/svg+xml" />
         
         {/* DNS Prefetch for external domains */}
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://cdn.prod.website-files.com" />
         
         {/* Preconnect to critical third-party services */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://o1293971.ingest.sentry.io" />
         
         {/* Prefetch critical routes */}

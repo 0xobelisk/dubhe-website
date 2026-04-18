@@ -1,6 +1,5 @@
 import { render, screen, fireEvent, waitFor } from '@/test-utils'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { NextIntlClientProvider } from 'next-intl'
 import MediaKitPage from '@/app/[locale]/media-kit/page'
 
 /**

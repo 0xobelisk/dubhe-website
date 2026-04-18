@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-env node */
 
 /**
  * Translation validation script for Weblate integration
@@ -70,7 +71,8 @@ function validateTranslations() {
         }
 
       } catch (error) {
-        console.error(`❌ Error parsing ${file}:`, error.message);
+        const message = error instanceof Error ? error.message : String(error);
+        console.error(`❌ Error parsing ${file}:`, message);
         hasErrors = true;
       }
     }
@@ -113,7 +115,8 @@ function validateTranslations() {
     }
 
   } catch (error) {
-    console.error('❌ Validation script error:', error.message);
+    const message = error instanceof Error ? error.message : String(error);
+    console.error('❌ Validation script error:', message);
     process.exit(1);
   }
 }

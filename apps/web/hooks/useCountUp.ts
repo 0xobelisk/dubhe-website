@@ -177,14 +177,9 @@ export function useCountUp(options: UseCountUpOptions): UseCountUpReturn {
    */
   const update = useCallback((newEnd: number) => {
     stop()
-    // 创建新的选项对象来重新开始动画
-    // 这里我们需要重新设置状态，因为这是一个函数式更新
-    setValue(startValue)
-    setTimeout(() => {
-      const newOptions = { ...options, end: newEnd }
-      // 重新开始动画逻辑会在useEffect中处理
-    }, 0)
-  }, [stop, startValue, options])
+    setValue(formatValue(newEnd))
+    startTimeRef.current = undefined
+  }, [stop, formatValue])
 
   // 自动开始动画
   useEffect(() => {

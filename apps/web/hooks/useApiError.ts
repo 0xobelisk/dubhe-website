@@ -34,12 +34,12 @@ export function useApiError(options: UseApiErrorOptions = {}) {
   })
 
   const setError = useCallback((error: ApiError) => {
-    setState(prev => ({
-      ...prev,
+    setState({
       error,
       isError: true,
-      isLoading: false
-    }))
+      isLoading: false,
+      retryCount: 0
+    })
     
     // Send error to Sentry
     Sentry.captureException(new Error(error.message), {
@@ -83,12 +83,12 @@ export function useApiError(options: UseApiErrorOptions = {}) {
     for (let attempt = 0; attempt <= maxRetries; attempt++) {
       try {
         const result = await operation()
-        setState(prev => ({
+        setState({
           error: null,
           isError: false,
           isLoading: false,
           retryCount: attempt
-        }))
+        })
         return result
       } catch (error) {
         lastError = parseApiError(error)
@@ -220,9 +220,9 @@ export function useFetch() {
       })
 
       if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}))
+        const errorData = (await response.json().catch((): Record<string, unknown> => ({}))) as Record<string, unknown>
         throw {
-          message: errorData.message || `HTTP ${response.status}: ${response.statusText}`,
+          message: typeof errorData.message === 'string' ? errorData.message : `HTTP ${response.status}: ${response.statusText}`,
           status: response.status,
           code: response.status.toString(),
           details: errorData

@@ -2,6 +2,7 @@ import {NextConfig} from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
 import { withSentryConfig } from '@sentry/nextjs';
 import bundleAnalyzer from '@next/bundle-analyzer';
+import { createHash } from 'node:crypto';
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 const withBundleAnalyzer = bundleAnalyzer({
@@ -77,12 +78,12 @@ const nextConfig: NextConfig = {
             },
             // Vendor chunks split by package
             lib: {
-              test(module: any) {
+              test(module: { size: () => number; identifier: () => string }) {
                 return module.size() > 160000 &&
                   /node_modules[\\/]/.test(module.identifier());
               },
-              name(module: any) {
-                const hash = require('crypto').createHash('sha1');
+              name(module: { identifier: () => string }) {
+                const hash = createHash('sha1');
                 hash.update(module.identifier());
                 return hash.digest('hex').substring(0, 8);
               },
@@ -140,8 +141,6 @@ const sentryOptions = {
   widenClientFileUpload: true,
   tunnelRoute: "/monitoring",
   hideSourceMaps: true,
-  disableLogger: process.env.NODE_ENV === 'production',
-  automaticVercelMonitors: true,
 }
 
 export default withSentryConfig(withBundleAnalyzer(withNextIntl(nextConfig)), sentryOptions);

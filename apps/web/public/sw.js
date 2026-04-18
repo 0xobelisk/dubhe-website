@@ -1,7 +1,7 @@
 // Service Worker cleanup script
 // This file exists to properly unregister any previously registered service workers
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', function() {
   // Skip waiting to activate immediately
   self.skipWaiting();
 });
@@ -32,7 +32,7 @@ self.addEventListener('activate', function(event) {
 });
 
 // Handle fetch events (do nothing, just let network handle everything)
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function() {
   // Don't handle any fetch events, let them go to network
   return;
 });
