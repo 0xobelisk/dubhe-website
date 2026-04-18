@@ -10,6 +10,7 @@
     "engine": "Injin",
     "channel": "Tashar",
     "os": "Tsarin Aiki",
+    "wallet": "Walat",
     "foundation": "Gidauniya",
     "labs": "Dakunan Gwaji",
     "grants": "Tallafi",
@@ -2053,6 +2054,177 @@
         "description": "Kuna buƙatar albarkatun keɓantacce ko kuna da tambayoyi?",
         "button": "Tuntuɓi Ƙungiyarmu"
       }
+    }
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - Wallet na production don apps na Move",
+      "name": "Dubhe Wallet",
+      "description": "An gina Dubhe Wallet domin hadaddun apps na Move, workflows masu taushin izini, da manyan aiwatarwar onchain masu daraja.",
+      "featureList": [
+        "Bincike da soke izini",
+        "Duba haɗarin manyan mu’amaloli",
+        "Tallafin workflow mai lura da execution",
+        "Tsabtace session da ikon aiki"
+      ]
+    },
+    "hero": {
+      "badge": "Gina / Dubhe Wallet",
+      "title": "Wallet na production don apps na Move da manyan aiwatarwa masu daraja",
+      "description": "Ba a tsara Dubhe Wallet a matsayin wallet na gama-gari ga masu amfani na yau da kullum ba. An tsara shi ne domin hadaddun apps na Move, hanyoyin da ke da alaƙa da izini, da execution paths inda haɗari, murmurewa, da ikon aiki suke da muhimmanci.",
+      "primaryCta": "Fara amfani",
+      "secondaryCta": "Bi ci gaban samfurin",
+      "positioningEyebrow": "Matsayi",
+      "positioningTitle": "Wasu suna inganta onboarding, trading ko distribution.",
+      "positioningDescription": "Dubhe Wallet yana inganta execution, control da readiness na production.",
+      "differentiators": [
+        {
+          "title": "Sarrafa izini, ba sa hannu kawai ba",
+          "description": "An gina Dubhe Wallet ne a kan duba authorization, kula da capabilities masu haɗari, tsabtace session, da execution mai lura da barazana."
+        },
+        {
+          "title": "Tallafa wa onchain workflows masu matakai da yawa",
+          "description": "Ana kallon send, swap, bridge da order flows a matsayin hanyoyin execution da za a iya dawo da su, ba wallet prompts na lokaci ɗaya ba."
+        },
+        {
+          "title": "Yana aiki fiye da wallet na mutum ɗaya",
+          "description": "Sponsored gas, hardware-backed signing, manufofin amincewa na hukumomi, da recovery drills suna matsar da samfurin zuwa use cases na ƙungiya da treasury."
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Dalilin wannan wallet",
+      "title": "Babban giɓi ba samun wallet ba ne. Babban giɓin yana cikin execution na production.",
+      "description": "Wallets da yawa sun riga sun warware onboarding, nuna kadarori, da haɗin dApp na gama-gari. Dubhe Wallet yana nufin abin da ke zuwa bayan haka: workflows masu matakai da yawa, izini masu ɗorewa, sessions masu taushi, da partial execution states da ke buƙatar murmurewa maimakon zato."
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "Haɗari da izini",
+          "title": "Bangaren sarrafawa",
+          "items": [
+            "Authorization Center don duba da soke capabilities masu haɗari",
+            "Kariya daga haɗarin mu’amala domin execution mai daraja ko mai zargi",
+            "Duba manufofin barazana da phishing a hanyoyin amincewa masu taushi"
+          ]
+        },
+        {
+          "eyebrow": "Tallafin hadaddun hanyoyi",
+          "title": "Bangaren aiwatarwa",
+          "items": [
+            "Matsayin bridge, manyan oda da sulhu na ayyuka",
+            "Sanarwar da ke lura da execution da runtime visibility",
+            "Zabin sponsored gas da fallback handling"
+          ]
+        },
+        {
+          "eyebrow": "Tsaro da murmurewa",
+          "title": "Bangaren gudanarwa",
+          "items": [
+            "Hanyoyin signing na hardware / OWS",
+            "Session Manager domin tsabtace runtime da iko",
+            "Recovery drills don passkey, mnemonic da key-based recovery"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "An gina don",
+      "title": "Ba gabatarwar wallet ta kasuwar jama’a ba ce",
+      "description": "Masu dacewa da wannan sun fi kaɗan amma sun fi ƙima: apps da operators da ke buƙatar tabbacin execution, bayyanannen control da operational safety.",
+      "cards": [
+        {
+          "title": "Apps na Move",
+          "description": "Aikace-aikace masu daɗaɗɗen state, izini masu ɗorewa da execution paths da ke buƙatar fiye da basic wallet modal."
+        },
+        {
+          "title": "Power users",
+          "description": "Operators da ke kula da recoverability, nazarin manyan mu’amaloli, da reliable execution a swap, bridge da permission flows."
+        },
+        {
+          "title": "Ƙungiyoyi da treasury",
+          "description": "Rukuni da ke buƙatar approval policy, hardware-backed control, sponsored execution da ƙarin operational safety."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Tsaro da sarrafawa",
+      "title": "UX na wallet wani ɓangare ne kawai na samfurin",
+      "description": "A ƙarshe Dubhe Wallet ya kamata ya gabatar da control plane mafi ƙarfi domin hanyoyi masu taushi: duba izini, ganin execution, tsabtace session, signing na hardware da shirye-shiryen murmurewa. A nan ne yake bambanta da landing page na wallet na gama-gari.",
+      "cards": [
+        {
+          "title": "Hardware da murmurewa",
+          "description": "OWS / hardware signing da recovery drills ya kamata su zama alƙawarin samfurin da ake gani, ba saituna da aka ɓoye ba."
+        },
+        {
+          "title": "Matsayin execution",
+          "description": "Bin diddigin bridge, state na order, sulhu na ayyuka da tarihin execution su ne core UX ga workflows marasa sauƙi."
+        },
+        {
+          "title": "Operational visibility",
+          "description": "Sanarwa da runtime controls suna da muhimmanci idan ana amfani da wallet a matsayin execution surface, ba kawai identity surface ba."
+        },
+        {
+          "title": "Controls na ƙungiya",
+          "description": "Institutional approval policy da sponsored execution suna taimaka wa samfurin ya wuce consumer wallet territory."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "Matsayin dandali",
+      "title": "Gaskiyar product page ya kamata ya fayyace matsayin release",
+      "description": "Wannan sashe zai iya ɗaukar app store badges, extension links da release notes daga baya. A yanzu ya kamata ya bayyana abin da ke aiki da abin da ake shigarwa a hankali.",
+      "cards": [
+        {
+          "title": "Web Surface",
+          "status": "Aiki",
+          "detail": "Shi ne active product surface a yanzu kuma wuri mafi dacewa don bayyana wallet yau."
+        },
+        {
+          "title": "Mobile / Extension",
+          "status": "Ana fitarwa a hankali",
+          "detail": "Planned product surfaces ne da za a gabatar a nan idan matsayin release ya zama na jama’a."
+        },
+        {
+          "title": "Distribution",
+          "status": "Ana shiri",
+          "detail": "Yi amfani da wannan page a matsayin canonical pre-launch product page kafin a kammala public download CTAs da app store badges."
+        }
+      ],
+      "callout": {
+        "title": "Lokacin saka CTA na app store",
+        "description": "A saka direct download badges ne kawai idan release state, supported surfaces da support channels sun zama masu ƙarfi isa a mallake su a bainar jama’a. Kafin hakan, wannan page ya kamata ya mai da hankali wajen bayyana samfurin a fili."
+      }
+    },
+    "faq": {
+      "eyebrow": "Tambayoyin da ake yawan yi",
+      "title": "Ka riƙe labarin samfurin a sarari",
+      "description": "A nan landing page ya kamata ya warware ruɗanin da ke tsakanin Dubhe Wallet, Dubhe Engine da faɗaɗɗen Dubhe stack.",
+      "items": [
+        {
+          "question": "Shin Dubhe Wallet general-purpose Sui wallet ne?",
+          "answer": "A’a. Matsayinsa ya fi ƙuntata kuma ya fi niyya: production wallet ne don apps na Move, permission-sensitive workflows da high-value onchain execution."
+        },
+        {
+          "question": "Wa ya kamata ya fara duba shi?",
+          "answer": "Ƙungiyoyin da ke gina hadaddun Move apps, operators da ke kula da non-trivial execution flows, da treasury-like environments inda control da recovery suke da muhimmanci."
+        },
+        {
+          "question": "Me ya bambanta shi da onboarding-first wallets?",
+          "answer": "Yawancin onboarding-first wallets suna inganta farawa da sauƙaƙan amfani na yau da kullum. Dubhe Wallet yana inganta control, execution confidence da operational readiness."
+        },
+        {
+          "question": "Shin wannan page ya kamata ya riga ya ƙunshi app store links?",
+          "answer": "Sai bayan release state ya tabbata. Kafin hakan, ya kamata ya bayyana samfurin, intended users da execution-oriented capabilities a sarari."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Mataki na gaba",
+      "title": "Yi amfani da wannan a matsayin dedicated wallet page a cikin Build",
+      "description": "Iteration na gaba ya kamata ya ƙara release screenshots, supported surfaces da real distribution links. Abu mafi muhimmanci ya riga ya tabbata: wallet yanzu yana da proper narrative home maimakon a binne shi a bayan generic site link.",
+      "primaryCta": "Fara amfani da Dubhe Wallet",
+      "secondaryCta": "Duba GitHub"
     }
   }
 }

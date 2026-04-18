@@ -10,6 +10,7 @@
     "engine": "Moteur",
     "channel": "Canal",
     "os": "OS",
+    "wallet": "Wallet",
     "foundation": "Fondation",
     "labs": "Labs",
     "grants": "Subventions",
@@ -120,7 +121,7 @@
           "description": "Jeux on-chain et métavers"
         },
         "infrastructure": {
-          "title": "Infrastructure", 
+          "title": "Infrastructure",
           "description": "Outils développeur et infrastructure"
         },
         "nfts": {
@@ -163,7 +164,13 @@
         "schemaDefinition": {
           "title": "Définition de Schéma",
           "description": "Définissez votre logique de jeu ou de dApp en utilisant le système de schéma intuitif de Dubhe. Décrivez les entités, composants et systèmes dans des fichiers de configuration simples.",
-          "items": ["Entité", "Composant", "Système", "Erreur", "Événement"]
+          "items": [
+            "Entité",
+            "Composant",
+            "Système",
+            "Erreur",
+            "Événement"
+          ]
         },
         "codeGeneration": {
           "title": "Génération de Code",
@@ -285,25 +292,45 @@
           "title": "Applications Move",
           "subtitle": "Vos dApps et Jeux",
           "description": "Construisez des applications décentralisées complexes avec la sécurité et la flexibilité de Move",
-          "features": ["Protocoles DeFi", "Apps de Jeu", "Plateformes NFT", "dApps Sociales"]
+          "features": [
+            "Protocoles DeFi",
+            "Apps de Jeu",
+            "Plateformes NFT",
+            "dApps Sociales"
+          ]
         },
         "dubheEngine": {
           "title": "Moteur Dubhe",
           "subtitle": "Toolkit de Développement",
           "description": "Génère automatiquement 80% du code et fournit une chaîne d'outils de développeur complète",
-          "features": ["Génération de Code", "Développement Basé Schéma", "Déploiement Multi-Chaîne", "Environnement de Développement"]
+          "features": [
+            "Génération de Code",
+            "Développement Basé Schéma",
+            "Déploiement Multi-Chaîne",
+            "Environnement de Développement"
+          ]
         },
         "dubheChannel": {
           "title": "Canal Dubhe",
           "subtitle": "Couche Temps Réel",
           "description": "Couche d'interaction P2P pour une expérience utilisateur temps réel niveau Web2",
-          "features": ["<50ms Latence", "Synchronisation Temps Réel", "Communication P2P", "Support Mobile"]
+          "features": [
+            "<50ms Latence",
+            "Synchronisation Temps Réel",
+            "Communication P2P",
+            "Support Mobile"
+          ]
         },
         "dubheOS": {
           "title": "Dubhe OS",
           "subtitle": "Infrastructure Cross-Chain",
           "description": "Système d'exploitation décentralisé avec interopérabilité multi-chaîne native",
-          "features": ["Ponts Cross-Chain", "État Unifié", "Incitations Développeur", "Gouvernance"]
+          "features": [
+            "Ponts Cross-Chain",
+            "État Unifié",
+            "Incitations Développeur",
+            "Gouvernance"
+          ]
         }
       },
       "completeStackSolution": {
@@ -441,42 +468,66 @@
         "role": "Responsable de la Fondation",
         "location": "San Francisco, CA",
         "bio": "Leader visionnaire avec plus de 15 ans d'expérience en technologie blockchain. A précédemment dirigé des équipes d'ingénierie dans de grandes entreprises technologiques avant de fonder Dubhe pour révolutionner le développement Move.",
-        "expertise": ["Architecture Blockchain", "Leadership d'Équipe", "Stratégie Produit"]
+        "expertise": [
+          "Architecture Blockchain",
+          "Leadership d'Équipe",
+          "Stratégie Produit"
+        ]
       },
       "joan": {
         "name": "Joan",
         "role": "CTO & Co-fondatrice",
         "location": "New York, NY",
         "bio": "Ancienne développeuse Move avec une expertise approfondie en architecture de contrats intelligents. Dirige notre vision technique et supervise toutes les initiatives d'ingénierie.",
-        "expertise": ["Langage Move", "Contrats Intelligents", "Architecture Système"]
+        "expertise": [
+          "Langage Move",
+          "Contrats Intelligents",
+          "Architecture Système"
+        ]
       },
       "david": {
         "name": "David",
         "role": "Directeur d'Ingénierie",
         "location": "Séoul, Corée du Sud",
         "bio": "Ingénieur full-stack passionné par les outils de développement et la croissance de l'écosystème. Dirige notre équipe de développement moteur et pilote l'innovation technique.",
-        "expertise": ["Développement Full-stack", "Outils de Développement", "Open Source"]
+        "expertise": [
+          "Développement Full-stack",
+          "Outils de Développement",
+          "Open Source"
+        ]
       },
       "bonnie": {
         "name": "Bonnie",
         "role": "Directrice de Communauté",
         "location": "Barcelone, Espagne",
         "bio": "Bâtisseuse de communauté avec une vaste expérience dans la croissance des écosystèmes de développeurs. Gère nos initiatives communautaires mondiales et le programme d'ambassadeurs.",
-        "expertise": ["Construction de Communauté", "Relations Développeurs", "Gestion d'Événements"]
+        "expertise": [
+          "Construction de Communauté",
+          "Relations Développeurs",
+          "Gestion d'Événements"
+        ]
       },
       "liam": {
         "name": "Liam McKenzie",
         "role": "Directeur des Partenariats",
         "location": "Londres, Royaume-Uni",
         "bio": "Expert en développement commercial axé sur les partenariats stratégiques et la croissance de l'écosystème. A précédemment dirigé les partenariats dans de grandes entreprises blockchain.",
-        "expertise": ["Partenariats Stratégiques", "Développement Commercial", "Croissance d'Écosystème"]
+        "expertise": [
+          "Partenariats Stratégiques",
+          "Développement Commercial",
+          "Croissance d'Écosystème"
+        ]
       },
       "emily": {
         "name": "Emily Smith",
         "role": "Directrice de Recherche",
         "location": "Pékin, Chine",
         "bio": "Docteur en informatique spécialisée en systèmes distribués. Dirige nos initiatives de recherche et explore les technologies blockchain de pointe.",
-        "expertise": ["Systèmes Distribués", "Recherche", "Partenariats Académiques"]
+        "expertise": [
+          "Systèmes Distribués",
+          "Recherche",
+          "Partenariats Académiques"
+        ]
       }
     },
     "join": {
@@ -690,21 +741,36 @@
         "duration": "3 mois",
         "funding": "Jusqu'à 500K$",
         "description": "Programme intensif soutenu par la Fondation Dubhe co-incubé avec Obelisk Labs et les VC de l'écosystème",
-        "benefits": ["Financement Fondation Dubhe", "Co-incubation Obelisk Labs", "Support développement Move", "Partenariats VC écosystème"]
+        "benefits": [
+          "Financement Fondation Dubhe",
+          "Co-incubation Obelisk Labs",
+          "Support développement Move",
+          "Partenariats VC écosystème"
+        ]
       },
       "studio": {
         "title": "Studio Collaboratif",
         "duration": "6-12 mois",
         "funding": "Jusqu'à 1M$",
         "description": "Co-incubé par la Fondation Dubhe, Obelisk Labs et les VC de l'écosystème avec des ressources partagées",
-        "benefits": ["Co-incubation multi-partenaires", "Ressources techniques partagées", "Collaboration inter-projets", "Réseaux VC écosystème"]
+        "benefits": [
+          "Co-incubation multi-partenaires",
+          "Ressources techniques partagées",
+          "Collaboration inter-projets",
+          "Réseaux VC écosystème"
+        ]
       },
       "scale": {
         "title": "Échelle Écosystème",
         "duration": "6 mois",
         "funding": "Jusqu'à 2M$",
         "description": "Mise à l'échelle avec un support complet de la Fondation Dubhe, Obelisk Labs et des partenaires VC de l'écosystème",
-        "benefits": ["Réseau de co-incubation", "Introductions stratégiques", "Accès marché mondial", "Connexions VC entreprise"]
+        "benefits": [
+          "Réseau de co-incubation",
+          "Introductions stratégiques",
+          "Accès marché mondial",
+          "Connexions VC entreprise"
+        ]
       }
     },
     "resources": {
@@ -940,22 +1006,31 @@
         "protocol": {
           "title": "Développement de Protocole",
           "description": "Protocoles blockchain principaux, mécanismes de consensus et améliorations du langage Move",
-          "teams": ["Obelisk Labs"]
+          "teams": [
+            "Obelisk Labs"
+          ]
         },
         "infrastructure": {
           "title": "Infrastructure et Mise à l'Échelle",
           "description": "Mise en réseau haute performance, communication temps réel et solutions de scalabilité",
-          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+          "teams": [
+            "Dubhe Network Labs",
+            "Cyferio Labs"
+          ]
         },
         "crossChain": {
           "title": "Technologie Cross-Chain",
           "description": "Protocoles d'interopérabilité, pontage universel et gouvernance multi-chaîne",
-          "teams": ["Dubhe Bridge Labs"]
+          "teams": [
+            "Dubhe Bridge Labs"
+          ]
         },
         "privacy": {
           "title": "Confidentialité et Sécurité",
           "description": "Preuves zero-knowledge, protocoles de préservation de la confidentialité et recherche cryptographique",
-          "teams": ["Cyferio Labs"]
+          "teams": [
+            "Cyferio Labs"
+          ]
         }
       },
       "contributingLabs": "Laboratoires Contributeurs:"
@@ -1409,17 +1484,29 @@
         "gaming": {
           "title": "Jeux Temps Réel",
           "description": "Jeux multijoueurs avec temps de réponse instantanés",
-          "metrics": ["<50ms latence", "1M+ joueurs simultanés", "99.9% temps de fonctionnement"]
+          "metrics": [
+            "<50ms latence",
+            "1M+ joueurs simultanés",
+            "99.9% temps de fonctionnement"
+          ]
         },
         "social": {
           "title": "Plateformes Sociales",
           "description": "Réseaux sociaux décentralisés avec messagerie temps réel",
-          "metrics": ["Messagerie instantanée", "Appels vidéo en direct", "Chats de groupe"]
+          "metrics": [
+            "Messagerie instantanée",
+            "Appels vidéo en direct",
+            "Chats de groupe"
+          ]
         },
         "trading": {
           "title": "Applications de Trading",
           "description": "Trading haute fréquence avec flux de prix temps réel",
-          "metrics": ["Données temps réel", "Mises à jour carnet d'ordres", "Découverte de prix"]
+          "metrics": [
+            "Données temps réel",
+            "Mises à jour carnet d'ordres",
+            "Découverte de prix"
+          ]
         }
       }
     },
@@ -1545,22 +1632,38 @@
         "sui": {
           "name": "Réseau Sui",
           "status": "Live",
-          "features": ["Haut débit", "Modèle centré objet", "Langage Move"]
+          "features": [
+            "Haut débit",
+            "Modèle centré objet",
+            "Langage Move"
+          ]
         },
         "aptos": {
           "name": "Aptos",
           "status": "Live",
-          "features": ["Exécution parallèle", "Move VM", "Contrats intelligents sûrs"]
+          "features": [
+            "Exécution parallèle",
+            "Move VM",
+            "Contrats intelligents sûrs"
+          ]
         },
         "movement": {
           "name": "Movement",
           "status": "Intégration",
-          "features": ["Compatibilité EVM", "Environnement d'exécution Move", "Architecture modulaire"]
+          "features": [
+            "Compatibilité EVM",
+            "Environnement d'exécution Move",
+            "Architecture modulaire"
+          ]
         },
         "future": {
           "name": "Chaînes Futures",
           "status": "Planifié",
-          "features": ["Piloté par la communauté", "Basé Move", "Expansion écosystème"]
+          "features": [
+            "Piloté par la communauté",
+            "Basé Move",
+            "Expansion écosystème"
+          ]
         }
       }
     },
@@ -1864,6 +1967,177 @@
       "contributions": "Contributions Clés",
       "status": "Statut",
       "website": "Visiter le Site Web"
+    }
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - Portefeuille de production pour les apps Move",
+      "name": "Dubhe Wallet",
+      "description": "Dubhe Wallet est conçu pour les applications Move complexes, les workflows sensibles aux permissions et les exécutions onchain à forte valeur.",
+      "featureList": [
+        "Revue et révocation des autorisations",
+        "Vérifications de risque pour les transactions à forte valeur",
+        "Support de workflows conscients de l’état d’exécution",
+        "Nettoyage des sessions et contrôle opérationnel"
+      ]
+    },
+    "hero": {
+      "badge": "Build / Dubhe Wallet",
+      "title": "Un portefeuille de production pour les apps Move et les exécutions à forte valeur",
+      "description": "Dubhe Wallet n’est pas présenté comme un portefeuille grand public généraliste. Il est conçu pour les applications Move complexes, les flux sensibles aux permissions et les chemins d’exécution où le risque, la récupération et le contrôle opérationnel comptent vraiment.",
+      "primaryCta": "Commencer",
+      "secondaryCta": "Suivre l’avancement du produit",
+      "positioningEyebrow": "Positionnement",
+      "positioningTitle": "Les autres optimisent l’onboarding, le trading ou la distribution.",
+      "positioningDescription": "Dubhe Wallet optimise l’exécution, le contrôle et la préparation à la production.",
+      "differentiators": [
+        {
+          "title": "Contrôler les permissions, pas seulement les signatures",
+          "description": "Dubhe Wallet est construit autour de la revue des autorisations, de la gestion des capabilities à risque, du nettoyage des sessions et d’une exécution consciente des menaces."
+        },
+        {
+          "title": "Prendre en charge des workflows onchain multi-étapes",
+          "description": "Les flux d’envoi, swap, bridge et ordre sont traités comme des chemins d’exécution récupérables, et non comme de simples popups de portefeuille."
+        },
+        {
+          "title": "Aller au-delà d’un portefeuille personnel",
+          "description": "Sponsored gas, signatures matérielles, politiques d’approbation institutionnelles et exercices de récupération orientent le produit vers les usages d’équipe et de treasury."
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Pourquoi ce portefeuille existe",
+      "title": "Le vrai manque n’est pas l’accès au portefeuille. C’est l’exécution en production.",
+      "description": "De nombreux portefeuilles résolvent déjà l’onboarding, l’affichage des actifs et la connexion générique aux dApps. Dubhe Wallet s’intéresse à ce qui vient ensuite : workflows multi-étapes, permissions durables, sessions sensibles et états d’exécution partiels qui exigent une récupération plutôt qu’une supposition."
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "Risque et permissions",
+          "title": "Surface de contrôle",
+          "items": [
+            "Authorization Center pour revoir et révoquer les capabilities risquées",
+            "Garde de risque transactionnel pour les exécutions à forte valeur ou suspectes",
+            "Vérifications anti-menaces et anti-phishing sur les flux d’approbation sensibles"
+          ]
+        },
+        {
+          "eyebrow": "Support des flux complexes",
+          "title": "Surface d’exécution",
+          "items": [
+            "Statut de bridge, ordres avancés et rapprochement d’activité",
+            "Notifications orientées exécution et visibilité runtime",
+            "Préférences de sponsored gas et gestion du fallback"
+          ]
+        },
+        {
+          "eyebrow": "Sécurité et récupération",
+          "title": "Surface opérationnelle",
+          "items": [
+            "Chemins de signature hardware / OWS",
+            "Session Manager pour le nettoyage et le contrôle runtime",
+            "Exercices de récupération pour passkey, mnémonique et clés"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Conçu pour",
+      "title": "Ce n’est pas un pitch de portefeuille grand public",
+      "description": "Le bon public est plus étroit mais plus précieux : applications et opérateurs qui ont besoin de confiance d’exécution, d’un contrôle plus clair et d’une meilleure sécurité opérationnelle.",
+      "cards": [
+        {
+          "title": "Apps Move",
+          "description": "Des applications avec un état complexe, des permissions persistantes et des chemins d’exécution qui demandent plus qu’une simple modal de portefeuille."
+        },
+        {
+          "title": "Power users",
+          "description": "Des opérateurs qui se soucient de la récupérabilité, de la revue des transactions à forte valeur et d’une exécution fiable sur les flux swap, bridge et permissions."
+        },
+        {
+          "title": "Équipes et treasury",
+          "description": "Des groupes qui ont besoin de politiques d’approbation, de contrôle matériel, d’exécution sponsorisée et d’une sécurité opérationnelle renforcée."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Sécurité et contrôle",
+      "title": "L’UX du portefeuille n’est qu’une partie du produit",
+      "description": "Dubhe Wallet devrait à terme proposer un plan de contrôle plus serré pour les flux sensibles : revue des permissions, visibilité d’exécution, nettoyage de session, signature matérielle et préparation à la récupération. C’est là qu’il se distingue d’une landing page de portefeuille générique.",
+      "cards": [
+        {
+          "title": "Matériel et récupération",
+          "description": "La signature OWS / hardware et les exercices de récupération doivent être des promesses produit visibles, pas des réglages enfouis."
+        },
+        {
+          "title": "État d’exécution",
+          "description": "Le suivi de bridge, l’état des ordres, le rapprochement d’activité et l’historique d’exécution sont un UX central pour les workflows non triviaux."
+        },
+        {
+          "title": "Visibilité opérationnelle",
+          "description": "Les notifications et les contrôles runtime comptent quand le portefeuille sert de surface d’exécution, pas seulement de surface d’identité."
+        },
+        {
+          "title": "Contrôles d’équipe",
+          "description": "Les politiques d’approbation institutionnelles et l’exécution sponsorisée sont la voie pour dépasser le territoire du portefeuille purement consumer."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "État de la plateforme",
+      "title": "Une vraie page produit doit rendre l’état de release explicite",
+      "description": "Cette section pourra plus tard absorber badges d’app store, liens d’extension et notes de release. Pour l’instant, elle doit expliquer clairement ce qui est actif et ce qui arrive encore par phases.",
+      "cards": [
+        {
+          "title": "Surface Web",
+          "status": "Active",
+          "detail": "Surface produit active aujourd’hui et bon endroit pour expliquer le portefeuille."
+        },
+        {
+          "title": "Mobile / Extension",
+          "status": "Déploiement progressif",
+          "detail": "Surfaces produit prévues à introduire ici lorsque l’état de release sera public."
+        },
+        {
+          "title": "Distribution",
+          "status": "En préparation",
+          "detail": "Utilisez cette page comme page produit canonique avant que les CTA publics et les badges d’app store ne soient finalisés."
+        }
+      ],
+      "callout": {
+        "title": "Quand ajouter des CTA d’app store",
+        "description": "N’ajoutez des badges de téléchargement direct que lorsque l’état de release, les surfaces supportées et les canaux de support sont suffisamment stables pour être assumés publiquement. Jusque-là, cette page doit se concentrer sur une explication claire du produit."
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Gardez le récit produit net",
+      "description": "C’est ici que la page doit lever la confusion entre Dubhe Wallet, Dubhe Engine et le stack Dubhe plus large.",
+      "items": [
+        {
+          "question": "Dubhe Wallet est-il un portefeuille Sui généraliste ?",
+          "answer": "Non. Son positionnement est plus étroit et plus intentionnel : un portefeuille de production pour les apps Move, les workflows sensibles aux permissions et les exécutions onchain à forte valeur."
+        },
+        {
+          "question": "Qui devrait l’évaluer en premier ?",
+          "answer": "Les équipes qui construisent des applications Move complexes, les opérateurs qui gèrent des flux d’exécution non triviaux et les environnements de type treasury où le contrôle et la récupération comptent."
+        },
+        {
+          "question": "Qu’est-ce qui le différencie des portefeuilles centrés onboarding ?",
+          "answer": "La plupart des portefeuilles onboarding-first optimisent la mise en route rapide et l’usage quotidien. Dubhe Wallet optimise le contrôle, la confiance d’exécution et la préparation opérationnelle."
+        },
+        {
+          "question": "La page devrait-elle déjà inclure des liens vers les app stores ?",
+          "answer": "Seulement lorsque l’état de release est stable. Avant cela, elle doit expliquer clairement le produit, les utilisateurs visés et les capacités orientées exécution."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Étape suivante",
+      "title": "Utilisez ceci comme page portefeuille dédiée dans Build",
+      "description": "La prochaine itération devrait ajouter captures d’écran de release, surfaces supportées et vrais liens de distribution. L’essentiel est déjà en place : le portefeuille a désormais un vrai foyer narratif au lieu d’être caché derrière un lien générique du site.",
+      "primaryCta": "Commencer avec Dubhe Wallet",
+      "secondaryCta": "Voir GitHub"
     }
   }
 }

@@ -1,10 +1,11 @@
 import { ExternalLink } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 import { useTranslations } from 'next-intl'
+import { Link } from "@/i18n/navigation"
 
 export default function Footer() {
   const t = useTranslations('footer')
+  const navigation = useTranslations('navigation')
   return (
     <footer role="contentinfo" className="py-16 bg-slate-900 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -48,6 +49,7 @@ export default function Footer() {
               <Link href="/engine" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.engine')}</Link>
               <Link href="/channel" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.channel')}</Link>
               <Link href="/os" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{t('links.os')}</Link>
+              <Link href="/wallet" className="block text-gray-400 hover:text-white text-sm transition-colors duration-200">{navigation('wallet')}</Link>
             </div>
           </div>
 

@@ -1,7 +1,7 @@
 {
   "navigation": {
     "learn": "학습",
-    "build": "개발", 
+    "build": "개발",
     "ecosystem": "생태계",
     "media": "미디어",
     "community": "커뮤니티",
@@ -10,6 +10,7 @@
     "engine": "엔진",
     "channel": "채널",
     "os": "OS",
+    "wallet": "지갑",
     "foundation": "재단",
     "labs": "랩",
     "grants": "그랜트",
@@ -163,7 +164,13 @@
         "schemaDefinition": {
           "title": "스키마 정의",
           "description": "Dubhe의 직관적인 스키마 시스템을 사용하여 게임 또는 dApp 로직을 정의하세요. 간단한 구성 파일에서 엔티티, 컴포넌트, 시스템을 설명합니다.",
-          "items": ["엔티티", "컴포넌트", "시스템", "오류", "이벤트"]
+          "items": [
+            "엔티티",
+            "컴포넌트",
+            "시스템",
+            "오류",
+            "이벤트"
+          ]
         },
         "codeGeneration": {
           "title": "코드 생성",
@@ -285,25 +292,45 @@
           "title": "Move 애플리케이션",
           "subtitle": "당신의 dApps와 게임",
           "description": "Move의 보안성과 유연성으로 복잡한 탈중앙화 애플리케이션을 구축하세요",
-          "features": ["DeFi 프로토콜", "게임 앱", "NFT 플랫폼", "소셜 dApps"]
+          "features": [
+            "DeFi 프로토콜",
+            "게임 앱",
+            "NFT 플랫폼",
+            "소셜 dApps"
+          ]
         },
         "dubheEngine": {
           "title": "Dubhe 엔진",
           "subtitle": "개발 툴킷",
           "description": "80%의 코드를 자동으로 생성하고 완전한 개발자 툴체인을 제공합니다",
-          "features": ["코드 생성", "스키마 기반 개발", "멀티체인 배포", "개발 환경"]
+          "features": [
+            "코드 생성",
+            "스키마 기반 개발",
+            "멀티체인 배포",
+            "개발 환경"
+          ]
         },
         "dubheChannel": {
           "title": "Dubhe 채널",
           "subtitle": "실시간 레이어",
           "description": "Web2 수준의 실시간 사용자 경험을 위한 P2P 상호작용 레이어",
-          "features": ["<50ms 지연 시간", "실시간 동기화", "P2P 통신", "모바일 지원"]
+          "features": [
+            "<50ms 지연 시간",
+            "실시간 동기화",
+            "P2P 통신",
+            "모바일 지원"
+          ]
         },
         "dubheOS": {
           "title": "Dubhe OS",
           "subtitle": "크로스체인 인프라",
           "description": "네이티브 멀티체인 상호운용성을 가진 탈중앙화 운영 체제",
-          "features": ["크로스체인 브릿지", "통합 상태", "개발자 인센티브", "거버넌스"]
+          "features": [
+            "크로스체인 브릿지",
+            "통합 상태",
+            "개발자 인센티브",
+            "거버넌스"
+          ]
         }
       },
       "completeStackSolution": {
@@ -635,17 +662,29 @@
         "gaming": {
           "title": "실시간 게임",
           "description": "즉각적인 응답 시간을 가진 멀티플레이어 게임",
-          "metrics": ["50ms 미만의 지연 시간", "100만 이상의 동시 플레이어", "99.9% 가동 시간"]
+          "metrics": [
+            "50ms 미만의 지연 시간",
+            "100만 이상의 동시 플레이어",
+            "99.9% 가동 시간"
+          ]
         },
         "social": {
           "title": "소셜 플랫폼",
           "description": "실시간 메시징을 가진 탈중앙화 소셜 네트워크",
-          "metrics": ["즉석 메시징", "라이브 영상 통화", "그룹 채팅"]
+          "metrics": [
+            "즉석 메시징",
+            "라이브 영상 통화",
+            "그룹 채팅"
+          ]
         },
         "trading": {
           "title": "거래 애플리케이션",
           "description": "실시간 가격 피드를 가진 고빈도 거래",
-          "metrics": ["실시간 데이터", "주문장 업데이트", "가격 발견"]
+          "metrics": [
+            "실시간 데이터",
+            "주문장 업데이트",
+            "가격 발견"
+          ]
         }
       }
     },
@@ -771,22 +810,38 @@
         "sui": {
           "name": "Sui 네트워크",
           "status": "운영중",
-          "features": ["높은 처리량", "객체 중심 모델", "Move 언어"]
+          "features": [
+            "높은 처리량",
+            "객체 중심 모델",
+            "Move 언어"
+          ]
         },
         "aptos": {
           "name": "Aptos",
           "status": "운영중",
-          "features": ["병렬 실행", "Move VM", "안전한 스마트 계약"]
+          "features": [
+            "병렬 실행",
+            "Move VM",
+            "안전한 스마트 계약"
+          ]
         },
         "movement": {
           "name": "Movement",
           "status": "통합중",
-          "features": ["EVM 호환성", "Move 런타임", "모듈러 아키텍처"]
+          "features": [
+            "EVM 호환성",
+            "Move 런타임",
+            "모듈러 아키텍처"
+          ]
         },
         "future": {
           "name": "미래 체인",
           "status": "계획중",
-          "features": ["커뮤니티 주도", "Move 기반", "생태계 확장"]
+          "features": [
+            "커뮤니티 주도",
+            "Move 기반",
+            "생태계 확장"
+          ]
         }
       }
     },
@@ -853,7 +908,7 @@
           "label": "총 자금 조달"
         },
         "startups": {
-          "value": "곧 출시 예정", 
+          "value": "곧 출시 예정",
           "label": "인큐베이팅된 스타트업"
         },
         "unicorns": {
@@ -876,21 +931,36 @@
         "duration": "3개월",
         "funding": "최대 $500K",
         "description": "Dubhe 재단이 지원하는 집중 프로그램으로 Obelisk Labs 및 생태계 VC와 공동 인큐베이션",
-        "benefits": ["Dubhe 재단 자금 지원", "Obelisk Labs 공동 인큐베이션", "Move 개발 지원", "생태계 VC 파트너십"]
+        "benefits": [
+          "Dubhe 재단 자금 지원",
+          "Obelisk Labs 공동 인큐베이션",
+          "Move 개발 지원",
+          "생태계 VC 파트너십"
+        ]
       },
       "studio": {
         "title": "협업 스튜디오",
         "duration": "6-12개월",
-        "funding": "최대 $1M", 
+        "funding": "최대 $1M",
         "description": "Dubhe 재단, Obelisk Labs, 생태계 VC가 공유 리소스로 공동 인큐베이션",
-        "benefits": ["다중 파트너 공동 인큐베이션", "공유 기술 리소스", "프로젝트 간 협업", "생태계 VC 네트워크"]
+        "benefits": [
+          "다중 파트너 공동 인큐베이션",
+          "공유 기술 리소스",
+          "프로젝트 간 협업",
+          "생태계 VC 네트워크"
+        ]
       },
       "scale": {
         "title": "생태계 스케일",
         "duration": "6개월",
         "funding": "최대 $2M",
         "description": "Dubhe 재단, Obelisk Labs, 생태계 VC 파트너의 포괄적인 지원으로 스케일업",
-        "benefits": ["공동 인큐베이션 네트워크", "전략적 소개", "글로벌 시장 접근", "기업 VC 연결"]
+        "benefits": [
+          "공동 인큐베이션 네트워크",
+          "전략적 소개",
+          "글로벌 시장 접근",
+          "기업 VC 연결"
+        ]
       }
     },
     "resources": {
@@ -1451,22 +1521,31 @@
         "protocol": {
           "title": "프로토콜 개발",
           "description": "핵심 블록체인 프로토콜, 합의 메커니즘, Move 언어 개선",
-          "teams": ["Obelisk Labs"]
+          "teams": [
+            "Obelisk Labs"
+          ]
         },
         "infrastructure": {
           "title": "인프라 & 스케일링",
           "description": "고성능 네트워킹, 실시간 통신, 확장성 솔루션",
-          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+          "teams": [
+            "Dubhe Network Labs",
+            "Cyferio Labs"
+          ]
         },
         "crossChain": {
           "title": "크로스체인 기술",
           "description": "상호운용성 프로토콜, 범용 브리징, 멀티체인 거버넌스",
-          "teams": ["Dubhe Bridge Labs"]
+          "teams": [
+            "Dubhe Bridge Labs"
+          ]
         },
         "privacy": {
           "title": "프라이버시 & 보안",
           "description": "영지식 증명, 프라이버시 보호 프로토콜, 암호화 연구",
-          "teams": ["Cyferio Labs"]
+          "teams": [
+            "Cyferio Labs"
+          ]
         }
       },
       "contributingLabs": "기여 연구소:"
@@ -1930,5 +2009,176 @@
   },
   "LocaleSwitcher": {
     "label": "언어"
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - Move 앱을 위한 프로덕션 지갑",
+      "name": "Dubhe Wallet",
+      "description": "Dubhe Wallet은 복잡한 Move 애플리케이션, 권한 민감형 워크플로, 고가치 온체인 실행을 위해 설계되었습니다.",
+      "featureList": [
+        "권한 검토 및 철회",
+        "고가치 거래 위험 점검",
+        "실행 상태를 고려한 워크플로 지원",
+        "세션 정리 및 운영 제어"
+      ]
+    },
+    "hero": {
+      "badge": "개발 / Dubhe Wallet",
+      "title": "Move 앱과 고가치 실행을 위한 프로덕션 지갑",
+      "description": "Dubhe Wallet은 범용 소비자 지갑으로 포지셔닝되지 않습니다. 복잡한 Move 애플리케이션, 권한에 민감한 흐름, 그리고 위험·복구·운영 제어가 중요한 실행 경로를 위해 설계되었습니다.",
+      "primaryCta": "시작하기",
+      "secondaryCta": "제품 진행 상황 보기",
+      "positioningEyebrow": "포지셔닝",
+      "positioningTitle": "다른 제품은 온보딩, 거래, 배포를 최적화합니다.",
+      "positioningDescription": "Dubhe Wallet은 실행, 제어, 프로덕션 준비도를 최적화합니다.",
+      "differentiators": [
+        {
+          "title": "서명이 아니라 권한을 제어합니다",
+          "description": "Dubhe Wallet은 권한 검토, 위험 capability 처리, 세션 정리, 위협 인지형 실행을 중심으로 구축됩니다."
+        },
+        {
+          "title": "다단계 온체인 워크플로를 지원합니다",
+          "description": "전송, 스왑, 브리지, 주문 흐름을 일회성 지갑 팝업이 아니라 복구 가능한 실행 경로로 다룹니다."
+        },
+        {
+          "title": "개인 지갑을 넘어 운영합니다",
+          "description": "Sponsored gas, 하드웨어 서명, 기관 승인 정책, 복구 훈련을 통해 팀과 트레저리 사용 사례까지 확장됩니다."
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "이 지갑이 필요한 이유",
+      "title": "진짜 공백은 지갑 접근이 아니라 프로덕션 실행입니다.",
+      "description": "많은 지갑이 온보딩, 자산 표시, 일반적인 dApp 연결은 이미 해결했습니다. Dubhe Wallet은 그 이후를 겨냥합니다. 다단계 흐름, 장기 권한, 민감한 세션, 그리고 추측이 아니라 복구가 필요한 부분 실행 상태를 다룹니다."
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "위험과 권한",
+          "title": "제어 표면",
+          "items": [
+            "위험 capability를 검토하고 철회하는 Authorization Center",
+            "고가치 또는 의심스러운 실행을 위한 거래 위험 가드",
+            "민감한 승인 흐름에서의 위협·피싱 정책 검사"
+          ]
+        },
+        {
+          "eyebrow": "복잡한 흐름 지원",
+          "title": "실행 표면",
+          "items": [
+            "브리지 상태, 고급 주문, 활동 정산",
+            "실행 인지형 알림 및 런타임 가시성",
+            "Sponsored gas 선호도와 fallback 처리"
+          ]
+        },
+        {
+          "eyebrow": "보안과 복구",
+          "title": "운영 표면",
+          "items": [
+            "하드웨어 / OWS 서명 경로",
+            "런타임 정리와 제어를 위한 Session Manager",
+            "패스키, 니모닉, 키 기반 복구 훈련"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "대상 사용자",
+      "title": "대중 시장용 지갑 피치가 아닙니다",
+      "description": "적합한 대상은 더 좁지만 더 가치가 높습니다. 실행 확신, 더 명확한 제어, 운영 안전이 필요한 애플리케이션과 운영자입니다.",
+      "cards": [
+        {
+          "title": "Move 앱",
+          "description": "복잡한 상태, 지속 권한, 기본 지갑 모달 이상의 실행 경로가 필요한 애플리케이션입니다."
+        },
+        {
+          "title": "파워 유저",
+          "description": "복구 가능성, 고가치 거래 검토, 스왑·브리지·권한 흐름 전반의 안정적인 실행을 중시하는 운영자입니다."
+        },
+        {
+          "title": "팀과 트레저리",
+          "description": "승인 정책, 하드웨어 기반 제어, sponsored execution, 더 강한 운영 안전이 필요한 그룹입니다."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "보안과 제어",
+      "title": "지갑 UX는 제품의 일부일 뿐입니다",
+      "description": "Dubhe Wallet은 궁극적으로 민감한 흐름을 위한 더 촘촘한 제어 평면을 제공해야 합니다. 권한 검토, 실행 가시성, 세션 정리, 하드웨어 서명, 복구 준비도가 그 핵심입니다. 이것이 일반적인 지갑 랜딩 페이지와의 차이입니다.",
+      "cards": [
+        {
+          "title": "하드웨어와 복구",
+          "description": "OWS / 하드웨어 서명과 복구 훈련은 숨겨진 설정이 아니라 드러나는 제품 약속이어야 합니다."
+        },
+        {
+          "title": "실행 상태",
+          "description": "브리지 추적, 주문 상태, 활동 정산, 실행 이력은 복잡한 워크플로의 핵심 UX입니다."
+        },
+        {
+          "title": "운영 가시성",
+          "description": "지갑이 단순한 신원 표면이 아니라 실행 표면으로 사용될 때 알림과 런타임 제어가 중요합니다."
+        },
+        {
+          "title": "팀 제어",
+          "description": "기관 승인 정책과 sponsored execution은 제품이 순수 소비자 지갑 영역을 넘어서는 방식입니다."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "플랫폼 상태",
+      "title": "실제 제품 페이지라면 출시 상태를 명확히 드러내야 합니다",
+      "description": "이 섹션은 나중에 앱스토어 배지, 확장 링크, 릴리스 노트를 흡수할 수 있습니다. 지금은 무엇이 활성 상태인지, 무엇이 단계적으로 출시되는지 알려줘야 합니다.",
+      "cards": [
+        {
+          "title": "웹 표면",
+          "status": "활성",
+          "detail": "현재 활성 제품 표면이며 지금 지갑을 설명하기에 가장 적절한 위치입니다."
+        },
+        {
+          "title": "모바일 / 확장",
+          "status": "단계적 출시",
+          "detail": "공개 출시 상태가 명확해지면 여기에서 소개해야 할 예정된 제품 표면입니다."
+        },
+        {
+          "title": "배포",
+          "status": "준비 중",
+          "detail": "앱스토어 및 공개 다운로드 CTA가 확정되기 전까지 이 페이지를 표준 사전 출시 제품 페이지로 사용합니다."
+        }
+      ],
+      "callout": {
+        "title": "앱스토어 CTA를 추가할 시점",
+        "description": "출시 상태, 지원 표면, 지원 채널이 공개적으로 책임질 수 있을 만큼 안정적일 때만 직접 다운로드 배지를 추가하세요. 그 전까지는 이 페이지가 제품을 명확히 설명하는 데 집중해야 합니다."
+      }
+    },
+    "faq": {
+      "eyebrow": "자주 묻는 질문",
+      "title": "제품 서사를 명확하게 유지하세요",
+      "description": "이곳은 Dubhe Wallet, Dubhe Engine, 그리고 더 넓은 Dubhe 스택 사이의 혼동을 해소해야 하는 영역입니다.",
+      "items": [
+        {
+          "question": "Dubhe Wallet은 범용 Sui 지갑인가요?",
+          "answer": "아니요. 더 좁고 의도적인 포지셔닝을 가집니다. Move 앱, 권한 민감형 워크플로, 고가치 온체인 실행을 위한 프로덕션 지갑입니다."
+        },
+        {
+          "question": "누가 먼저 평가해야 하나요?",
+          "answer": "복잡한 Move 애플리케이션을 만드는 팀, 복잡한 실행 흐름을 다루는 운영자, 그리고 제어와 복구가 중요한 트레저리형 환경입니다."
+        },
+        {
+          "question": "온보딩 중심 지갑과 무엇이 다른가요?",
+          "answer": "대부분의 온보딩 중심 지갑은 빠른 설정과 일상적 사용을 최적화합니다. Dubhe Wallet은 제어, 실행 확신, 운영 준비도를 최적화합니다."
+        },
+        {
+          "question": "이 페이지에 지금 앱스토어 링크를 넣어야 하나요?",
+          "answer": "출시 상태가 안정화된 이후에만 그래야 합니다. 그 전까지는 제품, 대상 사용자, 실행 중심 역량을 명확히 설명해야 합니다."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "다음 단계",
+      "title": "Build 안의 전용 지갑 페이지로 사용하세요",
+      "description": "다음 반복에서는 실제 스크린샷, 지원 표면, 실제 배포 링크가 추가되어야 합니다. 중요한 부분은 이미 마련되었습니다. 이제 지갑은 일반 사이트 링크 뒤에 묻히지 않고, 분명한 서사의 홈을 갖게 되었습니다.",
+      "primaryCta": "Dubhe Wallet 시작하기",
+      "secondaryCta": "GitHub 보기"
+    }
   }
 }

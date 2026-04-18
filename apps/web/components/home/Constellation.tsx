@@ -1,16 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-
-const stars = [
-  { name: 'Dubhe', x: 280, y: 60, size: 'w-6 h-6', glow: 'shadow-purple-500/50', primary: true },
-  { name: 'Merak', x: 260, y: 130, size: 'w-4 h-4', glow: 'shadow-blue-500/50' },
-  { name: 'Phecda', x: 200, y: 150, size: 'w-4 h-4', glow: 'shadow-purple-400/50' },
-  { name: 'Megrez', x: 160, y: 100, size: 'w-3 h-3', glow: 'shadow-blue-400/50' },
-  { name: 'Alioth', x: 130, y: 80, size: 'w-4 h-4', glow: 'shadow-purple-500/50' },
-  { name: 'Mizar', x: 100, y: 60, size: 'w-4 h-4', glow: 'shadow-blue-400/50' },
-  { name: 'Alkaid', x: 60, y: 80, size: 'w-4 h-4', glow: 'shadow-purple-400/50' }
-]
+import { DUBHE_CONSTELLATION_LINES, DUBHE_CONSTELLATION_STARS } from "@/components/dubhe-constellation"
 
 export default function Constellation() {
   return (
@@ -61,22 +52,25 @@ export default function Constellation() {
                 <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.8" />
               </linearGradient>
             </defs>
-            {/* Big Dipper constellation lines */}
             <g stroke="url(#lineGradient)" strokeWidth="2" fill="none" className="animate-pulse" style={{ animationDuration: '3s' }}>
-              {/* Bowl: Dubhe -> Merak -> Phecda -> Megrez -> back to Dubhe */}
-              <line x1="280" y1="60" x2="260" y2="130" />
-              <line x1="260" y1="130" x2="200" y2="150" />
-              <line x1="200" y1="150" x2="160" y2="100" />
-              <line x1="160" y1="100" x2="280" y2="60" />
-              {/* Handle: Megrez -> Alioth -> Mizar -> Alkaid */}
-              <line x1="160" y1="100" x2="130" y2="80" />
-              <line x1="130" y1="80" x2="100" y2="60" />
-              <line x1="100" y1="60" x2="60" y2="80" />
+              {DUBHE_CONSTELLATION_LINES.map(([fromIndex, toIndex]) => {
+                const fromStar = DUBHE_CONSTELLATION_STARS[fromIndex]!
+                const toStar = DUBHE_CONSTELLATION_STARS[toIndex]!
+                return (
+                  <line
+                    key={`${fromStar.name}-${toStar.name}`}
+                    x1={fromStar.x}
+                    y1={fromStar.y}
+                    x2={toStar.x}
+                    y2={toStar.y}
+                  />
+                )
+              })}
             </g>
           </svg>
 
           {/* Big Dipper stars */}
-          {stars.map((star, index) => (
+          {DUBHE_CONSTELLATION_STARS.map((star, index) => (
             <motion.div
               key={star.name}
               className={`absolute ${star.size} rounded-full transform -translate-x-1/2 -translate-y-1/2`}

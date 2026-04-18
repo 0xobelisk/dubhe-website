@@ -1,7 +1,7 @@
 {
   "navigation": {
     "learn": "學習",
-    "build": "開發", 
+    "build": "開發",
     "ecosystem": "生態系統",
     "media": "媒體",
     "community": "社群",
@@ -10,6 +10,7 @@
     "engine": "引擎",
     "channel": "頻道",
     "os": "作業系統",
+    "wallet": "錢包",
     "foundation": "基金會",
     "labs": "實驗室",
     "grants": "資助",
@@ -120,7 +121,7 @@
           "description": "鏈上遊戲和元宇宙"
         },
         "infrastructure": {
-          "title": "基礎設施", 
+          "title": "基礎設施",
           "description": "開發者工具和基礎設施"
         },
         "nfts": {
@@ -163,7 +164,13 @@
         "schemaDefinition": {
           "title": "架構定義",
           "description": "使用Dubhe直觀的架構系統定義您的遊戲或dApp邏輯。在簡單的配置文件中描述實體、組件和系統。",
-          "items": ["實體", "組件", "系統", "錯誤", "事件"]
+          "items": [
+            "實體",
+            "組件",
+            "系統",
+            "錯誤",
+            "事件"
+          ]
         },
         "codeGeneration": {
           "title": "代碼生成",
@@ -285,25 +292,45 @@
           "title": "Move應用程式",
           "subtitle": "您的dApps和遊戲",
           "description": "利用Move的安全性和靈活性構建複雜的去中心化應用程式",
-          "features": ["DeFi協議", "遊戲應用", "NFT平台", "社交dApps"]
+          "features": [
+            "DeFi協議",
+            "遊戲應用",
+            "NFT平台",
+            "社交dApps"
+          ]
         },
         "dubheEngine": {
           "title": "Dubhe引擎",
           "subtitle": "開發工具包",
           "description": "自動生成80%的代碼並提供完整的開發者工具鏈",
-          "features": ["代碼生成", "基於架構的開發", "多鏈部署", "開發環境"]
+          "features": [
+            "代碼生成",
+            "基於架構的開發",
+            "多鏈部署",
+            "開發環境"
+          ]
         },
         "dubheChannel": {
           "title": "Dubhe通道",
           "subtitle": "即時層",
           "description": "Web2級即時用戶體驗的P2P互動層",
-          "features": ["<50毫秒延遲", "即時同步", "P2P通信", "移動支持"]
+          "features": [
+            "<50毫秒延遲",
+            "即時同步",
+            "P2P通信",
+            "移動支持"
+          ]
         },
         "dubheOS": {
           "title": "Dubhe作業系統",
           "subtitle": "跨鏈基礎設施",
           "description": "具有原生多鏈互操作性的去中心化作業系統",
-          "features": ["跨鏈橋接", "統一狀態", "開發者激勵", "治理"]
+          "features": [
+            "跨鏈橋接",
+            "統一狀態",
+            "開發者激勵",
+            "治理"
+          ]
         }
       },
       "completeStackSolution": {
@@ -441,42 +468,66 @@
         "role": "基金會負責人",
         "location": "美國加州舊金山",
         "bio": "擁有15年以上區塊鏈技術經驗的遠見領袖。曾在大型科技公司領導工程團隊，後創立Dubhe以革命性地改變Move開發。",
-        "expertise": ["區塊鏈架構", "團隊領導", "產品策略"]
+        "expertise": [
+          "區塊鏈架構",
+          "團隊領導",
+          "產品策略"
+        ]
       },
       "joan": {
-        "name": "Joan", 
+        "name": "Joan",
         "role": "技術長兼聯合創始人",
         "location": "美國紐約州紐約市",
         "bio": "前Move核心開發者，在智能合約架構方面擁有深厚專業知識。領導我們的技術願景並監督所有工程倡議。",
-        "expertise": ["Move語言", "智能合約", "系統架構"]
+        "expertise": [
+          "Move語言",
+          "智能合約",
+          "系統架構"
+        ]
       },
       "david": {
         "name": "David",
-        "role": "工程總監", 
+        "role": "工程總監",
         "location": "韓國首爾",
         "bio": "對開發者工具和生態系統發展充滿熱情的全端工程師。領導我們的引擎開發團隊並推動技術創新。",
-        "expertise": ["全端開發", "開發者工具", "開源"]
+        "expertise": [
+          "全端開發",
+          "開發者工具",
+          "開源"
+        ]
       },
       "bonnie": {
         "name": "Bonnie",
         "role": "社群總監",
-        "location": "西班牙巴塞隆納", 
+        "location": "西班牙巴塞隆納",
         "bio": "在發展開發者生態系統方面擁有豐富經驗的社群建設者。管理我們的全球社群倡議和大使計劃。",
-        "expertise": ["社群建設", "開發者關係", "活動管理"]
+        "expertise": [
+          "社群建設",
+          "開發者關係",
+          "活動管理"
+        ]
       },
       "liam": {
         "name": "Liam McKenzie",
         "role": "合作總監",
         "location": "英國倫敦",
         "bio": "專注於戰略合作夥伴關係和生態系統發展的商業發展專家。曾在主要區塊鏈公司領導合作夥伴關係。",
-        "expertise": ["戰略合作夥伴關係", "商業發展", "生態系統發展"]
+        "expertise": [
+          "戰略合作夥伴關係",
+          "商業發展",
+          "生態系統發展"
+        ]
       },
       "emily": {
-        "name": "Emily Smith", 
+        "name": "Emily Smith",
         "role": "研究總監",
         "location": "中國北京",
         "bio": "專精分散式系統的計算機科學博士。領導我們的研究倡議並探索尖端區塊鏈技術。",
-        "expertise": ["分散式系統", "研究", "學術合作夥伴關係"]
+        "expertise": [
+          "分散式系統",
+          "研究",
+          "學術合作夥伴關係"
+        ]
       }
     },
     "join": {
@@ -763,22 +814,31 @@
         "protocol": {
           "title": "協議開發",
           "description": "核心區塊鏈協議、共識機制和 Move 語言增強",
-          "teams": ["Obelisk 實驗室"]
+          "teams": [
+            "Obelisk 實驗室"
+          ]
         },
         "infrastructure": {
           "title": "基礎設施與擴容",
           "description": "高性能網路、即時通訊和可擴展性解決方案",
-          "teams": ["Dubhe 網路實驗室", "Cyferio 實驗室"]
+          "teams": [
+            "Dubhe 網路實驗室",
+            "Cyferio 實驗室"
+          ]
         },
         "crossChain": {
           "title": "跨鏈技術",
           "description": "互操作性協議、通用橋接和多鏈治理",
-          "teams": ["Dubhe 橋接實驗室"]
+          "teams": [
+            "Dubhe 橋接實驗室"
+          ]
         },
         "privacy": {
           "title": "隱私與安全",
           "description": "零知識證明、隱私保護協議和密碼學研究",
-          "teams": ["Cyferio 實驗室"]
+          "teams": [
+            "Cyferio 實驗室"
+          ]
         }
       },
       "contributingLabs": "貢獻實驗室："
@@ -1232,17 +1292,29 @@
         "gaming": {
           "title": "即時遊戲",
           "description": "具有即時響應時間的多人遊戲",
-          "metrics": ["<50 毫秒延遲", "100 萬以上併發玩家", "99.9% 正常運行時間"]
+          "metrics": [
+            "<50 毫秒延遲",
+            "100 萬以上併發玩家",
+            "99.9% 正常運行時間"
+          ]
         },
         "social": {
           "title": "社交平台",
           "description": "具有即時訊息的去中心化社交網路",
-          "metrics": ["即時訊息", "即時視訊通話", "群聊"]
+          "metrics": [
+            "即時訊息",
+            "即時視訊通話",
+            "群聊"
+          ]
         },
         "trading": {
           "title": "交易應用程式",
           "description": "具有即時價格流的高頻交易",
-          "metrics": ["即時數據", "訂單簿更新", "價格發現"]
+          "metrics": [
+            "即時數據",
+            "訂單簿更新",
+            "價格發現"
+          ]
         }
       }
     },
@@ -1368,22 +1440,38 @@
         "sui": {
           "name": "Sui 網路",
           "status": "正式運行",
-          "features": ["高吞吐量", "以物件為中心的模型", "Move 語言"]
+          "features": [
+            "高吞吐量",
+            "以物件為中心的模型",
+            "Move 語言"
+          ]
         },
         "aptos": {
           "name": "Aptos",
           "status": "正式運行",
-          "features": ["並行執行", "Move VM", "安全智能合約"]
+          "features": [
+            "並行執行",
+            "Move VM",
+            "安全智能合約"
+          ]
         },
         "movement": {
           "name": "Movement",
           "status": "整合中",
-          "features": ["EVM 兼容性", "Move 運行時", "模組化架構"]
+          "features": [
+            "EVM 兼容性",
+            "Move 運行時",
+            "模組化架構"
+          ]
         },
         "future": {
           "name": "未來鏈",
           "status": "計劃中",
-          "features": ["社區驅動", "基於 Move", "生態系統擴展"]
+          "features": [
+            "社區驅動",
+            "基於 Move",
+            "生態系統擴展"
+          ]
         }
       }
     },
@@ -1729,7 +1817,7 @@
       "downloadLabel": "下載白皮書"
     },
     "lightpaper": {
-      "title": "輕白皮書", 
+      "title": "輕白皮書",
       "description": "Dubhe 關鍵功能、使用案例和技術創新的簡明概述。",
       "downloadLabel": "下載輕白皮書"
     },
@@ -1805,9 +1893,6 @@
       "status": "狀態",
       "website": "造訪網站"
     }
-  },
-  "LocaleSwitcher": {
-    "label": "語言"
   },
   "mediaKit": {
     "hero": {
@@ -1917,6 +2002,177 @@
         "description": "需要自訂資產或有問題嗎？",
         "button": "聯絡我們的團隊"
       }
+    }
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - 面向 Move 應用的生產級錢包",
+      "name": "Dubhe Wallet",
+      "description": "Dubhe Wallet 面向複雜 Move 應用、權限敏感流程與高價值鏈上執行而設計。",
+      "featureList": [
+        "授權審查與撤銷",
+        "高價值交易風險檢查",
+        "面向執行流程的工作流支持",
+        "會話清理與操作控制"
+      ]
+    },
+    "hero": {
+      "badge": "開發 / Dubhe Wallet",
+      "title": "面向 Move 應用與高價值執行的生產級錢包",
+      "description": "Dubhe Wallet 不是一個面向大眾消費者的通用錢包定位。它為複雜 Move 應用、權限敏感流程，以及風險、恢復與操作控制都很重要的執行路徑而設計。",
+      "primaryCta": "開始使用",
+      "secondaryCta": "關注產品進展",
+      "positioningEyebrow": "定位",
+      "positioningTitle": "別人優化的是 onboarding、交易或分發。",
+      "positioningDescription": "Dubhe Wallet 優化的是執行、控制與生產準備度。",
+      "differentiators": [
+        {
+          "title": "控制的是權限，而不只是簽名",
+          "description": "Dubhe Wallet 圍繞授權審查、高風險能力處理、會話清理與風險感知執行而構建。"
+        },
+        {
+          "title": "支持多步驟鏈上工作流",
+          "description": "發送、交換、跨橋與訂單流程被視為可恢復的執行路徑，而不是一次性的錢包彈窗。"
+        },
+        {
+          "title": "不止是個人錢包",
+          "description": "Sponsored gas、硬體簽名、機構審批策略與恢復演練，讓產品更接近團隊與金庫場景。"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "為什麼需要這個錢包",
+      "title": "真正的缺口不是錢包接入，而是生產級執行。",
+      "description": "很多錢包已經解決 onboarding、資產展示與通用 dApp 連接。Dubhe Wallet 針對的是那之後的階段：多步流程、長期權限、敏感會話，以及需要恢復而不是猜測的部分執行狀態。"
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "風險與權限",
+          "title": "控制面",
+          "items": [
+            "授權中心，用於審查與撤銷高風險能力",
+            "針對高價值或可疑執行的交易風險防護",
+            "敏感授權流程中的威脅與釣魚策略檢查"
+          ]
+        },
+        {
+          "eyebrow": "複雜流程支持",
+          "title": "執行面",
+          "items": [
+            "跨橋狀態、高級訂單與活動對賬",
+            "面向執行的通知與運行時可見性",
+            "Sponsored gas 偏好與回退處理"
+          ]
+        },
+        {
+          "eyebrow": "安全與恢復",
+          "title": "運營面",
+          "items": [
+            "硬體 / OWS 簽名路徑",
+            "用於運行時清理與控制的會話管理器",
+            "Passkey、助記詞與私鑰恢復演練"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "面向誰",
+      "title": "這不是一個大眾市場錢包敘事",
+      "description": "真正的目標受眾更窄也更有價值：需要執行信心、更清晰控制與運營安全的應用與操作者。",
+      "cards": [
+        {
+          "title": "Move 應用",
+          "description": "那些具有複雜狀態、持久權限與執行路徑，超出基礎錢包彈窗能力的應用。"
+        },
+        {
+          "title": "高階用戶",
+          "description": "關心可恢復性、高價值交易審查，以及在 swap、bridge 與權限流程中穩定執行的操作者。"
+        },
+        {
+          "title": "團隊與金庫",
+          "description": "需要審批策略、硬體控制、sponsored execution 與更強操作安全的團隊。"
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "安全與控制",
+      "title": "錢包體驗只是產品的一部分",
+      "description": "Dubhe Wallet 最終應該為敏感流程提供更緊密的控制平面：權限審查、執行可見性、會話清理、硬體簽名與恢復準備度。這正是它與通用錢包落地頁拉開差距的地方。",
+      "cards": [
+        {
+          "title": "硬體與恢復",
+          "description": "OWS / 硬體簽名與恢復演練應該成為可見的產品承諾，而不是埋在設置裡。"
+        },
+        {
+          "title": "執行狀態",
+          "description": "跨橋跟蹤、訂單狀態、活動對賬與執行歷史，是複雜流程的核心體驗。"
+        },
+        {
+          "title": "運營可見性",
+          "description": "當錢包是執行界面而不只是身份界面時，通知與運行時控制就很重要。"
+        },
+        {
+          "title": "團隊控制",
+          "description": "機構審批策略與 sponsored execution 是產品走出純消費級錢包範疇的關鍵。"
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "平台狀態",
+      "title": "一個真正的產品頁應該明確說清發布狀態",
+      "description": "這一部分未來可以承接商店徽章、插件鏈接與發版說明。現在則應該清楚告訴訪客什麼已經可用、什麼仍在逐步推出。",
+      "cards": [
+        {
+          "title": "Web 端",
+          "status": "活躍",
+          "detail": "目前的主要產品表面，也是今天解釋這個錢包的正確位置。"
+        },
+        {
+          "title": "移動端 / 插件",
+          "status": "分階段推出",
+          "detail": "未來的產品表面，等公開發布狀態更明確後再在此介紹。"
+        },
+        {
+          "title": "分發",
+          "status": "準備中",
+          "detail": "在 App Store 和公開下載 CTA 最終確定前，這裡應該是錢包的標準預發布頁。"
+        }
+      ],
+      "callout": {
+        "title": "何時加入應用商店 CTA",
+        "description": "只有當發布狀態、支持表面與支持渠道足夠穩定、能公開承擔時，才加入直接下載徽章。在那之前，這個頁面應該聚焦於把產品講清楚。"
+      }
+    },
+    "faq": {
+      "eyebrow": "常見問題",
+      "title": "讓產品敘事保持清晰",
+      "description": "這一部分應該用來消除 Dubhe Wallet、Dubhe Engine 與更大 Dubhe 技術棧之間的混淆。",
+      "items": [
+        {
+          "question": "Dubhe Wallet 是一個通用 Sui 錢包嗎？",
+          "answer": "不是。它的定位更窄也更有意識：面向 Move 應用、權限敏感工作流與高價值鏈上執行的生產級錢包。"
+        },
+        {
+          "question": "誰應該優先評估它？",
+          "answer": "構建複雜 Move 應用的團隊、處理非簡單執行流程的操作者，以及需要更高控制與恢復能力的金庫場景。"
+        },
+        {
+          "question": "它和 onboarding 優先的錢包有什麼不同？",
+          "answer": "多數 onboarding 優先錢包優化的是快速上手與日常使用。Dubhe Wallet 優化的是控制、執行信心與操作準備度。"
+        },
+        {
+          "question": "這個頁面現在就該放上 App Store 鏈接嗎？",
+          "answer": "只有在發布狀態穩定後才應加入。在那之前，它應該先清楚解釋產品本身、目標用戶以及面向執行的能力。"
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "下一步",
+      "title": "把它作為 Build 下的專屬錢包頁",
+      "description": "下一輪迭代應加入真實截圖、支持表面與正式分發鏈接。最重要的部分已經到位：錢包現在有了清晰的敘事入口，而不是被埋在通用站點鏈接背後。",
+      "primaryCta": "開始使用 Dubhe Wallet",
+      "secondaryCta": "查看 GitHub"
     }
   }
 }

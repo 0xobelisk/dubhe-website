@@ -5,6 +5,7 @@ test.describe('网站导航 E2E 测试', () => {
     const pages = [
       { path: '/', title: /Dubhe/i },
       { path: '/engine', title: /Engine|引擎/i },
+      { path: '/wallet', title: /Wallet/i },
       { path: '/os', title: /OS|操作系统/i },
       { path: '/channel', title: /Channel|通道/i },
       { path: '/labs', title: /Labs|实验室/i },

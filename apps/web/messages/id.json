@@ -1,7 +1,7 @@
 {
   "navigation": {
     "learn": "Pelajari",
-    "build": "Bangun", 
+    "build": "Bangun",
     "ecosystem": "Ekosistem",
     "media": "Media",
     "community": "Komunitas",
@@ -10,6 +10,7 @@
     "engine": "Mesin",
     "channel": "Saluran",
     "os": "OS",
+    "wallet": "Dompet",
     "foundation": "Yayasan",
     "labs": "Lab",
     "grants": "Hibah",
@@ -65,7 +66,7 @@
           "subtitle": "Membangun Masa Depan Bersama"
         },
         "workshop": {
-          "title": "Workshop Pengembang", 
+          "title": "Workshop Pengembang",
           "subtitle": "Sesi Pembelajaran Praktis"
         },
         "hackathon": {
@@ -93,7 +94,7 @@
         },
         "events": {
           "value": "50+",
-          "label": "Acara Global", 
+          "label": "Acara Global",
           "description": "Konferensi, meetup, dan workshop setiap tahun"
         },
         "countries": {
@@ -120,7 +121,7 @@
           "description": "Game on-chain dan metaverse"
         },
         "infrastructure": {
-          "title": "Infrastruktur", 
+          "title": "Infrastruktur",
           "description": "Alat pengembang dan infrastruktur"
         },
         "nfts": {
@@ -163,7 +164,13 @@
         "schemaDefinition": {
           "title": "Definisi Skema",
           "description": "Definisikan logika game atau dApp Anda menggunakan sistem skema intuitif Dubhe. Jelaskan entitas, komponen, dan sistem dalam file konfigurasi sederhana.",
-          "items": ["Entitas", "Komponen", "Sistem", "Error", "Event"]
+          "items": [
+            "Entitas",
+            "Komponen",
+            "Sistem",
+            "Error",
+            "Event"
+          ]
         },
         "codeGeneration": {
           "title": "Generasi Kode",
@@ -285,25 +292,45 @@
           "title": "Aplikasi Move",
           "subtitle": "dApps dan Game Anda",
           "description": "Bangun aplikasi terdesentralisasi yang kompleks dengan keamanan dan fleksibilitas Move",
-          "features": ["Protokol DeFi", "Aplikasi Gaming", "Platform NFT", "dApps Sosial"]
+          "features": [
+            "Protokol DeFi",
+            "Aplikasi Gaming",
+            "Platform NFT",
+            "dApps Sosial"
+          ]
         },
         "dubheEngine": {
           "title": "Mesin Dubhe",
           "subtitle": "Toolkit Pengembangan",
           "description": "Secara otomatis menghasilkan 80% kode dan menyediakan toolchain pengembang yang lengkap",
-          "features": ["Generasi Kode", "Pengembangan Berbasis Skema", "Deployment Multi-Chain", "Lingkungan Dev"]
+          "features": [
+            "Generasi Kode",
+            "Pengembangan Berbasis Skema",
+            "Deployment Multi-Chain",
+            "Lingkungan Dev"
+          ]
         },
         "dubheChannel": {
           "title": "Saluran Dubhe",
           "subtitle": "Layer Real-Time",
           "description": "Layer interaksi P2P untuk pengalaman pengguna real-time level Web2",
-          "features": ["Latensi <50ms", "Sinkronisasi Real-Time", "Komunikasi P2P", "Dukungan Mobile"]
+          "features": [
+            "Latensi <50ms",
+            "Sinkronisasi Real-Time",
+            "Komunikasi P2P",
+            "Dukungan Mobile"
+          ]
         },
         "dubheOS": {
           "title": "Dubhe OS",
           "subtitle": "Infrastruktur Cross-Chain",
           "description": "Sistem operasi terdesentralisasi dengan interoperabilitas multi-chain native",
-          "features": ["Bridge Cross-Chain", "State Terpadu", "Insentif Pengembang", "Tata Kelola"]
+          "features": [
+            "Bridge Cross-Chain",
+            "State Terpadu",
+            "Insentif Pengembang",
+            "Tata Kelola"
+          ]
         }
       },
       "completeStackSolution": {
@@ -410,42 +437,66 @@
         "role": "Pemimpin Yayasan",
         "location": "San Francisco, CA",
         "bio": "Pemimpin visioner dengan pengalaman 15+ tahun dalam teknologi blockchain. Sebelumnya memimpin tim rekayasa di perusahaan teknologi besar sebelum mendirikan Dubhe untuk merevolusi pengembangan Move.",
-        "expertise": ["Arsitektur Blockchain", "Kepemimpinan Tim", "Strategi Produk"]
+        "expertise": [
+          "Arsitektur Blockchain",
+          "Kepemimpinan Tim",
+          "Strategi Produk"
+        ]
       },
       "joan": {
         "name": "Joan",
         "role": "CTO & Co-founder",
         "location": "New York, NY",
         "bio": "Mantan pengembang inti Move dengan keahlian mendalam dalam arsitektur kontrak pintar. Memimpin visi teknis kami dan mengawasi semua inisiatif rekayasa.",
-        "expertise": ["Bahasa Move", "Kontrak Pintar", "Arsitektur Sistem"]
+        "expertise": [
+          "Bahasa Move",
+          "Kontrak Pintar",
+          "Arsitektur Sistem"
+        ]
       },
       "david": {
         "name": "David",
         "role": "Kepala Rekayasa",
         "location": "Seoul, Korea Selatan",
         "bio": "Insinyur full-stack yang bersemangat tentang alat pengembang dan pertumbuhan ekosistem. Memimpin tim pengembangan engine kami dan mendorong inovasi teknis.",
-        "expertise": ["Pengembangan Full-stack", "Alat Pengembang", "Open Source"]
+        "expertise": [
+          "Pengembangan Full-stack",
+          "Alat Pengembang",
+          "Open Source"
+        ]
       },
       "bonnie": {
         "name": "Bonnie",
         "role": "Kepala Komunitas",
         "location": "Barcelona, Spanyol",
         "bio": "Pembangun komunitas dengan pengalaman luas dalam menumbuhkan ekosistem pengembang. Mengelola inisiatif komunitas global kami dan program duta.",
-        "expertise": ["Pembangunan Komunitas", "Hubungan Pengembang", "Manajemen Acara"]
+        "expertise": [
+          "Pembangunan Komunitas",
+          "Hubungan Pengembang",
+          "Manajemen Acara"
+        ]
       },
       "liam": {
         "name": "Liam McKenzie",
         "role": "Kepala Kemitraan",
         "location": "London, Inggris",
         "bio": "Ahli pengembangan bisnis yang fokus pada kemitraan strategis dan pertumbuhan ekosistem. Sebelumnya memimpin kemitraan di perusahaan blockchain besar.",
-        "expertise": ["Kemitraan Strategis", "Pengembangan Bisnis", "Pertumbuhan Ekosistem"]
+        "expertise": [
+          "Kemitraan Strategis",
+          "Pengembangan Bisnis",
+          "Pertumbuhan Ekosistem"
+        ]
       },
       "emily": {
         "name": "Emily Smith",
         "role": "Direktur Riset",
         "location": "Beijing, Cina",
         "bio": "PhD dalam Ilmu Komputer yang mengkhususkan diri dalam sistem terdistribusi. Memimpin inisiatif riset kami dan mengeksplorasi teknologi blockchain mutakhir.",
-        "expertise": ["Sistem Terdistribusi", "Riset", "Kemitraan Akademik"]
+        "expertise": [
+          "Sistem Terdistribusi",
+          "Riset",
+          "Kemitraan Akademik"
+        ]
       }
     },
     "join": {
@@ -690,21 +741,36 @@
         "duration": "3 bulan",
         "funding": "Hingga $500K",
         "description": "Program intensif yang didukung Yayasan Dubhe yang co-inkubasi dengan Obelisk Labs dan VC ekosistem",
-        "benefits": ["Pendanaan Yayasan Dubhe", "Co-inkubasi Obelisk Labs", "Dukungan pengembangan Move", "Kemitraan VC ekosistem"]
+        "benefits": [
+          "Pendanaan Yayasan Dubhe",
+          "Co-inkubasi Obelisk Labs",
+          "Dukungan pengembangan Move",
+          "Kemitraan VC ekosistem"
+        ]
       },
       "studio": {
         "title": "Studio Kolaboratif",
         "duration": "6-12 bulan",
         "funding": "Hingga $1M",
         "description": "Co-inkubasi oleh Yayasan Dubhe, Obelisk Labs, dan VC ekosistem dengan sumber daya bersama",
-        "benefits": ["Co-inkubasi multi-partner", "Sumber daya teknis bersama", "Kolaborasi antar-proyek", "Jaringan VC ekosistem"]
+        "benefits": [
+          "Co-inkubasi multi-partner",
+          "Sumber daya teknis bersama",
+          "Kolaborasi antar-proyek",
+          "Jaringan VC ekosistem"
+        ]
       },
       "scale": {
         "title": "Skala Ekosistem",
         "duration": "6 bulan",
         "funding": "Hingga $2M",
         "description": "Skala dengan dukungan komprehensif dari Yayasan Dubhe, Obelisk Labs, dan partner VC ekosistem",
-        "benefits": ["Jaringan co-inkubasi", "Perkenalan strategis", "Akses pasar global", "Koneksi VC perusahaan"]
+        "benefits": [
+          "Jaringan co-inkubasi",
+          "Perkenalan strategis",
+          "Akses pasar global",
+          "Koneksi VC perusahaan"
+        ]
       }
     },
     "resources": {
@@ -735,6 +801,23 @@
     }
   },
   "ambassador": {
+    "hero": {
+      "badge": "Program Ambassador",
+      "title1": "Menjadi",
+      "title2": "Ambassador Dubhe",
+      "subtitle": "Bergabunglah dengan komunitas global pendukung yang penuh semangat dan bantu membentuk masa depan pengembangan blockchain Move. Pimpin komunitas lokal, buat konten, dan kembangkan ekosistem di seluruh dunia.",
+      "stats": {
+        "activeAmbassadors": "Ambassador Aktif",
+        "countries": "Negara",
+        "communityReach": "Jangkauan Komunitas"
+      },
+      "cta1": "Lamar Sekarang",
+      "cta2": "Pelajari Lebih Lanjut"
+    },
+    "benefitsSection": {
+      "badge": "Manfaat Program",
+      "title": "Mengapa Bergabung dengan Program Ambassador Kami?"
+    },
     "benefits": {
       "exclusiveAccess": {
         "title": "Akses Eksklusif",
@@ -742,7 +825,7 @@
       },
       "directCommunication": {
         "title": "Komunikasi Langsung",
-        "description": "Komunikasi rutin dengan Yayasan Dubhe dan pengaruh pada keputusan roadmap produk"
+        "description": "Komunikasi rutin dengan Dubhe Foundation dan pengaruh terhadap keputusan roadmap produk"
       },
       "recognition": {
         "title": "Pengakuan & Hadiah",
@@ -750,17 +833,31 @@
       },
       "globalNetwork": {
         "title": "Jaringan Global",
-        "description": "Terhubung dengan individu yang berpikiran sama dan membangun hubungan dalam komunitas global Dubhe"
+        "description": "Terhubung dengan individu yang berpikiran sama dan membangun hubungan dalam komunitas Dubhe global"
       }
+    },
+    "ambassadorsSection": {
+      "title": "Bertemu Ambassador Global Kami",
+      "description": "Ambassador kami memimpin perubahan di wilayah mereka, membangun komunitas dan mendorong adopsi",
+      "timezone": "Zona waktu",
+      "location": "Lokasi",
+      "expertise": "Keahlian",
+      "projectsLed": "Proyek yang Dipimpin"
+    },
+    "requirementsSection": {
+      "title": "Persyaratan"
     },
     "requirements": [
       "Anggota aktif di komunitas Dubhe selama minimal 3 bulan",
-      "Pemahaman kuat tentang teknologi blockchain Move",
+      "Pemahaman yang kuat tentang teknologi blockchain Move",
       "Pengalaman dalam membangun komunitas atau membuat konten",
       "Komitmen untuk mempromosikan ekosistem Dubhe secara positif",
       "Tersedia minimal 10 jam per minggu",
-      "Mahir dalam bahasa Inggris dan minimal satu bahasa lain"
+      "Mahir dalam bahasa Inggris dan setidaknya satu bahasa lainnya"
     ],
+    "responsibilitiesSection": {
+      "title": "Tanggung Jawab"
+    },
     "responsibilities": {
       "communityEngagement": {
         "title": "Keterlibatan Komunitas",
@@ -774,21 +871,27 @@
       "ecosystemGrowth": {
         "title": "Pertumbuhan Ekosistem",
         "tasks": [
-          "Mengidentifikasi dan mengenalkan pengembang baru ke Dubhe",
-          "Berkolaborasi dengan duta lain dalam inisiatif global",
-          "Memberikan umpan balik pada produk dan dokumentasi",
-          "Mewakili Dubhe di konferensi dan acara blockchain"
+          "Mengidentifikasi dan membawa developer baru ke Dubhe",
+          "Berkolaborasi dengan ambassador lain dalam inisiatif global",
+          "Memberikan feedback tentang produk dan dokumentasi",
+          "Mewakili Dubhe di konferensi blockchain dan acara"
         ]
       },
       "contentCreation": {
         "title": "Pembuatan Konten",
         "tasks": [
-          "Menulis tutorial dan panduan teknis",
+          "Menulis tutorial teknis dan panduan",
           "Membuat konten video yang menjelaskan fitur Dubhe",
           "Menerjemahkan dokumentasi ke bahasa lokal",
           "Berbagi pembaruan ekosistem di media sosial"
         ]
       }
+    },
+    "cta": {
+      "title": "Siap Memimpin Komunitas Anda?",
+      "description": "Bergabunglah dengan program ambassador kami dan menjadi pemimpin di ekosistem Move",
+      "apply": "Lamar Sekarang",
+      "contact": "Hubungi Kami"
     }
   },
   "papers": {
@@ -903,22 +1006,31 @@
         "protocol": {
           "title": "Pengembangan Protokol",
           "description": "Protokol blockchain inti, mekanisme konsensus, dan peningkatan bahasa Move",
-          "teams": ["Obelisk Labs"]
+          "teams": [
+            "Obelisk Labs"
+          ]
         },
         "infrastructure": {
           "title": "Infrastruktur & Penskalaan",
           "description": "Jaringan berkinerja tinggi, komunikasi real-time, dan solusi skalabilitas",
-          "teams": ["Dubhe Network Labs", "Cyferio Labs"]
+          "teams": [
+            "Dubhe Network Labs",
+            "Cyferio Labs"
+          ]
         },
         "crossChain": {
           "title": "Teknologi Lintas-rantai",
           "description": "Protokol interoperabilitas, bridging universal, dan tata kelola multi-rantai",
-          "teams": ["Dubhe Bridge Labs"]
+          "teams": [
+            "Dubhe Bridge Labs"
+          ]
         },
         "privacy": {
           "title": "Privasi & Keamanan",
           "description": "Zero-knowledge proof, protokol pelestarian privasi, dan penelitian kriptografi",
-          "teams": ["Cyferio Labs"]
+          "teams": [
+            "Cyferio Labs"
+          ]
         }
       },
       "contributingLabs": "Lab Berkontribusi:"
@@ -1372,17 +1484,29 @@
         "gaming": {
           "title": "Gaming Real-Time",
           "description": "Game multiplayer dengan waktu respon instan",
-          "metrics": ["Latensi <50ms", "1M+ pemain bersamaan", "99.9% uptime"]
+          "metrics": [
+            "Latensi <50ms",
+            "1M+ pemain bersamaan",
+            "99.9% uptime"
+          ]
         },
         "social": {
           "title": "Platform Sosial",
           "description": "Jaringan sosial terdesentralisasi dengan messaging real-time",
-          "metrics": ["Messaging instan", "Panggilan video live", "Group chat"]
+          "metrics": [
+            "Messaging instan",
+            "Panggilan video live",
+            "Group chat"
+          ]
         },
         "trading": {
           "title": "Aplikasi Trading",
           "description": "Trading frekuensi tinggi dengan feed harga real-time",
-          "metrics": ["Data real-time", "Update order book", "Price discovery"]
+          "metrics": [
+            "Data real-time",
+            "Update order book",
+            "Price discovery"
+          ]
         }
       }
     },
@@ -1508,22 +1632,38 @@
         "sui": {
           "name": "Jaringan Sui",
           "status": "Live",
-          "features": ["Throughput tinggi", "Model object-centric", "Bahasa Move"]
+          "features": [
+            "Throughput tinggi",
+            "Model object-centric",
+            "Bahasa Move"
+          ]
         },
         "aptos": {
           "name": "Aptos",
           "status": "Live",
-          "features": ["Eksekusi paralel", "Move VM", "Kontrak pintar aman"]
+          "features": [
+            "Eksekusi paralel",
+            "Move VM",
+            "Kontrak pintar aman"
+          ]
         },
         "movement": {
           "name": "Movement",
           "status": "Integrasi",
-          "features": ["Kompatibilitas EVM", "Runtime Move", "Arsitektur modular"]
+          "features": [
+            "Kompatibilitas EVM",
+            "Runtime Move",
+            "Arsitektur modular"
+          ]
         },
         "future": {
           "name": "Chain Masa Depan",
           "status": "Direncanakan",
-          "features": ["Dipimpin komunitas", "Berbasis Move", "Ekspansi ekosistem"]
+          "features": [
+            "Dipimpin komunitas",
+            "Berbasis Move",
+            "Ekspansi ekosistem"
+          ]
         }
       }
     },
@@ -1763,100 +1903,6 @@
       "description": "Jika Anda memiliki pertanyaan tentang Syarat Layanan ini, silakan hubungi tim hukum kami."
     }
   },
-  "ambassador": {
-    "hero": {
-      "badge": "Program Ambassador",
-      "title1": "Menjadi",
-      "title2": "Ambassador Dubhe",
-      "subtitle": "Bergabunglah dengan komunitas global pendukung yang penuh semangat dan bantu membentuk masa depan pengembangan blockchain Move. Pimpin komunitas lokal, buat konten, dan kembangkan ekosistem di seluruh dunia.",
-      "stats": {
-        "activeAmbassadors": "Ambassador Aktif",
-        "countries": "Negara",
-        "communityReach": "Jangkauan Komunitas"
-      },
-      "cta1": "Lamar Sekarang",
-      "cta2": "Pelajari Lebih Lanjut"
-    },
-    "benefitsSection": {
-      "badge": "Manfaat Program",
-      "title": "Mengapa Bergabung dengan Program Ambassador Kami?"
-    },
-    "benefits": {
-      "exclusiveAccess": {
-        "title": "Akses Eksklusif",
-        "description": "Dapatkan akses awal ke fitur baru, produk, dan pengumuman sebelum rilis publik"
-      },
-      "directCommunication": {
-        "title": "Komunikasi Langsung",
-        "description": "Komunikasi rutin dengan Dubhe Foundation dan pengaruh terhadap keputusan roadmap produk"
-      },
-      "recognition": {
-        "title": "Pengakuan & Hadiah",
-        "description": "Pengakuan khusus di komunitas, merchandise eksklusif, dan hadiah token untuk kontribusi"
-      },
-      "globalNetwork": {
-        "title": "Jaringan Global",
-        "description": "Terhubung dengan individu yang berpikiran sama dan membangun hubungan dalam komunitas Dubhe global"
-      }
-    },
-    "ambassadorsSection": {
-      "title": "Bertemu Ambassador Global Kami",
-      "description": "Ambassador kami memimpin perubahan di wilayah mereka, membangun komunitas dan mendorong adopsi",
-      "timezone": "Zona waktu",
-      "location": "Lokasi",
-      "expertise": "Keahlian",
-      "projectsLed": "Proyek yang Dipimpin"
-    },
-    "requirementsSection": {
-      "title": "Persyaratan"
-    },
-    "requirements": [
-      "Anggota aktif di komunitas Dubhe selama minimal 3 bulan",
-      "Pemahaman yang kuat tentang teknologi blockchain Move",
-      "Pengalaman dalam membangun komunitas atau membuat konten",
-      "Komitmen untuk mempromosikan ekosistem Dubhe secara positif",
-      "Tersedia minimal 10 jam per minggu",
-      "Mahir dalam bahasa Inggris dan setidaknya satu bahasa lainnya"
-    ],
-    "responsibilitiesSection": {
-      "title": "Tanggung Jawab"
-    },
-    "responsibilities": {
-      "communityEngagement": {
-        "title": "Keterlibatan Komunitas",
-        "tasks": [
-          "Moderasi diskusi komunitas dan menjaga lingkungan yang positif",
-          "Menjawab pertanyaan teknis dan membantu pendatang baru",
-          "Mengorganisir meetup lokal dan acara online",
-          "Membuat konten yang menarik (tutorial, artikel, video)"
-        ]
-      },
-      "ecosystemGrowth": {
-        "title": "Pertumbuhan Ekosistem",
-        "tasks": [
-          "Mengidentifikasi dan membawa developer baru ke Dubhe",
-          "Berkolaborasi dengan ambassador lain dalam inisiatif global",
-          "Memberikan feedback tentang produk dan dokumentasi",
-          "Mewakili Dubhe di konferensi blockchain dan acara"
-        ]
-      },
-      "contentCreation": {
-        "title": "Pembuatan Konten",
-        "tasks": [
-          "Menulis tutorial teknis dan panduan",
-          "Membuat konten video yang menjelaskan fitur Dubhe",
-          "Menerjemahkan dokumentasi ke bahasa lokal",
-          "Berbagi pembaruan ekosistem di media sosial"
-        ]
-      }
-    },
-    "cta": {
-      "title": "Siap Memimpin Komunitas Anda?",
-      "description": "Bergabunglah dengan program ambassador kami dan menjadi pemimpin di ekosistem Move",
-      "apply": "Lamar Sekarang",
-      "contact": "Hubungi Kami"
-    }
-  },
   "organizations": {
     "section": {
       "badge": "Organisasi Kami",
@@ -2031,6 +2077,177 @@
         "description": "Butuh aset kustom atau ada pertanyaan?",
         "button": "Hubungi Tim Kami"
       }
+    }
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - Dompet Produksi untuk Aplikasi Move",
+      "name": "Dubhe Wallet",
+      "description": "Dubhe Wallet dirancang untuk aplikasi Move yang kompleks, alur kerja sensitif-perizinan, dan eksekusi onchain bernilai tinggi.",
+      "featureList": [
+        "Tinjauan dan pencabutan otorisasi",
+        "Pemeriksaan risiko transaksi bernilai tinggi",
+        "Dukungan alur kerja yang sadar eksekusi",
+        "Pembersihan sesi dan kontrol operasional"
+      ]
+    },
+    "hero": {
+      "badge": "Build / Dubhe Wallet",
+      "title": "Dompet produksi untuk aplikasi Move dan eksekusi bernilai tinggi",
+      "description": "Dubhe Wallet tidak diposisikan sebagai dompet konsumen umum. Produk ini dirancang untuk aplikasi Move yang kompleks, alur sensitif-perizinan, dan jalur eksekusi di mana risiko, pemulihan, dan kontrol operasional sangat penting.",
+      "primaryCta": "Mulai gunakan",
+      "secondaryCta": "Ikuti perkembangan produk",
+      "positioningEyebrow": "Posisi",
+      "positioningTitle": "Yang lain mengoptimalkan onboarding, trading, atau distribusi.",
+      "positioningDescription": "Dubhe Wallet mengoptimalkan eksekusi, kontrol, dan kesiapan produksi.",
+      "differentiators": [
+        {
+          "title": "Mengelola izin, bukan hanya tanda tangan",
+          "description": "Dubhe Wallet dibangun di sekitar tinjauan otorisasi, penanganan capability berisiko, pembersihan sesi, dan eksekusi yang sadar ancaman."
+        },
+        {
+          "title": "Mendukung alur onchain multi-langkah",
+          "description": "Flow kirim, swap, bridge, dan order diperlakukan sebagai jalur eksekusi yang dapat dipulihkan, bukan sekadar prompt dompet satu kali."
+        },
+        {
+          "title": "Beroperasi melampaui dompet pribadi",
+          "description": "Sponsored gas, penandatanganan berbasis perangkat keras, kebijakan persetujuan institusional, dan drill pemulihan mendorong produk ke use case tim dan treasury."
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Mengapa dompet ini ada",
+      "title": "Celah sebenarnya bukan akses dompet. Celahnya ada pada eksekusi produksi.",
+      "description": "Banyak dompet sudah menyelesaikan onboarding, tampilan aset, dan koneksi dApp umum. Dubhe Wallet menargetkan tahap setelah itu: alur multi-langkah, izin jangka panjang, sesi sensitif, dan status eksekusi parsial yang membutuhkan pemulihan, bukan tebakan."
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "Risiko dan izin",
+          "title": "Permukaan Kontrol",
+          "items": [
+            "Pusat Otorisasi untuk meninjau dan mencabut capability berisiko",
+            "Pengaman risiko transaksi untuk eksekusi bernilai tinggi atau mencurigakan",
+            "Pemeriksaan kebijakan ancaman dan phishing pada alur persetujuan sensitif"
+          ]
+        },
+        {
+          "eyebrow": "Dukungan alur kompleks",
+          "title": "Permukaan Eksekusi",
+          "items": [
+            "Status bridge, order tingkat lanjut, dan rekonsiliasi aktivitas",
+            "Notifikasi sadar eksekusi dan visibilitas runtime",
+            "Preferensi sponsored gas dan penanganan fallback"
+          ]
+        },
+        {
+          "eyebrow": "Keamanan dan pemulihan",
+          "title": "Permukaan Operasional",
+          "items": [
+            "Jalur penandatanganan hardware / OWS",
+            "Session Manager untuk pembersihan dan kontrol runtime",
+            "Drill pemulihan untuk passkey, mnemonic, dan kunci"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Dibuat untuk",
+      "title": "Bukan pitch dompet pasar massal",
+      "description": "Audiens yang tepat lebih sempit namun lebih bernilai: aplikasi dan operator yang membutuhkan keyakinan eksekusi, kontrol yang lebih jelas, dan keamanan operasional.",
+      "cards": [
+        {
+          "title": "Aplikasi Move",
+          "description": "Aplikasi dengan state kompleks, izin persisten, dan jalur eksekusi yang memerlukan lebih dari modal dompet dasar."
+        },
+        {
+          "title": "Power users",
+          "description": "Operator yang peduli pada kemampuan pemulihan, tinjauan transaksi bernilai tinggi, dan eksekusi yang andal di flow swap, bridge, dan perizinan."
+        },
+        {
+          "title": "Tim dan treasury",
+          "description": "Kelompok yang membutuhkan kebijakan persetujuan, kontrol berbasis perangkat keras, eksekusi tersponsori, dan keselamatan operasional yang lebih kuat."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Keamanan dan kontrol",
+      "title": "UX dompet hanyalah sebagian dari produk",
+      "description": "Dubhe Wallet pada akhirnya harus menghadirkan control plane yang lebih ketat untuk alur sensitif: tinjauan izin, visibilitas eksekusi, pembersihan sesi, penandatanganan perangkat keras, dan kesiapan pemulihan. Di sinilah perbedaannya dari landing page dompet generik.",
+      "cards": [
+        {
+          "title": "Perangkat keras dan pemulihan",
+          "description": "Penandatanganan OWS / hardware dan drill pemulihan harus terlihat sebagai janji produk, bukan pengaturan tersembunyi."
+        },
+        {
+          "title": "Status eksekusi",
+          "description": "Pelacakan bridge, status order, rekonsiliasi aktivitas, dan riwayat eksekusi adalah UX inti untuk alur non-trivial."
+        },
+        {
+          "title": "Visibilitas operasional",
+          "description": "Notifikasi dan kontrol runtime penting ketika dompet digunakan sebagai permukaan eksekusi, bukan sekadar permukaan identitas."
+        },
+        {
+          "title": "Kontrol tim",
+          "description": "Kebijakan persetujuan institusional dan eksekusi tersponsori adalah cara produk bergerak melampaui wilayah dompet konsumen murni."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "Status platform",
+      "title": "Halaman produk yang nyata harus menjelaskan status rilis dengan tegas",
+      "description": "Bagian ini nantinya dapat menampung badge app store, tautan extension, dan catatan rilis. Untuk sekarang, bagian ini harus menjelaskan apa yang sudah aktif dan apa yang masih diluncurkan bertahap.",
+      "cards": [
+        {
+          "title": "Permukaan Web",
+          "status": "Aktif",
+          "detail": "Permukaan produk aktif saat ini dan tempat yang tepat untuk menjelaskan dompet hari ini."
+        },
+        {
+          "title": "Mobile / Extension",
+          "status": "Peluncuran bertahap",
+          "detail": "Permukaan produk yang direncanakan dan harus diperkenalkan di sini ketika status rilis sudah publik."
+        },
+        {
+          "title": "Distribusi",
+          "status": "Sedang disiapkan",
+          "detail": "Gunakan halaman ini sebagai halaman produk pra-peluncuran kanonis sebelum CTA unduhan publik dan app store ditetapkan."
+        }
+      ],
+      "callout": {
+        "title": "Kapan menambahkan CTA app store",
+        "description": "Tambahkan badge unduhan langsung hanya ketika status rilis, dukungan permukaan, dan kanal dukungan cukup stabil untuk dimiliki secara publik. Sampai saat itu, halaman ini harus fokus menjelaskan produk dengan jelas."
+      }
+    },
+    "faq": {
+      "eyebrow": "Pertanyaan umum",
+      "title": "Jaga cerita produk tetap ringkas",
+      "description": "Di sinilah landing page harus menghilangkan kebingungan antara Dubhe Wallet, Dubhe Engine, dan keseluruhan stack Dubhe.",
+      "items": [
+        {
+          "question": "Apakah Dubhe Wallet adalah dompet Sui serbaguna?",
+          "answer": "Tidak. Posisinya lebih sempit dan lebih disengaja: dompet produksi untuk aplikasi Move, alur sensitif-perizinan, dan eksekusi onchain bernilai tinggi."
+        },
+        {
+          "question": "Siapa yang sebaiknya mengevaluasinya lebih dulu?",
+          "answer": "Tim yang membangun aplikasi Move kompleks, operator yang menangani flow eksekusi non-trivial, dan lingkungan mirip treasury yang membutuhkan kontrol serta pemulihan."
+        },
+        {
+          "question": "Apa bedanya dengan dompet yang berfokus pada onboarding?",
+          "answer": "Sebagian besar dompet onboarding-first mengoptimalkan setup cepat dan penggunaan harian yang bersih. Dubhe Wallet mengoptimalkan kontrol, keyakinan eksekusi, dan kesiapan operasional."
+        },
+        {
+          "question": "Apakah halaman ini sebaiknya sudah memuat tautan app store?",
+          "answer": "Hanya setelah status rilis stabil. Sebelum itu, halaman ini harus menjelaskan produk, pengguna sasaran, dan kemampuan yang berorientasi eksekusi dengan jelas."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Langkah berikutnya",
+      "title": "Gunakan ini sebagai halaman dompet khusus di dalam Build",
+      "description": "Iterasi berikutnya harus menambahkan screenshot rilis, permukaan yang didukung, dan tautan distribusi nyata. Bagian terpenting sudah ada: dompet kini memiliki rumah naratif yang layak, bukan tersembunyi di balik tautan situs generik.",
+      "primaryCta": "Mulai gunakan Dubhe Wallet",
+      "secondaryCta": "Lihat GitHub"
     }
   }
 }

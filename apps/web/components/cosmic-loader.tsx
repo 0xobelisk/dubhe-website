@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, memo, useMemo } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { DUBHE_CONSTELLATION_LINES, DUBHE_CONSTELLATION_STARS } from "@/components/dubhe-constellation"
 
 // Pre-generated random data to avoid hydration mismatch
 const RANDOM_DATA = [
@@ -26,6 +27,34 @@ const SHOOTING_STAR_POSITIONS = Array.from({ length: 5 }, (_, i) => ({
   top: 20 + ((i * 23 + 15) % 60),
   left: -10 + ((i * 17 + 5) % 20)
 }))
+
+const LOADER_CONSTELLATION_STAGE = { width: 480, height: 256 }
+
+const LOADER_CONSTELLATION_OFFSET = { x: 114, y: 54 }
+
+const LOADER_LABEL_OFFSETS: Record<string, { x: number; y: number }> = {
+  Dubhe: { x: -18, y: 18 },
+  Merak: { x: -28, y: 24 },
+  Phecda: { x: -34, y: 28 },
+  Megrez: { x: -34, y: 18 },
+  Alioth: { x: -22, y: 12 },
+  Mizar: { x: -24, y: 14 },
+  Alkaid: { x: -52, y: 14 }
+}
+
+const LOADER_CONSTELLATION_STARS = DUBHE_CONSTELLATION_STARS.map((star) => ({
+  ...star,
+  x: star.x + LOADER_CONSTELLATION_OFFSET.x,
+  y: star.y + LOADER_CONSTELLATION_OFFSET.y
+}))
+
+const SEARCH_PATH = LOADER_CONSTELLATION_STARS.slice().reverse().map((star) => ({
+  x: star.x,
+  y: star.y
+}))
+
+const DUBHE_PRIMARY_STAR =
+  LOADER_CONSTELLATION_STARS.find((star) => star.primary) ?? LOADER_CONSTELLATION_STARS[0]!
 
 interface CosmicLoaderProps {
   onComplete?: () => void
@@ -109,27 +138,6 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
                 style={{ left: `${(i + 1) * 8.33}%` }}
               />
             ))}
-          </div>
-        </div>
-
-        {/* Central Scanner Frame */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[32rem] h-80">
-          <div className="relative w-full h-full">
-            {/* Scanner border */}
-            <div className="absolute inset-0 border-2 border-cyan-400/60 rounded-lg">
-              {/* Corner decorations */}
-              <div className="absolute -top-2 -left-2 w-6 h-6 border-l-2 border-t-2 border-cyan-400" />
-              <div className="absolute -top-2 -right-2 w-6 h-6 border-r-2 border-t-2 border-cyan-400" />
-              <div className="absolute -bottom-2 -left-2 w-6 h-6 border-l-2 border-b-2 border-cyan-400" />
-              <div className="absolute -bottom-2 -right-2 w-6 h-6 border-r-2 border-b-2 border-cyan-400" />
-            </div>
-            
-            {/* Scanning line animation */}
-            <motion.div
-              className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent"
-              animate={{ y: [0, 320, 0] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-            />
           </div>
         </div>
 
@@ -219,47 +227,6 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
           ))}
         </div>
 
-        {/* Radar sweep animation */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[32rem] h-80">
-          <motion.div
-            className="absolute top-1/2 left-1/2 w-1 h-40 bg-gradient-to-t from-cyan-400/80 to-transparent transform -translate-x-1/2 origin-bottom"
-            animate={{ rotate: [0, 360] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-            style={{ transformOrigin: "bottom center" }}
-          />
-        </div>
-
-        {/* System alerts */}
-        <AnimatePresence>
-          {phase === 'found' && (
-            <motion.div
-              className="absolute top-1/4 left-1/2 transform -translate-x-1/2"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-            >
-              <div className="bg-blue-900/50 border border-blue-400 rounded px-4 py-2 backdrop-blur-sm">
-                <div className="text-sm text-blue-400 font-mono text-center">
-                  ⚠ CONSTELLATION PATTERN DETECTED
-                </div>
-              </div>
-            </motion.div>
-          )}
-          {phase === 'complete' && (
-            <motion.div
-              className="absolute top-1/4 left-1/2 transform -translate-x-1/2"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-            >
-              <div className="bg-green-900/50 border border-green-400 rounded px-4 py-2 backdrop-blur-sm">
-                <div className="text-sm text-green-400 font-mono text-center">
-                  ✓ TARGET ACQUISITION SUCCESSFUL
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
       </div>
       {/* Starfield Background */}
       <div className="absolute inset-0">
@@ -318,11 +285,49 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
       </div>
 
       {/* Center Content */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center space-y-12">
-          
-          {/* Big Dipper Constellation with Search Animation */}
-          <div className="relative w-[32rem] h-80 mx-auto">
+      <div className="absolute inset-0 flex items-center justify-center px-6 py-16">
+        <div className="flex w-full max-w-5xl flex-col items-center gap-8">
+          <AnimatePresence mode="wait">
+            {(phase === 'found' || phase === 'complete') && (
+              <motion.div
+                key={phase}
+                className="rounded border px-4 py-2 backdrop-blur-sm"
+                initial={{ opacity: 0, y: -12, scale: 0.96 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -12, scale: 0.96 }}
+              >
+                <div className={`text-sm font-mono text-center ${
+                  phase === 'complete' ? 'text-green-400' : 'text-blue-400'
+                }`}>
+                  {phase === 'complete' ? '✓ TARGET ACQUISITION SUCCESSFUL' : '⚠ CONSTELLATION PATTERN DETECTED'}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          <div className="relative h-[28rem] w-full max-w-4xl">
+            <div className="absolute inset-0 rounded-[28px] border-2 border-cyan-400/60">
+              <div className="absolute -left-2 -top-2 h-9 w-9 border-l-2 border-t-2 border-cyan-400" />
+              <div className="absolute -right-2 -top-2 h-9 w-9 border-r-2 border-t-2 border-cyan-400" />
+              <div className="absolute -bottom-2 -left-2 h-9 w-9 border-b-2 border-l-2 border-cyan-400" />
+              <div className="absolute -bottom-2 -right-2 h-9 w-9 border-b-2 border-r-2 border-cyan-400" />
+            </div>
+
+            <motion.div
+              className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-transparent via-cyan-400 to-transparent"
+              animate={{ y: [0, 440, 0] }}
+              transition={{ duration: 3.2, repeat: Infinity, ease: "linear" }}
+            />
+
+            <motion.div
+              className="absolute left-1/2 top-[52%] h-48 w-px -translate-x-1/2 bg-gradient-to-t from-cyan-400/80 to-transparent"
+              animate={{ rotate: [0, 360] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+              style={{ transformOrigin: "center bottom" }}
+            />
+
+            <div className="absolute inset-x-0 top-12 flex justify-center">
+              <div className="relative h-[16rem] w-[30rem]">
             {/* Search Beam Animation */}
             <AnimatePresence>
               {phase === 'searching' && (
@@ -338,8 +343,8 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
                       boxShadow: '0 0 20px rgba(6, 182, 212, 0.8), 0 0 40px rgba(6, 182, 212, 0.6)'
                     }}
                     animate={{
-                      x: [120, 160, 200, 240, 280, 340, 380],
-                      y: [120, 140, 160, 180, 220, 200, 140],
+                      x: SEARCH_PATH.map((star) => star.x),
+                      y: SEARCH_PATH.map((star) => star.y),
                     }}
                     transition={{
                       duration: 2,
@@ -352,8 +357,8 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
                   <motion.div
                     className="absolute w-20 h-20 rounded-full bg-cyan-400/10 border border-cyan-400/30"
                     animate={{
-                      x: [100, 140, 180, 220, 260, 320, 360],
-                      y: [100, 120, 140, 160, 200, 180, 120],
+                      x: SEARCH_PATH.map((star) => star.x - 20),
+                      y: SEARCH_PATH.map((star) => star.y - 20),
                       scale: [1, 1.2, 1, 1.2, 1, 1.2, 1],
                     }}
                     transition={{
@@ -367,15 +372,7 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
             </AnimatePresence>
 
             {/* Big Dipper Stars */}
-            {[
-              { name: 'Dubhe', x: 380, y: 140, size: 'w-6 h-6', primary: true },
-              { name: 'Merak', x: 340, y: 200, size: 'w-4 h-4' },
-              { name: 'Phecda', x: 280, y: 220, size: 'w-4 h-4' },
-              { name: 'Megrez', x: 240, y: 180, size: 'w-3 h-3' },
-              { name: 'Alioth', x: 200, y: 160, size: 'w-4 h-4' },
-              { name: 'Mizar', x: 160, y: 140, size: 'w-4 h-4' },
-              { name: 'Alkaid', x: 120, y: 120, size: 'w-4 h-4' }
-            ].map((star, index) => (
+                {LOADER_CONSTELLATION_STARS.map((star, index) => (
               <motion.div
                 key={star.name}
                 className={`absolute ${star.size} rounded-full transform -translate-x-1/2 -translate-y-1/2`}
@@ -416,7 +413,11 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
                 <AnimatePresence>
                   {(phase === 'found' || phase === 'complete') && (
                     <motion.div 
-                      className={`absolute ${star.primary ? 'top-8' : 'top-6'} left-1/2 transform -translate-x-1/2 whitespace-nowrap`}
+                      className="absolute whitespace-nowrap"
+                      style={{
+                        left: `${LOADER_LABEL_OFFSETS[star.name]?.x ?? -20}px`,
+                        top: `${LOADER_LABEL_OFFSETS[star.name]?.y ?? 16}px`
+                      }}
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 + 0.5 }}
@@ -434,8 +435,8 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
             <AnimatePresence>
               {(phase === 'found' || phase === 'complete') && (
                 <motion.svg 
-                  className="absolute inset-0 w-full h-full" 
-                  viewBox="0 0 440 320"
+                  className="absolute inset-0 h-full w-full"
+                  viewBox={`0 0 ${LOADER_CONSTELLATION_STAGE.width} ${LOADER_CONSTELLATION_STAGE.height}`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1 }}
@@ -447,58 +448,22 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
                     </linearGradient>
                   </defs>
                   <g stroke="url(#lineGradient)" strokeWidth="3" fill="none" strokeLinecap="round">
-                    {/* Bowl of the Big Dipper - 勺子主体 */}
-                    {/* Dubhe to Merak */}
-                    <motion.line 
-                      x1="380" y1="140" x2="340" y2="200"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 0.5, delay: 0.5 }}
-                    />
-                    {/* Merak to Phecda */}
-                    <motion.line 
-                      x1="340" y1="200" x2="280" y2="220"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 0.5, delay: 0.7 }}
-                    />
-                    {/* Phecda to Megrez */}
-                    <motion.line 
-                      x1="280" y1="220" x2="240" y2="180"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 0.5, delay: 0.9 }}
-                    />
-                    {/* Megrez back to Dubhe - 完成勺子主体 */}
-                    <motion.line 
-                      x1="240" y1="180" x2="380" y2="140"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 0.5, delay: 1.1 }}
-                    />
-                    
-                    {/* Handle of the Big Dipper - 勺子手柄 */}
-                    {/* Megrez to Alioth */}
-                    <motion.line 
-                      x1="240" y1="180" x2="200" y2="160"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 0.5, delay: 1.3 }}
-                    />
-                    {/* Alioth to Mizar */}
-                    <motion.line 
-                      x1="200" y1="160" x2="160" y2="140"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 0.5, delay: 1.5 }}
-                    />
-                    {/* Mizar to Alkaid */}
-                    <motion.line 
-                      x1="160" y1="140" x2="120" y2="120"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 0.8, delay: 1.7 }}
-                    />
+                    {DUBHE_CONSTELLATION_LINES.map(([fromIndex, toIndex], index) => {
+                      const fromStar = LOADER_CONSTELLATION_STARS[fromIndex]!
+                      const toStar = LOADER_CONSTELLATION_STARS[toIndex]!
+                      return (
+                        <motion.line
+                          key={`${fromStar.name}-${toStar.name}`}
+                          x1={fromStar.x}
+                          y1={fromStar.y}
+                          x2={toStar.x}
+                          y2={toStar.y}
+                          initial={{ pathLength: 0 }}
+                          animate={{ pathLength: 1 }}
+                          transition={{ duration: 0.5, delay: 0.5 + index * 0.2 }}
+                        />
+                      )
+                    })}
                   </g>
                 </motion.svg>
               )}
@@ -509,7 +474,7 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
               {phase === 'complete' && (
                 <motion.div
                   className="absolute w-12 h-12 transform -translate-x-1/2 -translate-y-1/2"
-                  style={{ left: 380, top: 140 }}
+                  style={{ left: DUBHE_PRIMARY_STAR.x, top: DUBHE_PRIMARY_STAR.y }}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
@@ -534,6 +499,8 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
                 </motion.div>
               )}
             </AnimatePresence>
+              </div>
+            </div>
           </div>
 
           {/* Loading Text */}
@@ -555,7 +522,7 @@ const CosmicLoader = memo(function CosmicLoader({ onComplete = defaultOnComplete
           </motion.div>
 
           {/* Progress Bar */}
-          <div className="w-[32rem] mx-auto space-y-3">
+          <div className="w-full max-w-4xl space-y-3">
             <div className="w-full bg-gray-800/50 rounded-full h-2 backdrop-blur-sm border border-gray-700">
               <motion.div 
                 className="h-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 rounded-full relative overflow-hidden"

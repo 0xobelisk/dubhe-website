@@ -52,14 +52,21 @@ const VITAL_THRESHOLDS: Record<string, VitalThresholds> = {
 }
 
 export function WebVitalsDashboard() {
+  const [mounted, setMounted] = useState(false)
+  const [dashboardEnabled, setDashboardEnabled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [vitals, setVitals] = useState<WebVital[]>([])
   const [score, setScore] = useState(0)
   const [showDetails, setShowDetails] = useState(false)
 
   useEffect(() => {
-    // Only show in development or if explicitly enabled
-    if (process.env.NODE_ENV === 'production' && !localStorage.getItem('showVitalsDashboard')) {
+    setMounted(true)
+
+    const enabled =
+      process.env.NODE_ENV === 'development' || localStorage.getItem('showVitalsDashboard') !== null
+    setDashboardEnabled(enabled)
+
+    if (!enabled) {
       return
     }
 
@@ -185,7 +192,7 @@ export function WebVitalsDashboard() {
     return `${Math.round(value)}${threshold.unit}`
   }
 
-  if (process.env.NODE_ENV === 'production' && !localStorage.getItem('showVitalsDashboard')) {
+  if (!mounted || !dashboardEnabled) {
     return null
   }
 

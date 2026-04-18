@@ -1,7 +1,7 @@
 {
   "navigation": {
     "learn": "শিখুন",
-    "build": "তৈরি করুন", 
+    "build": "তৈরি করুন",
     "ecosystem": "ইকোসিস্টেম",
     "media": "মিডিয়া",
     "community": "কমিউনিটি",
@@ -10,6 +10,7 @@
     "engine": "ইঞ্জিন",
     "channel": "চ্যানেল",
     "os": "OS",
+    "wallet": "ওয়ালেট",
     "foundation": "ফাউন্ডেশন",
     "labs": "ল্যাবস",
     "grants": "গ্রান্ট",
@@ -65,7 +66,7 @@
           "subtitle": "একসাথে ভবিষ্যৎ নির্মাণ"
         },
         "workshop": {
-          "title": "ডেভেলপার ওয়ার্কশপ", 
+          "title": "ডেভেলপার ওয়ার্কশপ",
           "subtitle": "হাতে-কলমে শেখার সেশন"
         },
         "hackathon": {
@@ -93,7 +94,7 @@
         },
         "events": {
           "value": "৫০+",
-          "label": "গ্লোবাল ইভেন্ট", 
+          "label": "গ্লোবাল ইভেন্ট",
           "description": "বার্ষিক কনফারেন্স, মিটআপ, এবং ওয়ার্কশপ"
         },
         "countries": {
@@ -120,7 +121,7 @@
           "description": "অন-চেইন গেম এবং মেটাভার্স"
         },
         "infrastructure": {
-          "title": "অবকাঠামো", 
+          "title": "অবকাঠামো",
           "description": "ডেভেলপার টুলস এবং অবকাঠামো"
         },
         "nfts": {
@@ -163,7 +164,13 @@
         "schemaDefinition": {
           "title": "স্কিমা সংজ্ঞা",
           "description": "Dubhe-এর স্বজ্ঞাত স্কিমা সিস্টেম ব্যবহার করে আপনার গেম বা dApp লজিক নির্ধারণ করুন। সরল কনফিগারেশন ফাইলে এনটিটি, কম্পোনেন্ট এবং সিস্টেম বর্ণনা করুন।",
-          "items": ["এনটিটি", "কম্পোনেন্ট", "সিস্টেম", "ত্রুটি", "ইভেন্ট"]
+          "items": [
+            "এনটিটি",
+            "কম্পোনেন্ট",
+            "সিস্টেম",
+            "ত্রুটি",
+            "ইভেন্ট"
+          ]
         },
         "codeGeneration": {
           "title": "কোড জেনারেশন",
@@ -285,25 +292,45 @@
           "title": "Move অ্যাপ্লিকেশন",
           "subtitle": "আপনার dApps এবং গেমস",
           "description": "Move-এর নিরাপত্তা এবং নমনীয়তার সাথে জটিল বিকেন্দ্রীকৃত অ্যাপ্লিকেশন তৈরি করুন",
-          "features": ["DeFi প্রোটোকল", "গেমিং অ্যাপস", "NFT প্ল্যাটফর্ম", "সামাজিক dApps"]
+          "features": [
+            "DeFi প্রোটোকল",
+            "গেমিং অ্যাপস",
+            "NFT প্ল্যাটফর্ম",
+            "সামাজিক dApps"
+          ]
         },
         "dubheEngine": {
           "title": "Dubhe ইঞ্জিন",
           "subtitle": "ডেভেলপমেন্ট টুলকিট",
           "description": "স্বয়ংক্রিয়ভাবে ৮০% কোড উৎপাদন করে এবং সম্পূর্ণ ডেভেলপার টুলচেইন প্রদান করে",
-          "features": ["কোড জেনারেশন", "স্কিমা-ভিত্তিক ডেভেলপমেন্ট", "মাল্টি-চেইন ডিপ্লয়মেন্ট", "ডেভ পরিবেশ"]
+          "features": [
+            "কোড জেনারেশন",
+            "স্কিমা-ভিত্তিক ডেভেলপমেন্ট",
+            "মাল্টি-চেইন ডিপ্লয়মেন্ট",
+            "ডেভ পরিবেশ"
+          ]
         },
         "dubheChannel": {
           "title": "Dubhe চ্যানেল",
           "subtitle": "রিয়েল-টাইম লেয়ার",
           "description": "Web2-স্তরের রিয়েল-টাইম ব্যবহারকারী অভিজ্ঞতার জন্য P2P ইন্টারঅ্যাকশন লেয়ার",
-          "features": ["<৫০ms বিলম্বতা", "রিয়েল-টাইম সিঙ্ক", "P2P কমিউনিকেশন", "মোবাইল সাপোর্ট"]
+          "features": [
+            "<৫০ms বিলম্বতা",
+            "রিয়েল-টাইম সিঙ্ক",
+            "P2P কমিউনিকেশন",
+            "মোবাইল সাপোর্ট"
+          ]
         },
         "dubheOS": {
           "title": "Dubhe OS",
           "subtitle": "ক্রস-চেইন অবকাঠামো",
           "description": "নেটিভ মাল্টি-চেইন ইন্টারঅপারেবিলিটি সহ বিকেন্দ্রীকৃত অপারেটিং সিস্টেম",
-          "features": ["ক্রস-চেইন ব্রিজ", "একীভূত স্টেট", "ডেভেলপার ইনসেন্টিভ", "গভর্নেন্স"]
+          "features": [
+            "ক্রস-চেইন ব্রিজ",
+            "একীভূত স্টেট",
+            "ডেভেলপার ইনসেন্টিভ",
+            "গভর্নেন্স"
+          ]
         }
       },
       "completeStackSolution": {
@@ -441,42 +468,66 @@
         "role": "ফাউন্ডেশন প্রধান",
         "location": "স্যান ফ্রান্সিসকো, CA",
         "bio": "ব্লকচেইন প্রযুক্তিতে ১৫+ বছরের অভিজ্ঞতা সম্পন্ন দূরদর্শী নেতা। Move উন্নয়নে বিপ্লব আনতে Dubhe প্রতিষ্ঠার আগে প্রধান প্রযুক্তি কোম্পানিতে প্রকৌশল দলের নেতৃত্ব দিয়েছেন।",
-        "expertise": ["ব্লকচেইন আর্কিটেকচার", "দলের নেতৃত্ব", "প্রোডাক্ট কৌশল"]
+        "expertise": [
+          "ব্লকচেইন আর্কিটেকচার",
+          "দলের নেতৃত্ব",
+          "প্রোডাক্ট কৌশল"
+        ]
       },
       "joan": {
         "name": "Joan",
         "role": "CTO ও সহ-প্রতিষ্ঠাতা",
         "location": "নিউ ইয়র্ক, NY",
         "bio": "স্মার্ট কন্ট্রাক্ট আর্কিটেকচারে গভীর দক্ষতা সহ প্রাক্তন Move কোর ডেভেলপার। আমাদের প্রযুক্তিগত দৃষ্টিভঙ্গির নেতৃত্ব দেন এবং সমস্ত প্রকৌশল উদ্যোগের তদারকি করেন।",
-        "expertise": ["Move ভাষা", "স্মার্ট কন্ট্রাক্ট", "সিস্টেম আর্কিটেকচার"]
+        "expertise": [
+          "Move ভাষা",
+          "স্মার্ট কন্ট্রাক্ট",
+          "সিস্টেম আর্কিটেকচার"
+        ]
       },
       "david": {
         "name": "David",
         "role": "প্রকৌশল প্রধান",
         "location": "সিউল, দক্ষিণ কোরিয়া",
         "bio": "ডেভেলপার টুলস এবং ইকোসিস্টেম বৃদ্ধিতে উৎসাহী ফুল-স্ট্যাক ইঞ্জিনিয়ার। আমাদের ইঞ্জিন ডেভেলপমেন্ট টিমের নেতৃত্ব দেন এবং প্রযুক্তিগত উদ্ভাবন চালনা করেন।",
-        "expertise": ["ফুল-স্ট্যাক ডেভেলপমেন্ট", "ডেভেলপার টুলস", "ওপেন সোর্স"]
+        "expertise": [
+          "ফুল-স্ট্যাক ডেভেলপমেন্ট",
+          "ডেভেলপার টুলস",
+          "ওপেন সোর্স"
+        ]
       },
       "bonnie": {
         "name": "Bonnie",
         "role": "কমিউনিটি প্রধান",
         "location": "বার্সেলোনা, স্পেন",
         "bio": "ডেভেলপার ইকোসিস্টেম বৃদ্ধিতে ব্যাপক অভিজ্ঞতা সহ কমিউনিটি নির্মাতা। আমাদের বৈশ্বিক কমিউনিটি উদ্যোগ এবং অ্যাম্বাসেডর প্রোগ্রাম পরিচালনা করেন।",
-        "expertise": ["কমিউনিটি নির্মাণ", "ডেভেলপার সম্পর্ক", "ইভেন্ট ব্যবস্থাপনা"]
+        "expertise": [
+          "কমিউনিটি নির্মাণ",
+          "ডেভেলপার সম্পর্ক",
+          "ইভেন্ট ব্যবস্থাপনা"
+        ]
       },
       "liam": {
         "name": "Liam McKenzie",
         "role": "অংশীদারিত্ব প্রধান",
         "location": "লন্ডন, UK",
         "bio": "কৌশলগত অংশীদারিত্ব এবং ইকোসিস্টেম বৃদ্ধিতে মনোনিবেশকারী ব্যবসায়িক উন্নয়ন বিশেষজ্ঞ। পূর্বে প্রধান ব্লকচেইন কোম্পানিতে অংশীদারিত্বের নেতৃত্ব দিয়েছেন।",
-        "expertise": ["কৌশলগত অংশীদারিত্ব", "ব্যবসায়িক উন্নয়ন", "ইকোসিস্টেম বৃদ্ধি"]
+        "expertise": [
+          "কৌশলগত অংশীদারিত্ব",
+          "ব্যবসায়িক উন্নয়ন",
+          "ইকোসিস্টেম বৃদ্ধি"
+        ]
       },
       "emily": {
         "name": "Emily Smith",
         "role": "গবেষণা পরিচালক",
         "location": "বেইজিং, চীন",
         "bio": "বিতরণ করা সিস্টেমে বিশেষায়িত কম্পিউটার সায়েন্সে পিএইচডি। আমাদের গবেষণা উদ্যোগের নেতৃত্ব দেন এবং অত্যাধুনিক ব্লকচেইন প্রযুক্তি অন্বেষণ করেন।",
-        "expertise": ["বিতরণ করা সিস্টেম", "গবেষণা", "একাডেমিক অংশীদারিত্ব"]
+        "expertise": [
+          "বিতরণ করা সিস্টেম",
+          "গবেষণা",
+          "একাডেমিক অংশীদারিত্ব"
+        ]
       }
     },
     "join": {
@@ -690,21 +741,36 @@
         "duration": "৩ মাস",
         "funding": "$500K পর্যন্ত",
         "description": "Dubhe ফাউন্ডেশন-সমর্থিত নিবিড় প্রোগ্রাম Obelisk Labs এবং ইকোসিস্টেম VC-দের সাথে সহ-ইনকিউবেটেড",
-        "benefits": ["Dubhe ফাউন্ডেশন অর্থায়ন", "Obelisk Labs সহ-ইনকিউবেশন", "Move ডেভেলপমেন্ট সহায়তা", "ইকোসিস্টেম VC অংশীদারিত্ব"]
+        "benefits": [
+          "Dubhe ফাউন্ডেশন অর্থায়ন",
+          "Obelisk Labs সহ-ইনকিউবেশন",
+          "Move ডেভেলপমেন্ট সহায়তা",
+          "ইকোসিস্টেম VC অংশীদারিত্ব"
+        ]
       },
       "studio": {
         "title": "সহযোগিতামূলক স্টুডিও",
         "duration": "৬-১২ মাস",
         "funding": "$1M পর্যন্ত",
         "description": "Dubhe ফাউন্ডেশন, Obelisk Labs এবং ইকোসিস্টেম VC-দের দ্বারা সহ-ইনকিউবেটেড সাথে সম্পদ ভাগাভাগি",
-        "benefits": ["মাল্টি-পার্টনার সহ-ইনকিউবেশন", "ভাগাভাগি প্রযুক্তিগত সম্পদ", "ক্রস-প্রজেক্ট সহযোগিতা", "ইকোসিস্টেম VC নেটওয়ার্ক"]
+        "benefits": [
+          "মাল্টি-পার্টনার সহ-ইনকিউবেশন",
+          "ভাগাভাগি প্রযুক্তিগত সম্পদ",
+          "ক্রস-প্রজেক্ট সহযোগিতা",
+          "ইকোসিস্টেম VC নেটওয়ার্ক"
+        ]
       },
       "scale": {
         "title": "ইকোসিস্টেম স্কেল",
         "duration": "৬ মাস",
         "funding": "$2M পর্যন্ত",
         "description": "Dubhe ফাউন্ডেশন, Obelisk Labs এবং ইকোসিস্টেম VC পার্টনারদের থেকে ব্যাপক সহায়তায় স্কেল করুন",
-        "benefits": ["সহ-ইনকিউবেশন নেটওয়ার্ক", "কৌশলগত পরিচয়", "বৈশ্বিক বাজার অ্যাক্সেস", "এন্টারপ্রাইজ VC সংযোগ"]
+        "benefits": [
+          "সহ-ইনকিউবেশন নেটওয়ার্ক",
+          "কৌশলগত পরিচয়",
+          "বৈশ্বিক বাজার অ্যাক্সেস",
+          "এন্টারপ্রাইজ VC সংযোগ"
+        ]
       }
     },
     "resources": {
@@ -735,32 +801,63 @@
     }
   },
   "ambassador": {
+    "hero": {
+      "badge": "অ্যাম্বাসেডর প্রোগ্রাম",
+      "title1": "একজন",
+      "title2": "Dubhe অ্যাম্বাসেডর হন",
+      "subtitle": "আমাদের বিশ্বব্যাপী উৎসাহী সমর্থকদের কমিউনিটিতে যোগ দিন এবং Move ব্লকচেইন ডেভেলপমেন্টের ভবিষ্যৎ গঠনে সহায়তা করুন। স্থানীয় কমিউনিটি নেতৃত্ব দিন, কন্টেন্ট তৈরি করুন এবং বিশ্বব্যাপী ইকোসিস্টেম বৃদ্ধি করুন।",
+      "stats": {
+        "activeAmbassadors": "সক্রিয় অ্যাম্বাসেডর",
+        "countries": "দেশ",
+        "communityReach": "কমিউনিটি পৌঁছানো"
+      },
+      "cta1": "এখনই আবেদন করুন",
+      "cta2": "আরও জানুন"
+    },
+    "benefitsSection": {
+      "badge": "প্রোগ্রাম সুবিধা",
+      "title": "কেন আমাদের অ্যাম্বাসেডর প্রোগ্রামে যোগ দিবেন?"
+    },
     "benefits": {
       "exclusiveAccess": {
-        "title": "এক্সক্লুসিভ অ্যাক্সেস",
-        "description": "পাবলিক রিলিজের আগে নতুন বৈশিষ্ট্য, পণ্য এবং ঘোষণাগুলির প্রাথমিক অ্যাক্সেস পান"
+        "title": "একচেটিয়া অ্যাক্সেস",
+        "description": "পাবলিক রিলিজের আগে নতুন ফিচার, পণ্য এবং ঘোষণায় প্রাথমিক অ্যাক্সেস পান"
       },
       "directCommunication": {
-        "title": "প্রত্যক্ষ যোগাযোগ",
+        "title": "সরাসরি যোগাযোগ",
         "description": "Dubhe ফাউন্ডেশনের সাথে নিয়মিত যোগাযোগ এবং পণ্য রোডম্যাপ সিদ্ধান্তে প্রভাব"
       },
       "recognition": {
         "title": "স্বীকৃতি ও পুরস্কার",
-        "description": "কমিউনিটিতে বিশেষ স্বীকৃতি, এক্সক্লুসিভ মার্চেন্ডাইজ এবং অবদানের জন্য টোকেন পুরস্কার"
+        "description": "কমিউনিটিতে বিশেষ স্বীকৃতি, একচেটিয়া পণ্যসামগ্রী এবং অবদানের জন্য টোকেন পুরস্কার"
       },
       "globalNetwork": {
         "title": "গ্লোবাল নেটওয়ার্ক",
-        "description": "সমমনা ব্যক্তিদের সাথে সংযোগ করুন এবং বৈশ্বিক Dubhe কমিউনিটির মধ্যে সম্পর্ক গড়ুন"
+        "description": "সমমনা ব্যক্তিদের সাথে সংযোগ করুন এবং গ্লোবাল Dubhe কমিউনিটির মধ্যে সম্পর্ক তৈরি করুন"
       }
     },
+    "ambassadorsSection": {
+      "title": "আমাদের গ্লোবাল অ্যাম্বাসেডরদের সাথে মিলিত হন",
+      "description": "আমাদের অ্যাম্বাসেডররা তাদের অঞ্চলে নেতৃত্ব দিচ্ছেন, কমিউনিটি গড়ে তুলছেন এবং গ্রহণযোগ্যতা বৃদ্ধি করছেন",
+      "timezone": "সময় অঞ্চল",
+      "location": "অবস্থান",
+      "expertise": "দক্ষতা",
+      "projectsLed": "নেতৃত্বাধীন প্রকল্প"
+    },
+    "requirementsSection": {
+      "title": "প্রয়োজনীয়তা"
+    },
     "requirements": [
-      "কমপক্ষে ৩ মাসের জন্য Dubhe কমিউনিটিতে সক্রিয় সদস্য",
-      "Move ব্লকচেইন প্রযুক্তির দৃঢ় বোঝাপড়া",
+      "কমপক্ষে ৩ মাস ধরে Dubhe কমিউনিটির সক্রিয় সদস্য",
+      "Move ব্লকচেইন প্রযুক্তির গভীর বোঝাপড়া",
       "কমিউনিটি নির্মাণ বা কন্টেন্ট তৈরিতে অভিজ্ঞতা",
-      "Dubhe ইকোসিস্টেমকে ইতিবাচকভাবে প্রচার করার প্রতিশ্রুতি",
-      "সপ্তাহে কমপক্ষে ১০ ঘণ্টার জন্য উপলব্ধ",
-      "ইংরেজি এবং কমপক্ষে একটি অন্য ভাষায় দক্ষ"
+      "Dubhe ইকোসিস্টেমকে ইতিবাচকভাবে প্রচার করার অঙ্গীকার",
+      "সপ্তাহে কমপক্ষে ১০ ঘন্টা উপলব্ধ",
+      "ইংরেজি এবং কমপক্ষে আরেকটি ভাষায় দক্ষতা"
     ],
+    "responsibilitiesSection": {
+      "title": "দায়িত্ব"
+    },
     "responsibilities": {
       "communityEngagement": {
         "title": "কমিউনিটি এনগেজমেন্ট",
@@ -768,27 +865,33 @@
           "কমিউনিটি আলোচনা পরিচালনা করুন এবং ইতিবাচক পরিবেশ বজায় রাখুন",
           "প্রযুক্তিগত প্রশ্নের উত্তর দিন এবং নতুনদের সাহায্য করুন",
           "স্থানীয় মিটআপ এবং অনলাইন ইভেন্টের আয়োজন করুন",
-          "আকর্ষণীয় কন্টেন্ট তৈরি করুন (টিউটোরিয়াল, আর্টিকেল, ভিডিও)"
+          "আকর্ষণীয় কন্টেন্ট তৈরি করুন (টিউটোরিয়াল, নিবন্ধ, ভিডিও)"
         ]
       },
       "ecosystemGrowth": {
         "title": "ইকোসিস্টেম বৃদ্ধি",
         "tasks": [
-          "নতুন ডেভেলপারদের Dubhe-তে চিহ্নিত করুন এবং অনবোর্ড করুন",
-          "বৈশ্বিক উদ্যোগে অন্যান্য অ্যাম্বাসেডরদের সাথে সহযোগিতা করুন",
+          "নতুন ডেভেলপারদের Dubhe তে চিহ্নিত করুন এবং অন্তর্ভুক্ত করুন",
+          "গ্লোবাল উদ্যোগে অন্যান্য অ্যাম্বাসেডরদের সাথে সহযোগিতা করুন",
           "পণ্য এবং ডকুমেন্টেশনে প্রতিক্রিয়া প্রদান করুন",
-          "ব্লকচেইন কনফারেন্স এবং ইভেন্টে Dubhe-র প্রতিনিধিত্ব করুন"
+          "ব্লকচেইন কনফারেন্স এবং ইভেন্টে Dubhe এর প্রতিনিধিত্ব করুন"
         ]
       },
       "contentCreation": {
         "title": "কন্টেন্ট তৈরি",
         "tasks": [
           "প্রযুক্তিগত টিউটোরিয়াল এবং গাইড লিখুন",
-          "Dubhe বৈশিষ্ট্য ব্যাখ্যাকারী ভিডিও কন্টেন্ট তৈরি করুন",
+          "Dubhe বৈশিষ্ট্য ব্যাখ্যা করে ভিডিও কন্টেন্ট তৈরি করুন",
           "স্থানীয় ভাষায় ডকুমেন্টেশন অনুবাদ করুন",
           "সোশ্যাল মিডিয়ায় ইকোসিস্টেম আপডেট শেয়ার করুন"
         ]
       }
+    },
+    "cta": {
+      "title": "আপনার কমিউনিটি নেতৃত্ব দিতে প্রস্তুত?",
+      "description": "আমাদের অ্যাম্বাসেডর প্রোগ্রামে যোগ দিন এবং Move ইকোসিস্টেমে একজন নেতা হয়ে উঠুন",
+      "apply": "এখনই আবেদন করুন",
+      "contact": "আমাদের সাথে যোগাযোগ করুন"
     }
   },
   "LocaleSwitcher": {
@@ -880,22 +983,31 @@
         "protocol": {
           "title": "প্রোটোকল উন্নয়ন",
           "description": "মূল ব্লকচেইন প্রোটোকল, সম্মতি প্রক্রিয়া এবং Move ভাষার উন্নতি",
-          "teams": ["Obelisk ল্যাবস"]
+          "teams": [
+            "Obelisk ল্যাবস"
+          ]
         },
         "infrastructure": {
           "title": "অবকাঠামো এবং স্কেলিং",
           "description": "উচ্চ-কর্মক্ষমতা নেটওয়ার্কিং, রিয়েল-টাইম কমিউনিকেশন এবং স্কেলেবিলিটি সমাধান",
-          "teams": ["Dubhe নেটওয়ার্ক ল্যাবস", "Cyferio ল্যাবস"]
+          "teams": [
+            "Dubhe নেটওয়ার্ক ল্যাবস",
+            "Cyferio ল্যাবস"
+          ]
         },
         "crossChain": {
           "title": "ক্রস-চেইন প্রযুক্তি",
           "description": "ইন্টারঅপারেবিলিটি প্রোটোকল, সার্বজনীন ব্রিজিং এবং মাল্টি-চেইন গভর্নেন্স",
-          "teams": ["Dubhe ব্রিজ ল্যাবস"]
+          "teams": [
+            "Dubhe ব্রিজ ল্যাবস"
+          ]
         },
         "privacy": {
           "title": "গোপনীয়তা এবং নিরাপত্তা",
           "description": "জিরো-নলেজ প্রুফ, গোপনীয়তা-সংরক্ষণ প্রোটোকল এবং ক্রিপ্টোগ্রাফিক গবেষণা",
-          "teams": ["Cyferio ল্যাবস"]
+          "teams": [
+            "Cyferio ল্যাবস"
+          ]
         }
       },
       "contributingLabs": "অবদানকারী ল্যাবস:"
@@ -1349,17 +1461,29 @@
         "gaming": {
           "title": "রিয়েল-টাইম গেমিং",
           "description": "তাৎক্ষণিক প্রতিক্রিয়ার সময় সহ মাল্টিপ্লেয়ার গেম",
-          "metrics": ["<৫০মিলিসেকেন্ড বিলম্বতা", "১০ লক্ষ+ সমসাময়িক খেলোয়াড়", "৯৯.৯% আপটাইম"]
+          "metrics": [
+            "<৫০মিলিসেকেন্ড বিলম্বতা",
+            "১০ লক্ষ+ সমসাময়িক খেলোয়াড়",
+            "৯৯.৯% আপটাইম"
+          ]
         },
         "social": {
           "title": "সোশ্যাল প্ল্যাটফর্ম",
           "description": "রিয়েল-টাইম মেসেজিং সহ বিকেন্দ্রীকৃত সোশ্যাল নেটওয়ার্ক",
-          "metrics": ["তাৎক্ষণিক মেসেজিং", "লাইভ ভিডিও কল", "গ্রুপ চ্যাট"]
+          "metrics": [
+            "তাৎক্ষণিক মেসেজিং",
+            "লাইভ ভিডিও কল",
+            "গ্রুপ চ্যাট"
+          ]
         },
         "trading": {
           "title": "ট্রেডিং অ্যাপ্লিকেশন",
           "description": "রিয়েল-টাইম প্রাইস ফিড সহ উচ্চ-ফ্রিকোয়েন্সি ট্রেডিং",
-          "metrics": ["রিয়েল-টাইম ডেটা", "অর্ডার বুক আপডেট", "প্রাইস ডিসকভারি"]
+          "metrics": [
+            "রিয়েল-টাইম ডেটা",
+            "অর্ডার বুক আপডেট",
+            "প্রাইস ডিসকভারি"
+          ]
         }
       }
     },
@@ -1485,22 +1609,38 @@
         "sui": {
           "name": "Sui নেটওয়ার্ক",
           "status": "লাইভ",
-          "features": ["উচ্চ থ্রুপুট", "অবজেক্ট-সেন্ট্রিক মডেল", "Move ভাষা"]
+          "features": [
+            "উচ্চ থ্রুপুট",
+            "অবজেক্ট-সেন্ট্রিক মডেল",
+            "Move ভাষা"
+          ]
         },
         "aptos": {
           "name": "Aptos",
           "status": "লাইভ",
-          "features": ["প্যারালেল এক্সিকিউশন", "Move VM", "নিরাপদ স্মার্ট কন্ট্রাক্ট"]
+          "features": [
+            "প্যারালেল এক্সিকিউশন",
+            "Move VM",
+            "নিরাপদ স্মার্ট কন্ট্রাক্ট"
+          ]
         },
         "movement": {
           "name": "Movement",
           "status": "ইন্টিগ্রেশন",
-          "features": ["EVM সামঞ্জস্য", "Move রানটাইম", "মডুলার আর্কিটেকচার"]
+          "features": [
+            "EVM সামঞ্জস্য",
+            "Move রানটাইম",
+            "মডুলার আর্কিটেকচার"
+          ]
         },
         "future": {
           "name": "ভবিষ্যতের চেইন",
           "status": "পরিকল্পিত",
-          "features": ["কমিউনিটি চালিত", "Move-ভিত্তিক", "ইকোসিস্টেম সম্প্রসারণ"]
+          "features": [
+            "কমিউনিটি চালিত",
+            "Move-ভিত্তিক",
+            "ইকোসিস্টেম সম্প্রসারণ"
+          ]
         }
       }
     },
@@ -1740,100 +1880,6 @@
       "description": "এই সেবার শর্তাবলী সম্পর্কে আপনার কোন প্রশ্ন থাকলে, অনুগ্রহ করে আমাদের আইনি দলের সাথে যোগাযোগ করুন।"
     }
   },
-  "ambassador": {
-    "hero": {
-      "badge": "অ্যাম্বাসেডর প্রোগ্রাম",
-      "title1": "একজন",
-      "title2": "Dubhe অ্যাম্বাসেডর হন",
-      "subtitle": "আমাদের বিশ্বব্যাপী উৎসাহী সমর্থকদের কমিউনিটিতে যোগ দিন এবং Move ব্লকচেইন ডেভেলপমেন্টের ভবিষ্যৎ গঠনে সহায়তা করুন। স্থানীয় কমিউনিটি নেতৃত্ব দিন, কন্টেন্ট তৈরি করুন এবং বিশ্বব্যাপী ইকোসিস্টেম বৃদ্ধি করুন।",
-      "stats": {
-        "activeAmbassadors": "সক্রিয় অ্যাম্বাসেডর",
-        "countries": "দেশ",
-        "communityReach": "কমিউনিটি পৌঁছানো"
-      },
-      "cta1": "এখনই আবেদন করুন",
-      "cta2": "আরও জানুন"
-    },
-    "benefitsSection": {
-      "badge": "প্রোগ্রাম সুবিধা",
-      "title": "কেন আমাদের অ্যাম্বাসেডর প্রোগ্রামে যোগ দিবেন?"
-    },
-    "benefits": {
-      "exclusiveAccess": {
-        "title": "একচেটিয়া অ্যাক্সেস",
-        "description": "পাবলিক রিলিজের আগে নতুন ফিচার, পণ্য এবং ঘোষণায় প্রাথমিক অ্যাক্সেস পান"
-      },
-      "directCommunication": {
-        "title": "সরাসরি যোগাযোগ",
-        "description": "Dubhe ফাউন্ডেশনের সাথে নিয়মিত যোগাযোগ এবং পণ্য রোডম্যাপ সিদ্ধান্তে প্রভাব"
-      },
-      "recognition": {
-        "title": "স্বীকৃতি ও পুরস্কার",
-        "description": "কমিউনিটিতে বিশেষ স্বীকৃতি, একচেটিয়া পণ্যসামগ্রী এবং অবদানের জন্য টোকেন পুরস্কার"
-      },
-      "globalNetwork": {
-        "title": "গ্লোবাল নেটওয়ার্ক",
-        "description": "সমমনা ব্যক্তিদের সাথে সংযোগ করুন এবং গ্লোবাল Dubhe কমিউনিটির মধ্যে সম্পর্ক তৈরি করুন"
-      }
-    },
-    "ambassadorsSection": {
-      "title": "আমাদের গ্লোবাল অ্যাম্বাসেডরদের সাথে মিলিত হন",
-      "description": "আমাদের অ্যাম্বাসেডররা তাদের অঞ্চলে নেতৃত্ব দিচ্ছেন, কমিউনিটি গড়ে তুলছেন এবং গ্রহণযোগ্যতা বৃদ্ধি করছেন",
-      "timezone": "সময় অঞ্চল",
-      "location": "অবস্থান",
-      "expertise": "দক্ষতা",
-      "projectsLed": "নেতৃত্বাধীন প্রকল্প"
-    },
-    "requirementsSection": {
-      "title": "প্রয়োজনীয়তা"
-    },
-    "requirements": [
-      "কমপক্ষে ৩ মাস ধরে Dubhe কমিউনিটির সক্রিয় সদস্য",
-      "Move ব্লকচেইন প্রযুক্তির গভীর বোঝাপড়া", 
-      "কমিউনিটি নির্মাণ বা কন্টেন্ট তৈরিতে অভিজ্ঞতা",
-      "Dubhe ইকোসিস্টেমকে ইতিবাচকভাবে প্রচার করার অঙ্গীকার",
-      "সপ্তাহে কমপক্ষে ১০ ঘন্টা উপলব্ধ",
-      "ইংরেজি এবং কমপক্ষে আরেকটি ভাষায় দক্ষতা"
-    ],
-    "responsibilitiesSection": {
-      "title": "দায়িত্ব"
-    },
-    "responsibilities": {
-      "communityEngagement": {
-        "title": "কমিউনিটি এনগেজমেন্ট",
-        "tasks": [
-          "কমিউনিটি আলোচনা পরিচালনা করুন এবং ইতিবাচক পরিবেশ বজায় রাখুন",
-          "প্রযুক্তিগত প্রশ্নের উত্তর দিন এবং নতুনদের সাহায্য করুন",
-          "স্থানীয় মিটআপ এবং অনলাইন ইভেন্টের আয়োজন করুন",
-          "আকর্ষণীয় কন্টেন্ট তৈরি করুন (টিউটোরিয়াল, নিবন্ধ, ভিডিও)"
-        ]
-      },
-      "ecosystemGrowth": {
-        "title": "ইকোসিস্টেম বৃদ্ধি",
-        "tasks": [
-          "নতুন ডেভেলপারদের Dubhe তে চিহ্নিত করুন এবং অন্তর্ভুক্ত করুন",
-          "গ্লোবাল উদ্যোগে অন্যান্য অ্যাম্বাসেডরদের সাথে সহযোগিতা করুন",
-          "পণ্য এবং ডকুমেন্টেশনে প্রতিক্রিয়া প্রদান করুন",
-          "ব্লকচেইন কনফারেন্স এবং ইভেন্টে Dubhe এর প্রতিনিধিত্ব করুন"
-        ]
-      },
-      "contentCreation": {
-        "title": "কন্টেন্ট তৈরি",
-        "tasks": [
-          "প্রযুক্তিগত টিউটোরিয়াল এবং গাইড লিখুন",
-          "Dubhe বৈশিষ্ট্য ব্যাখ্যা করে ভিডিও কন্টেন্ট তৈরি করুন",
-          "স্থানীয় ভাষায় ডকুমেন্টেশন অনুবাদ করুন",
-          "সোশ্যাল মিডিয়ায় ইকোসিস্টেম আপডেট শেয়ার করুন"
-        ]
-      }
-    },
-    "cta": {
-      "title": "আপনার কমিউনিটি নেতৃত্ব দিতে প্রস্তুত?",
-      "description": "আমাদের অ্যাম্বাসেডর প্রোগ্রামে যোগ দিন এবং Move ইকোসিস্টেমে একজন নেতা হয়ে উঠুন",
-      "apply": "এখনই আবেদন করুন",
-      "contact": "আমাদের সাথে যোগাযোগ করুন"
-    }
-  },
   "organizations": {
     "section": {
       "badge": "আমাদের সংস্থাসমূহ",
@@ -2008,6 +2054,177 @@
         "description": "কাস্টম অ্যাসেট প্রয়োজন বা প্রশ্ন আছে?",
         "button": "আমাদের দলের সাথে যোগাযোগ করুন"
       }
+    }
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - Move অ্যাপের জন্য প্রোডাকশন ওয়ালেট",
+      "name": "Dubhe Wallet",
+      "description": "Dubhe Wallet জটিল Move অ্যাপ, permission-sensitive workflow এবং high-value onchain execution-এর জন্য তৈরি।",
+      "featureList": [
+        "অনুমতির রিভিউ ও প্রত্যাহার",
+        "উচ্চ-মূল্যের ট্রানজ্যাকশনের ঝুঁকি পরীক্ষা",
+        "execution-aware workflow সাপোর্ট",
+        "session cleanup ও operational control"
+      ]
+    },
+    "hero": {
+      "badge": "Build / Dubhe Wallet",
+      "title": "Move অ্যাপ ও উচ্চ-মূল্যের execution-এর জন্য প্রোডাকশন ওয়ালেট",
+      "description": "Dubhe Wallet-কে সাধারণ consumer wallet হিসেবে position করা হয়নি। এটি জটিল Move অ্যাপ, permission-sensitive flow এবং এমন execution path-এর জন্য তৈরি, যেখানে risk, recovery এবং operational control খুব গুরুত্বপূর্ণ।",
+      "primaryCta": "ব্যবহার শুরু করুন",
+      "secondaryCta": "পণ্যের অগ্রগতি দেখুন",
+      "positioningEyebrow": "পজিশনিং",
+      "positioningTitle": "অন্যরা onboarding, trading বা distribution optimize করে।",
+      "positioningDescription": "Dubhe Wallet optimize করে execution, control এবং production readiness।",
+      "differentiators": [
+        {
+          "title": "শুধু signature নয়, permission-ও নিয়ন্ত্রণ করুন",
+          "description": "Dubhe Wallet তৈরি হয়েছে authorization review, risky capability handling, session cleanup এবং threat-aware execution ঘিরে।"
+        },
+        {
+          "title": "multi-step onchain workflow সাপোর্ট",
+          "description": "send, swap, bridge এবং order flow-কে one-off wallet prompt নয়, recoverable execution path হিসেবে ধরা হয়।"
+        },
+        {
+          "title": "personal wallet-এর বাইরে operate করুন",
+          "description": "Sponsored gas, hardware-backed signing, institutional approval policy এবং recovery drill এই প্রোডাক্টকে team ও treasury use case-এর দিকে নিয়ে যায়।"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "এই ওয়ালেট কেন আছে",
+      "title": "আসল gap হলো wallet access নয়, production execution।",
+      "description": "অনেক wallet onboarding, asset display এবং সাধারণ dApp connect আগেই সমাধান করেছে। Dubhe Wallet ফোকাস করে তার পরের অংশে: multi-step workflow, long-lived permission, sensitive session এবং partial execution state যেগুলোর জন্য recovery দরকার, guesswork নয়।"
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "Risk ও permission",
+          "title": "নিয়ন্ত্রণ স্তর",
+          "items": [
+            "রিস্কি capability review ও revocation-এর জন্য Authorization Center",
+            "high-value বা suspicious execution-এর জন্য transaction risk guard",
+            "sensitive approval flow-এ threat ও phishing policy check"
+          ]
+        },
+        {
+          "eyebrow": "complex flow support",
+          "title": "কার্যসম্পাদন স্তর",
+          "items": [
+            "Bridge status, advanced order এবং activity reconciliation",
+            "execution-aware notification ও runtime visibility",
+            "Sponsored gas preference ও fallback handling"
+          ]
+        },
+        {
+          "eyebrow": "Security ও recovery",
+          "title": "অপারেশন স্তর",
+          "items": [
+            "Hardware / OWS signing path",
+            "runtime cleanup ও control-এর জন্য Session Manager",
+            "passkey, mnemonic ও key-based recovery drill"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "যাদের জন্য",
+      "title": "এটি mass-market wallet pitch নয়",
+      "description": "সঠিক audience আরও সরু কিন্তু আরও মূল্যবান: এমন অ্যাপ ও operator যাদের execution confidence, পরিষ্কার control এবং operational safety দরকার।",
+      "cards": [
+        {
+          "title": "Move apps",
+          "description": "যেসব অ্যাপে complex state, persistent permission এবং basic wallet modal-এর চেয়ে বেশি কিছু দরকার এমন execution path আছে।"
+        },
+        {
+          "title": "Power users",
+          "description": "যেসব operator recoverability, high-value transaction review এবং swap, bridge, permission flow-এ reliable execution নিয়ে ভাবেন।"
+        },
+        {
+          "title": "Teams ও treasury",
+          "description": "যেসব group approval policy, hardware-backed control, sponsored execution এবং শক্ত operational safety চায়।"
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "নিরাপত্তা ও নিয়ন্ত্রণ",
+      "title": "wallet UX প্রোডাক্টের শুধু একটি অংশ",
+      "description": "Dubhe Wallet-কে শেষ পর্যন্ত sensitive flow-এর জন্য tighter control plane দিতে হবে: permission review, execution visibility, session cleanup, hardware-backed signing এবং recovery readiness। এখানেই এটি generic wallet landing page থেকে আলাদা।",
+      "cards": [
+        {
+          "title": "Hardware ও recovery",
+          "description": "OWS / hardware signing এবং recovery drill visible product promise হওয়া উচিত, লুকানো settings নয়।"
+        },
+        {
+          "title": "Execution state",
+          "description": "Bridge tracking, order state, activity reconciliation এবং execution history non-trivial workflow-এর জন্য core UX।"
+        },
+        {
+          "title": "Operational visibility",
+          "description": "wallet যখন execution surface হিসেবে ব্যবহৃত হয়, শুধু identity surface নয়, তখন notification ও runtime control খুব গুরুত্বপূর্ণ।"
+        },
+        {
+          "title": "Team controls",
+          "description": "Institutional approval policy এবং sponsored execution প্রোডাক্টকে pure consumer wallet territory-এর বাইরে নিয়ে যায়।"
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "প্ল্যাটফর্মের অবস্থা",
+      "title": "একটি বাস্তব product page-এ release state স্পষ্ট হওয়া উচিত",
+      "description": "এই section ভবিষ্যতে app store badge, extension link এবং release note নিতে পারবে। এখন এটি স্পষ্টভাবে বলবে কী active এবং কী এখনও phased rollout-এ আছে।",
+      "cards": [
+        {
+          "title": "Web Surface",
+          "status": "সক্রিয়",
+          "detail": "বর্তমান active product surface এবং wallet ব্যাখ্যা করার সবচেয়ে সঠিক জায়গা।"
+        },
+        {
+          "title": "Mobile / Extension",
+          "status": "ধাপে ধাপে প্রকাশ",
+          "detail": "planned product surface যেগুলো release state public হলে এখানে আনা উচিত।"
+        },
+        {
+          "title": "Distribution",
+          "status": "প্রস্তুত হচ্ছে",
+          "detail": "public download CTA ও app store badge final হওয়ার আগে এই page-কে canonical pre-launch product page হিসেবে ব্যবহার করুন।"
+        }
+      ],
+      "callout": {
+        "title": "কখন app store CTA যোগ করবেন",
+        "description": "direct download badge তখনই যোগ করুন যখন release state, supported surface এবং support channel publicভাবে own করার মতো যথেষ্ট stable হবে। ততক্ষণ এই page product-কে পরিষ্কারভাবে explain করুক।"
+      }
+    },
+    "faq": {
+      "eyebrow": "প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+      "title": "product story পরিষ্কার রাখুন",
+      "description": "এখানেই landing page-এর Dubhe Wallet, Dubhe Engine এবং broader Dubhe stack-এর মধ্যে confusion দূর করা উচিত।",
+      "items": [
+        {
+          "question": "Dubhe Wallet কি একটি general-purpose Sui wallet?",
+          "answer": "না। এর positioning আরও সরু এবং আরও ইচ্ছাকৃত: Move apps, permission-sensitive workflow এবং high-value onchain execution-এর জন্য production wallet।"
+        },
+        {
+          "question": "কারা আগে এটি evaluate করবে?",
+          "answer": "যে দলগুলো complex Move application বানাচ্ছে, যে operator-রা non-trivial execution flow সামলায়, এবং treasury-ধরনের environment যেখানে control ও recovery গুরুত্বপূর্ণ।"
+        },
+        {
+          "question": "onboarding-first wallet থেকে এটি কীভাবে আলাদা?",
+          "answer": "বেশিরভাগ onboarding-first wallet দ্রুত setup এবং দৈনন্দিন ব্যবহার optimize করে। Dubhe Wallet optimize করে control, execution confidence এবং operational readiness।"
+        },
+        {
+          "question": "এই page-এ কি এখনই app store link থাকা উচিত?",
+          "answer": "শুধু তখনই যখন release state stable হবে। তার আগে product, target user এবং execution-oriented capability-গুলো স্পষ্টভাবে explain করা উচিত।"
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "পরবর্তী ধাপ",
+      "title": "Build-এর ভেতরে এটি dedicated wallet page হিসেবে ব্যবহার করুন",
+      "description": "পরবর্তী iteration-এ release screenshot, supported surface এবং real distribution link যোগ করা উচিত। গুরুত্বপূর্ণ অংশটি ইতিমধ্যে হয়েছে: wallet এখন generic site link-এর আড়ালে লুকানো নয়, তার নিজস্ব narrative home আছে।",
+      "primaryCta": "Dubhe Wallet ব্যবহার শুরু করুন",
+      "secondaryCta": "GitHub দেখুন"
     }
   }
 }

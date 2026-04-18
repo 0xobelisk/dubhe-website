@@ -10,6 +10,7 @@
     "engine": "Motor",
     "channel": "Kanal",
     "os": "İS",
+    "wallet": "Cüzdan",
     "foundation": "Vakıf",
     "labs": "Laboratuvarlar",
     "grants": "Bağışlar",
@@ -1985,5 +1986,176 @@
   },
   "LocaleSwitcher": {
     "label": "Diller"
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - Move Uygulamaları için Production Cüzdan",
+      "name": "Dubhe Wallet",
+      "description": "Dubhe Wallet, karmaşık Move uygulamaları, permission-sensitive workflow ve yüksek değerli onchain execution için tasarlandı.",
+      "featureList": [
+        "Yetki inceleme ve iptali",
+        "Yüksek değerli işlemler için risk kontrolleri",
+        "Execution-aware workflow desteği",
+        "Session cleanup ve operasyonel kontrol"
+      ]
+    },
+    "hero": {
+      "badge": "Yapı / Dubhe Wallet",
+      "title": "Move uygulamaları ve yüksek değerli execution için production cüzdan",
+      "description": "Dubhe Wallet, genel amaçlı tüketici cüzdanı olarak konumlanmıyor. Karmaşık Move uygulamaları, permission-sensitive akışlar ve risk, recovery ve operational control gerektiren execution path’ler için tasarlanıyor.",
+      "primaryCta": "Kullanmaya başla",
+      "secondaryCta": "Ürün ilerlemesini takip et",
+      "positioningEyebrow": "Konumlandırma",
+      "positioningTitle": "Diğerleri onboarding, trading veya distribution’ı optimize ediyor.",
+      "positioningDescription": "Dubhe Wallet execution, control ve production readiness’i optimize ediyor.",
+      "differentiators": [
+        {
+          "title": "Sadece imzaları değil, izinleri de yönetin",
+          "description": "Dubhe Wallet authorization review, riskli capability handling, session cleanup ve threat-aware execution etrafında inşa ediliyor."
+        },
+        {
+          "title": "Çok adımlı onchain workflow’ları destekleyin",
+          "description": "Send, swap, bridge ve order flow’ları tek seferlik wallet prompt’ları yerine recoverable execution path olarak ele alınır."
+        },
+        {
+          "title": "Kişisel cüzdanın ötesinde çalışın",
+          "description": "Sponsored gas, hardware-backed signing, kurumsal approval policy ve recovery drill, ürünü team ve treasury use case’lerine taşır."
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Bu cüzdan neden var",
+      "title": "Asıl boşluk wallet access değil, production execution’dır.",
+      "description": "Birçok cüzdan onboarding, asset display ve genel dApp connect konularını zaten çözüyor. Dubhe Wallet bunun sonrasına odaklanır: çok adımlı workflow’lar, uzun ömürlü permission’lar, hassas session’lar ve tahmin değil recovery gerektiren partial execution state’ler."
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "Risk ve izinler",
+          "title": "Kontrol katmanı",
+          "items": [
+            "Riskli capability’leri incelemek ve geri almak için Authorization Center",
+            "Yüksek değerli veya şüpheli execution için transaction risk guard",
+            "Hassas approval flow’larında threat ve phishing policy kontrolleri"
+          ]
+        },
+        {
+          "eyebrow": "Karmaşık akış desteği",
+          "title": "Yürütme katmanı",
+          "items": [
+            "Bridge status, advanced order ve activity reconciliation",
+            "Execution-aware bildirimler ve runtime visibility",
+            "Sponsored gas tercihi ve fallback handling"
+          ]
+        },
+        {
+          "eyebrow": "Güvenlik ve recovery",
+          "title": "Operasyon katmanı",
+          "items": [
+            "Hardware / OWS signing path’leri",
+            "Runtime cleanup ve control için Session Manager",
+            "Passkey, mnemonic ve key-based recovery drill’leri"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Kimin için",
+      "title": "Bu bir mass-market wallet anlatısı değil",
+      "description": "Doğru kitle daha dar ama daha değerlidir: execution confidence, daha net control ve operational safety isteyen uygulamalar ve operatörler.",
+      "cards": [
+        {
+          "title": "Move uygulamaları",
+          "description": "Karmaşık state, kalıcı permission ve basic wallet modal’dan fazlasını gerektiren execution path’lere sahip uygulamalar."
+        },
+        {
+          "title": "Power users",
+          "description": "Recoverability, high-value transaction review ve swap, bridge, permission flow’larında reliable execution ile ilgilenen operatörler."
+        },
+        {
+          "title": "Teams ve treasury",
+          "description": "Approval policy, hardware-backed control, sponsored execution ve daha güçlü operational safety isteyen gruplar."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Güvenlik ve kontrol",
+      "title": "Wallet UX ürünün yalnızca bir parçasıdır",
+      "description": "Dubhe Wallet zamanla hassas flow’lar için daha sıkı bir control plane sunmalıdır: permission review, execution visibility, session cleanup, hardware-backed signing ve recovery readiness. Onu generic wallet landing page’den ayıran yer burasıdır.",
+      "cards": [
+        {
+          "title": "Hardware ve recovery",
+          "description": "OWS / hardware signing ve recovery drill’leri gizli ayarlar değil, görünür product promise’ler olmalıdır."
+        },
+        {
+          "title": "Execution state",
+          "description": "Bridge tracking, order state, activity reconciliation ve execution history non-trivial workflow’lar için core UX’tir."
+        },
+        {
+          "title": "Operational visibility",
+          "description": "Wallet bir execution surface olarak kullanıldığında, sadece identity surface değilken, bildirimler ve runtime control’lar önemlidir."
+        },
+        {
+          "title": "Team controls",
+          "description": "Kurumsal approval policy ve sponsored execution ürünün pure consumer wallet territory’nin ötesine geçme yoludur."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "Platform durumu",
+      "title": "Gerçek bir product page release state’i açıkça göstermelidir",
+      "description": "Bu bölüm ileride app store badge’leri, extension link’leri ve release note’ları alabilir. Şimdilik neyin active olduğu ve neyin aşamalı geldiği net anlatılmalıdır.",
+      "cards": [
+        {
+          "title": "Web Surface",
+          "status": "Aktif",
+          "detail": "Bugün wallet’ı anlatmak için doğru yer olan mevcut active product surface."
+        },
+        {
+          "title": "Mobile / Extension",
+          "status": "Kademeli yayın",
+          "detail": "Release state kamuya açık hale geldiğinde burada tanıtılması gereken planlı product surface’ler."
+        },
+        {
+          "title": "Distribution",
+          "status": "Hazırlanıyor",
+          "detail": "Public download CTA’ları ve app store badge’leri netleşene kadar bu sayfayı canonical pre-launch product page olarak kullanın."
+        }
+      ],
+      "callout": {
+        "title": "App store CTA ne zaman eklenmeli",
+        "description": "Direct download badge’leri ancak release state, supported surface’ler ve support channel’lar kamuya açık şekilde sahiplenilebilecek kadar stabil olduğunda ekleyin. O zamana kadar bu sayfa product’ı net açıklamaya odaklanmalıdır."
+      }
+    },
+    "faq": {
+      "eyebrow": "Sık sorulan sorular",
+      "title": "Ürün hikayesini net tutun",
+      "description": "Burada landing page, Dubhe Wallet, Dubhe Engine ve daha geniş Dubhe stack arasındaki karışıklığı gidermelidir.",
+      "items": [
+        {
+          "question": "Dubhe Wallet genel amaçlı bir Sui cüzdanı mı?",
+          "answer": "Hayır. Konumlandırması daha dar ve daha bilinçli: Move uygulamaları, permission-sensitive workflow’lar ve yüksek değerli onchain execution için production cüzdan."
+        },
+        {
+          "question": "İlk kimler değerlendirmeli?",
+          "answer": "Karmaşık Move uygulamaları geliştiren ekipler, non-trivial execution flow’larını yöneten operatörler ve control ile recovery’nin önemli olduğu treasury-benzeri ortamlar."
+        },
+        {
+          "question": "Onboarding-first cüzdanlardan farkı nedir?",
+          "answer": "Çoğu onboarding-first cüzdan hızlı kurulum ve günlük kullanımı optimize eder. Dubhe Wallet control, execution confidence ve operational readiness’i optimize eder."
+        },
+        {
+          "question": "Bu sayfada şimdiden app store linkleri olmalı mı?",
+          "answer": "Yalnızca release state stabil olduğunda. Ondan önce product, hedef kullanıcı ve execution-oriented capability’leri net şekilde açıklamalıdır."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Sonraki adım",
+      "title": "Bunu Build içinde dedicated wallet page olarak kullanın",
+      "description": "Bir sonraki iterasyonda gerçek release screenshot’ları, supported surface’ler ve gerçek distribution linkleri eklenmelidir. Önemli kısım zaten yerinde: wallet artık generic bir site linkinin arkasına saklanmak yerine kendi narrative home’una sahip.",
+      "primaryCta": "Dubhe Wallet kullanmaya başla",
+      "secondaryCta": "GitHub’ı görüntüle"
+    }
   }
 }

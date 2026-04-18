@@ -1,7 +1,7 @@
 {
   "navigation": {
     "learn": "Learn",
-    "build": "Build", 
+    "build": "Build",
     "ecosystem": "Ecosystem",
     "media": "Media",
     "community": "Community",
@@ -10,6 +10,7 @@
     "engine": "Engine",
     "channel": "Channel",
     "os": "OS",
+    "wallet": "Wallet",
     "foundation": "Foundation",
     "labs": "Labs",
     "grants": "Grants",
@@ -65,7 +66,7 @@
           "subtitle": "Building the Future Together"
         },
         "workshop": {
-          "title": "Developer Workshop", 
+          "title": "Developer Workshop",
           "subtitle": "Hands-on Learning Sessions"
         },
         "hackathon": {
@@ -93,7 +94,7 @@
         },
         "events": {
           "value": "50+",
-          "label": "Global Events", 
+          "label": "Global Events",
           "description": "Conferences, meetups, and workshops annually"
         },
         "countries": {
@@ -120,7 +121,7 @@
           "description": "On-chain games and metaverse"
         },
         "infrastructure": {
-          "title": "Infrastructure", 
+          "title": "Infrastructure",
           "description": "Developer tools and infrastructure"
         },
         "nfts": {
@@ -163,7 +164,13 @@
         "schemaDefinition": {
           "title": "Schema Definition",
           "description": "Define your game or dApp logic using Dubhe's intuitive schema system. Describe entities, components, and systems in simple configuration files.",
-          "items": ["Entity", "Component", "System", "Error", "Event"]
+          "items": [
+            "Entity",
+            "Component",
+            "System",
+            "Error",
+            "Event"
+          ]
         },
         "codeGeneration": {
           "title": "Code Generation",
@@ -285,25 +292,45 @@
           "title": "Move Applications",
           "subtitle": "Your dApps & Games",
           "description": "Build complex decentralized applications with Move's safety and flexibility",
-          "features": ["DeFi Protocols", "Gaming Apps", "NFT Platforms", "Social dApps"]
+          "features": [
+            "DeFi Protocols",
+            "Gaming Apps",
+            "NFT Platforms",
+            "Social dApps"
+          ]
         },
         "dubheEngine": {
           "title": "Dubhe Engine",
           "subtitle": "Development Toolkit",
           "description": "Auto-generates 80% of code and provides complete developer toolchain",
-          "features": ["Code Generation", "Schema-Based Development", "Multi-Chain Deployment", "Dev Environment"]
+          "features": [
+            "Code Generation",
+            "Schema-Based Development",
+            "Multi-Chain Deployment",
+            "Dev Environment"
+          ]
         },
         "dubheChannel": {
           "title": "Dubhe Channel",
           "subtitle": "Real-time Layer",
           "description": "P2P interaction layer for Web2-level real-time user experience",
-          "features": ["<50ms Latency", "Real-time Sync", "P2P Communication", "Mobile Support"]
+          "features": [
+            "<50ms Latency",
+            "Real-time Sync",
+            "P2P Communication",
+            "Mobile Support"
+          ]
         },
         "dubheOS": {
           "title": "Dubhe OS",
           "subtitle": "Cross-Chain Infrastructure",
           "description": "Decentralized operating system with native multi-chain interoperability",
-          "features": ["Cross-Chain Bridges", "Unified State", "Developer Incentives", "Governance"]
+          "features": [
+            "Cross-Chain Bridges",
+            "Unified State",
+            "Developer Incentives",
+            "Governance"
+          ]
         }
       },
       "completeStackSolution": {
@@ -364,7 +391,7 @@
         "description": "Providing grants, resources, and mentorship to developers building on the Dubhe ecosystem. From hackathons to long-term project funding.",
         "features": [
           "Grant programs for innovative projects",
-          "Technical mentorship and guidance", 
+          "Technical mentorship and guidance",
           "Educational workshops and hackathons"
         ]
       },
@@ -441,42 +468,66 @@
         "role": "Foundation Lead",
         "location": "San Francisco, CA",
         "bio": "Visionary leader with 15+ years in blockchain technology. Previously led engineering teams at major tech companies before founding Dubhe to revolutionize Move development.",
-        "expertise": ["Blockchain Architecture", "Team Leadership", "Product Strategy"]
+        "expertise": [
+          "Blockchain Architecture",
+          "Team Leadership",
+          "Product Strategy"
+        ]
       },
       "joan": {
-        "name": "Joan", 
+        "name": "Joan",
         "role": "CTO & Co-founder",
         "location": "New York, NY",
         "bio": "Former Move core developer with deep expertise in smart contract architecture. Leads our technical vision and oversees all engineering initiatives.",
-        "expertise": ["Move Language", "Smart Contracts", "System Architecture"]
+        "expertise": [
+          "Move Language",
+          "Smart Contracts",
+          "System Architecture"
+        ]
       },
       "david": {
         "name": "David",
-        "role": "Head of Engineering", 
+        "role": "Head of Engineering",
         "location": "Seoul, South Korea",
         "bio": "Full-stack engineer passionate about developer tools and ecosystem growth. Leads our engine development team and drives technical innovation.",
-        "expertise": ["Full-stack Development", "Developer Tools", "Open Source"]
+        "expertise": [
+          "Full-stack Development",
+          "Developer Tools",
+          "Open Source"
+        ]
       },
       "bonnie": {
         "name": "Bonnie",
         "role": "Head of Community",
-        "location": "Barcelona, Spain", 
+        "location": "Barcelona, Spain",
         "bio": "Community builder with extensive experience growing developer ecosystems. Manages our global community initiatives and ambassador program.",
-        "expertise": ["Community Building", "Developer Relations", "Event Management"]
+        "expertise": [
+          "Community Building",
+          "Developer Relations",
+          "Event Management"
+        ]
       },
       "liam": {
         "name": "Liam McKenzie",
         "role": "Head of Partnerships",
         "location": "London, UK",
         "bio": "Business development expert focused on strategic partnerships and ecosystem growth. Previously led partnerships at major blockchain companies.",
-        "expertise": ["Strategic Partnerships", "Business Development", "Ecosystem Growth"]
+        "expertise": [
+          "Strategic Partnerships",
+          "Business Development",
+          "Ecosystem Growth"
+        ]
       },
       "emily": {
-        "name": "Emily Smith", 
+        "name": "Emily Smith",
         "role": "Research Director",
         "location": "Beijing, China",
         "bio": "PhD in Computer Science specializing in distributed systems. Leads our research initiatives and explores cutting-edge blockchain technologies.",
-        "expertise": ["Distributed Systems", "Research", "Academic Partnerships"]
+        "expertise": [
+          "Distributed Systems",
+          "Research",
+          "Academic Partnerships"
+        ]
       }
     },
     "join": {
@@ -685,7 +736,7 @@
           "label": "Total Funding"
         },
         "startups": {
-          "value": "Coming Soon", 
+          "value": "Coming Soon",
           "label": "Startups Incubated"
         },
         "unicorns": {
@@ -708,21 +759,36 @@
         "duration": "3 months",
         "funding": "Up to $500K",
         "description": "Dubhe Foundation-backed intensive program co-incubated with Obelisk Labs and ecosystem VCs",
-        "benefits": ["Dubhe Foundation funding", "Obelisk Labs co-incubation", "Move development support", "Ecosystem VC partnerships"]
+        "benefits": [
+          "Dubhe Foundation funding",
+          "Obelisk Labs co-incubation",
+          "Move development support",
+          "Ecosystem VC partnerships"
+        ]
       },
       "studio": {
         "title": "Collaborative Studio",
         "duration": "6-12 months",
-        "funding": "Up to $1M", 
+        "funding": "Up to $1M",
         "description": "Co-incubated by Dubhe Foundation, Obelisk Labs, and ecosystem VCs with shared resources",
-        "benefits": ["Multi-partner co-incubation", "Shared technical resources", "Cross-project collaboration", "Ecosystem VC networks"]
+        "benefits": [
+          "Multi-partner co-incubation",
+          "Shared technical resources",
+          "Cross-project collaboration",
+          "Ecosystem VC networks"
+        ]
       },
       "scale": {
         "title": "Ecosystem Scale",
         "duration": "6 months",
         "funding": "Up to $2M",
         "description": "Scale with comprehensive support from Dubhe Foundation, Obelisk Labs, and ecosystem VC partners",
-        "benefits": ["Co-incubation network", "Strategic introductions", "Global market access", "Enterprise VC connections"]
+        "benefits": [
+          "Co-incubation network",
+          "Strategic introductions",
+          "Global market access",
+          "Enterprise VC connections"
+        ]
       }
     },
     "resources": {
@@ -801,7 +867,7 @@
     },
     "requirements": [
       "Active member in Dubhe community for at least 3 months",
-      "Strong understanding of Move blockchain technology", 
+      "Strong understanding of Move blockchain technology",
       "Experience in community building or content creation",
       "Commitment to promote Dubhe ecosystem positively",
       "Available for at least 10 hours per week",
@@ -847,7 +913,7 @@
     }
   },
   "LocaleSwitcher": {
-    "label": "Languages"
+    "label": "Language"
   },
   "labs": {
     "hero": {
@@ -935,22 +1001,34 @@
         "protocol": {
           "title": "Protocol Development",
           "description": "Core blockchain protocols, consensus mechanisms, and Move language enhancements",
-          "teams": ["Obelisk Labs", "DubheOS"]
+          "teams": [
+            "Obelisk Labs",
+            "DubheOS"
+          ]
         },
         "infrastructure": {
           "title": "Infrastructure & Scaling",
           "description": "High-performance networking, real-time communication, and scalability solutions",
-          "teams": ["Obelisk Labs", "Cyferio Labs"]
+          "teams": [
+            "Obelisk Labs",
+            "Cyferio Labs"
+          ]
         },
         "crossChain": {
           "title": "Cross-Chain Technology",
           "description": "Interoperability protocols, universal bridging, and multi-chain governance",
-          "teams": ["DubheOS", "Cyferio Labs"]
+          "teams": [
+            "DubheOS",
+            "Cyferio Labs"
+          ]
         },
         "privacy": {
           "title": "Privacy & Security",
           "description": "Zero-knowledge proofs, privacy-preserving protocols, and cryptographic research",
-          "teams": ["Cyferio Labs", "Numeron OS"]
+          "teams": [
+            "Cyferio Labs",
+            "Numeron OS"
+          ]
         }
       },
       "contributingLabs": "Contributing Labs:"
@@ -1404,17 +1482,29 @@
         "gaming": {
           "title": "Real-Time Gaming",
           "description": "Multiplayer games with instant response times",
-          "metrics": ["<50ms latency", "1M+ concurrent players", "99.9% uptime"]
+          "metrics": [
+            "<50ms latency",
+            "1M+ concurrent players",
+            "99.9% uptime"
+          ]
         },
         "social": {
           "title": "Social Platforms",
           "description": "Decentralized social networks with real-time messaging",
-          "metrics": ["Instant messaging", "Live video calls", "Group chats"]
+          "metrics": [
+            "Instant messaging",
+            "Live video calls",
+            "Group chats"
+          ]
         },
         "trading": {
           "title": "Trading Applications",
           "description": "High-frequency trading with real-time price feeds",
-          "metrics": ["Real-time data", "Order book updates", "Price discovery"]
+          "metrics": [
+            "Real-time data",
+            "Order book updates",
+            "Price discovery"
+          ]
         }
       }
     },
@@ -1540,22 +1630,38 @@
         "sui": {
           "name": "Sui Network",
           "status": "Live",
-          "features": ["High throughput", "Object-centric model", "Move language"]
+          "features": [
+            "High throughput",
+            "Object-centric model",
+            "Move language"
+          ]
         },
         "aptos": {
           "name": "Aptos",
           "status": "Live",
-          "features": ["Parallel execution", "Move VM", "Safe smart contracts"]
+          "features": [
+            "Parallel execution",
+            "Move VM",
+            "Safe smart contracts"
+          ]
         },
         "movement": {
           "name": "Movement",
           "status": "Integration",
-          "features": ["EVM compatibility", "Move runtime", "Modular architecture"]
+          "features": [
+            "EVM compatibility",
+            "Move runtime",
+            "Modular architecture"
+          ]
         },
         "future": {
           "name": "Future Chains",
           "status": "Planned",
-          "features": ["Community driven", "Move-based", "Ecosystem expansion"]
+          "features": [
+            "Community driven",
+            "Move-based",
+            "Ecosystem expansion"
+          ]
         }
       }
     },
@@ -1807,7 +1913,7 @@
       "downloadLabel": "Download Whitepaper"
     },
     "lightpaper": {
-      "title": "Lightpaper", 
+      "title": "Lightpaper",
       "description": "Concise overview of Dubhe's key features, use cases, and technical innovations.",
       "downloadLabel": "Download Lightpaper"
     },
@@ -1843,7 +1949,7 @@
         "hide": "Hide restrictions",
         "show": "Show restrictions",
         "item1": "Don't stretch, distort, or modify the logo",
-        "item2": "Don't use low resolution or pixelated versions", 
+        "item2": "Don't use low resolution or pixelated versions",
         "item3": "Don't place on busy or low contrast backgrounds",
         "item4": "Don't recreate the logo with different fonts"
       }
@@ -1928,9 +2034,6 @@
       }
     }
   },
-  "LocaleSwitcher": {
-    "label": "Language"
-  },
   "organizations": {
     "section": {
       "badge": "Our Organizations",
@@ -1995,6 +2098,177 @@
       "contributions": "Key Contributions",
       "status": "Status",
       "website": "Visit Website"
+    }
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - Production Wallet for Move Apps",
+      "name": "Dubhe Wallet",
+      "description": "Dubhe Wallet is built for complex Move applications, permission-sensitive workflows, and high-value onchain execution.",
+      "featureList": [
+        "Authorization review and revocation",
+        "High-value transaction risk checks",
+        "Execution-aware workflow support",
+        "Session cleanup and operational control"
+      ]
+    },
+    "hero": {
+      "badge": "Build / Dubhe Wallet",
+      "title": "A production wallet for Move apps and high-value execution",
+      "description": "Dubhe Wallet is not framed as a broad consumer wallet. It is designed for complex Move applications, permission-sensitive flows, and execution paths where risk, recovery, and operational control matter.",
+      "primaryCta": "Get started",
+      "secondaryCta": "Follow product progress",
+      "positioningEyebrow": "Positioning",
+      "positioningTitle": "Others optimize for onboarding, trading, or distribution.",
+      "positioningDescription": "Dubhe Wallet optimizes for execution, control, and production readiness.",
+      "differentiators": [
+        {
+          "title": "Control permissions, not just signatures",
+          "description": "Dubhe Wallet is built around authorization review, risky capability handling, session cleanup, and threat-aware execution."
+        },
+        {
+          "title": "Support multi-step onchain workflows",
+          "description": "Send, swap, bridge, and order flows are treated as recoverable execution paths instead of one-off wallet prompts."
+        },
+        {
+          "title": "Operate beyond a personal wallet",
+          "description": "Sponsored gas, hardware-backed signing, institutional approval policy, and recovery drills push the product toward team and treasury use cases."
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why this wallet exists",
+      "title": "The real gap is not wallet access. It is production execution.",
+      "description": "Many wallets already solve onboarding, asset display, and generic dApp connect. Dubhe Wallet is aimed at what happens after that: multi-step workflows, long-lived permissions, sensitive sessions, and partial execution states that need recovery rather than guesswork."
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "Risk and permissions",
+          "title": "Control Surface",
+          "items": [
+            "Authorization Center for reviewing and revoking risky capabilities",
+            "Transaction risk guard for high-value or suspicious execution",
+            "Threat and phishing policy checks on sensitive approval flows"
+          ]
+        },
+        {
+          "eyebrow": "Complex flow support",
+          "title": "Execution Surface",
+          "items": [
+            "Bridge status, advanced orders, and activity reconciliation",
+            "Execution-aware notifications and runtime visibility",
+            "Sponsored gas preference and fallback handling"
+          ]
+        },
+        {
+          "eyebrow": "Security and recovery",
+          "title": "Operations Surface",
+          "items": [
+            "Hardware / OWS signing paths",
+            "Session Manager for runtime cleanup and control",
+            "Recovery drills for passkey, mnemonic, and key-based recovery"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Built for",
+      "title": "Not a mass-market wallet pitch",
+      "description": "The right audience is narrower and more valuable: applications and operators that need execution confidence, clearer control, and operational safety.",
+      "cards": [
+        {
+          "title": "Move apps",
+          "description": "Applications with complex state, persistent permissions, and execution paths that need more than a basic wallet modal."
+        },
+        {
+          "title": "Power users",
+          "description": "Operators who care about recoverability, high-value transaction review, and reliable execution across swap, bridge, and permissions."
+        },
+        {
+          "title": "Teams and treasury",
+          "description": "Groups that need approval policy, hardware-backed control, sponsored execution, and stronger operational safety."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Security and control",
+      "title": "Wallet UX is only part of the product",
+      "description": "Dubhe Wallet should eventually present a tighter control plane for sensitive flows: permission review, execution visibility, session cleanup, hardware-backed signing, and recovery readiness. That is where it separates from a generic wallet landing page.",
+      "cards": [
+        {
+          "title": "Hardware and recovery",
+          "description": "OWS / hardware signing and recovery drills should be visible product promises, not buried settings."
+        },
+        {
+          "title": "Execution state",
+          "description": "Bridge tracking, order state, activity reconciliation, and execution history are core UX for non-trivial workflows."
+        },
+        {
+          "title": "Operational visibility",
+          "description": "Notifications and runtime controls matter when the wallet is used as an execution surface, not just an identity surface."
+        },
+        {
+          "title": "Team controls",
+          "description": "Institutional approval policy and sponsored execution are how the product starts to move past pure consumer wallet territory."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "Platform status",
+      "title": "A real product page should make release state explicit",
+      "description": "This is the section that can later absorb app store badges, extension links, and release notes. For now, it should tell visitors what is active and what is still being phased in.",
+      "cards": [
+        {
+          "title": "Web Surface",
+          "status": "Active",
+          "detail": "Current active product surface and the right place to explain the wallet today."
+        },
+        {
+          "title": "Mobile / Extension",
+          "status": "Phased rollout",
+          "detail": "Planned product surfaces that should be introduced here as release status becomes public."
+        },
+        {
+          "title": "Distribution",
+          "status": "Preparing",
+          "detail": "Use this page as the canonical pre-launch product page before app store and public download CTAs are finalized."
+        }
+      ],
+      "callout": {
+        "title": "When to add app store CTAs",
+        "description": "Add direct download badges only when release state, surface support, and support channels are stable enough to own publicly. Until then, this page should focus on explaining the product clearly."
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Keep the product story crisp",
+      "description": "This is where the landing page should resolve confusion between Dubhe Wallet, Dubhe Engine, and the broader Dubhe stack.",
+      "items": [
+        {
+          "question": "Is Dubhe Wallet a general-purpose Sui wallet?",
+          "answer": "No. The positioning is narrower and more deliberate: a production wallet for Move apps, permission-sensitive workflows, and high-value onchain execution."
+        },
+        {
+          "question": "Who should evaluate it first?",
+          "answer": "Teams building complex Move applications, operators handling non-trivial execution flows, and treasury-like environments where control and recovery matter."
+        },
+        {
+          "question": "What makes it different from onboarding-first wallets?",
+          "answer": "Most onboarding-first wallets optimize for fast setup and clean daily usage. Dubhe Wallet is optimized for control, execution confidence, and operational readiness."
+        },
+        {
+          "question": "Should this page already include app store links?",
+          "answer": "Only once the release state is stable. Before that, it should explain the product, the intended users, and the execution-oriented capabilities clearly."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Next step",
+      "title": "Use this as the dedicated wallet page inside Build",
+      "description": "The next iteration should add release screenshots, supported surfaces, and real distribution links. The important part is already in place: the wallet now has a proper narrative home instead of being buried behind a generic site link.",
+      "primaryCta": "Start using Dubhe Wallet",
+      "secondaryCta": "View GitHub"
     }
   }
 }

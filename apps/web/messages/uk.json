@@ -10,6 +10,7 @@
     "engine": "Двигун",
     "channel": "Канал",
     "os": "ОС",
+    "wallet": "Гаманець",
     "foundation": "Фонд",
     "labs": "Лабораторії",
     "grants": "Гранти",
@@ -1985,5 +1986,176 @@
   },
   "LocaleSwitcher": {
     "label": "Мови"
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - Production-гаманець для Move-застосунків",
+      "name": "Dubhe Wallet",
+      "description": "Dubhe Wallet створений для складних Move-застосунків, permission-sensitive workflow та високовартісного onchain-виконання.",
+      "featureList": [
+        "Перевірка та відкликання дозволів",
+        "Перевірки ризику для дорогих транзакцій",
+        "Підтримка workflow з урахуванням execution state",
+        "Очищення сесій та операційний контроль"
+      ]
+    },
+    "hero": {
+      "badge": "Розробка / Dubhe Wallet",
+      "title": "Production-гаманець для Move-застосунків і високовартісного виконання",
+      "description": "Dubhe Wallet не позиціонується як масовий споживчий гаманець загального призначення. Його створено для складних Move-застосунків, permission-sensitive flow та шляхів виконання, де важливі ризик, відновлення та операційний контроль.",
+      "primaryCta": "Почати користуватися",
+      "secondaryCta": "Стежити за прогресом продукту",
+      "positioningEyebrow": "Позиціонування",
+      "positioningTitle": "Інші оптимізують onboarding, торгівлю або дистрибуцію.",
+      "positioningDescription": "Dubhe Wallet оптимізує виконання, контроль і production readiness.",
+      "differentiators": [
+        {
+          "title": "Контролюйте permissions, а не лише підписи",
+          "description": "Dubhe Wallet будується навколо перевірки авторизацій, роботи з ризиковими capability, очищення сесій та threat-aware execution."
+        },
+        {
+          "title": "Підтримка багатокрокових onchain-workflow",
+          "description": "Надсилання, swap, bridge та order flow розглядаються як відновлювані execution path, а не як одноразові wallet prompt."
+        },
+        {
+          "title": "Робота за межами персонального гаманця",
+          "description": "Sponsored gas, hardware-backed signing, інституційні approval policy та recovery drill ведуть продукт у бік командних і treasury-сценаріїв."
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Навіщо існує цей гаманець",
+      "title": "Справжній розрив не в доступі до гаманця, а в production execution.",
+      "description": "Багато гаманців уже вирішили onboarding, показ активів і базове підключення dApp. Dubhe Wallet націлений на те, що відбувається після цього: багатокрокові workflow, довгоживучі permissions, чутливі сесії та часткові execution state, які потребують відновлення, а не здогадок."
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "Ризик і дозволи",
+          "title": "Контур контролю",
+          "items": [
+            "Authorization Center для перевірки та відкликання ризикових capability",
+            "Transaction risk guard для високовартісного або підозрілого виконання",
+            "Перевірки threat і phishing policy у чутливих approval-flow"
+          ]
+        },
+        {
+          "eyebrow": "Підтримка складних flow",
+          "title": "Контур виконання",
+          "items": [
+            "Статус bridge, advanced order та reconciliation активності",
+            "Execution-aware сповіщення та runtime visibility",
+            "Налаштування sponsored gas і fallback handling"
+          ]
+        },
+        {
+          "eyebrow": "Безпека та відновлення",
+          "title": "Операційний контур",
+          "items": [
+            "Шляхи підпису hardware / OWS",
+            "Session Manager для runtime cleanup і control",
+            "Recovery drill для passkey, mnemonic і key-based recovery"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Для кого",
+      "title": "Це не pitch масового wallet",
+      "description": "Правильна аудиторія вужча, але цінніша: застосунки та оператори, яким потрібні execution confidence, чіткіший control і operational safety.",
+      "cards": [
+        {
+          "title": "Move-застосунки",
+          "description": "Застосунки зі складним state, постійними permissions і execution path, яким потрібно більше, ніж базове wallet modal."
+        },
+        {
+          "title": "Power users",
+          "description": "Оператори, яким важливі recoverability, review високовартісних транзакцій і надійне execution у swap, bridge та permission-flow."
+        },
+        {
+          "title": "Команди та treasury",
+          "description": "Групи, яким потрібні approval policy, hardware-backed control, sponsored execution і сильніша operational safety."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Безпека й контроль",
+      "title": "UX гаманця — лише частина продукту",
+      "description": "З часом Dubhe Wallet має запропонувати щільнішу control plane для чутливих flow: review дозволів, visibility виконання, cleanup сесій, hardware signing і readiness до recovery. Саме тут він відрізняється від generic wallet landing page.",
+      "cards": [
+        {
+          "title": "Hardware і recovery",
+          "description": "OWS / hardware signing і recovery drill мають бути видимими обіцянками продукту, а не захованими налаштуваннями."
+        },
+        {
+          "title": "Execution state",
+          "description": "Bridge tracking, order state, reconciliation активності та історія execution — це core UX для нетривіальних workflow."
+        },
+        {
+          "title": "Operational visibility",
+          "description": "Сповіщення та runtime controls важливі, коли гаманець використовується як execution surface, а не лише identity surface."
+        },
+        {
+          "title": "Team controls",
+          "description": "Institutional approval policy і sponsored execution — це шлях вийти за межі pure consumer wallet territory."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "Стан платформи",
+      "title": "Справжня product page має явно показувати release state",
+      "description": "Згодом цей розділ зможе вмістити app store badges, extension links і release notes. Поки що він має чітко пояснювати, що вже active, а що ще вводиться поетапно.",
+      "cards": [
+        {
+          "title": "Web Surface",
+          "status": "Активно",
+          "detail": "Поточна active product surface і правильне місце, щоб пояснювати wallet сьогодні."
+        },
+        {
+          "title": "Mobile / Extension",
+          "status": "Поетапний запуск",
+          "detail": "Заплановані product surface, які варто представити тут, коли release state стане публічним."
+        },
+        {
+          "title": "Distribution",
+          "status": "Підготовка",
+          "detail": "Використовуйте цю сторінку як canonical pre-launch product page до фіналізації public CTA та app store badges."
+        }
+      ],
+      "callout": {
+        "title": "Коли додавати CTA app store",
+        "description": "Додавайте direct download badges лише тоді, коли release state, supported surfaces і support channels достатньо стабільні, щоб їх публічно брати на себе. До цього сторінка має зосереджуватись на чіткому поясненні продукту."
+      }
+    },
+    "faq": {
+      "eyebrow": "Поширені запитання",
+      "title": "Тримайте продуктову історію чіткою",
+      "description": "Тут сторінка має знімати плутанину між Dubhe Wallet, Dubhe Engine і ширшим Dubhe stack.",
+      "items": [
+        {
+          "question": "Чи є Dubhe Wallet універсальним Sui-гаманцем?",
+          "answer": "Ні. Його позиціонування вужче й свідоміше: це production-гаманець для Move-застосунків, permission-sensitive workflow і високовартісного onchain execution."
+        },
+        {
+          "question": "Хто має оцінювати його першим?",
+          "answer": "Команди, що будують складні Move-застосунки, оператори з нетривіальними execution flow і treasury-подібні середовища, де важливі control і recovery."
+        },
+        {
+          "question": "Чим він відрізняється від onboarding-first wallet?",
+          "answer": "Більшість onboarding-first wallet оптимізують швидкий старт і щоденне використання. Dubhe Wallet оптимізує control, execution confidence і operational readiness."
+        },
+        {
+          "question": "Чи повинна сторінка вже містити app store links?",
+          "answer": "Лише після стабілізації release state. До того вона має чітко пояснювати продукт, цільових користувачів і execution-oriented capability."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Наступний крок",
+      "title": "Використовуйте це як dedicated wallet page у Build",
+      "description": "У наступній ітерації варто додати реальні release screenshots, supported surfaces і справжні distribution links. Найважливіше вже є: wallet отримав власний narrative home, а не ховається за generic site link.",
+      "primaryCta": "Почати користуватися Dubhe Wallet",
+      "secondaryCta": "Відкрити GitHub"
+    }
   }
 }

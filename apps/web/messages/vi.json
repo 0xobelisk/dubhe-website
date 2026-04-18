@@ -10,6 +10,7 @@
     "engine": "Động cơ",
     "channel": "Kênh",
     "os": "HĐH",
+    "wallet": "Ví",
     "foundation": "Quỹ",
     "labs": "Phòng thí nghiệm",
     "grants": "Tài trợ",
@@ -1985,5 +1986,176 @@
   },
   "LocaleSwitcher": {
     "label": "Ngôn ngữ"
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - Ví Production cho Ứng dụng Move",
+      "name": "Dubhe Wallet",
+      "description": "Dubhe Wallet được xây dựng cho các ứng dụng Move phức tạp, quy trình nhạy cảm về quyền hạn và các giao dịch onchain giá trị cao.",
+      "featureList": [
+        "Rà soát và thu hồi ủy quyền",
+        "Kiểm tra rủi ro cho giao dịch giá trị cao",
+        "Hỗ trợ workflow có nhận thức về trạng thái thực thi",
+        "Dọn dẹp phiên và kiểm soát vận hành"
+      ]
+    },
+    "hero": {
+      "badge": "Build / Dubhe Wallet",
+      "title": "Ví production cho ứng dụng Move và các giao dịch giá trị cao",
+      "description": "Dubhe Wallet không được định vị như một ví tiêu dùng phổ thông. Nó được thiết kế cho các ứng dụng Move phức tạp, các luồng nhạy cảm về quyền hạn và các đường thực thi nơi rủi ro, khả năng phục hồi và kiểm soát vận hành đều quan trọng.",
+      "primaryCta": "Bắt đầu sử dụng",
+      "secondaryCta": "Theo dõi tiến độ sản phẩm",
+      "positioningEyebrow": "Định vị",
+      "positioningTitle": "Các ví khác tối ưu cho onboarding, giao dịch hoặc phân phối.",
+      "positioningDescription": "Dubhe Wallet tối ưu cho thực thi, kiểm soát và mức độ sẵn sàng production.",
+      "differentiators": [
+        {
+          "title": "Kiểm soát quyền hạn, không chỉ chữ ký",
+          "description": "Dubhe Wallet được xây dựng quanh việc rà soát ủy quyền, xử lý capability rủi ro, dọn dẹp phiên và thực thi có nhận thức về mối đe dọa."
+        },
+        {
+          "title": "Hỗ trợ workflow onchain nhiều bước",
+          "description": "Các luồng gửi, swap, bridge và order được xem như những đường thực thi có thể khôi phục, thay vì các prompt ví dùng một lần."
+        },
+        {
+          "title": "Vận hành vượt ra ngoài ví cá nhân",
+          "description": "Sponsored gas, ký bằng phần cứng, chính sách phê duyệt cấp tổ chức và drill khôi phục đưa sản phẩm tiến gần tới các use case đội ngũ và treasury."
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Vì sao ví này tồn tại",
+      "title": "Khoảng trống thật sự không nằm ở quyền truy cập ví, mà ở thực thi production.",
+      "description": "Nhiều ví đã giải quyết onboarding, hiển thị tài sản và kết nối dApp chung. Dubhe Wallet nhắm vào phần sau đó: workflow nhiều bước, quyền hạn dài hạn, phiên nhạy cảm và các trạng thái thực thi dở dang cần được khôi phục thay vì đoán mò."
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "Rủi ro và quyền hạn",
+          "title": "Bề mặt kiểm soát",
+          "items": [
+            "Trung tâm Ủy quyền để rà soát và thu hồi các capability rủi ro",
+            "Bộ bảo vệ rủi ro giao dịch cho các thực thi giá trị cao hoặc đáng ngờ",
+            "Kiểm tra chính sách chống đe dọa và phishing trong các luồng phê duyệt nhạy cảm"
+          ]
+        },
+        {
+          "eyebrow": "Hỗ trợ luồng phức tạp",
+          "title": "Bề mặt thực thi",
+          "items": [
+            "Trạng thái bridge, lệnh nâng cao và đối soát hoạt động",
+            "Thông báo gắn với thực thi và khả năng quan sát runtime",
+            "Ưu tiên sponsored gas và cơ chế fallback"
+          ]
+        },
+        {
+          "eyebrow": "Bảo mật và khôi phục",
+          "title": "Bề mặt vận hành",
+          "items": [
+            "Đường ký bằng hardware / OWS",
+            "Session Manager để dọn dẹp và kiểm soát runtime",
+            "Drill khôi phục cho passkey, mnemonic và khóa riêng"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Dành cho",
+      "title": "Không phải lời chào bán ví đại chúng",
+      "description": "Đối tượng phù hợp hẹp hơn nhưng giá trị cao hơn: các ứng dụng và operator cần sự chắc chắn khi thực thi, kiểm soát rõ ràng hơn và an toàn vận hành.",
+      "cards": [
+        {
+          "title": "Ứng dụng Move",
+          "description": "Các ứng dụng có state phức tạp, quyền hạn lâu dài và các đường thực thi đòi hỏi nhiều hơn một modal ví cơ bản."
+        },
+        {
+          "title": "Power users",
+          "description": "Những operator quan tâm đến khả năng phục hồi, rà soát giao dịch giá trị cao và thực thi đáng tin cậy trên các luồng swap, bridge và quyền hạn."
+        },
+        {
+          "title": "Đội ngũ và treasury",
+          "description": "Các nhóm cần chính sách phê duyệt, kiểm soát dựa trên phần cứng, thực thi được tài trợ và an toàn vận hành mạnh hơn."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Bảo mật và kiểm soát",
+      "title": "UX của ví chỉ là một phần của sản phẩm",
+      "description": "Dubhe Wallet cuối cùng cần thể hiện một control plane chặt chẽ hơn cho các luồng nhạy cảm: rà soát quyền hạn, khả năng quan sát thực thi, dọn dẹp phiên, ký phần cứng và mức độ sẵn sàng khôi phục. Đó là điểm tách nó khỏi một landing page ví thông thường.",
+      "cards": [
+        {
+          "title": "Phần cứng và khôi phục",
+          "description": "Ký OWS / phần cứng và drill khôi phục nên là lời hứa sản phẩm có thể nhìn thấy, không phải các tùy chọn bị giấu sâu."
+        },
+        {
+          "title": "Trạng thái thực thi",
+          "description": "Theo dõi bridge, trạng thái order, đối soát hoạt động và lịch sử thực thi là UX cốt lõi cho các workflow không tầm thường."
+        },
+        {
+          "title": "Khả năng quan sát vận hành",
+          "description": "Thông báo và điều khiển runtime rất quan trọng khi ví được dùng như một bề mặt thực thi chứ không chỉ là bề mặt danh tính."
+        },
+        {
+          "title": "Kiểm soát đội ngũ",
+          "description": "Chính sách phê duyệt ở cấp tổ chức và thực thi được tài trợ là cách sản phẩm vượt ra ngoài vùng của ví tiêu dùng thuần túy."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "Trạng thái nền tảng",
+      "title": "Một trang sản phẩm đúng nghĩa phải nói rõ trạng thái phát hành",
+      "description": "Phần này về sau có thể chứa badge app store, liên kết extension và ghi chú phát hành. Hiện tại, nó nên nói rõ cái gì đang hoạt động và cái gì vẫn đang được đưa ra theo từng giai đoạn.",
+      "cards": [
+        {
+          "title": "Bề mặt Web",
+          "status": "Đang hoạt động",
+          "detail": "Bề mặt sản phẩm hiện hoạt và là nơi phù hợp nhất để giải thích ví lúc này."
+        },
+        {
+          "title": "Mobile / Extension",
+          "status": "Ra mắt theo giai đoạn",
+          "detail": "Các bề mặt sản phẩm dự kiến nên được giới thiệu ở đây khi trạng thái phát hành được công khai."
+        },
+        {
+          "title": "Phân phối",
+          "status": "Đang chuẩn bị",
+          "detail": "Hãy dùng trang này như trang sản phẩm tiền ra mắt chuẩn trước khi chốt CTA tải công khai và badge app store."
+        }
+      ],
+      "callout": {
+        "title": "Khi nào nên thêm CTA app store",
+        "description": "Chỉ thêm badge tải trực tiếp khi trạng thái phát hành, bề mặt hỗ trợ và kênh hỗ trợ đủ ổn định để công khai chịu trách nhiệm. Cho đến lúc đó, trang này nên tập trung vào việc giải thích sản phẩm rõ ràng."
+      }
+    },
+    "faq": {
+      "eyebrow": "Câu hỏi thường gặp",
+      "title": "Giữ câu chuyện sản phẩm thật gọn",
+      "description": "Đây là nơi trang đích nên giải quyết sự nhầm lẫn giữa Dubhe Wallet, Dubhe Engine và toàn bộ stack Dubhe.",
+      "items": [
+        {
+          "question": "Dubhe Wallet có phải là ví Sui đa dụng không?",
+          "answer": "Không. Định vị của nó hẹp hơn và có chủ đích hơn: một ví production cho ứng dụng Move, workflow nhạy cảm về quyền hạn và thực thi onchain giá trị cao."
+        },
+        {
+          "question": "Ai nên đánh giá nó trước?",
+          "answer": "Các nhóm xây dựng ứng dụng Move phức tạp, các operator xử lý luồng thực thi không tầm thường và các môi trường kiểu treasury nơi kiểm soát và khôi phục đều quan trọng."
+        },
+        {
+          "question": "Nó khác gì so với các ví ưu tiên onboarding?",
+          "answer": "Phần lớn các ví ưu tiên onboarding tối ưu cho khởi tạo nhanh và sử dụng hằng ngày gọn gàng. Dubhe Wallet tối ưu cho kiểm soát, sự tự tin khi thực thi và mức độ sẵn sàng vận hành."
+        },
+        {
+          "question": "Trang này đã nên có link app store chưa?",
+          "answer": "Chỉ nên thêm khi trạng thái phát hành đã ổn định. Trước thời điểm đó, nó nên giải thích thật rõ sản phẩm, người dùng mục tiêu và các khả năng hướng tới thực thi."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Bước tiếp theo",
+      "title": "Dùng đây làm trang ví chuyên biệt trong mục Build",
+      "description": "Vòng lặp tiếp theo nên bổ sung ảnh chụp phát hành, các bề mặt được hỗ trợ và các liên kết phân phối thực tế. Phần quan trọng đã có: ví giờ đã có một ngôi nhà kể chuyện rõ ràng thay vì bị chôn sau một liên kết chung chung trên website.",
+      "primaryCta": "Bắt đầu dùng Dubhe Wallet",
+      "secondaryCta": "Xem GitHub"
+    }
   }
 }

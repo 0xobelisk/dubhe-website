@@ -10,6 +10,7 @@
     "engine": "เครื่องมือ",
     "channel": "ช่องทาง",
     "os": "ระบบปฏิบัติการ",
+    "wallet": "วอลเล็ต",
     "foundation": "มูลนิธิ",
     "labs": "ห้องปฏิบัติการ",
     "grants": "ทุนสนับสนุน",
@@ -1985,5 +1986,176 @@
   },
   "LocaleSwitcher": {
     "label": "ภาษา"
+  },
+  "wallet": {
+    "meta": {
+      "title": "Dubhe Wallet - กระเป๋าระดับโปรดักชันสำหรับแอป Move",
+      "name": "Dubhe Wallet",
+      "description": "Dubhe Wallet ถูกสร้างมาสำหรับแอป Move ที่ซับซ้อน เวิร์กโฟลว์ที่อ่อนไหวต่อสิทธิ์ และการทำธุรกรรม onchain มูลค่าสูง",
+      "featureList": [
+        "ตรวจสอบและเพิกถอนสิทธิ์",
+        "ตรวจความเสี่ยงของธุรกรรมมูลค่าสูง",
+        "รองรับ workflow ที่รับรู้สถานะการทำงาน",
+        "ล้าง session และควบคุมการปฏิบัติการ"
+      ]
+    },
+    "hero": {
+      "badge": "Build / Dubhe Wallet",
+      "title": "กระเป๋าระดับโปรดักชันสำหรับแอป Move และการทำธุรกรรมมูลค่าสูง",
+      "description": "Dubhe Wallet ไม่ได้วางตำแหน่งเป็นกระเป๋าทั่วไปสำหรับผู้ใช้แมส มันถูกออกแบบมาสำหรับแอป Move ที่ซับซ้อน โฟลว์ที่อ่อนไหวต่อสิทธิ์ และเส้นทางการทำงานที่ความเสี่ยง การกู้คืน และการควบคุมการปฏิบัติการมีความสำคัญ",
+      "primaryCta": "เริ่มใช้งาน",
+      "secondaryCta": "ติดตามความคืบหน้าผลิตภัณฑ์",
+      "positioningEyebrow": "การวางตำแหน่ง",
+      "positioningTitle": "รายอื่นกำลัง optimize เรื่อง onboarding การเทรด หรือการกระจาย",
+      "positioningDescription": "Dubhe Wallet optimize เรื่อง execution, control และความพร้อมระดับโปรดักชัน",
+      "differentiators": [
+        {
+          "title": "ควบคุม permissions ไม่ใช่แค่ลายเซ็น",
+          "description": "Dubhe Wallet ถูกสร้างรอบการตรวจสอบ authorization, การจัดการ capability ที่มีความเสี่ยง, การล้าง session และ execution ที่รับรู้ภัยคุกคาม"
+        },
+        {
+          "title": "รองรับ onchain workflow หลายขั้นตอน",
+          "description": "ส่ง, swap, bridge และ order flow ถูกมองเป็น execution path ที่กู้คืนได้ ไม่ใช่แค่ prompt จากกระเป๋าแบบครั้งเดียว"
+        },
+        {
+          "title": "ทำงานเกินกว่ากระเป๋าส่วนตัว",
+          "description": "Sponsored gas, การเซ็นด้วยฮาร์ดแวร์, นโยบายอนุมัติระดับองค์กร และ recovery drills พาผลิตภัณฑ์ไปสู่ use case ของทีมและ treasury"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "ทำไมกระเป๋านี้ถึงมีอยู่",
+      "title": "ช่องว่างที่แท้จริงไม่ใช่การเข้าถึงกระเป๋า แต่คือการทำ execution ระดับโปรดักชัน",
+      "description": "กระเป๋าหลายตัวแก้ onboarding, การแสดงสินทรัพย์ และการเชื่อมต่อ dApp ทั่วไปไปแล้ว Dubhe Wallet โฟกัสกับสิ่งที่เกิดขึ้นหลังจากนั้น: workflow หลายขั้นตอน, permissions ระยะยาว, session ที่อ่อนไหว และสถานะการทำงานบางส่วนที่ต้องการ recovery ไม่ใช่การเดา"
+    },
+    "capabilities": {
+      "groups": [
+        {
+          "eyebrow": "ความเสี่ยงและสิทธิ์",
+          "title": "ชั้นการควบคุม",
+          "items": [
+            "Authorization Center สำหรับตรวจสอบและเพิกถอน capability ที่เสี่ยง",
+            "ตัวป้องกันความเสี่ยงของธุรกรรมสำหรับ execution มูลค่าสูงหรือที่น่าสงสัย",
+            "การตรวจนโยบายภัยคุกคามและ phishing ใน approval flow ที่อ่อนไหว"
+          ]
+        },
+        {
+          "eyebrow": "รองรับโฟลว์ซับซ้อน",
+          "title": "ชั้นการทำงาน",
+          "items": [
+            "สถานะ bridge, advanced order และการ reconciliation ของกิจกรรม",
+            "การแจ้งเตือนที่รับรู้ execution และการมองเห็น runtime",
+            "การตั้งค่า sponsored gas และการจัดการ fallback"
+          ]
+        },
+        {
+          "eyebrow": "ความปลอดภัยและการกู้คืน",
+          "title": "ชั้นปฏิบัติการ",
+          "items": [
+            "เส้นทางการเซ็นแบบ hardware / OWS",
+            "Session Manager สำหรับล้างและควบคุม runtime",
+            "recovery drills สำหรับ passkey, mnemonic และการกู้คืนแบบ key-based"
+          ]
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "สร้างมาเพื่อ",
+      "title": "นี่ไม่ใช่คำเล่าเรื่องกระเป๋าสำหรับตลาดแมส",
+      "description": "กลุ่มเป้าหมายที่เหมาะสมแคบกว่าแต่มีมูลค่าสูงกว่า: แอปและผู้ปฏิบัติงานที่ต้องการความมั่นใจในการ execution, การควบคุมที่ชัดขึ้น และความปลอดภัยเชิงปฏิบัติการ",
+      "cards": [
+        {
+          "title": "แอป Move",
+          "description": "แอปที่มี state ซับซ้อน, permissions ถาวร และ execution path ที่ต้องการมากกว่า wallet modal พื้นฐาน"
+        },
+        {
+          "title": "Power users",
+          "description": "ผู้ปฏิบัติงานที่ใส่ใจเรื่องการ recover, การรีวิวธุรกรรมมูลค่าสูง และ execution ที่เชื่อถือได้ในโฟลว์ swap, bridge และ permission"
+        },
+        {
+          "title": "ทีมและ treasury",
+          "description": "กลุ่มที่ต้องการ approval policy, การควบคุมด้วยฮาร์ดแวร์, sponsored execution และความปลอดภัยเชิงปฏิบัติการที่แข็งแรงกว่า"
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "ความปลอดภัยและการควบคุม",
+      "title": "UX ของกระเป๋าเป็นเพียงส่วนหนึ่งของผลิตภัณฑ์",
+      "description": "สุดท้ายแล้ว Dubhe Wallet ควรมี control plane ที่แน่นขึ้นสำหรับโฟลว์ที่อ่อนไหว: การตรวจ permissions, การมองเห็น execution, การล้าง session, การเซ็นด้วยฮาร์ดแวร์ และความพร้อมในการ recovery นี่คือจุดที่มันต่างจากหน้า landing page ของ wallet ทั่วไป",
+      "cards": [
+        {
+          "title": "ฮาร์ดแวร์และการกู้คืน",
+          "description": "OWS / hardware signing และ recovery drills ควรเป็นคำมั่นของผลิตภัณฑ์ที่มองเห็นได้ ไม่ใช่การตั้งค่าที่ซ่อนอยู่"
+        },
+        {
+          "title": "Execution state",
+          "description": "การติดตาม bridge, สถานะ order, การ reconciliation ของกิจกรรม และประวัติ execution คือ UX หลักสำหรับ workflow ที่ไม่ธรรมดา"
+        },
+        {
+          "title": "Operational visibility",
+          "description": "การแจ้งเตือนและ runtime controls สำคัญเมื่อ wallet ถูกใช้เป็น execution surface ไม่ใช่เพียง identity surface"
+        },
+        {
+          "title": "Team controls",
+          "description": "institutional approval policy และ sponsored execution คือวิธีที่ผลิตภัณฑ์จะก้าวพ้นจาก consumer wallet territory แบบล้วน ๆ"
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "สถานะแพลตฟอร์ม",
+      "title": "หน้า product ที่แท้จริงควรอธิบาย release state ให้ชัดเจน",
+      "description": "ส่วนนี้ในอนาคตสามารถรองรับ app store badges, extension links และ release notes ได้ ตอนนี้มันควรอธิบายให้ชัดว่าอะไร active อยู่และอะไรยังคงทยอยเปิดตัว",
+      "cards": [
+        {
+          "title": "Web Surface",
+          "status": "ใช้งานอยู่",
+          "detail": "พื้นผิวผลิตภัณฑ์หลักที่ active อยู่ในตอนนี้ และเป็นที่ที่เหมาะที่สุดในการอธิบาย wallet ตอนนี้"
+        },
+        {
+          "title": "Mobile / Extension",
+          "status": "ทยอยเปิดตัว",
+          "detail": "พื้นผิวผลิตภัณฑ์ที่วางแผนไว้ ซึ่งควรถูกแนะนำที่นี่เมื่อสถานะ release เปิดเผยต่อสาธารณะมากขึ้น"
+        },
+        {
+          "title": "Distribution",
+          "status": "กำลังเตรียม",
+          "detail": "ใช้หน้านี้เป็น canonical pre-launch product page ก่อนที่ CTA ดาวน์โหลดสาธารณะและ app store badges จะพร้อม"
+        }
+      ],
+      "callout": {
+        "title": "ควรเพิ่ม CTA ของ app store เมื่อไร",
+        "description": "เพิ่มปุ่มดาวน์โหลดตรงเมื่อ release state, supported surface และ support channels มีความเสถียรพอที่จะรับผิดชอบต่อสาธารณะได้เท่านั้น ก่อนหน้านั้นหน้านี้ควรเน้นการอธิบายผลิตภัณฑ์ให้ชัดเจน"
+      }
+    },
+    "faq": {
+      "eyebrow": "คำถามที่พบบ่อย",
+      "title": "ทำให้เรื่องราวของผลิตภัณฑ์กระชับและชัดเจน",
+      "description": "ตรงนี้คือส่วนที่ควรลดความสับสนระหว่าง Dubhe Wallet, Dubhe Engine และ Dubhe stack ในภาพรวม",
+      "items": [
+        {
+          "question": "Dubhe Wallet เป็นกระเป๋า Sui แบบทั่วไปหรือไม่?",
+          "answer": "ไม่ใช่ มันมี positioning ที่แคบกว่าและตั้งใจมากกว่า: เป็นกระเป๋าระดับโปรดักชันสำหรับแอป Move, workflow ที่อ่อนไหวต่อ permission และ high-value onchain execution"
+        },
+        {
+          "question": "ใครควรประเมินมันก่อน?",
+          "answer": "ทีมที่สร้างแอป Move ที่ซับซ้อน, operators ที่ดูแล execution flow ที่ไม่ธรรมดา และสภาพแวดล้อมแบบ treasury ที่ control และ recovery สำคัญ"
+        },
+        {
+          "question": "มันต่างจากกระเป๋า onboarding-first อย่างไร?",
+          "answer": "กระเป๋า onboarding-first ส่วนใหญ่ optimize การเริ่มต้นใช้งานเร็วและการใช้งานประจำวัน Dubhe Wallet optimize control, execution confidence และ operational readiness"
+        },
+        {
+          "question": "หน้านี้ควรใส่ลิงก์ app store แล้วหรือยัง?",
+          "answer": "ควรใส่ก็ต่อเมื่อ release state มีเสถียรภาพแล้ว ก่อนหน้านั้นมันควรอธิบายผลิตภัณฑ์, ผู้ใช้เป้าหมาย และความสามารถที่เน้น execution ให้ชัด"
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "ขั้นตอนถัดไป",
+      "title": "ใช้หน้านี้เป็นหน้ากระเป๋าเฉพาะภายใต้ Build",
+      "description": "iteration ถัดไปควรเพิ่ม release screenshots, supported surfaces และลิงก์ distribution จริง ส่วนสำคัญได้ถูกวางไว้แล้ว: ตอนนี้ wallet มีบ้านของ narrative อย่างเหมาะสม แทนที่จะถูกซ่อนอยู่หลัง generic site link",
+      "primaryCta": "เริ่มใช้ Dubhe Wallet",
+      "secondaryCta": "ดู GitHub"
+    }
   }
 }

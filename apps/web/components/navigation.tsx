@@ -4,8 +4,8 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Menu, X, ExternalLink, ChevronDown } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 import { useTranslations } from 'next-intl'
+import { Link } from "@/i18n/navigation"
 import LanguageSelector from "./LanguageSelector"
 
 type DropdownItem = {
@@ -46,6 +46,7 @@ export default function Navigation() {
         { name: t('engine'), href: "/engine" },
         { name: t('channel'), href: "/channel" },
         { name: t('os'), href: "/os" },
+        { name: t('wallet'), href: "/wallet" },
       ]
     },
     { 
@@ -202,17 +203,28 @@ export default function Navigation() {
                       onMouseLeave={handleMouseLeave}
                     >
                       <div className="py-2">
-                        {item.dropdown.map((dropdownItem) => (
-                          <a
-                            key={dropdownItem.name}
-                            href={dropdownItem.href}
-                            className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-200 flex items-center gap-2"
-                            {...(dropdownItem.external && { target: "_blank", rel: "noopener noreferrer" })}
-                          >
-                            {dropdownItem.name}
-                            {dropdownItem.external && <ExternalLink className="w-3 h-3" />}
-                          </a>
-                        ))}
+                        {item.dropdown.map((dropdownItem) =>
+                          dropdownItem.external ? (
+                            <a
+                              key={dropdownItem.name}
+                              href={dropdownItem.href}
+                              className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-200 flex items-center gap-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {dropdownItem.name}
+                              <ExternalLink className="w-3 h-3" />
+                            </a>
+                          ) : (
+                            <Link
+                              key={dropdownItem.name}
+                              href={dropdownItem.href}
+                              className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-700/50 transition-colors duration-200 flex items-center gap-2"
+                            >
+                              {dropdownItem.name}
+                            </Link>
+                          )
+                        )}
                       </div>
                     </motion.div>
                   )}
@@ -257,18 +269,30 @@ export default function Navigation() {
                     <div className="text-gray-300 px-4 py-3 text-base font-semibold border-b border-slate-700/50">
                       {item.name}
                     </div>
-                    {item.dropdown.map((dropdownItem) => (
-                      <a
-                        key={dropdownItem.name}
-                        href={dropdownItem.href}
-                        className="text-gray-400 hover:text-white hover:bg-slate-800/50 block px-6 py-4 text-base transition-all duration-200 flex items-center justify-between group"
-                        {...(dropdownItem.external && { target: "_blank", rel: "noopener noreferrer" })}
-                        onClick={closeMenu}
-                      >
-                        <span>{dropdownItem.name}</span>
-                        {dropdownItem.external && <ExternalLink className="w-4 h-4 group-hover:text-blue-400" />}
-                      </a>
-                    ))}
+                    {item.dropdown.map((dropdownItem) =>
+                      dropdownItem.external ? (
+                        <a
+                          key={dropdownItem.name}
+                          href={dropdownItem.href}
+                          className="text-gray-400 hover:text-white hover:bg-slate-800/50 block px-6 py-4 text-base transition-all duration-200 flex items-center justify-between group"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={closeMenu}
+                        >
+                          <span>{dropdownItem.name}</span>
+                          <ExternalLink className="w-4 h-4 group-hover:text-blue-400" />
+                        </a>
+                      ) : (
+                        <Link
+                          key={dropdownItem.name}
+                          href={dropdownItem.href}
+                          className="text-gray-400 hover:text-white hover:bg-slate-800/50 block px-6 py-4 text-base transition-all duration-200 flex items-center justify-between group"
+                          onClick={closeMenu}
+                        >
+                          <span>{dropdownItem.name}</span>
+                        </Link>
+                      )
+                    )}
                   </div>
                 ))}
                 {/* Language Selector for Mobile */}
