@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import dynamic from 'next/dynamic'
 
 // Dynamic imports for heavy components
-const CosmicLoader = dynamic(() => import('@/components/cosmic-loader'), {
+const CosmicLoader = dynamic(() => import('@/components/cosmic-loader').then((mod) => mod.default), {
   ssr: false,
 })
 
-const NewHomePage = dynamic(() => import('@/components/NewHomePage'), {
+const NewHomePage = dynamic(() => import('@/components/NewHomePage').then((mod) => mod.default), {
   loading: () => <div className="min-h-screen bg-black" />,
   ssr: true,
 })

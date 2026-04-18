@@ -26,7 +26,7 @@ const securityHeaders = {
   `.replace(/\s+/g, ' ').trim()
 }
 
-const intlMiddleware = createMiddleware(routing)
+const intlProxy = createMiddleware(routing)
 
 const RATE_LIMIT_WINDOW = 15 * 60 * 1000
 const RATE_LIMIT_MAX_REQUESTS = 100
@@ -65,13 +65,13 @@ function checkRateLimit(key: string): { allowed: boolean; remaining: number } {
   return { allowed: true, remaining: RATE_LIMIT_MAX_REQUESTS - current.count }
 }
 
-export default async function middleware(request: NextRequest) {
+export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
   const isApiRoute = pathname.startsWith('/api/')
 
   const response = isApiRoute
     ? NextResponse.next()
-    : (intlMiddleware(request) || NextResponse.next())
+    : (intlProxy(request) || NextResponse.next())
 
   Object.entries(securityHeaders).forEach(([key, value]) => {
     response.headers.set(key, value)

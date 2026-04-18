@@ -8,28 +8,28 @@ import './styles.css'
 import HeroSection from './HeroSection'
 
 // Dynamic imports with prefetch for visible sections
-const FeaturesSection = dynamic(() => import('./FeaturesSection'), {
+const FeaturesSection = dynamic(() => import('./FeaturesSection').then((mod) => mod.default), {
   loading: () => <div className="min-h-[400px] bg-white" />,
 })
 
-const ProductSuiteSection = dynamic(() => import('./ProductSuiteSection'), {
+const ProductSuiteSection = dynamic(() => import('./ProductSuiteSection').then((mod) => mod.default), {
   loading: () => <div className="min-h-[600px] bg-gradient-to-br from-gray-50 to-white" />,
 })
 
-const HowItWorksSection = dynamic(() => import('./HowItWorksSection'), {
+const HowItWorksSection = dynamic(() => import('./HowItWorksSection').then((mod) => mod.default), {
   loading: () => <div className="min-h-[500px] bg-white" />,
 })
 
-const NetworkArchitectureSection = dynamic(() => import('./NetworkArchitectureSection'), {
+const NetworkArchitectureSection = dynamic(() => import('./NetworkArchitectureSection').then((mod) => mod.default), {
   loading: () => <div className="min-h-[800px] bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900" />,
 })
 
-const CommunitySection = dynamic(() => import('./CommunitySection'), {
+const CommunitySection = dynamic(() => import('./CommunitySection').then((mod) => mod.default), {
   loading: () => <div className="min-h-[400px] bg-gradient-to-br from-indigo-50 via-white to-purple-50" />,
 })
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const CompaniesSection = dynamic(() => import('./CompaniesSection'), {
+const CompaniesSection = dynamic(() => import('./CompaniesSection').then((mod) => mod.default), {
   loading: () => <div className="min-h-[200px] bg-white" />,
 })
 

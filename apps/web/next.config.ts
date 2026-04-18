@@ -14,11 +14,17 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
   images: {
-    domains: ["images.unsplash.com", "cdn.prod.website-files.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.prod.website-files.com',
+      },
+    ],
     formats: ['image/avif', 'image/webp'], // Prefer AVIF over WebP
     minimumCacheTTL: 31536000, // 1 year
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Geist, Geist_Mono } from 'next/font/google';
 import type { Metadata, Viewport } from 'next';
 import {NextIntlClientProvider} from 'next-intl';
