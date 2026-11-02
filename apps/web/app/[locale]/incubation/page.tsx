@@ -1,5 +1,7 @@
 "use client"
 
+import ContentReviewNotice from "@/components/content-review-notice"
+
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { 
@@ -207,6 +209,7 @@ export default function IncubationPage() {
 
               {/* Main Headline */}
               <div className="space-y-6 max-w-5xl mx-auto">
+                <ContentReviewNotice kind="rules" />
                 <motion.h1 
                   className="text-5xl lg:text-7xl font-bold text-white leading-tight"
                   initial={{ opacity: 0, y: 20 }}

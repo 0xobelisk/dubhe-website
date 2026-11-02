@@ -1,5 +1,7 @@
 "use client"
 
+import ContentReviewNotice from "@/components/content-review-notice"
+
 import { useEffect, useState } from "react"
 import { useTranslations } from 'next-intl'
 import { motion } from "framer-motion"
@@ -137,10 +139,10 @@ export default function ProposalPage() {
   ]
 
   const stats = [
-    { label: "Active Referenda", value: "24", change: "+5" },
-    { label: "Treasury Balance", value: "2.5M DUBHE", change: "+3%" },
-    { label: "Conviction Voting", value: "87%", change: "+8%" },
-    { label: "Enacted Proposals", value: "156", change: "+12" }
+    { label: "Active Referenda", value: "—", change: "" },
+    { label: "Treasury Balance", value: "—", change: "" },
+    { label: "Conviction Voting", value: "—", change: "" },
+    { label: "Enacted Proposals", value: "—", change: "" }
   ]
 
   const requirements = [
@@ -207,6 +209,7 @@ export default function ProposalPage() {
 
               {/* Main Headline */}
               <div className="space-y-6 max-w-5xl mx-auto">
+                <ContentReviewNotice kind="rules" />
                 <motion.h1 
                   className="text-5xl lg:text-7xl font-bold text-white leading-tight"
                   initial={{ opacity: 0, y: 20 }}
@@ -228,6 +231,7 @@ export default function ProposalPage() {
                 >
                   {t('hero.subtitle')}
                 </motion.p>
+                <ContentReviewNotice kind="demo" />
               </div>
 
               {/* Stats */}

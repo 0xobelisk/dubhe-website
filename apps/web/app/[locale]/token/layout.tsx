@@ -4,7 +4,7 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'DUBHE Token - Governance & Utility Token',
-  description: 'Discover DUBHE token, the native governance and utility token of the Dubhe ecosystem. Stake, vote, pay fees, and participate in decentralized governance.',
+  description: 'Historical DUBHE and STARS token design. Supply, allocation, rewards and current availability await confirmation.',
   keywords: [
     'DUBHE token',
     'governance token',
@@ -17,22 +17,22 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'DUBHE Token - Governance & Utility Token',
-    description: 'The native token powering the Dubhe ecosystem with governance, staking, and utility features.',
+    description: 'Historical DUBHE and STARS token design. Supply, allocation, rewards and current availability await confirmation.',
     url: '/token',
     type: 'website',
     images: [
       {
-        url: '/og-token.png',
-        width: 1200,
-        height: 630,
+        url: '/mediakit/dubhe/png/a.png',
+        width: 3821,
+        height: 906,
         alt: 'DUBHE Token - Governance & Utility',
       },
     ],
   },
   twitter: {
     title: 'DUBHE Token - Governance & Utility Token',
-    description: 'The native token powering the Dubhe ecosystem with governance, staking, and utility features.',
-    images: ['/og-token.png'],
+    description: 'Historical DUBHE and STARS token design. Supply, allocation, rewards and current availability await confirmation.',
+    images: ['/mediakit/dubhe/png/a.png'],
   },
   alternates: {
     canonical: '/token',
@@ -53,8 +53,8 @@ export default function TokenLayout({
             "@context": "https://schema.org",
             "@type": "FinancialProduct",
             "name": "DUBHE Token",
-            "description": "Native governance and utility token of the Dubhe blockchain ecosystem",
-            "url": "https://dubhe.network/token",
+            "description": "Historical DUBHE and STARS token design. Supply, allocation, rewards and current availability await confirmation.",
+            "url": "https://dubhe.obelisk.build/token",
             "provider": {
               "@type": "Organization",
               "name": "Dubhe Foundation"

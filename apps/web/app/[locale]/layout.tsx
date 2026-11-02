@@ -25,14 +25,14 @@ const fontMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	metadataBase: new URL(
-		process.env.NEXT_PUBLIC_SITE_URL || 'https://dubhe.network'
+		process.env.NEXT_PUBLIC_SITE_URL || 'https://dubhe.obelisk.build'
 	),
 	title: {
 		default: 'Dubhe - Next-Generation Move Blockchain Platform',
 		template: '%s | Dubhe'
 	},
 	description:
-		'Dubhe is a revolutionary Move-based blockchain platform offering 80% code auto-generation, real-time P2P channels, and seamless cross-chain interoperability for Web3 developers.',
+		'Dubhe provides Move development tooling and infrastructure developed by Obelisk Labs. Dubhe Wallet supports wallet and identity workflows. Numeron is a separate game in development.',
 	keywords: [
 		'Dubhe',
 		'Move blockchain',
@@ -49,12 +49,12 @@ export const metadata: Metadata = {
 	],
 	authors: [
 		{
-			name: 'Dubhe Foundation',
-			url: 'https://dubhe.network'
+			name: 'Obelisk Labs',
+			url: 'https://dubhe.obelisk.build'
 		}
 	],
-	creator: 'Dubhe Foundation',
-	publisher: 'Dubhe Foundation',
+	creator: 'Obelisk Labs',
+	publisher: 'Obelisk Labs',
 	robots: {
 		index: true,
 		follow: true,
@@ -69,24 +69,24 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: 'website',
 		locale: 'en_US',
-		alternateLocale: ['zh_CN'],
-		url: 'https://dubhe.network',
+		alternateLocale: routing.locales.filter(locale => locale !== "en"),
+		url: 'https://dubhe.obelisk.build',
 		siteName: 'Dubhe',
 		title: 'Dubhe - Next-Generation Move Blockchain Platform',
 		description:
-			'Revolutionary Move-based blockchain platform with 80% code auto-generation, real-time P2P channels, and cross-chain interoperability.',
+			'Dubhe provides Move development tooling and infrastructure developed by Obelisk Labs. Dubhe Wallet supports wallet and identity workflows. Numeron is a separate game in development.',
 		images: [
 			{
-				url: '/og-image.png',
-				width: 1200,
-				height: 630,
+				url: '/mediakit/dubhe/png/a.png',
+				width: 3821,
+				height: 906,
 				alt: 'Dubhe - Move Blockchain Platform',
 				type: 'image/png',
 			},
 			{
 				url: '/logo/light.png',
-				width: 800,
-				height: 400,
+				width: 3821,
+				height: 906,
 				alt: 'Dubhe Logo',
 				type: 'image/png',
 			}
@@ -94,12 +94,12 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		site: '@DubheNetwork',
-		creator: '@DubheNetwork',
+		site: '@DubheEngine',
+		creator: '@DubheEngine',
 		title: 'Dubhe - Next-Generation Move Blockchain Platform',
 		description:
-			'Revolutionary Move-based blockchain platform with 80% code auto-generation, real-time P2P channels, and cross-chain interoperability.',
-		images: ['/og-image.png'],
+			'Dubhe provides Move development tooling and infrastructure developed by Obelisk Labs. Dubhe Wallet supports wallet and identity workflows. Numeron is a separate game in development.',
+		images: ['/mediakit/dubhe/png/a.png'],
 	},
 	verification: {
 		google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
@@ -109,11 +109,8 @@ export const metadata: Metadata = {
 		}
 	},
 	alternates: {
-		canonical: 'https://dubhe.network',
-		languages: {
-			'en-US': 'https://dubhe.network/en',
-			'zh-CN': 'https://dubhe.network/zh',
-		}
+		canonical: 'https://dubhe.obelisk.build',
+		languages: Object.fromEntries(routing.locales.map(locale => [locale, `https://dubhe.obelisk.build/${locale}`]))
 	},
 	category: 'Technology',
 };
@@ -248,53 +245,22 @@ export default async function LocaleLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Dubhe Foundation",
+              "name": "Dubhe",
               "alternateName": "Dubhe",
-              "url": "https://dubhe.network",
+              "url": "https://dubhe.obelisk.build",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://dubhe.network/logo/light.png",
-                "width": 800,
-                "height": 400
+                "url": "https://dubhe.obelisk.build/mediakit/dubhe/png/a.png",
+                "width": 3821,
+                "height": 906
               },
-              "description": "Revolutionary Move-based blockchain platform with 80% code auto-generation, real-time P2P channels, and cross-chain interoperability.",
-              "foundingDate": "2024",
+              "description": "Dubhe provides Move development tooling and infrastructure developed by Obelisk Labs. Dubhe Wallet supports wallet and identity workflows. Numeron is a separate game in development.",
               "sameAs": [
-                "https://twitter.com/DubheNetwork",
-                "https://github.com/dubhe",
-                "https://discord.gg/dubhe",
-                "https://t.me/dubhe"
+                "https://x.com/DubheEngine",
+                "https://github.com/0xobelisk/dubhe",
+                "https://discord.gg/J76zPyGWau",
+                "https://t.me/dubheengine"
               ],
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Dubhe Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "SoftwareApplication",
-                      "name": "Dubhe Engine",
-                      "description": "Move development platform with code auto-generation"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Foundation Grants",
-                      "description": "Non-repayable grants for open-source Move projects"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Incubation Program",
-                      "description": "Collaborative startup incubation with ecosystem partners"
-                    }
-                  }
-                ]
-              }
             })
           }}
         />

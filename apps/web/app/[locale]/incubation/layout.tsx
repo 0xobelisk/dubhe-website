@@ -4,7 +4,7 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Startup Incubation - Collaborative Ecosystem Program',
-  description: 'Join our collaborative incubation ecosystem supported by Dubhe Foundation, partnered with Obelisk Mesh and leading Move ecosystem companies. Build the next unicorn startup.',
+  description: 'Dubhe ecosystem incubation information. Historical program terms and external partner commitments await confirmation.',
   keywords: [
     'startup incubation',
     'Dubhe Foundation incubation',
@@ -17,22 +17,22 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Dubhe Foundation Incubation - Collaborative Startup Ecosystem',
-    description: 'Partner with Dubhe Foundation, Obelisk Mesh, and ecosystem companies to build the next generation of Move startups.',
+    description: 'Dubhe ecosystem incubation information. Historical program terms and external partner commitments await confirmation.',
     url: '/incubation',
     type: 'website',
     images: [
       {
-        url: '/og-incubation.png',
-        width: 1200,
-        height: 630,
+        url: '/mediakit/dubhe/png/a.png',
+        width: 3821,
+        height: 906,
         alt: 'Dubhe Foundation Incubation Program',
       },
     ],
   },
   twitter: {
     title: 'Dubhe Foundation Incubation - Collaborative Startup Ecosystem',
-    description: 'Partner with Dubhe Foundation, Obelisk Mesh, and ecosystem companies to build the next generation of Move startups.',
-    images: ['/og-incubation.png'],
+    description: 'Dubhe ecosystem incubation information. Historical program terms and external partner commitments await confirmation.',
+    images: ['/mediakit/dubhe/png/a.png'],
   },
   alternates: {
     canonical: '/incubation',
@@ -53,39 +53,12 @@ export default function IncubationLayout({
             "@context": "https://schema.org",
             "@type": "EducationalOrganization",
             "name": "Dubhe Foundation Incubation",
-            "description": "Collaborative startup incubation program for Move blockchain companies",
-            "url": "https://dubhe.network/incubation",
+            "description": "Dubhe ecosystem incubation information. Historical program terms and external partner commitments await confirmation.",
+            "url": "https://dubhe.obelisk.build/incubation",
             "founder": {
               "@type": "Organization",
               "name": "Dubhe Foundation"
             },
-            "partner": [
-              {
-                "@type": "Organization",
-                "name": "Obelisk Mesh",
-                "description": "Technical infrastructure partner"
-              }
-            ],
-            "offers": [
-              {
-                "@type": "Course",
-                "name": "Foundation Accelerator",
-                "description": "3-month intensive program with Foundation funding and Obelisk Mesh support",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "Dubhe Foundation"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Collaborative Studio",
-                "description": "6-12 month co-building program with ecosystem companies",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "Dubhe Foundation"
-                }
-              }
-            ]
           })
         }}
       />

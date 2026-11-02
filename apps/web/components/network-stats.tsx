@@ -1,53 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { TrendingUp, Users, Zap, DollarSign } from "lucide-react"
 import { useTranslations } from 'next-intl'
 
-
-// Simulated real-time incrementing component
-function LiveCounter({ 
-  baseValue, 
-  suffix = "", 
-  prefix = "",
-  incrementRate = 1, // increment every X seconds
-  formatMillion = false // format large numbers as millions
-}: { 
-  baseValue: number
-  suffix?: string
-  prefix?: string
-  incrementRate?: number
-  formatMillion?: boolean
-}) {
-  const [count, setCount] = useState(baseValue)
-  
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCount(prev => prev + Math.floor(Math.random() * 3) + 1) // Random increment 1-3
-    }, incrementRate * 1000)
-    
-    return () => clearInterval(interval)
-  }, [incrementRate])
-  
-  const formatNumber = (num: number) => {
-    if (formatMillion && num >= 1000000) {
-      return (num / 1000000).toFixed(1) + "M"
-    }
-    return num.toLocaleString()
-  }
-  
-  return (
-    <motion.span
-      key={count}
-      initial={{ scale: 1.1, color: "#10b981" }}
-      animate={{ scale: 1, color: "#ffffff" }}
-      transition={{ duration: 0.3 }}
-    >
-      {prefix}{formatNumber(count)}{suffix}
-    </motion.span>
-  )
-}
 
 export default function NetworkStats() {
   const t = useTranslations('home.networkStats')
@@ -56,28 +12,28 @@ export default function NetworkStats() {
     {
       icon: Zap,
       label: t('transactions.label'),
-      value: <LiveCounter baseValue={10000000} suffix="+" incrementRate={2} formatMillion={true} />,
+      value: "—",
       change: t('transactions.change'),
       changeType: "positive" as const
     },
     {
       icon: TrendingUp,
       label: t('operations.label'),
-      value: <LiveCounter baseValue={50000000} suffix="+" incrementRate={1.5} formatMillion={true} />,
+      value: "—",
       change: t('operations.change'),
       changeType: "positive" as const
     },
     {
       icon: Users,
       label: t('users.label'),
-      value: <LiveCounter baseValue={50000} suffix="+" incrementRate={3} />,
+      value: "—",
       change: t('users.change'),
       changeType: "positive" as const
     },
     {
       icon: DollarSign,
       label: t('income.label'),
-      value: <LiveCounter baseValue={500000} prefix="$" suffix="" incrementRate={4} />,
+      value: "—",
       change: t('income.change'),
       changeType: "positive" as const
     }

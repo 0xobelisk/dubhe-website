@@ -14,15 +14,15 @@ const headlineMetrics = [
   {
     icon: <CheckCircle className="w-8 h-8" />,
     title: "Fully On-Chain DApp",
-    value: "✅ Deployed",
-    description: "Production-ready decentralized applications running on mainnet",
+    value: "—",
+    description: "Deployment status awaits source verification",
     color: "text-green-400",
     bgColor: "bg-green-500/10"
   },
   {
     icon: <Activity className="w-8 h-8" />,
     title: "Transaction Volume",
-    value: "10M+",
+    value: "—",
     description: "Total transactions processed across all deployed applications",
     color: "text-blue-400",
     bgColor: "bg-blue-500/10"
@@ -30,7 +30,7 @@ const headlineMetrics = [
   {
     icon: <Zap className="w-8 h-8" />,
     title: "Average Latency",
-    value: "<50ms",
+    value: "—",
     description: "Web2-level response times for real-time user interactions",
     color: "text-purple-400", 
     bgColor: "bg-purple-500/10"
@@ -38,8 +38,8 @@ const headlineMetrics = [
   {
     icon: <Globe className="w-8 h-8" />,
     title: "User Experience",
-    value: "Web2-Level",
-    description: "Seamless interaction patterns indistinguishable from traditional apps",
+    value: "—",
+    description: "User experience depends on implementation",
     color: "text-orange-400",
     bgColor: "bg-orange-500/10"
   }
@@ -51,7 +51,7 @@ const headlineMetrics = [
 const adoptionMetrics = [
   { platform: "Sui", status: "✅ Compatible", integration: "Framework deployed" },
   { platform: "Aptos", status: "✅ Compatible", integration: "SDK available" },
-  { platform: "Rooch", status: "✅ Compatible", integration: "Active collaboration" },
+  { platform: "Rooch", status: "✅ Compatible", integration: "Awaiting confirmation" },
   { platform: "Movement", status: "✅ Compatible", integration: "Integration ready" },
   { platform: "Initia", status: "✅ Compatible", integration: "Testnet deployed" }
 ]
@@ -63,23 +63,23 @@ const validationMetrics = [
   {
     icon: <DollarSign className="w-6 h-6" />,
     title: "Revenue Generated",
-    value: "$500K+",
-    description: "Proven commercial validation with on-chain settlement model",
-    trend: "↗️ Growing monthly"
+    value: "—",
+    description: "Revenue figures await verifiable source records",
+    trend: ""
   },
   {
     icon: <CheckCircle className="w-6 h-6" />,
-    title: "Live Projects",
-    value: "Multiple",
-    description: "Merak (DEX), Numeron (Gaming) and other commercial applications",
-    trend: "🚀 Production ready"
+    title: "Ecosystem Projects",
+    value: "—",
+    description: "Numeron is in development and has not launched or started external playtesting",
+    trend: ""
   },
   {
     icon: <Users className="w-6 h-6" />,
     title: "Ecosystem Partners",
-    value: "Major Teams",
-    description: "Strategic partnerships with Sui, Aptos, Rooch ecosystem foundations",
-    trend: "🤝 Expanding network"
+    value: "—",
+    description: "External partnership status awaits confirmation",
+    trend: ""
   }
 ]
 
@@ -89,24 +89,24 @@ const validationMetrics = [
 const communityMetrics = [
   {
     platform: "Twitter",
-    followers: "40K+",
+    followers: "—",
     engagement: "High activity",
     icon: "🐦",
-    growth: "+15% monthly"
+    growth: ""
   },
   {
     platform: "Discord",
-    daily: "3K+",
-    total: "50K+",
+    daily: "—",
+    total: "—",
     icon: "💬", 
-    growth: "Strong momentum"
+    growth: ""
   },
   {
     platform: "Developer Community",
     engagement: "Active",
     projects: "Growing",
     icon: "👨‍💻",
-    growth: "Expanding rapidly"
+    growth: ""
   }
 ]
 
@@ -132,14 +132,14 @@ export default function TractionMetrics() {
   const categories = [
     { id: "headline", label: "Core Metrics", icon: <TrendingUp className="w-4 h-4" /> },
     { id: "adoption", label: "Tech Adoption", icon: <Globe className="w-4 h-4" /> },
-    { id: "validation", label: "Market Validation", icon: <DollarSign className="w-4 h-4" /> },
+    { id: "validation", label: "Metrics Review", icon: <DollarSign className="w-4 h-4" /> },
     { id: "community", label: "Community", icon: <Users className="w-4 h-4" /> }
   ]
 
   return (
     <Section
-      title="Proven Traction & Market Validation"
-      subtitle="Concrete metrics demonstrating product-market fit and commercial success"
+      title="Ecosystem Information"
+      subtitle="Figures withheld pending verifiable sources"
       label="TRACTION DASHBOARD"
       maxWidth="xl" 
       paddingY="xl"
@@ -222,11 +222,11 @@ export default function TractionMetrics() {
                   weight="bold"
                   className="mb-4"
                 >
-                  Production-Ready & Scalable
+                  Deployment & Performance Information
                 </GradientText>
                 <p className="text-gray-300 max-w-3xl mx-auto">
-                  These metrics represent <strong className="text-white">real production usage</strong>, not testnet experiments. 
-                  Our infrastructure has proven it can handle enterprise-scale applications with Web2-level performance.
+                  <strong className="text-white">Verified production metrics are not yet published.</strong>
+                  Capacity and performance depend on the deployment, configuration and workload.
                 </p>
               </Card>
             </motion.div>
@@ -369,11 +369,11 @@ export default function TractionMetrics() {
                   weight="bold"
                   className="mb-4"
                 >
-                  Proven Commercial Success
+                  Commercial Information
                 </GradientText>
                 <p className="text-gray-300 max-w-3xl mx-auto">
-                  <strong className="text-white">$500K+ in revenue</strong> demonstrates clear product-market fit. 
-                  Our on-chain settlement model provides transparent, verifiable business metrics that VCs can trust.
+                  Revenue and product-market fit claims await verifiable sources.
+                  Revenue statements require traceable records before publication.
                 </p>
               </Card>
             </motion.div>
@@ -449,8 +449,8 @@ export default function TractionMetrics() {
                   Thriving Developer Ecosystem
                 </GradientText>
                 <p className="text-gray-300 max-w-3xl mx-auto">
-                  Strong community engagement across all platforms indicates <strong className="text-white">organic growth</strong> and 
-                  developer satisfaction. Our community serves as a powerful distribution channel for ecosystem expansion.
+                  Community channels support discussion and
+                  developer participation. Quantitative community claims await verification.
                 </p>
               </Card>
             </motion.div>

@@ -1,5 +1,6 @@
 "use client"
 
+import ContentReviewNotice from "@/components/content-review-notice"
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Award, Code, Shield, Trophy, Star } from "lucide-react"
@@ -13,34 +14,34 @@ import GradientText from "../ui/GradientText"
 const teamMembers = [
   {
     name: "Henry",
-    role: "Council Member & Technical Leadership",
+    role: "Awaiting confirmation",
     avatar: "👨‍💻",
-    expertise: "Cryptographic Research and Implementation",
-    background: "Ensuring Security and Innovation in Protocol Development",
+    expertise: "",
+    background: "",
     color: "from-blue-500 to-cyan-500"
   },
   {
     name: "Bob", 
-    role: "Lead Protocol Engineer",
+    role: "Awaiting confirmation",
     avatar: "👨‍🔬",
-    expertise: "Core Protocol Design and Architecture",
-    background: "Coordinates Technical Development Across the Ecosystem", 
+    expertise: "",
+    background: "",
     color: "from-purple-500 to-pink-500"
   },
   {
     name: "Frank",
-    role: "Senior Protocol Engineer", 
+    role: "Awaiting confirmation",
     avatar: "👨‍💼",
-    expertise: "Protocol Implementation and Performance Optimization",
-    background: "Technical Integration with Ecosystem Partners",
+    expertise: "",
+    background: "",
     color: "from-green-500 to-emerald-500"
   },
   {
     name: "Jason C",
-    role: "Executive Chairman",
+    role: "Awaiting confirmation",
     avatar: "👨‍💼",
-    expertise: "Foundation Operations and Strategic Management",
-    background: "Manages day-to-day operations and organizational processes",
+    expertise: "",
+    background: "",
     color: "from-orange-500 to-yellow-500"
   }
 ]
@@ -48,43 +49,7 @@ const teamMembers = [
 /**
  * 团队成就数据 (基于Deck第35页)
  */
-const teamAchievements = [
-  {
-    event: "Polkadot 1st Hackathon",
-    award: "Most Popular Developer Award", 
-    year: "2021",
-    icon: "🏆",
-    significance: "Early recognition in blockchain development"
-  },
-  {
-    event: "Ethereum Hackathon",
-    award: "Most Business Value Award",
-    year: "2021", 
-    icon: "💰",
-    significance: "Proven ability to create commercial value"
-  },
-  {
-    event: "Sui Builder House",
-    award: "3rd Place NFT-GameFi Track",
-    year: "2023",
-    icon: "🥉", 
-    significance: "Strong performance in Move ecosystem"
-  },
-  {
-    event: "Aptos Move Offline Hackathon", 
-    award: "Honorary Special Award",
-    year: "2024",
-    icon: "⭐",
-    significance: "Continued excellence across Move platforms"
-  },
-  {
-    event: "Multiple Web3 Competitions",
-    award: "Consistent Top Performance",
-    year: "2021-2024",
-    icon: "🚀",
-    significance: "Track record of execution and innovation"
-  }
-]
+const teamAchievements: { event: string; award: string; year: string; icon: string; significance: string }[] = []
 
 /**
  * 执行能力指标
@@ -92,25 +57,25 @@ const teamAchievements = [
 const executionMetrics = [
   {
     metric: "Development Experience",
-    value: "5+ Years",
+    value: "—",
     description: "Deep Web3 development across multiple ecosystems",
     icon: <Code className="w-6 h-6" />
   },
   {
-    metric: "Hackathon Wins", 
-    value: "10+",
+    metric: "Historical Awards — Awaiting Verification",
+    value: "—",
     description: "Consistent performance in competitive environments",
     icon: <Trophy className="w-6 h-6" />
   },
   {
     metric: "Ecosystem Recognition",
-    value: "Industry-Wide",
+    value: "—",
     description: "Acknowledged by major blockchain foundations",
     icon: <Award className="w-6 h-6" />
   },
   {
     metric: "Technical Leadership",
-    value: "Proven",
+    value: "—",
     description: "Successfully architected and deployed complex protocols",
     icon: <Shield className="w-6 h-6" />
   }
@@ -128,8 +93,8 @@ export default function TeamExecution() {
 
   return (
     <Section
-      title="World-Class Team with Proven Execution"
-      subtitle="By builders, for builders — with a track record of delivering complex blockchain infrastructure"
+      title="Team Information"
+      subtitle="Names retained; roles and historical credentials await confirmation"
       label="TEAM & EXECUTION"  
       maxWidth="xl"
       paddingY="xl"
@@ -137,6 +102,7 @@ export default function TeamExecution() {
       backgroundVariant="gradient"
     >
       <div className={`transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <ContentReviewNotice kind="people" />
         
         {/* 团队成员展示 */}
         <motion.div
@@ -201,7 +167,7 @@ export default function TeamExecution() {
               Execution Excellence
             </GradientText>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-              Proven ability to deliver complex blockchain infrastructure at scale
+              Credentials and historical award records await confirmation
             </p>
           </div>
 
@@ -318,15 +284,15 @@ export default function TeamExecution() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-blue-400 mb-2">5+</div>
+                <div className="text-3xl font-bold text-blue-400 mb-2">—</div>
                 <div className="text-sm text-gray-400">Years Web3 Experience</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-green-400 mb-2">10+</div>
+                <div className="text-3xl font-bold text-green-400 mb-2">—</div>
                 <div className="text-sm text-gray-400">Competition Awards</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">—</div>
                 <div className="text-sm text-gray-400">Execution Success Rate</div>
               </div>
             </div>

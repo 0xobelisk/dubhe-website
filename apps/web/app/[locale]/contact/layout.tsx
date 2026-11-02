@@ -4,7 +4,7 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Contact Us - Get in Touch with Dubhe Team',
-  description: 'Contact Dubhe Foundation for partnerships, grants, technical support, or general inquiries. We respond within 24-48 hours to all messages.',
+  description: 'Contact the Dubhe team about technical support, ecosystem programs and general inquiries.',
   keywords: [
     'contact Dubhe',
     'Dubhe support',
@@ -17,22 +17,22 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Contact Dubhe - Get in Touch with Our Team',
-    description: 'Reach out to Dubhe Foundation for partnerships, grants, technical support, or any questions about our platform.',
+    description: 'Contact the Dubhe team about technical support, ecosystem programs and general inquiries.',
     url: '/contact',
     type: 'website',
     images: [
       {
-        url: '/og-contact.png',
-        width: 1200,
-        height: 630,
+        url: '/mediakit/dubhe/png/a.png',
+        width: 3821,
+        height: 906,
         alt: 'Contact Dubhe Foundation',
       },
     ],
   },
   twitter: {
     title: 'Contact Dubhe - Get in Touch with Our Team',
-    description: 'Reach out to Dubhe Foundation for partnerships, grants, technical support, or any questions about our platform.',
-    images: ['/og-contact.png'],
+    description: 'Contact the Dubhe team about technical support, ecosystem programs and general inquiries.',
+    images: ['/mediakit/dubhe/png/a.png'],
   },
   alternates: {
     canonical: '/contact',
@@ -53,8 +53,8 @@ export default function ContactLayout({
             "@context": "https://schema.org",
             "@type": "ContactPage",
             "name": "Contact Dubhe Foundation",
-            "description": "Get in touch with Dubhe Foundation for partnerships, grants, and support",
-            "url": "https://dubhe.network/contact",
+            "description": "Contact the Dubhe team about technical support, ecosystem programs and general inquiries.",
+            "url": "https://dubhe.obelisk.build/contact",
             "mainEntity": {
               "@type": "Organization",
               "name": "Dubhe Foundation",

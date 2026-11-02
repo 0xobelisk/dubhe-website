@@ -255,15 +255,15 @@ export default function ChannelPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-400 mb-2">&lt;50ms</div>
+                  <div className="text-3xl font-bold text-green-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.metrics.latency')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">1M+</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.metrics.users')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">99.9%</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.metrics.uptime')}</div>
                 </div>
               </motion.div>

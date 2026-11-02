@@ -34,25 +34,25 @@
     },
     "features": {
       "title": "기능",
-      "mainTitle": "무한한 가능성을 가진 Move 스택",
+      "mainTitle": "완전한 Move 개발 스택",
       "moveCompatible": {
-        "title": "100% Move 호환",
+        "title": "Move 호환",
         "description": "기존 Move 생태계의 이점을 활용하세요."
       },
       "zeroGas": {
-        "title": "제로 가스 수수료",
-        "description": "프로젝트가 이 비용을 부담할 수 있어 유연한 확장과 맞춤화를 지원합니다."
+        "title": "선택적 가스비 지원",
+        "description": "가스비는 체인과 거래에 따라 달라집니다. 애플리케이션이 해당 수수료를 지원할 수 있지만 모든 수수료가 무료인 것은 아닙니다."
       },
       "realTime": {
         "title": "실시간 동기화"
       },
       "unlimited": {
-        "title": "무제한",
-        "subtitle": "초당 트랜잭션 수",
-        "description": "병렬로 실행되는 Dubhe 채널 수에 따라 달라집니다."
+        "title": "처리 용량",
+        "subtitle": "설정에 따라 달라짐",
+        "description": "처리량은 설정과 작업 부하에 따라 달라집니다. 검증된 공개 벤치마크는 아직 없습니다."
       },
       "syncFinality": {
-        "title": "1초 동기화 상태 확정성"
+        "title": "Dubhe Channel"
       }
     },
     "community": {
@@ -88,17 +88,17 @@
       },
       "stats": {
         "members": {
-          "value": "10만+",
+          "value": "",
           "label": "커뮤니티 멤버",
           "description": "전 세계 활발한 개발자와 애호가들"
         },
         "events": {
-          "value": "50+",
+          "value": "",
           "label": "글로벌 이벤트",
           "description": "연간 컨퍼런스, 밋업, 워크샵"
         },
         "countries": {
-          "value": "20+",
+          "value": "",
           "label": "국가",
           "description": "대륙 전반에 걸친 Dubhe 커뮤니티 존재"
         }
@@ -133,22 +133,26 @@
         "merak": {
           "name": "Merak",
           "description": "자동화된 마켓 메이커",
-          "tvl": "$45M"
+          "tvl": ""
         },
         "numeron": {
           "name": "Numeron",
-          "description": "판타지 AI RPG 어드벤처",
-          "players": "12K+"
+          "description": "",
+          "players": "",
+          "status": "외부 플레이테스트 준비 중",
+          "development": "2026년 5월 개발을 시작했습니다.",
+          "validation": "아직 출시되거나 외부 테스트를 시작하지 않았으며, 게임과 충전 흐름만 내부에서 테스트했습니다.",
+          "history": "2025년 해커톤의 다른 게임과는 Numeron IP만 공유합니다."
         },
         "cyferio": {
           "name": "Cyferio SDK",
           "description": "개발 키트",
-          "downloads": "50K+"
+          "downloads": ""
         },
         "objectsdao": {
           "name": "Objectsdao",
           "description": "NFT 경매",
-          "volume": "$2.3M"
+          "volume": ""
         }
       },
       "metrics": {
@@ -174,11 +178,11 @@
         },
         "codeGeneration": {
           "title": "코드 생성",
-          "description": "Dubhe 엔진은 스키마 정의에서 80%의 Move 스마트 계약, 클라이언트 라이브러리, API 인터페이스를 자동으로 생성합니다."
+          "description": "Dubhe의 직관적인 스키마 시스템을 사용하여 게임 또는 dApp 로직을 정의하세요. 간단한 구성 파일에서 엔티티, 컴포넌트, 시스템을 설명합니다."
         },
         "deploymentChannel": {
           "title": "배포 및 채널",
-          "description": "하나의 명령으로 여러 Move 체인에 배포하세요. Dubhe 채널은 원활한 사용자 경험을 위해 실시간 동기화와 <50ms 지연 시간을 제공합니다."
+          "description": "블록체인을 Web2처럼 느끼게 하는 실시간 프로그래머블 P2P 상호작용 레이어"
         },
         "multiChainExecution": {
           "title": "멀티체인 실행",
@@ -203,13 +207,13 @@
       "features": {
         "codeGeneration": {
           "title": "코드 생성",
-          "dubhe": "80% 자동화",
+          "dubhe": "",
           "others": "수동 코딩"
         },
         "uxPerformance": {
           "title": "UX 성능",
-          "dubhe": "<50ms",
-          "others": "3-15초"
+          "dubhe": "",
+          "others": ""
         },
         "multiChainSupport": {
           "title": "멀티체인 지원",
@@ -235,14 +239,13 @@
       "products": {
         "engine": {
           "title": "Dubhe 엔진",
-          "subtitle": "80% 코드 자동 생성",
-          "description": "Move 코드의 80%를 자동 생성하는 유일한 개발 툴킷으로, 개발자가 핵심 비즈니스 로직에 집중할 수 있게 해줍니다",
+          "subtitle": "스키마 정의",
+          "description": "Dubhe의 직관적인 스키마 시스템을 사용하여 게임 또는 dApp 로직을 정의하세요. 간단한 구성 파일에서 엔티티, 컴포넌트, 시스템을 설명합니다.",
           "features": [
             "개발 시간을 몇 달에서 몇 주로 단축",
-            "인프라 비용 90% 절감",
             "하나의 명령으로 모든 Move 체인에 배포"
           ],
-          "highlight": "10배 빠른 개발"
+          "highlight": "코드 생성"
         },
         "channel": {
           "title": "Dubhe 채널",
@@ -253,7 +256,7 @@
             "초고속 실행 속도",
             "멀티 클라이언트 모바일, 데스크톱, 웹 지원"
           ],
-          "highlight": "50ms 미만 지연시간"
+          "highlight": "Dubhe Channel"
         },
         "os": {
           "title": "Dubhe OS",
@@ -274,16 +277,11 @@
       "description": "개발 도구부터 실시간 상호작용 채널과 탈중앙화 인프라까지 - Dubhe는 차세대 완전한 온체인 애플리케이션을 구축하는데 필요한 모든 것을 제공합니다.",
       "keyMetricsTitle": "핵심 지표",
       "keyMetrics": [
-        "1000만+ 처리된 거래",
-        "<200ms 평균 지연 시간",
         "Web2 수준의 사용자 경험",
         "Sui, Aptos, Rooch, Movement, Initia와 호환"
       ],
       "moveEcosystemTitle": "Move 생태계",
       "moveEcosystemFeatures": [
-        "1,555명의 활성 Move 개발자",
-        "월간 40% 성장",
-        "3년 미만의 역사",
         "거대한 성장 잠재력"
       ],
       "pipelining": "파이프라이닝",
@@ -302,7 +300,7 @@
         "dubheEngine": {
           "title": "Dubhe 엔진",
           "subtitle": "개발 툴킷",
-          "description": "80%의 코드를 자동으로 생성하고 완전한 개발자 툴체인을 제공합니다",
+          "description": "Dubhe의 직관적인 스키마 시스템을 사용하여 게임 또는 dApp 로직을 정의하세요. 간단한 구성 파일에서 엔티티, 컴포넌트, 시스템을 설명합니다.",
           "features": [
             "코드 생성",
             "스키마 기반 개발",
@@ -315,7 +313,6 @@
           "subtitle": "실시간 레이어",
           "description": "Web2 수준의 실시간 사용자 경험을 위한 P2P 상호작용 레이어",
           "features": [
-            "<50ms 지연 시간",
             "실시간 동기화",
             "P2P 통신",
             "모바일 지원"
@@ -358,22 +355,22 @@
     },
     "networkStats": {
       "title": "네트워크 통계",
-      "description": "Dubhe 생태계 전반의 성장과 활동을 보여주는 실시간 지표.",
+      "description": "검증 가능한 출처가 확인될 때까지 수치를 표시하지 않습니다.",
       "transactions": {
         "label": "처리된 거래",
-        "change": "+12.5%"
+        "change": ""
       },
       "operations": {
         "label": "실행된 연산",
-        "change": "+18.2%"
+        "change": ""
       },
       "users": {
         "label": "활성 사용자",
-        "change": "+25.1%"
+        "change": ""
       },
       "income": {
         "label": "프로토콜 수익",
-        "change": "+15.8%"
+        "change": ""
       }
     }
   },
@@ -416,7 +413,7 @@
     }
   },
   "footer": {
-    "description": "80% 코드 자동 생성, 리얼타임 P2P 채널, 그리고 크로스 체인 상호 운용성을 갖춤 완전한 Move 개발 플랫폼.",
+    "description": "Obelisk Labs는 Dubhe를 포함한 인프라를 개발합니다. Dubhe Wallet은 지갑과 신원 확인 흐름을 지원합니다. Numeron은 별도로 개발 중인 게임입니다.",
     "sections": {
       "learn": "학습",
       "build": "개발",
@@ -441,7 +438,8 @@
       "contact": "연락처",
       "about": "소개",
       "terms": "서비스 약관",
-      "privacy": "개인정보 보호정책"
+      "privacy": "개인정보 보호정책",
+      "mediaKit": "미디어 키트"
     },
     "copyright": "© 2025 Dubhe. 모든 권리를 보유합니다."
   },
@@ -485,13 +483,57 @@
           "description": "블록체인 생태계 전반에서 전략적 관계 구축하기"
         }
       }
+    },
+    "members": {
+      "jason": {
+        "name": "Jason",
+        "role": "확인 대기",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "joan": {
+        "name": "Joan",
+        "role": "확인 대기",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "david": {
+        "name": "David",
+        "role": "확인 대기",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "bonnie": {
+        "name": "Bonnie",
+        "role": "확인 대기",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "liam": {
+        "name": "Liam McKenzie",
+        "role": "확인 대기",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "emily": {
+        "name": "Emily Smith",
+        "role": "확인 대기",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      }
     }
   },
   "grants": {
     "hero": {
       "badge": "Dubhe 재단 그랜트",
       "title": "혁신에 자금을 지원하세요",
-      "description": "Dubhe 재단으로부터 상환 불필요한 그랜트를 받아 오픈소스 Move 애플리케이션, 인프라, 도구를 구축하세요. 모든 프로젝트는 완전히 기능해야 하며 모든 마일스톤을 완료해야 합니다.",
+      "description": "기존 페이지의 규칙이며 현재 유효성은 확인 중입니다. 승인된 자금 지원 약속이나 지급 내역이 아닙니다.",
       "stats": {
         "totalFunded": "총 지원 금액",
         "projectsFunded": "지원된 프로젝트",
@@ -506,22 +548,22 @@
       "badge": "그랜트 카테고리",
       "infrastructure": {
         "title": "인프라 그랜트",
-        "amount": "최대 $100K",
+        "amount": "확인 대기",
         "description": "핵심 인프라, 개발자 도구, 생태계 유틸리티 구축"
       },
       "dapp": {
         "title": "DApp 개발",
-        "amount": "최대 $75K",
+        "amount": "확인 대기",
         "description": "Dubhe 생태계에서 혁신적인 탈중앙화 애플리케이션 만들기"
       },
       "research": {
         "title": "연구 그랜트",
-        "amount": "최대 $50K",
+        "amount": "확인 대기",
         "description": "학술 연구, 프로토콜 개선, 이론적 기여"
       },
       "community": {
         "title": "커뮤니티 프로젝트",
-        "amount": "최대 $25K",
+        "amount": "확인 대기",
         "description": "교육, 문서화, 커뮤니티 도구, 아웃리치 프로그램"
       }
     },
@@ -532,27 +574,27 @@
         "proposal": {
           "title": "제안서 제출",
           "description": "상세한 마일스톤과 오픈소스 약속을 포함한 포괄적인 제안서 제출",
-          "duration": "1주"
+          "duration": "확인 대기"
         },
         "review": {
           "title": "재단 검토",
           "description": "Dubhe 재단 기술 위원회가 실현 가능성과 생태계 영향을 평가",
-          "duration": "2-3주"
+          "duration": "확인 대기"
         },
         "interview": {
           "title": "팀 인터뷰",
           "description": "프로젝트 로드맵을 발표하고 기술적 역량을 입증",
-          "duration": "1주"
+          "duration": "확인 대기"
         },
         "approval": {
           "title": "그랜트 승인",
           "description": "재단 이사회가 마일스톤 요구사항을 포함한 상환 불필요 그랜트 승인",
-          "duration": "1주"
+          "duration": "확인 대기"
         },
         "delivery": {
           "title": "마일스톤 전달",
           "description": "기능적 결과물을 포함한 모든 마일스톤을 완료하고 전체 그랜트 수령",
-          "duration": "3-12개월"
+          "duration": "확인 대기"
         }
       },
       "requirements": {
@@ -568,8 +610,8 @@
       }
     },
     "successStories": {
-      "title": "성공 사례",
-      "description": "그랜트를 받고 상당한 영향을 미친 프로젝트들"
+      "title": "생태계",
+      "description": "검증 가능한 출처가 확인될 때까지 수치를 표시하지 않습니다."
     },
     "terms": {
       "title": "그랜트 약관 및 조건",
@@ -598,7 +640,7 @@
     "hero": {
       "title": "실시간 P2P",
       "titleHighlight": "상호작용 레이어",
-      "subtitle": "Web3 인프라를 통한 Web2 수준의 사용자 경험. Move 블록체인에서 구축된 게임, 소셜 플랫폼, 거래 애플리케이션을 위한 50ms 미만의 지연 시간.",
+      "subtitle": "최적의 성능과 확장성을 위한 다계층 접근법",
       "metrics": {
         "latency": "지연 시간",
         "users": "동시 사용자",
@@ -614,7 +656,7 @@
       "description": "즉각적인 응답성과 매끄러운 사용자 경험을 요구하는 애플리케이션을 위해 구축됨",
       "items": {
         "latency": {
-          "title": "50ms 미만의 지연 시간",
+          "title": "실시간 P2P",
           "description": "Web2 수준의 응답성을 가진 실시간 P2P 상호작용. 즉각적인 피드백을 요구하는 게임, 거래, 소셜 애플리케이션을 위해 구축됨.",
           "details": [
             "WebRTC 기반 통신",
@@ -625,7 +667,7 @@
         },
         "network": {
           "title": "확장 가능한 P2P 네트워크",
-          "description": "사용자 기반과 함께 성장하는 수평 확장. 성능 저하 없이 수백에서 수백만의 동시 연결까지.",
+          "description": "최적의 성능과 확장성을 위한 다계층 접근법",
           "details": [
             "동적 피어 발견",
             "로드 밸런싱 프로토콜",
@@ -663,9 +705,9 @@
           "title": "실시간 게임",
           "description": "즉각적인 응답 시간을 가진 멀티플레이어 게임",
           "metrics": [
-            "50ms 미만의 지연 시간",
+            "",
             "100만 이상의 동시 플레이어",
-            "99.9% 가동 시간"
+            ""
           ]
         },
         "social": {
@@ -716,7 +758,7 @@
       "status": {
         "title": "네트워크 상태",
         "online": "온라인",
-        "latency": "지연 시간: 50ms 미만"
+        "latency": ""
       },
       "nodes": {
         "title": "활성 노드",
@@ -901,7 +943,7 @@
     "hero": {
       "badge": "Dubhe 재단 인큐베이션",
       "title": "다음 유니콘 스타트업을 구축하세요",
-      "subtitle": "Dubhe 재단이 지원하는 협업 인큐베이션 생태계에 참여하여 Obelisk Labs 및 생태계 VC와 공동 인큐베이션하여 차세대 Move 스타트업을 구축하세요.",
+      "subtitle": "기존 페이지의 규칙이며 현재 유효성은 확인 중입니다. 승인된 자금 지원 약속이나 지급 내역이 아닙니다.",
       "stats": {
         "funding": {
           "value": "곧 출시 예정",
@@ -928,65 +970,56 @@
     "programs": {
       "accelerator": {
         "title": "재단 액셀러레이터",
-        "duration": "3개월",
-        "funding": "최대 $500K",
-        "description": "Dubhe 재단이 지원하는 집중 프로그램으로 Obelisk Labs 및 생태계 VC와 공동 인큐베이션",
+        "duration": "확인 대기",
+        "funding": "확인 대기",
+        "description": "기존 페이지의 규칙이며 현재 유효성은 확인 중입니다. 승인된 자금 지원 약속이나 지급 내역이 아닙니다.",
         "benefits": [
-          "Dubhe 재단 자금 지원",
-          "Obelisk Labs 공동 인큐베이션",
-          "Move 개발 지원",
-          "생태계 VC 파트너십"
+          "Move 개발 지원"
         ]
       },
       "studio": {
         "title": "협업 스튜디오",
-        "duration": "6-12개월",
-        "funding": "최대 $1M",
-        "description": "Dubhe 재단, Obelisk Labs, 생태계 VC가 공유 리소스로 공동 인큐베이션",
+        "duration": "확인 대기",
+        "funding": "확인 대기",
+        "description": "기존 페이지의 규칙이며 현재 유효성은 확인 중입니다. 승인된 자금 지원 약속이나 지급 내역이 아닙니다.",
         "benefits": [
-          "다중 파트너 공동 인큐베이션",
-          "공유 기술 리소스",
-          "프로젝트 간 협업",
-          "생태계 VC 네트워크"
+          "프로젝트 간 협업"
         ]
       },
       "scale": {
         "title": "생태계 스케일",
-        "duration": "6개월",
-        "funding": "최대 $2M",
-        "description": "Dubhe 재단, Obelisk Labs, 생태계 VC 파트너의 포괄적인 지원으로 스케일업",
+        "duration": "확인 대기",
+        "funding": "확인 대기",
+        "description": "기존 페이지의 규칙이며 현재 유효성은 확인 중입니다. 승인된 자금 지원 약속이나 지급 내역이 아닙니다.",
         "benefits": [
-          "공동 인큐베이션 네트워크",
-          "전략적 소개",
-          "글로벌 시장 접근",
-          "기업 VC 연결"
+          "글로벌 시장 접근"
         ]
       }
     },
     "resources": {
       "coIncubation": {
         "title": "다중 파트너 공동 인큐베이션",
-        "description": "Dubhe 재단, Obelisk Labs, 생태계 VC의 공동 지도"
+        "description": "확인 대기"
       },
       "infrastructure": {
         "title": "공유 인프라",
-        "description": "Obelisk Labs 인프라 및 생태계 VC 리소스 접근"
+        "description": "확인 대기"
       },
       "integration": {
         "title": "생태계 통합",
-        "description": "Dubhe 프로젝트 및 파트너 네트워크와의 직접 통합"
+        "description": "확인 대기"
       },
       "development": {
         "title": "협업 개발",
-        "description": "Dubhe 재단 및 Obelisk Labs 엔지니어링 팀의 기술 지원"
+        "description": "확인 대기"
       },
       "demoDays": {
         "title": "파트너 데모 데이",
-        "description": "Dubhe 재단 이사회 및 생태계 VC 네트워크에 발표"
+        "description": "확인 대기"
       },
       "network": {
         "title": "생태계 네트워크",
-        "description": "전체 Dubhe 및 파트너 회사 생태계에 접근"
+        "description": "확인 대기"
       }
     }
   },
@@ -1028,7 +1061,7 @@
     },
     "ambassadorsSection": {
       "title": "우리의 글로벌 앰배서더들을 만나보세요",
-      "description": "우리의 앰배서더들은 각자의 지역에서 선두를 달리며 커뮤니티를 구축하고 채택을 촉진하고 있습니다",
+      "description": "이름과 현재 역할을 확인 중입니다.",
       "timezone": "시간대",
       "location": "위치",
       "expertise": "전문 분야",
@@ -1122,7 +1155,7 @@
     },
     "moderatorsSection": {
       "title": "우리의 모더레이터를 만나보세요",
-      "description": "우리의 전담 팀은 모든 시간대와 플랫폼에서 24시간 365일 커버리지를 보장합니다",
+      "description": "이름과 현재 역할을 확인 중입니다.",
       "timezone": "시간대",
       "platforms": "플랫폼",
       "languages": "언어"
@@ -1348,7 +1381,7 @@
   "engine": {
     "hero": {
       "badge": "Dubhe 엔진",
-      "title1": "80% 코드",
+      "title1": "Dubhe",
       "title2": "자동 생성",
       "subtitle": "스마트 컨트랙트, API, UI 컴포넌트를 자동으로 생성하는 스키마 기반 개발 플랫폼. 중요한 것에 집중하세요 - 당신만의 고유한 비즈니스 로직.",
       "stats": {
@@ -1366,7 +1399,7 @@
     },
     "features": {
       "codeGeneration": {
-        "title": "80% 코드 자동 생성",
+        "title": "코드 생성",
         "description": "보일러플레이트, 데이터 구조, 일반적인 패턴을 자동으로 처리하는 지능형 코드 생성으로 개발 시간을 극적으로 단축합니다.",
         "details": [
           "스키마 기반 코드 생성",
@@ -1417,11 +1450,11 @@
       },
       "generateCode": {
         "title": "코드 생성",
-        "description": "Dubhe 엔진이 스마트 컨트랙트와 API를 포함한 애플리케이션 코드의 80%를 자동 생성합니다"
+        "description": "스마트 컨트랙트, API, UI 컴포넌트를 자동으로 생성하는 스키마 기반 개발 플랫폼. 중요한 것에 집중하세요 - 당신만의 고유한 비즈니스 로직."
       },
       "customizeLogic": {
         "title": "로직 커스터마이징",
-        "description": "고유한 20%에 집중하세요 - 비즈니스 로직, 커스텀 기능, 사용자 경험"
+        "description": "Dubhe의 직관적인 스키마 시스템을 사용하여 게임 또는 dApp 로직을 정의하세요. 간단한 구성 파일에서 엔티티, 컴포넌트, 시스템을 설명합니다."
       },
       "deployInstantly": {
         "title": "즉시 배포",
@@ -1469,7 +1502,7 @@
           "크로스체인 합의 메커니즘"
         ],
         "status": "활성화",
-        "team": "12명의 엔지니어"
+        "team": "확인 대기"
       },
       "cyferio": {
         "name": "Cyferio Labs",
@@ -1483,7 +1516,7 @@
           "익명 거래 시스템"
         ],
         "status": "활성화",
-        "team": "8명의 연구원"
+        "team": "확인 대기"
       },
       "network": {
         "name": "Dubhe Network Labs",
@@ -1512,6 +1545,31 @@
         ],
         "status": "연구",
         "team": "4명의 엔지니어"
+      },
+      "dubheos": {
+        "name": "DubheOS",
+        "focus": "Ecosystem & Toolchain",
+        "description": "Dubhe's global decentralized community contributing ecosystem toolchain and infrastructure. Building developer tools, libraries, and community-driven utilities to empower the entire ecosystem.",
+        "contributions": [
+          "Community governance framework",
+          "Ecosystem toolchain development",
+          "Developer resource coordination",
+          "Cross-chain protocol standards",
+          "Community-driven innovations"
+        ],
+        "status": "Active",
+        "team": "Global Community"
+      },
+      "numeron": {
+        "name": "Numeron",
+        "focus": "게임",
+        "description": "아직 출시되거나 외부 테스트를 시작하지 않았으며, 게임과 충전 흐름만 내부에서 테스트했습니다.",
+        "contributions": [
+          "2026년 5월 개발을 시작했습니다.",
+          "2025년 해커톤의 다른 게임과는 Numeron IP만 공유합니다."
+        ],
+        "status": "외부 플레이테스트 준비 중",
+        "team": ""
       }
     },
     "research": {
@@ -2180,5 +2238,14 @@
       "primaryCta": "Dubhe Wallet 시작하기",
       "secondaryCta": "GitHub 보기"
     }
+  },
+  "contentReview": {
+    "pending": "확인 대기",
+    "people": "이름과 현재 역할을 확인 중입니다.",
+    "rules": "기존 페이지의 규칙이며 현재 유효성은 확인 중입니다. 승인된 자금 지원 약속이나 지급 내역이 아닙니다.",
+    "demo": "화면 예시: 잔액, 날짜, 주소는 예시 데이터이며 검증된 계정이나 지급 내역이 아닙니다.",
+    "metrics": "검증 가능한 출처가 확인될 때까지 수치를 표시하지 않습니다.",
+    "currentLabel": "현재 상태",
+    "startedLabel": "개발 시작"
   }
 }

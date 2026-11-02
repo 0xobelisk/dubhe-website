@@ -17,12 +17,12 @@ export default function SEOHead({
   description,
   keywords = [],
   canonical,
-  ogImage = '/og-image.png',
+  ogImage = '/mediakit/dubhe/png/a.png',
   ogType = 'website',
   structuredData
 }: SEOHeadProps) {
   const fullTitle = `${title} | Dubhe`
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dubhe.network'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dubhe.obelisk.build'
   const canonicalUrl = canonical ? `${baseUrl}${canonical}` : baseUrl
 
   return (
@@ -44,7 +44,7 @@ export default function SEOHead({
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@DubheNetwork" />
+      <meta name="twitter:site" content="@DubheEngine" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={`${baseUrl}${ogImage}`} />

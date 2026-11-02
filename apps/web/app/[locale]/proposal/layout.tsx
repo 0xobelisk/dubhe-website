@@ -4,7 +4,7 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Dubhe Proposals - Decentralized Governance System',
-  description: 'Participate in Dubhe governance through DubheOS proposals. Submit treasury requests, runtime upgrades, and governance changes using Polkadot GOV2 framework.',
+  description: 'Dubhe governance information. Historical rules and example referenda await verification; examples are not live treasury or voting data.',
   keywords: [
     'Dubhe proposals',
     'decentralized governance',
@@ -17,22 +17,22 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Dubhe Proposals - Decentralized Governance System',
-    description: 'Shape the future of Dubhe through decentralized governance. Submit proposals and participate in community voting.',
+    description: 'Dubhe governance information. Historical rules and example referenda await verification; examples are not live treasury or voting data.',
     url: '/proposal',
     type: 'website',
     images: [
       {
-        url: '/og-proposal.png',
-        width: 1200,
-        height: 630,
+        url: '/mediakit/dubhe/png/a.png',
+        width: 3821,
+        height: 906,
         alt: 'Dubhe Proposals - Decentralized Governance',
       },
     ],
   },
   twitter: {
     title: 'Dubhe Proposals - Decentralized Governance System',
-    description: 'Shape the future of Dubhe through decentralized governance. Submit proposals and participate in community voting.',
-    images: ['/og-proposal.png'],
+    description: 'Dubhe governance information. Historical rules and example referenda await verification; examples are not live treasury or voting data.',
+    images: ['/mediakit/dubhe/png/a.png'],
   },
   alternates: {
     canonical: '/proposal',
@@ -53,8 +53,8 @@ export default function ProposalLayout({
             "@context": "https://schema.org",
             "@type": "GovernmentService",
             "name": "Dubhe Governance System",
-            "description": "Decentralized governance platform for Dubhe ecosystem proposals and voting",
-            "url": "https://dubhe.network/proposal",
+            "description": "Dubhe governance information. Historical rules and example referenda await verification; examples are not live treasury or voting data.",
+            "url": "https://dubhe.obelisk.build/proposal",
             "provider": {
               "@type": "Organization",
               "name": "Dubhe Foundation"
@@ -64,7 +64,7 @@ export default function ProposalLayout({
             "availableChannel": {
               "@type": "ServiceChannel",
               "name": "DubheOS Governance Portal",
-              "description": "Submit and vote on proposals through DubheOS"
+              "description": "Dubhe governance information. Historical rules and example referenda await verification; examples are not live treasury or voting data."
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
@@ -73,17 +73,17 @@ export default function ProposalLayout({
                 {
                   "@type": "Offer",
                   "name": "Treasury Proposals",
-                  "description": "Request funding from Dubhe Treasury"
+                  "description": "Dubhe governance information. Historical rules and example referenda await verification; examples are not live treasury or voting data."
                 },
                 {
                   "@type": "Offer",
                   "name": "Runtime Upgrades",
-                  "description": "Protocol and system upgrades"
+                  "description": "Dubhe governance information. Historical rules and example referenda await verification; examples are not live treasury or voting data."
                 },
                 {
                   "@type": "Offer",
                   "name": "Governance Changes",
-                  "description": "Modifications to governance parameters"
+                  "description": "Dubhe governance information. Historical rules and example referenda await verification; examples are not live treasury or voting data."
                 }
               ]
             }

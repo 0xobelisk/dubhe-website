@@ -61,7 +61,7 @@ export default async function WalletLayout({
             '@type': 'SoftwareApplication',
             name: t('name'),
             description: t('description'),
-            url: 'https://dubhe.network/wallet',
+            url: 'https://dubhe.obelisk.build/wallet',
             applicationCategory: 'FinanceApplication',
             operatingSystem: 'Web',
             provider: {

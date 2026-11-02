@@ -15,15 +15,15 @@ const ecosystemPartners = [
     name: "Sui",
     type: "Move L1",
     logo: "🔷",
-    status: "Active Collaboration",
-    impact: "Grant programs",
+    status: "Awaiting confirmation",
+    impact: "Program details awaiting confirmation",
     benefit: "Access to $SUI ecosystem and developer network"
   },
   {
     name: "Aptos", 
     type: "Move L1",
     logo: "🔸",
-    status: "SDK Deployed",
+    status: "Awaiting confirmation",
     impact: "Native Aptos Move support",
     benefit: "Tap into rapidly growing Aptos developer base" 
   },
@@ -31,7 +31,7 @@ const ecosystemPartners = [
     name: "Rooch",
     type: "BTC Layer2", 
     logo: "🔹",
-    status: "Co-building",
+    status: "Awaiting confirmation",
     impact: "Shared infrastructure and tooling",
     benefit: "Combined Bitcoin ecosystem growth and user acquisition"
   },
@@ -39,7 +39,7 @@ const ecosystemPartners = [
     name: "Movement",
     type: "Ethereum Layer2",
     logo: "🔻", 
-    status: "Integration Ready",
+    status: "Awaiting confirmation",
     impact: "Multi-VM support and broader reach",
     benefit: "Access to Ethereum and Solana bridge users"
   }
@@ -74,7 +74,7 @@ export default function EcosystemPartners() {
     <Section
       title="Strategic Ecosystem Positioning"
       subtitle="Building the foundational layer across all major Move chains"
-      label="ECOSYSTEM & PARTNERSHIPS"
+      label="ECOSYSTEM INFORMATION"
       maxWidth="xl"
       paddingY="xl"
       showBackground={true}

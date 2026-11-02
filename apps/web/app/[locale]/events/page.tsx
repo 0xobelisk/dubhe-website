@@ -281,7 +281,7 @@ export default function EventsPage() {
               className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700"
             >
               <Calendar className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">50+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">—</div>
               <div className="text-gray-400">{t('community.stats.eventsThisYear')}</div>
             </motion.div>
 
@@ -293,7 +293,7 @@ export default function EventsPage() {
               className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700"
             >
               <Users className="w-12 h-12 text-purple-400 mx-auto mb-4" />
-              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">10K+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">—</div>
               <div className="text-gray-400">{t('community.stats.attendees')}</div>
             </motion.div>
 
@@ -305,7 +305,7 @@ export default function EventsPage() {
               className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700"
             >
               <Globe className="w-12 h-12 text-green-400 mx-auto mb-4" />
-              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">25+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">—</div>
               <div className="text-gray-400">{t('community.stats.countries')}</div>
             </motion.div>
 
@@ -317,7 +317,7 @@ export default function EventsPage() {
               className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700"
             >
               <Building className="w-12 h-12 text-orange-400 mx-auto mb-4" />
-              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">100+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">—</div>
               <div className="text-gray-400">{t('community.stats.speakers')}</div>
             </motion.div>
           </div>

@@ -39,7 +39,7 @@ export default function AmbassadorLayout({
             "@type": "ProfessionalService",
             "name": "Dubhe Ambassador Program",
             "description": "Community leadership program for Move blockchain ecosystem growth",
-            "url": "https://dubhe.network/ambassador",
+            "url": "https://dubhe.obelisk.build/ambassador",
             "provider": {
               "@type": "Organization",
               "name": "Dubhe Foundation"

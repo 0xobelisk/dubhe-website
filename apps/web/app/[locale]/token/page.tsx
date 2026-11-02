@@ -1,5 +1,8 @@
 "use client"
 
+import { useTranslations } from "next-intl"
+import ContentReviewNotice from "@/components/content-review-notice"
+
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { 
@@ -19,6 +22,7 @@ import {
 } from "lucide-react"
 
 export default function TokenPage() {
+  const review = useTranslations("contentReview")
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -74,24 +78,24 @@ export default function TokenPage() {
   const tokenomics = [
     {
       token: "DUBHE",
-      supply: "1,000,000,000",
+      supply: "—",
       distribution: [
-        { category: "Public Sale", percentage: 15, color: "from-blue-500 to-cyan-500" },
-        { category: "Ecosystem", percentage: 30, color: "from-green-500 to-emerald-500" },
-        { category: "Team", percentage: 20, color: "from-purple-500 to-pink-500" },
-        { category: "Foundation", percentage: 15, color: "from-orange-500 to-red-500" },
-        { category: "Advisors", percentage: 5, color: "from-indigo-500 to-purple-500" },
-        { category: "Liquidity", percentage: 15, color: "from-teal-500 to-blue-500" }
+        { category: "Public Sale", percentage: null, color: "from-blue-500 to-cyan-500" },
+        { category: "Ecosystem", percentage: null, color: "from-green-500 to-emerald-500" },
+        { category: "Team", percentage: null, color: "from-purple-500 to-pink-500" },
+        { category: "Foundation", percentage: null, color: "from-orange-500 to-red-500" },
+        { category: "Advisors", percentage: null, color: "from-indigo-500 to-purple-500" },
+        { category: "Liquidity", percentage: null, color: "from-teal-500 to-blue-500" }
       ]
     },
     {
       token: "STARS",
-      supply: "1T",
+      supply: "—",
       distribution: [
-        { category: "Community Rewards", percentage: 60, color: "from-yellow-500 to-orange-500" },
-        { category: "Developer Incentives", percentage: 25, color: "from-blue-500 to-indigo-500" },
-        { category: "Ecosystem Growth", percentage: 10, color: "from-green-500 to-teal-500" },
-        { category: "Reserve", percentage: 5, color: "from-purple-500 to-pink-500" }
+        { category: "Community Rewards", percentage: null, color: "from-yellow-500 to-orange-500" },
+        { category: "Developer Incentives", percentage: null, color: "from-blue-500 to-indigo-500" },
+        { category: "Ecosystem Growth", percentage: null, color: "from-green-500 to-teal-500" },
+        { category: "Reserve", percentage: null, color: "from-purple-500 to-pink-500" }
       ]
     }
   ]
@@ -150,6 +154,7 @@ export default function TokenPage() {
 
               {/* Main Headline */}
               <div className="space-y-6 max-w-5xl mx-auto">
+                <ContentReviewNotice kind="rules" />
                 <motion.h1 
                   className="text-5xl lg:text-7xl font-bold text-white leading-tight"
                   initial={{ opacity: 0, y: 20 }}
@@ -169,8 +174,8 @@ export default function TokenPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Power the Dubhe ecosystem with two complementary tokens: DUBHE for governance and utility, 
-                  STARS for community participation and reputation. Together, they create a balanced economic model.
+                  Historical token design: DUBHE for governance and utility,
+                  STARS for community participation and reputation. Current availability awaits confirmation.
                 </motion.p>
               </div>
 
@@ -249,7 +254,7 @@ export default function TokenPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              DUBHE powers the entire ecosystem with governance rights, transaction fees, and staking rewards
+              Proposed DUBHE utility — current availability awaits confirmation
             </motion.p>
           </div>
 
@@ -303,7 +308,7 @@ export default function TokenPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Earn STARS through contributions, unlock exclusive benefits, and build your reputation in the ecosystem
+              Proposed STARS utility — current availability awaits confirmation
             </motion.p>
           </div>
 
@@ -348,7 +353,7 @@ export default function TokenPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Transparent and balanced token allocation designed for sustainable ecosystem growth
+              Historical allocation categories — quantities and current validity await confirmation
             </motion.p>
           </div>
 
@@ -374,7 +379,7 @@ export default function TokenPage() {
                         <div className={`w-4 h-4 rounded-full bg-gradient-to-r ${item.color}`}></div>
                         <span className="text-gray-300 text-sm">{item.category}</span>
                       </div>
-                      <span className="text-white font-semibold">{item.percentage}%</span>
+                      <span className="text-white font-semibold">{review("pending")}</span>
                     </div>
                   ))}
                 </div>
@@ -386,7 +391,7 @@ export default function TokenPage() {
                       <div className="flex-1 bg-slate-700 rounded-full h-2">
                         <div 
                           className={`h-2 rounded-full bg-gradient-to-r ${item.color}`}
-                          style={{ width: `${item.percentage}%` }}
+                          style={{ width: `${review("pending")}` }}
                         ></div>
                       </div>
                     </div>
@@ -417,7 +422,7 @@ export default function TokenPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Multiple ways to acquire DUBHE and earn STARS in the ecosystem
+            Historical acquisition descriptions — current availability awaits confirmation
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -433,11 +438,11 @@ export default function TokenPage() {
               <div className="space-y-3 text-left">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0" />
-                  <span className="text-gray-300 text-sm">Trade on DEXs and CEXs</span>
+                  <span className="text-gray-300 text-sm">Exchange availability awaiting confirmation</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0" />
-                  <span className="text-gray-300 text-sm">Provide liquidity for rewards</span>
+                  <span className="text-gray-300 text-sm">Liquidity reward terms awaiting confirmation</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0" />
@@ -445,7 +450,7 @@ export default function TokenPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0" />
-                  <span className="text-gray-300 text-sm">Bridge from other chains</span>
+                  <span className="text-gray-300 text-sm">Bridge availability awaiting confirmation</span>
                 </div>
               </div>
             </motion.div>

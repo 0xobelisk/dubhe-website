@@ -39,7 +39,7 @@ export default function EventsLayout({
             "@type": "EventSeries",
             "name": "Dubhe Community Events",
             "description": "Series of blockchain conferences, meetups, and community events",
-            "url": "https://dubhe.network/events",
+            "url": "https://dubhe.obelisk.build/events",
             "organizer": {
               "@type": "Organization",
               "name": "Dubhe Foundation"

@@ -4,7 +4,7 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Dubhe Foundation - Building the Future of Decentralized Computing',
-  description: 'Learn about Dubhe Foundation, a non-profit organization dedicated to advancing decentralized computing, funding open-source projects, and supporting blockchain innovation.',
+  description: 'Dubhe ecosystem information, open-source development and community programs. Legal status and funding terms await confirmation.',
   keywords: [
     'Dubhe Foundation',
     'blockchain foundation',
@@ -17,22 +17,22 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Dubhe Foundation - Building the Future of Decentralized Computing',
-    description: 'Non-profit organization advancing decentralized computing through research, funding, and ecosystem development.',
+    description: 'Dubhe ecosystem information, open-source development and community programs. Legal status and funding terms await confirmation.',
     url: '/foundation',
     type: 'website',
     images: [
       {
-        url: '/og-foundation.png',
-        width: 1200,
-        height: 630,
+        url: '/mediakit/dubhe/png/a.png',
+        width: 3821,
+        height: 906,
         alt: 'Dubhe Foundation - Decentralized Computing',
       },
     ],
   },
   twitter: {
     title: 'Dubhe Foundation - Building the Future of Decentralized Computing',
-    description: 'Non-profit organization advancing decentralized computing through research, funding, and ecosystem development.',
-    images: ['/og-foundation.png'],
+    description: 'Dubhe ecosystem information, open-source development and community programs. Legal status and funding terms await confirmation.',
+    images: ['/mediakit/dubhe/png/a.png'],
   },
   alternates: {
     canonical: '/foundation',
@@ -53,11 +53,8 @@ export default function FoundationLayout({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Dubhe Foundation",
-            "description": "Non-profit organization dedicated to advancing decentralized computing and blockchain innovation",
-            "url": "https://dubhe.network/foundation",
-            "foundingDate": "2023",
-            "legalName": "Dubhe Foundation",
-            "organizationType": "Non-profit",
+            "description": "Dubhe ecosystem information, open-source development and community programs. Legal status and funding terms await confirmation.",
+            "url": "https://dubhe.obelisk.build/foundation",
             "areaServed": "Worldwide",
             "knowsAbout": [
               "Blockchain technology",
@@ -70,17 +67,17 @@ export default function FoundationLayout({
               {
                 "@type": "Thing",
                 "name": "Grant funding",
-                "description": "Providing grants to open-source blockchain projects"
+                "description": "Dubhe ecosystem information, open-source development and community programs. Legal status and funding terms await confirmation."
               },
               {
                 "@type": "Thing",
                 "name": "Research",
-                "description": "Supporting blockchain and decentralized computing research"
+                "description": "Dubhe ecosystem information, open-source development and community programs. Legal status and funding terms await confirmation."
               },
               {
                 "@type": "Thing",
                 "name": "Ecosystem development",
-                "description": "Building and nurturing the Dubhe ecosystem"
+                "description": "Dubhe ecosystem information, open-source development and community programs. Legal status and funding terms await confirmation."
               }
             ]
           })

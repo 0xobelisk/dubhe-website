@@ -4,7 +4,7 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Dubhe Engine - High-Performance Move Virtual Machine',
-  description: 'Experience lightning-fast smart contract execution with Dubhe Engine. Built on Move VM with advanced optimization, parallel processing, and developer-friendly tools.',
+  description: 'Dubhe Engine provides schema-based Move development tooling, code generation and application libraries.',
   keywords: [
     'Dubhe Engine',
     'Move virtual machine',
@@ -17,22 +17,22 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Dubhe Engine - High-Performance Move Virtual Machine',
-    description: 'Lightning-fast smart contract execution with advanced optimization and parallel processing capabilities.',
+    description: 'Dubhe Engine provides schema-based Move development tooling, code generation and application libraries.',
     url: '/engine',
     type: 'website',
     images: [
       {
-        url: '/og-engine.png',
-        width: 1200,
-        height: 630,
+        url: '/mediakit/dubhe/png/a.png',
+        width: 3821,
+        height: 906,
         alt: 'Dubhe Engine - Move Virtual Machine',
       },
     ],
   },
   twitter: {
     title: 'Dubhe Engine - High-Performance Move Virtual Machine',
-    description: 'Lightning-fast smart contract execution with advanced optimization and parallel processing capabilities.',
-    images: ['/og-engine.png'],
+    description: 'Dubhe Engine provides schema-based Move development tooling, code generation and application libraries.',
+    images: ['/mediakit/dubhe/png/a.png'],
   },
   alternates: {
     canonical: '/engine',
@@ -53,19 +53,13 @@ export default function EngineLayout({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             "name": "Dubhe Engine",
-            "description": "High-performance Move virtual machine for smart contract execution",
-            "url": "https://dubhe.network/engine",
+            "description": "Dubhe Engine provides schema-based Move development tooling, code generation and application libraries.",
+            "url": "https://dubhe.obelisk.build/engine",
             "applicationCategory": "Blockchain Infrastructure",
             "operatingSystem": "Cross-platform",
             "provider": {
               "@type": "Organization",
               "name": "Dubhe Foundation"
-            },
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock"
             },
             "featureList": [
               "Move VM execution",

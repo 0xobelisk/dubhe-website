@@ -4,7 +4,7 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Foundation Grants - Open Source Funding Program',
-  description: 'Apply for non-repayable grants from Dubhe Foundation. Fund your open-source Move projects with up to $100K. All projects must complete milestones and use MIT/Apache licenses.',
+  description: 'Dubhe ecosystem grant information. Historical terms and funding availability await confirmation; contact the team for current details.',
   keywords: [
     'Dubhe Foundation grants',
     'open source funding',
@@ -17,22 +17,22 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Dubhe Foundation Grants - Open Source Funding',
-    description: 'Get non-repayable grants up to $100K for open-source Move projects. Complete milestones and contribute to the Dubhe ecosystem.',
+    description: 'Dubhe ecosystem grant information. Historical terms and funding availability await confirmation; contact the team for current details.',
     url: '/grants',
     type: 'website',
     images: [
       {
-        url: '/og-grants.png',
-        width: 1200,
-        height: 630,
+        url: '/mediakit/dubhe/png/a.png',
+        width: 3821,
+        height: 906,
         alt: 'Dubhe Foundation Grants Program',
       },
     ],
   },
   twitter: {
     title: 'Dubhe Foundation Grants - Open Source Funding',
-    description: 'Get non-repayable grants up to $100K for open-source Move projects. Complete milestones and contribute to the Dubhe ecosystem.',
-    images: ['/og-grants.png'],
+    description: 'Dubhe ecosystem grant information. Historical terms and funding availability await confirmation; contact the team for current details.',
+    images: ['/mediakit/dubhe/png/a.png'],
   },
   alternates: {
     canonical: '/grants',
@@ -53,22 +53,12 @@ export default function GrantsLayout({
             "@context": "https://schema.org",
             "@type": "FinancialProduct",
             "name": "Dubhe Foundation Grants",
-            "description": "Non-repayable grants for open-source Move blockchain projects",
+            "description": "Dubhe ecosystem grant information. Historical terms and funding availability await confirmation; contact the team for current details.",
             "provider": {
               "@type": "Organization",
               "name": "Dubhe Foundation",
-              "url": "https://dubhe.network"
+              "url": "https://dubhe.obelisk.build"
             },
-            "offers": {
-              "@type": "Offer",
-              "name": "Foundation Grant",
-              "description": "Up to $100K non-repayable grant for open-source projects",
-              "eligibilityRequirement": [
-                "Open source commitment (MIT/Apache 2.0 license)",
-                "Detailed milestone-based development plan",
-                "Fully functional deliverables"
-              ]
-            }
           })
         }}
       />

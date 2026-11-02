@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-privacy.png',
-        width: 1200,
-        height: 630,
+        url: '/mediakit/dubhe/png/a.png',
+        width: 3821,
+        height: 906,
         alt: 'Dubhe Privacy Policy',
       },
     ],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Dubhe Privacy Policy - Data Protection & Security',
     description: 'Transparent data practices and comprehensive privacy protection for the Dubhe ecosystem.',
-    images: ['/og-privacy.png'],
+    images: ['/mediakit/dubhe/png/a.png'],
   },
   alternates: {
     canonical: '/privacy',
@@ -54,11 +54,11 @@ export default function PrivacyLayout({
             "@type": "WebPage",
             "name": "Privacy Policy",
             "description": "Dubhe Foundation privacy policy and data protection practices",
-            "url": "https://dubhe.network/privacy",
+            "url": "https://dubhe.obelisk.build/privacy",
             "isPartOf": {
               "@type": "WebSite",
               "name": "Dubhe",
-              "url": "https://dubhe.network"
+              "url": "https://dubhe.obelisk.build"
             },
             "about": {
               "@type": "Thing",

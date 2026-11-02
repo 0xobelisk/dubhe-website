@@ -39,7 +39,7 @@ export default function InvestorLayout({
             "@type": "Organization",
             "name": "Dubhe Investor Relations",
             "description": "Investment and partnership opportunities in the Dubhe ecosystem",
-            "url": "https://dubhe.network/investor",
+            "url": "https://dubhe.obelisk.build/investor",
             "parentOrganization": {
               "@type": "Organization",
               "name": "Dubhe Foundation"
