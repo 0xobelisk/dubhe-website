@@ -139,9 +139,9 @@
           "name": "Numeron",
           "description": "",
           "players": "",
-          "status": "Ana shirya gwajin wasa na waje",
+          "status": "An gayyaci 'yan wasa na waje don gwajin wasa",
           "development": "An fara haɓakawa a Mayu 2026.",
-          "validation": "Ba a ƙaddamar da wasan ko fara gwajin waje ba; an gwada hanyoyin wasa da caji ne a ciki kawai.",
+          "validation": "An gayyaci 'yan wasa na waje don gwajin wasa. An gwada hanyoyin wasa da caji a ciki; gwajin caji na ciki ba kuɗin shiga ba ne.",
           "history": "IP na Numeron kawai yake rabawa da wani wasan hackathon na 2025 daban."
         },
         "cyferio": {
@@ -956,12 +956,12 @@
       "numeron": {
         "name": "Numeron",
         "focus": "Wasanni",
-        "description": "Ba a ƙaddamar da wasan ko fara gwajin waje ba; an gwada hanyoyin wasa da caji ne a ciki kawai.",
+        "description": "An gayyaci 'yan wasa na waje don gwajin wasa. An gwada hanyoyin wasa da caji a ciki; gwajin caji na ciki ba kuɗin shiga ba ne.",
         "contributions": [
           "An fara haɓakawa a Mayu 2026.",
           "IP na Numeron kawai yake rabawa da wani wasan hackathon na 2025 daban."
         ],
-        "status": "Ana shirya gwajin wasa na waje",
+        "status": "An gayyaci 'yan wasa na waje don gwajin wasa",
         "team": ""
       }
     },

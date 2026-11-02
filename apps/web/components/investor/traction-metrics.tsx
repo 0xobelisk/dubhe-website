@@ -71,7 +71,7 @@ const validationMetrics = [
     icon: <CheckCircle className="w-6 h-6" />,
     title: "Ecosystem Projects",
     value: "—",
-    description: "Numeron is in development and has not launched or started external playtesting",
+    description: "External players have been invited to playtest Numeron",
     trend: ""
   },
   {

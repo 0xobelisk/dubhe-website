@@ -139,9 +139,9 @@
           "name": "Numeron",
           "description": "",
           "players": "",
-          "status": "準備外部測試",
+          "status": "已邀請外部玩家參加測試",
           "development": "2026 年 5 月開始開發。",
-          "validation": "尚未上線、尚未開始外部測試；目前僅完成遊戲及內部充值流程測試。",
+          "validation": "已邀請外部玩家參加測試；已完成遊戲及內部充值流程測試，內部充值測試不代表收入。",
           "history": "與 2025 年的黑客松作品是不同遊戲，僅沿用 Numeron IP。"
         },
         "cyferio": {
@@ -797,12 +797,12 @@
       "numeron": {
         "name": "Numeron",
         "focus": "遊戲",
-        "description": "尚未上線、尚未開始外部測試；目前僅完成遊戲及內部充值流程測試。",
+        "description": "已邀請外部玩家參加測試；已完成遊戲及內部充值流程測試，內部充值測試不代表收入。",
         "contributions": [
           "2026 年 5 月開始開發。",
           "與 2025 年的黑客松作品是不同遊戲，僅沿用 Numeron IP。"
         ],
-        "status": "準備外部測試",
+        "status": "已邀請外部玩家參加測試",
         "team": ""
       }
     },

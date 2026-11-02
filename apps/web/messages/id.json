@@ -139,9 +139,9 @@
           "name": "Numeron",
           "description": "",
           "players": "",
-          "status": "Uji coba eksternal sedang disiapkan",
+          "status": "Pemain eksternal diundang untuk uji coba",
           "development": "Pengembangan dimulai pada Mei 2026.",
-          "validation": "Game ini belum diluncurkan atau diuji secara eksternal; baru alur permainan dan isi ulang internal yang diuji.",
+          "validation": "Pemain eksternal telah diundang untuk uji coba. Alur permainan dan isi ulang internal telah diuji; uji isi ulang internal bukan pendapatan.",
           "history": "Game ini hanya berbagi IP Numeron dengan game hackathon berbeda dari tahun 2025."
         },
         "cyferio": {
@@ -979,12 +979,12 @@
       "numeron": {
         "name": "Numeron",
         "focus": "Gaming",
-        "description": "Game ini belum diluncurkan atau diuji secara eksternal; baru alur permainan dan isi ulang internal yang diuji.",
+        "description": "Pemain eksternal telah diundang untuk uji coba. Alur permainan dan isi ulang internal telah diuji; uji isi ulang internal bukan pendapatan.",
         "contributions": [
           "Pengembangan dimulai pada Mei 2026.",
           "Game ini hanya berbagi IP Numeron dengan game hackathon berbeda dari tahun 2025."
         ],
-        "status": "Uji coba eksternal sedang disiapkan",
+        "status": "Pemain eksternal diundang untuk uji coba",
         "team": ""
       }
     },
