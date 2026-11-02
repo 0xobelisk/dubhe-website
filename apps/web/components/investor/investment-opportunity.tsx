@@ -14,23 +14,23 @@ import GradientText from "../ui/GradientText"
 const investmentDetails = {
   round: {
     type: "Strategic Seed Round",
-    amount: "$3M",
-    structure: "10% Equity + 6% Token Allocation",
+    amount: "Awaiting confirmation",
+    structure: "Awaiting confirmation",
     use: "Development / Operations / Ecosystem Expansion"
   },
   
   highlights: [
     {
       icon: <TrendingUp className="w-6 h-6" />,
-      title: "Proven Traction",
-      value: "$500K+ Revenue",
-      description: "Commercial validation with paying customers"
+      title: "Metrics Review",
+      value: "—",
+      description: "Revenue and customer claims await verification"
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "Technical Moat", 
       value: "First-Mover",
-      description: "Only comprehensive Move development stack"
+      description: "Move development toolkit"
     },
     {
       icon: <Calendar className="w-6 h-6" />,
@@ -41,8 +41,8 @@ const investmentDetails = {
     {
       icon: <DollarSign className="w-6 h-6" />,
       title: "Strong Team",
-      value: "5+ Years",
-      description: "Proven Web3 execution track record"
+      value: "—",
+      description: "Team credentials await confirmation"
     }
   ]
 }
@@ -59,7 +59,7 @@ const roadmapMilestones = [
       "Major Partnership Announcements", 
       "Community Growth Programs"
     ],
-    status: "In Progress"
+    status: "Historical plan — awaiting confirmation"
   },
   {
     period: "2025 Q1", 
@@ -69,7 +69,7 @@ const roadmapMilestones = [
       "Advanced Developer Tools",
       "Community-Driven Projects"
     ],
-    status: "Planned"
+    status: "Historical plan — awaiting confirmation"
   },
   {
     period: "2025 Q2",
@@ -79,7 +79,7 @@ const roadmapMilestones = [
       "Major dApp Partnerships",
       "Cross-Chain Integration"
     ],
-    status: "Planned"
+    status: "Historical plan — awaiting confirmation"
   },
   {
     period: "2025 Q3",
@@ -89,7 +89,7 @@ const roadmapMilestones = [
       "Revenue Scaling Programs", 
       "International Expansion"
     ],
-    status: "Planned"
+    status: "Historical plan — awaiting confirmation"
   }
 ]
 

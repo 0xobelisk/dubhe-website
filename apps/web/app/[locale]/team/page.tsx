@@ -1,5 +1,7 @@
 "use client"
 
+import ContentReviewNotice from "@/components/content-review-notice"
+
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { 
@@ -19,6 +21,7 @@ type Params = {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function TeamPage({params: _params}: {params: Promise<Params>}) {
   const t = useTranslations('team')
+  const review = useTranslations("contentReview")
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -34,9 +37,9 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       expertise: t.raw('members.jason.expertise') as string[],
       avatar: "/team/alex-chen.jpg",
       social: {
-        linkedin: "https://linkedin.com/in/alexchen",
-        twitter: "https://twitter.com/alexchen",
-        github: "https://github.com/alexchen"
+        linkedin: "",
+        twitter: "",
+        github: ""
       }
     },
     {
@@ -47,9 +50,9 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       expertise: t.raw('members.joan.expertise') as string[],
       avatar: "/team/sarah-johnson.jpg",
       social: {
-        linkedin: "https://linkedin.com/in/sarahjohnson",
-        github: "https://github.com/sarahjohnson",
-        twitter: "https://twitter.com/sarahjohnson"
+        linkedin: "",
+        github: "",
+        twitter: ""
       }
     },
     {
@@ -60,8 +63,8 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       expertise: t.raw('members.david.expertise') as string[],
       avatar: "/team/david-kim.jpg", 
       social: {
-        github: "https://github.com/davidkim",
-        linkedin: "https://linkedin.com/in/davidkim"
+        github: "",
+        linkedin: ""
       }
     },
     {
@@ -72,8 +75,8 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       expertise: t.raw('members.bonnie.expertise') as string[],
       avatar: "/team/maria-rodriguez.jpg",
       social: {
-        twitter: "https://twitter.com/mariarodriguez",
-        linkedin: "https://linkedin.com/in/mariarodriguez"
+        twitter: "",
+        linkedin: ""
       }
     },
     {
@@ -84,8 +87,8 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       expertise: t.raw('members.liam.expertise') as string[],
       avatar: "/team/robert-thompson.jpg",
       social: {
-        linkedin: "https://linkedin.com/in/robertthompson",
-        twitter: "https://twitter.com/robertthompson"
+        linkedin: "",
+        twitter: ""
       }
     },
     {
@@ -96,8 +99,8 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
       expertise: t.raw('members.emily.expertise') as string[],
       avatar: "/team/lisa-wang.jpg",
       social: {
-        linkedin: "https://linkedin.com/in/lisawang",
-        github: "https://github.com/lisawang"
+        linkedin: "",
+        github: ""
       }
     }
   ]
@@ -169,6 +172,7 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
         <div className="relative z-10 min-h-screen flex items-center">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
             <div className="text-center">
+              <ContentReviewNotice kind="people" />
               
               {/* Badge */}
               <motion.div
@@ -214,15 +218,15 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">20+</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.stats.members')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">10+</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.stats.countries')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-pink-400 mb-2">5+</div>
+                  <div className="text-3xl font-bold text-pink-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.stats.timezones')}</div>
                 </div>
               </motion.div>
@@ -376,7 +380,7 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
                 <p className="text-gray-300 mb-4">{dept.description}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-gray-400 text-sm">{t('join.openPositions')}</span>
-                  <span className="text-blue-400 font-semibold">{dept.openRoles}</span>
+                  <span className="text-blue-400 font-semibold">{review("pending")}</span>
                 </div>
               </motion.div>
             ))}

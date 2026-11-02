@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-terms.png',
-        width: 1200,
-        height: 630,
+        url: '/mediakit/dubhe/png/a.png',
+        width: 3821,
+        height: 906,
         alt: 'Dubhe Terms of Service',
       },
     ],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Dubhe Terms of Service - Legal Terms & Conditions',
     description: 'Legal terms and conditions governing the use of Dubhe blockchain platform and services.',
-    images: ['/og-terms.png'],
+    images: ['/mediakit/dubhe/png/a.png'],
   },
   alternates: {
     canonical: '/terms',
@@ -54,11 +54,11 @@ export default function TermsLayout({
             "@type": "WebPage",
             "name": "Terms of Service",
             "description": "Dubhe Foundation terms of service and legal agreements",
-            "url": "https://dubhe.network/terms",
+            "url": "https://dubhe.obelisk.build/terms",
             "isPartOf": {
               "@type": "WebSite",
               "name": "Dubhe",
-              "url": "https://dubhe.network"
+              "url": "https://dubhe.obelisk.build"
             },
             "about": {
               "@type": "Thing",

@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-os.png',
-        width: 1200,
-        height: 630,
+        url: '/mediakit/dubhe/png/a.png',
+        width: 3821,
+        height: 906,
         alt: 'DubheOS - Decentralized Operating System',
       },
     ],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'DubheOS - Decentralized Operating System',
     description: 'The first blockchain-native OS with decentralized governance, native DeFi integration, and seamless Web3 experience.',
-    images: ['/og-os.png'],
+    images: ['/mediakit/dubhe/png/a.png'],
   },
   alternates: {
     canonical: '/os',
@@ -54,18 +54,12 @@ export default function OSLayout({
             "@type": "SoftwareApplication",
             "name": "DubheOS",
             "description": "Decentralized operating system built for Web3 with blockchain-native features",
-            "url": "https://dubhe.network/os",
+            "url": "https://dubhe.obelisk.build/os",
             "applicationCategory": "Operating System",
             "operatingSystem": "DubheOS",
             "provider": {
               "@type": "Organization",
               "name": "Dubhe Foundation"
-            },
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock"
             },
             "featureList": [
               "Decentralized governance",

@@ -1,5 +1,7 @@
 "use client"
 
+import ContentReviewNotice from "@/components/content-review-notice"
+
 import { useState, useRef, useEffect } from "react"
 import { ExternalLink, Coins, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@workspace/ui/components/button"
@@ -37,10 +39,10 @@ interface TimelineItem {
  * @returns FoundationPage组件JSX元素
  */
 export default function FoundationPage() {
-  const claimableAmount = "960"
-  const totalRewards = "60,000"
-  const claimedRewards = "0"
-  const endTime = "2025/10/15 19:00 GMT+08:00"
+  const claimableAmount = "—"
+  const totalRewards = "—"
+  const claimedRewards = "—"
+  const endTime = "—"
   
   const scrollRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
@@ -53,7 +55,7 @@ export default function FoundationPage() {
     const status: TimelineStatus = i === 0 ? "completed" : i <= 3 ? "ongoing" : "pending";
     return {
       date: dateStr,
-      amount: "960 DUBHE",
+      amount: "—",
       status
     }
   })
@@ -123,7 +125,8 @@ export default function FoundationPage() {
           >
             Foundation Portal
           </GradientText>
-          <p className="text-xl text-gray-300 mb-2">Daily unlock over 60 days</p>
+          <ContentReviewNotice kind="demo" />
+          <ContentReviewNotice kind="rules" />
         </div>
 
         {/* Main Card */}
@@ -173,7 +176,7 @@ export default function FoundationPage() {
               </div>
               <div>
                 <p className="text-gray-400 text-sm mb-1">Total Claimable</p>
-                <p className="text-xl font-semibold text-blue-400">14,400 DUBHE</p>
+                <p className="text-xl font-semibold text-blue-400">—</p>
                 <Button 
                   variant="link" 
                   size="sm" 
@@ -194,10 +197,10 @@ export default function FoundationPage() {
 
             {/* Daily Claim Section */}
             <div className="text-center mb-8">
-              <p className="text-gray-400 text-sm mb-2">2025/07/18 21:00 - 2025/10/15 19:00 GMT+08:00</p>
+              <p className="text-gray-400 text-sm mb-2">Example schedule — current rules awaiting confirmation</p>
               <p className="text-6xl font-bold mb-4">{claimableAmount} DUBHE</p>
               <p className="text-gray-400 mb-6 flex items-center justify-center flex-wrap gap-2">
-                <span>Your reward will be delivered to your primary Sui address after claiming:</span>
+                <span>Example destination address (not a confirmed payout):</span>
                 <CopyableAddress 
                   fullAddress="0x7219ABCD1234567890EFGH1234567890IJKL6597"
                   displayAddress="0x7219...6597"

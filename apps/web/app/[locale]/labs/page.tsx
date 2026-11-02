@@ -89,7 +89,7 @@ export default function LabsPage() {
       logo: "🎮",
       focus: t('labsList.numeron.focus'),
       description: t('labsList.numeron.description'),
-      website: "https://numeronos.com",
+      website: "https://numeron.obelisk.build",
       contributions: t.raw('labsList.numeron.contributions') as string[],
       status: t('labsList.numeron.status'),
       team: t('labsList.numeron.team')
@@ -249,11 +249,11 @@ export default function LabsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-cyan-400 mb-2">4</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.stats.activeLabs')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.stats.coreEngineers')}</div>
                 </div>
                 <div className="text-center">

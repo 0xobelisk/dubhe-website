@@ -28,31 +28,31 @@
     "hero": {
       "title1": "We make the Dubhe.",
       "title2": "You make it Move.",
-      "subtitle": "A open-source Move application stack that provides a comprehensive toolkit for building verifiable decentralized applications (DApps) and fully on-chain applications.",
+      "subtitle": "An open-source Move application stack that provides a comprehensive toolkit for building verifiable decentralized applications (DApps) and fully on-chain applications.",
       "cta1": "Get Dubhe Stack",
       "cta2": "Learn about licensing"
     },
     "features": {
       "title": "Features",
-      "mainTitle": "The Move Stack with Limitless Potential",
+      "mainTitle": "The Complete Move Development Stack",
       "moveCompatible": {
-        "title": "100% Move-Compatible",
+        "title": "Move-Compatible",
         "description": "Use the existing Move ecosystem to your advantage."
       },
       "zeroGas": {
-        "title": "zero gas fees",
-        "description": "Allows project cover this expense, supporting flexible expansion and customisation."
+        "title": "Optional gas sponsorship",
+        "description": "Gas costs depend on the chain and transaction. Applications may sponsor eligible fees; universal zero fees are not guaranteed."
       },
       "realTime": {
         "title": "Real-time synchronization"
       },
       "unlimited": {
-        "title": "Unlimited",
-        "subtitle": "Transactions per second",
-        "description": "Depends on the number of dubhe channels running in parallel."
+        "title": "Capacity",
+        "subtitle": "Configuration dependent",
+        "description": "Throughput varies with configuration and workload. A verified public benchmark is not yet available."
       },
       "syncFinality": {
-        "title": "1s Sync State finality"
+        "title": "Dubhe Channel"
       }
     },
     "community": {
@@ -88,17 +88,17 @@
       },
       "stats": {
         "members": {
-          "value": "100K+",
+          "value": "",
           "label": "Community Members",
           "description": "Active developers and enthusiasts worldwide"
         },
         "events": {
-          "value": "50+",
+          "value": "",
           "label": "Global Events",
           "description": "Conferences, meetups, and workshops annually"
         },
         "countries": {
-          "value": "20+",
+          "value": "",
           "label": "Countries",
           "description": "Dubhe community presence across continents"
         }
@@ -133,22 +133,26 @@
         "merak": {
           "name": "Merak",
           "description": "Automated Market Maker",
-          "tvl": "$45M"
+          "tvl": ""
         },
         "numeron": {
           "name": "Numeron",
-          "description": "Fantasy AI RPG Adventure",
-          "players": "12K+"
+          "description": "",
+          "players": "",
+          "status": "Playtesting coming soon",
+          "development": "Development began in May 2026.",
+          "validation": "The game has not launched or started external testing; only internal game and recharge flows have been tested.",
+          "history": "It shares only the Numeron IP with a different 2025 hackathon game."
         },
         "cyferio": {
           "name": "Cyferio SDK",
           "description": "Development Kit",
-          "downloads": "50K+"
+          "downloads": ""
         },
         "objectsdao": {
           "name": "Objectsdao",
           "description": "NFT Auction",
-          "volume": "$2.3M"
+          "volume": ""
         }
       },
       "metrics": {
@@ -174,11 +178,11 @@
         },
         "codeGeneration": {
           "title": "Code Generation",
-          "description": "Dubhe Engine automatically generates 80% of your Move smart contracts, client libraries, and API interfaces from your schema definitions."
+          "description": "Define your game or dApp logic using Dubhe's intuitive schema system. Describe entities, components, and systems in simple configuration files."
         },
         "deploymentChannel": {
           "title": "Deployment & Channel",
-          "description": "Deploy to multiple Move chains with one command. Dubhe Channel provides real-time synchronization and <50ms latency for seamless user experience."
+          "description": "Real-time programmable P2P interaction layer that makes blockchain feel like Web2"
         },
         "multiChainExecution": {
           "title": "Multi-Chain Execution",
@@ -203,13 +207,13 @@
       "features": {
         "codeGeneration": {
           "title": "Code Generation",
-          "dubhe": "80% automated",
+          "dubhe": "",
           "others": "Manual coding"
         },
         "uxPerformance": {
           "title": "UX Performance",
-          "dubhe": "<50ms",
-          "others": "3-15 seconds"
+          "dubhe": "",
+          "others": ""
         },
         "multiChainSupport": {
           "title": "Multi-Chain Support",
@@ -235,14 +239,13 @@
       "products": {
         "engine": {
           "title": "Dubhe Engine",
-          "subtitle": "80% Code Auto-Generation",
-          "description": "The only development toolkit that auto-generates 80% of Move code, letting developers focus on core business logic",
+          "subtitle": "Schema Definition",
+          "description": "Define your game or dApp logic using Dubhe's intuitive schema system. Describe entities, components, and systems in simple configuration files.",
           "features": [
             "Reduce dev time from months to weeks",
-            "90% lower infrastructure costs",
             "One command deploys to all Move chains"
           ],
-          "highlight": "10x Faster Development"
+          "highlight": "Code Generation"
         },
         "channel": {
           "title": "Dubhe Channel",
@@ -253,7 +256,7 @@
             "Ultra-fast execution speed",
             "Supports multi-client mobile, desktop, and web"
           ],
-          "highlight": "<50ms Latency"
+          "highlight": "Dubhe Channel"
         },
         "os": {
           "title": "Dubhe OS",
@@ -274,16 +277,11 @@
       "description": "From development tools to real-time interaction channels and decentralized infrastructure - Dubhe provides everything needed to build the next generation of fully on-chain applications.",
       "keyMetricsTitle": "Key Metrics",
       "keyMetrics": [
-        "10M+ transactions processed",
-        "<200ms average latency",
         "Web2-level user experience",
         "Compatible with Sui, Aptos, Rooch, Movement, Initia"
       ],
       "moveEcosystemTitle": "Move Ecosystem",
       "moveEcosystemFeatures": [
-        "1,555 active Move developers",
-        "Growing 40% monthly",
-        "Less than 3 years old",
         "Huge growth potential"
       ],
       "pipelining": "Pipelining",
@@ -302,7 +300,7 @@
         "dubheEngine": {
           "title": "Dubhe Engine",
           "subtitle": "Development Toolkit",
-          "description": "Auto-generates 80% of code and provides complete developer toolchain",
+          "description": "Define your game or dApp logic using Dubhe's intuitive schema system. Describe entities, components, and systems in simple configuration files.",
           "features": [
             "Code Generation",
             "Schema-Based Development",
@@ -315,7 +313,6 @@
           "subtitle": "Real-time Layer",
           "description": "P2P interaction layer for Web2-level real-time user experience",
           "features": [
-            "<50ms Latency",
             "Real-time Sync",
             "P2P Communication",
             "Mobile Support"
@@ -358,22 +355,22 @@
     },
     "networkStats": {
       "title": "Network Statistics",
-      "description": "Real-time metrics showcasing the growth and activity across the Dubhe ecosystem.",
+      "description": "Figures withheld pending verifiable sources.",
       "transactions": {
         "label": "Transactions Processed",
-        "change": "+12.5%"
+        "change": ""
       },
       "operations": {
         "label": "Operations Executed",
-        "change": "+18.2%"
+        "change": ""
       },
       "users": {
         "label": "Active Users",
-        "change": "+25.1%"
+        "change": ""
       },
       "income": {
         "label": "Protocol Revenue",
-        "change": "+15.8%"
+        "change": ""
       }
     }
   },
@@ -416,7 +413,7 @@
     }
   },
   "footer": {
-    "description": "The complete Move development platform with 80% code auto-generation, real-time P2P channels, and cross-chain interoperability.",
+    "description": "Obelisk Labs develops infrastructure including Dubhe. Dubhe Wallet supports wallet and identity workflows. Numeron is a separate game in development.",
     "sections": {
       "learn": "Learn",
       "build": "Build",
@@ -465,69 +462,45 @@
     "members": {
       "jason": {
         "name": "Jason",
-        "role": "Foundation Lead",
-        "location": "San Francisco, CA",
-        "bio": "Visionary leader with 15+ years in blockchain technology. Previously led engineering teams at major tech companies before founding Dubhe to revolutionize Move development.",
-        "expertise": [
-          "Blockchain Architecture",
-          "Team Leadership",
-          "Product Strategy"
-        ]
+        "role": "Awaiting confirmation",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "joan": {
         "name": "Joan",
-        "role": "CTO & Co-founder",
-        "location": "New York, NY",
-        "bio": "Former Move core developer with deep expertise in smart contract architecture. Leads our technical vision and oversees all engineering initiatives.",
-        "expertise": [
-          "Move Language",
-          "Smart Contracts",
-          "System Architecture"
-        ]
+        "role": "Awaiting confirmation",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "david": {
         "name": "David",
-        "role": "Head of Engineering",
-        "location": "Seoul, South Korea",
-        "bio": "Full-stack engineer passionate about developer tools and ecosystem growth. Leads our engine development team and drives technical innovation.",
-        "expertise": [
-          "Full-stack Development",
-          "Developer Tools",
-          "Open Source"
-        ]
+        "role": "Awaiting confirmation",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "bonnie": {
         "name": "Bonnie",
-        "role": "Head of Community",
-        "location": "Barcelona, Spain",
-        "bio": "Community builder with extensive experience growing developer ecosystems. Manages our global community initiatives and ambassador program.",
-        "expertise": [
-          "Community Building",
-          "Developer Relations",
-          "Event Management"
-        ]
+        "role": "Awaiting confirmation",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "liam": {
         "name": "Liam McKenzie",
-        "role": "Head of Partnerships",
-        "location": "London, UK",
-        "bio": "Business development expert focused on strategic partnerships and ecosystem growth. Previously led partnerships at major blockchain companies.",
-        "expertise": [
-          "Strategic Partnerships",
-          "Business Development",
-          "Ecosystem Growth"
-        ]
+        "role": "Awaiting confirmation",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "emily": {
         "name": "Emily Smith",
-        "role": "Research Director",
-        "location": "Beijing, China",
-        "bio": "PhD in Computer Science specializing in distributed systems. Leads our research initiatives and explores cutting-edge blockchain technologies.",
-        "expertise": [
-          "Distributed Systems",
-          "Research",
-          "Academic Partnerships"
-        ]
+        "role": "Awaiting confirmation",
+        "location": "",
+        "bio": "",
+        "expertise": []
       }
     },
     "join": {
@@ -560,7 +533,7 @@
     "hero": {
       "badge": "Dubhe Foundation Grants",
       "title": "Fund Your Innovation",
-      "description": "Receive non-repayable grants from Dubhe Foundation to build open-source Move applications, infrastructure, and tools. All projects must be fully functional and complete all milestones.",
+      "description": "Historical page rules; current validity awaits confirmation. These are not confirmed funding offers or payment records.",
       "stats": {
         "totalFunded": "Total Funded",
         "projectsFunded": "Projects Funded",
@@ -575,22 +548,22 @@
       "badge": "Grant Categories",
       "infrastructure": {
         "title": "Infrastructure Grants",
-        "amount": "Up to $100K",
+        "amount": "Awaiting confirmation",
         "description": "Build core infrastructure, developer tools, and ecosystem utilities"
       },
       "dapp": {
         "title": "DApp Development",
-        "amount": "Up to $75K",
+        "amount": "Awaiting confirmation",
         "description": "Create innovative decentralized applications on Dubhe ecosystem"
       },
       "research": {
         "title": "Research Grants",
-        "amount": "Up to $50K",
+        "amount": "Awaiting confirmation",
         "description": "Academic research, protocol improvements, and theoretical contributions"
       },
       "community": {
         "title": "Community Projects",
-        "amount": "Up to $25K",
+        "amount": "Awaiting confirmation",
         "description": "Education, documentation, community tools, and outreach programs"
       }
     },
@@ -601,27 +574,27 @@
         "proposal": {
           "title": "Proposal Submission",
           "description": "Submit comprehensive proposal with detailed milestones and open-source commitment",
-          "duration": "1 week"
+          "duration": "Awaiting confirmation"
         },
         "review": {
           "title": "Foundation Review",
           "description": "Dubhe Foundation technical committee evaluates feasibility and ecosystem impact",
-          "duration": "2-3 weeks"
+          "duration": "Awaiting confirmation"
         },
         "interview": {
           "title": "Team Interview",
           "description": "Present your project roadmap and demonstrate technical capabilities",
-          "duration": "1 week"
+          "duration": "Awaiting confirmation"
         },
         "approval": {
           "title": "Grant Approval",
           "description": "Foundation board approves non-repayable grant with milestone requirements",
-          "duration": "1 week"
+          "duration": "Awaiting confirmation"
         },
         "delivery": {
           "title": "Milestone Delivery",
           "description": "Complete all milestones with functional deliverables and receive full grant",
-          "duration": "3-12 months"
+          "duration": "Awaiting confirmation"
         }
       },
       "requirements": {
@@ -637,8 +610,8 @@
       }
     },
     "successStories": {
-      "title": "Success Stories",
-      "description": "Projects that received grants and made significant impact"
+      "title": "Ecosystem",
+      "description": "Figures withheld pending verifiable sources."
     },
     "terms": {
       "title": "Grant Terms & Conditions",
@@ -729,7 +702,7 @@
     "hero": {
       "badge": "Dubhe Foundation Incubation",
       "title": "Build the Next Unicorn Startup",
-      "subtitle": "Join our collaborative incubation ecosystem supported by Dubhe Foundation, co-incubated with Obelisk Labs and ecosystem VCs to build the next generation of Move startups.",
+      "subtitle": "Historical page rules; current validity awaits confirmation. These are not confirmed funding offers or payment records.",
       "stats": {
         "funding": {
           "value": "Coming Soon",
@@ -756,65 +729,56 @@
     "programs": {
       "accelerator": {
         "title": "Foundation Accelerator",
-        "duration": "3 months",
-        "funding": "Up to $500K",
-        "description": "Dubhe Foundation-backed intensive program co-incubated with Obelisk Labs and ecosystem VCs",
+        "duration": "Awaiting confirmation",
+        "funding": "Awaiting confirmation",
+        "description": "Historical page rules; current validity awaits confirmation. These are not confirmed funding offers or payment records.",
         "benefits": [
-          "Dubhe Foundation funding",
-          "Obelisk Labs co-incubation",
-          "Move development support",
-          "Ecosystem VC partnerships"
+          "Move development support"
         ]
       },
       "studio": {
         "title": "Collaborative Studio",
-        "duration": "6-12 months",
-        "funding": "Up to $1M",
-        "description": "Co-incubated by Dubhe Foundation, Obelisk Labs, and ecosystem VCs with shared resources",
+        "duration": "Awaiting confirmation",
+        "funding": "Awaiting confirmation",
+        "description": "Historical page rules; current validity awaits confirmation. These are not confirmed funding offers or payment records.",
         "benefits": [
-          "Multi-partner co-incubation",
-          "Shared technical resources",
-          "Cross-project collaboration",
-          "Ecosystem VC networks"
+          "Cross-project collaboration"
         ]
       },
       "scale": {
         "title": "Ecosystem Scale",
-        "duration": "6 months",
-        "funding": "Up to $2M",
-        "description": "Scale with comprehensive support from Dubhe Foundation, Obelisk Labs, and ecosystem VC partners",
+        "duration": "Awaiting confirmation",
+        "funding": "Awaiting confirmation",
+        "description": "Historical page rules; current validity awaits confirmation. These are not confirmed funding offers or payment records.",
         "benefits": [
-          "Co-incubation network",
-          "Strategic introductions",
-          "Global market access",
-          "Enterprise VC connections"
+          "Global market access"
         ]
       }
     },
     "resources": {
       "coIncubation": {
         "title": "Multi-Partner Co-Incubation",
-        "description": "Joint guidance from Dubhe Foundation, Obelisk Labs, and ecosystem VCs"
+        "description": "Awaiting confirmation"
       },
       "infrastructure": {
         "title": "Shared Infrastructure",
-        "description": "Access to Obelisk Labs infrastructure and ecosystem VC resources"
+        "description": "Awaiting confirmation"
       },
       "integration": {
         "title": "Ecosystem Integration",
-        "description": "Direct integration with Dubhe projects and partner networks"
+        "description": "Awaiting confirmation"
       },
       "development": {
         "title": "Collaborative Development",
-        "description": "Technical support from Dubhe Foundation and Obelisk Labs engineering teams"
+        "description": "Awaiting confirmation"
       },
       "demoDays": {
         "title": "Partner Demo Days",
-        "description": "Present to Dubhe Foundation board and ecosystem VC networks"
+        "description": "Awaiting confirmation"
       },
       "network": {
         "title": "Ecosystem Network",
-        "description": "Access to the entire Dubhe and partner company ecosystem"
+        "description": "Awaiting confirmation"
       }
     }
   },
@@ -856,7 +820,7 @@
     },
     "ambassadorsSection": {
       "title": "Meet Our Global Ambassadors",
-      "description": "Our ambassadors are leading the charge in their regions, building communities and driving adoption",
+      "description": "Names and current roles are being checked.",
       "timezone": "Timezone",
       "location": "Location",
       "expertise": "Expertise",
@@ -963,7 +927,7 @@
           "Protocol optimization"
         ],
         "status": "Active",
-        "team": "15 Engineers"
+        "team": "Awaiting confirmation"
       },
       "cyferio": {
         "name": "Cyferio Labs",
@@ -977,21 +941,18 @@
           "Scalability optimization"
         ],
         "status": "Active",
-        "team": "12 Researchers"
+        "team": "Awaiting confirmation"
       },
       "numeron": {
-        "name": "Numeron OS",
-        "focus": "Gaming & Integration",
-        "description": "Building gaming applications and providing technical integration solutions for entertainment. Focused on bringing blockchain gaming and interactive experiences to the Dubhe ecosystem.",
+        "name": "Numeron",
+        "focus": "Gaming",
+        "description": "The game has not launched or started external testing; only internal game and recharge flows have been tested.",
         "contributions": [
-          "Game engine integration",
-          "Entertainment platform development",
-          "User experience optimization",
-          "Technical integration solutions",
-          "Gaming ecosystem tools"
+          "Development began in May 2026.",
+          "It shares only the Numeron IP with a different 2025 hackathon game."
         ],
-        "status": "Development",
-        "team": "10 Engineers"
+        "status": "Playtesting coming soon",
+        "team": ""
       }
     },
     "research": {
@@ -1027,7 +988,7 @@
           "description": "Zero-knowledge proofs, privacy-preserving protocols, and cryptographic research",
           "teams": [
             "Cyferio Labs",
-            "Numeron OS"
+            "Numeron OS — Historical entry; identity awaiting confirmation"
           ]
         }
       },
@@ -1241,7 +1202,7 @@
     },
     "moderatorsSection": {
       "title": "Meet Our Moderators",
-      "description": "Our dedicated team ensures 24/7 coverage across all time zones and platforms",
+      "description": "Names and current roles are being checked.",
       "timezone": "Timezone",
       "platforms": "Platforms",
       "languages": "Languages"
@@ -1326,7 +1287,7 @@
   "engine": {
     "hero": {
       "badge": "Dubhe Engine",
-      "title1": "80% Code",
+      "title1": "Dubhe",
       "title2": "Auto-Generation",
       "subtitle": "Schema-based development platform that generates smart contracts, APIs, and UI components automatically. Focus on what matters - your unique business logic.",
       "stats": {
@@ -1344,7 +1305,7 @@
     },
     "features": {
       "codeGeneration": {
-        "title": "80% Code Auto-Generation",
+        "title": "Generate Code",
         "description": "Dramatically reduce development time with intelligent code generation that handles boilerplate, data structures, and common patterns automatically.",
         "details": [
           "Schema-driven code generation",
@@ -1395,11 +1356,11 @@
       },
       "generateCode": {
         "title": "Generate Code",
-        "description": "Dubhe Engine automatically generates 80% of your application code including smart contracts and APIs"
+        "description": "Schema-based development platform that generates smart contracts, APIs, and UI components automatically. Focus on what matters - your unique business logic."
       },
       "customizeLogic": {
         "title": "Customize Logic",
-        "description": "Focus on the unique 20% - your business logic, custom features, and user experience"
+        "description": "Define your game or dApp logic using Dubhe's intuitive schema system. Describe entities, components, and systems in simple configuration files."
       },
       "deployInstantly": {
         "title": "Deploy Instantly",
@@ -1418,7 +1379,7 @@
     "hero": {
       "title": "Real-Time P2P",
       "titleHighlight": "Interaction Layer",
-      "subtitle": "Web2-level user experience with Web3 infrastructure. Sub-50ms latency for gaming, social platforms, and trading applications built on Move blockchains.",
+      "subtitle": "Multi-layered approach for optimal performance and scalability",
       "metrics": {
         "latency": "Latency",
         "users": "Concurrent Users",
@@ -1434,7 +1395,7 @@
       "description": "Built for applications that demand instant responsiveness and seamless user experiences",
       "items": {
         "latency": {
-          "title": "Sub-50ms Latency",
+          "title": "Real-Time P2P",
           "description": "Real-time P2P interactions with Web2-level responsiveness. Built for gaming, trading, and social applications that demand instant feedback.",
           "details": [
             "WebRTC-based communication",
@@ -1445,7 +1406,7 @@
         },
         "network": {
           "title": "Scalable P2P Network",
-          "description": "Horizontal scaling that grows with your user base. From hundreds to millions of concurrent connections without performance degradation.",
+          "description": "Multi-layered approach for optimal performance and scalability",
           "details": [
             "Dynamic peer discovery",
             "Load balancing protocols",
@@ -1483,9 +1444,9 @@
           "title": "Real-Time Gaming",
           "description": "Multiplayer games with instant response times",
           "metrics": [
-            "<50ms latency",
-            "1M+ concurrent players",
-            "99.9% uptime"
+            "",
+            "",
+            ""
           ]
         },
         "social": {
@@ -1536,7 +1497,7 @@
       "status": {
         "title": "NETWORK STATUS",
         "online": "ONLINE",
-        "latency": "Latency: <50ms"
+        "latency": ""
       },
       "nodes": {
         "title": "ACTIVE NODES",
@@ -2270,5 +2231,14 @@
       "primaryCta": "Start using Dubhe Wallet",
       "secondaryCta": "View GitHub"
     }
+  },
+  "contentReview": {
+    "pending": "Awaiting confirmation",
+    "people": "Names and current roles are being checked.",
+    "rules": "Historical page rules; current validity awaits confirmation. These are not confirmed funding offers or payment records.",
+    "demo": "Interface example: balances, dates and addresses are sample data, not a verified account or payment record.",
+    "metrics": "Figures withheld pending verifiable sources.",
+    "currentLabel": "Current status",
+    "startedLabel": "Development start"
   }
 }

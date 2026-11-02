@@ -53,7 +53,6 @@ export default function FeaturesSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-center"
             >
-              <div className="text-8xl font-bold text-slate-900 mb-2">0</div>
               <div className="text-lg font-semibold text-slate-900 mb-2">{t('zeroGas.title')}</div>
               <div className="text-slate-600 text-sm max-w-xs mx-auto">
                 {t('zeroGas.description')}
@@ -94,7 +93,6 @@ export default function FeaturesSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-center"
             >
-              <div className="text-8xl font-bold text-purple-600 mb-2">~20ms</div>
               <div className="text-lg font-semibold text-slate-900">{t('realTime.title')}</div>
             </motion.div>
           </div>
@@ -108,7 +106,7 @@ export default function FeaturesSection() {
               transition={{ duration: 0.6 }}
               className="text-center"
             >
-              <div className="text-6xl font-bold text-slate-900 mb-2">{t('unlimited.title')}</div>
+              <div className="text-3xl font-bold text-slate-900 mb-2 break-words">{t('unlimited.title')}</div>
               <div className="text-lg font-semibold text-slate-900 mb-2">{t('unlimited.subtitle')}</div>
               <div className="text-slate-600 text-sm max-w-xs mx-auto">
                 {t('unlimited.description')}

@@ -34,25 +34,25 @@
     },
     "features": {
       "title": "Özellikler",
-      "mainTitle": "Sınırsız Potansiyeli olan Move Stack",
+      "mainTitle": "Eksiksiz Move Geliştirme Yığını",
       "moveCompatible": {
         "title": "%100 Move-Uyumlu",
         "description": "Mevcut Move ekosistemini kendi avantajınız için kullanın."
       },
       "zeroGas": {
-        "title": "Sıfır gas ücretleri",
-        "description": "Projenin bu gideri karşılamasına olanak tanır, esnek genişleme ve özelleştirmeyi destekler."
+        "title": "İsteğe bağlı gas sponsorluğu",
+        "description": "Gas maliyetleri zincire ve işleme bağlıdır. Uygulamalar uygun ücretleri karşılayabilir; tüm işlemlerin ücretsiz olması garanti edilmez."
       },
       "realTime": {
         "title": "Gerçek zamanlı senkronizasyon"
       },
       "unlimited": {
-        "title": "Sınırsız",
-        "subtitle": "Saniyede işlem",
-        "description": "Paralel çalışan dubhe kanallarının sayısına bağlıdır."
+        "title": "Kapasite",
+        "subtitle": "Yapılandırmaya bağlı",
+        "description": "İşlem kapasitesi yapılandırmaya ve iş yüküne göre değişir. Doğrulanmış, herkese açık bir kıyaslama henüz yoktur."
       },
       "syncFinality": {
-        "title": "1s Sync Durum kesinliği"
+        "title": "Dubhe Channel"
       }
     },
     "community": {
@@ -88,17 +88,17 @@
       },
       "stats": {
         "members": {
-          "value": "100B+",
+          "value": "",
           "label": "Topluluk Üyeleri",
           "description": "Dünya çapında aktif geliştiriciler ve meraklıları"
         },
         "events": {
-          "value": "50+",
+          "value": "",
           "label": "Küresel Etkinlik",
           "description": "Yıllık konferans, buluşma ve atölyeler"
         },
         "countries": {
-          "value": "20+",
+          "value": "",
           "label": "Ülke",
           "description": "Kıtalarda Dubhe topluluk varlığı"
         }
@@ -133,22 +133,26 @@
         "merak": {
           "name": "Merak",
           "description": "Otomatik Pazar Yapıcısı",
-          "tvl": "$45M"
+          "tvl": ""
         },
         "numeron": {
           "name": "Numeron",
-          "description": "Fantezi AI RPG Macerası",
-          "players": "12K+"
+          "description": "",
+          "players": "",
+          "status": "Harici oyun testi hazırlanıyor",
+          "development": "Geliştirme Mayıs 2026’da başladı.",
+          "validation": "Oyun henüz yayımlanmadı ve harici test başlamadı; yalnızca oyun ve yükleme akışları içeride test edildi.",
+          "history": "Farklı bir 2025 hackathon oyunuyla yalnızca Numeron IP’sini paylaşır."
         },
         "cyferio": {
           "name": "Cyferio SDK",
           "description": "Geliştirme Kiti",
-          "downloads": "50K+"
+          "downloads": ""
         },
         "objectsdao": {
           "name": "Objectsdao",
           "description": "NFT Müzayedesi",
-          "volume": "$2.3M"
+          "volume": ""
         }
       },
       "metrics": {
@@ -174,11 +178,11 @@
         },
         "codeGeneration": {
           "title": "Kod Üretimi",
-          "description": "Dubhe Motoru, şema tanımlarınızdan otomatik olarak Move akıllı sözleşmelerinizin, istemci kütüphanelerinizin ve API arayyüzlerinizin %80'ini oluşturur."
+          "description": "Dubhe'nin sezgisel şema sistemi kullanarak oyun veya dApp mantığınızı tanımlayın. Basit yapılandırma dosyalarında varlıkları, bileşenleri ve sistemleri tanımlayın."
         },
         "deploymentChannel": {
           "title": "Dağıtım ve Kanal",
-          "description": "Tek komutla birden fazla Move zincirine dağıtın. Dubhe Kanalı, kesintisiz kullanıcı deneyimi için gerçek zamanlı senkronizasyon ve <50ms gecikme sağlar."
+          "description": "Blockchain'i Web2 gibi hissettiren gerçek zamanlı programlanabilir P2P etkileşim katmanı"
         },
         "multiChainExecution": {
           "title": "Mehrkettenausführung",
@@ -203,13 +207,13 @@
       "features": {
         "codeGeneration": {
           "title": "Kod Üretimi",
-          "dubhe": "%80 otomatik",
+          "dubhe": "",
           "others": "Manuel kodlama"
         },
         "uxPerformance": {
           "title": "UX Performansı",
-          "dubhe": "<50ms",
-          "others": "3-15 saniye"
+          "dubhe": "",
+          "others": ""
         },
         "multiChainSupport": {
           "title": "Çok Zincir Desteği",
@@ -234,16 +238,11 @@
       "description": "Geliştirme araçlarından gerçek zamanlı etkileşim kanallarına ve merkezi olmayan altyapıya kadar - Dubhe, tamamen zincir üstü uygulamaların yeni nesini oluşturmak için gereken her şeyi sağlar.",
       "keyMetricsTitle": "Temel Metrikler",
       "keyMetrics": [
-        "10 milyondan fazla işlem işlendi",
-        "Ortalama gecikme <200ms",
         "Web2 düzeyinde kullanıcı deneyimi",
         "Sui, Aptos, Rooch, Movement, Initia ile uyumlu"
       ],
       "moveEcosystemTitle": "Move Ekosistemi",
       "moveEcosystemFeatures": [
-        "1,555 aktif Move geliştirici",
-        "Aylık %40 büyüyor",
-        "3 yaşından küçük",
         "Büyük büyüme potansiyeli"
       ],
       "pipelining": "Boru Hattı",
@@ -262,7 +261,7 @@
         "dubheEngine": {
           "title": "Dubhe Motoru",
           "subtitle": "Geliştirme Araç Seti",
-          "description": "Kodun %80'ini otomatik olarak oluşturur ve eksiksiz geliştirici araç zinciri sağlar",
+          "description": "Dubhe'nin sezgisel şema sistemi kullanarak oyun veya dApp mantığınızı tanımlayın. Basit yapılandırma dosyalarında varlıkları, bileşenleri ve sistemleri tanımlayın.",
           "features": [
             "Kod Üretimi",
             "Şema Tabanlı Geliştirme",
@@ -275,7 +274,6 @@
           "subtitle": "Gerçek Zamanlı Katman",
           "description": "Web2 düzeyinde gerçek zamanlı kullanıcı deneyimi için P2P etkileşim katmanı",
           "features": [
-            "<50ms Gecikme",
             "Gerçek Zamanlı Senkronizasyon",
             "P2P İletişim",
             "Mobil Destek"
@@ -323,14 +321,14 @@
       "products": {
         "engine": {
           "title": "Dubhe Motoru",
-          "subtitle": "%80 Otomatik Kod Oluşturma",
-          "description": "Move kodunun %80'ini otomatik olarak oluşturan tek geliştirme araç seti, geliştiricilerin temel iş mantığına odaklanmasını sağlar",
+          "subtitle": "Şema Tanımlama",
+          "description": "Dubhe'nin sezgisel şema sistemi kullanarak oyun veya dApp mantığınızı tanımlayın. Basit yapılandırma dosyalarında varlıkları, bileşenleri ve sistemleri tanımlayın.",
           "features": [
             "Geliştirme süresini aylardan haftalara düşür",
             "%90 daha düşük altyapı maliyetleri",
             "Tek komutla tüm Move zincirlerine dağıtım"
           ],
-          "highlight": "10x Daha Hızlı Geliştirme"
+          "highlight": "Kod Üretimi"
         },
         "channel": {
           "title": "Dubhe Kanalı",
@@ -341,7 +339,7 @@
             "Ultra hızlı yürütme hızı",
             "Çoklu istemci mobil, masaüstü ve web desteği"
           ],
-          "highlight": "<50ms Gecikme"
+          "highlight": "Dubhe Channel"
         },
         "os": {
           "title": "Dubhe OS",
@@ -358,22 +356,22 @@
     },
     "networkStats": {
       "title": "Ağ İstatistikleri",
-      "description": "Dubhe ekosistemi genelinde büyüme ve aktiviteyi gösteren gerçek zamanlı metrikler.",
+      "description": "Doğrulanabilir kaynaklar sağlanana kadar rakamlar gösterilmiyor.",
       "transactions": {
         "label": "İşlenen İşlemler",
-        "change": "+12.5%"
+        "change": ""
       },
       "operations": {
         "label": "Yürütülen Operasyonlar",
-        "change": "+18.2%"
+        "change": ""
       },
       "users": {
         "label": "Aktif Kullanıcılar",
-        "change": "+25.1%"
+        "change": ""
       },
       "income": {
         "label": "Protokol Geliri",
-        "change": "+15.8%"
+        "change": ""
       }
     }
   },
@@ -416,7 +414,7 @@
     }
   },
   "footer": {
-    "description": "%80 otomatik kod üretimi, gerçek zamanlı P2P kanallar ve zincirler arası birlikte çalışabilirlik ile eksiksiz Move geliştirme platformu.",
+    "description": "Obelisk Labs, Dubhe dahil altyapı geliştirir. Dubhe Wallet, cüzdan ve kimlik akışlarını destekler. Numeron, geliştirilmekte olan ayrı bir oyundur.",
     "sections": {
       "learn": "Öğren",
       "build": "Geliştir",
@@ -441,7 +439,8 @@
       "contact": "İletişim",
       "about": "Hakkında",
       "terms": "Hizmet Şartları",
-      "privacy": "Gizlilik Politikası"
+      "privacy": "Gizlilik Politikası",
+      "mediaKit": "Medya kiti"
     },
     "copyright": "© 2025 Dubhe. Tüm hakları saklıdır."
   },
@@ -485,13 +484,57 @@
           "description": "Blockchain ekosisteminde stratejik ilişkiler kurmak"
         }
       }
+    },
+    "members": {
+      "jason": {
+        "name": "Jason",
+        "role": "Onay bekleniyor",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "joan": {
+        "name": "Joan",
+        "role": "Onay bekleniyor",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "david": {
+        "name": "David",
+        "role": "Onay bekleniyor",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "bonnie": {
+        "name": "Bonnie",
+        "role": "Onay bekleniyor",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "liam": {
+        "name": "Liam McKenzie",
+        "role": "Onay bekleniyor",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "emily": {
+        "name": "Emily Smith",
+        "role": "Onay bekleniyor",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      }
     }
   },
   "grants": {
     "hero": {
       "badge": "Dubhe Vakfı Bağışları",
       "title": "İnovasyonunuzu Fonlayın",
-      "description": "Açık kaynak Move uygulamaları, altyapı ve araçlar geliştirmek için Dubhe Vakfı'ndan geri ödemesiz bağışlar alın. Tüm projeler tamamen işlevsel olmalı ve tüm kilometre taşlarını tamamlamalıdır.",
+      "description": "Geçmiş sayfa kuralları; güncel geçerlilikleri onay bekliyor. Bunlar onaylanmış fon teklifleri veya ödeme kayıtları değildir.",
       "stats": {
         "totalFunded": "Toplam Fonlanan",
         "projectsFunded": "Fonlanan Projeler",
@@ -506,22 +549,22 @@
       "badge": "Bağış Kategorileri",
       "infrastructure": {
         "title": "Altyapı Bağışları",
-        "amount": "100K$'a kadar",
+        "amount": "Onay bekleniyor",
         "description": "Temel altyapı, geliştirici araçları ve ekosistem yardımcı programları oluşturun"
       },
       "dapp": {
         "title": "DApp Geliştirme",
-        "amount": "75K$'a kadar",
+        "amount": "Onay bekleniyor",
         "description": "Dubhe ekosisteminde yenilikçi merkezi olmayan uygulamalar oluşturun"
       },
       "research": {
         "title": "Araştırma Bağışları",
-        "amount": "50K$'a kadar",
+        "amount": "Onay bekleniyor",
         "description": "Akademik araştırma, protokol iyileştirmeleri ve teorik katkılar"
       },
       "community": {
         "title": "Topluluk Projeleri",
-        "amount": "25K$'a kadar",
+        "amount": "Onay bekleniyor",
         "description": "Eğitim, dokümantasyon, topluluk araçları ve tanıtım programları"
       }
     },
@@ -532,27 +575,27 @@
         "proposal": {
           "title": "Teklif Sunumu",
           "description": "Detaylı kilometre taşları ve açık kaynak taahhüdü ile kapsamlı teklif sunun",
-          "duration": "1 hafta"
+          "duration": "Onay bekleniyor"
         },
         "review": {
           "title": "Vakıf İncelemesi",
           "description": "Dubhe Vakfı teknik komitesi fizibilite ve ekosistem etkisini değerlendirir",
-          "duration": "2-3 hafta"
+          "duration": "Onay bekleniyor"
         },
         "interview": {
           "title": "Ekip Görüşmesi",
           "description": "Proje yol haritanızı sunun ve teknik yeteneklerinizi gösterin",
-          "duration": "1 hafta"
+          "duration": "Onay bekleniyor"
         },
         "approval": {
           "title": "Bağış Onayı",
           "description": "Vakıf yönetim kurulu kilometre taşı gereksinimleri ile geri ödemesiz bağışı onaylar",
-          "duration": "1 hafta"
+          "duration": "Onay bekleniyor"
         },
         "delivery": {
           "title": "Kilometre Taşı Teslimi",
           "description": "Tüm kilometre taşlarını işlevsel çıktılarla tamamlayın ve tam bağış alın",
-          "duration": "3-12 ay"
+          "duration": "Onay bekleniyor"
         }
       },
       "requirements": {
@@ -568,8 +611,8 @@
       }
     },
     "successStories": {
-      "title": "Başarı Hikayeleri",
-      "description": "Bağış alan ve önemli etki yaratan projeler"
+      "title": "Ekosistem",
+      "description": "Doğrulanabilir kaynaklar sağlanana kadar rakamlar gösterilmiyor."
     },
     "terms": {
       "title": "Bağış Şartları ve Koşulları",
@@ -598,7 +641,7 @@
     "hero": {
       "title": "Gerçek Zamanlı P2P",
       "titleHighlight": "Etkileşim Katmanı",
-      "subtitle": "Web3 altyapısıyla Web2 seviyesinde kullanıcı deneyimi. Move blokzincirlerinde inşa edilen oyun, sosyal platform ve ticaret uygulamaları için 50ms altı gecikme.",
+      "subtitle": "Optimal performans ve ölçeklenebilirlik için çok katmanlı yaklaşım",
       "metrics": {
         "latency": "Gecikme",
         "users": "Eş Zamanlı Kullanıcılar",
@@ -614,7 +657,7 @@
       "description": "Anlık yanıt verme ve kusursuz kullanıcı deneyimleri gerektiren uygulamalar için inşa edildi",
       "items": {
         "latency": {
-          "title": "50ms Altı Gecikme",
+          "title": "Gerçek Zamanlı P2P",
           "description": "Web2 seviyesinde yanıt veren gerçek zamanlı P2P etkileşimler. Anlık geri bildirim gerektiren oyun, ticaret ve sosyal uygulamalar için inşa edildi.",
           "details": [
             "WebRTC tabanlı iletişim",
@@ -625,7 +668,7 @@
         },
         "network": {
           "title": "Ölçeklenebilir P2P Ağ",
-          "description": "Kullanıcı tabanınızla büyüyen yatay ölçeklendirme. Performans kaybı olmadan yüzlerceden milyonlarca eş zamanlı bağlantıya kadar.",
+          "description": "Optimal performans ve ölçeklenebilirlik için çok katmanlı yaklaşım",
           "details": [
             "Dinamik eş keşfi",
             "Yük dengeleme protokolleri",
@@ -663,8 +706,8 @@
           "title": "Gerçek Zamanlı Oyun",
           "description": "Anlık yanıt süreleri olan çok oyunculu oyunlar",
           "metrics": [
-            "<50ms gecikme",
-            "1M+ eş zamanlı oyuncu",
+            "",
+            "",
             "%99.9 çalışma süresi"
           ]
         },
@@ -716,7 +759,7 @@
       "status": {
         "title": "AĞ DURUMU",
         "online": "ÇEVRİMİÇİ",
-        "latency": "Gecikme: <50ms"
+        "latency": ""
       },
       "nodes": {
         "title": "AKTİF DÜĞÜMLER",
@@ -901,7 +944,7 @@
     "hero": {
       "badge": "Dubhe Vakfı İnkübasyon",
       "title": "Bir Sonraki Unicorn Girişimi Oluşturun",
-      "subtitle": "Dubhe Vakfı tarafından desteklenen, Obelisk Labs ve ekosistem VC'leri ile birlikte inkübe edilen işbirlikçi inkübasyon ekosistemine katılın ve yeni nesil Move girişimlerini oluşturun.",
+      "subtitle": "Geçmiş sayfa kuralları; güncel geçerlilikleri onay bekliyor. Bunlar onaylanmış fon teklifleri veya ödeme kayıtları değildir.",
       "stats": {
         "funding": {
           "value": "Yakında",
@@ -928,65 +971,56 @@
     "programs": {
       "accelerator": {
         "title": "Vakıf Hızlandırıcısı",
-        "duration": "3 ay",
-        "funding": "$500K'ya kadar",
-        "description": "Dubhe Vakfı destekli yoğun program, Obelisk Labs ve ekosistem VC'leri ile birlikte inkübe edilir",
+        "duration": "Onay bekleniyor",
+        "funding": "Onay bekleniyor",
+        "description": "Geçmiş sayfa kuralları; güncel geçerlilikleri onay bekliyor. Bunlar onaylanmış fon teklifleri veya ödeme kayıtları değildir.",
         "benefits": [
-          "Dubhe Vakfı fonlaması",
-          "Obelisk Labs ortak inkübasyonu",
-          "Move geliştirme desteği",
-          "Ekosistem VC ortaklıkları"
+          "Move geliştirme desteği"
         ]
       },
       "studio": {
         "title": "İşbirlikçi Stüdyo",
-        "duration": "6-12 ay",
-        "funding": "$1M'a kadar",
-        "description": "Dubhe Vakfı, Obelisk Labs ve ekosistem VC'leri tarafından paylaşılan kaynaklarla ortak inkübe edilir",
+        "duration": "Onay bekleniyor",
+        "funding": "Onay bekleniyor",
+        "description": "Geçmiş sayfa kuralları; güncel geçerlilikleri onay bekliyor. Bunlar onaylanmış fon teklifleri veya ödeme kayıtları değildir.",
         "benefits": [
-          "Çok ortaklı ortak inkübasyon",
-          "Paylaşılan teknik kaynaklar",
-          "Projeler arası işbirliği",
-          "Ekosistem VC ağları"
+          "Projeler arası işbirliği"
         ]
       },
       "scale": {
         "title": "Ekosistem Ölçekleme",
-        "duration": "6 ay",
-        "funding": "$2M'a kadar",
-        "description": "Dubhe Vakfı, Obelisk Labs ve ekosistem VC ortaklarından kapsamlı destekle ölçeklenin",
+        "duration": "Onay bekleniyor",
+        "funding": "Onay bekleniyor",
+        "description": "Geçmiş sayfa kuralları; güncel geçerlilikleri onay bekliyor. Bunlar onaylanmış fon teklifleri veya ödeme kayıtları değildir.",
         "benefits": [
-          "Ortak inkübasyon ağı",
-          "Stratejik tanıtımlar",
-          "Küresel pazar erişimi",
-          "Kurumsal VC bağlantıları"
+          "Küresel pazar erişimi"
         ]
       }
     },
     "resources": {
       "coIncubation": {
         "title": "Çok Ortaklı Ortak İnkübasyon",
-        "description": "Dubhe Vakfı, Obelisk Labs ve ekosistem VC'lerinden ortak rehberlik"
+        "description": "Onay bekleniyor"
       },
       "infrastructure": {
         "title": "Paylaşılan Altyapı",
-        "description": "Obelisk Labs altyapısına ve ekosistem VC kaynaklarına erişim"
+        "description": "Onay bekleniyor"
       },
       "integration": {
         "title": "Ekosistem Entegrasyonu",
-        "description": "Dubhe projeleri ve ortak ağlarla doğrudan entegrasyon"
+        "description": "Onay bekleniyor"
       },
       "development": {
         "title": "İşbirlikçi Geliştirme",
-        "description": "Dubhe Vakfı ve Obelisk Labs mühendislik ekiplerinden teknik destek"
+        "description": "Onay bekleniyor"
       },
       "demoDays": {
         "title": "Ortak Demo Günleri",
-        "description": "Dubhe Vakfı yönetimine ve ekosistem VC ağlarına sunum"
+        "description": "Onay bekleniyor"
       },
       "network": {
         "title": "Ekosistem Ağı",
-        "description": "Tüm Dubhe ve ortak şirket ekosistemine erişim"
+        "description": "Onay bekleniyor"
       }
     }
   },
@@ -1028,7 +1062,7 @@
     },
     "ambassadorsSection": {
       "title": "Küresel Büyükelçilerimizle Tanışın",
-      "description": "Büyükelçilerimiz bölgelerinde değişimi yönetiyor, topluluklar inşa ediyor ve benimsenmeyi sağlıyor",
+      "description": "Adlar ve güncel roller kontrol ediliyor.",
       "timezone": "Saat dilimi",
       "location": "Konum",
       "expertise": "Uzmanlık",
@@ -1122,7 +1156,7 @@
     },
     "moderatorsSection": {
       "title": "Moderatörlerimizle Tanışın",
-      "description": "Adanmış ekibimiz tüm saat dilimlerinde ve platformlarda 7/24 kapsama sağlar",
+      "description": "Adlar ve güncel roller kontrol ediliyor.",
       "timezone": "Saat Dilimi",
       "platforms": "Platformlar",
       "languages": "Diller"
@@ -1348,7 +1382,7 @@
   "engine": {
     "hero": {
       "badge": "Dubhe Engine",
-      "title1": "80% Kod",
+      "title1": "Dubhe",
       "title2": "Otomatik Üretim",
       "subtitle": "Akıllı sözleşmeleri, API'leri ve UI bileşenlerini otomatik olarak üreten şema tabanlı geliştirme platformu. Önemli olana odaklanın - benzersiz iş mantığınız.",
       "stats": {
@@ -1366,7 +1400,7 @@
     },
     "features": {
       "codeGeneration": {
-        "title": "80% Otomatik Kod Üretimi",
+        "title": "Kod Üret",
         "description": "Boilerplate, veri yapıları ve yaygın kalıpları otomatik olarak işleyen akıllı kod üretimiyle geliştirme süresini dramatik şekilde azaltın.",
         "details": [
           "Şema odaklı kod üretimi",
@@ -1417,11 +1451,11 @@
       },
       "generateCode": {
         "title": "Kod Üret",
-        "description": "Dubhe Engine, akıllı sözleşmeler ve API'ler dahil olmak üzere uygulama kodunuzun %80'ini otomatik olarak üretir"
+        "description": "Akıllı sözleşmeleri, API'leri ve UI bileşenlerini otomatik olarak üreten şema tabanlı geliştirme platformu. Önemli olana odaklanın - benzersiz iş mantığınız."
       },
       "customizeLogic": {
         "title": "Mantığı Özelleştir",
-        "description": "Benzersiz %20'ye odaklanın - iş mantığınız, özel özellikler ve kullanıcı deneyimi"
+        "description": "Dubhe'nin sezgisel şema sistemi kullanarak oyun veya dApp mantığınızı tanımlayın. Basit yapılandırma dosyalarında varlıkları, bileşenleri ve sistemleri tanımlayın."
       },
       "deployInstantly": {
         "title": "Anında Dağıt",
@@ -1469,7 +1503,7 @@
           "Çapraz Zincir Konsensüs Mekanizmaları"
         ],
         "status": "Aktif",
-        "team": "12 Mühendis"
+        "team": "Onay bekleniyor"
       },
       "cyferio": {
         "name": "Cyferio Labs",
@@ -1483,7 +1517,7 @@
           "Anonim İşlem Sistemleri"
         ],
         "status": "Aktif",
-        "team": "8 Araştırmacı"
+        "team": "Onay bekleniyor"
       },
       "network": {
         "name": "Dubhe Network Labs",
@@ -1512,6 +1546,31 @@
         ],
         "status": "Araştırma",
         "team": "4 Mühendis"
+      },
+      "dubheos": {
+        "name": "DubheOS",
+        "focus": "Ecosystem & Toolchain",
+        "description": "Dubhe's global decentralized community contributing ecosystem toolchain and infrastructure. Building developer tools, libraries, and community-driven utilities to empower the entire ecosystem.",
+        "contributions": [
+          "Community governance framework",
+          "Ecosystem toolchain development",
+          "Developer resource coordination",
+          "Cross-chain protocol standards",
+          "Community-driven innovations"
+        ],
+        "status": "Active",
+        "team": "Global Community"
+      },
+      "numeron": {
+        "name": "Numeron",
+        "focus": "Oyun",
+        "description": "Oyun henüz yayımlanmadı ve harici test başlamadı; yalnızca oyun ve yükleme akışları içeride test edildi.",
+        "contributions": [
+          "Geliştirme Mayıs 2026’da başladı.",
+          "Farklı bir 2025 hackathon oyunuyla yalnızca Numeron IP’sini paylaşır."
+        ],
+        "status": "Harici oyun testi hazırlanıyor",
+        "team": ""
       }
     },
     "research": {
@@ -2157,5 +2216,14 @@
       "primaryCta": "Dubhe Wallet kullanmaya başla",
       "secondaryCta": "GitHub’ı görüntüle"
     }
+  },
+  "contentReview": {
+    "pending": "Onay bekleniyor",
+    "people": "Adlar ve güncel roller kontrol ediliyor.",
+    "rules": "Geçmiş sayfa kuralları; güncel geçerlilikleri onay bekliyor. Bunlar onaylanmış fon teklifleri veya ödeme kayıtları değildir.",
+    "demo": "Arayüz örneği: bakiyeler, tarihler ve adresler örnek veridir; doğrulanmış hesap veya ödeme kaydı değildir.",
+    "metrics": "Doğrulanabilir kaynaklar sağlanana kadar rakamlar gösterilmiyor.",
+    "currentLabel": "Güncel durum",
+    "startedLabel": "Geliştirme başlangıcı"
   }
 }

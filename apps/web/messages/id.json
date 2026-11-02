@@ -34,25 +34,25 @@
     },
     "features": {
       "title": "Fitur",
-      "mainTitle": "Stack Move dengan Potensi Tanpa Batas",
+      "mainTitle": "Stack Pengembangan Move Lengkap",
       "moveCompatible": {
-        "title": "100% Kompatibel Move",
+        "title": "Kompatibel Move",
         "description": "Manfaatkan ekosistem Move yang sudah ada untuk keuntungan Anda."
       },
       "zeroGas": {
-        "title": "Biaya gas nol",
-        "description": "Memungkinkan proyek menanggung biaya ini, mendukung ekspansi dan kustomisasi yang fleksibel."
+        "title": "Subsidi gas opsional",
+        "description": "Biaya gas bergantung pada chain dan transaksi. Aplikasi dapat menanggung biaya yang memenuhi syarat; biaya nol secara universal tidak dijamin."
       },
       "realTime": {
         "title": "Sinkronisasi waktu nyata"
       },
       "unlimited": {
-        "title": "Tidak terbatas",
-        "subtitle": "Transaksi per detik",
-        "description": "Bergantung pada jumlah saluran Dubhe yang berjalan secara paralel."
+        "title": "Kapasitas",
+        "subtitle": "Bergantung konfigurasi",
+        "description": "Throughput bervariasi menurut konfigurasi dan beban kerja. Tolok ukur publik terverifikasi belum tersedia."
       },
       "syncFinality": {
-        "title": "Finalitas Status Sinkron 1 detik"
+        "title": "Dubhe Channel"
       }
     },
     "community": {
@@ -88,17 +88,17 @@
       },
       "stats": {
         "members": {
-          "value": "100K+",
+          "value": "",
           "label": "Anggota Komunitas",
           "description": "Pengembang dan penggemar aktif di seluruh dunia"
         },
         "events": {
-          "value": "50+",
+          "value": "",
           "label": "Acara Global",
           "description": "Konferensi, meetup, dan workshop setiap tahun"
         },
         "countries": {
-          "value": "20+",
+          "value": "",
           "label": "Negara",
           "description": "Kehadiran komunitas Dubhe di berbagai benua"
         }
@@ -133,22 +133,26 @@
         "merak": {
           "name": "Merak",
           "description": "Pembuat Pasar Otomatis",
-          "tvl": "$45M"
+          "tvl": ""
         },
         "numeron": {
           "name": "Numeron",
-          "description": "Petualangan RPG AI Fantasy",
-          "players": "12K+"
+          "description": "",
+          "players": "",
+          "status": "Uji coba eksternal sedang disiapkan",
+          "development": "Pengembangan dimulai pada Mei 2026.",
+          "validation": "Game ini belum diluncurkan atau diuji secara eksternal; baru alur permainan dan isi ulang internal yang diuji.",
+          "history": "Game ini hanya berbagi IP Numeron dengan game hackathon berbeda dari tahun 2025."
         },
         "cyferio": {
           "name": "Cyferio SDK",
           "description": "Kit Pengembangan",
-          "downloads": "50K+"
+          "downloads": ""
         },
         "objectsdao": {
           "name": "Objectsdao",
           "description": "Lelang NFT",
-          "volume": "$2.3M"
+          "volume": ""
         }
       },
       "metrics": {
@@ -174,11 +178,11 @@
         },
         "codeGeneration": {
           "title": "Generasi Kode",
-          "description": "Mesin Dubhe secara otomatis menghasilkan 80% kontrak pintar Move, library klien, dan antarmuka API dari definisi skema Anda."
+          "description": "Definisikan logika game atau dApp Anda menggunakan sistem skema intuitif Dubhe. Jelaskan entitas, komponen, dan sistem dalam file konfigurasi sederhana."
         },
         "deploymentChannel": {
           "title": "Deployment & Channel",
-          "description": "Deploy ke beberapa rantai Move dengan satu perintah. Saluran Dubhe menyediakan sinkronisasi real-time dan latensi <50ms untuk pengalaman pengguna yang mulus."
+          "description": "Layer interaksi P2P yang dapat diprogram secara real-time yang membuat blockchain terasa seperti Web2"
         },
         "multiChainExecution": {
           "title": "Eksekusi Multi-Chain",
@@ -203,13 +207,13 @@
       "features": {
         "codeGeneration": {
           "title": "Generasi Kode",
-          "dubhe": "80% otomatis",
+          "dubhe": "",
           "others": "Pengkodean manual"
         },
         "uxPerformance": {
           "title": "Performa UX",
-          "dubhe": "<50ms",
-          "others": "3-15 detik"
+          "dubhe": "",
+          "others": ""
         },
         "multiChainSupport": {
           "title": "Dukungan Multi-Chain",
@@ -235,14 +239,13 @@
       "products": {
         "engine": {
           "title": "Mesin Dubhe",
-          "subtitle": "80% Otomatis Generasi Kode",
-          "description": "Satu-satunya toolkit pengembangan yang secara otomatis menghasilkan 80% kode Move, memungkinkan developer fokus pada logika bisnis inti",
+          "subtitle": "Definisi Skema",
+          "description": "Definisikan logika game atau dApp Anda menggunakan sistem skema intuitif Dubhe. Jelaskan entitas, komponen, dan sistem dalam file konfigurasi sederhana.",
           "features": [
             "Mengurangi waktu pengembangan dari bulan ke minggu",
-            "90% biaya infrastruktur lebih rendah",
             "Satu perintah deploy ke semua chain Move"
           ],
-          "highlight": "Pengembangan 10x Lebih Cepat"
+          "highlight": "Generasi Kode"
         },
         "channel": {
           "title": "Saluran Dubhe",
@@ -253,7 +256,7 @@
             "Kecepatan eksekusi ultra-cepat",
             "Mendukung multi-klien mobile, desktop, dan web"
           ],
-          "highlight": "Latensi <50ms"
+          "highlight": "Dubhe Channel"
         },
         "os": {
           "title": "Dubhe OS",
@@ -274,16 +277,11 @@
       "description": "Dari alat pengembangan hingga saluran interaksi real-time dan infrastruktur terdesentralisasi - Dubhe menyediakan semua yang dibutuhkan untuk membangun generasi berikutnya aplikasi on-chain sepenuhnya.",
       "keyMetricsTitle": "Metrik Utama",
       "keyMetrics": [
-        "10M+ transaksi yang diproses",
-        "<200ms latensi rata-rata",
         "Pengalaman pengguna level Web2",
         "Kompatibel dengan Sui, Aptos, Rooch, Movement, Initia"
       ],
       "moveEcosystemTitle": "Ekosistem Move",
       "moveEcosystemFeatures": [
-        "1,555 pengembang Move aktif",
-        "Pertumbuhan 40% per bulan",
-        "Kurang dari 3 tahun sejarah",
         "Potensi pertumbuhan yang sangat besar"
       ],
       "pipelining": "Pipelining",
@@ -302,7 +300,7 @@
         "dubheEngine": {
           "title": "Mesin Dubhe",
           "subtitle": "Toolkit Pengembangan",
-          "description": "Secara otomatis menghasilkan 80% kode dan menyediakan toolchain pengembang yang lengkap",
+          "description": "Definisikan logika game atau dApp Anda menggunakan sistem skema intuitif Dubhe. Jelaskan entitas, komponen, dan sistem dalam file konfigurasi sederhana.",
           "features": [
             "Generasi Kode",
             "Pengembangan Berbasis Skema",
@@ -315,7 +313,6 @@
           "subtitle": "Layer Real-Time",
           "description": "Layer interaksi P2P untuk pengalaman pengguna real-time level Web2",
           "features": [
-            "Latensi <50ms",
             "Sinkronisasi Real-Time",
             "Komunikasi P2P",
             "Dukungan Mobile"
@@ -358,22 +355,22 @@
     },
     "networkStats": {
       "title": "Statistik Jaringan",
-      "description": "Metrik real-time yang menunjukkan pertumbuhan dan aktivitas di seluruh ekosistem Dubhe.",
+      "description": "Angka tidak ditampilkan sambil menunggu sumber yang dapat diverifikasi.",
       "transactions": {
         "label": "Transaksi Diproses",
-        "change": "+12.5%"
+        "change": ""
       },
       "operations": {
         "label": "Operasi Dijalankan",
-        "change": "+18.2%"
+        "change": ""
       },
       "users": {
         "label": "Pengguna Aktif",
-        "change": "+25.1%"
+        "change": ""
       },
       "income": {
         "label": "Pendapatan Protokol",
-        "change": "+15.8%"
+        "change": ""
       }
     }
   },
@@ -434,69 +431,45 @@
     "members": {
       "jason": {
         "name": "Jason",
-        "role": "Pemimpin Yayasan",
-        "location": "San Francisco, CA",
-        "bio": "Pemimpin visioner dengan pengalaman 15+ tahun dalam teknologi blockchain. Sebelumnya memimpin tim rekayasa di perusahaan teknologi besar sebelum mendirikan Dubhe untuk merevolusi pengembangan Move.",
-        "expertise": [
-          "Arsitektur Blockchain",
-          "Kepemimpinan Tim",
-          "Strategi Produk"
-        ]
+        "role": "Menunggu konfirmasi",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "joan": {
         "name": "Joan",
-        "role": "CTO & Co-founder",
-        "location": "New York, NY",
-        "bio": "Mantan pengembang inti Move dengan keahlian mendalam dalam arsitektur kontrak pintar. Memimpin visi teknis kami dan mengawasi semua inisiatif rekayasa.",
-        "expertise": [
-          "Bahasa Move",
-          "Kontrak Pintar",
-          "Arsitektur Sistem"
-        ]
+        "role": "Menunggu konfirmasi",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "david": {
         "name": "David",
-        "role": "Kepala Rekayasa",
-        "location": "Seoul, Korea Selatan",
-        "bio": "Insinyur full-stack yang bersemangat tentang alat pengembang dan pertumbuhan ekosistem. Memimpin tim pengembangan engine kami dan mendorong inovasi teknis.",
-        "expertise": [
-          "Pengembangan Full-stack",
-          "Alat Pengembang",
-          "Open Source"
-        ]
+        "role": "Menunggu konfirmasi",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "bonnie": {
         "name": "Bonnie",
-        "role": "Kepala Komunitas",
-        "location": "Barcelona, Spanyol",
-        "bio": "Pembangun komunitas dengan pengalaman luas dalam menumbuhkan ekosistem pengembang. Mengelola inisiatif komunitas global kami dan program duta.",
-        "expertise": [
-          "Pembangunan Komunitas",
-          "Hubungan Pengembang",
-          "Manajemen Acara"
-        ]
+        "role": "Menunggu konfirmasi",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "liam": {
         "name": "Liam McKenzie",
-        "role": "Kepala Kemitraan",
-        "location": "London, Inggris",
-        "bio": "Ahli pengembangan bisnis yang fokus pada kemitraan strategis dan pertumbuhan ekosistem. Sebelumnya memimpin kemitraan di perusahaan blockchain besar.",
-        "expertise": [
-          "Kemitraan Strategis",
-          "Pengembangan Bisnis",
-          "Pertumbuhan Ekosistem"
-        ]
+        "role": "Menunggu konfirmasi",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "emily": {
         "name": "Emily Smith",
-        "role": "Direktur Riset",
-        "location": "Beijing, Cina",
-        "bio": "PhD dalam Ilmu Komputer yang mengkhususkan diri dalam sistem terdistribusi. Memimpin inisiatif riset kami dan mengeksplorasi teknologi blockchain mutakhir.",
-        "expertise": [
-          "Sistem Terdistribusi",
-          "Riset",
-          "Kemitraan Akademik"
-        ]
+        "role": "Menunggu konfirmasi",
+        "location": "",
+        "bio": "",
+        "expertise": []
       }
     },
     "join": {
@@ -529,7 +502,7 @@
     "hero": {
       "badge": "Hibah Yayasan Dubhe",
       "title": "Danai Inovasi Anda",
-      "description": "Terima hibah yang tidak perlu dikembalikan dari Yayasan Dubhe untuk membangun aplikasi Move open-source, infrastruktur, dan alat. Semua proyek harus sepenuhnya fungsional dan menyelesaikan semua tonggak pencapaian.",
+      "description": "Aturan halaman historis; keberlakuannya kini menunggu konfirmasi. Ini bukan tawaran pendanaan atau catatan pembayaran yang terkonfirmasi.",
       "stats": {
         "totalFunded": "Total Didanai",
         "projectsFunded": "Proyek Didanai",
@@ -544,22 +517,22 @@
       "badge": "Kategori Hibah",
       "infrastructure": {
         "title": "Hibah Infrastruktur",
-        "amount": "Hingga $100K",
+        "amount": "Menunggu konfirmasi",
         "description": "Bangun infrastruktur inti, alat pengembang, dan utilitas ekosistem"
       },
       "dapp": {
         "title": "Pengembangan DApp",
-        "amount": "Hingga $75K",
+        "amount": "Menunggu konfirmasi",
         "description": "Ciptakan aplikasi terdesentralisasi inovatif di ekosistem Dubhe"
       },
       "research": {
         "title": "Hibah Penelitian",
-        "amount": "Hingga $50K",
+        "amount": "Menunggu konfirmasi",
         "description": "Penelitian akademis, perbaikan protokol, dan kontribusi teoretis"
       },
       "community": {
         "title": "Proyek Komunitas",
-        "amount": "Hingga $25K",
+        "amount": "Menunggu konfirmasi",
         "description": "Edukasi, dokumentasi, alat komunitas, dan program jangkauan"
       }
     },
@@ -570,27 +543,27 @@
         "proposal": {
           "title": "Pengajuan Proposal",
           "description": "Ajukan proposal komprehensif dengan tonggak pencapaian terperinci dan komitmen open-source",
-          "duration": "1 minggu"
+          "duration": "Menunggu konfirmasi"
         },
         "review": {
           "title": "Tinjauan Yayasan",
           "description": "Komite teknis Yayasan Dubhe mengevaluasi kelayakan dan dampak ekosistem",
-          "duration": "2-3 minggu"
+          "duration": "Menunggu konfirmasi"
         },
         "interview": {
           "title": "Wawancara Tim",
           "description": "Presentasikan roadmap proyek Anda dan tunjukkan kemampuan teknis",
-          "duration": "1 minggu"
+          "duration": "Menunggu konfirmasi"
         },
         "approval": {
           "title": "Persetujuan Hibah",
           "description": "Dewan yayasan menyetujui hibah yang tidak perlu dikembalikan dengan persyaratan tonggak pencapaian",
-          "duration": "1 minggu"
+          "duration": "Menunggu konfirmasi"
         },
         "delivery": {
           "title": "Pengiriman Tonggak Pencapaian",
           "description": "Selesaikan semua tonggak pencapaian dengan deliverable fungsional dan terima hibah penuh",
-          "duration": "3-12 bulan"
+          "duration": "Menunggu konfirmasi"
         }
       },
       "requirements": {
@@ -606,8 +579,8 @@
       }
     },
     "successStories": {
-      "title": "Kisah Sukses",
-      "description": "Proyek yang menerima hibah dan memberikan dampak signifikan"
+      "title": "Ekosistem",
+      "description": "Angka tidak ditampilkan sambil menunggu sumber yang dapat diverifikasi."
     },
     "terms": {
       "title": "Syarat & Ketentuan Hibah",
@@ -632,7 +605,7 @@
     }
   },
   "footer": {
-    "description": "Platform pengembangan Move lengkap dengan 80% generasi kode otomatis, saluran P2P real-time, dan interoperabilitas lintas rantai.",
+    "description": "Obelisk Labs mengembangkan infrastruktur termasuk Dubhe. Dubhe Wallet mendukung alur dompet dan identitas. Numeron adalah game terpisah yang sedang dikembangkan.",
     "sections": {
       "learn": "Pelajari",
       "build": "Bangun",
@@ -711,7 +684,7 @@
     "hero": {
       "badge": "Inkubasi Yayasan Dubhe",
       "title": "Bangun Startup Unicorn Berikutnya",
-      "subtitle": "Bergabunglah dengan ekosistem inkubasi kolaboratif kami yang didukung oleh Yayasan Dubhe, co-inkubasi dengan Obelisk Labs dan VC ekosistem untuk membangun generasi berikutnya startup Move.",
+      "subtitle": "Aturan halaman historis; keberlakuannya kini menunggu konfirmasi. Ini bukan tawaran pendanaan atau catatan pembayaran yang terkonfirmasi.",
       "stats": {
         "funding": {
           "value": "Segera Hadir",
@@ -738,65 +711,56 @@
     "programs": {
       "accelerator": {
         "title": "Akselerator Yayasan",
-        "duration": "3 bulan",
-        "funding": "Hingga $500K",
-        "description": "Program intensif yang didukung Yayasan Dubhe yang co-inkubasi dengan Obelisk Labs dan VC ekosistem",
+        "duration": "Menunggu konfirmasi",
+        "funding": "Menunggu konfirmasi",
+        "description": "Aturan halaman historis; keberlakuannya kini menunggu konfirmasi. Ini bukan tawaran pendanaan atau catatan pembayaran yang terkonfirmasi.",
         "benefits": [
-          "Pendanaan Yayasan Dubhe",
-          "Co-inkubasi Obelisk Labs",
-          "Dukungan pengembangan Move",
-          "Kemitraan VC ekosistem"
+          "Dukungan pengembangan Move"
         ]
       },
       "studio": {
         "title": "Studio Kolaboratif",
-        "duration": "6-12 bulan",
-        "funding": "Hingga $1M",
-        "description": "Co-inkubasi oleh Yayasan Dubhe, Obelisk Labs, dan VC ekosistem dengan sumber daya bersama",
+        "duration": "Menunggu konfirmasi",
+        "funding": "Menunggu konfirmasi",
+        "description": "Aturan halaman historis; keberlakuannya kini menunggu konfirmasi. Ini bukan tawaran pendanaan atau catatan pembayaran yang terkonfirmasi.",
         "benefits": [
-          "Co-inkubasi multi-partner",
-          "Sumber daya teknis bersama",
-          "Kolaborasi antar-proyek",
-          "Jaringan VC ekosistem"
+          "Kolaborasi antar-proyek"
         ]
       },
       "scale": {
         "title": "Skala Ekosistem",
-        "duration": "6 bulan",
-        "funding": "Hingga $2M",
-        "description": "Skala dengan dukungan komprehensif dari Yayasan Dubhe, Obelisk Labs, dan partner VC ekosistem",
+        "duration": "Menunggu konfirmasi",
+        "funding": "Menunggu konfirmasi",
+        "description": "Aturan halaman historis; keberlakuannya kini menunggu konfirmasi. Ini bukan tawaran pendanaan atau catatan pembayaran yang terkonfirmasi.",
         "benefits": [
-          "Jaringan co-inkubasi",
-          "Perkenalan strategis",
-          "Akses pasar global",
-          "Koneksi VC perusahaan"
+          "Akses pasar global"
         ]
       }
     },
     "resources": {
       "coIncubation": {
         "title": "Co-Inkubasi Multi-Partner",
-        "description": "Bimbingan gabungan dari Yayasan Dubhe, Obelisk Labs dan VC ekosistem"
+        "description": "Menunggu konfirmasi"
       },
       "infrastructure": {
         "title": "Infrastruktur Bersama",
-        "description": "Akses ke infrastruktur Obelisk Labs dan sumber daya VC ekosistem"
+        "description": "Menunggu konfirmasi"
       },
       "integration": {
         "title": "Integrasi Ekosistem",
-        "description": "Integrasi langsung dengan proyek Dubhe dan jaringan partner"
+        "description": "Menunggu konfirmasi"
       },
       "development": {
         "title": "Pengembangan Kolaboratif",
-        "description": "Dukungan teknis dari tim rekayasa Yayasan Dubhe dan Obelisk Labs"
+        "description": "Menunggu konfirmasi"
       },
       "demoDays": {
         "title": "Hari Demo Partner",
-        "description": "Presentasi kepada dewan Yayasan Dubhe dan jaringan VC ekosistem"
+        "description": "Menunggu konfirmasi"
       },
       "network": {
         "title": "Jaringan Ekosistem",
-        "description": "Akses ke seluruh ekosistem Dubhe dan perusahaan partner"
+        "description": "Menunggu konfirmasi"
       }
     }
   },
@@ -838,7 +802,7 @@
     },
     "ambassadorsSection": {
       "title": "Bertemu Ambassador Global Kami",
-      "description": "Ambassador kami memimpin perubahan di wilayah mereka, membangun komunitas dan mendorong adopsi",
+      "description": "Nama dan peran saat ini sedang diperiksa.",
       "timezone": "Zona waktu",
       "location": "Lokasi",
       "expertise": "Keahlian",
@@ -954,7 +918,7 @@
           "Mekanisme Konsensus Lintas-rantai"
         ],
         "status": "Aktif",
-        "team": "12 Insinyur"
+        "team": "Menunggu konfirmasi"
       },
       "cyferio": {
         "name": "Cyferio Labs",
@@ -968,7 +932,7 @@
           "Sistem Transaksi Anonim"
         ],
         "status": "Aktif",
-        "team": "8 Peneliti"
+        "team": "Menunggu konfirmasi"
       },
       "network": {
         "name": "Dubhe Network Labs",
@@ -997,6 +961,31 @@
         ],
         "status": "Penelitian",
         "team": "4 Insinyur"
+      },
+      "dubheos": {
+        "name": "DubheOS",
+        "focus": "Ecosystem & Toolchain",
+        "description": "Dubhe's global decentralized community contributing ecosystem toolchain and infrastructure. Building developer tools, libraries, and community-driven utilities to empower the entire ecosystem.",
+        "contributions": [
+          "Community governance framework",
+          "Ecosystem toolchain development",
+          "Developer resource coordination",
+          "Cross-chain protocol standards",
+          "Community-driven innovations"
+        ],
+        "status": "Active",
+        "team": "Global Community"
+      },
+      "numeron": {
+        "name": "Numeron",
+        "focus": "Gaming",
+        "description": "Game ini belum diluncurkan atau diuji secara eksternal; baru alur permainan dan isi ulang internal yang diuji.",
+        "contributions": [
+          "Pengembangan dimulai pada Mei 2026.",
+          "Game ini hanya berbagi IP Numeron dengan game hackathon berbeda dari tahun 2025."
+        ],
+        "status": "Uji coba eksternal sedang disiapkan",
+        "team": ""
       }
     },
     "research": {
@@ -1243,7 +1232,7 @@
     },
     "moderatorsSection": {
       "title": "Temui Moderator Kami",
-      "description": "Tim berdedikasi kami memastikan cakupan 24/7 di semua zona waktu dan platform",
+      "description": "Nama dan peran saat ini sedang diperiksa.",
       "timezone": "Zona Waktu",
       "platforms": "Platform",
       "languages": "Bahasa"
@@ -1328,7 +1317,7 @@
   "engine": {
     "hero": {
       "badge": "Mesin Dubhe",
-      "title1": "80% Kode",
+      "title1": "Dubhe",
       "title2": "Auto-Generation",
       "subtitle": "Platform pengembangan berbasis skema yang menghasilkan kontrak pintar, API, dan komponen UI secara otomatis. Fokus pada yang penting - logika bisnis unik Anda.",
       "stats": {
@@ -1346,7 +1335,7 @@
     },
     "features": {
       "codeGeneration": {
-        "title": "80% Auto-Generation Kode",
+        "title": "Generate Kode",
         "description": "Kurangi waktu pengembangan secara dramatis dengan generasi kode cerdas yang menangani boilerplate, struktur data, dan pola umum secara otomatis.",
         "details": [
           "Generasi kode berbasis skema",
@@ -1397,11 +1386,11 @@
       },
       "generateCode": {
         "title": "Generate Kode",
-        "description": "Mesin Dubhe secara otomatis menghasilkan 80% kode aplikasi Anda termasuk kontrak pintar dan API"
+        "description": "Platform pengembangan berbasis skema yang menghasilkan kontrak pintar, API, dan komponen UI secara otomatis. Fokus pada yang penting - logika bisnis unik Anda."
       },
       "customizeLogic": {
         "title": "Kustomisasi Logika",
-        "description": "Fokus pada 20% yang unik - logika bisnis, fitur kustom, dan pengalaman pengguna Anda"
+        "description": "Definisikan logika game atau dApp Anda menggunakan sistem skema intuitif Dubhe. Jelaskan entitas, komponen, dan sistem dalam file konfigurasi sederhana."
       },
       "deployInstantly": {
         "title": "Deploy Instan",
@@ -1420,7 +1409,7 @@
     "hero": {
       "title": "Layer Interaksi",
       "titleHighlight": "P2P Real-Time",
-      "subtitle": "Pengalaman pengguna level Web2 dengan infrastruktur Web3. Latensi sub-50ms untuk gaming, platform sosial, dan aplikasi trading yang dibangun di blockchain Move.",
+      "subtitle": "Pendekatan multi-layer untuk performa dan skalabilitas optimal",
       "metrics": {
         "latency": "Latensi",
         "users": "Pengguna Bersamaan",
@@ -1436,7 +1425,7 @@
       "description": "Dibangun untuk aplikasi yang membutuhkan responsivitas instan dan pengalaman pengguna yang mulus",
       "items": {
         "latency": {
-          "title": "Latensi Sub-50ms",
+          "title": "Layer Interaksi",
           "description": "Interaksi P2P real-time dengan responsivitas level Web2. Dibangun untuk gaming, trading, dan aplikasi sosial yang membutuhkan feedback instan.",
           "details": [
             "Komunikasi berbasis WebRTC",
@@ -1447,7 +1436,7 @@
         },
         "network": {
           "title": "Jaringan P2P Skalabel",
-          "description": "Penskalaan horizontal yang tumbuh dengan basis pengguna Anda. Dari ratusan hingga jutaan koneksi bersamaan tanpa degradasi performa.",
+          "description": "Pendekatan multi-layer untuk performa dan skalabilitas optimal",
           "details": [
             "Dynamic peer discovery",
             "Protokol load balancing",
@@ -1485,9 +1474,9 @@
           "title": "Gaming Real-Time",
           "description": "Game multiplayer dengan waktu respon instan",
           "metrics": [
-            "Latensi <50ms",
-            "1M+ pemain bersamaan",
-            "99.9% uptime"
+            "",
+            "",
+            ""
           ]
         },
         "social": {
@@ -1538,7 +1527,7 @@
       "status": {
         "title": "STATUS JARINGAN",
         "online": "ONLINE",
-        "latency": "Latensi: <50ms"
+        "latency": ""
       },
       "nodes": {
         "title": "NODE AKTIF",
@@ -2249,5 +2238,14 @@
       "primaryCta": "Mulai gunakan Dubhe Wallet",
       "secondaryCta": "Lihat GitHub"
     }
+  },
+  "contentReview": {
+    "pending": "Menunggu konfirmasi",
+    "people": "Nama dan peran saat ini sedang diperiksa.",
+    "rules": "Aturan halaman historis; keberlakuannya kini menunggu konfirmasi. Ini bukan tawaran pendanaan atau catatan pembayaran yang terkonfirmasi.",
+    "demo": "Contoh antarmuka: saldo, tanggal, dan alamat adalah data contoh, bukan akun terverifikasi atau catatan pembayaran.",
+    "metrics": "Angka tidak ditampilkan sambil menunggu sumber yang dapat diverifikasi.",
+    "currentLabel": "Status saat ini",
+    "startedLabel": "Awal pengembangan"
   }
 }

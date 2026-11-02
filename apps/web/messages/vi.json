@@ -34,25 +34,25 @@
     },
     "features": {
       "title": "Tính năng",
-      "mainTitle": "Move Stack với Tiềm năng Vô hạn",
+      "mainTitle": "Bộ Stack Phát Triển Move Hoàn Chỉnh",
       "moveCompatible": {
-        "title": "100% Tương thích Move",
+        "title": "Tương thích Move",
         "description": "Sử dụng hệ sinh thái Move hiện tại cho lợi thế của bạn."
       },
       "zeroGas": {
-        "title": "Phí gas bằng không",
-        "description": "Cho phép dự án chi trả chi phí này, hỗ trợ mở rộng và tùy chỉnh linh hoạt."
+        "title": "Tài trợ gas tùy chọn",
+        "description": "Phí gas phụ thuộc vào chuỗi và giao dịch. Ứng dụng có thể tài trợ các phí đủ điều kiện; không bảo đảm mọi giao dịch đều miễn phí."
       },
       "realTime": {
         "title": "Đồng bộ thời gian thực"
       },
       "unlimited": {
-        "title": "Không giới hạn",
-        "subtitle": "Giao dịch mỗi giây",
-        "description": "Phụ thuộc vào số lượng kênh dubhe chạy song song."
+        "title": "Năng lực",
+        "subtitle": "Tùy cấu hình",
+        "description": "Thông lượng thay đổi theo cấu hình và khối lượng công việc. Chưa có kết quả đo công khai được xác minh."
       },
       "syncFinality": {
-        "title": "Tính hoàn thiện đồng bộ trạng thái 1s"
+        "title": "Dubhe Channel"
       }
     },
     "community": {
@@ -88,17 +88,17 @@
       },
       "stats": {
         "members": {
-          "value": "100K+",
+          "value": "",
           "label": "Thành viên Cộng đồng",
           "description": "Các nhà phát triển và người đam mê hoạt động trên toàn thế giới"
         },
         "events": {
-          "value": "50+",
+          "value": "",
           "label": "Sự kiện Toàn cầu",
           "description": "Hội nghị, cuộc họp và hội thảo hàng năm"
         },
         "countries": {
-          "value": "20+",
+          "value": "",
           "label": "Quốc gia",
           "description": "Sự hiện diện của cộng đồng Dubhe trên các châu lục"
         }
@@ -133,22 +133,26 @@
         "merak": {
           "name": "Merak",
           "description": "Nhà tạo lập thị trường tự động",
-          "tvl": "$45M"
+          "tvl": ""
         },
         "numeron": {
           "name": "Numeron",
-          "description": "Cuộc phiêu lưu RPG AI giả tưởng",
-          "players": "12K+"
+          "description": "",
+          "players": "",
+          "status": "Đang chuẩn bị thử nghiệm bên ngoài",
+          "development": "Quá trình phát triển bắt đầu vào tháng 5 năm 2026.",
+          "validation": "Trò chơi chưa ra mắt hoặc thử nghiệm bên ngoài; mới chỉ kiểm thử nội bộ luồng chơi và nạp tiền.",
+          "history": "Trò chơi chỉ dùng chung IP Numeron với một trò chơi hackathon khác năm 2025."
         },
         "cyferio": {
           "name": "Cyferio SDK",
           "description": "Bộ công cụ phát triển",
-          "downloads": "50K+"
+          "downloads": ""
         },
         "objectsdao": {
           "name": "Objectsdao",
           "description": "Đấu giá NFT",
-          "volume": "$2.3M"
+          "volume": ""
         }
       },
       "metrics": {
@@ -174,11 +178,11 @@
         },
         "codeGeneration": {
           "title": "Tạo mã",
-          "description": "Công cụ Dubhe tự động tạo ra 80% các hợp đồng thông minh Move, thư viện client và giao diện API từ các định nghĩa schema của bạn."
+          "description": "Định nghĩa logic game hoặc dApp của bạn bằng hệ thống schema trực quan của Dubhe. Mô tả entities, components và systems trong các tập tin cấu hình đơn giản."
         },
         "deploymentChannel": {
           "title": "Triển khai & Kênh",
-          "description": "Triển khai lên nhiều chuỗi Move chỉ với một lệnh. Kênh Dubhe cung cấp đồng bộ thời gian thực và độ trễ <50ms cho trải nghiệm người dùng liền mạch."
+          "description": "Lớp tương tác P2P có thể lập trình thời gian thực khiến blockchain cảm giác như Web2"
         },
         "multiChainExecution": {
           "title": "Thực thi đa chuỗi",
@@ -203,13 +207,13 @@
       "features": {
         "codeGeneration": {
           "title": "Tạo Mã",
-          "dubhe": "80% tự động",
+          "dubhe": "",
           "others": "Mã hóa thủ công"
         },
         "uxPerformance": {
           "title": "Hiệu năng UX",
-          "dubhe": "<50ms",
-          "others": "3-15 giây"
+          "dubhe": "",
+          "others": ""
         },
         "multiChainSupport": {
           "title": "Hỗ trợ Đa chuỗi",
@@ -234,16 +238,11 @@
       "description": "Từ các công cụ phát triển đến kênh tương tác thời gian thực và cơ sở hạ tầng phi tập trung - Dubhe cung cấp mọi thứ cần thiết để xây dựng thế hệ tiếp theo của các ứng dụng hoàn toàn on-chain.",
       "keyMetricsTitle": "Chỉ số Chính",
       "keyMetrics": [
-        "Đã xử lý hơn 10 triệu giao dịch",
-        "Độ trễ trung bình <200ms",
         "Trải nghiệm người dùng cấp Web2",
         "Tương thích với Sui, Aptos, Rooch, Movement, Initia"
       ],
       "moveEcosystemTitle": "Hệ sinh thái Move",
       "moveEcosystemFeatures": [
-        "1.555 nhà phát triển Move đang hoạt động",
-        "Tăng trưởng 40% hàng tháng",
-        "Chưa đến 3 tuổi",
         "Tiềm năng tăng trưởng khổng lồ"
       ],
       "pipelining": "Pipelining",
@@ -262,7 +261,7 @@
         "dubheEngine": {
           "title": "Công cụ Dubhe",
           "subtitle": "Bộ công cụ Phát triển",
-          "description": "Tự động tạo 80% mã và cung cấp chuỗi công cụ nhà phát triển hoàn chỉnh",
+          "description": "Định nghĩa logic game hoặc dApp của bạn bằng hệ thống schema trực quan của Dubhe. Mô tả entities, components và systems trong các tập tin cấu hình đơn giản.",
           "features": [
             "Tạo mã",
             "Phát triển dựa trên Lược đồ",
@@ -275,7 +274,6 @@
           "subtitle": "Lớp Thời gian thực",
           "description": "Lớp tương tác P2P cho trải nghiệm người dùng thời gian thực cấp Web2",
           "features": [
-            "Độ trễ <50ms",
             "Đồng bộ Thời gian thực",
             "Giao tiếp P2P",
             "Hỗ trợ Di động"
@@ -323,14 +321,13 @@
       "products": {
         "engine": {
           "title": "Công cụ Dubhe",
-          "subtitle": "Tự Động Tạo 80% Code",
-          "description": "Bộ công cụ phát triển duy nhất tự động tạo ra 80% code Move, cho phép các nhà phát triển tập trung vào logic kinh doanh cốt lõi",
+          "subtitle": "Định nghĩa Schema",
+          "description": "Định nghĩa logic game hoặc dApp của bạn bằng hệ thống schema trực quan của Dubhe. Mô tả entities, components và systems trong các tập tin cấu hình đơn giản.",
           "features": [
             "Giảm thời gian phát triển từ tháng xuống tuần",
-            "Giảm 90% chi phí hạ tầng",
             "Một lệnh triển khai lên tất cả chuỗi Move"
           ],
-          "highlight": "Phát Triển Nhanh Hơn 10x"
+          "highlight": "Tạo mã"
         },
         "channel": {
           "title": "Kênh Dubhe",
@@ -341,7 +338,7 @@
             "Tốc độ thực thi siêu nhanh",
             "Hỗ trợ đa khách hàng di động, máy tính để bàn và web"
           ],
-          "highlight": "Độ Trễ <50ms"
+          "highlight": "Dubhe Channel"
         },
         "os": {
           "title": "Dubhe OS",
@@ -358,22 +355,22 @@
     },
     "networkStats": {
       "title": "Thống kê Mạng",
-      "description": "Các chỉ số thời gian thực thể hiện sự tăng trưởng và hoạt động trên toàn bộ hệ sinh thái Dubhe.",
+      "description": "Tạm ẩn số liệu trong khi chờ nguồn có thể xác minh.",
       "transactions": {
         "label": "Giao dịch Đã xử lý",
-        "change": "+12.5%"
+        "change": ""
       },
       "operations": {
         "label": "Các thao tác Đã thực hiện",
-        "change": "+18.2%"
+        "change": ""
       },
       "users": {
         "label": "Người dùng Hoạt động",
-        "change": "+25.1%"
+        "change": ""
       },
       "income": {
         "label": "Doanh thu Giao thức",
-        "change": "+15.8%"
+        "change": ""
       }
     }
   },
@@ -416,7 +413,7 @@
     }
   },
   "footer": {
-    "description": "Nền tảng phát triển Move hoàn chỉnh với 80% tự động tạo mã, kênh P2P thời gian thực và khả năng tương tác liên chuỗi.",
+    "description": "Obelisk Labs phát triển hạ tầng, bao gồm Dubhe. Dubhe Wallet hỗ trợ ví và xác minh danh tính. Numeron là một trò chơi riêng đang được phát triển.",
     "sections": {
       "learn": "Học tập",
       "build": "Xây dựng",
@@ -441,7 +438,8 @@
       "contact": "Liên hệ",
       "about": "Giới thiệu",
       "terms": "Điều khoản Dịch vụ",
-      "privacy": "Chính sách Bảo mật"
+      "privacy": "Chính sách Bảo mật",
+      "mediaKit": "Bộ tài liệu truyền thông"
     },
     "copyright": "© 2025 Dubhe. Tất cả quyền được bảo lưu."
   },
@@ -485,13 +483,57 @@
           "description": "Xây dựng các mối quan hệ chiến lược trong hệ sinh thái blockchain"
         }
       }
+    },
+    "members": {
+      "jason": {
+        "name": "Jason",
+        "role": "Chờ xác nhận",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "joan": {
+        "name": "Joan",
+        "role": "Chờ xác nhận",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "david": {
+        "name": "David",
+        "role": "Chờ xác nhận",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "bonnie": {
+        "name": "Bonnie",
+        "role": "Chờ xác nhận",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "liam": {
+        "name": "Liam McKenzie",
+        "role": "Chờ xác nhận",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      },
+      "emily": {
+        "name": "Emily Smith",
+        "role": "Chờ xác nhận",
+        "location": "",
+        "bio": "",
+        "expertise": []
+      }
     }
   },
   "grants": {
     "hero": {
       "badge": "Tài trợ Quỹ Dubhe",
       "title": "Tài trợ các Đổi mới của Bạn",
-      "description": "Nhận tài trợ không hoàn trả từ Quỹ Dubhe để xây dựng các ứng dụng Move mã nguồn mở, cơ sở hạ tầng và công cụ. Tất cả các dự án phải hoàn toàn có chức năng và hoàn thành tất cả các cốt mốc.",
+      "description": "Quy tắc trên trang lịch sử; hiệu lực hiện tại chờ xác nhận. Đây không phải cam kết tài trợ hay hồ sơ thanh toán đã xác nhận.",
       "stats": {
         "totalFunded": "Tổng đã Tài trợ",
         "projectsFunded": "Dự án được Tài trợ",
@@ -506,22 +548,22 @@
       "badge": "Các hạng mục Tài trợ",
       "infrastructure": {
         "title": "Tài trợ Cơ sở hạ tầng",
-        "amount": "Lên đến $100K",
+        "amount": "Chờ xác nhận",
         "description": "Xây dựng cơ sở hạ tầng cốt lõi, công cụ nhà phát triển và tiện ích hệ sinh thái"
       },
       "dapp": {
         "title": "Phát triển DApp",
-        "amount": "Lên đến $75K",
+        "amount": "Chờ xác nhận",
         "description": "Tạo các ứng dụng phi tập trung đổi mới trên hệ sinh thái Dubhe"
       },
       "research": {
         "title": "Tài trợ Nghiên cứu",
-        "amount": "Lên đến $50K",
+        "amount": "Chờ xác nhận",
         "description": "Nghiên cứu học thuật, cải tiến giao thức và đóng góp lý thuyết"
       },
       "community": {
         "title": "Dự án Cộng đồng",
-        "amount": "Lên đến $25K",
+        "amount": "Chờ xác nhận",
         "description": "Giáo dục, tài liệu, công cụ cộng đồng và chương trình tiếp cận"
       }
     },
@@ -532,27 +574,27 @@
         "proposal": {
           "title": "Nộp Đề xuất",
           "description": "Gửi đề xuất toàn diện với các cốt mốc chi tiết và cam kết mã nguồn mở",
-          "duration": "1 tuần"
+          "duration": "Chờ xác nhận"
         },
         "review": {
           "title": "Xem xét của Quỹ",
           "description": "Uỷ ban kỹ thuật Quỹ Dubhe đánh giá tính khả thi và tác động hệ sinh thái",
-          "duration": "2-3 tuần"
+          "duration": "Chờ xác nhận"
         },
         "interview": {
           "title": "Phỏng vấn Đội ngũ",
           "description": "Trình bày lộ trình dự án của bạn và thể hiện khả năng kỹ thuật",
-          "duration": "1 tuần"
+          "duration": "Chờ xác nhận"
         },
         "approval": {
           "title": "Phê duyệt Tài trợ",
           "description": "Hội đồng Quỹ phê duyệt tài trợ không hoàn trả với yêu cầu cốt mốc",
-          "duration": "1 tuần"
+          "duration": "Chờ xác nhận"
         },
         "delivery": {
           "title": "Giao kết quả Cốt mốc",
           "description": "Hoàn thành tất cả các cốt mốc với kết quả có chức năng và nhận toàn bộ tài trợ",
-          "duration": "3-12 tháng"
+          "duration": "Chờ xác nhận"
         }
       },
       "requirements": {
@@ -568,8 +610,8 @@
       }
     },
     "successStories": {
-      "title": "Câu chuyện Thành công",
-      "description": "Các dự án nhận tài trợ và tạo ra tác động đáng kể"
+      "title": "Hệ sinh thái",
+      "description": "Tạm ẩn số liệu trong khi chờ nguồn có thể xác minh."
     },
     "terms": {
       "title": "Điều khoản Tài trợ",
@@ -598,7 +640,7 @@
     "hero": {
       "title": "P2P Thời gian Thực",
       "titleHighlight": "Lớp Tương tác",
-      "subtitle": "Trải nghiệm người dùng cấp Web2 với cơ sở hạ tầng Web3. Độ trễ dưới 50ms cho các ứng dụng game, nền tảng xã hội và giao dịch được xây dựng trên blockchain Move.",
+      "subtitle": "Phương pháp đa lớp cho hiệu suất và khả năng mở rộng tối ưu",
       "metrics": {
         "latency": "Độ trễ",
         "users": "Người dùng đồng thời",
@@ -614,7 +656,7 @@
       "description": "Được xây dựng cho các ứng dụng đòi hỏi khả năng phản hồi tức thì và trải nghiệm người dùng liền mạch",
       "items": {
         "latency": {
-          "title": "Độ trễ Dưới 50ms",
+          "title": "P2P Thời gian Thực",
           "description": "Tương tác P2P thời gian thực với khả năng phản hồi cấp Web2. Được xây dựng cho game, giao dịch và ứng dụng xã hội đòi hỏi phản hồi tức thì.",
           "details": [
             "Giao tiếp dựa trên WebRTC",
@@ -625,7 +667,7 @@
         },
         "network": {
           "title": "Mạng P2P Có thể Mở rộng",
-          "description": "Mở rộng theo chiều ngang phát triển cùng với cơ sở người dùng của bạn. Từ hàng trăm đến hàng triệu kết nối đồng thời mà không bị suy giảm hiệu suất.",
+          "description": "Phương pháp đa lớp cho hiệu suất và khả năng mở rộng tối ưu",
           "details": [
             "Khám phá peer động",
             "Giao thức cân bằng tải",
@@ -663,9 +705,9 @@
           "title": "Game Thời gian Thực",
           "description": "Game nhiều người chơi với thời gian phản hồi tức thì",
           "metrics": [
-            "Độ trễ <50ms",
-            "1M+ người chơi đồng thời",
-            "99.9% thời gian hoạt động"
+            "",
+            "",
+            ""
           ]
         },
         "social": {
@@ -716,7 +758,7 @@
       "status": {
         "title": "TRẠNG THÁI MẠNG",
         "online": "TRỰC TUYẾN",
-        "latency": "Độ trễ: <50ms"
+        "latency": ""
       },
       "nodes": {
         "title": "CÁC NÚT HOẠT ĐỘNG",
@@ -901,7 +943,7 @@
     "hero": {
       "badge": "Ủ ấp Quỹ Dubhe",
       "title": "Xây dựng Startup Unicorn Tiếp theo",
-      "subtitle": "Tham gia hệ sinh thái ủ ấp hợp tác được hỗ trợ bởi Quỹ Dubhe, đồng ủ ấp với Obelisk Labs và các VC hệ sinh thái để xây dựng thế hệ startup Move tiếp theo.",
+      "subtitle": "Quy tắc trên trang lịch sử; hiệu lực hiện tại chờ xác nhận. Đây không phải cam kết tài trợ hay hồ sơ thanh toán đã xác nhận.",
       "stats": {
         "funding": {
           "value": "Sắp ra mắt",
@@ -928,65 +970,56 @@
     "programs": {
       "accelerator": {
         "title": "Máy gia tốc Quỹ",
-        "duration": "3 tháng",
-        "funding": "Lên đến $500K",
-        "description": "Chương trình chuyên sâu được hỗ trợ bởi Quỹ Dubhe đồng ủ ấp với Obelisk Labs và các VC hệ sinh thái",
+        "duration": "Chờ xác nhận",
+        "funding": "Chờ xác nhận",
+        "description": "Quy tắc trên trang lịch sử; hiệu lực hiện tại chờ xác nhận. Đây không phải cam kết tài trợ hay hồ sơ thanh toán đã xác nhận.",
         "benefits": [
-          "Tài trợ Quỹ Dubhe",
-          "Đồng ủ ấp Obelisk Labs",
-          "Hỗ trợ phát triển Move",
-          "Đối tác VC hệ sinh thái"
+          "Hỗ trợ phát triển Move"
         ]
       },
       "studio": {
         "title": "Studio Hợp tác",
-        "duration": "6-12 tháng",
-        "funding": "Lên đến $1M",
-        "description": "Đồng ủ ấp bởi Quỹ Dubhe, Obelisk Labs và các VC hệ sinh thái với tài nguyên chia sẻ",
+        "duration": "Chờ xác nhận",
+        "funding": "Chờ xác nhận",
+        "description": "Quy tắc trên trang lịch sử; hiệu lực hiện tại chờ xác nhận. Đây không phải cam kết tài trợ hay hồ sơ thanh toán đã xác nhận.",
         "benefits": [
-          "Đồng ủ ấp đa đối tác",
-          "Tài nguyên kỹ thuật chia sẻ",
-          "Hợp tác liên dự án",
-          "Mạng lưới VC hệ sinh thái"
+          "Hợp tác liên dự án"
         ]
       },
       "scale": {
         "title": "Mở rộng Hệ sinh thái",
-        "duration": "6 tháng",
-        "funding": "Lên đến $2M",
-        "description": "Mở rộng với hỗ trợ toàn diện từ Quỹ Dubhe, Obelisk Labs và các đối tác VC hệ sinh thái",
+        "duration": "Chờ xác nhận",
+        "funding": "Chờ xác nhận",
+        "description": "Quy tắc trên trang lịch sử; hiệu lực hiện tại chờ xác nhận. Đây không phải cam kết tài trợ hay hồ sơ thanh toán đã xác nhận.",
         "benefits": [
-          "Mạng lưới đồng ủ ấp",
-          "Giới thiệu chiến lược",
-          "Tiếp cận thị trường toàn cầu",
-          "Kết nối VC doanh nghiệp"
+          "Tiếp cận thị trường toàn cầu"
         ]
       }
     },
     "resources": {
       "coIncubation": {
         "title": "Đồng Ủ ấp Đa Đối tác",
-        "description": "Hướng dẫn chung từ Quỹ Dubhe, Obelisk Labs và các VC hệ sinh thái"
+        "description": "Chờ xác nhận"
       },
       "infrastructure": {
         "title": "Cơ sở hạ tầng Chia sẻ",
-        "description": "Truy cập cơ sở hạ tầng Obelisk Labs và tài nguyên VC hệ sinh thái"
+        "description": "Chờ xác nhận"
       },
       "integration": {
         "title": "Tích hợp Hệ sinh thái",
-        "description": "Tích hợp trực tiếp với các dự án Dubhe và mạng lưới đối tác"
+        "description": "Chờ xác nhận"
       },
       "development": {
         "title": "Phát triển Hợp tác",
-        "description": "Hỗ trợ kỹ thuật từ đội ngũ kỹ sư Quỹ Dubhe và Obelisk Labs"
+        "description": "Chờ xác nhận"
       },
       "demoDays": {
         "title": "Ngày Demo Đối tác",
-        "description": "Trình bày cho ban giám đốc Quỹ Dubhe và mạng lưới VC hệ sinh thái"
+        "description": "Chờ xác nhận"
       },
       "network": {
         "title": "Mạng lưới Hệ sinh thái",
-        "description": "Truy cập toàn bộ hệ sinh thái Dubhe và công ty đối tác"
+        "description": "Chờ xác nhận"
       }
     }
   },
@@ -1028,7 +1061,7 @@
     },
     "ambassadorsSection": {
       "title": "Gặp gỡ Đại sứ Toàn cầu của Chúng tôi",
-      "description": "Các đại sứ của chúng tôi đang dẫn đầu trong khu vực của họ, xây dựng cộng đồng và thúc đẩy việc áp dụng",
+      "description": "Tên và vai trò hiện tại đang được đối chiếu.",
       "timezone": "Múi giờ",
       "location": "Địa điểm",
       "expertise": "Chuyên môn",
@@ -1122,7 +1155,7 @@
     },
     "moderatorsSection": {
       "title": "Gặp gỡ Điều hành viên của chúng tôi",
-      "description": "Đội ngũ tận tâm của chúng tôi đảm bảo bao phủ 24/7 trên tất cả múi giờ và nền tảng",
+      "description": "Tên và vai trò hiện tại đang được đối chiếu.",
       "timezone": "Múi giờ",
       "platforms": "Nền tảng",
       "languages": "Ngôn ngữ"
@@ -1348,7 +1381,7 @@
   "engine": {
     "hero": {
       "badge": "Dubhe Engine",
-      "title1": "80% Code",
+      "title1": "Dubhe",
       "title2": "Tự động tạo",
       "subtitle": "Nền tảng phát triển dựa trên lược đồ tự động tạo smart contracts, APIs và UI components. Tập trung vào điều quan trọng - logic kinh doanh độc đáo của bạn.",
       "stats": {
@@ -1366,7 +1399,7 @@
     },
     "features": {
       "codeGeneration": {
-        "title": "80% Tự động tạo Code",
+        "title": "Tạo Code",
         "description": "Giảm thời gian phát triển một cách đáng kể với việc tạo mã thông minh tự động xử lý boilerplate, cấu trúc dữ liệu và các mẫu phổ biến.",
         "details": [
           "Tạo mã dựa trên lược đồ",
@@ -1417,11 +1450,11 @@
       },
       "generateCode": {
         "title": "Tạo Code",
-        "description": "Dubhe Engine tự động tạo 80% mã ứng dụng của bạn bao gồm smart contracts và APIs"
+        "description": "Nền tảng phát triển dựa trên lược đồ tự động tạo smart contracts, APIs và UI components. Tập trung vào điều quan trọng - logic kinh doanh độc đáo của bạn."
       },
       "customizeLogic": {
         "title": "Tùy chỉnh Logic",
-        "description": "Tập trung vào 20% độc đáo - logic kinh doanh, tính năng tùy chỉnh và trải nghiệm người dùng của bạn"
+        "description": "Định nghĩa logic game hoặc dApp của bạn bằng hệ thống schema trực quan của Dubhe. Mô tả entities, components và systems trong các tập tin cấu hình đơn giản."
       },
       "deployInstantly": {
         "title": "Triển khai Ngay lập tức",
@@ -1469,7 +1502,7 @@
           "Cơ chế Đồng thuận Đa chuỗi"
         ],
         "status": "Hoạt động",
-        "team": "12 Kỹ sư"
+        "team": "Chờ xác nhận"
       },
       "cyferio": {
         "name": "Cyferio Labs",
@@ -1483,7 +1516,7 @@
           "Hệ thống Giao dịch Ẩn danh"
         ],
         "status": "Hoạt động",
-        "team": "8 Nhà nghiên cứu"
+        "team": "Chờ xác nhận"
       },
       "network": {
         "name": "Dubhe Network Labs",
@@ -1512,6 +1545,31 @@
         ],
         "status": "Nghiên cứu",
         "team": "4 Kỹ sư"
+      },
+      "dubheos": {
+        "name": "DubheOS",
+        "focus": "Ecosystem & Toolchain",
+        "description": "Dubhe's global decentralized community contributing ecosystem toolchain and infrastructure. Building developer tools, libraries, and community-driven utilities to empower the entire ecosystem.",
+        "contributions": [
+          "Community governance framework",
+          "Ecosystem toolchain development",
+          "Developer resource coordination",
+          "Cross-chain protocol standards",
+          "Community-driven innovations"
+        ],
+        "status": "Active",
+        "team": "Global Community"
+      },
+      "numeron": {
+        "name": "Numeron",
+        "focus": "Game",
+        "description": "Trò chơi chưa ra mắt hoặc thử nghiệm bên ngoài; mới chỉ kiểm thử nội bộ luồng chơi và nạp tiền.",
+        "contributions": [
+          "Quá trình phát triển bắt đầu vào tháng 5 năm 2026.",
+          "Trò chơi chỉ dùng chung IP Numeron với một trò chơi hackathon khác năm 2025."
+        ],
+        "status": "Đang chuẩn bị thử nghiệm bên ngoài",
+        "team": ""
       }
     },
     "research": {
@@ -2157,5 +2215,14 @@
       "primaryCta": "Bắt đầu dùng Dubhe Wallet",
       "secondaryCta": "Xem GitHub"
     }
+  },
+  "contentReview": {
+    "pending": "Chờ xác nhận",
+    "people": "Tên và vai trò hiện tại đang được đối chiếu.",
+    "rules": "Quy tắc trên trang lịch sử; hiệu lực hiện tại chờ xác nhận. Đây không phải cam kết tài trợ hay hồ sơ thanh toán đã xác nhận.",
+    "demo": "Giao diện minh họa: số dư, ngày và địa chỉ là dữ liệu mẫu, không phải tài khoản hay khoản thanh toán đã xác minh.",
+    "metrics": "Tạm ẩn số liệu trong khi chờ nguồn có thể xác minh.",
+    "currentLabel": "Trạng thái hiện tại",
+    "startedLabel": "Bắt đầu phát triển"
   }
 }

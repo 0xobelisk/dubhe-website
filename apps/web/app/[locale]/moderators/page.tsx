@@ -1,5 +1,7 @@
 "use client"
 
+import ContentReviewNotice from "@/components/content-review-notice"
+
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
@@ -202,6 +204,7 @@ export default function ModeratorsPage() {
 
               {/* Main Headline */}
               <div className="space-y-6 max-w-5xl mx-auto">
+                <ContentReviewNotice kind="rules" />
                 <motion.h1 
                   className="text-5xl lg:text-7xl font-bold text-white leading-tight"
                   initial={{ opacity: 0, y: 20 }}
@@ -233,15 +236,15 @@ export default function ModeratorsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <div className="text-center flex flex-col items-center justify-center">
-                  <div className="text-3xl font-bold text-emerald-400 mb-2">24/7</div>
+                  <div className="text-3xl font-bold text-emerald-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.stats.coverage')}</div>
                 </div>
                 <div className="text-center flex flex-col items-center justify-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">8+</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.stats.activeModerators')}</div>
                 </div>
                 <div className="text-center flex flex-col items-center justify-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">50K+</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">—</div>
                   <div className="text-gray-300">{t('hero.stats.membersProtected')}</div>
                 </div>
               </motion.div>

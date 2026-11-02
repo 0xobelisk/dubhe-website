@@ -11,11 +11,11 @@ import GradientText from "../ui/GradientText"
  * 市场背景数据
  */
 const marketContext = {
-  title: "Move Ecosystem: The Fastest Growing Developer Community",
-  moveDevs: "1,555",
-  timeFrame: "<3 years",
-  ethereumDevs: "8,925", 
-  comparison: "Move achieving 17% of Ethereum's developer base in <3 years",
+  title: "Move Ecosystem: Developer Tooling Ecosystem",
+  moveDevs: "—",
+  timeFrame: "",
+  ethereumDevs: "—",
+  comparison: "Comparative ecosystem figures await verification",
   insight: "Strong network effects but high friction hurts entire ecosystem"
 }
 
@@ -26,10 +26,10 @@ const problems = [
   {
     id: "cost",
     icon: <DollarSign className="w-8 h-8" />,
-    title: "30-40% Higher Development Costs vs Ethereum",
+    title: "Development Costs",
     description: "Same dApp development costs significantly more on Move chains",
     impact: "Barriers preventing mass developer adoption",
-    stats: "Creating same complexity dApp costs $200K+ on Move vs $150K on Ethereum",
+    stats: "Comparative cost figures await verification",
     color: "from-red-500 to-pink-500"
   },
   {
@@ -47,7 +47,7 @@ const problems = [
     title: "Slow, Non-Web2-like User Experience",
     description: "High latency and poor interaction patterns",
     impact: "Users drop off, limiting ecosystem growth potential",
-    stats: "Average blockchain interaction takes 12-45 seconds vs <50ms for Web2",
+    stats: "Latency varies by workload, network and configuration",
     color: "from-blue-500 to-cyan-500"
   }
 ]
@@ -61,9 +61,9 @@ const solution = {
   benefits: [
     {
       icon: <Target className="w-6 h-6" />,
-      title: "80% Code Auto-Generation",
-      description: "Developers focus on 20% core logic, 80% infrastructure generated automatically",
-      result: "15x faster development cycles"
+      title: "Schema-Based Code Generation",
+      description: "Generate infrastructure code from application schemas",
+      result: "Application-specific development workflow"
     },
     {
       icon: <CheckCircle className="w-6 h-6" />,
@@ -74,7 +74,7 @@ const solution = {
     {
       icon: <TrendingUp className="w-6 h-6" />,
       title: "Web2-Level Real-Time Experience",
-      description: "<50ms average latency with instant frontend rendering",
+      description: "Performance depends on workload and configuration",
       result: "Feels like using a web2 app"
     }
   ]
@@ -152,7 +152,7 @@ export default function ProblemSolution() {
                 <div className="text-center">
                   <div className="text-lg font-semibold text-purple-400 mb-2">vs</div>
                   <div className="text-sm text-gray-400">
-                    17% of Ethereum&apos;s<br />developer base
+                    Comparative figures<br />await verification
                   </div>
                 </div>
               </div>

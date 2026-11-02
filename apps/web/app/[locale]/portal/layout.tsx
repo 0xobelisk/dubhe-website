@@ -4,7 +4,7 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Developer Portal - Tools & Resources',
-  description: 'Access the Dubhe Developer Portal with comprehensive tools, documentation, and resources for Move blockchain development.',
+  description: 'Example rewards interface. Balances, dates and addresses are sample data, not a verified account balance or payment record.',
   keywords: [
     'Dubhe portal',
     'developer tools',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Dubhe Developer Portal - Tools & Resources',
-    description: 'Comprehensive developer portal with tools and resources for Move blockchain development.',
+    description: 'Example rewards interface. Balances, dates and addresses are sample data, not a verified account balance or payment record.',
     url: '/portal',
     type: 'website',
   },
@@ -38,8 +38,8 @@ export default function PortalLayout({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             "name": "Dubhe Developer Portal",
-            "description": "Comprehensive developer portal for Move blockchain development",
-            "url": "https://dubhe.network/portal",
+            "description": "Example rewards interface. Balances, dates and addresses are sample data, not a verified account balance or payment record.",
+            "url": "https://dubhe.obelisk.build/portal",
             "applicationCategory": "DeveloperApplication",
             "provider": {
               "@type": "Organization",

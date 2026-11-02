@@ -1,0 +1,1815 @@
+{
+  "checkedAt": "2026-11-02T17:30:38.012Z",
+  "origin": "http://127.0.0.1:3281",
+  "base": "fa2e3ed3368aea78e046221c24d1c0c4e666d249",
+  "buildId": "m8yZGB4VaK45CWqYtuT6V",
+  "sourceFingerprint": "02398d7d8db2de75dff929975a23d5cfd6ff29772812b26683130989e94b7259",
+  "summary": {
+    "total": 225,
+    "passed": 225,
+    "failed": 0
+  },
+  "scope": "HTTP/server-render checks only; final browser screenshots and collision checks are performed separately by the root agent.",
+  "results": [
+    {
+      "path": "/bn",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/bn/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/en/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/fr/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ha/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/hi/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/id/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ja/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ko/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/mediakit/dubhe/png/a.png",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/pt/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ru/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/th/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/tr/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/uk/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/ur/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/vi/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/ambassador",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/channel",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/engine",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/events",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/grants",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/incubation",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/investor",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/labs",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/moderators",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/portal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/proposal",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/team",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    },
+    {
+      "path": "/zh-TW/token",
+      "status": 200,
+      "errorFrame": false,
+      "oldPlayerClaim": false,
+      "staleSeoOrigin": false,
+      "pass": true
+    }
+  ]
+}

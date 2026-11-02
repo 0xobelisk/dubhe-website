@@ -34,25 +34,25 @@
     },
     "features": {
       "title": "功能特性",
-      "mainTitle": "無限潛力的 Move 技術堆疊",
+      "mainTitle": "完整的Move開發堆棧",
       "moveCompatible": {
-        "title": "100% Move 相容",
+        "title": "Move 相容",
         "description": "充分利用現有的 Move 生態系統優勢。"
       },
       "zeroGas": {
-        "title": "零燃料費",
-        "description": "允許專案承擔此費用，支持靈活擴展和客製化。"
+        "title": "可選的 Gas 費用贊助",
+        "description": "Gas 成本取決於鏈與交易。應用程式可以贊助符合條件的費用，但不保證所有交易免手續費。"
       },
       "realTime": {
         "title": "即時同步"
       },
       "unlimited": {
-        "title": "無限制",
-        "subtitle": "每秒交易數",
-        "description": "取決於並行運行的 Dubhe 通道數量。"
+        "title": "處理容量",
+        "subtitle": "依設定與負載而異",
+        "description": "吞吐量取決於設定與工作負載，目前尚無經驗證的公開效能測試。"
       },
       "syncFinality": {
-        "title": "1秒同步狀態確定性"
+        "title": "Dubhe Channel"
       }
     },
     "community": {
@@ -88,17 +88,17 @@
       },
       "stats": {
         "members": {
-          "value": "10萬+",
+          "value": "",
           "label": "社群成員",
           "description": "全球活躍的開發者和愛好者"
         },
         "events": {
-          "value": "50+",
+          "value": "",
           "label": "全球活動",
           "description": "每年舉辦的會議、聚會和工作坊"
         },
         "countries": {
-          "value": "20+",
+          "value": "",
           "label": "國家",
           "description": "Dubhe 社群遍布各大洲"
         }
@@ -133,22 +133,26 @@
         "merak": {
           "name": "Merak",
           "description": "自動化做市商",
-          "tvl": "$45M"
+          "tvl": ""
         },
         "numeron": {
           "name": "Numeron",
-          "description": "奇幻AI角色扮演冒險",
-          "players": "12K+"
+          "description": "",
+          "players": "",
+          "status": "準備外部測試",
+          "development": "2026 年 5 月開始開發。",
+          "validation": "尚未上線、尚未開始外部測試；目前僅完成遊戲及內部充值流程測試。",
+          "history": "與 2025 年的黑客松作品是不同遊戲，僅沿用 Numeron IP。"
         },
         "cyferio": {
           "name": "Cyferio SDK",
           "description": "開發套件",
-          "downloads": "50K+"
+          "downloads": ""
         },
         "objectsdao": {
           "name": "Objectsdao",
           "description": "NFT拍賣",
-          "volume": "$2.3M"
+          "volume": ""
         }
       },
       "metrics": {
@@ -174,11 +178,11 @@
         },
         "codeGeneration": {
           "title": "代碼生成",
-          "description": "Dubhe引擎根據您的架構定義自動生成80%的Move智能合約、客戶端庫和API接口。"
+          "description": "使用Dubhe直觀的架構系統定義您的遊戲或dApp邏輯。在簡單的配置文件中描述實體、組件和系統。"
         },
         "deploymentChannel": {
           "title": "部署與通道",
-          "description": "一鍵部署到多個Move鏈。Dubhe通道提供即時同步和<50毫秒延遲，實現無縫用戶體驗。"
+          "description": "即時可編程P2P互動層，讓區塊鏈感覺像Web2"
         },
         "multiChainExecution": {
           "title": "多鏈執行",
@@ -203,13 +207,13 @@
       "features": {
         "codeGeneration": {
           "title": "代碼生成",
-          "dubhe": "80%自動化",
+          "dubhe": "",
           "others": "手動編碼"
         },
         "uxPerformance": {
           "title": "用戶體驗性能",
-          "dubhe": "<50ms",
-          "others": "3-15秒"
+          "dubhe": "",
+          "others": ""
         },
         "multiChainSupport": {
           "title": "多鏈支援",
@@ -235,14 +239,13 @@
       "products": {
         "engine": {
           "title": "Dubhe引擎",
-          "subtitle": "80%代碼自動生成",
-          "description": "唯一能自動生成80%Move代碼的開發工具包，讓開發者專注於核心業務邏輯",
+          "subtitle": "架構定義",
+          "description": "使用Dubhe直觀的架構系統定義您的遊戲或dApp邏輯。在簡單的配置文件中描述實體、組件和系統。",
           "features": [
             "將開發時間從數月縮短至數週",
-            "基礎設施成本降低90%",
             "一個命令部署到所有Move鏈"
           ],
-          "highlight": "開發速度提升10倍"
+          "highlight": "代碼生成"
         },
         "channel": {
           "title": "Dubhe頻道",
@@ -253,7 +256,7 @@
             "超快執行速度",
             "支持多客戶端移動、桌面和網頁"
           ],
-          "highlight": "<50毫秒延遲"
+          "highlight": "Dubhe Channel"
         },
         "os": {
           "title": "Dubhe作業系統",
@@ -274,16 +277,11 @@
       "description": "從開發工具到即時互動通道和去中心化基礎設施——Dubhe提供構建下一代完全鏈上應用程式所需的一切。",
       "keyMetricsTitle": "關鍵指標",
       "keyMetrics": [
-        "處理超過1000萬筆交易",
-        "平均延遲<200毫秒",
         "Web2級用戶體驗",
         "兼容Sui、Aptos、Rooch、Movement、Initia"
       ],
       "moveEcosystemTitle": "Move生態系統",
       "moveEcosystemFeatures": [
-        "1,555名活躍的Move開發者",
-        "每月增長40%",
-        "不到3年的歷史",
         "巨大的增長潛力"
       ],
       "pipelining": "管道",
@@ -302,7 +300,7 @@
         "dubheEngine": {
           "title": "Dubhe引擎",
           "subtitle": "開發工具包",
-          "description": "自動生成80%的代碼並提供完整的開發者工具鏈",
+          "description": "使用Dubhe直觀的架構系統定義您的遊戲或dApp邏輯。在簡單的配置文件中描述實體、組件和系統。",
           "features": [
             "代碼生成",
             "基於架構的開發",
@@ -358,22 +356,22 @@
     },
     "networkStats": {
       "title": "網路統計",
-      "description": "展示Dubhe生態系統增長和活動的即時指標。",
+      "description": "數據待可追溯來源確認，暫不展示。",
       "transactions": {
         "label": "已處理交易",
-        "change": "+12.5%"
+        "change": ""
       },
       "operations": {
         "label": "已執行操作",
-        "change": "+18.2%"
+        "change": ""
       },
       "users": {
         "label": "活躍用戶",
-        "change": "+25.1%"
+        "change": ""
       },
       "income": {
         "label": "協議收入",
-        "change": "+15.8%"
+        "change": ""
       }
     }
   },
@@ -416,7 +414,7 @@
     }
   },
   "footer": {
-    "description": "完整的 Move 開發平台，具有 80% 代碼自動生成、即時 P2P 通道和跨鏈互操作性。",
+    "description": "Obelisk Labs 開發包含 Dubhe 在內的基礎設施。Dubhe Wallet 提供錢包與身分流程。Numeron 是獨立開發中的遊戲。",
     "sections": {
       "learn": "學習",
       "build": "開發",
@@ -465,69 +463,45 @@
     "members": {
       "jason": {
         "name": "Jason",
-        "role": "基金會負責人",
-        "location": "美國加州舊金山",
-        "bio": "擁有15年以上區塊鏈技術經驗的遠見領袖。曾在大型科技公司領導工程團隊，後創立Dubhe以革命性地改變Move開發。",
-        "expertise": [
-          "區塊鏈架構",
-          "團隊領導",
-          "產品策略"
-        ]
+        "role": "待確認",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "joan": {
         "name": "Joan",
-        "role": "技術長兼聯合創始人",
-        "location": "美國紐約州紐約市",
-        "bio": "前Move核心開發者，在智能合約架構方面擁有深厚專業知識。領導我們的技術願景並監督所有工程倡議。",
-        "expertise": [
-          "Move語言",
-          "智能合約",
-          "系統架構"
-        ]
+        "role": "待確認",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "david": {
         "name": "David",
-        "role": "工程總監",
-        "location": "韓國首爾",
-        "bio": "對開發者工具和生態系統發展充滿熱情的全端工程師。領導我們的引擎開發團隊並推動技術創新。",
-        "expertise": [
-          "全端開發",
-          "開發者工具",
-          "開源"
-        ]
+        "role": "待確認",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "bonnie": {
         "name": "Bonnie",
-        "role": "社群總監",
-        "location": "西班牙巴塞隆納",
-        "bio": "在發展開發者生態系統方面擁有豐富經驗的社群建設者。管理我們的全球社群倡議和大使計劃。",
-        "expertise": [
-          "社群建設",
-          "開發者關係",
-          "活動管理"
-        ]
+        "role": "待確認",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "liam": {
         "name": "Liam McKenzie",
-        "role": "合作總監",
-        "location": "英國倫敦",
-        "bio": "專注於戰略合作夥伴關係和生態系統發展的商業發展專家。曾在主要區塊鏈公司領導合作夥伴關係。",
-        "expertise": [
-          "戰略合作夥伴關係",
-          "商業發展",
-          "生態系統發展"
-        ]
+        "role": "待確認",
+        "location": "",
+        "bio": "",
+        "expertise": []
       },
       "emily": {
         "name": "Emily Smith",
-        "role": "研究總監",
-        "location": "中國北京",
-        "bio": "專精分散式系統的計算機科學博士。領導我們的研究倡議並探索尖端區塊鏈技術。",
-        "expertise": [
-          "分散式系統",
-          "研究",
-          "學術合作夥伴關係"
-        ]
+        "role": "待確認",
+        "location": "",
+        "bio": "",
+        "expertise": []
       }
     },
     "join": {
@@ -560,7 +534,7 @@
     "hero": {
       "badge": "Dubhe 基金會資助",
       "title": "資助你的創新",
-      "description": "從 Dubhe 基金會獲得無需償還的資助，用於構建開源的 Move 應用程式、基礎設施和工具。所有專案必須完全功能化並完成所有里程碑。",
+      "description": "歷史頁面規則，目前有效性待確認；不代表已核准的資金承諾或實付記錄。",
       "stats": {
         "totalFunded": "資助總額",
         "projectsFunded": "資助專案數",
@@ -575,22 +549,22 @@
       "badge": "資助類別",
       "infrastructure": {
         "title": "基礎設施資助",
-        "amount": "最高 $100K",
+        "amount": "待確認",
         "description": "構建核心基礎設施、開發者工具和生態系統工具"
       },
       "dapp": {
         "title": "DApp 開發",
-        "amount": "最高 $75K",
+        "amount": "待確認",
         "description": "在 Dubhe 生態系統上創建創新的去中心化應用程式"
       },
       "research": {
         "title": "研究資助",
-        "amount": "最高 $50K",
+        "amount": "待確認",
         "description": "學術研究、協議改進和理論貢獻"
       },
       "community": {
         "title": "社群專案",
-        "amount": "最高 $25K",
+        "amount": "待確認",
         "description": "教育、文檔、社群工具和推廣計劃"
       }
     },
@@ -601,27 +575,27 @@
         "proposal": {
           "title": "提案提交",
           "description": "提交包含詳細里程碑和開源承諾的綜合提案",
-          "duration": "1 週"
+          "duration": "待確認"
         },
         "review": {
           "title": "基金會審核",
           "description": "Dubhe 基金會技術委員會評估可行性和生態系統影響",
-          "duration": "2-3 週"
+          "duration": "待確認"
         },
         "interview": {
           "title": "團隊面試",
           "description": "展示你的專案路線圖並證明技術能力",
-          "duration": "1 週"
+          "duration": "待確認"
         },
         "approval": {
           "title": "資助核准",
           "description": "基金會董事會批准包含里程碑要求的無需償還資助",
-          "duration": "1 週"
+          "duration": "待確認"
         },
         "delivery": {
           "title": "里程碑交付",
           "description": "完成所有具有功能性交付成果的里程碑並獲得完整資助",
-          "duration": "3-12 個月"
+          "duration": "待確認"
         }
       },
       "requirements": {
@@ -637,8 +611,8 @@
       }
     },
     "successStories": {
-      "title": "成功案例",
-      "description": "獲得資助並產生重大影響的專案"
+      "title": "生態系統",
+      "description": "數據待可追溯來源確認，暫不展示。"
     },
     "terms": {
       "title": "資助條款與條件",
@@ -762,7 +736,7 @@
           "跨鏈共識機制"
         ],
         "status": "活躍",
-        "team": "12 位工程師"
+        "team": "待確認"
       },
       "cyferio": {
         "name": "Cyferio 實驗室",
@@ -776,7 +750,7 @@
           "匿名交易系統"
         ],
         "status": "活躍",
-        "team": "8 位研究員"
+        "team": "待確認"
       },
       "network": {
         "name": "Dubhe 網路實驗室",
@@ -805,6 +779,31 @@
         ],
         "status": "研究中",
         "team": "4 位工程師"
+      },
+      "dubheos": {
+        "name": "DubheOS",
+        "focus": "Ecosystem & Toolchain",
+        "description": "Dubhe's global decentralized community contributing ecosystem toolchain and infrastructure. Building developer tools, libraries, and community-driven utilities to empower the entire ecosystem.",
+        "contributions": [
+          "Community governance framework",
+          "Ecosystem toolchain development",
+          "Developer resource coordination",
+          "Cross-chain protocol standards",
+          "Community-driven innovations"
+        ],
+        "status": "Active",
+        "team": "Global Community"
+      },
+      "numeron": {
+        "name": "Numeron",
+        "focus": "遊戲",
+        "description": "尚未上線、尚未開始外部測試；目前僅完成遊戲及內部充值流程測試。",
+        "contributions": [
+          "2026 年 5 月開始開發。",
+          "與 2025 年的黑客松作品是不同遊戲，僅沿用 Numeron IP。"
+        ],
+        "status": "準備外部測試",
+        "team": ""
       }
     },
     "research": {
@@ -1051,7 +1050,7 @@
     },
     "moderatorsSection": {
       "title": "認識我們的版主",
-      "description": "我們的專業團隊確保在所有時區和平台上都有 24/7 全天候覆蓋",
+      "description": "姓名與目前職務正在核對。",
       "timezone": "時區",
       "platforms": "平台",
       "languages": "語言"
@@ -1136,7 +1135,7 @@
   "engine": {
     "hero": {
       "badge": "Dubhe 引擎",
-      "title1": "80% 代碼",
+      "title1": "Dubhe",
       "title2": "自動生成",
       "subtitle": "基於架構的開發平台，自動生成智能合約、API 和 UI 組件。專注於真正重要的部分 - 您獨特的業務邏輯。",
       "stats": {
@@ -1154,7 +1153,7 @@
     },
     "features": {
       "codeGeneration": {
-        "title": "80% 代碼自動生成",
+        "title": "生成代碼",
         "description": "透過智能代碼生成大幅減少開發時間，自動處理樣板代碼、数據結構和常見模式。",
         "details": [
           "架構驅動的代碼生成",
@@ -1205,11 +1204,11 @@
       },
       "generateCode": {
         "title": "生成代碼",
-        "description": "Dubhe 引擎自動生成 80% 的應用程式代碼，包括智能合約和 API"
+        "description": "基於架構的開發平台，自動生成智能合約、API 和 UI 組件。專注於真正重要的部分 - 您獨特的業務邏輯。"
       },
       "customizeLogic": {
         "title": "客製化邏輯",
-        "description": "專注於獨特的 20% - 您的業務邏輯、自定義功能和用戶體驗"
+        "description": "使用Dubhe直觀的架構系統定義您的遊戲或dApp邏輯。在簡單的配置文件中描述實體、組件和系統。"
       },
       "deployInstantly": {
         "title": "即時部署",
@@ -1228,7 +1227,7 @@
     "hero": {
       "title": "即時點對點",
       "titleHighlight": "互動層",
-      "subtitle": "Web2 級用戶體驗與 Web3 基礎設施。為遊戲、社交平台和基於 Move 區塊鏈構建的交易應用程式提供低於 50 毫秒的延遲。",
+      "subtitle": "多層方法以實現最佳性能和可擴展性",
       "metrics": {
         "latency": "延遲",
         "users": "併發用戶",
@@ -1244,7 +1243,7 @@
       "description": "專為需要即時響應和無縫用戶體驗的應用程式而構建",
       "items": {
         "latency": {
-          "title": "低於 50 毫秒延遲",
+          "title": "即時點對點",
           "description": "具有 Web2 級響應的即時點對點互動。專為需要即時反饋的遊戲、交易和社交應用程式而構建。",
           "details": [
             "基於 WebRTC 的通訊",
@@ -1255,7 +1254,7 @@
         },
         "network": {
           "title": "可擴展的點對點網路",
-          "description": "隨著用戶群增長的水平擴展。從數百到數百萬個併發連接，性能不會下降。",
+          "description": "多層方法以實現最佳性能和可擴展性",
           "details": [
             "動態節點發現",
             "負載平衡協議",
@@ -1295,7 +1294,7 @@
           "metrics": [
             "<50 毫秒延遲",
             "100 萬以上併發玩家",
-            "99.9% 正常運行時間"
+            ""
           ]
         },
         "social": {
@@ -1346,7 +1345,7 @@
       "status": {
         "title": "網路狀態",
         "online": "在線",
-        "latency": "延遲：<50 毫秒"
+        "latency": ""
       },
       "nodes": {
         "title": "活躍節點",
@@ -1749,7 +1748,7 @@
     },
     "ambassadorsSection": {
       "title": "認識我們的全球大使",
-      "description": "我們的大使正在各自的地區引領變革，建設社群並推動採用",
+      "description": "姓名與目前職務正在核對。",
       "timezone": "時區",
       "location": "地點",
       "expertise": "專業領域",
@@ -2173,6 +2172,99 @@
       "description": "下一輪迭代應加入真實截圖、支持表面與正式分發鏈接。最重要的部分已經到位：錢包現在有了清晰的敘事入口，而不是被埋在通用站點鏈接背後。",
       "primaryCta": "開始使用 Dubhe Wallet",
       "secondaryCta": "查看 GitHub"
+    }
+  },
+  "contentReview": {
+    "pending": "待確認",
+    "people": "姓名與目前職務正在核對。",
+    "rules": "歷史頁面規則，目前有效性待確認；不代表已核准的資金承諾或實付記錄。",
+    "demo": "介面示例：餘額、日期與地址是示例資料，不代表已驗證帳戶或實付記錄。",
+    "metrics": "數據待可追溯來源確認，暫不展示。",
+    "currentLabel": "目前狀態",
+    "startedLabel": "開發起點"
+  },
+  "incubation": {
+    "hero": {
+      "badge": "Dubhe Foundation Incubation",
+      "title": "Build the Next Unicorn Startup",
+      "subtitle": "歷史頁面規則，目前有效性待確認；不代表已核准的資金承諾或實付記錄。",
+      "stats": {
+        "funding": {
+          "value": "Coming Soon",
+          "label": "Total Funding"
+        },
+        "startups": {
+          "value": "Coming Soon",
+          "label": "Startups Incubated"
+        },
+        "unicorns": {
+          "value": "Coming Soon",
+          "label": "Unicorns Created"
+        },
+        "success": {
+          "value": "Coming Soon",
+          "label": "Success Rate"
+        }
+      },
+      "cta": {
+        "apply": "Apply Now",
+        "learn": "Learn More"
+      }
+    },
+    "programs": {
+      "accelerator": {
+        "title": "Foundation Accelerator",
+        "duration": "待確認",
+        "funding": "待確認",
+        "description": "歷史頁面規則，目前有效性待確認；不代表已核准的資金承諾或實付記錄。",
+        "benefits": [
+          "Move development support"
+        ]
+      },
+      "studio": {
+        "title": "Collaborative Studio",
+        "duration": "待確認",
+        "funding": "待確認",
+        "description": "歷史頁面規則，目前有效性待確認；不代表已核准的資金承諾或實付記錄。",
+        "benefits": [
+          "Cross-project collaboration"
+        ]
+      },
+      "scale": {
+        "title": "Ecosystem Scale",
+        "duration": "待確認",
+        "funding": "待確認",
+        "description": "歷史頁面規則，目前有效性待確認；不代表已核准的資金承諾或實付記錄。",
+        "benefits": [
+          "Global market access"
+        ]
+      }
+    },
+    "resources": {
+      "coIncubation": {
+        "title": "Multi-Partner Co-Incubation",
+        "description": "待確認"
+      },
+      "infrastructure": {
+        "title": "Shared Infrastructure",
+        "description": "待確認"
+      },
+      "integration": {
+        "title": "Ecosystem Integration",
+        "description": "待確認"
+      },
+      "development": {
+        "title": "Collaborative Development",
+        "description": "待確認"
+      },
+      "demoDays": {
+        "title": "Partner Demo Days",
+        "description": "待確認"
+      },
+      "network": {
+        "title": "Ecosystem Network",
+        "description": "待確認"
+      }
     }
   }
 }

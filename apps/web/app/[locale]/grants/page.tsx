@@ -1,5 +1,7 @@
 "use client"
 
+import ContentReviewNotice from "@/components/content-review-notice"
+
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { 
@@ -26,6 +28,9 @@ type Params = {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function GrantsPage({params}: {params: Promise<Params>}) {
   const t = useTranslations('grants')
+  const review = useTranslations("contentReview")
+  const ecosystem = useTranslations("home.ecosystem")
+  const numeronStatus = ecosystem("projects.numeron.status")
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -102,29 +107,29 @@ export default function GrantsPage({params}: {params: Promise<Params>}) {
     {
       project: "Merak",
       category: "DeFi Protocol",
-      funding: "1,000,000 DUBHE",
-      impact: "$50M TVL",
-      description: "Open-source AMM with full milestone completion and production deployment",
+      funding: "—",
+      impact: "—",
+      description: review("metrics"),
       license: "MIT License",
-      milestones: "5/5 Complete"
+      milestones: review("pending")
     },
     {
       project: "Numeron",
       category: "Gaming",
-      funding: "1,000,000 DUBHE", 
-      impact: "20K+ Users",
-      description: "Open-source AI MMORPG with full milestone completion and production deployment",
+      funding: "—",
+      impact: "—",
+      description: numeronStatus,
       license: "MIT License",
-      milestones: "6/6 Complete"
+      milestones: review("pending")
     },
     {
       project: "Cyferio",
       category: "Infrastructure", 
-      funding: "2,000,000 DUBHE",
-      impact: "5K+ Developers",
+      funding: "—",
+      impact: "—",
       description: "Open-source ZK-based Move language support and FHE Rollups Framework",
       license: "Apache 2.0",
-      milestones: "4/4 Complete"
+      milestones: review("pending")
     },
   ]
 
@@ -183,6 +188,7 @@ export default function GrantsPage({params}: {params: Promise<Params>}) {
 
               {/* Main Headline */}
               <div className="space-y-6 max-w-5xl mx-auto">
+                <ContentReviewNotice kind="rules" />
                 <motion.h1 
                   className="text-5xl lg:text-7xl font-bold text-white leading-tight"
                   initial={{ opacity: 0, y: 20 }}

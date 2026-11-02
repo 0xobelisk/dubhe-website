@@ -39,7 +39,7 @@ export default function LabsLayout({
             "@type": "ResearchOrganization",
             "name": "Dubhe Development Labs",
             "description": "Innovation hub for Move blockchain research and development",
-            "url": "https://dubhe.network/labs",
+            "url": "https://dubhe.obelisk.build/labs",
             "provider": {
               "@type": "Organization",
               "name": "Dubhe Foundation"

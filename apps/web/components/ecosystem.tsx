@@ -8,7 +8,10 @@ type Project = {
   name: string;
   description: string;
   tvl?: string;
-  players?: string;
+  status?: string;
+  development?: string;
+  validation?: string;
+  history?: string;
   downloads?: string;
   volume?: string;
   url?: string;
@@ -16,6 +19,7 @@ type Project = {
 
 export default function Ecosystem() {
   const t = useTranslations('home.ecosystem')
+  const review = useTranslations('contentReview')
   
   const categories = [
     {
@@ -39,8 +43,11 @@ export default function Ecosystem() {
         { 
           name: t('projects.numeron.name'), 
           description: t('projects.numeron.description'), 
-          players: t('projects.numeron.players'), 
-          url: "https://testnet.numeron.world/" 
+          status: t('projects.numeron.status'),
+          development: t('projects.numeron.development'),
+          validation: t('projects.numeron.validation'),
+          history: t('projects.numeron.history'),
+          url: "https://numeron.obelisk.build"
         },
       ] as Project[]
     },
@@ -123,14 +130,25 @@ export default function Ecosystem() {
                     <h4 className="font-semibold text-slate-900">{project.name}</h4>
                     <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-gray-600 transition-colors" />
                   </div>
-                  <p className="text-gray-600 text-sm mb-3">{project.description}</p>
-                  <div className="inline-flex flex-col items-center">
+                  {project.description && <p className="text-gray-600 text-sm mb-3">{project.description}</p>}
+                  {project.status && (
+                    <div className="space-y-3 break-words text-sm leading-relaxed">
+                      <p className="font-semibold text-purple-600">{project.status}</p>
+                      <p className="text-gray-600" data-field="development-start">
+                        <span className="font-medium">{review('startedLabel')}: </span>{project.development}
+                      </p>
+                      <p className="text-gray-600" data-field="current-validation">
+                        <span className="font-medium">{review('currentLabel')}: </span>{project.validation}
+                      </p>
+                      <p className="text-gray-500">{project.history}</p>
+                    </div>
+                  )}
+                  <div className="inline-flex max-w-full flex-col items-center break-words">
                     <div className="text-lg font-bold text-purple-600">
-                      {project.tvl || project.players || project.downloads || project.volume || ''}
+                      {project.tvl || project.downloads || project.volume || ''}
                     </div>
                     <div className="text-xs text-gray-500">
                       {project.tvl ? t('metrics.tvl') : 
-                       project.players ? t('metrics.players') :
                        project.downloads ? t('metrics.downloads') :
                        project.volume ? t('metrics.volume') : ''}
                     </div>

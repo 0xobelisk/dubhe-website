@@ -23,12 +23,12 @@ const productSuite = [
   {
     id: "engine",
     name: "Dubhe Engine",
-    tagline: "80% Code Auto-Generation",
-    businessValue: "15x Faster Development = 90% Cost Reduction",
-    description: "The only development toolkit that auto-generates 80% of Move code, letting developers focus on core business logic",
+    tagline: "Schema-based Code Auto-Generation",
+    businessValue: "Schema-Based Development Tools",
+    description: "A toolkit that generates Move infrastructure code from schemas so developers can focus on application logic",
     keyBenefits: [
       "Reduce dev time from months to weeks",
-      "90% lower infrastructure costs", 
+      "Infrastructure cost comparisons await verification",
       "Compatible with Unity, Unreal, Godot",
       "One command deploys to all Move chains"
     ],
@@ -42,7 +42,7 @@ const productSuite = [
     id: "channel", 
     name: "Dubhe Channel",
     tagline: "Web2-Level Real-Time Experience",
-    businessValue: "<50ms Latency = Mass User Adoption",
+    businessValue: "Performance depends on workload and configuration",
     description: "Real-time programmable P2P interaction layer that makes blockchain feel like Web2",
     keyBenefits: [
       "Instant frontend rendering",
@@ -60,7 +60,7 @@ const productSuite = [
     id: "os",
     name: "Dubhe OS",
     tagline: "Cross-Chain Interoperability OS",
-    businessValue: "Native Multi-Chain = 10x Larger TAM",
+    businessValue: "Multi-Chain Infrastructure",
     description: "Blockchain operating system with native cross-chain support and developer incentive mechanisms",
     keyBenefits: [
       "Single codebase, all Move chains",
@@ -81,10 +81,10 @@ const productSuite = [
  */
 const marketPosition = {
   title: "The Complete Move Development Stack",
-  subtitle: "First and only comprehensive solution for Move ecosystem development",
+  subtitle: "Move development tooling and infrastructure",
   competitive: [
-    { aspect: "Code Generation", dubhe: "80% automated", others: "Manual coding" },
-    { aspect: "UX Performance", dubhe: "<50ms", others: "3-15 seconds" },
+    { aspect: "Code Generation", dubhe: "Schema-based generation", others: "Manual coding" },
+    { aspect: "UX Performance", dubhe: "Configuration dependent", others: "Comparative benchmark pending" },
     { aspect: "Cross-Chain", dubhe: "Native support", others: "Custom bridges" },
     { aspect: "Developer Tools", dubhe: "All-in-one", others: "Fragmented" }
   ]

@@ -24,29 +24,29 @@ const keyMetrics = [
   {
     icon: <Users className="w-6 h-6" />,
     label: "Move Developers",
-    value: "1,555+",
-    trend: "in <3 years",
+    value: "—",
+    trend: "",
     color: "text-blue-500"
   },
   {
     icon: <DollarSign className="w-6 h-6" />,
     label: "Revenue Generated", 
-    value: "$500K+",
-    trend: "Proven PMF",
+    value: "—",
+    trend: "",
     color: "text-green-500"
   },
   {
     icon: <Zap className="w-6 h-6" />,
     label: "Transaction Volume",
-    value: "10M+",
-    trend: "Web2-level UX",
+    value: "—",
+    trend: "",
     color: "text-purple-500"
   },
   {
     icon: <TrendingUp className="w-6 h-6" />,
     label: "Dev Efficiency",
-    value: "80%",
-    trend: "Code auto-gen",
+    value: "—",
+    trend: "",
     color: "text-orange-500"
   }
 ]
@@ -93,7 +93,7 @@ export default function InvestorHero() {
         >
           <div className="mb-6">
             <span className="inline-block px-4 py-2 bg-blue-500/10 text-blue-400 text-sm font-semibold rounded-full border border-blue-500/20 mb-4">
-              🚀 Series Seed Round - $3M Target
+              Investor information
             </span>
           </div>
           
@@ -103,12 +103,12 @@ export default function InvestorHero() {
             weight="bold"
             className="mb-6 leading-tight"
           >
-            The Infrastructure Powering<br />Move&apos;s Next 100M Developers
+            The Infrastructure Powering<br />Move Application Development
           </GradientText>
           
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
-            <strong className="text-white">80% faster development, 30-40% cost reduction</strong> — 
-            Supporting the fastest-growing blockchain ecosystem with the first complete Move development stack.
+            <strong className="text-white">Move development tooling</strong> —
+            Supporting application development with Dubhe tooling.
           </p>
           
           <p className="text-lg text-gray-400 max-w-3xl mx-auto">
@@ -159,19 +159,19 @@ export default function InvestorHero() {
           <Card variant="glass" padding="lg" className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold text-blue-400 mb-2">80%</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">—</div>
                 <div className="text-lg font-semibold text-white mb-2">Code Auto-Generation</div>
-                <div className="text-sm text-gray-400">Developers focus on 20% core logic, 80% generated automatically</div>
+                <div className="text-sm text-gray-400">Generated code depends on the application schema.</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-green-400 mb-2">30-40%</div>
+                <div className="text-4xl font-bold text-green-400 mb-2">—</div>
                 <div className="text-lg font-semibold text-white mb-2">Cost Reduction vs Ethereum</div>
-                <div className="text-sm text-gray-400">Significantly lower development costs on Move ecosystem</div>
+                <div className="text-sm text-gray-400">Verified comparative cost data is not yet published.</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-purple-400 mb-2">&lt;50ms</div>
+                <div className="text-4xl font-bold text-purple-400 mb-2">—</div>
                 <div className="text-lg font-semibold text-white mb-2">Average Latency</div>
-                <div className="text-sm text-gray-400">Web2-level real-time user experience</div>
+                <div className="text-sm text-gray-400">Performance depends on workload and configuration.</div>
               </div>
             </div>
           </Card>

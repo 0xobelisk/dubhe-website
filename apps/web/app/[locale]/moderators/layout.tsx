@@ -39,7 +39,7 @@ export default function ModeratorsLayout({
             "@type": "Organization",
             "name": "Dubhe Community Moderators",
             "description": "Community support and moderation team for Dubhe ecosystem",
-            "url": "https://dubhe.network/moderators",
+            "url": "https://dubhe.obelisk.build/moderators",
             "parentOrganization": {
               "@type": "Organization",
               "name": "Dubhe Foundation"
