@@ -139,9 +139,9 @@
           "name": "Numeron",
           "description": "",
           "players": "",
-          "status": "Playtesting coming soon",
+          "status": "External players invited to playtest",
           "development": "Development began in May 2026.",
-          "validation": "The game has not launched or started external testing; only internal game and recharge flows have been tested.",
+          "validation": "External players have been invited to playtest. Internal game and recharge flows have been tested; internal recharge tests do not represent revenue.",
           "history": "It shares only the Numeron IP with a different 2025 hackathon game."
         },
         "cyferio": {
@@ -946,12 +946,12 @@
       "numeron": {
         "name": "Numeron",
         "focus": "Gaming",
-        "description": "The game has not launched or started external testing; only internal game and recharge flows have been tested.",
+        "description": "External players have been invited to playtest. Internal game and recharge flows have been tested; internal recharge tests do not represent revenue.",
         "contributions": [
           "Development began in May 2026.",
           "It shares only the Numeron IP with a different 2025 hackathon game."
         ],
-        "status": "Playtesting coming soon",
+        "status": "External players invited to playtest",
         "team": ""
       }
     },

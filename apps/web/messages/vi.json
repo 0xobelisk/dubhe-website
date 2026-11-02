@@ -139,9 +139,9 @@
           "name": "Numeron",
           "description": "",
           "players": "",
-          "status": "Đang chuẩn bị thử nghiệm bên ngoài",
+          "status": "Đã mời người chơi bên ngoài tham gia thử nghiệm",
           "development": "Quá trình phát triển bắt đầu vào tháng 5 năm 2026.",
-          "validation": "Trò chơi chưa ra mắt hoặc thử nghiệm bên ngoài; mới chỉ kiểm thử nội bộ luồng chơi và nạp tiền.",
+          "validation": "Đã mời người chơi bên ngoài tham gia thử nghiệm. Các luồng chơi và nạp tiền nội bộ đã được kiểm thử; kiểm thử nạp tiền nội bộ không phải là doanh thu.",
           "history": "Trò chơi chỉ dùng chung IP Numeron với một trò chơi hackathon khác năm 2025."
         },
         "cyferio": {
@@ -1563,12 +1563,12 @@
       "numeron": {
         "name": "Numeron",
         "focus": "Game",
-        "description": "Trò chơi chưa ra mắt hoặc thử nghiệm bên ngoài; mới chỉ kiểm thử nội bộ luồng chơi và nạp tiền.",
+        "description": "Đã mời người chơi bên ngoài tham gia thử nghiệm. Các luồng chơi và nạp tiền nội bộ đã được kiểm thử; kiểm thử nạp tiền nội bộ không phải là doanh thu.",
         "contributions": [
           "Quá trình phát triển bắt đầu vào tháng 5 năm 2026.",
           "Trò chơi chỉ dùng chung IP Numeron với một trò chơi hackathon khác năm 2025."
         ],
-        "status": "Đang chuẩn bị thử nghiệm bên ngoài",
+        "status": "Đã mời người chơi bên ngoài tham gia thử nghiệm",
         "team": ""
       }
     },

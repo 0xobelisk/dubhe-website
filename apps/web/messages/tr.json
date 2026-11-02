@@ -139,9 +139,9 @@
           "name": "Numeron",
           "description": "",
           "players": "",
-          "status": "Harici oyun testi hazırlanıyor",
+          "status": "Harici oyuncular oyun testine davet edildi",
           "development": "Geliştirme Mayıs 2026’da başladı.",
-          "validation": "Oyun henüz yayımlanmadı ve harici test başlamadı; yalnızca oyun ve yükleme akışları içeride test edildi.",
+          "validation": "Harici oyuncular oyun testine davet edildi. Oyun ve yükleme akışları içeride test edildi; dahili yükleme testleri gelir anlamına gelmez.",
           "history": "Farklı bir 2025 hackathon oyunuyla yalnızca Numeron IP’sini paylaşır."
         },
         "cyferio": {
@@ -1564,12 +1564,12 @@
       "numeron": {
         "name": "Numeron",
         "focus": "Oyun",
-        "description": "Oyun henüz yayımlanmadı ve harici test başlamadı; yalnızca oyun ve yükleme akışları içeride test edildi.",
+        "description": "Harici oyuncular oyun testine davet edildi. Oyun ve yükleme akışları içeride test edildi; dahili yükleme testleri gelir anlamına gelmez.",
         "contributions": [
           "Geliştirme Mayıs 2026’da başladı.",
           "Farklı bir 2025 hackathon oyunuyla yalnızca Numeron IP’sini paylaşır."
         ],
-        "status": "Harici oyun testi hazırlanıyor",
+        "status": "Harici oyuncular oyun testine davet edildi",
         "team": ""
       }
     },
