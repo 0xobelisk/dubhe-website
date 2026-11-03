@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { useTranslations } from 'next-intl'
 import { FileText, Scale, Shield, AlertTriangle, CheckCircle, Globe } from "lucide-react"
 

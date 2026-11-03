@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { m as motion, AnimatePresence } from 'framer-motion'
 import { Activity, AlertCircle, CheckCircle, TrendingUp, X } from 'lucide-react'
 
 interface WebVital {

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { Handshake, Network, TrendingUp, Users } from "lucide-react"
 import Section from "../ui/Section"
 import Card from "../ui/Card"

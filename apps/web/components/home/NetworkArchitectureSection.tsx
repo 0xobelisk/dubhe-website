@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { CheckCircle, Layers, Zap, Globe, Database, Code, Network, Shield } from "lucide-react"
 import { useTranslations } from 'next-intl'
 

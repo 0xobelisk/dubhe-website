@@ -2,7 +2,7 @@
 
 import ContentReviewNotice from "@/components/content-review-notice"
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { Award, Code, Shield, Trophy, Star } from "lucide-react"
 import Section from "../ui/Section"
 import Card from "../ui/Card"

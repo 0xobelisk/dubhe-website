@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { TrendingUp, Users, Zap, DollarSign } from "lucide-react"
 import { useTranslations } from 'next-intl'
 

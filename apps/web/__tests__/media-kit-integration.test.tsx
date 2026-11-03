@@ -80,6 +80,9 @@ vi.mock('@/components/ui/Section', () => ({
 
 // Mock framer-motion
 vi.mock('framer-motion', () => ({
+  get m() { return this.motion },
+  LazyMotion: ({ children }: React.PropsWithChildren) => children,
+  domAnimation: {},
   motion: {
     div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
     h1: ({ children, ...props }: any) => <h1 {...props}>{children}</h1>,

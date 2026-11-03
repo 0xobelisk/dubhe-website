@@ -9,6 +9,9 @@ const mocks = vi.hoisted(() => ({
 }))
 
 vi.mock('framer-motion', () => ({
+  get m() { return this.motion },
+  LazyMotion: ({ children }: React.PropsWithChildren) => children,
+  domAnimation: {},
   motion: {
     h1: ({ children }: React.PropsWithChildren) => <h1>{children}</h1>,
     p: ({ children }: React.PropsWithChildren) => <p>{children}</p>,

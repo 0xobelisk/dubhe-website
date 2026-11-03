@@ -52,6 +52,9 @@ vi.mock('next/image', () => ({
 
 // Mock Framer Motion
 vi.mock('framer-motion', () => ({
+  get m() { return this.motion },
+  LazyMotion: ({ children }: React.PropsWithChildren) => children,
+  domAnimation: {},
   motion: {
     div: (props: any) => React.createElement('div', props, props.children),
     section: (props: any) => React.createElement('section', props, props.children),

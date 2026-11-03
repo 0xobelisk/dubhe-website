@@ -5,6 +5,9 @@ import Navigation from './navigation'
 
 // Mock framer-motion
 vi.mock('framer-motion', () => ({
+  get m() { return this.motion },
+  LazyMotion: ({ children }: React.PropsWithChildren) => children,
+  domAnimation: {},
   motion: {
     div: ({ children, whileHover, whileTap, initial, animate, exit, transition, onMouseEnter, onMouseLeave, ...props }: any) => 
       <div {...props}>{children}</div>,

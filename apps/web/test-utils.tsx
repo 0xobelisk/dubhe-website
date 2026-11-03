@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
 import { NextIntlClientProvider } from 'next-intl'
 import englishMessages from './messages/en.json'
+import { MotionProvider } from './components/motion-provider'
 
 // Mock messages for testing - comprehensive coverage
 const mockMessages = {
@@ -302,9 +303,11 @@ const testMessages = mergeMessages(englishMessages, mockMessages)
 
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
   return (
-    <NextIntlClientProvider locale="en" messages={testMessages} timeZone="UTC">
-      {children}
-    </NextIntlClientProvider>
+    <MotionProvider>
+      <NextIntlClientProvider locale="en" messages={testMessages} timeZone="UTC">
+        {children}
+      </NextIntlClientProvider>
+    </MotionProvider>
   )
 }
 

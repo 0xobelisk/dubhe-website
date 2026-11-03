@@ -61,6 +61,9 @@ vi.mock('framer-motion', async () => {
     'whileTap', 'whileInView', 'viewport', 'layout', 'layoutId', 'drag',
   ])
   return {
+    get m() { return this.motion },
+    LazyMotion: ({ children }: React.PropsWithChildren) => children,
+    domAnimation: {},
     motion: new Proxy({}, {
       get: (_target, tag: string) => {
         if (!components.has(tag)) {

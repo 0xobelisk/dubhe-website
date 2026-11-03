@@ -94,8 +94,3 @@
 .animate-scroll-mobile {
   animation: scroll-mobile 15s linear infinite;
 }
-
-.home-secondary-section {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 800px;
-}

@@ -28,6 +28,25 @@ const securityHeaders = {
 }
 
 const intlProxy = createMiddleware(routing)
+const unprefixedIntlProxy = createMiddleware({
+  ...routing,
+  localePrefix: 'as-needed',
+  alternateLinks: false,
+})
+
+function hasLocalePrefix(pathname: string): boolean {
+  let normalizedPathname: string
+  try {
+    normalizedPathname = decodeURI(pathname).toLowerCase()
+  } catch {
+    return false
+  }
+
+  return routing.locales.some((locale) => {
+    const prefix = `/${locale.toLowerCase()}`
+    return normalizedPathname === prefix || normalizedPathname.startsWith(`${prefix}/`)
+  })
+}
 
 const RATE_LIMIT_WINDOW = 15 * 60 * 1000
 const RATE_LIMIT_MAX_REQUESTS = 100
@@ -69,10 +88,14 @@ function checkRateLimit(key: string): { allowed: boolean; remaining: number } {
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
   const isApiRoute = pathname.startsWith('/api/')
+  const useUnprefixedRouting =
+    (request.method === 'GET' || request.method === 'HEAD') &&
+    !pathname.includes('.') &&
+    !hasLocalePrefix(pathname)
 
   const response = isApiRoute
     ? NextResponse.next()
-    : (intlProxy(request) || NextResponse.next())
+    : ((useUnprefixedRouting ? unprefixedIntlProxy : intlProxy)(request) || NextResponse.next())
 
   Object.entries(securityHeaders).forEach(([key, value]) => {
     response.headers.set(key, value)

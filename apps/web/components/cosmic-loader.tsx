@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useCallback, memo, useMemo } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { m as motion, AnimatePresence } from "framer-motion"
 import { DUBHE_CONSTELLATION_LINES, DUBHE_CONSTELLATION_STARS } from "@/components/dubhe-constellation"
 
 // Pre-generated random data to avoid hydration mismatch

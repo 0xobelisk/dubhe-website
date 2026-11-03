@@ -26,6 +26,9 @@ vi.mock('lucide-react', () => ({
 }))
 
 vi.mock('framer-motion', () => ({
+  get m() { return this.motion },
+  LazyMotion: ({ children }: React.PropsWithChildren) => children,
+  domAnimation: {},
   motion: {
     div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
     nav: ({ children, ...props }: any) => <nav {...props}>{children}</nav>,

@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { Mail, MessageSquare, Send, MapPin, Clock } from "lucide-react"
 import Link from "next/link"
 import { useTranslations } from 'next-intl'
