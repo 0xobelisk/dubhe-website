@@ -43,12 +43,28 @@ const nextConfig: NextConfig = {
   compress: true,
   // Enable experimental features for better performance
   experimental: {
-    inlineCss: true,
     optimizePackageImports: ['lucide-react', 'framer-motion', '@sentry/nextjs', 'react-countup'],
   },
   // Optimize production builds
   productionBrowserSourceMaps: false,
   poweredByHeader: false,
+  webpack(config, { dev, isServer }) {
+    const splitChunks = config.optimization?.splitChunks;
+    if (!dev && !isServer && splitChunks && typeof splitChunks === 'object') {
+      // Keep Next's framework and vendor rules, while coalescing small modules
+      // shared by page entries so the first visit needs fewer requests.
+      splitChunks.cacheGroups = {
+        ...splitChunks.cacheGroups,
+        shared: {
+          name: 'site-shared',
+          minChunks: 2,
+          priority: 20,
+          reuseExistingChunk: true,
+        },
+      };
+    }
+    return config;
+  },
   // Turbopack configuration
   turbopack: {
     rules: {

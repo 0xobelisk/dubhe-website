@@ -18,7 +18,7 @@ async function currentLanguageButton(page: Page, locale: Locale) {
   await expect(button).toHaveCount(1)
   await button.scrollIntoViewIfNeeded()
   await expect(button).toBeVisible()
-  await expect(button).toContainText(new RegExp(`\\b${locale.toUpperCase()}\\b`))
+  await expect(button.getByText(locale.toUpperCase(), { exact: true })).toBeVisible()
   return button
 }
 

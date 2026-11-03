@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@lhci/cli": "^0.15.1",
-    "@playwright/test": "^1.54.2",
+    "@playwright/test": "1.55.1",
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
@@ -41,7 +41,7 @@
     "@workspace/typescript-config": "workspace:*",
     "jsdom": "^26.1.0",
     "lighthouse": "^12.8.1",
-    "playwright": "^1.54.2",
+    "playwright": "1.55.1",
     "prettier": "^3.5.1",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
@@ -59,7 +59,14 @@
       "brace-expansion@>=1.0.0 <=1.1.11": "1.1.12",
       "brace-expansion@>=2.0.0 <=2.0.1": "2.0.2",
       "@eslint/plugin-kit@<0.3.4": ">=0.3.4",
-      "tmp@<=0.2.3": ">=0.2.4"
+      "tmp@<=0.2.3": ">=0.2.4",
+      "picomatch@>=4.0.0 <4.0.4": "4.0.4",
+      "brace-expansion@>=5.0.0 <5.0.12": "5.0.12",
+      "@babel/core@>=7.0.0 <7.29.6": "7.29.6",
+      "fast-uri@>=3.0.0 <3.1.9": "3.1.9",
+      "browserslist@>=4.0.0 <4.28.7": "4.28.7",
+      "baseline-browser-mapping@>=2.0.0 <2.11.0": "2.11.0",
+      "source-map-js@>=1.0.0 <1.2.2": "1.2.2"
     }
   }
 }

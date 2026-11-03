@@ -1,5 +1,5 @@
-import React from 'react'
-import { render, screen, waitFor } from '@testing-library/react'
+import React, { useState } from 'react'
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
 import { AnimatePresence, m } from 'framer-motion'
@@ -31,6 +31,35 @@ describe('Motion feature provider', () => {
     expect(heading?.style.opacity).toBe('1')
     expect(heading?.style.transform).toBe('none')
     expect(container.querySelector('a')).toHaveAttribute('href', '/en/engine')
+  })
+
+  it('keeps content and native interactions available while optional features wait for idle', async () => {
+    let resume: IdleRequestCallback | undefined
+    vi.stubGlobal('requestIdleCallback', (callback: IdleRequestCallback) => {
+      resume = callback
+      return 1
+    })
+    function Scene() {
+      const [count, setCount] = useState(0)
+      return (
+        <MotionProvider>
+          <m.h1 initial={false} animate={{ opacity: 1 }}>Ready content</m.h1>
+          <button onClick={() => setCount(value => value + 1)}>Count: {count}</button>
+        </MotionProvider>
+      )
+    }
+    try {
+      render(<Scene />)
+      expect(screen.getByRole('heading')).toHaveStyle({ opacity: '1' })
+      fireEvent.click(screen.getByRole('button', { name: 'Count: 0' }))
+      expect(screen.getByRole('button', { name: 'Count: 1' })).toBeInTheDocument()
+      expect(resume).toBeTypeOf('function')
+      await act(async () => {
+        resume!({ didTimeout: false, timeRemaining: () => 50 })
+      })
+    } finally {
+      vi.unstubAllGlobals()
+    }
   })
 
   it('runs an existing animate transition with the real loaded feature bundle', async () => {
