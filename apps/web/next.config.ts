@@ -43,6 +43,7 @@ const nextConfig: NextConfig = {
   compress: true,
   // Enable experimental features for better performance
   experimental: {
+    inlineCss: true,
     optimizePackageImports: ['lucide-react', 'framer-motion', '@sentry/nextjs', 'react-countup'],
   },
   // Optimize production builds
