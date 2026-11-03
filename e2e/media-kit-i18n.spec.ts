@@ -377,19 +377,21 @@ test.describe('Media Kit E2E Tests', () => {
       await page.goto('/en/media-kit')
       await page.waitForLoadState('networkidle')
       
-      // Test keyboard navigation on interactive elements
-      const buttons = page.locator('button')
-      const buttonCount = await buttons.count()
-      
-      if (buttonCount > 0) {
-        const firstButton = buttons.first()
-        await firstButton.focus()
-        await expect(firstButton).toBeFocused()
-        
-        // Test keyboard activation
-        await firstButton.press('Enter')
-        await page.waitForTimeout(500) // Allow for interaction
-      }
+      const hideRestrictions = page.getByRole('button', { name: 'Hide restrictions', exact: true })
+      await hideRestrictions.scrollIntoViewIfNeeded()
+      await expect(hideRestrictions).toBeVisible()
+      await hideRestrictions.focus()
+      await expect(hideRestrictions).toBeFocused()
+
+      await hideRestrictions.press('Enter')
+      const showRestrictions = page.getByRole('button', { name: 'Show restrictions', exact: true })
+      await expect(showRestrictions).toBeVisible()
+      await expect(showRestrictions).toBeFocused()
+      await expect(page.getByText(message('en', 'mediaKit.logo.donts.item1'), { exact: true })).not.toBeVisible()
+
+      await showRestrictions.press('Enter')
+      await expect(hideRestrictions).toBeVisible()
+      await expect(page.getByText(message('en', 'mediaKit.logo.donts.item1'), { exact: true })).toBeVisible()
     })
   })
 })

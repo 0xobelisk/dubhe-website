@@ -2,8 +2,13 @@ import { expect, test } from '@playwright/test'
 
 test('the first service worker activation keeps the rendered page open', async ({ page }) => {
   const navigations: string[] = []
-  page.on('framenavigated', frame => {
-    if (frame === page.mainFrame()) navigations.push(frame.url())
+  page.on('request', request => {
+    if (request.isNavigationRequest() && request.frame() === page.mainFrame()) navigations.push(request.url())
+  })
+  await page.addInitScript(() => {
+    if (window.top !== window) return
+    const key = 'ci-sw-document-starts'
+    sessionStorage.setItem(key, String(Number(sessionStorage.getItem(key) || '0') + 1))
   })
 
   await page.goto('/en', { waitUntil: 'domcontentloaded' })
@@ -14,6 +19,7 @@ test('the first service worker activation keeps the rendered page open', async (
   }))
 
   expect(navigations).toEqual([new URL('/en', page.url()).href])
+  expect(await page.evaluate(() => sessionStorage.getItem('ci-sw-document-starts'))).toBe('1')
   expect(await page.evaluate(async () => {
     const registration = await navigator.serviceWorker.getRegistration()
     return registration?.active ? new URL(registration.active.scriptURL).pathname : null

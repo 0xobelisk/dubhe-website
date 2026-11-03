@@ -8,6 +8,12 @@ test.describe('Homepage content before hydration', () => {
 
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(/We make the Dubhe\.\s*You make it Move\./)
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible()
+    expect(await page.getByRole('heading', { level: 1 }).evaluate(heading => {
+      for (let element: Element | null = heading; element; element = element.parentElement) {
+        if (Number(getComputedStyle(element).opacity) < 1) return false
+      }
+      return true
+    })).toBe(true)
     await expect(page.getByRole('link', { name: 'Get Dubhe Stack', exact: true })).toHaveAttribute('href', 'https://github.com/0xobelisk/dubhe')
     await expect(page.getByRole('link', { name: 'Learn about licensing', exact: true })).toHaveAttribute('href', 'https://github.com/0xobelisk/Dubhe/tree/main?tab=License-1-ov-file#readme')
   })

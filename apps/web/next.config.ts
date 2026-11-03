@@ -11,6 +11,9 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  env: {
+    NEXT_PUBLIC_SENTRY_DSN: process.env.NEXT_PUBLIC_SENTRY_DSN ?? '',
+  },
   transpilePackages: ["@workspace/ui"],
   typescript: {
     ignoreBuildErrors: false,

@@ -38,10 +38,22 @@ test.describe('性能测试', () => {
     
     // 等待图片加载
     await page.waitForLoadState('networkidle')
+
+    // Keep the original image set as the denominator and trigger each native
+    // lazy image by scrolling it into view before measuring its real load state.
+    const images = await page.locator('img').elementHandles()
+    expect(images.length).toBeGreaterThan(0)
+    for (const image of images) {
+      await image.scrollIntoViewIfNeeded()
+      await expect.poll(() => image.evaluate(img => {
+        const element = img as HTMLImageElement
+        return element.complete && element.naturalWidth > 0
+      })).toBe(true)
+    }
     
     // 检查图片加载情况
-    const imageMetrics = await page.evaluate(() => {
-      const images = Array.from(document.querySelectorAll('img'))
+    const imageMetrics = await page.evaluate(elements => {
+      const images = elements as HTMLImageElement[]
       const metrics = {
         totalImages: images.length,
         loadedImages: 0,
@@ -62,7 +74,7 @@ test.describe('性能测试', () => {
       })
 
       return metrics
-    })
+    }, images)
 
     console.log('图片加载指标:', imageMetrics)
 
