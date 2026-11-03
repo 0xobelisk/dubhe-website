@@ -2,45 +2,55 @@
 
 import { useEffect } from 'react'
 
-export default function ServiceWorkerCleanup() {
-  useEffect(() => {
-    // Only run cleanup once
-    const hasCleanedUp = localStorage.getItem('sw-cleaned-up')
-    
-    if (!hasCleanedUp && 'serviceWorker' in navigator) {
+let cleanupPromise: Promise<void> | undefined
+
+// Both the legacy cleanup component and registration await this same operation.
+export function ensureServiceWorkerCleanup(): Promise<void> {
+  if (!cleanupPromise) {
+    cleanupPromise = (async () => {
+      let hasCleanedUp = false
+      try {
+        hasCleanedUp = Boolean(localStorage.getItem('sw-cleaned-up'))
+      } catch {
+        // Storage can be unavailable in a private browser context.
+      }
+      if (hasCleanedUp || !('serviceWorker' in navigator)) return
+
       console.log('Cleaning up old service workers...')
-      
-      // Get all service worker registrations
-      navigator.serviceWorker.getRegistrations().then(function(registrations) {
-        // Unregister all service workers
-        const unregisterPromises = registrations.map(function(registration) {
+
+      try {
+        const registrations = await navigator.serviceWorker.getRegistrations()
+        await Promise.all(registrations.map(registration => {
           console.log('Unregistering service worker:', registration.scope)
           return registration.unregister()
-        })
-        
-        return Promise.all(unregisterPromises)
-      }).then(function() {
+        }))
+
         // Clear all caches
         if ('caches' in window) {
-          return caches.keys().then(function(cacheNames) {
-            const deletePromises = cacheNames.map(function(cacheName) {
-              console.log('Deleting cache:', cacheName)
-              return caches.delete(cacheName)
-            })
-            return Promise.all(deletePromises)
-          })
+          const cacheNames = await caches.keys()
+          await Promise.all(cacheNames.map(cacheName => {
+            console.log('Deleting cache:', cacheName)
+            return caches.delete(cacheName)
+          }))
         }
-      }).then(function() {
         console.log('Service worker cleanup completed')
-        localStorage.setItem('sw-cleaned-up', 'true')
-        
-        // Optionally reload the page after cleanup
-        // window.location.reload()
-      }).catch(function(error) {
+      } catch (error) {
         console.error('Error during service worker cleanup:', error)
-        localStorage.setItem('sw-cleaned-up', 'true') // Mark as done even if error
-      })
-    }
+      } finally {
+        try {
+          localStorage.setItem('sw-cleaned-up', 'true')
+        } catch {
+          // The in-memory promise still prevents duplicate cleanup.
+        }
+      }
+    })()
+  }
+  return cleanupPromise
+}
+
+export default function ServiceWorkerCleanup() {
+  useEffect(() => {
+    void ensureServiceWorkerCleanup()
   }, [])
 
   return null // This component doesn't render anything

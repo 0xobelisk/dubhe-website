@@ -8,14 +8,14 @@ export default function HeroContent() {
   
   return (
     <motion.div
-      initial={{ opacity: 0, x: -50 }}
+      initial={false}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
       className="space-y-8 max-w-2xl"
     >
       {/* Logo placeholder */}
       <motion.div
-        initial={{ opacity: 0, y: -20 }}
+        initial={false}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="flex items-center gap-3 mb-8"
@@ -27,7 +27,7 @@ export default function HeroContent() {
       <div className="space-y-6">
         <motion.h1 
           className="text-5xl lg:text-6xl font-bold text-white leading-tight"
-          initial={{ opacity: 0, y: 20 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
@@ -39,7 +39,7 @@ export default function HeroContent() {
         
         <motion.p 
           className="text-lg text-blue-100 max-w-xl leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
@@ -50,7 +50,7 @@ export default function HeroContent() {
       {/* CTA Buttons */}
       <motion.div 
         className="flex flex-col sm:flex-row gap-4 pt-4"
-        initial={{ opacity: 0, y: 20 }}
+        initial={false}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.6 }}
       >

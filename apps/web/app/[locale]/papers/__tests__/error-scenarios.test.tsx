@@ -1,91 +1,80 @@
-import { render, screen, fireEvent, waitFor } from '../../../../test-utils'
+import { render, screen, fireEvent } from '../../../../test-utils'
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import PapersPage from '../page'
 
-// Error scenario tests for PDF remote linking
+const mocks = vi.hoisted(() => ({
+  missingTranslations: false,
+  hideIcons: false,
+  omitAria: false,
+}))
+
+vi.mock('framer-motion', () => ({
+  motion: {
+    h1: ({ children }: React.PropsWithChildren) => <h1>{children}</h1>,
+    p: ({ children }: React.PropsWithChildren) => <p>{children}</p>,
+    div: ({ children }: React.PropsWithChildren) => <div>{children}</div>,
+  },
+}))
+vi.mock('@/components/navigation', () => ({ default: () => <nav data-testid="navigation">Navigation</nav> }))
+vi.mock('@/components/footer', () => ({ default: () => <footer data-testid="footer">Footer</footer> }))
+vi.mock('@/components/ui/Card', () => ({
+  default: ({ children, onClick, clickable }: React.PropsWithChildren<{ onClick?: () => void; clickable?: boolean }>) => (
+    <div data-testid="card" onClick={onClick} role={!mocks.omitAria && clickable ? 'button' : undefined}>
+      {children}
+    </div>
+  ),
+}))
+vi.mock('lucide-react', () => ({
+  FileText: () => mocks.hideIcons ? null : <span data-testid="file-text-icon">FileText</span>,
+  ExternalLink: () => mocks.hideIcons ? null : <span data-testid="external-link-icon">ExternalLink</span>,
+  Download: () => mocks.hideIcons ? null : <span data-testid="download-icon">Download</span>,
+}))
+vi.mock('next-intl', () => ({
+  NextIntlClientProvider: ({ children }: React.PropsWithChildren) => children,
+  useTranslations: () => (key: string) => {
+    if (mocks.missingTranslations && key === 'lightpaper.title') return undefined
+    if (mocks.missingTranslations && key === 'hero.title') return ''
+    const translations: Record<string, string> = {
+      'hero.badge': 'Technical Documentation',
+      'hero.title': 'Technical Papers',
+      'hero.subtitle': "Explore Dubhe's technical architecture",
+      'lightpaper.title': 'Lightpaper',
+      'lightpaper.description': 'Comprehensive technical overview',
+      'lightpaper.downloadLabel': 'Download Lightpaper',
+      'onepager.title': 'Onepager',
+      'onepager.description': 'Concise overview',
+      'onepager.downloadLabel': 'Download Onepager',
+      'openInNewTab': 'Opens in new tab',
+    }
+    return translations[key] || key
+  },
+}))
+
+// Exercise browser failures without changing the page's runtime behavior.
 describe('Papers Page - Error Scenarios and Edge Cases', () => {
   let originalEnv: NodeJS.ProcessEnv
   let consoleErrorSpy: ReturnType<typeof vi.spyOn>
   let consoleWarnSpy: ReturnType<typeof vi.spyOn>
   let consoleLogSpy: ReturnType<typeof vi.spyOn>
-  
+
   beforeEach(() => {
     originalEnv = { ...process.env }
     vi.clearAllMocks()
-    
-    // Spy on console methods
+    mocks.missingTranslations = false
+    mocks.hideIcons = false
+    mocks.omitAria = false
+    delete process.env.NEXT_PUBLIC_LIGHTPAPER_URL
+    delete process.env.NEXT_PUBLIC_ONEPAPER_URL
     consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => {})
     consoleWarnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {})
     consoleLogSpy = vi.spyOn(console, 'log').mockImplementation(() => {})
-    
-    // Mock framer-motion
-    vi.mock('framer-motion', () => ({
-      motion: {
-        h1: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <h1 {...props}>{children}</h1>,
-        p: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <p {...props}>{children}</p>,
-        div: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <div {...props}>{children}</div>,
-      },
-    }))
-
-    // Mock components
-    vi.mock('@/components/navigation', () => ({
-      default: () => <nav data-testid="navigation">Navigation</nav>
-    }))
-
-    vi.mock('@/components/footer', () => ({
-      default: () => <footer data-testid="footer">Footer</footer>
-    }))
-
-    vi.mock('@/components/ui/Card', () => ({
-      default: ({ children, onClick, clickable, ...props }: React.PropsWithChildren<{
-        onClick?: () => void;
-        clickable?: boolean;
-      }>) => (
-        <div 
-          data-testid="card" 
-          onClick={onClick} 
-          role={clickable ? "button" : undefined}
-          tabIndex={clickable ? 0 : undefined}
-          {...props}
-        >
-          {children}
-        </div>
-      )
-    }))
-
-    // Mock icons
-    vi.mock('lucide-react', () => ({
-      FileText: () => <span data-testid="file-text-icon">FileText</span>,
-      ExternalLink: () => <span data-testid="external-link-icon">ExternalLink</span>,
-      Download: () => <span data-testid="download-icon">Download</span>
-    }))
-
-    // Mock next-intl
-    vi.mock('next-intl', () => ({
-      NextIntlClientProvider: ({ children }: { children: React.ReactNode }) => children,
-      useTranslations: () => (key: string) => {
-        const translations = {
-          'hero.badge': 'Technical Documentation',
-          'hero.title': 'Technical Papers',
-          'hero.subtitle': 'Explore Dubhe\'s technical architecture',
-          'lightpaper.title': 'Lightpaper',
-          'lightpaper.description': 'Comprehensive technical overview',
-          'lightpaper.downloadLabel': 'Download Lightpaper',
-          'onepager.title': 'Onepager', 
-          'onepager.description': 'Concise overview',
-          'onepager.downloadLabel': 'Download Onepager',
-          'openInNewTab': 'Opens in new tab'
-        }
-        return translations[key as keyof typeof translations] || key
-      }
-    }))
-
-    // Mock window.open
-    global.window.open = vi.fn()
+    vi.spyOn(window, 'open').mockReturnValue(null)
   })
 
   afterEach(() => {
     process.env = originalEnv
+    vi.clearAllTimers()
+    vi.useRealTimers()
     vi.restoreAllMocks()
   })
 
@@ -112,7 +101,7 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
       expect(screen.getByText('Technical Papers')).toBeInTheDocument()
     })
 
-    it('handles window.open throwing exception', async () => {
+    it('reports a browser open exception without removing the page', async () => {
       const mockWindowOpen = vi.mocked(window.open).mockImplementation(() => {
         throw new Error('Security policy violation')
       })
@@ -121,11 +110,24 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
       
       const lightpaperCard = screen.getAllByTestId('card')[0]
       
-      // Should handle exception gracefully
-      expect(() => {
+      // React 19 reports event-handler exceptions as window error events.
+      // Capture and assert only this expected failure; other errors still fail.
+      const reported: Error[] = []
+      const captureExpectedError = (event: ErrorEvent) => {
+        if (event.error instanceof Error && event.error.message === 'Security policy violation') {
+          reported.push(event.error)
+          event.preventDefault()
+        }
+      }
+      window.addEventListener('error', captureExpectedError)
+      try {
         fireEvent.click(lightpaperCard)
-      }).not.toThrow()
-      
+        expect(reported).toHaveLength(1)
+        expect(reported[0].message).toBe('Security policy violation')
+      } finally {
+        window.removeEventListener('error', captureExpectedError)
+      }
+
       expect(mockWindowOpen).toHaveBeenCalled()
       
       // Page should remain functional
@@ -195,7 +197,7 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
 
     it('handles environment variables with Unicode characters', () => {
       const unicodeUrl = 'https://example.com/文件/лайтпейпер/ドキュメント.pdf'
-      process.env.NEXT_PUBLIC_ONEPAGER_URL = unicodeUrl
+      process.env.NEXT_PUBLIC_ONEPAPER_URL = unicodeUrl
       
       const mockWindowOpen = vi.mocked(window.open)
       
@@ -219,7 +221,6 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
       
       const ThrowingComponent = () => {
         if (shouldThrow) {
-          shouldThrow = false // Only throw once
           throw new Error('Component render error')
         }
         return <div>Recovered</div>
@@ -230,22 +231,15 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
         render(<ThrowingComponent />)
       }).toThrow()
       
-      // Second render should work
+      // React 19 may retry a failing render; recover between render attempts.
+      shouldThrow = false
       expect(() => {
         render(<ThrowingComponent />)
       }).not.toThrow()
     })
 
     it('handles missing translation keys gracefully', () => {
-      vi.mock('next-intl', () => ({
-        NextIntlClientProvider: ({ children }: { children: React.ReactNode }) => children,
-        useTranslations: () => (key: string) => {
-          // Return undefined for some keys to test error handling
-          if (key === 'lightpaper.title') return undefined
-          if (key === 'hero.title') return ''
-          return key
-        }
-      }))
+      mocks.missingTranslations = true
       
       // Should render without throwing
       expect(() => {
@@ -255,20 +249,8 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
 
     it('handles malformed motion animation props', () => {
       // Test that component works even if framer-motion has issues
-      vi.mock('framer-motion', () => ({
-        motion: {
-          h1: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => {
-            if (props.animate && typeof props.animate === 'object') {
-              // Handle potential animation prop errors
-              return <h1>{children}</h1>
-            }
-            return <h1 {...props}>{children}</h1>
-          },
-          p: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <p {...props}>{children}</p>,
-          div: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <div {...props}>{children}</div>,
-        },
-      }))
-      
+      // The static motion adapter drops animation props, as a browser with
+      // reduced/no animation support would; the page must retain its content.
       expect(() => {
         render(<PapersPage />)
       }).not.toThrow()
@@ -307,13 +289,8 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
   describe('Browser Compatibility Edge Cases', () => {
     it('handles browsers without proper target support', async () => {
       // Mock window.open that doesn't support _blank
-      const mockWindowOpen = vi.mocked(window.open).mockImplementation((url, target, features) => {
-        if (target === '_blank') {
-          // Simulate old browser that ignores target
-          return window.open(url) as Window
-        }
-        return null
-      })
+      const legacyOpen = vi.fn().mockReturnValue(null)
+      const mockWindowOpen = vi.mocked(window.open).mockImplementation((url) => legacyOpen(url))
       
       render(<PapersPage />)
       
@@ -324,25 +301,22 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
     })
 
     it('handles browsers without noopener support', async () => {
-      const mockWindowOpen = vi.mocked(window.open).mockImplementation((url, target, features) => {
-        // Some older browsers might not support noopener
-        if (features?.includes('noopener')) {
-          return window.open(url, target) as Window
-        }
-        return window.open(url, target, features) as Window
-      })
+      const legacyOpen = vi.fn().mockReturnValue(null)
+      const mockWindowOpen = vi.mocked(window.open).mockImplementation((url, target) => legacyOpen(url, target))
       
       render(<PapersPage />)
       
       const lightpaperCard = screen.getAllByTestId('card')[0]
       fireEvent.click(lightpaperCard)
       
-      expect(mockWindowOpen).toHaveBeenCalled()
+      expect(mockWindowOpen).toHaveBeenCalledWith(expect.any(String), '_blank', 'noopener,noreferrer')
+      expect(legacyOpen).toHaveBeenCalledWith(expect.any(String), '_blank')
     })
   })
 
   describe('Network and Connection Errors', () => {
     it('handles slow network conditions gracefully', async () => {
+      vi.useFakeTimers()
       // Simulate slow response (component should still work)
       const mockWindowOpen = vi.mocked(window.open).mockImplementation((url) => {
         // Simulate delayed response
@@ -381,13 +355,7 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
   describe('Accessibility Error Scenarios', () => {
     it('handles missing ARIA attributes gracefully', () => {
       // Component should work even if Card component doesn't provide proper ARIA
-      vi.mock('@/components/ui/Card', () => ({
-        default: ({ children, onClick }: React.PropsWithChildren<{ onClick?: () => void }>) => (
-          <div onClick={onClick} data-testid="card">
-            {children}
-          </div>
-        )
-      }))
+      mocks.omitAria = true
       
       render(<PapersPage />)
       
@@ -403,11 +371,7 @@ describe('Papers Page - Error Scenarios and Edge Cases', () => {
 
     it('works with screen readers when icons fail to load', () => {
       // Mock icons that don't render
-      vi.mock('lucide-react', () => ({
-        FileText: () => null,
-        ExternalLink: () => null,
-        Download: () => null
-      }))
+      mocks.hideIcons = true
       
       render(<PapersPage />)
       

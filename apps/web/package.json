@@ -13,6 +13,7 @@
     "lint": "pnpm exec eslint .",
     "lint:fix": "pnpm exec eslint . --fix",
     "typecheck": "tsc --noEmit",
+    "check-types": "tsc --noEmit",
     "i18n:validate": "node scripts/validate-translations.js",
     "i18n:check": "npm run i18n:validate && echo '✅ Translations are ready for Weblate'",
     "test:a11y": "playwright test tests/accessibility.spec.ts",

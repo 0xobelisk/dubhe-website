@@ -1,4 +1,16 @@
 import { test, expect } from '@playwright/test'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
+
+function message(locale: string, path: string): string {
+  let value: unknown = JSON.parse(readFileSync(join(process.cwd(), 'apps/web/messages', `${locale}.json`), 'utf8'))
+  for (const key of path.split('.')) {
+    if (!value || typeof value !== 'object') throw new Error(`Missing translation: ${locale}:${path}`)
+    value = (value as Record<string, unknown>)[key]
+  }
+  if (typeof value !== 'string') throw new Error(`Expected translated text: ${locale}:${path}`)
+  return value
+}
 
 /**
  * Media Kit End-to-End Tests
@@ -35,14 +47,12 @@ test.describe('Media Kit E2E Tests', () => {
         await expect(page.locator('body')).toBeVisible()
         
         // Check for main content
-        await expect(page.locator('main, [role="main"], .hero')).toBeVisible({ timeout: 10000 })
+        await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 10000 })
         
         // Verify no JavaScript errors
         const errors: string[] = []
         page.on('pageerror', error => {
-          if (!error.message.includes('MISSING_MESSAGE')) {
-            errors.push(error.message)
-          }
+          errors.push(error.message)
         })
         
         await page.waitForTimeout(1000) // Wait for potential errors
@@ -56,13 +66,15 @@ test.describe('Media Kit E2E Tests', () => {
         await page.goto(`/${code}`)
         
         // Open navigation if mobile
-        const mobileMenuButton = page.locator('[aria-label*="menu"], [data-testid*="menu"]').first()
+        const mobileMenuButton = page.getByRole('button', { name: message(code, 'navigation.openMenu'), exact: true })
         if (await mobileMenuButton.isVisible()) {
           await mobileMenuButton.click()
+        } else {
+          await page.getByRole('navigation').getByRole('button', { name: message(code, 'navigation.community'), exact: true }).hover()
         }
         
         // Click Media Kit navigation link
-        const mediaKitLink = page.locator('a[href*="/media-kit"], a:has-text("Media Kit"), a:has-text("Kit Media"), a:has-text("メディアキット")')
+        const mediaKitLink = page.getByRole('navigation').getByRole('link', { name: message(code, 'navigation.mediaKit'), exact: true })
         await expect(mediaKitLink.first()).toBeVisible({ timeout: 5000 })
         await mediaKitLink.first().click()
         
@@ -82,20 +94,13 @@ test.describe('Media Kit E2E Tests', () => {
         await page.waitForLoadState('networkidle')
         
         // Hero section
-        await expect(page.locator('.hero, [data-testid*="hero"]')).toBeVisible()
+        await expect(page.getByRole('heading', { level: 1 })).toBeVisible()
         
         // Check for section headings (translated)
-        const sectionSelectors = [
-          'h1, h2, h3', // General headings
-          '[data-testid*="section-title"]', // Section titles
-          ':has-text("Logo")', // Logo section
-          ':has-text("Color")', // Colors section  
-          ':has-text("Typography")', // Typography section
-          ':has-text("Download")' // Download section
-        ]
+        const sectionKeys = ['logo', 'clearspace', 'symbol', 'partnership', 'colors', 'typography', 'download']
         
-        for (const selector of sectionSelectors) {
-          await expect(page.locator(selector).first()).toBeVisible({ timeout: 5000 })
+        for (const key of sectionKeys) {
+          await expect(page.getByRole('heading', { name: message(code, `mediaKit.${key}.title`), exact: true })).toBeVisible({ timeout: 5000 })
         }
       })
     })
@@ -112,7 +117,9 @@ test.describe('Media Kit E2E Tests', () => {
       const imageCount = await logoImages.count()
       for (let i = 0; i < Math.min(imageCount, 5); i++) { // Check first 5 images
         const image = logoImages.nth(i)
+        await image.scrollIntoViewIfNeeded()
         await expect(image).toBeVisible()
+        await expect.poll(() => image.evaluate((img: HTMLImageElement) => img.complete && img.naturalHeight > 0)).toBe(true)
         
         // Check image has loaded (has natural dimensions)
         const isLoaded = await image.evaluate((img: HTMLImageElement) => {
@@ -153,45 +160,31 @@ test.describe('Media Kit E2E Tests', () => {
       const downloadPromise = page.waitForEvent('download')
       await downloadButton.first().click()
       
-      // Verify download started or notification appeared
-      try {
-        const download = await Promise.race([
-          downloadPromise,
-          page.waitForSelector('.notification, .toast, .alert', { timeout: 5000 }).then(() => null)
-        ])
-        
-        // Either download should start or notification should appear
-        expect(download !== undefined || await page.locator('.notification, .toast, .alert').count() > 0).toBe(true)
-      } catch {
-        // If no download or notification, at least verify button was clickable
-        await expect(downloadButton.first()).toBeEnabled()
-      }
+      const download = await downloadPromise
+      expect(download).toBeDefined()
+      expect(download.suggestedFilename()).toBe('dubhe-logo-light.png')
+      expect(await download.failure()).toBeNull()
+      await expect(downloadButton.first()).toBeEnabled()
     })
 
     test('should handle individual asset downloads', async ({ page }) => {
       await page.goto('/en/media-kit')
       await page.waitForLoadState('networkidle')
       
-      // Find individual download buttons in logo section
-      const assetDownloadButtons = page.locator('.logo section button:has-text("Download"), [data-testid*="download"]')
-      
-      if (await assetDownloadButtons.count() > 0) {
-        const firstButton = assetDownloadButtons.first()
-        await expect(firstButton).toBeVisible()
-        await expect(firstButton).toBeEnabled()
-        
-        // Click and verify interaction works
-        await firstButton.click()
-        await page.waitForTimeout(500) // Allow for any async operations
-      }
+      const firstButton = page.getByRole('button', { name: /Download Primary Logo \(Light\)/ }).first()
+      await expect(firstButton).toBeVisible()
+      await expect(firstButton).toBeEnabled()
+      const [download] = await Promise.all([
+        page.waitForEvent('download'),
+        firstButton.click()
+      ])
+      expect(download.suggestedFilename()).toMatch(/\.png$/)
+      expect(await download.failure()).toBeNull()
     })
 
-    test('should handle color code copying', async ({ page, context }) => {
+    test('should handle color code copying', async ({ page }) => {
       await page.goto('/en/media-kit')
       await page.waitForLoadState('networkidle')
-      
-      // Grant clipboard permissions
-      await context.grantPermissions(['clipboard-read', 'clipboard-write'])
       
       // Find copy buttons for color codes
       const copyButtons = page.locator('button:has-text("#"), button:has-text("RGB")')
@@ -286,15 +279,13 @@ test.describe('Media Kit E2E Tests', () => {
       const consoleErrors: string[] = []
       
       page.on('console', msg => {
-        if (msg.type() === 'error' && !msg.text().includes('MISSING_MESSAGE')) {
+        if (msg.type() === 'error') {
           consoleErrors.push(msg.text())
         }
       })
       
       page.on('pageerror', error => {
-        if (!error.message.includes('MISSING_MESSAGE')) {
-          consoleErrors.push(error.message)
-        }
+        consoleErrors.push(error.message)
       })
       
       await page.goto('/en/media-kit')

@@ -1,0 +1,34 @@
+{
+  "labs": {
+    "labsList": {
+      "bridge": {
+        "name": "Dubhe Bridge Labs",
+        "focus": "Fasahar Ketare-Sarkar",
+        "description": "Haɓaka ƙa'idodin gada na duniya da mafita na haɗin kai don haɗa Dubhe da sauran muhallai na blockchain ba tare da matsala ba.",
+        "contributions": [
+          "Ƙa'idar Gada Ta Duniya",
+          "Canja wurin Kadarori Ta Ketare-sarkar",
+          "Mulkin Sarƙoƙi-da-yawa",
+          "Ma'aunin Haɗin Kai",
+          "Hanyoyin Tsaro na Gada"
+        ],
+        "status": "Bincike",
+        "team": "Injiniyoyi 4"
+      },
+      "network": {
+        "name": "Dubhe Network Labs",
+        "focus": "Kayan Aiki da Girma",
+        "description": "Gina mafita na sadarwa mai ƙarfi, ƙa'idodin sadarwa na lokaci-hakika da kayan aikin girma na muhalli na Dubhe.",
+        "contributions": [
+          "Sadarwa P2P Mai Ƙarfi",
+          "Sadarwar Tashar Lokaci-Hakika",
+          "Ginin Node Mai Girma",
+          "Inganta Ƙa'idodin Cibiyar Sadarwa",
+          "Kayan Aikin Gada Ta Ketare-sarkar"
+        ],
+        "status": "Ci Gaba",
+        "team": "Injiniyoyi 6"
+      }
+    }
+  }
+}

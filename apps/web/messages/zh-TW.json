@@ -752,34 +752,6 @@
         "status": "活躍",
         "team": "待確認"
       },
-      "network": {
-        "name": "Dubhe 網路實驗室",
-        "focus": "基礎設施與擴容",
-        "description": "為 Dubhe 生態系統構建高性能網路解決方案、即時通訊協議和可擴展性基礎設施。",
-        "contributions": [
-          "高性能 P2P 網路",
-          "即時通道通訊",
-          "可擴展節點架構",
-          "網路協議優化",
-          "跨鏈橋接基礎設施"
-        ],
-        "status": "開發中",
-        "team": "6 位工程師"
-      },
-      "bridge": {
-        "name": "Dubhe 橋接實驗室",
-        "focus": "跨鏈技術",
-        "description": "開發通用橋接協議和互操作性解決方案，將 Dubhe 與其他區塊鏈生態系統無縫連接。",
-        "contributions": [
-          "通用橋接協議",
-          "跨鏈資產轉移",
-          "多鏈治理",
-          "互操作性標準",
-          "橋接安全機制"
-        ],
-        "status": "研究中",
-        "team": "4 位工程師"
-      },
       "dubheos": {
         "name": "DubheOS",
         "focus": "Ecosystem & Toolchain",

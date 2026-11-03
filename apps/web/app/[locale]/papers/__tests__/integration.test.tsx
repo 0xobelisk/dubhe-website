@@ -270,20 +270,31 @@ describe('Papers Page - PDF Remote Linking Integration', () => {
   })
 
   describe('Error Handling and Resilience', () => {
-    it('handles window.open failure gracefully', async () => {
+    it('reports a blocked popup while keeping the page available', async () => {
       const mockWindowOpen = vi.mocked(window.open).mockImplementation(() => {
         throw new Error('Pop-up blocked')
       })
       
       render(<PapersPage />)
       
-      // Should not crash when window.open fails
       const lightpaperCard = screen.getAllByTestId('card')[0]
-      
-      expect(() => {
+      const reported: Error[] = []
+      const captureExpectedError = (event: ErrorEvent) => {
+        if (event.error instanceof Error && event.error.message === 'Pop-up blocked') {
+          reported.push(event.error)
+          event.preventDefault()
+        }
+      }
+      window.addEventListener('error', captureExpectedError)
+      try {
         fireEvent.click(lightpaperCard)
-      }).not.toThrow()
-      
+        expect(reported).toHaveLength(1)
+        expect(reported[0].message).toBe('Pop-up blocked')
+        expect(screen.getByTestId('navigation')).toBeInTheDocument()
+      } finally {
+        window.removeEventListener('error', captureExpectedError)
+      }
+
       expect(mockWindowOpen).toHaveBeenCalled()
     })
 

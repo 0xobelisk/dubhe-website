@@ -678,6 +678,24 @@
       "title": "Mummunar Gateway",
       "description": "Akwai matsala da haɗin server dinmu.",
       "suggestion": "Wannan yawanci na wucin gadi ne. Da fatan za ku sake gwadawa bayan ɗan lokaci."
+    },
+    "common": {
+      "tryAgain": "Sake gwadawa",
+      "goHome": "Je shafin farko",
+      "contactSupport": "Tuntuɓi sashen taimako"
+    },
+    "status": {
+      "400": "Buƙata mara inganci",
+      "401": "Ba a ba da izini ba",
+      "403": "An hana shiga",
+      "404": "Ba a samu ba",
+      "405": "Ba a yarda da wannan hanyar ba",
+      "429": "Buƙatu sun yi yawa",
+      "500": "Kuskuren cikin sabar",
+      "502": "Kuskuren hanyar haɗin sabar",
+      "503": "Ba a samun sabis",
+      "504": "Lokacin jiran hanyar haɗin sabar ya ƙare",
+      "default": "Kuskure"
     }
   },
   "incubation": {
@@ -910,34 +928,6 @@
         ],
         "status": "Yana Aiki",
         "team": "Ana jiran tabbaci"
-      },
-      "network": {
-        "name": "Dubhe Network Labs",
-        "focus": "Kayan Aiki da Girma",
-        "description": "Gina mafita na sadarwa mai ƙarfi, ƙa'idodin sadarwa na lokaci-hakika da kayan aikin girma na muhalli na Dubhe.",
-        "contributions": [
-          "Sadarwa P2P Mai Ƙarfi",
-          "Sadarwar Tashar Lokaci-Hakika",
-          "Ginin Node Mai Girma",
-          "Inganta Ƙa'idodin Cibiyar Sadarwa",
-          "Kayan Aikin Gada Ta Ketare-sarkar"
-        ],
-        "status": "Ci Gaba",
-        "team": "Injiniyoyi 6"
-      },
-      "bridge": {
-        "name": "Dubhe Bridge Labs",
-        "focus": "Fasahar Ketare-Sarkar",
-        "description": "Haɓaka ƙa'idodin gada na duniya da mafita na haɗin kai don haɗa Dubhe da sauran muhallai na blockchain ba tare da matsala ba.",
-        "contributions": [
-          "Ƙa'idar Gada Ta Duniya",
-          "Canja wurin Kadarori Ta Ketare-sarkar",
-          "Mulkin Sarƙoƙi-da-yawa",
-          "Ma'aunin Haɗin Kai",
-          "Hanyoyin Tsaro na Gada"
-        ],
-        "status": "Bincike",
-        "team": "Injiniyoyi 4"
       },
       "dubheos": {
         "name": "DubheOS",
@@ -2224,5 +2214,28 @@
     "metrics": "An ɓoye adadi har sai an samu tushe mai tabbaci.",
     "currentLabel": "Matsayin yanzu",
     "startedLabel": "Fara haɓakawa"
+  },
+  "papers": {
+    "hero": {
+      "badge": "Takardun fasaha",
+      "title": "Takardun bayanin fasaha",
+      "subtitle": "Binciki tsarin fasaha da cikakkun bayanan aiwatar da Dubhe ta hanyar cikakkun takardunmu."
+    },
+    "whitepaper": {
+      "title": "Cikakkiyar takardar bayani",
+      "description": "Cikakken bayani na fasaha game da tsarin Dubhe, hanyoyin cimma yarjejeniya da ƙirar tsarin muhallinsa.",
+      "downloadLabel": "Sauke cikakkiyar takardar bayani"
+    },
+    "lightpaper": {
+      "title": "Taƙaitacciyar takardar bayani",
+      "description": "Taƙaitaccen bayani game da manyan siffofin Dubhe, hanyoyin amfani da shi da sabbin fasahohinsa.",
+      "downloadLabel": "Sauke taƙaitacciyar takardar bayani"
+    },
+    "onepager": {
+      "title": "Bayani mai shafi ɗaya",
+      "description": "Taƙaitaccen bayanin shugabanci da ke bayyana muhimmiyar darajar Dubhe da manyan fa’idodinsa.",
+      "downloadLabel": "Sauke bayani mai shafi ɗaya"
+    },
+    "openInNewTab": "Yana buɗewa a sabon shafi"
   }
 }

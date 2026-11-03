@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any, @next/next/no-img-element */
-import { render, screen, fireEvent } from '../../test-utils'
+import { render, screen, fireEvent } from '@/test-utils'
 import { describe, it, expect, vi } from 'vitest'
 import Navigation from './navigation'
 
@@ -12,9 +12,9 @@ vi.mock('framer-motion', () => ({
 }))
 
 // Mock next-intl
-vi.mock('next-intl', () => ({
+vi.mock('next-intl', async () => ({
+  ...await vi.importActual('next-intl'),
   useTranslations: () => (key: string) => key,
-  NextIntlClientProvider: ({ children }: { children: React.ReactNode }) => children,
   useLocale: () => 'en'
 }))
 
@@ -39,7 +39,7 @@ vi.mock('next/image', () => {
 })
 
 // Mock LocaleSwitcher
-vi.mock('./LocaleSwitcher', () => {
+vi.mock('./LanguageSelector', () => {
   return {
     __esModule: true,
     default: () => <div data-testid="locale-switcher">Locale Switcher</div>

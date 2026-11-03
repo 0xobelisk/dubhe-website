@@ -146,9 +146,9 @@ export function Forbidden403() {
   return (
     <ErrorPage
       statusCode={403}
-      title={t('403.title')}
-      description={t('403.description')}
-      suggestion={t('403.suggestion')}
+      title={t('forbidden.title')}
+      description={t('forbidden.description')}
+      suggestion={t('forbidden.suggestion')}
       showHome={true}
       showContact={true}
     />
@@ -160,9 +160,9 @@ export function RateLimited429() {
   return (
     <ErrorPage
       statusCode={429}
-      title={t('429.title')}
-      description={t('429.description')}
-      suggestion={t('429.suggestion')}
+      title={t('rateLimited.title')}
+      description={t('rateLimited.description')}
+      suggestion={t('rateLimited.suggestion')}
       showRetry={true}
       showHome={true}
       onRetry={() => window.location.reload()}
@@ -175,9 +175,9 @@ export function ServiceUnavailable503() {
   return (
     <ErrorPage
       statusCode={503}
-      title={t('503.title')}
-      description={t('503.description')}
-      suggestion={t('503.suggestion')}
+      title={t('serviceUnavailable.title')}
+      description={t('serviceUnavailable.description')}
+      suggestion={t('serviceUnavailable.suggestion')}
       showRetry={true}
       showHome={true}
       showContact={true}
@@ -191,9 +191,9 @@ export function BadGateway502() {
   return (
     <ErrorPage
       statusCode={502}
-      title={t('502.title')}
-      description={t('502.description')}
-      suggestion={t('502.suggestion')}
+      title={t('badGateway.title')}
+      description={t('badGateway.description')}
+      suggestion={t('badGateway.suggestion')}
       showRetry={true}
       showHome={true}
       onRetry={() => window.location.reload()}
@@ -206,9 +206,9 @@ export function Unauthorized401() {
   return (
     <ErrorPage
       statusCode={401}
-      title={t('401.title')}
-      description={t('401.description')}
-      suggestion={t('401.suggestion')}
+      title={t('unauthorized.title')}
+      description={t('unauthorized.description')}
+      suggestion={t('unauthorized.suggestion')}
       showHome={true}
     />
   )

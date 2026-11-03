@@ -87,6 +87,7 @@ export default function CompaniesSection() {
                 <div key={`first-${index}`} className="flex items-center justify-center w-32 h-16 sm:w-36 lg:w-40 flex-shrink-0">
                   <Image 
                     src={company.logo} 
+                    unoptimized={company.logo.endsWith('.svg')}
                     alt={company.name} 
                     width={160}
                     height={64}
@@ -105,6 +106,7 @@ export default function CompaniesSection() {
                 <div key={`second-${index}`} className="flex items-center justify-center w-32 h-16 sm:w-36 lg:w-40 flex-shrink-0">
                   <Image 
                     src={company.logo} 
+                    unoptimized={company.logo.endsWith('.svg')}
                     alt={company.name} 
                     width={160}
                     height={64}

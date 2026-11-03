@@ -1,0 +1,34 @@
+{
+  "labs": {
+    "labsList": {
+      "bridge": {
+        "name": "Dubhe Bridge Labs",
+        "focus": "Çapraz Zincir Teknolojisi",
+        "description": "Dubhe'yi diğer blockchain ekosistemleriyle sorunsuzca bağlamak için evrensel köprüleme protokolleri ve birlikte çalışabilirlik çözümleri geliştiriyor.",
+        "contributions": [
+          "Evrensel Köprü Protokolü",
+          "Çapraz Zincir Varlık Transferi",
+          "Çoklu Zincir Yönetişimi",
+          "Birlikte Çalışabilirlik Standartları",
+          "Köprü Güvenlik Mekanizmaları"
+        ],
+        "status": "Araştırma",
+        "team": "4 Mühendis"
+      },
+      "network": {
+        "name": "Dubhe Network Labs",
+        "focus": "Altyapı ve Ölçeklendirme",
+        "description": "Dubhe ekosistemi için yüksek performanslı ağ çözümleri, gerçek zamanlı iletişim protokolleri ve ölçeklenebilirlik altyapısı inşa ediyor.",
+        "contributions": [
+          "Yüksek Performanslı P2P Ağ",
+          "Gerçek Zamanlı Kanal İletişimi",
+          "Ölçeklenebilir Düğüm Mimarisi",
+          "Ağ Protokolü Optimizasyonu",
+          "Çapraz Zincir Köprü Altyapısı"
+        ],
+        "status": "Geliştirme",
+        "team": "6 Mühendis"
+      }
+    }
+  }
+}

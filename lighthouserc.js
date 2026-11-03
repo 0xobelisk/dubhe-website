@@ -2,7 +2,7 @@ module.exports = {
   ci: {
     collect: {
       numberOfRuns: 3,
-      startServerCommand: 'pnpm build && pnpm start',
+      startServerCommand: 'pnpm start',
       url: [
         'http://localhost:3000/',
         'http://localhost:3000/engine',
@@ -28,7 +28,7 @@ module.exports = {
         // 其他重要指标
         'speed-index': ['warn', { maxNumericValue: 3000 }],
         'interactive': ['warn', { maxNumericValue: 3500 }],
-        'uses-webp-images': 'warn',
+        'image-delivery-insight': 'warn',
         'uses-responsive-images': 'warn',
         'modern-image-formats': 'warn',
         
@@ -46,7 +46,8 @@ module.exports = {
       }
     },
     upload: {
-      target: 'temporary-public-storage'
+      target: 'filesystem',
+      outputDir: './lighthouse-ci-results'
     },
     server: {
       port: 9001,

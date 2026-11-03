@@ -18,6 +18,7 @@ const securityHeaders = {
     script-src 'self' 'unsafe-eval' 'unsafe-inline' *.sentry.io *.vercel-insights.com;
     style-src 'self' 'unsafe-inline' fonts.googleapis.com;
     img-src 'self' data: blob: *.vercel.app *.obelisk.build;
+    media-src 'self' https://cdn.prod.website-files.com;
     font-src 'self' fonts.gstatic.com;
     connect-src 'self' *.sentry.io *.vercel-insights.com vitals.vercel-insights.com;
     frame-ancestors 'none';
@@ -158,6 +159,6 @@ export default async function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)'
+    '/((?!_next/static|_next/image|favicon(?:-black|-white)?\\.ico$|sw-cache\\.js$|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)'
   ]
 }

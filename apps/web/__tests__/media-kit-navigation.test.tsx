@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@/test-utils'
+import { render, screen, fireEvent, act } from '@/test-utils'
 import { describe, it, expect, vi } from 'vitest'
 import Navigation from '@/components/navigation'
 
@@ -13,7 +13,7 @@ import Navigation from '@/components/navigation'
  */
 
 // Mock Navigation component dependencies
-vi.mock('@/components/LocaleSwitcher', () => ({
+vi.mock('@/components/LanguageSelector', () => ({
   __esModule: true,
   default: () => <div data-testid="locale-switcher">Locale Switcher</div>
 }))
@@ -35,10 +35,22 @@ vi.mock('framer-motion', () => ({
   AnimatePresence: ({ children }: any) => children
 }))
 
+function renderDesktopNavigation() {
+  const result = render(<Navigation />)
+  vi.useFakeTimers()
+  try {
+    fireEvent.mouseEnter(screen.getByRole('button', { name: /^Community/ }))
+    act(() => vi.advanceTimersByTime(150))
+  } finally {
+    vi.useRealTimers()
+  }
+  return result
+}
+
 describe('Media Kit Navigation Tests', () => {
   describe('Navigation Rendering', () => {
     it('should render navigation with Media Kit link', () => {
-      render(<Navigation />)
+      renderDesktopNavigation()
 
       // Check navigation exists
       expect(screen.getByRole('navigation')).toBeInTheDocument()
@@ -55,21 +67,23 @@ describe('Media Kit Navigation Tests', () => {
 
   describe('Media Kit Link Functionality', () => {
     it('should have correct href for Media Kit link', () => {
-      render(<Navigation />)
+      renderDesktopNavigation()
 
       // Find Media Kit link by text and check href
       const mediaKitLink = screen.getByRole('link', { name: /Media Kit/i })
       expect(mediaKitLink).toBeInTheDocument()
-      expect(mediaKitLink).toHaveAttribute('href', '/media-kit')
+      expect(mediaKitLink).toHaveAttribute('href', '/en/media-kit')
     })
 
     it('should be accessible via keyboard navigation', () => {
-      render(<Navigation />)
+      renderDesktopNavigation()
 
       const mediaKitLink = screen.getByText('Media Kit').closest('a')
       
       expect(mediaKitLink).toBeInTheDocument()
-      expect(mediaKitLink).toHaveAttribute('tabindex', '0')
+      expect(mediaKitLink?.tabIndex).toBe(0)
+      mediaKitLink?.focus()
+      expect(mediaKitLink).toHaveFocus()
     })
   })
 
@@ -111,14 +125,14 @@ describe('Media Kit Navigation Tests', () => {
       // All links should have proper text content for screen readers
       const links = screen.getAllByRole('link')
       links.forEach(link => {
-        expect(link.textContent?.trim().length).toBeGreaterThan(0)
+        expect(link).toHaveAccessibleName()
       })
     })
   })
 
   describe('Navigation Menu Structure', () => {
     it('should include Media Kit in main navigation sections', () => {
-      render(<Navigation />)
+      renderDesktopNavigation()
 
       // Check that Media Kit appears alongside other main sections
       expect(screen.getByText('Media Kit')).toBeInTheDocument()
@@ -130,7 +144,7 @@ describe('Media Kit Navigation Tests', () => {
     })
 
     it('should maintain navigation order and hierarchy', () => {
-      render(<Navigation />)
+      renderDesktopNavigation()
 
       // Get all navigation links
       const navigation = screen.getByRole('navigation')

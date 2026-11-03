@@ -1,30 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { render, screen } from '../../test-utils'
+import { render, screen } from '@/test-utils'
 import { describe, it, expect, vi } from 'vitest'
 import Footer from './footer'
-
-// Mock next-intl
-vi.mock('next-intl', () => ({
-  useTranslations: () => (key: string) => {
-    const translations: Record<string, string> = {
-      'legal.privacy': 'Privacy Policy',
-      'legal.terms': 'Terms of Service',
-      'legal.contact': 'Contact',
-      'products.engine': 'Engine',
-      'products.channel': 'Channel',
-      'products.os': 'OS',
-      'ecosystem.foundation': 'Foundation',
-      'ecosystem.labs': 'Labs',
-      'ecosystem.grants': 'Grants',
-      'community.ambassador': 'Ambassador',
-      'community.moderators': 'Moderators',
-      'community.events': 'Events',
-      'community.contact': 'Contact'
-    };
-    return translations[key] || key;
-  },
-  NextIntlClientProvider: ({ children }: { children: React.ReactNode }) => children
-}))
+import englishMessages from '@/messages/en.json'
 
 // Mock next/link
 vi.mock('next/link', () => {
@@ -65,7 +43,7 @@ describe('Footer Component', () => {
 
   it('displays copyright information', () => {
     render(<Footer />)
-    expect(screen.getByText('© 2025 Dubhe Technologies Group. All rights reserved.')).toBeInTheDocument()
+    expect(screen.getByText(englishMessages.footer.copyright)).toBeInTheDocument()
   })
 
   it('renders footer navigation links', () => {
@@ -99,7 +77,7 @@ describe('Footer Component', () => {
     render(<Footer />)
     
     // Check for community navigation links
-    expect(screen.getByText('Ambassador')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Media Kit' })).toHaveAttribute('href', '/en/media-kit')
     expect(screen.getByText('Moderators')).toBeInTheDocument()
     expect(screen.getByText('Events')).toBeInTheDocument()
   })

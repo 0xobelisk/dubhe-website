@@ -5,7 +5,10 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "start": "pnpm --filter web start",
     "lint": "turbo lint",
+    "check-types": "turbo check-types",
+    "i18n:validate": "pnpm --filter web i18n:validate",
     "lint:fix": "turbo lint -- --fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "vitest",

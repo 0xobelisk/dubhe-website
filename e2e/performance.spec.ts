@@ -8,54 +8,15 @@ test.describe('性能测试', () => {
     // 等待页面完全加载
     await page.waitForTimeout(2000)
 
-    // 获取性能指标（增强浏览器兼容性）
+    // Read actual Navigation Timing entries supported by all configured browsers.
     const performanceMetrics = await page.evaluate(() => {
-      return new Promise((resolve) => {
-        // 检查是否支持 PerformanceObserver
-        if (typeof PerformanceObserver !== 'undefined') {
-          try {
-            new PerformanceObserver((list) => {
-              const entries = list.getEntries()
-              const metrics: Record<string, number> = {}
-              
-              entries.forEach((entry) => {
-                if (entry.entryType === 'navigation') {
-                  const navEntry = entry as PerformanceNavigationTiming
-                  metrics.domContentLoaded = navEntry.domContentLoadedEventEnd - navEntry.navigationStart
-                  metrics.loadComplete = navEntry.loadEventEnd - navEntry.navigationStart
-                  metrics.domInteractive = navEntry.domInteractive - navEntry.navigationStart
-                }
-              })
-              
-              if (Object.keys(metrics).length > 0) {
-                resolve(metrics)
-                return
-              }
-            }).observe({ entryTypes: ['navigation'] })
-          } catch (error) {
-            console.warn('PerformanceObserver failed:', error)
-          }
-        }
-        
-        // 回退到传统性能API
-        setTimeout(() => {
-          const timing = performance.timing
-          if (timing && timing.navigationStart) {
-            resolve({
-              domContentLoaded: timing.domContentLoadedEventEnd - timing.navigationStart || 0,
-              loadComplete: timing.loadEventEnd - timing.navigationStart || 0,
-              domInteractive: timing.domInteractive - timing.navigationStart || 0
-            })
-          } else {
-            // 最后回退：使用简单的时间测量
-            resolve({
-              domContentLoaded: 1000, // 默认值
-              loadComplete: 2000,
-              domInteractive: 800
-            })
-          }
-        }, 500)
-      })
+      const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined
+      if (!navigation) throw new Error('Navigation Timing entry is unavailable')
+      return {
+        domContentLoaded: navigation.domContentLoadedEventEnd - navigation.startTime,
+        loadComplete: navigation.loadEventEnd - navigation.startTime,
+        domInteractive: navigation.domInteractive - navigation.startTime
+      }
     })
 
     console.log('性能指标:', performanceMetrics)
@@ -63,15 +24,13 @@ test.describe('性能测试', () => {
     // 验证性能指标在合理范围内
     const metrics = performanceMetrics as Record<string, number>
     
-    if (metrics.domContentLoaded > 0) {
-      expect(metrics.domContentLoaded).toBeLessThan(8000) // 8秒以内（放宽限制）
-      console.log(`DOM 内容加载时间: ${metrics.domContentLoaded}ms`)
-    }
+    expect(metrics.domContentLoaded).toBeGreaterThan(0)
+    expect(metrics.domContentLoaded).toBeLessThan(8000)
+    console.log(`DOM 内容加载时间: ${metrics.domContentLoaded}ms`)
 
-    if (metrics.loadComplete > 0) {
-      expect(metrics.loadComplete).toBeLessThan(12000) // 12秒以内（放宽限制）
-      console.log(`页面完全加载时间: ${metrics.loadComplete}ms`)
-    }
+    expect(metrics.loadComplete).toBeGreaterThan(0)
+    expect(metrics.loadComplete).toBeLessThan(12000)
+    console.log(`页面完全加载时间: ${metrics.loadComplete}ms`)
   })
 
   test('图片加载性能', async ({ page }) => {
@@ -119,29 +78,42 @@ test.describe('性能测试', () => {
 
   test('JavaScript 包大小检查', async ({ page }) => {
     const resourceSizes: Record<string, number> = {}
+    type JavaScriptRead = { url: string; bytes: number } | { url: string; error: unknown }
+    const pendingReads: Promise<JavaScriptRead>[] = []
     
     // 监听网络请求
-    page.on('response', async (response) => {
+    const onResponse = (response: import('@playwright/test').Response) => {
       const url = response.url()
       const contentType = response.headers()['content-type'] || ''
       
       if (contentType.includes('javascript') || url.endsWith('.js')) {
-        try {
-          const buffer = await response.body()
-          resourceSizes[url] = buffer.length
-        } catch (error) {
-          // 忽略无法获取的资源
-        }
+        pendingReads.push(response.body().then(
+          buffer => ({ url, bytes: buffer.length }),
+          error => ({ url, error })
+        ))
       }
-    })
+    }
+    page.on('response', onResponse)
 
     await page.goto('/')
     await page.waitForLoadState('networkidle')
+    page.off('response', onResponse)
+
+    const reads = await Promise.all(pendingReads)
+    const failures = reads.filter((read): read is { url: string; error: unknown } => 'error' in read)
+    if (failures.length > 0) {
+      throw new Error(`Failed to read JavaScript response bodies: ${failures.map(read => `${read.url}: ${String(read.error)}`).join('; ')}`)
+    }
+    for (const read of reads) {
+      if ('bytes' in read) resourceSizes[read.url] = read.bytes
+    }
+    expect(Object.keys(resourceSizes).length, 'JavaScript budget requires successfully measured resources').toBeGreaterThan(0)
 
     console.log('JavaScript 资源大小:', resourceSizes)
 
     // 计算总 JS 大小
     const totalJSSize = Object.values(resourceSizes).reduce((sum, size) => sum + size, 0)
+    expect(totalJSSize, 'JavaScript budget requires a non-empty measured payload').toBeGreaterThan(0)
     console.log(`总 JavaScript 大小: ${(totalJSSize / 1024 / 1024).toFixed(2)} MB`)
 
     // 验证 JS 包大小在合理范围内（放宽限制到50MB，考虑到开发环境）
@@ -205,26 +177,26 @@ test.describe('性能测试', () => {
       return null
     })
 
+    // Verify real DOM-resource cleanup in every browser, including those without
+    // Chromium's non-standard heap API.
+    const domResources = await page.evaluate(() => {
+      const before = document.querySelectorAll('*').length
+      const container = document.createElement('div')
+      for (let i = 0; i < 1000; i++) {
+        const child = document.createElement('div')
+        child.textContent = `Test content ${i}`
+        container.appendChild(child)
+      }
+      document.body.appendChild(container)
+      const created = container.childElementCount
+      container.remove()
+      return { before, created, after: document.querySelectorAll('*').length }
+    })
+    expect(domResources.created).toBe(1000)
+    expect(domResources.after).toBe(domResources.before)
+
     if (initialMemory) {
       console.log('初始内存使用:', initialMemory)
-
-      // 进行一些页面交互
-      await page.evaluate(() => {
-        // 模拟一些内存密集型操作
-        for (let i = 0; i < 1000; i++) {
-          const div = document.createElement('div')
-          div.innerHTML = `Test content ${i}`
-          document.body.appendChild(div)
-        }
-        
-        // 清理创建的元素
-        const testDivs = document.querySelectorAll('div')
-        testDivs.forEach(div => {
-          if (div.innerHTML.includes('Test content')) {
-            div.remove()
-          }
-        })
-      })
 
       // 强制垃圾回收（如果可能）
       await page.evaluate(() => {
@@ -261,8 +233,7 @@ test.describe('性能测试', () => {
       }
     } else {
       console.log('浏览器不支持内存监控 API（Firefox/Safari正常现象）')
-      // 对于不支持内存API的浏览器，跳过内存测试但不报错
-      expect(true).toBeTruthy() // 占位测试，确保测试不会失败
+      // DOM resource creation and cleanup above remain required on these browsers.
     }
   })
 })

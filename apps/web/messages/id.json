@@ -678,6 +678,24 @@
       "title": "Gateway Buruk",
       "description": "Ada masalah dengan koneksi server kami.",
       "suggestion": "Ini biasanya sementara. Silakan coba lagi dalam beberapa saat."
+    },
+    "common": {
+      "tryAgain": "Coba Lagi",
+      "goHome": "Ke Halaman Utama",
+      "contactSupport": "Hubungi Dukungan"
+    },
+    "status": {
+      "400": "Permintaan Tidak Valid",
+      "401": "Tidak Diotorisasi",
+      "403": "Akses Dilarang",
+      "404": "Tidak Ditemukan",
+      "405": "Metode Tidak Diizinkan",
+      "429": "Terlalu Banyak Permintaan",
+      "500": "Kesalahan Internal Server",
+      "502": "Kesalahan Gateway",
+      "503": "Layanan Tidak Tersedia",
+      "504": "Waktu Tunggu Gateway Habis",
+      "default": "Kesalahan"
     }
   },
   "incubation": {
@@ -933,34 +951,6 @@
         ],
         "status": "Aktif",
         "team": "Menunggu konfirmasi"
-      },
-      "network": {
-        "name": "Dubhe Network Labs",
-        "focus": "Infrastruktur & Penskalaan",
-        "description": "Membangun solusi jaringan berkinerja tinggi, protokol komunikasi real-time, dan infrastruktur skalabilitas untuk ekosistem Dubhe.",
-        "contributions": [
-          "Jaringan P2P Berkinerja Tinggi",
-          "Komunikasi Saluran Real-time",
-          "Arsitektur Node Skalabel",
-          "Optimisasi Protokol Jaringan",
-          "Infrastruktur Jembatan Lintas-rantai"
-        ],
-        "status": "Pengembangan",
-        "team": "6 Insinyur"
-      },
-      "bridge": {
-        "name": "Dubhe Bridge Labs",
-        "focus": "Teknologi Lintas-rantai",
-        "description": "Mengembangkan protokol bridging universal dan solusi interoperabilitas untuk menghubungkan Dubhe dengan ekosistem blockchain lain secara mulus.",
-        "contributions": [
-          "Protokol Jembatan Universal",
-          "Transfer Aset Lintas-rantai",
-          "Tata Kelola Multi-rantai",
-          "Standar Interoperabilitas",
-          "Mekanisme Keamanan Jembatan"
-        ],
-        "status": "Penelitian",
-        "team": "4 Insinyur"
       },
       "dubheos": {
         "name": "DubheOS",

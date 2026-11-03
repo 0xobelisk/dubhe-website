@@ -18,11 +18,11 @@ test.describe('首页 E2E 测试', () => {
   test('应该展示主要内容区块', async ({ page }) => {
     await page.goto('/')
 
-    // 等待loading完成 - 通过等待白色背景的主页面出现
-    await expect(page.locator('.min-h-screen.bg-white')).toBeVisible({ timeout: 10000 })
+    // The production homepage exposes its real heading as soon as content loads.
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 10000 })
     
     // 验证页面主要内容存在
-    await expect(page.locator('.min-h-screen.bg-white')).toBeVisible() // HomePage 容器
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Dubhe')
   })
 
   test('导航栏链接功能正常', async ({ page }) => {

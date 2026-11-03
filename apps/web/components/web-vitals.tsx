@@ -38,9 +38,10 @@ function sendAnalyticsEvent(event: AnalyticsEvent) {
     })
   }
 
-  // 3. Custom analytics endpoint
-  if (process.env.NODE_ENV === 'production') {
-    fetch('/api/analytics', {
+  // 3. Optional custom analytics service; this app does not host /api/analytics.
+  const analyticsEndpoint = process.env.NEXT_PUBLIC_ANALYTICS_ENDPOINT?.trim()
+  if (process.env.NODE_ENV === 'production' && analyticsEndpoint) {
+    fetch(analyticsEndpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(event)

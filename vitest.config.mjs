@@ -12,6 +12,11 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./vitest.setup.ts'],
+    server: {
+      deps: {
+        inline: ['next-intl']
+      }
+    },
     css: true,
     include: [
       'apps/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
@@ -32,6 +37,7 @@ export default defineConfig({
     ],
     coverage: {
       provider: 'v8',
+      reportOnFailure: true,
       reporter: ['text', 'json', 'html'],
       exclude: [
         'node_modules/',
@@ -47,12 +53,10 @@ export default defineConfig({
         'vitest.setup.ts'
       ],
       thresholds: {
-        global: {
-          branches: 70,
-          functions: 70,
-          lines: 70,
-          statements: 70
-        }
+        branches: 70,
+        functions: 70,
+        lines: 70,
+        statements: 70
       }
     }
   },

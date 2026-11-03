@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { render, screen, fireEvent } from '../../test-utils'
+import { render as renderReact, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
+import { NextIntlClientProvider } from 'next-intl'
+import englishMessages from '@/messages/en.json'
 import { 
   ErrorPage, 
   Forbidden403, 
@@ -9,6 +11,14 @@ import {
   ServiceUnavailable503,
   BadGateway502
 } from './error-pages'
+
+const render = (ui: React.ReactElement) => renderReact(ui, {
+  wrapper: ({ children }) => (
+    <NextIntlClientProvider locale="en" messages={englishMessages} timeZone="UTC">
+      {children}
+    </NextIntlClientProvider>
+  )
+})
 
 // Mock UI components
 vi.mock('@workspace/ui/components/button', () => ({
