@@ -46,55 +46,71 @@ export default function HomePage() {
       <HeroSection />
 
       {/* Network Statistics */}
-      <Suspense fallback={
-        <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50">
-          <div className="max-w-7xl mx-auto text-center">
-            <div className="animate-pulse">Loading statistics...</div>
+      <div className="home-secondary-section">
+        <Suspense fallback={
+          <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50">
+            <div className="max-w-7xl mx-auto text-center">
+              <div className="animate-pulse">Loading statistics...</div>
+            </div>
           </div>
-        </div>
-      }>
-        <NetworkStats />
-      </Suspense>
+        }>
+          <NetworkStats />
+        </Suspense>
+      </div>
 
       {/* Features Section */}
-      <FeaturesSection />
+      <div className="home-secondary-section">
+        <FeaturesSection />
+      </div>
 
       {/* Product Suite Section */}
-      <ProductSuiteSection />
+      <div className="home-secondary-section">
+        <ProductSuiteSection />
+      </div>
 
       {/* How It Works Section */}
-      <HowItWorksSection />
+      <div className="home-secondary-section">
+        <HowItWorksSection />
+      </div>
 
       {/* Network Architecture Section */}
-      <NetworkArchitectureSection />
+      <div className="home-secondary-section">
+        <NetworkArchitectureSection />
+      </div>
 
       {/* Ecosystem Section */}
-      <Suspense fallback={
-        <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50">
-          <div className="max-w-7xl mx-auto text-center">
-            <div className="animate-pulse">Loading ecosystem...</div>
+      <div className="home-secondary-section">
+        <Suspense fallback={
+          <div className="py-24 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50">
+            <div className="max-w-7xl mx-auto text-center">
+              <div className="animate-pulse">Loading ecosystem...</div>
+            </div>
           </div>
-        </div>
-      }>
-        <Ecosystem />
-      </Suspense>
+        }>
+          <Ecosystem />
+        </Suspense>
+      </div>
 
       {/* Community Section */}
-      <CommunitySection />
+      <div className="home-secondary-section">
+        <CommunitySection />
+      </div>
 
       {/* Companies Section - Temporarily disabled */}
       {/* <CompaniesSection /> */}
 
       {/* Footer */}
-      <Suspense fallback={
-        <div className="py-12 bg-slate-900">
-          <div className="max-w-7xl mx-auto text-center text-white">
-            <div className="animate-pulse">Loading...</div>
+      <div className="home-secondary-section">
+        <Suspense fallback={
+          <div className="py-12 bg-slate-900">
+            <div className="max-w-7xl mx-auto text-center text-white">
+              <div className="animate-pulse">Loading...</div>
+            </div>
           </div>
-        </div>
-      }>
-        <Footer />
-      </Suspense>
+        }>
+          <Footer />
+        </Suspense>
+      </div>
     </div>
   )
 }
