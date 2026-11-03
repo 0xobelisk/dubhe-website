@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { Menu, X, ExternalLink, ChevronDown } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from 'next-intl'

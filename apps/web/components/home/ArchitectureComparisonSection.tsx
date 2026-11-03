@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { CheckCircle, XCircle } from "lucide-react"
 import { useTranslations } from "next-intl"

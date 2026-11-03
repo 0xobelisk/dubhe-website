@@ -60,7 +60,11 @@ const LanguageSelector = memo(function LanguageSelector() {
   }, []);
 
   const onLanguageChange = useCallback((languageCode: string) => {
-    const newPathname = pathname.replace(`/${locale}`, `/${languageCode}`);
+    const localePrefix = `/${locale}`;
+    const unprefixedPathname = pathname === localePrefix || pathname.startsWith(`${localePrefix}/`)
+      ? pathname.slice(localePrefix.length)
+      : pathname;
+    const newPathname = `/${languageCode}${unprefixedPathname === '/' ? '' : unprefixedPathname}`;
     router.replace(newPathname);
     setIsOpen(false);
     setFilter('');

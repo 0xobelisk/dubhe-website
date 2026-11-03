@@ -10,7 +10,7 @@ const STATIC_CACHE_URLS = [
   '/favicon-black.ico',
   '/favicon-white.ico',
   '/logo/light.png',
-  '/logo/dark.png',
+  '/logo/white.png',
   '/marketing/logos/move-white.svg',
 ];
 

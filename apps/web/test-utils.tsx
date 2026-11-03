@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
 import { NextIntlClientProvider } from 'next-intl'
+import englishMessages from './messages/en.json'
+import { MotionProvider } from './components/motion-provider'
 
 // Mock messages for testing - comprehensive coverage
 const mockMessages = {
@@ -286,11 +288,26 @@ const mockMessages = {
   }
 }
 
+function mergeMessages<T extends Record<string, unknown>>(fallback: Record<string, unknown>, overrides: T): T {
+  const merged = { ...fallback, ...overrides }
+  for (const [key, value] of Object.entries(overrides)) {
+    const original = fallback[key]
+    if (value && original && typeof value === 'object' && typeof original === 'object' && !Array.isArray(value) && !Array.isArray(original)) {
+      merged[key as keyof T] = mergeMessages(original as Record<string, unknown>, value as Record<string, unknown>) as T[keyof T]
+    }
+  }
+  return merged as T
+}
+
+const testMessages = mergeMessages(englishMessages, mockMessages)
+
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
   return (
-    <NextIntlClientProvider locale="en" messages={mockMessages}>
-      {children}
-    </NextIntlClientProvider>
+    <MotionProvider>
+      <NextIntlClientProvider locale="en" messages={testMessages} timeZone="UTC">
+        {children}
+      </NextIntlClientProvider>
+    </MotionProvider>
   )
 }
 

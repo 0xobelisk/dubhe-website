@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { Users, Code, Zap, Globe, Network, Shield } from "lucide-react"
 import { useTranslations } from 'next-intl'
 

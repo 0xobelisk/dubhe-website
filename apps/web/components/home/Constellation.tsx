@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { DUBHE_CONSTELLATION_LINES, DUBHE_CONSTELLATION_STARS } from "@/components/dubhe-constellation"
 
 export default function Constellation() {

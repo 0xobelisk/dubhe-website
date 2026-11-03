@@ -3,7 +3,7 @@
 import ContentReviewNotice from "@/components/content-review-notice"
 
 import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { 
   Users, 
   Rocket, 
@@ -70,7 +70,7 @@ export default function GrantsPage({params}: {params: Promise<Params>}) {
 
   const requirements = t.raw('process.requirements.items')
 
-  const process = [
+  const grantSteps = [
     {
       step: "1",
       title: t('process.steps.proposal.title'),
@@ -327,7 +327,7 @@ export default function GrantsPage({params}: {params: Promise<Params>}) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
-            {process.map((step, index) => (
+            {grantSteps.map((step, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
@@ -340,7 +340,7 @@ export default function GrantsPage({params}: {params: Promise<Params>}) {
                   <div className="w-16 h-16 mx-auto bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
                     {step.step}
                   </div>
-                  {index < process.length - 1 && (
+                  {index < grantSteps.length - 1 && (
                     <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-green-500/50 to-blue-500/50 transform -translate-y-0.5" />
                   )}
                 </div>

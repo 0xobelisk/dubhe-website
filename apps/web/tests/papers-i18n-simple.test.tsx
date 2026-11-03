@@ -4,6 +4,9 @@ import PapersPage from '../app/[locale]/papers/page'
 
 // Mock framer-motion
 vi.mock('framer-motion', () => ({
+  get m() { return this.motion },
+  LazyMotion: ({ children }: React.PropsWithChildren) => children,
+  domAnimation: {},
   motion: {
     h1: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <h1 {...props}>{children}</h1>,
     p: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <p {...props}>{children}</p>,

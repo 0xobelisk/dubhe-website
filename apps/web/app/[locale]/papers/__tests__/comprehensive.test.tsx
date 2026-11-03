@@ -12,6 +12,9 @@ describe('Papers Page - Comprehensive PDF Remote Linking Tests', () => {
     
     // Mock all dependencies
     vi.mock('framer-motion', () => ({
+      get m() { return this.motion },
+      LazyMotion: ({ children }: React.PropsWithChildren) => children,
+      domAnimation: {},
       motion: {
         h1: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <h1 {...props}>{children}</h1>,
         p: ({ children, ...props }: React.PropsWithChildren<Record<string, unknown>>) => <p {...props}>{children}</p>,
@@ -130,7 +133,7 @@ describe('Papers Page - Comprehensive PDF Remote Linking Tests', () => {
       const customOnepaperUrl = 'https://custom-cdn.com/onepaper.pdf'
       
       process.env.NEXT_PUBLIC_LIGHTPAPER_URL = customLightpaperUrl
-      process.env.NEXT_PUBLIC_ONEPAGER_URL = customOnepaperUrl
+      process.env.NEXT_PUBLIC_ONEPAPER_URL = customOnepaperUrl
       
       const mockWindowOpen = vi.mocked(window.open)
       
@@ -243,20 +246,34 @@ describe('Papers Page - Comprehensive PDF Remote Linking Tests', () => {
     })
 
     it('handles window.open throwing an error', () => {
+      const securityError = new Error('Security policy violation')
+      const reportedErrors: Error[] = []
+      const onWindowError = (event: ErrorEvent) => {
+        if (event.error === securityError) {
+          reportedErrors.push(event.error)
+          event.preventDefault()
+        }
+      }
       const mockWindowOpen = vi.mocked(window.open).mockImplementation(() => {
-        throw new Error('Security policy violation')
+        throw securityError
       })
       
       render(<PapersPage />)
       
       const lightpaperCard = screen.getAllByTestId('card')[0]
       
-      // Should not throw when window.open fails
-      expect(() => {
-        fireEvent.click(lightpaperCard)
-      }).not.toThrow()
-      
-      expect(mockWindowOpen).toHaveBeenCalled()
+      // React 19 reports event-handler failures through the window error event.
+      window.addEventListener('error', onWindowError)
+      try {
+        expect(() => {
+          fireEvent.click(lightpaperCard)
+        }).not.toThrow()
+
+        expect(mockWindowOpen).toHaveBeenCalled()
+        expect(reportedErrors).toEqual([securityError])
+      } finally {
+        window.removeEventListener('error', onWindowError)
+      }
     })
 
     it('maintains functionality after failed PDF downloads', () => {

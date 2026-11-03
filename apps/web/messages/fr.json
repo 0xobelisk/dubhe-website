@@ -678,6 +678,24 @@
       "title": "Passerelle Défaillante",
       "description": "Il y a un problème avec notre connexion serveur.",
       "suggestion": "Ceci est généralement temporaire. Veuillez réessayer dans quelques instants."
+    },
+    "common": {
+      "tryAgain": "Réessayer",
+      "goHome": "Aller à la page d’accueil",
+      "contactSupport": "Contacter l’assistance"
+    },
+    "status": {
+      "400": "Requête incorrecte",
+      "401": "Non autorisé",
+      "403": "Accès interdit",
+      "404": "Introuvable",
+      "405": "Méthode non autorisée",
+      "429": "Trop de requêtes",
+      "500": "Erreur interne du serveur",
+      "502": "Passerelle incorrecte",
+      "503": "Service indisponible",
+      "504": "Délai d’attente de la passerelle dépassé",
+      "default": "Erreur"
     }
   },
   "incubation": {
@@ -933,34 +951,6 @@
         ],
         "status": "Actif",
         "team": "À confirmer"
-      },
-      "network": {
-        "name": "Dubhe Network Labs",
-        "focus": "Infrastructure et Mise à l'Échelle",
-        "description": "Construction de solutions de mise en réseau haute performance, protocoles de communication en temps réel et infrastructure de scalabilité pour l'écosystème Dubhe.",
-        "contributions": [
-          "Mise en Réseau P2P Haute Performance",
-          "Communication de Canal en Temps Réel",
-          "Architecture de Nœud Évolutive",
-          "Optimisation des Protocoles Réseau",
-          "Infrastructure de Pont Cross-Chain"
-        ],
-        "status": "Développement",
-        "team": "6 Ingénieurs"
-      },
-      "bridge": {
-        "name": "Dubhe Bridge Labs",
-        "focus": "Technologie Cross-Chain",
-        "description": "Développement de protocoles de pontage universels et de solutions d'interopérabilité pour connecter Dubhe avec d'autres écosystèmes blockchain de manière transparente.",
-        "contributions": [
-          "Protocole de Pont Universel",
-          "Transfert d'Actifs Cross-Chain",
-          "Gouvernance Multi-Chaîne",
-          "Standards d'Interopérabilité",
-          "Mécanismes de Sécurité des Ponts"
-        ],
-        "status": "Recherche",
-        "team": "4 Ingénieurs"
       },
       "dubheos": {
         "name": "DubheOS",
@@ -2137,5 +2127,115 @@
     "metrics": "Chiffres masqués dans l’attente de sources vérifiables.",
     "currentLabel": "Situation actuelle",
     "startedLabel": "Début du développement"
+  },
+  "mediaKit": {
+    "hero": {
+      "badge": "Ressources de marque",
+      "title1": "Dubhe",
+      "title2": "Kit média",
+      "subtitle": "Téléchargez nos éléments de marque, nos consignes et nos ressources pour les partenariats, la couverture médiatique et les contenus de la communauté.",
+      "downloadPack": "Télécharger le pack de marque"
+    },
+    "logo": {
+      "title": "Logo et éléments de marque",
+      "subtitle": "Notre logo représente l’innovation et la fiabilité de la plateforme blockchain Dubhe. Utilisez ces éléments pour assurer la cohérence de la marque.",
+      "availableFormats": "Formats disponibles",
+      "download": "Télécharger",
+      "dos": {
+        "title": "Consignes d’utilisation du logo",
+        "item1": "Utilisez les fichiers de logo originaux sans modification",
+        "item2": "Respectez l’espace de protection minimal autour du logo",
+        "item3": "Utilisez des arrière-plans à fort contraste",
+        "item4": "Respectez les proportions et la mise à l’échelle"
+      },
+      "donts": {
+        "title": "Restrictions d’utilisation du logo",
+        "hide": "Masquer les restrictions",
+        "show": "Afficher les restrictions",
+        "item1": "N’étirez pas, ne déformez pas et ne modifiez pas le logo",
+        "item2": "N’utilisez pas de versions en basse résolution ou pixellisées",
+        "item3": "Ne placez pas le logo sur des arrière-plans chargés ou à faible contraste",
+        "item4": "Ne recréez pas le logo avec d’autres polices"
+      }
+    },
+    "clearspace": {
+      "title": "Consignes relatives à l’espace de protection",
+      "subtitle": "Respectez un espacement approprié autour du logo Dubhe pour préserver son impact visuel et sa reconnaissance.",
+      "minimum": "Espace de protection minimal",
+      "description": "Le logo Dubhe doit toujours être entouré d’un espace de protection afin de préserver son intégrité et son impact visuels. Cet espace est défini à partir de la hauteur de la lettre « D » du logo.",
+      "specifications": "Spécifications techniques",
+      "spec1": "Espace de protection minimal : une fois la hauteur du logo de chaque côté",
+      "spec2": "Pour le numérique : hauteur minimale recommandée de 32 px",
+      "spec3": "Pour l’impression : hauteur minimale recommandée de 0,5 pouce"
+    },
+    "symbol": {
+      "title": "Symbole et emblème",
+      "subtitle": "Le symbole Dubhe peut être utilisé seul lorsque le logo complet ne convient pas ou que l’espace est limité.",
+      "meaning": {
+        "title": "Signification du symbole",
+        "description": "Le symbole Dubhe représente la constellation qui guide la navigation et symbolise notre rôle : guider les développeurs dans l’écosystème blockchain grâce à des outils fiables et innovants."
+      },
+      "usage": {
+        "standalone": "Utilisation seule",
+        "standaloneDesc": "À utiliser lorsque l’espace est limité ou que la marque est déjà reconnue",
+        "app": "Icônes d’application",
+        "appDesc": "Idéal pour les applications mobiles, les favicons et les utilisations en petit format"
+      }
+    },
+    "partnership": {
+      "title": "Consignes pour les partenariats",
+      "subtitle": "Consignes pour les supports de partenariat et de marque commune afin d’assurer une présentation cohérente de la marque.",
+      "cobranding": "Exemple de marque commune",
+      "partnerLogo": "Logo du partenaire",
+      "spacing": {
+        "title": "Règles d’espacement des logos",
+        "rule1": "Conservez un poids visuel équivalent entre les logos",
+        "rule2": "Utilisez une ligne de séparation ou un espace blanc suffisant",
+        "rule3": "Alignez les logos sur la même ligne de base"
+      },
+      "approval": {
+        "title": "Approbation des partenariats",
+        "description": "Tous les supports de partenariat et de marque commune doivent être approuvés par l’équipe Dubhe avant leur publication.",
+        "contact": "Nous contacter pour approbation"
+      }
+    },
+    "colors": {
+      "title": "Palette de couleurs",
+      "subtitle": "Notre système de couleurs crée une expérience de marque cohérente et accessible sur tous les points de contact.",
+      "base": {
+        "title": "Couleurs de base"
+      },
+      "primary": {
+        "title": "Couleurs principales de la marque"
+      }
+    },
+    "typography": {
+      "title": "Typographie",
+      "subtitle": "Notre système typographique assure une communication cohérente et lisible sur tous les supports de marque.",
+      "primary": {
+        "title": "Police principale",
+        "description": "Geist Sans est notre police principale pour toutes les communications de marque"
+      },
+      "mono": {
+        "title": "Police à chasse fixe",
+        "description": "Geist Mono est utilisée pour le code, la documentation technique et les contenus destinés aux développeurs"
+      },
+      "scale": {
+        "title": "Échelle typographique"
+      }
+    },
+    "download": {
+      "title": "Télécharger les ressources",
+      "subtitle": "Accédez à tous les éléments de marque, aux consignes et aux ressources dans un seul pack pratique.",
+      "pack": {
+        "title": "Pack de marque complet",
+        "description": "Comprend les logos, les palettes de couleurs, les consignes typographiques et des exemples d’utilisation dans plusieurs formats.",
+        "button": "Télécharger le pack de marque"
+      },
+      "contact": {
+        "description": "Besoin d’éléments personnalisés ou de renseignements ?",
+        "button": "Contacter notre équipe"
+      }
+    }
   }
 }

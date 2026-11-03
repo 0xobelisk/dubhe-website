@@ -1,0 +1,34 @@
+{
+  "labs": {
+    "labsList": {
+      "bridge": {
+        "name": "Dubhe Bridge Labs",
+        "focus": "Teknologi Lintas-rantai",
+        "description": "Mengembangkan protokol bridging universal dan solusi interoperabilitas untuk menghubungkan Dubhe dengan ekosistem blockchain lain secara mulus.",
+        "contributions": [
+          "Protokol Jembatan Universal",
+          "Transfer Aset Lintas-rantai",
+          "Tata Kelola Multi-rantai",
+          "Standar Interoperabilitas",
+          "Mekanisme Keamanan Jembatan"
+        ],
+        "status": "Penelitian",
+        "team": "4 Insinyur"
+      },
+      "network": {
+        "name": "Dubhe Network Labs",
+        "focus": "Infrastruktur & Penskalaan",
+        "description": "Membangun solusi jaringan berkinerja tinggi, protokol komunikasi real-time, dan infrastruktur skalabilitas untuk ekosistem Dubhe.",
+        "contributions": [
+          "Jaringan P2P Berkinerja Tinggi",
+          "Komunikasi Saluran Real-time",
+          "Arsitektur Node Skalabel",
+          "Optimisasi Protokol Jaringan",
+          "Infrastruktur Jembatan Lintas-rantai"
+        ],
+        "status": "Pengembangan",
+        "team": "6 Insinyur"
+      }
+    }
+  }
+}

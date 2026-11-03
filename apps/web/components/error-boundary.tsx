@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import * as Sentry from '@sentry/nextjs'
+import { captureException } from '@/lib/browser-monitoring'
 import { Button } from '@workspace/ui/components/button'
 
 interface ErrorBoundaryState {
@@ -33,7 +33,7 @@ export class ErrorBoundary extends React.Component<
     console.error('Error caught by boundary:', error, errorInfo)
     
     // Send error to Sentry with additional context
-    Sentry.captureException(error, {
+    captureException(error, {
       contexts: {
         react: {
           componentStack: errorInfo.componentStack,
@@ -206,7 +206,7 @@ export function useErrorHandler() {
     console.error('Error caught by useErrorHandler:', error, errorInfo)
     
     // Send error to Sentry
-    Sentry.captureException(error, {
+    captureException(error, {
       contexts: {
         react: {
           componentStack: errorInfo?.componentStack,

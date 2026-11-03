@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { Rocket, Zap, Globe, Code, DollarSign, Users, ArrowRight, TrendingUp } from "lucide-react"
 import { Button } from "@workspace/ui/components/button"
 import Section from "../ui/Section"

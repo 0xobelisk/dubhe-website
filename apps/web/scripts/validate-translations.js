@@ -83,18 +83,18 @@ function validateTranslations() {
     
     for (const result of results) {
       console.log(`${result.status} ${result.file} - ${result.keys} keys`);
-      if (result.missing.length > 0) {
-        console.log(`   Missing: ${result.missing.length} keys`);
+      if (result.missing > 0) {
+        console.log(`   Missing: ${result.missing} keys`);
         result.missingKeys.slice(0, 5).forEach(key => console.log(`     - ${key}`));
-        if (result.missing.length > 5) {
-          console.log(`     ... and ${result.missing.length - 5} more`);
+        if (result.missing > 5) {
+          console.log(`     ... and ${result.missing - 5} more`);
         }
       }
-      if (result.extra.length > 0) {
-        console.log(`   Extra: ${result.extra.length} keys`);
+      if (result.extra > 0) {
+        console.log(`   Extra: ${result.extra} keys`);
         result.extraKeys.slice(0, 5).forEach(key => console.log(`     + ${key}`));
-        if (result.extra.length > 5) {
-          console.log(`     ... and ${result.extra.length - 5} more`);
+        if (result.extra > 5) {
+          console.log(`     ... and ${result.extra - 5} more`);
         }
       }
     }

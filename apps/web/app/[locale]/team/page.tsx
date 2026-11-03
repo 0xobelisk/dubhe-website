@@ -3,7 +3,7 @@
 import ContentReviewNotice from "@/components/content-review-notice"
 
 import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { 
   Users, 
   ExternalLink,
@@ -189,7 +189,7 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
               <div className="space-y-6 max-w-5xl mx-auto">
                 <motion.h1 
                   className="text-5xl lg:text-7xl font-bold text-white leading-tight"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={false}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
@@ -202,7 +202,7 @@ export default function TeamPage({params: _params}: {params: Promise<Params>}) {
                 
                 <motion.p 
                   className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={false}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >

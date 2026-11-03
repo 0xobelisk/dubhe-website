@@ -133,7 +133,7 @@ export default function Footer() {
                 {t('links.contact')}
               </Link>
             </div>
-            <p className="text-gray-500 text-xs text-center">
+            <p className="text-gray-400 text-xs text-center">
               {t('copyright')}
             </p>
           </div>

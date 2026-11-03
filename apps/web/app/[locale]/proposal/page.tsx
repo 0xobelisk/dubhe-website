@@ -4,7 +4,7 @@ import ContentReviewNotice from "@/components/content-review-notice"
 
 import { useEffect, useState } from "react"
 import { useTranslations } from 'next-intl'
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { 
   Vote, 
   Users, 

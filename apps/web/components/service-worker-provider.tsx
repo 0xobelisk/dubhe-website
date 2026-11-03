@@ -1,20 +1,25 @@
 'use client'
 
 import { useEffect } from 'react'
+import { ensureServiceWorkerCleanup } from './sw-cleanup'
 
 export function ServiceWorkerProvider() {
   useEffect(() => {
     // Only register in production
     if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+      let disposed = false
+      let updateInterval: ReturnType<typeof setInterval> | undefined
+      let hadController = Boolean(navigator.serviceWorker.controller)
       // Register service worker
-      window.addEventListener('load', () => {
-        navigator.serviceWorker
-          .register('/sw-cache.js')
+      const register = () => {
+        ensureServiceWorkerCleanup()
+          .then(() => disposed ? undefined : navigator.serviceWorker.register('/sw-cache.js'))
           .then((registration) => {
+            if (disposed || !registration) return
             console.log('Service Worker registered successfully:', registration.scope)
 
             // Check for updates periodically
-            setInterval(() => {
+            updateInterval = setInterval(() => {
               registration.update()
             }, 60000) // Check every minute
 
@@ -35,16 +40,35 @@ export function ServiceWorkerProvider() {
           .catch((error) => {
             console.error('Service Worker registration failed:', error)
           })
-      })
+      }
+
+      if (document.readyState === 'complete') {
+        register()
+      } else {
+        window.addEventListener('load', register, { once: true })
+      }
 
       // Handle controller change (new service worker activated)
       let refreshing = false
-      navigator.serviceWorker.addEventListener('controllerchange', () => {
+      const handleControllerChange = () => {
+        // First installation claims an already rendered page; it needs no reload.
+        if (!hadController) {
+          hadController = Boolean(navigator.serviceWorker.controller)
+          return
+        }
         if (!refreshing) {
           refreshing = true
           window.location.reload()
         }
-      })
+      }
+      navigator.serviceWorker.addEventListener('controllerchange', handleControllerChange)
+
+      return () => {
+        disposed = true
+        window.removeEventListener('load', register)
+        navigator.serviceWorker.removeEventListener('controllerchange', handleControllerChange)
+        if (updateInterval) clearInterval(updateInterval)
+      }
     }
   }, [])
 

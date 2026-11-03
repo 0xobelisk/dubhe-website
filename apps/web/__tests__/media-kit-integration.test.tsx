@@ -1,5 +1,5 @@
 import { render, screen, fireEvent, waitFor } from '@/test-utils'
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import MediaKitPage from '@/app/[locale]/media-kit/page'
 
 /**
@@ -80,6 +80,9 @@ vi.mock('@/components/ui/Section', () => ({
 
 // Mock framer-motion
 vi.mock('framer-motion', () => ({
+  get m() { return this.motion },
+  LazyMotion: ({ children }: React.PropsWithChildren) => children,
+  domAnimation: {},
   motion: {
     div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
     h1: ({ children, ...props }: any) => <h1 {...props}>{children}</h1>,
@@ -112,33 +115,23 @@ Object.assign(navigator, {
 })
 
 // Mock document.createElement for download functionality
-const mockCreateElement = vi.fn(() => ({
-  href: '',
-  download: '',
-  target: '',
-  click: vi.fn(),
-  remove: vi.fn()
-}))
-
-Object.defineProperty(document, 'createElement', {
-  value: mockCreateElement,
-  writable: true
-})
-
-Object.defineProperty(document.body, 'appendChild', {
-  value: vi.fn(),
-  writable: true
-})
-
-Object.defineProperty(document.body, 'removeChild', {
-  value: vi.fn(),
-  writable: true
+const createElement = document.createElement.bind(document)
+const mockCreateElement = vi.spyOn(document, 'createElement').mockImplementation((tagName, options) => {
+  const element = createElement(tagName, options)
+  if (element instanceof HTMLAnchorElement) {
+    vi.spyOn(element, 'click').mockImplementation(() => {})
+  }
+  return element
 })
 
 describe('Media Kit Integration Tests', () => {
   beforeEach(() => {
     vi.clearAllMocks()
     mockT.mockImplementation((key: string) => key)
+  })
+
+  afterEach(() => {
+    vi.useRealTimers()
   })
 
   describe('Page Rendering', () => {
@@ -247,14 +240,17 @@ describe('Media Kit Integration Tests', () => {
   describe('Brand Pack Download Functionality', () => {
     it('should handle brand pack download', async () => {
       render(<MediaKitPage />)
+
+      vi.useFakeTimers()
       
       const brandPackButton = screen.getByRole('button', { name: /hero.downloadPack/i })
       fireEvent.click(brandPackButton)
+
+      await vi.runAllTimersAsync()
       
       // Should attempt to create multiple download links
-      await waitFor(() => {
-        expect(mockCreateElement).toHaveBeenCalled()
-      })
+      expect(mockCreateElement).toHaveBeenCalled()
+      expect(mockCreateElement).toHaveBeenCalledWith('a')
     })
 
     it('should render download section with contact link', () => {
@@ -360,18 +356,20 @@ describe('Media Kit Integration Tests', () => {
 
     it('should handle download errors gracefully', async () => {
       const alertSpy = vi.spyOn(window, 'alert').mockImplementation(() => {})
+
+      render(<MediaKitPage />)
+
+      vi.useFakeTimers()
       mockCreateElement.mockImplementationOnce(() => {
         throw new Error('Download error')
       })
       
-      render(<MediaKitPage />)
-      
       const brandPackButton = screen.getByRole('button', { name: /hero.downloadPack/i })
       fireEvent.click(brandPackButton)
+
+      await vi.runAllTimersAsync()
       
-      await waitFor(() => {
-        expect(alertSpy).toHaveBeenCalled()
-      })
+      expect(alertSpy).toHaveBeenCalled()
       
       alertSpy.mockRestore()
     })

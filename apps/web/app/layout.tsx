@@ -1,3 +1,5 @@
+import { MotionProvider } from '@/components/motion-provider';
+
 // Since we have a `not-found.tsx` page on the root, a layout file
 // is required, even if it's just passing children through.
 export default function RootLayout({
@@ -5,5 +7,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return children;
+  return <MotionProvider>{children}</MotionProvider>;
 }

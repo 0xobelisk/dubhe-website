@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import Navigation from '../navigation'
 import HeroBackground from './HeroBackground'
 import HeroContent from './HeroContent'

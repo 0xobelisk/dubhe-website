@@ -1,0 +1,3 @@
+[submodule "next-intl"]
+	path = next-intl
+	url = https://github.com/amannn/next-intl.git

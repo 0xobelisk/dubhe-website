@@ -937,6 +937,24 @@
       "title": "Gateway Lỗi",
       "description": "Có vấn đề với kết nối máy chủ của chúng tôi.",
       "suggestion": "Điều này thường chỉ tạm thời. Vui lòng thử lại sau vài phút."
+    },
+    "common": {
+      "tryAgain": "Thử lại",
+      "goHome": "Về trang chủ",
+      "contactSupport": "Liên hệ hỗ trợ"
+    },
+    "status": {
+      "400": "Yêu cầu không hợp lệ",
+      "401": "Chưa được xác thực",
+      "403": "Truy cập bị cấm",
+      "404": "Không tìm thấy",
+      "405": "Phương thức không được phép",
+      "429": "Quá nhiều yêu cầu",
+      "500": "Lỗi máy chủ nội bộ",
+      "502": "Lỗi cổng kết nối",
+      "503": "Dịch vụ không khả dụng",
+      "504": "Cổng kết nối hết thời gian chờ",
+      "default": "Lỗi"
     }
   },
   "incubation": {
@@ -1517,34 +1535,6 @@
         ],
         "status": "Hoạt động",
         "team": "Chờ xác nhận"
-      },
-      "network": {
-        "name": "Dubhe Network Labs",
-        "focus": "Cơ sở hạ tầng và Mở rộng",
-        "description": "Xây dựng giải pháp mạng hiệu suất cao, giao thức giao tiếp thời gian thực và cơ sở hạ tầng khả năng mở rộng cho hệ sinh thái Dubhe.",
-        "contributions": [
-          "Mạng P2P Hiệu suất Cao",
-          "Giao tiếp Kênh Thời gian thực",
-          "Kiến trúc Node Có thể Mở rộng",
-          "Tối ưu hóa Giao thức Mạng",
-          "Cơ sở hạ tầng Cầu nối Đa chuỗi"
-        ],
-        "status": "Đang phát triển",
-        "team": "6 Kỹ sư"
-      },
-      "bridge": {
-        "name": "Dubhe Bridge Labs",
-        "focus": "Công nghệ Đa chuỗi",
-        "description": "Phát triển giao thức cầu nối phổ quát và giải pháp khả năng tương tác để kết nối Dubhe với các hệ sinh thái blockchain khác một cách liền mạch.",
-        "contributions": [
-          "Giao thức Cầu nối Phổ quát",
-          "Chuyển giao Tài sản Đa chuỗi",
-          "Quản trị Đa chuỗi",
-          "Tiêu chuẩn Khả năng Tương tác",
-          "Cơ chế Bảo mật Cầu nối"
-        ],
-        "status": "Nghiên cứu",
-        "team": "4 Kỹ sư"
       },
       "dubheos": {
         "name": "DubheOS",
@@ -2224,5 +2214,28 @@
     "metrics": "Tạm ẩn số liệu trong khi chờ nguồn có thể xác minh.",
     "currentLabel": "Trạng thái hiện tại",
     "startedLabel": "Bắt đầu phát triển"
+  },
+  "papers": {
+    "hero": {
+      "badge": "Tài liệu kỹ thuật",
+      "title": "Bài viết kỹ thuật",
+      "subtitle": "Khám phá kiến trúc kỹ thuật và các chi tiết triển khai của Dubhe qua bộ tài liệu toàn diện của chúng tôi."
+    },
+    "whitepaper": {
+      "title": "Sách trắng",
+      "description": "Tổng quan kỹ thuật toàn diện về kiến trúc, cơ chế đồng thuận và thiết kế hệ sinh thái của Dubhe.",
+      "downloadLabel": "Tải sách trắng"
+    },
+    "lightpaper": {
+      "title": "Sách trắng rút gọn",
+      "description": "Tổng quan ngắn gọn về các tính năng chính, trường hợp sử dụng và đổi mới kỹ thuật của Dubhe.",
+      "downloadLabel": "Tải sách trắng rút gọn"
+    },
+    "onepager": {
+      "title": "Tóm tắt một trang",
+      "description": "Bản tóm tắt dành cho lãnh đạo nêu bật giá trị cốt lõi và các lợi ích chính của Dubhe.",
+      "downloadLabel": "Tải tóm tắt một trang"
+    },
+    "openInNewTab": "Mở trong thẻ mới"
   }
 }

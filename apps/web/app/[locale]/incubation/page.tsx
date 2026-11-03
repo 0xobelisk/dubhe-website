@@ -3,7 +3,7 @@
 import ContentReviewNotice from "@/components/content-review-notice"
 
 import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { 
   Lightbulb, 
   Users, 
@@ -506,6 +506,7 @@ export default function IncubationPage() {
               <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
                 <Image
                   src="/mediakit/obelisklabs/svg/light.svg"
+                  unoptimized
                   alt="Obelisk Labs"
                   width={48}
                   height={48}

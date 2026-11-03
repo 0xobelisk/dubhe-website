@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { useTranslations } from 'next-intl'
-import { motion } from "framer-motion"
+import { m as motion } from "framer-motion"
 import { 
   Coins, 
   Vote, 
@@ -199,7 +199,7 @@ export default function OSPage() {
               <div className="space-y-6 max-w-5xl mx-auto">
                 <motion.h1 
                   className="text-5xl lg:text-7xl font-bold text-white leading-tight"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={false}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
@@ -212,7 +212,7 @@ export default function OSPage() {
                 
                 <motion.p 
                   className="text-xl text-rose-100 max-w-3xl mx-auto leading-relaxed"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={false}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >

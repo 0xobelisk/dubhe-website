@@ -1,0 +1,34 @@
+{
+  "labs": {
+    "labsList": {
+      "bridge": {
+        "name": "Dubhe Bridge Labs",
+        "focus": "Technologie Cross-Chain",
+        "description": "Développement de protocoles de pontage universels et de solutions d'interopérabilité pour connecter Dubhe avec d'autres écosystèmes blockchain de manière transparente.",
+        "contributions": [
+          "Protocole de Pont Universel",
+          "Transfert d'Actifs Cross-Chain",
+          "Gouvernance Multi-Chaîne",
+          "Standards d'Interopérabilité",
+          "Mécanismes de Sécurité des Ponts"
+        ],
+        "status": "Recherche",
+        "team": "4 Ingénieurs"
+      },
+      "network": {
+        "name": "Dubhe Network Labs",
+        "focus": "Infrastructure et Mise à l'Échelle",
+        "description": "Construction de solutions de mise en réseau haute performance, protocoles de communication en temps réel et infrastructure de scalabilité pour l'écosystème Dubhe.",
+        "contributions": [
+          "Mise en Réseau P2P Haute Performance",
+          "Communication de Canal en Temps Réel",
+          "Architecture de Nœud Évolutive",
+          "Optimisation des Protocoles Réseau",
+          "Infrastructure de Pont Cross-Chain"
+        ],
+        "status": "Développement",
+        "team": "6 Ingénieurs"
+      }
+    }
+  }
+}

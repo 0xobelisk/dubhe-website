@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
-import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
+import { m as motion } from "framer-motion"
 import { Mail, MessageSquare, Send, MapPin, Clock } from "lucide-react"
 import Link from "next/link"
 import { useTranslations } from 'next-intl'
@@ -14,10 +14,15 @@ export default function ContactPage() {
     subject: '',
     message: ''
   })
+  const [isHydrated, setIsHydrated] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [notification, setNotification] = useState<{ type: 'success' | 'error', message: string } | null>(null)
+
+  useEffect(() => {
+    setIsHydrated(true)
+  }, [])
 
   const getCharacterCountColor = (count: number): string => {
     if (count >= 4000) return 'text-red-500'
@@ -173,7 +178,7 @@ export default function ContactPage() {
               <div className="space-y-6 max-w-4xl mx-auto">
                 <motion.h1 
                   className="text-5xl lg:text-6xl font-bold text-white leading-tight"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={false}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
@@ -186,7 +191,7 @@ export default function ContactPage() {
                 
                 <motion.p 
                   className="text-xl text-green-100 max-w-3xl mx-auto leading-relaxed"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={false}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
@@ -253,6 +258,7 @@ export default function ContactPage() {
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
+                          disabled={!isHydrated}
                           required
                           className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors"
                           placeholder={t('form.fields.name.placeholder')}
@@ -268,6 +274,7 @@ export default function ContactPage() {
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
+                          disabled={!isHydrated}
                           required
                           className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors"
                           placeholder={t('form.fields.email.placeholder')}
@@ -284,6 +291,7 @@ export default function ContactPage() {
                         name="subject"
                         value={formData.subject}
                         onChange={handleChange}
+                        disabled={!isHydrated}
                         required
                         className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:border-green-500 transition-colors"
                       >
@@ -308,6 +316,7 @@ export default function ContactPage() {
                           name="message"
                           value={formData.message}
                           onChange={handleChange}
+                          disabled={!isHydrated}
                           required
                           rows={6}
                           maxLength={4000}
@@ -322,7 +331,7 @@ export default function ContactPage() {
                     
                     <button
                       type="submit"
-                      disabled={isSubmitting}
+                      disabled={!isHydrated || isSubmitting}
                       className="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 disabled:from-gray-500 disabled:to-gray-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? (

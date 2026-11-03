@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, memo, useMemo } from "react"
-import { motion, MotionValue } from "framer-motion"
+import { m as motion, MotionValue } from "framer-motion"
 
 // Move static data outside component for better performance
 // Constellation data for Big Dipper/Ursa Major

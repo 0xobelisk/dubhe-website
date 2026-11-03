@@ -38,6 +38,9 @@ vi.mock('next/navigation', () => ({
   usePathname: () => '/'
 }))
 
+// next-intl uses the explicit .js subpath in its ESM build.
+vi.mock('next/navigation.js', async () => vi.importMock('next/navigation'))
+
 // Mock Next.js image
 vi.mock('next/image', () => ({
   default: (props: any) => {
@@ -49,6 +52,9 @@ vi.mock('next/image', () => ({
 
 // Mock Framer Motion
 vi.mock('framer-motion', () => ({
+  get m() { return this.motion },
+  LazyMotion: ({ children }: React.PropsWithChildren) => children,
+  domAnimation: {},
   motion: {
     div: (props: any) => React.createElement('div', props, props.children),
     section: (props: any) => React.createElement('section', props, props.children),

@@ -16,9 +16,13 @@ node_modules
 coverage
 /test-results/
 /playwright-report/
+**/test-results/
+**/playwright-report/
 /playwright/.cache/
 lighthouse-ci-results/
 lighthouse-report.html
+.lighthouseci/
+*.tsbuildinfo
 
 # Turbo
 .turbo

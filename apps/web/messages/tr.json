@@ -938,6 +938,24 @@
       "title": "Kötü Ağ Geçidi",
       "description": "Sunucu bağlantımızda bir sorun var.",
       "suggestion": "Bu genellikle geçicidir. Lütfen birkaç dakika sonra tekrar deneyin."
+    },
+    "common": {
+      "tryAgain": "Yeniden Dene",
+      "goHome": "Ana Sayfaya Git",
+      "contactSupport": "Destekle İletişime Geç"
+    },
+    "status": {
+      "400": "Geçersiz İstek",
+      "401": "Yetkisiz",
+      "403": "Erişim Yasak",
+      "404": "Bulunamadı",
+      "405": "Yönteme İzin Verilmiyor",
+      "429": "Çok Fazla İstek",
+      "500": "Sunucu İçi Hata",
+      "502": "Ağ Geçidi Hatası",
+      "503": "Hizmet Kullanılamıyor",
+      "504": "Ağ Geçidi Zaman Aşımı",
+      "default": "Hata"
     }
   },
   "incubation": {
@@ -1518,34 +1536,6 @@
         ],
         "status": "Aktif",
         "team": "Onay bekleniyor"
-      },
-      "network": {
-        "name": "Dubhe Network Labs",
-        "focus": "Altyapı ve Ölçeklendirme",
-        "description": "Dubhe ekosistemi için yüksek performanslı ağ çözümleri, gerçek zamanlı iletişim protokolleri ve ölçeklenebilirlik altyapısı inşa ediyor.",
-        "contributions": [
-          "Yüksek Performanslı P2P Ağ",
-          "Gerçek Zamanlı Kanal İletişimi",
-          "Ölçeklenebilir Düğüm Mimarisi",
-          "Ağ Protokolü Optimizasyonu",
-          "Çapraz Zincir Köprü Altyapısı"
-        ],
-        "status": "Geliştirme",
-        "team": "6 Mühendis"
-      },
-      "bridge": {
-        "name": "Dubhe Bridge Labs",
-        "focus": "Çapraz Zincir Teknolojisi",
-        "description": "Dubhe'yi diğer blockchain ekosistemleriyle sorunsuzca bağlamak için evrensel köprüleme protokolleri ve birlikte çalışabilirlik çözümleri geliştiriyor.",
-        "contributions": [
-          "Evrensel Köprü Protokolü",
-          "Çapraz Zincir Varlık Transferi",
-          "Çoklu Zincir Yönetişimi",
-          "Birlikte Çalışabilirlik Standartları",
-          "Köprü Güvenlik Mekanizmaları"
-        ],
-        "status": "Araştırma",
-        "team": "4 Mühendis"
       },
       "dubheos": {
         "name": "DubheOS",
@@ -2225,5 +2215,28 @@
     "metrics": "Doğrulanabilir kaynaklar sağlanana kadar rakamlar gösterilmiyor.",
     "currentLabel": "Güncel durum",
     "startedLabel": "Geliştirme başlangıcı"
+  },
+  "papers": {
+    "hero": {
+      "badge": "Teknik Dokümantasyon",
+      "title": "Teknik Belgeler",
+      "subtitle": "Kapsamlı dokümantasyonumuz aracılığıyla Dubhe’nin teknik mimarisini ve uygulama ayrıntılarını keşfedin."
+    },
+    "whitepaper": {
+      "title": "Teknik Tanıtım Belgesi",
+      "description": "Dubhe’nin mimarisi, mutabakat mekanizmaları ve ekosistem tasarımına ilişkin kapsamlı teknik genel bakış.",
+      "downloadLabel": "Teknik Tanıtım Belgesini İndir"
+    },
+    "lightpaper": {
+      "title": "Kısa Tanıtım Belgesi",
+      "description": "Dubhe’nin temel özellikleri, kullanım alanları ve teknik yeniliklerine kısa bir genel bakış.",
+      "downloadLabel": "Kısa Tanıtım Belgesini İndir"
+    },
+    "onepager": {
+      "title": "Tek Sayfalık Özet",
+      "description": "Dubhe’nin temel değer önerisini ve başlıca avantajlarını vurgulayan yönetici özeti.",
+      "downloadLabel": "Tek Sayfalık Özeti İndir"
+    },
+    "openInNewTab": "Yeni sekmede açılır"
   }
 }
