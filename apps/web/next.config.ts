@@ -56,7 +56,7 @@ const nextConfig: NextConfig = {
       config.optimization = {
         ...config.optimization,
         usedExports: true,
-        sideEffects: false,
+        sideEffects: true,
         moduleIds: 'deterministic',
         runtimeChunk: 'single',
         splitChunks: {
@@ -146,4 +146,7 @@ const sentryOptions = {
   hideSourceMaps: true,
 }
 
-export default withSentryConfig(withBundleAnalyzer(withNextIntl(nextConfig)), sentryOptions);
+const configuredNext = withBundleAnalyzer(withNextIntl(nextConfig));
+export default process.env.NEXT_PUBLIC_SENTRY_DSN
+  ? withSentryConfig(configuredNext, sentryOptions)
+  : configuredNext;

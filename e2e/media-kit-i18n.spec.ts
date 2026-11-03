@@ -378,8 +378,12 @@ test.describe('Media Kit E2E Tests', () => {
       await page.waitForLoadState('networkidle')
       
       const hideRestrictions = page.getByRole('button', { name: 'Hide restrictions', exact: true })
+      const restrictionText = `• ${message('en', 'mediaKit.logo.donts.item1')}`
+      const restriction = page.getByRole('listitem').filter({ hasText: message('en', 'mediaKit.logo.donts.item1') })
       await hideRestrictions.scrollIntoViewIfNeeded()
       await expect(hideRestrictions).toBeVisible()
+      await expect(restriction).toHaveText(restrictionText)
+      await expect(restriction).toBeVisible()
       await hideRestrictions.focus()
       await expect(hideRestrictions).toBeFocused()
 
@@ -387,11 +391,12 @@ test.describe('Media Kit E2E Tests', () => {
       const showRestrictions = page.getByRole('button', { name: 'Show restrictions', exact: true })
       await expect(showRestrictions).toBeVisible()
       await expect(showRestrictions).toBeFocused()
-      await expect(page.getByText(message('en', 'mediaKit.logo.donts.item1'), { exact: true })).not.toBeVisible()
+      await expect(restriction).not.toBeVisible()
 
       await showRestrictions.press('Enter')
       await expect(hideRestrictions).toBeVisible()
-      await expect(page.getByText(message('en', 'mediaKit.logo.donts.item1'), { exact: true })).toBeVisible()
+      await expect(restriction).toBeVisible()
+      await expect(restriction).toHaveText(restrictionText)
     })
   })
 })

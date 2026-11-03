@@ -38,7 +38,7 @@ test.describe('Critical page content before hydration', () => {
         expect(response?.status(), path).toBe(200)
 
         const heading = page.getByRole('heading', { level: 1 })
-        const body = page.getByText(description, { exact: true })
+        const body = heading.locator('..').getByText(description, { exact: true })
         await expect(heading).toHaveText(headline)
 
         for (const content of [heading, body]) {

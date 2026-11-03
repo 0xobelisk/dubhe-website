@@ -20,6 +20,7 @@ describe('Web Vitals analytics receivers', () => {
     metrics.handlers = {}
     metrics.breadcrumb.mockClear()
     vi.stubEnv('NODE_ENV', 'production')
+    vi.stubEnv('NEXT_PUBLIC_SENTRY_DSN', 'https://public@example.test/1')
     vi.stubEnv('NEXT_PUBLIC_ANALYTICS_ENDPOINT', undefined)
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true }))
     vi.stubGlobal('PerformanceObserver', class { observe() {} })

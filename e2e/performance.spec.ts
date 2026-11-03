@@ -5,8 +5,11 @@ test.describe('性能测试', () => {
     // 启用性能监控
     await page.goto('/', { waitUntil: 'networkidle' })
     
-    // 等待页面完全加载
-    await page.waitForTimeout(2000)
+    // Network idle can precede the load event; require its actual completed timing.
+    await page.waitForFunction(() => {
+      const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined
+      return Boolean(navigation && navigation.loadEventEnd > 0)
+    }, undefined, { timeout: 12000 })
 
     // Read actual Navigation Timing entries supported by all configured browsers.
     const performanceMetrics = await page.evaluate(() => {

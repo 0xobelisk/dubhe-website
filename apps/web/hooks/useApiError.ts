@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import * as Sentry from '@sentry/nextjs'
+import { captureException } from '@/lib/browser-monitoring'
 
 export interface ApiError {
   message: string
@@ -42,7 +42,7 @@ export function useApiError(options: UseApiErrorOptions = {}) {
     })
     
     // Send error to Sentry
-    Sentry.captureException(new Error(error.message), {
+    captureException(new Error(error.message), {
       tags: {
         section: 'api_error',
         status: error.status?.toString(),

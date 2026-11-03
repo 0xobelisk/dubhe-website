@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 import Link from 'next/link'
-import * as Sentry from '@sentry/nextjs'
+import { captureException } from '@/lib/browser-monitoring'
 import { Button } from '@workspace/ui/components/button'
 
 interface ErrorProps {
@@ -16,7 +16,7 @@ export default function GlobalError({ error, reset }: ErrorProps) {
     console.error('Global error caught:', error)
     
     // Send to Sentry
-    Sentry.captureException(error, {
+    captureException(error, {
       tags: {
         section: 'global_error_page',
       },

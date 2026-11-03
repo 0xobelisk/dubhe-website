@@ -3,7 +3,7 @@
 
 import { useEffect } from 'react'
 import { CLSMetric, FCPMetric, INPMetric, LCPMetric, TTFBMetric } from 'web-vitals'
-import * as Sentry from '@sentry/nextjs'
+import { addBreadcrumb } from '@/lib/browser-monitoring'
 
 interface WebVitalsMetric {
   id: string
@@ -73,7 +73,7 @@ function sendMetric(metric: CLSMetric | FCPMetric | INPMetric | LCPMetric | TTFB
   const formattedMetric = formatMetric(metric)
   
   // Send to Sentry
-  Sentry.addBreadcrumb({
+  addBreadcrumb({
     category: 'web-vital',
     message: `${formattedMetric.name}: ${formattedMetric.value}`,
     level: 'info',
